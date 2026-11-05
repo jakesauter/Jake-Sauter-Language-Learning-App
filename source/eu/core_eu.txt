@@ -1,0 +1,369 @@
+i|yo|je|ich
+me|me|moi|mich
+my|mi|mon|mein
+mine|mío|à moi|meins
+you|tú|tu|du
+your|tu|ton|dein
+he|él|il|er
+him|lo|le|ihn
+his|su|son|sein
+she|ella|elle|sie
+her|su|sa|ihr
+it|eso|ça|es
+we|nosotros|on|wir
+us|nos|nous|uns
+our|nuestro|notre|unser
+they|ellos|ils|sie
+them|los|les|sie
+their|su|leur|ihr
+you all|ustedes|vous|ihr
+everyone|todos|tout le monde|alle
+everybody|todos|tout le monde|alle
+someone|alguien|quelqu'un|jemand
+myself|yo mismo|moi-même|selbst
+yourself|tú mismo|toi-même|selbst
+be|ser|être|sein
+is|es|est|ist
+not|no|pas|nicht
+no|no|non|nein
+yes|sí|oui|ja
+don't|no|ne ... pas|nicht
+do not|no|ne ... pas|nicht
+can't|no puedo|je ne peux pas|kann nicht
+cannot|no puedo|je ne peux pas|kann nicht
+have|tener|avoir|haben
+has|tiene|a|hat
+don't have|no tengo|je n'ai pas|habe nicht
+there is|hay|il y a|es gibt
+there are|hay|il y a|es gibt
+what|qué|quoi|was
+who|quién|qui|wer
+where|dónde|où|wo
+when|cuándo|quand|wann
+why|por qué|pourquoi|warum
+how|cómo|comment|wie
+how much|cuánto|combien|wie viel
+how many|cuántos|combien|wie viele
+which|cuál|quel|welcher
+this|esto|ça|das
+that|eso|ça|das
+these|estos|ces|diese
+those|esos|ces|die
+here|aquí|ici|hier
+there|allí|là|dort
+now|ahora|maintenant|jetzt
+today|hoy|aujourd'hui|heute
+tonight|esta noche|ce soir|heute Abend
+tomorrow|mañana|demain|morgen
+yesterday|ayer|hier|gestern
+morning|la mañana|le matin|der Morgen
+afternoon|la tarde|l'après-midi|der Nachmittag
+evening|la tarde|le soir|der Abend
+night|la noche|la nuit|die Nacht
+later|más tarde|plus tard|später
+soon|pronto|bientôt|bald
+always|siempre|toujours|immer
+often|seguido|souvent|oft
+sometimes|a veces|parfois|manchmal
+never|nunca|jamais|nie
+again|otra vez|encore|wieder
+already|ya|déjà|schon
+still|todavía|encore|noch
+also|también|aussi|auch
+too|demasiado|trop|zu
+very|muy|très|sehr
+really|de verdad|vraiment|wirklich
+so|tan|tellement|so
+a little|un poco|un peu|ein bisschen
+a bit|un poco|un peu|ein bisschen
+a lot|mucho|beaucoup|viel
+many|muchos|beaucoup de|viele
+much|mucho|beaucoup|viel
+more|más|plus|mehr
+less|menos|moins|weniger
+all|todo|tout|alles
+only|solo|seulement|nur
+maybe|tal vez|peut-être|vielleicht
+together|juntos|ensemble|zusammen
+and|y|et|und
+with|con|avec|mit
+or|o|ou|oder
+but|pero|mais|aber
+because|porque|parce que|weil
+if|si|si|wenn
+then|entonces|alors|dann
+for|para|pour|für
+from|de|de|von
+to|a|à|zu
+in|en|dans|in
+at|en|à|bei
+inside|adentro|dedans|drinnen
+outside|afuera|dehors|draußen
+up|arriba|en haut|oben
+down|abajo|en bas|unten
+left|izquierda|gauche|links
+right|derecha|droite|rechts
+near|cerca|près|nah
+far|lejos|loin|weit
+eat|comer|manger|essen
+drink|tomar|boire|trinken
+sleep|dormir|dormir|schlafen
+go|ir|aller|gehen
+come|venir|venir|kommen
+go home|ir a casa|rentrer|nach Hause gehen
+return|volver|revenir|zurückkommen
+leave|salir|partir|gehen
+walk|caminar|marcher|laufen
+run|correr|courir|rennen
+sit|sentarse|s'asseoir|sitzen
+stand|estar de pie|être debout|stehen
+wait|esperar|attendre|warten
+see|ver|voir|sehen
+look|mirar|regarder|schauen
+watch|ver|regarder|anschauen
+hear|oír|entendre|hören
+listen|escuchar|écouter|zuhören
+say|decir|dire|sagen
+speak|hablar|parler|sprechen
+talk|hablar|parler|reden
+tell|decir|dire|erzählen
+ask|preguntar|demander|fragen
+call|llamar|appeler|anrufen
+know|saber|savoir|wissen
+think|pensar|penser|denken
+understand|entender|comprendre|verstehen
+remember|acordarse|se souvenir|sich erinnern
+forget|olvidar|oublier|vergessen
+want|querer|vouloir|wollen
+want to|querer|vouloir|wollen
+need|necesitar|avoir besoin|brauchen
+need to|tener que|devoir|müssen
+have to|tener que|devoir|müssen
+must|deber|devoir|müssen
+can|poder|pouvoir|können
+could|podría|pourrait|könnte
+may|puede|peut|darf
+will|va a|va|wird
+would|quisiera|voudrais|würde
+should|debería|devrait|sollte
+like|gustar|aimer|mögen
+love|amar|adorer|lieben
+give|dar|donner|geben
+take|tomar|prendre|nehmen
+get|conseguir|obtenir|bekommen
+bring|traer|apporter|bringen
+carry|cargar|porter|tragen
+buy|comprar|acheter|kaufen
+sell|vender|vendre|verkaufen
+pay|pagar|payer|bezahlen
+use|usar|utiliser|benutzen
+do|hacer|faire|machen
+make|hacer|faire|machen
+cook|cocinar|cuisiner|kochen
+wash|lavar|laver|waschen
+clean|limpiar|nettoyer|putzen
+open|abrir|ouvrir|öffnen
+close|cerrar|fermer|schließen
+turn on|prender|allumer|anmachen
+turn off|apagar|éteindre|ausmachen
+put|poner|mettre|stellen
+play|jugar|jouer|spielen
+work|trabajar|travailler|arbeiten
+study|estudiar|étudier|lernen
+learn|aprender|apprendre|lernen
+teach|enseñar|apprendre|beibringen
+help|ayudar|aider|helfen
+live|vivir|habiter|wohnen
+stay|quedarse|rester|bleiben
+try|probar|essayer|probieren
+start|empezar|commencer|anfangen
+finish|terminar|finir|fertig machen
+drive|manejar|conduire|fahren
+swim|nadar|nager|schwimmen
+rest|descansar|se reposer|sich ausruhen
+feel|sentirse|se sentir|sich fühlen
+know how|saber|savoir|können
+meet|conocer|rencontrer|treffen
+visit|visitar|rendre visite|besuchen
+miss|extrañar|manquer|vermissen
+good|bueno|bon|gut
+bad|malo|mauvais|schlecht
+big|grande|grand|groß
+small|pequeño|petit|klein
+little|pequeño|petit|klein
+hot|caliente|chaud|heiß
+cold|frío|froid|kalt
+warm|tibio|tiède|warm
+cool|fresco|frais|kühl
+beautiful|hermoso|beau|schön
+pretty|bonito|joli|hübsch
+delicious|delicioso|délicieux|lecker
+tasty|rico|bon|lecker
+happy|feliz|content|glücklich
+sad|triste|triste|traurig
+angry|enojado|fâché|sauer
+tired|cansado|fatigué|müde
+hungry|con hambre|affamé|hungrig
+thirsty|con sed|assoiffé|durstig
+full|lleno|rassasié|satt
+sick|enfermo|malade|krank
+busy|ocupado|occupé|beschäftigt
+free|libre|libre|frei
+fast|rápido|vite|schnell
+slow|lento|lent|langsam
+early|temprano|tôt|früh
+late|tarde|tard|spät
+cheap|barato|pas cher|billig
+expensive|caro|cher|teuer
+new|nuevo|nouveau|neu
+old|viejo|vieux|alt
+same|igual|pareil|gleich
+different|diferente|différent|anders
+easy|fácil|facile|leicht
+difficult|difícil|difficile|schwer
+right|bien|juste|richtig
+correct|correcto|correct|richtig
+wrong|mal|faux|falsch
+okay|está bien|d'accord|okay
+ok|está bien|d'accord|okay
+hello|hola|bonjour|hallo
+hi|hola|salut|hallo
+bye|adiós|salut|tschüss
+goodbye|adiós|au revoir|auf Wiedersehen
+thank you|gracias|merci|danke
+thanks|gracias|merci|danke
+please|por favor|s'il te plaît|bitte
+sorry|perdón|désolé|Entschuldigung
+excuse me|disculpa|excuse-moi|Entschuldigung
+welcome|bienvenido|bienvenue|willkommen
+person|la persona|la personne|die Person
+people|la gente|les gens|die Leute
+man|el hombre|l'homme|der Mann
+woman|la mujer|la femme|die Frau
+child|el niño|l'enfant|das Kind
+kid|el niño|l'enfant|das Kind
+baby|el bebé|le bébé|das Baby
+family|la familia|la famille|die Familie
+mom|la mamá|la maman|die Mama
+mother|la madre|la mère|die Mutter
+dad|el papá|le papa|der Papa
+father|el padre|le père|der Vater
+parents|los papás|les parents|die Eltern
+grandma|la abuela|la mamie|die Oma
+grandpa|el abuelo|le papi|der Opa
+grandmother|la abuela|la grand-mère|die Großmutter
+grandfather|el abuelo|le grand-père|der Großvater
+brother|el hermano|le frère|der Bruder
+older brother|el hermano mayor|le grand frère|der große Bruder
+younger brother|el hermano menor|le petit frère|der kleine Bruder
+sister|la hermana|la sœur|die Schwester
+older sister|la hermana mayor|la grande sœur|die große Schwester
+younger sister|la hermana menor|la petite sœur|die kleine Schwester
+uncle|el tío|l'oncle|der Onkel
+aunt|la tía|la tante|die Tante
+son|el hijo|le fils|der Sohn
+daughter|la hija|la fille|die Tochter
+husband|el esposo|le mari|der Mann
+wife|la esposa|la femme|die Frau
+friend|el amigo|l'ami|der Freund
+girlfriend|la novia|la copine|die Freundin
+boyfriend|el novio|le copain|der Freund
+name|el nombre|le nom|der Name
+home|la casa|la maison|das Zuhause
+house|la casa|la maison|das Haus
+room|el cuarto|la chambre|das Zimmer
+kitchen|la cocina|la cuisine|die Küche
+bathroom|el baño|la salle de bain|das Bad
+toilet|el baño|les toilettes|die Toilette
+bed|la cama|le lit|das Bett
+door|la puerta|la porte|die Tür
+car|el carro|la voiture|das Auto
+bus|el camión|le bus|der Bus
+plane|el avión|l'avion|das Flugzeug
+road|el camino|la route|die Straße
+store|la tienda|le magasin|der Laden
+shop|la tienda|la boutique|der Laden
+supermarket|el súper|le supermarché|der Supermarkt
+restaurant|el restaurante|le restaurant|das Restaurant
+school|la escuela|l'école|die Schule
+hospital|el hospital|l'hôpital|das Krankenhaus
+beach|la playa|la plage|der Strand
+pool|la alberca|la piscine|das Schwimmbad
+park|el parque|le parc|der Park
+money|el dinero|l'argent|das Geld
+phone|el teléfono|le téléphone|das Handy
+thing|la cosa|la chose|das Ding
+things|las cosas|les choses|die Sachen
+something|algo|quelque chose|etwas
+anything|algo|quelque chose|etwas
+food|la comida|la nourriture|das Essen
+rice|el arroz|le riz|der Reis
+meal|la comida|le repas|das Essen
+breakfast|el desayuno|le petit-déjeuner|das Frühstück
+lunch|la comida|le déjeuner|das Mittagessen
+dinner|la cena|le dîner|das Abendessen
+noodles|los fideos|les nouilles|die Nudeln
+soup|la sopa|la soupe|die Suppe
+water|el agua|l'eau|das Wasser
+tea|el té|le thé|der Tee
+coffee|el café|le café|der Kaffee
+milk|la leche|le lait|die Milch
+fruit|la fruta|le fruit|das Obst
+vegetables|las verduras|les légumes|das Gemüse
+meat|la carne|la viande|das Fleisch
+chicken|el pollo|le poulet|das Hähnchen
+fish|el pescado|le poisson|der Fisch
+pork|el puerco|le porc|das Schweinefleisch
+beef|la carne de res|le bœuf|das Rindfleisch
+egg|el huevo|l'œuf|das Ei
+dog|el perro|le chien|der Hund
+cat|el gato|le chat|die Katze
+weather|el tiempo|le temps|das Wetter
+rain|la lluvia|la pluie|der Regen
+sun|el sol|le soleil|die Sonne
+wind|el viento|le vent|der Wind
+time|el tiempo|le temps|die Zeit
+hour|la hora|l'heure|die Stunde
+minute|el minuto|la minute|die Minute
+day|el día|le jour|der Tag
+week|la semana|la semaine|die Woche
+month|el mes|le mois|der Monat
+year|el año|l'année|das Jahr
+birthday|el cumpleaños|l'anniversaire|der Geburtstag
+job|el trabajo|le travail|der Job
+one|uno|un|eins
+two|dos|deux|zwei
+three|tres|trois|drei
+four|cuatro|quatre|vier
+five|cinco|cinq|fünf
+six|seis|six|sechs
+seven|siete|sept|sieben
+eight|ocho|huit|acht
+nine|nueve|neuf|neun
+ten|diez|dix|zehn
+hundred|cien|cent|hundert
+thousand|mil|mille|tausend
+first|primero|premier|erste
+computer|la computadora|l'ordinateur|der Computer
+tv|la tele|la télé|der Fernseher
+television|la televisión|la télévision|der Fernseher
+ice cream|el helado|la glace|das Eis
+taxi|el taxi|le taxi|das Taxi
+bicycle|la bicicleta|le vélo|das Fahrrad
+umbrella|el paraguas|le parapluie|der Regenschirm
+clothes|la ropa|les vêtements|die Kleidung
+shoes|los zapatos|les chaussures|die Schuhe
+picture|la foto|la photo|das Bild
+photo|la foto|la photo|das Foto
+movie|la película|le film|der Film
+cake|el pastel|le gâteau|der Kuchen
+fun|divertido|amusant|lustig
+interesting|interesante|intéressant|interessant
+boring|aburrido|ennuyeux|langweilig
+cute|lindo|mignon|süß
+handsome|guapo|beau|gutaussehend
+smart|listo|intelligent|klug
+lucky|con suerte|chanceux|glücklich
+safe|seguro|en sécurité|sicher
+ready|listo|prêt|fertig
+dirty|sucio|sale|schmutzig

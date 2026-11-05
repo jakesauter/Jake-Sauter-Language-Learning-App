@@ -1,0 +1,232 @@
+apple|la manzana|la pomme|der Apfel
+orange|la naranja|l'orange|die Orange
+banana|el plátano|la banane|die Banane
+grape|la uva|le raisin|die Traube
+watermelon|la sandía|la pastèque|die Wassermelone
+bread|el pan|le pain|das Brot
+cheese|el queso|le fromage|der Käse
+butter|la mantequilla|le beurre|die Butter
+salt|la sal|le sel|das Salz
+sugar|el azúcar|le sucre|der Zucker
+pepper|la pimienta|le poivre|der Pfeffer
+sauce|la salsa|la sauce|die Soße
+soy sauce|la salsa de soya|la sauce soja|die Sojasoße
+oil|el aceite|l'huile|das Öl
+garlic|el ajo|l'ail|der Knoblauch
+onion|la cebolla|l'oignon|die Zwiebel
+tomato|el tomate|la tomate|die Tomate
+potato|la papa|la pomme de terre|die Kartoffel
+mushroom|el champiñón|le champignon|der Pilz
+tofu|el tofu|le tofu|der Tofu
+shrimp|el camarón|la crevette|die Garnele
+duck|el pato|le canard|die Ente
+lamb|el cordero|l'agneau|das Lamm
+dumpling|el dumpling|le ravioli|die Teigtasche
+dumplings|los dumplings|les raviolis|die Teigtaschen
+dessert|el postre|le dessert|der Nachtisch
+snack|el bocadillo|le goûter|der Snack
+juice|el jugo|le jus|der Saft
+beer|la cerveza|la bière|das Bier
+wine|el vino|le vin|der Wein
+bowl|el plato hondo|le bol|die Schüssel
+plate|el plato|l'assiette|der Teller
+cup|la taza|la tasse|die Tasse
+glass|el vaso|le verre|das Glas
+spoon|la cuchara|la cuillère|der Löffel
+fork|el tenedor|la fourchette|die Gabel
+knife|el cuchillo|le couteau|das Messer
+chopsticks|los palillos|les baguettes|die Stäbchen
+table|la mesa|la table|der Tisch
+chair|la silla|la chaise|der Stuhl
+fridge|el refri|le frigo|der Kühlschrank
+spicy|picante|épicé|scharf
+sweet|dulce|sucré|süß
+salty|salado|salé|salzig
+sour|ácido|acide|sauer
+bitter|amargo|amer|bitter
+fresh|fresco|frais|frisch
+cooked|cocido|cuit|gekocht
+raw|crudo|cru|roh
+fried|frito|frit|frittiert
+boil|hervir|bouillir|kochen
+fry|freír|frire|braten
+cut|cortar|couper|schneiden
+taste|probar|goûter|probieren
+smell|oler|sentir|riechen
+order|pedir|commander|bestellen
+share|compartir|partager|teilen
+teacher|el maestro|le prof|der Lehrer
+student|el estudiante|l'élève|der Schüler
+class|la clase|le cours|der Unterricht
+homework|la tarea|les devoirs|die Hausaufgaben
+test|el examen|l'examen|die Prüfung
+exam|el examen|l'examen|die Prüfung
+book|el libro|le livre|das Buch
+read|leer|lire|lesen
+write|escribir|écrire|schreiben
+college|la universidad|la fac|die Uni
+university|la universidad|l'université|die Universität
+math|las matemáticas|les maths|Mathe
+science|la ciencia|les sciences|die Naturwissenschaft
+english|el inglés|l'anglais|Englisch
+chinese|el chino|le chinois|Chinesisch
+cantonese|el cantonés|le cantonais|Kantonesisch
+spanish|el español|l'espagnol|Spanisch
+french|el francés|le français|Französisch
+german|el alemán|l'allemand|Deutsch
+language|el idioma|la langue|die Sprache
+office|la oficina|le bureau|das Büro
+meeting|la junta|la réunion|das Meeting
+boss|el jefe|le chef|der Chef
+coworker|el compañero|le collègue|der Kollege
+company|la empresa|l'entreprise|die Firma
+email|el correo|l'e-mail|die E-Mail
+project|el proyecto|le projet|das Projekt
+vacation|las vacaciones|les vacances|der Urlaub
+holiday|el día festivo|le jour férié|der Feiertag
+weekend|el fin de semana|le week-end|das Wochenende
+trip|el viaje|le voyage|die Reise
+travel|viajar|voyager|reisen
+hotel|el hotel|l'hôtel|das Hotel
+airport|el aeropuerto|l'aéroport|der Flughafen
+flight|el vuelo|le vol|der Flug
+ticket|el boleto|le billet|das Ticket
+passport|el pasaporte|le passeport|der Pass
+suitcase|la maleta|la valise|der Koffer
+luggage|el equipaje|les bagages|das Gepäck
+ship|el barco|le bateau|das Schiff
+boat|el barco|le bateau|das Boot
+cruise|el crucero|la croisière|die Kreuzfahrt
+island|la isla|l'île|die Insel
+ocean|el océano|l'océan|der Ozean
+sea|el mar|la mer|das Meer
+mountain|la montaña|la montagne|der Berg
+river|el río|la rivière|der Fluss
+lake|el lago|le lac|der See
+city|la ciudad|la ville|die Stadt
+country|el país|le pays|das Land
+map|el mapa|la carte|die Karte
+street|la calle|la rue|die Straße
+train|el tren|le train|der Zug
+subway|el metro|le métro|die U-Bahn
+gas|la gasolina|l'essence|das Benzin
+traffic|el tráfico|la circulation|der Verkehr
+parking|el estacionamiento|le parking|der Parkplatz
+seatbelt|el cinturón|la ceinture|der Gurt
+bike|la bici|le vélo|das Rad
+helmet|el casco|le casque|der Helm
+swimsuit|el traje de baño|le maillot de bain|die Badehose
+towel|la toalla|la serviette|das Handtuch
+sunscreen|el bloqueador|la crème solaire|die Sonnencreme
+game|el juego|le jeu|das Spiel
+sport|el deporte|le sport|der Sport
+sports|los deportes|les sports|der Sport
+soccer|el fútbol|le foot|der Fußball
+basketball|el básquetbol|le basket|der Basketball
+music|la música|la musique|die Musik
+song|la canción|la chanson|das Lied
+sing|cantar|chanter|singen
+dance|bailar|danser|tanzen
+draw|dibujar|dessiner|zeichnen
+hike|ir de excursión|faire une rando|wandern
+hiking|el senderismo|la randonnée|das Wandern
+running|correr|la course|das Laufen
+swimming|nadar|la natation|das Schwimmen
+exercise|hacer ejercicio|faire du sport|Sport machen
+gym|el gimnasio|la salle de sport|das Fitnessstudio
+win|ganar|gagner|gewinnen
+lose|perder|perdre|verlieren
+cards|las cartas|les cartes|die Karten
+sunny|soleado|ensoleillé|sonnig
+cloudy|nublado|nuageux|bewölkt
+windy|con viento|venteux|windig
+snow|la nieve|la neige|der Schnee
+hot weather|el calor|la chaleur|die Hitze
+jacket|la chaqueta|la veste|die Jacke
+hat|el sombrero|le chapeau|der Hut
+shirt|la camisa|la chemise|das Hemd
+pants|los pantalones|le pantalon|die Hose
+dress|el vestido|la robe|das Kleid
+bag|la bolsa|le sac|die Tasche
+gift|el regalo|le cadeau|das Geschenk
+present|el regalo|le cadeau|das Geschenk
+party|la fiesta|la fête|die Party
+wedding|la boda|le mariage|die Hochzeit
+christmas|la Navidad|Noël|Weihnachten
+new year|el Año Nuevo|le Nouvel An|das neue Jahr
+celebrate|celebrar|fêter|feiern
+married|casado|marié|verheiratet
+cousin|el primo|le cousin|der Cousin
+nephew|el sobrino|le neveu|der Neffe
+niece|la sobrina|la nièce|die Nichte
+grandchild|el nieto|le petit-enfant|das Enkelkind
+neighbor|el vecino|le voisin|der Nachbar
+guest|el invitado|l'invité|der Gast
+doctor|el doctor|le médecin|der Arzt
+medicine|la medicina|le médicament|das Medikament
+headache|el dolor de cabeza|le mal de tête|die Kopfschmerzen
+fever|la fiebre|la fièvre|das Fieber
+hurt|doler|faire mal|wehtun
+healthy|sano|en bonne santé|gesund
+strong|fuerte|fort|stark
+weak|débil|faible|schwach
+fat|gordo|gros|dick
+thin|delgado|mince|dünn
+tall|alto|grand|groß
+short|bajo|petit|klein
+young|joven|jeune|jung
+quiet|callado|calme|leise
+loud|ruidoso|bruyant|laut
+funny|chistoso|drôle|lustig
+nice|amable|gentil|nett
+kind|amable|gentil|freundlich
+great|genial|génial|toll
+amazing|increíble|incroyable|unglaublich
+terrible|terrible|horrible|schrecklich
+excited|emocionado|excité|aufgeregt
+nervous|nervioso|nerveux|nervös
+bored|aburrido|ennuyé|gelangweilt
+scared|asustado|effrayé|ängstlich
+proud|orgulloso|fier|stolz
+sleepy|con sueño|endormi|müde
+worried|preocupado|inquiet|besorgt
+surprised|sorprendido|surpris|überrascht
+joke|la broma|la blague|der Witz
+kidding|bromeando|en train de rigoler|scherzend
+laugh|reír|rire|lachen
+cry|llorar|pleurer|weinen
+smile|sonreír|sourire|lächeln
+kiss|besar|embrasser|küssen
+hug|abrazar|serrer dans ses bras|umarmen
+marry|casarse|se marier|heiraten
+worry|preocuparse|s'inquiéter|sich Sorgen machen
+hope|esperar|espérer|hoffen
+believe|creer|croire|glauben
+change|cambiar|changer|ändern
+send|mandar|envoyer|schicken
+show|mostrar|montrer|zeigen
+find|encontrar|trouver|finden
+lose weight|bajar de peso|maigrir|abnehmen
+grow|crecer|grandir|wachsen
+born|nacido|né|geboren
+die|morir|mourir|sterben
+borrow|pedir prestado|emprunter|ausleihen
+lend|prestar|prêter|leihen
+fix|arreglar|réparer|reparieren
+break|romper|casser|kaputt machen
+wear|ponerse|porter|tragen
+shower|bañarse|se doucher|duschen
+wake up|despertarse|se réveiller|aufwachen
+get up|levantarse|se lever|aufstehen
+dream|soñar|rêver|träumen
+TV show|la serie|la série|die Serie
+show|la serie|la série|die Serie
+password|la contraseña|le mot de passe|das Passwort
+charger|el cargador|le chargeur|das Ladegerät
+trash|la basura|la poubelle|der Müll
+key|la llave|la clé|der Schlüssel
+window|la ventana|la fenêtre|das Fenster
+garden|el jardín|le jardin|der Garten
+yard|el patio|le jardin|der Garten
+light|la luz|la lumière|das Licht
+air conditioning|el aire acondicionado|la clim|die Klimaanlage

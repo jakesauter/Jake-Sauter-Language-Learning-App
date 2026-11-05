@@ -1,0 +1,440 @@
+#0
+s: ¿Cuánto/0 ; falta/1 ; para/2 ; llegar/3
+f: On/- ; arrive/3 ; dans/2 ; combien/0 ; de temps/0
+d: Wie lange/0 ; noch/1 ; bis/2 ; wir/- ; ankommen/3
+#1
+s: ¿Necesitamos/0 ; parar/1 ; a descansar/3 ; un rato/2,4
+f: On/- ; doit/0 ; s'arrêter/1 ; pour se reposer/3 ; un peu/2,4
+d: Müssen/0 ; wir/- ; kurz/2,4 ; anhalten/1 ; und Pause machen/3
+#2
+s: Yo/0 ; manejo/1 ; tú/2 ; puedes/3 ; dormir/4
+f: Je/0 ; conduis/1 ; tu/2 ; peux/3 ; dormir/4
+d: Ich/0 ; fahre/1 ; du/2 ; kannst/3 ; schlafen/4
+#3
+s: ¿Necesitas/0,1 ; ir/2 ; al baño/3
+f: Tu/0 ; as besoin/1 ; d'aller/2 ; aux toilettes/3
+d: Musst/1 ; du/0 ; auf die Toilette/3 ; gehen/2
+#4
+s: ¿Ya/3 ; comiste/0,1,2
+f: Tu/0 ; as déjà/1,3 ; mangé/1,2
+d: Hast/1 ; du/0 ; schon/3 ; gegessen/1,2
+#5
+s: ¡Esto/0 ; está/1 ; riquísimo/1,2
+f: C'est/0 ; vraiment/1 ; délicieux/2
+d: Das/0 ; ist/1 ; echt/1 ; lecker/2
+#6
+s: Estoy/0,1 ; lleno/2 ; gracias/3
+f: J'ai/0 ; bien/1 ; mangé/2 ; merci/3
+d: Ich/0 ; bin/1 ; satt/2 ; danke/3
+#7
+s: ¿Me/2 ; pasas/1 ; la salsa de soya/3 ; por favor/0
+f: Tu/- ; peux/- ; me/2 ; passer/1 ; la sauce soja/3 ; s'il te plaît/0
+d: Gibst/1 ; du/- ; mir/2 ; bitte/0 ; die Sojasoße/3
+#8
+s: ¡A/1 ; comer/2 ; todos/0
+f: À table/1,2 ; tout le monde/0
+d: Alle/0 ; zum Essen/2 ; kommt/1
+#9
+s: ¿Quieres/0 ; más/1 ; té/2
+f: Tu/- ; veux/0 ; encore/1 ; du thé/2
+d: Möchtest/0 ; du/- ; noch/1 ; Tee/2
+#10
+s: Hoy/2 ; hace/- ; mucho/0 ; calor/1
+f: Il fait/- ; très/0 ; chaud/1 ; aujourd'hui/2
+d: Heute/2 ; ist/- ; es/- ; so/0 ; heiß/1
+#11
+s: ¿Va a/0 ; llover/1 ; mañana/2
+f: Il va/0 ; pleuvoir/1 ; demain/2
+d: Wird/0 ; es/- ; morgen/2 ; regnen/1
+#12
+s: Hace/- ; mucho/0 ; frío/1 ; afuera/2
+f: Il fait/- ; très/0 ; froid/1 ; dehors/2
+d: Draußen/2 ; ist/- ; es/- ; sehr/0 ; kalt/1
+#13
+s: Acuérdate de/0 ; traer/1 ; una/2 ; chaqueta/3
+f: N'oublie pas de/0 ; prendre/1 ; une/2 ; veste/3
+d: Denk daran/0 ; eine/2 ; Jacke/3 ; mitzunehmen/1
+#14
+s: Hoy/3 ; hace/- ; un tiempo/0 ; muy/1 ; bonito/2
+f: Il fait/0 ; vraiment/1 ; beau/2 ; aujourd'hui/3
+d: Das Wetter/0 ; ist/1 ; heute/3 ; echt/1 ; schön/2
+#15
+s: ¿Cómo/0 ; va/0 ; el trabajo/1 ; últimamente/2
+f: Ça va/0 ; le travail/1 ; en ce moment/2
+d: Wie/0 ; läuft/0 ; die Arbeit/1 ; in letzter Zeit/2
+#16
+s: ¿Estás/0 ; ocupado/1 ; en el trabajo/2
+f: Tu/0 ; es/1 ; occupé/1 ; au travail/2
+d: Hast/1 ; du/0 ; viel/1 ; zu tun/1 ; bei der Arbeit/2
+#17
+s: ¿A qué/0 ; te/1 ; dedicas/2,3
+f: Qu'est-ce que/0 ; tu/1 ; fais/2 ; comme travail/3
+d: Was/0 ; machst/2 ; du/1 ; beruflich/3
+#18
+s: Trabajo/0,2 ; con/2 ; computadoras/3
+f: Je/0 ; travaille/2 ; avec/2 ; des ordinateurs/3
+d: Ich/0 ; arbeite/2 ; mit/2 ; Computern/3
+#19
+s: ¡No/0 ; trabajes/2 ; demasiado/1
+f: Ne te/0 ; tue pas/0,2 ; au travail/2 ; hein/3
+d: Arbeite/2 ; nicht/0 ; zu/1 ; viel/1
+#20
+s: ¿Quieres/0,1 ; ir/2 ; a nadar/3
+f: Tu/0 ; veux/1 ; aller/2 ; nager/3
+d: Willst/1 ; du/0 ; schwimmen/3 ; gehen/2
+#21
+s: ¿Está/0 ; fría/3 ; el agua/1,2
+f: L'eau/1,2 ; est/0 ; froide/3
+d: Ist/0 ; das/1 ; Wasser/2 ; kalt/3
+#22
+s: Se me olvidó/0,1 ; traer/2 ; el traje de baño/3
+f: J'ai/0 ; oublié/1 ; mon maillot de bain/3
+d: Ich/0 ; habe/1 ; meine Badehose/3 ; vergessen/1
+#23
+s: Ten cuidado/0 ; el agua/1 ; está/2 ; muy/2 ; honda/3
+f: Fais attention/0 ; l'eau/1 ; est/2 ; profonde/3
+d: Pass auf/0 ; das Wasser/1 ; ist/2 ; tief/3
+#24
+s: ¿Necesitas/0,1 ; algo/2
+f: Tu/0 ; as besoin/1 ; de quelque chose/2
+d: Brauchst/1 ; du/0 ; etwas/2
+#25
+s: ¿Hay/0 ; algo/1 ; en que/2 ; pueda/- ; ayudar/3,4
+f: Je/3 ; peux/- ; aider/4 ; pour quelque chose/1
+d: Kann/- ; ich/3 ; irgendwie/1 ; helfen/4
+#26
+s: ¿Quieres/0,1 ; tomar/2 ; agua/3,4
+f: Tu/0 ; veux/1 ; de l'eau/3,4
+d: Möchtest/1 ; du/0 ; etwas/3 ; Wasser/4
+#27
+s: Déjame/0,1 ; cargar/2 ; eso/2 ; por ti/3
+f: Laisse/0 ; moi/1 ; porter/2 ; ça/2 ; pour toi/3
+d: Lass/0 ; mich/1 ; das/2 ; für dich/3 ; tragen/2
+#28
+s: Gracias/0 ; a todos/1 ; por recibirme/2,3
+f: Merci/0 ; à tous/1 ; de m'accueillir/2,3
+d: Danke/0 ; euch allen/1 ; dass ihr mich/3 ; aufgenommen habt/2
+#29
+s: ¡Buenos días/0
+f: Bonjour/0
+d: Guten Morgen/0
+#30
+s: Buenas noches/0 ; que duermas/1 ; bien/2
+f: Bonne nuit/0 ; dors/1 ; bien/2
+d: Gute Nacht/0 ; schlaf/1 ; gut/2
+#31
+s: Mucho/0 ; gusto/1 ; en conocerte/2,3
+f: Enchanté/1 ; de te/3 ; rencontrer/2
+d: Schön/1 ; dich/3 ; kennenzulernen/2
+#32
+s: ¿Cómo/2 ; has estado/1 ; tú/0
+f: Comment/2 ; ça va/2 ; depuis le temps/1
+d: Wie/2 ; geht's/2 ; dir/0 ; so/1
+#33
+s: ¿Cómo/2 ; está/2 ; tu/0 ; salud/1
+f: Comment/2 ; va/2 ; ta/0 ; santé/1
+d: Wie/2 ; geht's/2 ; deiner/0 ; Gesundheit/1
+#34
+s: Siéntate/1 ; por favor/0
+f: Assieds-toi/1 ; je t'en prie/0
+d: Setz dich/1 ; bitte/0
+#35
+s: Siéntete/0 ; como en/0 ; tu/1 ; casa/2
+f: Fais/0 ; comme/0 ; chez toi/1,2
+d: Fühl dich/0 ; wie/0 ; zu Hause/1,2
+#36
+s: Tu/0 ; casa/1 ; es/2 ; muy/2 ; bonita/3
+f: Ta/0 ; maison/1 ; est/2 ; vraiment/2 ; belle/3
+d: Dein/0 ; Zuhause/1 ; ist/2 ; wunderschön/2,3
+#37
+s: ¡Feliz/1 ; cumpleaños/0
+f: Joyeux/1 ; anniversaire/0
+d: Alles Gute/1 ; zum Geburtstag/0
+#38
+s: ¡Feliz/1 ; Año Nuevo/0
+f: Bonne/1 ; année/0
+d: Frohes/1 ; neues Jahr/0
+#39
+s: Los/3 ; extraño/2 ; mucho/1 ; a todos/3
+f: Vous/3 ; me manquez/2 ; beaucoup/1 ; tous/3
+d: Ich/0 ; vermisse/2 ; euch alle/3 ; sehr/1
+#40
+s: Gracias/0 ; por el regalo/2
+f: Merci/0 ; pour le cadeau/2
+d: Danke/0 ; für das Geschenk/2
+#41
+s: Perdón/0 ; llegué/1,2,3 ; tarde/2
+f: Désolé/0 ; je/1 ; suis/2 ; en retard/2
+d: Entschuldigung/0 ; ich/1 ; bin/2 ; zu spät/2
+#42
+s: ¿Cómo/2,3 ; te/0 ; llamas/1
+f: Comment/2 ; tu/0 ; t'appelles/1
+d: Wie/2 ; heißt/1 ; du/0
+#43
+s: ¿Cuántos/1 ; años/2 ; tiene/- ; él/0
+f: Il/0 ; a/- ; quel âge/1,2
+d: Wie alt/1,2 ; ist/- ; er/0
+#44
+s: ¿Tienes/0 ; hambre/1
+f: Tu/0 ; as faim/1
+d: Hast/- ; du/0 ; Hunger/1
+#45
+s: ¿Qué/3 ; quieres/0,1 ; comer/2
+f: Qu'est-ce que/3 ; tu/0 ; veux/1 ; manger/2
+d: Was/3 ; möchtest/1 ; du/0 ; essen/2
+#46
+s: ¿Te gusta/0,1 ; la comida/2 ; picante/3
+f: Tu/0 ; aimes/1 ; manger/2 ; épicé/3
+d: Isst/2 ; du/0 ; gern/1 ; scharf/3
+#47
+s: No puedo/1 ; comer/1 ; picante/2
+f: Je/0 ; ne peux pas/1 ; manger/1 ; épicé/2
+d: Ich/0 ; kann/1 ; nichts/1 ; Scharfes/2 ; essen/1
+#48
+s: ¿Me/0 ; puedes/0 ; servir/1 ; más/2 ; arroz/3
+f: Je/0 ; peux/0 ; reprendre/1,2 ; du riz/3
+d: Kann/0 ; ich/0 ; noch/2 ; etwas Reis/3 ; haben/1
+#49
+s: Déjame/0,1 ; lavar/2 ; los platos/3
+f: Laisse/0 ; moi/1 ; faire/2 ; la vaisselle/3
+d: Lass/0 ; mich/1 ; abwaschen/2,3
+#50
+s: ¿Quién/2 ; cocinó/3 ; esto/0
+f: Qui/2 ; a/1 ; préparé/3 ; ça/0
+d: Wer/2 ; hat/1 ; das/0 ; gekocht/3
+#51
+s: Esta/0 ; sopa/1 ; está/2 ; muy/2 ; buena/3
+f: Cette/0 ; soupe/1 ; est/2 ; très/2 ; bonne/3
+d: Diese/0 ; Suppe/1 ; ist/2 ; sehr/2 ; gut/3
+#52
+s: ¿Me/3 ; enseñas/2 ; a/1 ; hacer/5 ; esto/6
+f: Tu/0 ; peux/1 ; m'apprendre/2,3 ; à faire/5 ; ça/6
+d: Kannst/1 ; du/0 ; mir/3 ; zeigen/2 ; wie/4 ; man/- ; das/6 ; macht/5
+#53
+s: Vamos/0,3 ; a salir/1 ; a comer dim sum/2
+f: Allons/0,3 ; manger/2 ; des dim sum/2 ; dehors/1
+d: Lass/3 ; uns/0 ; Dim Sum/2 ; essen gehen/1
+#54
+s: Yo/1 ; pago/2 ; la cuenta/2
+f: C'est/0 ; moi/1 ; qui paie/2
+d: Ich/1 ; zahle/2 ; die Rechnung/2
+#55
+s: ¿A qué hora/2 ; salimos/0,3 ; mañana/1
+f: On/0 ; part/3 ; à quelle heure/2 ; demain/1
+d: Wann/2 ; fahren/3 ; wir/0 ; morgen/1 ; los/3
+#56
+s: ¿Ya/2 ; tienes/0 ; todo/1,2
+f: Tu/0 ; as/2 ; tout/1,2
+d: Hast/2 ; du/0 ; alles/1,2
+#57
+s: No/0 ; olvides/1 ; tu/3 ; teléfono/3
+f: N'oublie pas/0,1 ; ton/3 ; téléphone/3
+d: Vergiss/1 ; dein/3 ; Handy/3 ; nicht/0
+#58
+s: Ponte/0 ; el cinturón/2
+f: Attache/0 ; ta ceinture/2
+d: Schnall/0 ; dich/- ; an/0,1
+#59
+s: ¿Está/- ; lejos/2 ; de/0 ; aquí/1
+f: C'est/- ; loin/2 ; d'/0 ; ici/1
+d: Ist/- ; es/- ; weit/2 ; von/0 ; hier/1
+#60
+s: Ya/3 ; casi/1 ; llegamos/0,2
+f: On/0 ; est/- ; presque/1 ; arrivés/2
+d: Wir/0 ; sind/- ; fast/1 ; da/2
+#61
+s: Da vuelta/1 ; a la izquierda/2 ; aquí/0
+f: Tourne/1 ; à gauche/2 ; ici/0
+d: Hier/0 ; links/2 ; abbiegen/1
+#62
+s: ¿Dónde/3 ; nos/0 ; estacionamos/2
+f: On/0 ; se gare/2 ; où/3
+d: Wo/3 ; sollen/1 ; wir/0 ; parken/2
+#63
+s: Estoy/0 ; un poco/1 ; cansado/2
+f: Je/0 ; suis/- ; un peu/1 ; fatigué/2
+d: Ich/0 ; bin/- ; ein bisschen/1 ; müde/2
+#64
+s: Tomémonos/0,2,4 ; una foto/3 ; juntos/1
+f: Prenons/0,2,4 ; une photo/3 ; ensemble/1
+d: Lass/4 ; uns/0 ; zusammen/1 ; ein Foto/3 ; machen/2
+#65
+s: Hoy/0 ; hace/- ; mucho/1 ; viento/2
+f: Il y a/- ; du vent/2 ; aujourd'hui/0
+d: Heute/0 ; ist/- ; es/- ; sehr/1 ; windig/2
+#66
+s: Mañana/0 ; va a/1 ; hacer sol/2
+f: Demain/0 ; il va/1 ; faire beau/2
+d: Morgen/0 ; wird/1 ; es/- ; sonnig/2
+#67
+s: Trae/0 ; un/1 ; paraguas/2
+f: Prends/0 ; un/1 ; parapluie/2
+d: Nimm/0 ; einen/1 ; Regenschirm/2
+#68
+s: ¿Tienes/0 ; frío/1
+f: Tu/0 ; as froid/1
+d: Ist/- ; dir/0 ; kalt/1
+#69
+s: Prende/0 ; el aire acondicionado/1 ; por favor/2
+f: Allume/0 ; la clim/1 ; s'il te plaît/2
+d: Mach/0 ; bitte/2 ; die Klimaanlage/1 ; an/0
+#70
+s: ¿Cómo/2 ; te/0 ; fue/2 ; hoy/1
+f: Ta/0 ; journée/1 ; s'est bien passée/2
+d: Wie/2 ; war/2 ; dein/0 ; Tag/1
+#71
+s: ¿A qué hora/1 ; sales/0,2 ; del trabajo/2
+f: Tu/0 ; finis/2 ; à quelle heure/1
+d: Wann/1 ; hast/0 ; du/0 ; Feierabend/2
+#72
+s: ¿Trabajas/0,2,3 ; mañana/1
+f: Tu/0 ; travailles/2,3 ; demain/1
+d: Musst/2 ; du/0 ; morgen/1 ; arbeiten/3
+#73
+s: Estoy/0 ; de vacaciones/2 ; esta semana/1
+f: Je/0 ; suis/- ; en vacances/2 ; cette semaine/1
+d: Ich/0 ; habe/- ; diese Woche/1 ; Urlaub/2
+#74
+s: Mi/0 ; trabajo/1 ; está/2 ; muy/2 ; pesado/3
+f: Mon/0 ; travail/1 ; est/2 ; très/2 ; chargé/3
+d: Ich/0 ; habe/- ; bei der Arbeit/1 ; sehr/2 ; viel zu tun/3
+#75
+s: Vamos/0,1,3 ; a la playa/2
+f: Allons/0,1,3 ; à la plage/2
+d: Lass/3 ; uns/0 ; an den Strand/2 ; gehen/1
+#76
+s: Ponte/0 ; bloqueador/1
+f: Mets/0 ; de la crème solaire/1
+d: Creme dich/0 ; mit Sonnencreme/1 ; ein/0
+#77
+s: ¿Sabes/1 ; nadar/2
+f: Tu/0 ; sais/1 ; nager/2
+d: Kannst/1 ; du/0 ; schwimmen/2
+#78
+s: El agua/0,1 ; está/2 ; tibia/3
+f: L'eau/0,1 ; est/2 ; bonne/3
+d: Das/0 ; Wasser/1 ; ist/2 ; warm/3
+#79
+s: Yo/1 ; cuido/2 ; a los niños/3
+f: Je/1 ; surveille/2 ; les enfants/3
+d: Ich/1 ; passe/2 ; auf die Kinder/3 ; auf/2
+#80
+s: ¿Te/2 ; ayudo/0,1 ; a cocinar/3
+f: Je/0 ; peux/0 ; t'aider/1,2 ; à cuisiner/3
+d: Kann/0 ; ich/0 ; dir/2 ; beim Kochen/3 ; helfen/1
+#81
+s: ¿Quieres/0 ; que/- ; yo/1 ; lo cargue/2
+f: Tu/3 ; veux/0 ; que je/1 ; porte ça/2
+d: Soll/0 ; ich/1 ; das/- ; für dich/3 ; tragen/2
+#82
+s: Déjame/0,1 ; traértelo/2,3,4
+f: Laisse/0 ; moi/1 ; te/4 ; le/3 ; chercher/2
+d: Lass/0 ; mich/1 ; das/3 ; für dich/4 ; holen/2
+#83
+s: Siéntate/0 ; y/- ; descansa/1 ; un rato/2
+f: Assieds-toi/0 ; et/- ; repose-toi/1 ; un peu/2
+d: Setz dich/0 ; und/- ; ruh dich/1 ; ein bisschen/2 ; aus/1
+#84
+s: ¿Quieres/0 ; que/- ; te/3 ; lleve/1,2
+f: Tu/3 ; veux/0 ; que je/1 ; te/3 ; dépose/2
+d: Soll/0 ; ich/1 ; dich/3 ; fahren/2
+#85
+s: Llámame/4,5 ; si/- ; necesitas/2 ; algo/1
+f: Appelle-moi/4,5 ; si/- ; tu/- ; as besoin/0,2 ; de quelque chose/1
+d: Ruf/4 ; mich/5 ; an/4 ; wenn/3 ; du/- ; etwas/1 ; brauchst/0,2
+#86
+s: No/1 ; entiendo/0,2
+f: Je/0 ; ne comprends pas/1,2
+d: Ich/0 ; verstehe/2 ; das/- ; nicht/1
+#87
+s: Habla/1 ; más despacio/2,3 ; por favor/0
+f: Parle/1 ; plus lentement/2,3 ; s'il te plaît/0
+d: Sprich/1 ; bitte/0 ; langsamer/2,3
+#88
+s: ¿Cómo/2 ; se dice/3 ; esto/0 ; en cantonés/1
+f: Comment/2 ; on dit/3 ; ça/0 ; en cantonais/1
+d: Wie/2 ; sagt man/3 ; das/0 ; auf Kantonesisch/1
+#89
+s: ¡La cena/1 ; está lista/0,2
+f: Le dîner/1 ; est prêt/0,2
+d: Das Abendessen/1 ; ist fertig/0,2
+#90
+s: ¡Vengan/0 ; a comer/1
+f: Venez/0 ; manger/1
+d: Kommt/0 ; essen/1
+#91
+s: Lávate las manos/2 ; antes de/1,3 ; comer/0
+f: Lave-toi les mains/2 ; avant de/1,3 ; manger/0
+d: Wasch dir die Hände/2 ; vor dem Essen/0,1,3
+#92
+s: Agarra/0 ; unos/1 ; palillos/2
+f: Prends/0 ; des/1 ; baguettes/2
+d: Nimm/0 ; dir/- ; Stäbchen/1,2
+#93
+s: ¿Me/4 ; pasas/1 ; un/2 ; plato hondo/3 ; por favor/0
+f: Tu/- ; me/4 ; passes/1 ; un/2 ; bol/3 ; s'il te plaît/0
+d: Gibst/1 ; du/- ; mir/4 ; bitte/0 ; eine/2 ; Schüssel/3
+#94
+s: Come/0 ; más/1 ; verduras/2
+f: Mange/0 ; plus de/1 ; légumes/2
+d: Iss/0 ; mehr/1 ; Gemüse/2
+#95
+s: Prueba/0 ; un poco/1 ; de esto/2
+f: Goûte/0 ; un peu/1 ; de ça/2
+d: Probier/0 ; mal/- ; ein bisschen/1 ; davon/2
+#96
+s: ¿Queda/0,1 ; más/0 ; sopa/2
+f: Il reste/0,1 ; de la soupe/2
+d: Gibt/1 ; es/- ; noch/0 ; Suppe/2
+#97
+s: Todavía/1 ; tengo/0 ; hambre/2
+f: J'ai/0 ; encore/1 ; faim/2
+d: Ich/0 ; habe/- ; noch/1 ; Hunger/2
+#98
+s: Ya/1 ; comí/0 ; suficiente/1 ; gracias/2
+f: J'ai/0 ; assez/1 ; mangé/1 ; merci/2
+d: Ich/0 ; habe/- ; genug/1 ; danke/2
+#99
+s: Esto/0 ; está/- ; demasiado/1 ; salado/2
+f: C'est/0 ; trop/1 ; salé/2
+d: Das/0 ; ist/- ; zu/1 ; salzig/2
+#100
+s: Le falta/0 ; un poco de/0 ; sal/1
+f: C'est/- ; un peu/0 ; fade/1
+d: Es/- ; ist/- ; ein bisschen/0 ; fad/1
+#101
+s: Esto/0 ; está/- ; muy/1 ; fresco/2
+f: C'est/0 ; tellement/1 ; frais/2
+d: Das/0 ; ist/- ; so/1 ; frisch/2
+#102
+s: ¿Esto/0 ; pica/1
+f: C'est/0 ; épicé/1
+d: Ist/- ; das/0 ; scharf/1
+#103
+s: ¿Qué/3 ; tiene/2 ; este/0 ; platillo/1
+f: Qu'est-ce qu'il y a/2,3 ; dans ce/0 ; plat/1
+d: Was/3 ; ist/2 ; in diesem/0 ; Gericht/1
+#104
+s: Nunca/1 ; había probado/2 ; esto/3
+f: Je/0 ; n'ai jamais/1 ; goûté/2 ; ça/3
+d: Ich/0 ; habe/- ; das/3 ; noch nie/1 ; probiert/2
+#105
+s: Me encanta/2,3 ; tu/0 ; comida/1
+f: J'adore/2,3 ; ta/0 ; cuisine/1
+d: Ich/- ; liebe/2,3 ; dein/0 ; Essen/1
+#106
+s: ¿Quién/0 ; quiere/1 ; el último/2 ; pedazo/3
+f: Qui/0 ; veut/1 ; le dernier/2 ; morceau/3
+d: Wer/0 ; will/1 ; das letzte/2 ; Stück/3
+#107
+s: Guarda/0 ; un poco/1 ; para después/2,3
+f: Garde/0 ; en un peu/1 ; pour plus tard/2,3
+d: Heb/0 ; etwas/1 ; für später/2,3 ; auf/0
+#108
+s: Pon/0,2 ; las sobras/1 ; en el refri/3
+f: Mets/0,2 ; les restes/1 ; au frigo/3
+d: Stell/0,2 ; die Reste/1 ; in den Kühlschrank/3
+#109
+s: Pidamos/1,3 ; comida para llevar/2 ; esta noche/0
+f: Commandons/1,3 ; à emporter/2 ; ce soir/0
+d: Lass/3 ; uns/- ; heute Abend/0 ; Essen/2 ; bestellen/1

@@ -18,6 +18,18 @@ def tokens(line, tsn):
     return out
 
 
+def eu_tokens(line):
+
+    out = []
+
+    for part in line.split(" ; "):
+        w, refs = part.rsplit("/", 1)
+        refs = refs.strip()
+        out.append({"hz": w.strip(), "rom": "", "refs": [] if refs == "-" else [int(r) for r in refs.split(",")]})
+
+    return out
+
+
 def parse(path):
 
     entries = []
@@ -37,6 +49,8 @@ def parse(path):
             cur["cmn"] = tokens(line[3:], False)
         elif line.startswith("t: "):
             cur["tsn"] = tokens(line[3:], True)
+        elif line[:3] in ("s: ", "f: ", "d: "):
+            cur[{"s": "es", "f": "fr", "d": "de"}[line[0]]] = eu_tokens(line[3:])
         elif line.startswith("n: "):
             cur["tip"] = line[3:].strip()
         elif line.startswith("nt: "):

@@ -1,0 +1,186 @@
+@ Start Here | I made an app to learn Cantonese and Taishanese.
+g: I / made / an app / to learn / Cantonese / and / Taishanese
+y: 我/ngo5/0 ; 整咗/zing2 zo2/1 ; 個/go3/2 ; 程式/cing4 sik1/2 ; 嚟/lai4/3 ; 學/hok6/3 ; 廣東話/gwong2 dung1 waa2/4 ; 同/tung4/5 ; 台山話/toi4 saan1 waa2/6
+m: 我/wǒ/0 ; 做了/zuò le/1 ; 一个/yí ge/2 ; 应用/yìng yòng/2 ; 来/lái/3 ; 学/xué/3 ; 粤语/yuè yǔ/4 ; 和/hé/5 ; 台山话/tái shān huà/6
+t: 我/ŋɔi33/0 ; 整/dzein55/1 ; 個/gɔi33/2 ; 程式/tsiaŋ22 sek55/2? ; 來/lɔi22/3 ; 學/hɔk32/3 ; 廣東話/gɔŋ55 əŋ33 va325/4? ; 同/həŋ22/5 ; 台山話/hɔi22 san33 va325/6
+s: Hice/0,1 ; una app/2 ; para aprender/3 ; cantonés/4 ; y/5 ; taishanés/6
+f: J'ai/0 ; fait/1 ; une appli/2 ; pour apprendre/3 ; le cantonais/4 ; et/5 ; le taïshanais/6
+d: Ich/0 ; habe/- ; eine App/2 ; gemacht/1 ; um/3 ; Kantonesisch/4 ; und/5 ; Taishanesisch/6 ; zu lernen/3
+n: 整 zing2 "make, fix" is the everyday verb for making anything. Lots of people just say "app" in English: 我整咗個 app.
+nt: In 台山話 hɔi22 san33 va325, the t of 台 becomes h. That's a Taishanese hallmark.
+
+@ Start Here | So I can talk with all of you.
+g: So that / I / can / with / all of you / chat
+y: 等/dang2/0 ; 我/ngo5/1 ; 可以/ho2 ji5/2 ; 同/tung4/3 ; 你哋/nei5 dei6/4 ; 傾偈/king1 gai2/5
+m: 这样/zhè yàng/0 ; 我/wǒ/1 ; 就能/jiù néng/2 ; 跟/gēn/3 ; 你们/nǐ men/4 ; 聊天/liáo tiān/5
+t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 可以/hɔ55 yi21/2 ; 同/həŋ22/3 ; 你/ni21/4? ; 傾偈/kein33 gai325/5
+s: Para que/0 ; pueda/1,2 ; platicar/5 ; con/3 ; todos ustedes/4
+f: Comme ça/0 ; je/1 ; peux/2 ; parler/5 ; avec/3 ; vous tous/4
+d: Damit/0 ; ich/1 ; mit/3 ; euch allen/4 ; reden/5 ; kann/2
+n: 傾偈 king1 gai2 means "to chat", the word for relaxed family talk.
+nt: Taishanese makes "you" plural by changing the tone: ni33 is "you", ni21 is "you all". Check it with family.
+
+@ Start Here | If I say something wrong, please tell me.
+g: If / I / say (it) / wrong / please / tell / me
+y: 如果/jyu4 gwo2/0 ; 我/ngo5/1 ; 講錯/gong2 co3/2,3 ; 唔該/m4 goi1/4 ; 話/waa6/5 ; 我知/ngo5 zi1/6
+m: 如果/rú guǒ/0 ; 我/wǒ/1 ; 说错了/shuō cuò le/2,3 ; 请/qǐng/4 ; 告诉/gào su/5 ; 我/wǒ/6
+t: 如果/yi22 gɔ55/0? ; 我/ŋɔi33/1 ; 講錯/gɔŋ55 tɔ33/2,3 ; 唔該/m22 gɔi33/4 ; 話/va325/5 ; 我知/ŋɔi33 di33/6?
+s: Si/0 ; digo/1,2 ; algo mal/3 ; por favor/4 ; díganme/5,6
+f: Si/0 ; je/1 ; dis/2 ; une bêtise/3 ; dites-le-moi/5,6 ; s'il vous plaît/4
+d: Wenn/0 ; ich/1 ; etwas/- ; Falsches/3 ; sage/2 ; sagt/5 ; es mir/6 ; bitte/4
+n: 話我知 waa6 ngo5 zi1 is "tell me", literally "say so I know".
+nt: 錯 is tɔ33: Cantonese c becomes t in Taishanese.
+
+@ Talking About the Day | I'm home!
+g: I / (am) back / (now)
+y: 我/ngo5/0 ; 返嚟/faan1 lai4/1 ; 喇/laa3/2
+m: 我/wǒ/0 ; 回来/huí lái/1 ; 了/le/2
+t: 我/ŋɔi33/0 ; 返歸/fan33 gi33/1 ; 啦/la55/2?
+s: Ya/2 ; llegué/0,1
+f: Je/0 ; suis/- ; rentré/1
+d: Ich/0 ; bin/- ; wieder da/1
+n: 我返嚟喇 is what everyone calls out walking in the door. 返嚟 faan1 lai4 is "come back".
+nt: 返歸 fan33 gi33 is "go back home".
+
+@ Talking About the Day | What did you do today?
+g: You / today / did / what
+y: 你/nei5/0 ; 今日/gam1 jat6/1 ; 做咗/zou6 zo2/2 ; 乜嘢/mat1 je5/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 做了/zuò le/2 ; 什么/shén me/3
+t: 你/ni33/0 ; 今日/gim33 ŋit21/1 ; 做/du33/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
+s: ¿Qué/3 ; hiciste/0,2 ; hoy/1
+f: Tu/0 ; as fait/2 ; quoi/3 ; aujourd'hui/1
+d: Was/3 ; hast/- ; du/0 ; heute/1 ; gemacht/2
+n: Chinese puts "today" right after "you", before the verb.
+nt: 乜嘢 mɔt55 yia33 is "what thing".
+
+@ Talking About the Day | What did you have for lunch?
+g: You / (for) lunch / ate / what
+y: 你/nei5/0 ; 晏晝/aan3 zau3/1 ; 食咗/sik6 zo2/2 ; 乜嘢/mat1 je5/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 午饭/wǔ fàn/1 ; 吃了/chī le/2 ; 什么/shén me/3
+t: 你/ni33/0 ; 晏晝/an33 tsiu215/1 ; 吃/hiak33/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
+s: ¿Qué/3 ; comiste/0,2 ; en la comida/1
+f: Tu/0 ; as mangé/2 ; quoi/3 ; ce midi/1
+d: Was/3 ; hast/- ; du/0 ; zu Mittag/1 ; gegessen/2
+n: 晏晝 aan3 zau3 means both "midday" and "lunch".
+nt: Lunch is 晏晝 an33 tsiu215, with a rising changed tone.
+
+@ Talking About the Day | Did anything fun happen today?
+g: Today / was there? / anything / fun
+y: 今日/gam1 jat6/0 ; 有冇/jau5 mou5/1 ; 乜嘢/mat1 je5/2 ; 好玩/hou2 waan2/3 ; 呀/aa3/-
+m: 今天/jīn tiān/0 ; 有没有/yǒu méi yǒu/1 ; 什么/shén me/2 ; 好玩的事/hǎo wán de shì/3
+t: 今日/gim33 ŋit21/0 ; 有冇/yiu33 mɔu55/1 ; 乜嘢/mɔt55 yia33/2 ; 爽/sɔŋ55/3? ; 啊/a33/-
+s: ¿Pasó/1 ; algo/2 ; divertido/3 ; hoy/0
+f: Il s'est passé/1 ; quelque chose/2 ; de drôle/3 ; aujourd'hui/0
+d: Ist/1 ; heute/0 ; was/2 ; Lustiges/3 ; passiert/1
+n: 有冇 jau5 mou5, "have or not", turns it into a yes-or-no question.
+nt: 爽 sɔŋ55 is "fun, a good time".
+
+@ Talking About the Day | Work was so busy today.
+g: Today / (at) work / (was) so / busy
+y: 今日/gam1 jat6/0 ; 返工/faan1 gung1/1 ; 好/hou2/2 ; 忙/mong4/3
+m: 今天/jīn tiān/0 ; 上班/shàng bān/1 ; 好/hǎo/2 ; 忙/máng/3
+t: 今日/gim33 ŋit21/0 ; 返工/fan33 gəŋ33/1 ; 好/hɔu55/2 ; 忙/mɔŋ22/3
+s: Hoy/0 ; tuve/- ; muchísimo/2,3 ; trabajo/1
+f: Aujourd'hui/0 ; j'ai été/2 ; débordé/3 ; au travail/1
+d: Heute/0 ; war/- ; bei der Arbeit/1 ; so/2 ; viel los/3
+n: 返工 faan1 gung1, "return to work", just means "go to work".
+nt: Busy is 忙 mɔŋ22.
+
+@ Talking About the Day | What's for dinner tonight?
+g: Tonight / eat / what
+y: 今晚/gam1 maan5/0 ; 食/sik6/1 ; 乜嘢/mat1 je5/2 ; 呀/aa3/-
+m: 今晚/jīn wǎn/0 ; 吃/chī/1 ; 什么/shén me/2
+t: 今晚/gim33 man21/0 ; 吃/hiak33/1 ; 乜嘢/mɔt55 yia33/2 ; 啊/a33/-
+s: ¿Qué/2 ; vamos a cenar/1 ; hoy/0
+f: On/- ; mange/1 ; quoi/2 ; ce soir/0
+d: Was/2 ; gibt's/1 ; heute/0 ; zum Abendessen/1
+n: Short and very common: 今晚食乜嘢呀? "Tonight eat what?"
+nt: Tonight is 今晚 gim33 man21.
+
+@ Talking About the Day | Did you go out today?
+g: You / today / went out? / (or not)
+y: 你/nei5/0 ; 今日/gam1 jat6/1 ; 有冇/jau5 mou5/2,3 ; 出街/ceot1 gaai1/2 ; 呀/aa3/-
+m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 出去了/chū qù le/2 ; 吗/ma/3
+t: 你/ni33/0 ; 今日/gim33 ŋit21/1 ; 有冇/yiu33 mɔu55/2,3 ; 出街/tsut55 gai21/2 ; 啊/a33/-
+s: ¿Saliste/0,2 ; hoy/1
+f: Tu/0 ; es sorti/2 ; aujourd'hui/1
+d: Warst/2 ; du/0 ; heute/1 ; unterwegs/2
+n: 出街 ceot1 gaai1, "go out to the street", means going out anywhere.
+nt: Same word: 出街 tsut55 gai21.
+
+@ Talking About the Day | What time did you get home?
+g: You / what time / got (back) / home
+y: 你/nei5/0 ; 幾點/gei2 dim2/1 ; 返到/faan1 dou3/2 ; 屋企/uk1 kei2/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 几点/jǐ diǎn/1 ; 到/dào/2 ; 家/jiā/3
+t: 你/ni33/0 ; 幾點/gi55 iam55/1 ; 返到/fan33 ɔu33/2 ; 屋企/ək55 ki55/3 ; 啊/a33/-
+s: ¿A qué hora/1 ; llegaste/0,2 ; a casa/3
+f: Tu/0 ; es rentré/2,3 ; à quelle heure/1
+d: Wann/1 ; bist/- ; du/0 ; nach Hause/3 ; gekommen/2
+n: 屋企 uk1 kei2 is "home". You'll hear it constantly.
+nt: Home is 屋企 ək55 ki55.
+
+@ Talking About the Day | What are you watching?
+g: You / (are) watching / what
+y: 你/nei5/0 ; 睇緊/tai2 gan2/1 ; 乜嘢/mat1 je5/2 ; 呀/aa3/-
+m: 你/nǐ/0 ; 在看/zài kàn/1 ; 什么/shén me/2
+t: 你/ni33/0 ; 睇緊/hai55 gin55/1? ; 乜嘢/mɔt55 yia33/2 ; 啊/a33/-
+s: ¿Qué/2 ; estás viendo/0,1
+f: Tu/0 ; regardes/1 ; quoi/2
+d: Was/2 ; schaust/1 ; du/0 ; gerade/1
+n: 緊 gan2 after a verb means "-ing": 睇緊 "watching".
+nt: To watch is 睇 hai55.
+
+@ Talking About the Day | Let's watch something together tonight.
+g: Tonight / together / watch / something / let's
+y: 今晚/gam1 maan5/0 ; 一齊/jat1 cai4/1 ; 睇/tai2/2 ; 啲嘢/di1 je5/3 ; 啦/laa1/4
+m: 今晚/jīn wǎn/0 ; 一起/yì qǐ/1 ; 看/kàn/2 ; 点东西/diǎn dōng xi/3 ; 吧/ba/4
+t: 今晚/gim33 man21/0 ; 一齊/yit55 tai225/1 ; 睇/hai55/2 ; 嘢/yia33/3 ; 啦/la55/4
+s: Veamos/2,4 ; algo/3 ; juntos/1 ; esta noche/0
+f: Regardons/2,4 ; quelque chose/3 ; ensemble/1 ; ce soir/0
+d: Lass/4 ; uns/- ; heute Abend/0 ; zusammen/1 ; was/3 ; schauen/2
+n: 一齊 jat1 cai4 is "together", and it goes before the verb.
+nt: Together is 一齊 yit55 tai225.
+
+@ Talking About the Day | I'm going to the store. Do you need anything?
+g: I / go / (to the) store / you / need? / anything
+y: 我/ngo5/0 ; 去/heoi3/1 ; 超市/ciu1 si5/2 ; 你/nei5/3 ; 使唔使/sai2 m4 sai2/4 ; 買嘢/maai5 je5/5
+m: 我/wǒ/0 ; 去/qù/1 ; 超市/chāo shì/2 ; 你/nǐ/3 ; 要/yào/4 ; 买什么吗/mǎi shén me ma/5
+t: 我/ŋɔi33/0 ; 去/hui33/1 ; 士多舖/si21 dɔ55 pu335/2 ; 你/ni33/3 ; 使唔使/sɔi55 m22 sɔi55/4? ; 買嘢/mai33 yia33/5
+s: Voy/0,1 ; al súper/2 ; ¿necesitas/3,4 ; algo/5
+f: Je/0 ; vais/1 ; au magasin/2 ; tu/3 ; as besoin/4 ; de quelque chose/5
+d: Ich/0 ; gehe/1 ; einkaufen/2 ; brauchst/4 ; du/3 ; was/5
+n: 買嘢 maai5 je5, "buy things", covers anything you might want from the store.
+nt: 士多舖 si21 dɔ55 pu335 borrows English "store", plus 舖 "shop".
+
+@ Talking About the Day | Did you call grandma?
+g: You / called? / grandma / (yet)
+y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 打電話/daa2 din6 waa2/1 ; 畀/bei2/- ; 嫲嫲/maa4 maa4/2 ; 呀/aa3/3
+m: 你/nǐ/0 ; 给/gěi/- ; 奶奶/nǎi nai/2 ; 打电话/dǎ diàn huà/1 ; 了吗/le ma/3
+t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 打電話/a55 ein32 va325/1 ; 畀/i55/- ; 阿人/a33 ŋin22/2 ; 啊/a33/3
+s: ¿Ya/3 ; llamaste/0,1 ; a la abuela/2
+f: Tu/0 ; as appelé/1 ; mamie/2
+d: Hast/- ; du/0 ; Oma/2 ; schon/3 ; angerufen/1
+n: 嫲嫲 maa4 maa4 is dad's mom; mom's mom is 婆婆 po4 po2. Each grandparent has a different word.
+nt: In Taishanese, dad's mom is 阿人 a33 ŋin22.
+
+@ Talking About the Day | How are you feeling today?
+g: You / today / feel / how
+y: 你/nei5/0 ; 今日/gam1 jat6/1 ; 覺得/gok3 dak1/2 ; 點/dim2/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 感觉/gǎn jué/2 ; 怎么样/zěn me yàng/3
+t: 你/ni33/0 ; 今日/gim33 ŋit21/1 ; 覺得/gɔk33 ak55/2? ; 點/iam55/3 ; 啊/a33/-
+s: ¿Cómo/3 ; te sientes/0,2 ; hoy/1
+f: Comment/3 ; tu te sens/0,2 ; aujourd'hui/1
+d: Wie/3 ; fühlst/2 ; du/0 ; dich/- ; heute/1
+n: 點 dim2 is "how". 覺得點 is "feel how".
+nt: How is 點 iam55.
+
+@ Talking About the Day | Today was a good day.
+g: Today / (was) very / happy
+y: 今日/gam1 jat6/0 ; 好/hou2/1 ; 開心/hoi1 sam1/2
+m: 今天/jīn tiān/0 ; 很/hěn/1 ; 开心/kāi xīn/2
+t: 今日/gim33 ŋit21/0 ; 好/hɔu55/1 ; 開心/hɔi33 ɬim33/2
+s: Hoy/0 ; fue/- ; un día/2 ; muy/1 ; bonito/2
+f: Aujourd'hui/0 ; c'était/- ; une très/1 ; bonne journée/2
+d: Heute/0 ; war/- ; ein richtig/1 ; schöner Tag/2
+n: Literally "today very happy". Chinese often skips "was".
+nt: Happy is 開心 hɔi33 ɬim33.

@@ -1,0 +1,329 @@
+0|Road Trip|How much longer until we get there?|0:How long · 1:still / more · 2:until · 3:arrive · 4:(question tone)
+1|Road Trip|Do we need to stop for a rest?|0:Need to? · 1:stop · 2:for a while · 3:rest · 4:a bit
+2|Road Trip|I'll drive, you can sleep.|0:I · 1:drive · 2:you · 3:can · 4:sleep
+3|Road Trip|Do you need to use the bathroom?|0:You · 1:need to? · 2:go to · 3:the bathroom · 4:(question tone)
+4|Meals|Have you eaten yet?|0:You · 1:have eaten · 2:(a meal) · 3:yet?
+5|Meals|This is really delicious!|0:This · 1:(is) really · 2:delicious
+6|Meals|I'm full, thank you.|0:I · 1:(am) very · 2:full · 3:thank you
+7|Meals|Please pass me the soy sauce.|0:Please · 1:pass · 2:to me · 3:the soy sauce
+8|Meals|Everyone, let's eat!|0:Everyone · 1:let's · 2:eat
+9|Meals|Would you like more tea?|0:Would you like? · 1:more · 2:tea
+10|Weather|It's so hot today.|0:(It's) so · 1:hot · 2:today
+11|Weather|Is it going to rain tomorrow?|0:Will it? · 1:rain · 2:tomorrow · 3:(question tone)
+12|Weather|It's very cold outside.|0:(It's) very · 1:cold · 2:outside
+13|Weather|Remember to bring a jacket.|0:Remember to · 1:bring · 2:a · 3:jacket
+14|Weather|The weather is really nice today.|0:The weather · 1:(is) really · 2:nice · 3:today
+15|Work|How's work been lately?|0:How's · 1:work · 2:lately · 3:(question tone)
+16|Work|Are you busy at work?|0:You · 1:busy? · 2:at work
+17|Work|What do you do for work?|0:What · 1:you · 2:do · 3:(for) work
+18|Work|I work with computers.|0:I · 1:(am one who) · 2:works with · 3:computers · 4:(sentence end)
+19|Work|Don't work yourself too hard!|0:Don't · 1:(be) too · 2:worn out · 3:(caring tone)
+20|Swimming|Do you want to go swimming?|0:You · 1:want to? · 2:go · 3:swimming
+21|Swimming|Is the water cold?|0:Is · 1:the · 2:water · 3:cold?
+22|Swimming|I forgot to bring my swimsuit.|0:I · 1:forgot · 2:to bring · 3:(my) swimsuit
+23|Swimming|Be careful, the water is deep.|0:Be careful · 1:the water · 2:(is) very · 3:deep
+24|Helping Out|Do you need anything?|0:You · 1:need? · 2:anything · 3:(question tone)
+25|Helping Out|Is there anything I can help with?|0:Is there · 1:anything · 2:(that) needs · 3:me · 4:to help
+26|Helping Out|Would you like some water?|0:You · 1:want to? · 2:drink · 3:some · 4:water
+27|Helping Out|Let me carry that for you.|0:Let · 1:me · 2:carry (it) · 3:for you
+28|Helping Out|Thank you all for having me.|0:Thank · 1:you all · 2:for hosting · 3:me
+29|Greetings|Good morning!|0:Good morning
+30|Greetings|Good night, sleep well.|0:Good night · 1:sleep · 2:well
+31|Greetings|Nice to meet you.|0:(I'm) very · 1:happy · 2:to meet · 3:you
+32|Greetings|How have you been?|0:You · 1:lately · 2:how (are you)
+33|Greetings|How is your health?|0:Your · 1:health · 2:(is it) good?
+34|Visiting|Please sit down.|0:Please · 1:sit
+35|Visiting|Make yourself at home.|0:Treat (it) as · 1:your own · 2:home · 3:(friendly tone)
+36|Visiting|Your home is beautiful.|0:Your · 1:home · 2:(is) really · 3:beautiful
+37|Visiting|Happy birthday!|0:Birthday · 1:happy
+38|Visiting|Happy New Year!|0:New Year · 1:happy
+39|Visiting|I miss you all.|0:I · 1:(very) much · 2:miss · 3:you all
+40|Visiting|Thank you for the gift.|0:Thank · 1:you · 2:(for) the gift
+41|Visiting|Sorry, I'm late.|0:Sorry · 1:I · 2:(am) late · 3:(it happened)
+42|Getting to know you|What is your name?|0:You · 1:are called · 2:what · 3:name
+43|Getting to know you|How old is he?|0:He · 1:how many · 2:years old
+44|Meals|Are you hungry?|0:You · 1:hungry?
+45|Meals|What would you like to eat?|0:You · 1:want to · 2:eat · 3:what
+46|Meals|Do you like spicy food?|0:You · 1:like? · 2:eat · 3:spicy (food)
+47|Meals|I can't eat spicy food.|0:I · 1:can't eat · 2:spicy (food)
+48|Meals|Can I have some more rice?|0:Can I? · 1:add · 2:a bit more · 3:rice
+49|Meals|Let me wash the dishes.|0:Let · 1:me · 2:wash · 3:the dishes
+50|Meals|Who cooked this?|0:This · 1:is · 2:who · 3:cooked · 4:(it)
+51|Meals|This soup is very good.|0:This · 1:soup · 2:(is) very · 3:good to drink
+52|Meals|Can you teach me how to make this?|0:You · 1:can? · 2:teach · 3:me · 4:how · 5:make · 6:this
+53|Meals|Let's go out for dim sum.|0:We · 1:go out · 2:(to drink tea) dim sum · 3:let's
+54|Meals|I'll pay the bill.|0:Let · 1:me · 2:pay the bill
+55|Road Trip|What time do we leave tomorrow?|0:We · 1:tomorrow · 2:what time · 3:leave
+56|Road Trip|Do you have everything?|0:Your · 1:things · 2:all there yet?
+57|Road Trip|Don't forget your phone.|0:Don't · 1:forget · 2:to bring · 3:(your) phone
+58|Road Trip|Put on your seatbelt.|0:Fasten · 1:properly · 2:(the) seatbelt
+59|Road Trip|Is it far from here?|0:From · 1:here · 2:far?
+60|Road Trip|We're almost there.|0:We · 1:almost · 2:arrive · 3:(already)
+61|Road Trip|Turn left here.|0:Here · 1:turn · 2:left
+62|Road Trip|Where should we park?|0:We · 1:should · 2:park · 3:where
+63|Road Trip|I'm a little tired.|0:I · 1:a little · 2:tired
+64|Road Trip|Let's take a photo together.|0:We · 1:together · 2:take · 3:a photo · 4:let's
+65|Weather|It's windy today.|0:Today · 1:(is) very · 2:windy
+66|Weather|It's going to be sunny tomorrow.|0:Tomorrow · 1:will · 2:(be) sunny
+67|Weather|Bring an umbrella.|0:Bring · 1:an · 2:umbrella
+68|Weather|Are you cold?|0:You · 1:cold?
+69|Weather|Turn on the air conditioning.|0:Turn on · 1:the air conditioning · 2:(please)
+70|Work|How was your day?|0:You · 1:today · 2:how (was it)
+71|Work|When do you finish work?|0:You · 1:when · 2:finish work
+72|Work|Do you work tomorrow?|0:You · 1:tomorrow · 2:need to? · 3:go to work
+73|Work|I'm on vacation this week.|0:I · 1:this week · 2:(am on) vacation
+74|Work|My work is very busy.|0:My · 1:work · 2:(is) very · 3:busy
+75|Swimming|Let's go to the beach.|0:We · 1:go · 2:(to the) beach · 3:let's
+76|Swimming|Put on sunscreen.|0:Put on · 1:sunscreen
+77|Swimming|Can you swim?|0:You · 1:know how to? · 2:swim
+78|Swimming|The water is warm.|0:The · 1:water · 2:(is) very · 3:warm
+79|Helping Out|I'll watch the kids.|0:Let · 1:me · 2:watch · 3:the kids
+80|Helping Out|Can I help you cook?|0:Can I? · 1:help · 2:you · 3:cook
+81|Helping Out|Do you want me to carry that?|0:Need? · 1:me · 2:to carry · 3:for you
+82|Helping Out|Let me get it for you.|0:Let · 1:me · 2:get · 3:(it) · 4:for you
+83|Helping Out|Sit down and rest.|0:Sit down · 1:rest · 2:a bit
+84|Helping Out|Do you need a ride?|0:Need? · 1:me · 2:drive · 3:you
+85|Helping Out|Call me if you need anything.|0:(If you) have · 1:anything · 2:needed · 3:then · 4:call · 5:me
+86|Learning|I don't understand.|0:I · 1:don't · 2:understand
+87|Learning|Please speak more slowly.|0:Please · 1:speak · 2:slower · 3:(a bit)
+88|Learning|How do you say this in Cantonese?|0:This (sentence) · 1:(in) Cantonese · 2:how · 3:say
+89|Meals|Dinner is ready!|0:(We) can eat · 1:dinner · 2:(now)
+90|Meals|Come eat!|0:Come · 1:eat · 2:(friendly push)
+91|Meals|Wash your hands before eating.|0:eating · 1:before · 2:wash your hands · 3:first
+92|Meals|Grab some chopsticks.|0:Grab · 1:a pair of · 2:chopsticks
+93|Meals|Pass me a bowl, please.|0:Please · 1:pass · 2:a · 3:bowl · 4:to me
+94|Meals|Eat more vegetables.|0:Eat · 1:more · 2:vegetables
+95|Meals|Try some of this.|0:Try · 1:a bit · 2:this
+96|Meals|Is there any more soup?|0:Still · 1:is there? · 2:soup
+97|Meals|I'm still hungry.|0:I · 1:still · 2:hungry
+98|Meals|I've had enough, thank you.|0:I · 1:(have had) enough · 2:thank you
+99|Meals|This is too salty.|0:This · 1:too · 2:salty
+100|Meals|It's a little bland.|0:(It's) a little · 1:bland
+101|Meals|This is so fresh.|0:This · 1:(is) so · 2:fresh
+102|Meals|Is this spicy?|0:This · 1:spicy?
+103|Meals|What's in this dish?|0:This · 1:dish · 2:has · 3:what
+104|Meals|I've never tried this before.|0:I · 1:never · 2:tried (before) · 3:this
+105|Meals|I love your cooking.|0:Your · 1:cooking · 2:(is) so · 3:delicious
+106|Meals|Who wants the last piece?|0:Who · 1:wants · 2:the last · 3:piece
+107|Meals|Save some for later.|0:Save · 1:some · 2:for later · 3:(to eat)
+108|Meals|Put the leftovers in the fridge.|0:(take) · 1:the leftovers · 2:put into · 3:the fridge
+109|Meals|Let's order takeout tonight.|0:Tonight · 1:order · 2:takeout · 3:let's
+110|Meals|What do you want for dinner?|0:You · 1:dinner · 2:want to eat · 3:what
+111|Meals|Let's eat out tonight.|0:Tonight · 1:go out · 2:eat · 3:let's
+112|Meals|I'll make breakfast.|0:Let · 1:me · 2:make · 3:breakfast
+113|Meals|Do you want some coffee?|0:You · 1:want? · 2:drink · 3:coffee
+114|Meals|I'm going to make some tea.|0:I · 1:go · 2:make · 3:tea
+115|Meals|Do you want hot or cold water?|0:You · 1:want · 2:hot water · 3:or · 4:cold water
+116|Meals|Cheers!|0:Cheers (drink to victory)
+117|Meals|Let's go grocery shopping.|0:We · 1:go · 2:buy groceries · 3:let's
+118|Meals|We're out of rice.|0:(We're) out of · 1:rice
+119|Family|How is everyone doing?|0:Everyone · 1:how (are you)
+120|Family|How is your mom?|0:Your · 1:mom · 2:how (is she)
+121|Family|Say hi to your parents for me.|0:For me · 1:say hi to · 2:your · 3:parents
+122|Family|When is your birthday?|0:You · 1:when · 2:(have your) birthday
+123|Family|How old are your kids now?|0:Your · 1:kids · 2:now · 3:how old
+124|Family|Your kids are so cute.|0:Your · 1:kids · 2:(are) so · 3:cute
+125|Family|They have grown so much.|0:They · 1:have grown · 2:so much
+126|Family|Does your brother still live nearby?|0:Your · 1:brother · 2:still · 3:live · 4:nearby
+127|Family|Are you married?|0:You · 1:married · 2:yet?
+128|Family|How did you two meet?|0:You two · 1:how · 2:met
+129|Family|We've been together for two years.|0:We · 1:(have been) together · 2:two years
+130|Family|Where did you grow up?|0:You · 1:where · 2:grew up
+131|Family|Where are you from?|0:You · 1:are · 2:where · 3:person (from)
+132|Family|How long have you lived here?|0:You · 1:here · 2:have lived · 3:how long
+133|Family|Do you have any brothers or sisters?|0:You · 1:have? · 2:brothers or sisters
+134|Family|How many people are in your family?|0:Your · 1:family · 2:has · 3:how many · 4:people
+135|School|What grade are you in?|0:You · 1:study (in) · 2:which grade
+136|School|How was school today?|0:Today · 1:(at) school · 2:how (was it)
+137|School|Do you have homework?|0:You · 1:have? · 2:homework
+138|School|Did you finish your homework?|0:You · 1:finished · 2:homework · 3:yet?
+139|School|What's your favorite subject?|0:You · 1:like most · 2:which · 3:subject
+140|School|Do you like your teacher?|0:You · 1:like? · 2:your · 3:teacher
+141|School|When does school start?|0:When · 1:school starts
+142|School|I studied computer science in college.|0:I · 1:in college · 2:studied · 3:computer science
+143|School|Did you go to university?|0:You · 1:have? · 2:studied at · 3:university
+144|Hobbies|What do you do for fun?|0:You · 1:usually · 2:play · 3:what
+145|Hobbies|What are your hobbies?|0:You · 1:have · 2:what · 3:hobbies
+146|Hobbies|I like to cook.|0:I · 1:like · 2:to cook
+147|Hobbies|I like to read.|0:I · 1:like · 2:to read
+148|Hobbies|Do you like to watch movies?|0:You · 1:like? · 2:watch movies
+149|Hobbies|Have you seen this show?|0:You · 1:have seen · 2:this · 3:show · 4:yet?
+150|Hobbies|Let's play cards.|0:We · 1:play cards · 2:let's
+151|Hobbies|Do you want to play a game?|0:You · 1:want? · 2:play · 3:a game
+152|Hobbies|I'm not very good at this.|0:I · 1:not very · 2:good at · 3:this
+153|Hobbies|You're really good at that.|0:You · 1:really · 2:skilled
+154|Hobbies|Do you play any sports?|0:You · 1:do? · 2:play · 3:any sports
+155|Swimming|I like to swim.|0:I · 1:like · 2:to swim
+156|Swimming|I swim every morning.|0:I · 1:every morning · 2:swim
+157|Swimming|The pool is too crowded.|0:The · 1:pool · 2:(has) too many · 3:people
+158|Swimming|Let's go for a swim.|0:We · 1:go · 2:swim · 3:let's
+159|Running & Biking|I go running every day.|0:I · 1:every day · 2:go running
+160|Running & Biking|Let's go for a run.|0:We · 1:go running · 2:let's
+161|Running & Biking|How far did you run?|0:You · 1:ran · 2:how far
+162|Running & Biking|I'm training for a marathon.|0:I · 1:(am) training for · 2:a marathon
+163|Running & Biking|My legs are sore.|0:My · 1:legs · 2:(are) very · 3:sore
+164|Running & Biking|I need to drink some water.|0:I · 1:need to · 2:drink · 3:some · 4:water
+165|Running & Biking|Do you want to go biking?|0:You · 1:want? · 2:go · 3:ride bikes
+166|Running & Biking|I ride my bike to work.|0:I · 1:ride (my) bike · 2:to work
+167|Running & Biking|Wear your helmet.|0:Wear · 1:your · 2:helmet
+168|Running & Biking|My bike has a flat tire.|0:My · 1:bike · 2:(has) · 3:a flat tire
+169|Running & Biking|Let's go for a walk.|0:We · 1:go for a walk · 2:let's
+170|Running & Biking|Let's go hiking this weekend.|0:This weekend · 1:go hiking · 2:let's
+171|Travel|We are going on a cruise.|0:We · 1:(are) going to · 2:take · 3:a cruise
+172|Travel|Have you ever been on a cruise?|0:You · 1:have you ever? · 2:taken · 3:a cruise
+173|Travel|I get seasick.|0:I · 1:get · 2:seasick
+174|Travel|The ship is huge.|0:The · 1:ship · 2:(is) very · 3:big
+175|Travel|What time do we board?|0:We · 1:what time · 2:board (the ship)
+176|Travel|Let's watch the sunset from the deck.|0:We · 1:on the deck · 2:watch · 3:the sunset · 4:let's
+177|Travel|Where are you going on vacation?|0:You · 1:go · 2:where · 3:on vacation
+178|Travel|We're going to Hong Kong.|0:We · 1:(are) going to · 2:Hong Kong
+179|Travel|Have you been to China?|0:You · 1:have you ever? · 2:been to · 3:China
+180|Travel|I want to visit Taishan someday.|0:I · 1:someday · 2:want to · 3:go to · 4:Taishan
+181|Travel|How long is the flight?|0:Flying · 1:takes · 2:how long
+182|Travel|I need to pack my suitcase.|0:I · 1:need to · 2:pack · 3:luggage
+183|Travel|Did you bring your passport?|0:You · 1:brought · 2:passport · 3:yet?
+184|Travel|Our flight is delayed.|0:Our · 1:flight · 2:delayed
+185|Travel|The hotel is very nice.|0:The · 1:hotel · 2:(is) very · 3:nice
+186|Travel|Let's take a lot of photos.|0:We · 1:take · 2:many · 3:photos · 4:let's
+187|Travel|I'll send you the pictures.|0:I · 1:send · 2:the pictures · 3:to you
+188|Travel|How was your trip?|0:Your · 1:trip · 2:how (was it)
+189|Travel|I had a great time.|0:I · 1:had · 2:a great time
+190|Travel|I can't wait to come back.|0:I · 1:can't wait · 2:to come back
+191|Work|How's your job going?|0:Your · 1:job · 2:how (is it)
+192|Work|I have a meeting tomorrow.|0:I · 1:tomorrow · 2:have · 3:a meeting
+193|Work|I have to work late tonight.|0:I · 1:tonight · 2:have to · 3:work overtime
+194|Work|I work from home.|0:I · 1:at home · 2:work
+195|Work|My boss is very nice.|0:My · 1:boss · 2:(is) very · 3:nice
+196|Work|I got a new job.|0:I · 1:found · 2:a new job
+197|Work|I'm off tomorrow.|0:I · 1:tomorrow · 2:(have the) day off
+198|Work|I'm so tired after work.|0:After work · 1:(I'm) so · 2:tired
+199|Plans|What are you doing this weekend?|0:You · 1:this weekend · 2:do · 3:what
+200|Plans|Are you free tomorrow?|0:You · 1:tomorrow · 2:free?
+201|Plans|Let's meet at six.|0:We · 1:at six · 2:meet · 3:let's
+202|Plans|I'll pick you up.|0:I · 1:(will) go · 2:pick up · 3:you
+203|Plans|I'm on my way.|0:I · 1:(am) coming · 2:now
+204|Plans|I'll be there in ten minutes.|0:I · 1:ten minutes · 2:(will) arrive
+205|Plans|Sorry to keep you waiting.|0:Sorry · 1:(to make) you · 2:wait · 3:so long
+206|Plans|Let's go home.|0:We · 1:go home · 2:let's
+207|Around the House|I'm going to bed.|0:I · 1:(am) going · 2:to sleep
+208|Around the House|Did you sleep well?|0:You · 1:sleep · 2:well?
+209|Around the House|Wake up, it's late.|0:Get up · 1:(it's) already · 2:late
+210|Around the House|I'm going to take a shower.|0:I · 1:go · 2:take a shower
+211|Around the House|Can I borrow a towel?|0:Can I? · 1:borrow · 2:a · 3:towel
+212|Around the House|Where do you keep the cups?|0:The cups · 1:(are) put · 2:where
+213|Around the House|Can I use your charger?|0:Can I? · 1:use · 2:your · 3:charger
+214|Around the House|What's the wifi password?|0:wifi · 1:password · 2:is · 3:what
+215|Around the House|Turn down the TV, please.|0:Please · 1:turn (it) quieter · 2:the TV
+216|Around the House|I'll take out the trash.|0:Let · 1:me · 2:take out · 3:the trash
+217|Around the House|Let me help you clean up.|0:Let · 1:me · 2:help · 3:you · 4:clean up
+218|Small Talk|Don't worry about it.|0:No need · 1:worry · 2:(reassuring)
+219|Small Talk|It's no problem.|0:No · 1:problem
+220|Small Talk|That's a good idea.|0:(That's a) good · 1:idea
+221|Small Talk|I agree.|0:I · 1:agree
+222|Small Talk|Really?|0:Really?
+223|Small Talk|That's so funny.|0:(That's) so · 1:funny
+224|Small Talk|I'm so happy for you.|0:I · 1:for you · 2:(am) so · 3:happy
+225|Small Talk|Congratulations!|0:Congratulations
+226|Health|Take care of yourself.|0:Take care · 1:(of yourself)
+227|Health|Get well soon.|0:Soon · 1:get better
+228|Health|Are you feeling better?|0:You · 1:better · 2:yet?
+229|Health|I have a headache.|0:I · 1:(have a) headache
+230|Health|I have a cold.|0:I · 1:caught a cold
+231|Health|Do you need to see a doctor?|0:You · 1:need to? · 2:see a doctor
+232|Health|Be careful driving.|0:Careful · 1:driving
+233|Goodbyes|Text me when you get home.|0:(When you) get home · 1:send a message · 2:to me
+234|Goodbyes|I'll call you later.|0:I · 1:later · 2:call · 3:you
+235|Goodbyes|See you tomorrow.|0:Tomorrow · 1:see (you)
+236|Goodbyes|See you next time.|0:Next time · 1:see (you)
+237|Goodbyes|Have a safe trip.|0:(Have a) smooth journey
+238|Goodbyes|We'll miss you.|0:We · 1:will · 2:(very) much · 3:miss · 4:you
+239|Goodbyes|Come visit us again.|0:Again · 1:come · 2:visit · 3:us
+240|Meals|The food is getting cold.|0:The food · 1:(is getting) cold · 2:(already)
+241|Meals|Can you heat this up?|0:Can you? · 1:heat up · 2:this
+242|Meals|Be careful, it's hot.|0:Careful · 1:(it's) very · 2:hot
+243|Meals|Do you want rice or noodles?|0:You · 1:want · 2:rice · 3:or · 4:noodles
+244|Meals|I don't eat pork.|0:I · 1:don't · 2:eat · 3:pork
+245|Meals|I'm allergic to peanuts.|0:I · 1:to · 2:peanuts · 3:(am) allergic
+246|Meals|I'm full, I can't eat any more.|0:I'm full · 1:can't eat · 2:any more
+247|Meals|Who wants dessert?|0:Who · 1:wants · 2:dessert
+248|Meals|This fruit is very sweet.|0:This · 1:fruit · 2:(is) very · 3:sweet
+249|Meals|Let's eat dumplings.|0:We · 1:eat · 2:dumplings · 3:let's
+250|Meals|How do you make this sauce?|0:This · 1:sauce · 2:how · 3:make
+251|Meals|Can I have the recipe?|0:Can you? · 1:teach · 2:me · 3:how to make (it)
+252|Meals|It smells so good.|0:(It) smells · 1:so good
+253|Meals|Let's set the table.|0:We · 1:set · 2:the table · 3:let's
+254|Meals|Sit next to me.|0:Sit · 1:next to · 2:me
+255|Meals|Is this seat taken?|0:This · 1:seat · 2:(has) · 3:someone?
+256|Shopping|How much is this?|0:This · 1:how much (money)
+257|Shopping|That's too expensive.|0:(That's) too · 1:expensive
+258|Shopping|It's on sale.|0:(It's) on sale
+259|Pets|Do you have a dog?|0:You · 1:have? · 2:a · 3:dog
+260|Pets|What's your dog's name?|0:Your · 1:dog · 2:is called · 3:what
+261|Pets|Can I pet your cat?|0:Can I? · 1:stroke · 2:your · 3:cat
+262|Small Talk|It's my turn.|0:(It's) my · 1:turn
+263|Small Talk|Hurry up!|0:Quickly · 1:(come on)
+264|Small Talk|Wait a moment.|0:Wait · 1:a moment
+265|Small Talk|Slow down.|0:Slower · 1:(a bit)
+266|Small Talk|What happened?|0:What · 1:happened
+267|Learning|What did you say?|0:You · 1:said · 2:what
+268|Learning|Can you say that again?|0:Can you? · 1:say · 2:again · 3:once more
+269|Learning|What does this mean?|0:This · 1:is · 2:what · 3:meaning
+270|Learning|How do you write this?|0:This · 1:how · 2:write
+271|Learning|Your Cantonese is very good.|0:Your · 1:Cantonese · 2:(is) very · 3:good
+272|Learning|I'm learning Cantonese.|0:I · 1:(am) learning · 2:Cantonese
+273|Learning|I'm still learning.|0:I · 1:still · 2:learning
+274|Learning|Teach me some Taishanese.|0:Teach · 1:me · 2:some · 3:Taishanese
+275|Learning|Did I say that right?|0:I · 1:said · 2:right?
+276|Holidays|Happy Lunar New Year!|0:Wishing you · 1:prosperity
+277|Holidays|Merry Christmas!|0:Christmas · 1:happy
+278|Holidays|What are we doing for the holidays?|0:Holidays · 1:we · 2:do · 3:what
+279|Holidays|Let's celebrate!|0:We · 1:celebrate · 2:(a bit) · 3:let's
+280|Greetings|Good afternoon.|0:Good afternoon
+281|Greetings|Long time no see!|0:Very long · 1:no · 2:see
+282|Greetings|You look great.|0:You · 1:look · 2:so good
+283|Greetings|You haven't changed at all.|0:You · 1:not at all · 2:changed
+284|Greetings|Have you lost weight?|0:You · 1:got thinner · 2:(question)
+285|Greetings|I like your haircut.|0:Your · 1:hair · 2:(is) very · 3:nice
+286|Greetings|That shirt looks nice on you.|0:You · 1:wear · 2:that shirt · 3:looks very nice
+287|Shopping|Where did you buy that?|0:You · 1:where · 2:bought (it)
+288|Plans|What time is it?|0:Now · 1:what time
+289|Plans|It's almost dinner time.|0:Almost · 1:dinner · 2:time
+290|Plans|I'm running late.|0:I · 1:(will be) late
+291|Plans|We have plenty of time.|0:We · 1:have · 2:lots of · 3:time
+292|Road Trip|Let's leave early to avoid traffic.|0:Leave · 1:early · 2:to avoid · 3:traffic
+293|Road Trip|The traffic is terrible.|0:Very · 1:jammed
+294|Road Trip|There's an accident ahead.|0:Ahead · 1:there is · 2:an accident
+295|Road Trip|We need to get gas.|0:We · 1:need to · 2:fill up · 3:gas
+296|Road Trip|Can you give me directions?|0:Can you? · 1:show me · 2:the way
+297|Road Trip|Go straight, then turn right.|0:Go straight · 1:then · 2:turn · 3:right
+298|Road Trip|It's across the street.|0:(It's) on · 1:the opposite side
+299|Road Trip|It's just around the corner.|0:(It's) just · 1:around the corner
+300|Road Trip|I'm lost.|0:I · 1:(am) lost
+301|Road Trip|Can you send me the address?|0:Can you? · 1:send · 2:the address · 3:to me
+302|Road Trip|Let's take the subway.|0:We · 1:take · 2:the subway · 3:let's
+303|Road Trip|Where is the bus stop?|0:The bus stop · 1:(is) at · 2:where
+304|Road Trip|I'll get a taxi.|0:I · 1:call · 2:a taxi
+305|Shopping|Let's go to the mall.|0:We · 1:go · 2:to the mall · 3:let's
+306|Shopping|I need to buy a gift.|0:I · 1:need to · 2:buy · 3:a gift
+307|Shopping|Do you have this in a bigger size?|0:(Is there) · 1:a bigger size · 2:of this?
+308|Shopping|Can I try it on?|0:Can I? · 1:try it on
+309|Shopping|It doesn't fit.|0:Not · 1:fitting
+310|Shopping|I'll take this one.|0:I · 1:want · 2:this one
+311|Shopping|Can I pay by card?|0:Can I? · 1:swipe · 2:card
+312|Shopping|Do you need a bag?|0:Need? · 1:a bag
+313|Shopping|Keep the change.|0:No need · 1:to give change
+314|Shopping|Let's go to the market.|0:We · 1:go · 2:to the market · 3:let's
+315|Shopping|These vegetables look fresh.|0:These · 1:vegetables · 2:look · 3:very fresh
+316|Shopping|How much for a pound?|0:A pound · 1:how much (money)
+317|Shopping|Can you give me a discount?|0:Can? · 1:(make it) cheaper · 2:a bit
+318|Shopping|I'm just looking.|0:I · 1:just · 2:looking around
+319|Feelings|I'm so excited!|0:I · 1:(am) so · 2:excited
+320|Feelings|I'm a little nervous.|0:I · 1:(am) a little · 2:nervous
+321|Feelings|I'm bored.|0:I · 1:(am) so · 2:bored
+322|Feelings|I'm really sorry.|0:I · 1:(am) really · 2:sorry
+323|Feelings|I'm so proud of you.|0:I · 1:for you · 2:(am) so · 3:proud
+324|Feelings|Don't be sad.|0:Don't · 1:(be) sad
+325|Feelings|Don't be angry.|0:Don't · 1:(be) angry
+326|Feelings|Calm down.|0:Calm down · 1:(a bit)
+327|Feelings|It's okay, don't cry.|0:(It's) nothing · 1:don't · 2:cry
+328|Feelings|I'm sleepy.|0:I · 1:(am) so · 2:sleepy

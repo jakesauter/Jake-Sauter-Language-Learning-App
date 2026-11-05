@@ -1,0 +1,131 @@
+@ Joking Around | Don't piss me off.
+g: Don't / make (me) mad / me
+y: 唔好/m4 hou2/0 ; 激嬲/gik1 nau1/1 ; 我/ngo5/2
+m: 别/bié/0 ; 惹/rě/1 ; 我/wǒ/2 ; 生气/shēng qì/1
+t: 唔好/mɔu55/0 ; 激死/gɛt55 ɬi55/1 ; 我/ŋɔi33/2
+s: No/0 ; me/2 ; hagas enojar/1
+f: Ne/0 ; m'/2 ; énerve/1 ; pas/0
+d: Geh/1 ; mir/2 ; nicht/0 ; auf die Nerven/1
+n: 激嬲 gik1 nau1 is "poke until angry". Said with a grin, it's a playful warning. Said flat, it's real, so smile.
+nt: 激死 gɛt55 ɬi55 is "annoyed to death". Literally "provoke me to death".
+
+@ Joking Around | I'm just kidding!
+g: I / (am) kidding / only
+y: 我/ngo5/0 ; 講笑/gong2 siu3/1 ; 咋/zaa3/2
+m: 我/wǒ/0 ; 开玩笑/kāi wán xiào/1 ; 的/de/2
+t: 我/ŋɔi33/0 ; 講笑/gɔŋ55 ɬiau335/1 ; 啫/de55/2?
+s: Es/- ; broma/1
+f: Je/0 ; rigole/1
+d: Ich/0 ; mach/1 ; nur/2 ; Spaß/1
+n: 講笑 gong2 siu3 is "talk laughing". The final 咋 zaa3 means "only, that's all", which takes the sting out.
+nt: 講笑 gɔŋ55 ɬiau335 has the rising changed tone on 笑.
+
+@ Joking Around | Are you kidding me?
+g: Are you kidding me? / (seriously)
+y: 有冇搞錯/jau5 mou5 gaau2 co3/0 ; 呀/aa3/1
+m: 你/nǐ/0 ; 开什么玩笑/kāi shén me wán xiào/0 ; 啊/a/1
+t: 有冇搞錯/yiu33 mɔu33 gɔu55 tɔ33/0 ; 啊/a33/1
+s: ¿Es/- ; en serio/0,1
+f: Tu/0 ; te moques/0 ; de moi/0 ; là/1
+d: Willst/- ; du/0 ; mich/0 ; veräppeln/0
+n: 有冇搞錯 is literally "have or haven't (you) messed up?" Every Cantonese family says it, usually with a dramatic sigh.
+nt: Stephen Li lists the same phrase: 有冇搞錯 yiu33 mɔu33 gɔu55 tɔ33.
+
+@ Joking Around | Very funny.
+g: Very / funny / (yeah, right)
+y: 好/hou2/0 ; 好笑/hou2 siu3/1 ; 喎/wo3/2
+m: 真/zhēn/0 ; 好笑/hǎo xiào/1 ; 哦/o/2
+t: 好/hɔu55/0 ; 好笑/hɔu55 ɬiau335/1 ; 喎/vɔ33/2?
+s: Qué/0 ; gracioso/1
+f: Très/0 ; drôle/1
+d: Sehr/0 ; witzig/1
+n: Flat delivery makes it sarcastic. 喎 wo3 adds "oh, sure".
+nt: Funny is 好笑 hɔu55 ɬiau335.
+
+@ Joking Around | You're so annoying.
+g: You / (are) so / annoying
+y: 你/nei5/0 ; 好/hou2/1 ; 煩/faan4/2 ; 呀/aa3/-
+m: 你/nǐ/0 ; 好/hǎo/1 ; 烦/fán/2 ; 啊/a/-
+t: 你/ni33/0 ; 好/hɔu55/1 ; 煩氣/fan22 hi335/2 ; 啊/a33/-
+s: Eres/0 ; tan/1 ; pesado/2
+f: Tu/0 ; es/- ; trop/1 ; énervant/2
+d: Du/0 ; nervst/2 ; so/1
+n: Between siblings this is affection. 煩 faan4 is "bothersome".
+nt: Annoying is 煩氣 fan22 hi335, "bother-air".
+
+@ Joking Around | Whatever you say.
+g: You / say / however / then / (that's how it is)
+y: 你/nei5/0 ; 話/waa6/1 ; 點/dim2/2 ; 就/zau6/3 ; 點/dim2/4
+m: 你/nǐ/0 ; 说了算/shuō le suàn/1,4
+t: 你/ni33/0 ; 話/va325/1 ; 點/iam55/2 ; 就/diu32/3 ; 點/iam55/4
+s: Lo que/2 ; tú/0 ; digas/1
+f: Comme/2 ; tu/0 ; veux/1
+d: Wie/2 ; du/0 ; meinst/1
+n: "However you say it, that's how it'll be." Polite surrender, with an eye roll optional.
+nt: 點 iam55 is "how".
+
+@ Joking Around | Don't be silly.
+g: Don't / (be) silly / (come on)
+y: 唔好/m4 hou2/0 ; 咁/gam3/- ; 傻/so4/1 ; 啦/laa1/2
+m: 别/bié/0 ; 傻/shǎ/1 ; 了/le/2
+t: 唔好/mɔu55/0 ; 傻/sɔ21/1 ; 啦/la55/2
+s: No/0 ; seas/- ; tonto/1
+f: Ne/0 ; fais/- ; pas/0 ; l'idiot/1
+d: Sei/- ; nicht/0 ; albern/1
+n: 咁 gam3 means "so, like that": "don't be so silly".
+nt: Silly is 傻 sɔ21.
+
+@ Joking Around | You're full of it.
+g: You / (are) talking big / (come on)
+y: 你/nei5/0 ; 車大炮/ce1 daai6 paau3/1 ; 啦/laa1/2
+m: 你/nǐ/0 ; 吹牛/chuī niú/1 ; 吧/ba/2
+t: 你/ni33/0 ; 車大炮/tsia55 ai32 pɔu33/1 ; 啦/la55/2
+s: Estás/0 ; exagerando/1
+f: Tu/0 ; racontes/1 ; n'importe quoi/1
+d: Du/0 ; erzählst/1 ; Quatsch/1
+n: Cantonese 車大炮 is "pull the big cannon", meaning to tell tall tales. Mandarin 吹牛 is "blow up a cow".
+nt: Same idiom in Taishanese: 車大炮 tsia55 ai32 pɔu33.
+
+@ Joking Around | Who ate my food?!
+g: Who / ate / my / food
+y: 邊個/bin1 go3/0 ; 食咗/sik6 zo2/1 ; 我/ngo5/2 ; 啲嘢/di1 je5/3
+m: 谁/shéi/0 ; 吃了/chī le/1 ; 我的/wǒ de/2 ; 东西/dōng xi/3
+t: 谁/sui55/0 ; 吃/hiak33/1 ; 我/ŋɔi33/2 ; 嘢/yia33/3
+s: ¿Quién/0 ; se comió/1 ; mi/2 ; comida/3
+f: Qui/0 ; a mangé/1 ; ma/2 ; bouffe/3
+d: Wer/0 ; hat/- ; mein/2 ; Essen/3 ; gegessen/1
+n: 啲嘢 di1 je5 is "my stuff". Use it for the last dumpling in the fridge.
+nt: 嘢 yia33 is "stuff, things".
+
+@ Joking Around | You wish!
+g: You / (are) dreaming / (yeah, right)
+y: 你/nei5/0 ; 發夢/faat3 mung6/1 ; 呀/aa4/2
+m: 你/nǐ/0 ; 做梦/zuò mèng/1 ; 吧/ba/2
+t: 你/ni33/0 ; 發夢/fat33 məŋ32/1 ; 啊/a33/2
+s: Ya/- ; quisieras/0,1
+f: Tu/0 ; rêves/1
+d: Träum/1 ; weiter/1
+n: "You're dreaming!" The rising 呀 aa4 makes it teasing.
+nt: To dream is 發夢 fat33 məŋ32.
+
+@ Joking Around | I'm the favorite, right?
+g: I / am / (the) most / loved / (right?)
+y: 我/ngo5/0 ; 係/hai6/1 ; 最/zeoi3/2 ; 錫/sek3/3 ; 㗎嘛/gaa3 maa3/4
+m: 我/wǒ/0 ; 是/shì/1 ; 最/zuì/2 ; 受宠的/shòu chǒng de/3 ; 吧/ba/4
+t: 我/ŋɔi33/0 ; 係/hai32/1 ; 最/dui33/2? ; 錫/ɬɛk33/3? ; 啊/a33/4
+s: Soy/0,1 ; el favorito/2,3 ; ¿verdad/4
+f: Je/0 ; suis/1 ; le préféré/2,3 ; hein/4
+d: Ich/0 ; bin/1 ; der Liebling/2,3 ; oder/4
+n: 錫 sek3 literally means "tin", but in Cantonese it also means "to dote on" or "to kiss". Try it on grandma.
+nt: Not confirmed for Taishanese, so check 最 and 錫 with a native speaker.
+
+@ Joking Around | Stop showing off.
+g: Don't / show off / (come on)
+y: 唔好/m4 hou2/0 ; 扮嘢/baan6 je5/1 ; 啦/laa1/2
+m: 别/bié/0 ; 显摆/xiǎn bai/1 ; 了/le/2
+t: 唔好/mɔu55/0 ; 講口/gɔŋ55 həu55/1 ; 啦/la55/2
+s: No/0 ; presumas/1
+f: Arrête/0 ; de frimer/1
+d: Gib/1 ; nicht/0 ; so/- ; an/1
+n: 扮嘢 baan6 je5 is "dress up as something", acting fancier than you are.
+nt: 講口 gɔŋ55 həu55 means to brag or boast.

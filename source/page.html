@@ -1,4 +1,4 @@
-<title>Family Phrasebook</title>
+<title>Language Learning Guide</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,12 @@
   * { box-sizing: border-box; }
 
   [hidden] { display: none !important; }
+
+  :root[data-skin="cream"] { --paper: #f7f1e3; --ink: #2b2418; --ink-2: #4a3f2e; --muted: #7a6d58; --line: #e1d5bc; --wash: #eee4cf; }
+  :root[data-skin="mist"] { --paper: #eceef0; --ink: #15181b; --ink-2: #3b4046; --muted: #626970; --line: #d0d5da; --wash: #e0e3e7; }
+  :root[data-skin="dusk"] { --paper: #3a3d42; --ink: #eeece6; --ink-2: #d2cfc7; --muted: #a9a59d; --line: #575b62; --wash: #44484e; color-scheme: dark; }
+  :root[data-skin="charcoal"] { --paper: #1f2023; --ink: #ededed; --ink-2: #c9c9c9; --muted: #9c9c9c; --line: #3b3c41; --wash: #2a2b2f; color-scheme: dark; }
+  :root[data-skin="night"] { --paper: #000000; --ink: #f2f2f2; --ink-2: #cfcfcf; --muted: #929292; --line: #2e2e2e; --wash: #141414; color-scheme: dark; }
 
   body {
     background: var(--paper);
@@ -103,8 +109,44 @@
     gap: var(--s-2);
   }
 
-  .bar { border-bottom: 1px solid var(--line); }
+  .bar { border-bottom: 1px solid var(--line); box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
   .bar > * { min-width: 0; }
+
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+  }
+
+  .langs::-webkit-scrollbar { display: none; }
+
+  .lang-chip {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px 4px 7px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    cursor: pointer;
+  }
+
+  .lang-chip .tick {
+    width: 11px;
+    height: 11px;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    flex: none;
+  }
+
+  .lang-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); font-weight: 600; }
+  .lang-chip[aria-pressed="true"] .tick { background: var(--paper); border-color: var(--paper); box-shadow: inset 0 0 0 3px var(--ink); }
 
   .search { display: flex; gap: var(--s-2); }
 
@@ -213,6 +255,25 @@
   .toc h2 { margin: 0 0 var(--s-2); font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 
   .toc ol { list-style: none; margin: 0; padding: 0; }
+
+  .toc summary {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--ink);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary .n { margin-left: auto; font-weight: 400; letter-spacing: 0; text-transform: none; }
+  .toc summary svg { width: 18px; height: 18px; flex: none; transition: transform 0.15s; }
+  .toc details[open] summary svg { transform: rotate(180deg); }
 
   .toc button {
     width: 100%;
@@ -427,6 +488,8 @@
   .tok .rom { font-size: 0.72rem; color: var(--muted); line-height: 1.2; white-space: nowrap; }
   .tok .en { font-size: var(--t-sm); font-weight: 700; line-height: 1.2; white-space: nowrap; }
   .tok .en.soft { font-weight: 400; font-style: italic; }
+  .tok .w { font-size: var(--t-md, 1rem); line-height: 1.25; white-space: nowrap; padding: 0.15rem 0; }
+  .wi-w { font-size: 1.35rem; font-weight: 600; }
 
   .tok .q {
     position: absolute;
@@ -532,12 +595,13 @@
     * { transition: none !important; scroll-behavior: auto !important; }
   }
 </style>
+<script>try { var k = localStorage.getItem("phrasebook-skin"); if (k && k !== "paper") document.documentElement.setAttribute("data-skin", k); } catch (e) {}</script>
 
 <div class="wrap">
 
   <header class="top">
-    <h1>Family Phrasebook</h1>
-    <p class="sub"><span id="count"></span> everyday sentences in Taishanese, Cantonese and Mandarin, word by word.</p>
+    <h1>Language Learning Guide</h1>
+    <p class="sub"><span id="count"></span> everyday sentences, word by word, in up to seven languages.</p>
   </header>
 
   <div class="bar">
@@ -547,12 +611,17 @@
       <button class="btn quiet" id="view-btn" type="button" aria-expanded="false" aria-controls="view">View</button>
     </form>
 
+    <div class="langs" id="langs" role="group" aria-label="Languages to show"></div>
+
     <div class="view" id="view" hidden>
       <div class="row">
         <span class="label">Show</span>
         <label for="col-tsn"><input type="checkbox" id="col-tsn" checked> Taishanese</label>
         <label for="col-yue"><input type="checkbox" id="col-yue" checked> Cantonese</label>
         <label for="col-cmn"><input type="checkbox" id="col-cmn" checked> Mandarin</label>
+        <label for="col-es"><input type="checkbox" id="col-es" checked> Spanish</label>
+        <label for="col-fr"><input type="checkbox" id="col-fr" checked> French</label>
+        <label for="col-de"><input type="checkbox" id="col-de" checked> German</label>
       </div>
       <div class="row">
         <label for="show-nums"><input type="checkbox" id="show-nums"> Tone numbers</label>
@@ -561,6 +630,19 @@
       <div class="row">
         <span class="label">Sound</span>
         <label for="tap-speak"><input type="checkbox" id="tap-speak" checked> Speak words when tapped</label>
+      </div>
+      <div class="row">
+        <span class="label">Theme</span>
+        <label for="skin">
+          <select id="skin">
+            <option value="paper">Paper (white)</option>
+            <option value="cream">Cream</option>
+            <option value="mist">Mist (soft gray)</option>
+            <option value="dusk">Dusk (dim)</option>
+            <option value="charcoal">Charcoal (dark)</option>
+            <option value="night">Night (black)</option>
+          </select>
+        </label>
       </div>
       <div class="row">
         <span class="label">Spelling</span>
@@ -599,11 +681,12 @@
 
     <section>
       <h3>Word rows</h3>
-      <p>Each language is a row, read left to right in its own word order. Lines drop from every Chinese word to its English meaning, and from Taishanese words to their Cantonese twins. Tap a word to trace it.</p>
+      <p>Each language is a row, read left to right in its own word order. Lines link each word to its English meaning and to the matching word in the next row: Taishanese, Cantonese, English, Mandarin, then Spanish, French and German. Tap a word to trace it.</p>
       <p>A dashed box is a particle with no English equivalent. A <b>?</b> marks a word that couldn't be confirmed. English in <i>(parentheses)</i> is implied or describes a tone.</p>
       <p>The round button at the start of each row plays the whole line in that language; the small one under it plays just the tones. Spelling is in easy English by default; switch to the standard systems under View.</p>
       <p>Translations of new sentences are word-by-word builds: they keep English word order and skip most particles, so treat them as a starting point.</p>
-      <p><b>Listen</b> uses your device's own Cantonese and Mandarin voices. No voice speaks Taishanese, so <b>Tones</b> plays each syllable's pitch line in order instead; it works for all three languages. Tapping a word also speaks it.</p>
+      <p><b>Listen</b> uses your device's own Cantonese, Mandarin, Spanish, French and German voices. No phone ships a Taishanese voice, so this app has its own Taishanese speech engine. It builds every consonant, vowel and tone from the romanization, including the hissy ɬ and the rising changed tones. It sounds robotic, but it works even with the phone on silent. Tapping a word also speaks it.</p>
+      <p>Spanish follows Latin American usage (ustedes, manejar, la alberca). Lines use the friendly tú, tu and du forms you would use with family.</p>
     </section>
 
     <section>
@@ -633,7 +716,7 @@
 
     <section>
       <h3>Sources</h3>
-      <p>Taishanese from Stephen Li's Taishanese dictionary. Word builds also use CC-CEDICT, Rime Cantonese Jyutping data, OpenCC and Jieba word frequencies. Google Translate output is shown for comparison on saved sentences.</p>
+      <p>Taishanese from Stephen Li's Taishanese dictionary. Spanish, French and German written for this guide, word by word. Word builds also use CC-CEDICT, Rime Cantonese Jyutping data, OpenCC and Jieba word frequencies. Google Translate output is shown for comparison on saved sentences.</p>
     </section>
   </div>
 </dialog>
@@ -643,8 +726,16 @@
   const LEX = __WORDS__;
 
   const NS = "http://www.w3.org/2000/svg";
-  const LANES = ["tsn", "yue", "en", "cmn"];
-  const NAMES = { tsn: "Taishanese", yue: "Cantonese", en: "English", cmn: "Mandarin" };
+  const LANES = ["tsn", "yue", "en", "cmn", "es", "fr", "de"];
+  const NAMES = { tsn: "Taishanese", yue: "Cantonese", en: "English", cmn: "Mandarin", es: "Spanish", fr: "French", de: "German" };
+  const EU = new Set(["es", "fr", "de"]);
+  const isEU = l => EU.has(l);
+
+  function euText(p, lang) {
+    const words = (p[lang] || []).map(t => t.hz).join(" ").replace(/ ([,.!?])/g, "$1");
+    const end = (String(p.en || "").trim().match(/[?!.]$/) || ["."])[0];
+    return words + end;
+  }
   const YUE_TONE = { 1: [5, 5], 2: [3, 5], 3: [3, 3], 4: [2, 1], 5: [2, 3], 6: [2, 2] };
 
   const $ = id => document.getElementById(id);
@@ -809,19 +900,20 @@
     const text = toks.map(t => t.hz).join("");
     const rom = toks.map(t => t.rom).join(" ");
 
-    if (lang !== "tsn") {
+    if (isEU(lang)) {
       const b = el("button", "lp", speaker);
       b.type = "button";
       b.setAttribute("aria-label", `Listen to the whole sentence in ${NAMES[lang]}`);
-      b.addEventListener("click", e => { e.stopPropagation(); sayVoice(text, lang); });
+      b.addEventListener("click", e => { e.stopPropagation(); sayVoice(euText(p, lang), lang); });
       slot.appendChild(b);
+      return slot;
     }
 
-    const h = el("button", lang === "tsn" ? "lp" : "lp alt", wave);
-    h.type = "button";
-    h.setAttribute("aria-label", `Play the ${NAMES[lang]} tones for the whole sentence`);
-    h.addEventListener("click", e => { e.stopPropagation(); sayTones(lang, rom); });
-    slot.appendChild(h);
+    const b = el("button", "lp", speaker);
+    b.type = "button";
+    b.setAttribute("aria-label", `Listen to the whole sentence in ${NAMES[lang]}`);
+    b.addEventListener("click", e => { e.stopPropagation(); if (lang === "tsn") sayTsn(rom); else sayVoice(text, lang); });
+    slot.appendChild(b);
 
     return slot;
   }
@@ -876,6 +968,14 @@
 
   let toastTimer = null;
 
+  function toastRarely(key, msg, ms = 600000) {
+    const k = "phrasebook-toast-" + key;
+    const last = Number(store.get(k) || 0);
+    if (Date.now() - last < ms) return;
+    store.set(k, String(Date.now()));
+    toast(msg);
+  }
+
   function toast(msg) {
     let t = document.querySelector(".toast");
     if (!t) { t = el("div", "toast"); t.setAttribute("role", "status"); document.body.appendChild(t); }
@@ -915,6 +1015,9 @@
     const WANT = {
       yue: [/^zh[-_]HK/i, /^yue/i, /cantonese|粵|粤/i],
       cmn: [/^zh[-_]CN/i, /^cmn/i, /^zh[-_]TW/i, /^zh$/i],
+      es: [/^es[-_]MX/i, /^es[-_](US|419)/i, /^es/i],
+      fr: [/^fr[-_]FR/i, /^fr/i],
+      de: [/^de[-_]DE/i, /^de/i],
     };
 
     const pick = lang => {
@@ -934,19 +1037,19 @@
         const synth = window.speechSynthesis;
         if (synth.speaking || synth.pending) synth.cancel();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = lang === "yue" ? "zh-HK" : "zh-CN";
+        u.lang = { yue: "zh-HK", cmn: "zh-CN", es: "es-MX", fr: "fr-FR", de: "de-DE" }[lang] || "en-US";
         if (v) u.voice = v;
         u.rate = settings.rate;
         let started = false;
         u.onstart = () => { started = true; };
         u.onerror = e => {
           if (e && (e.error === "canceled" || e.error === "interrupted")) return;
-          toast("The voice couldn't play here. On iPhone, check the side switch isn't on silent, or try the downloaded file in Safari.");
+          toastRarely("voice-error", "The voice couldn't play here. On iPhone, check the side switch isn't on silent, or try the downloaded file in Safari.");
         };
         synth.speak(u);
         if (synth.paused) synth.resume();
         setTimeout(() => {
-          if (!started && !synth.speaking) toast("No sound? On iPhone, turn off silent mode and check the volume. Tones play either way.");
+          if (!started && !synth.speaking) toastRarely("silent", "No sound? On iPhone, turn off silent mode and check the volume. Taishanese plays either way.");
         }, 2500);
         return "ok";
       } catch (e) {
@@ -963,6 +1066,433 @@
 
     return { speak, stop };
   })();
+
+
+  /* Taishanese voice: a source-filter speech synthesizer for Stephen Li romanization */
+
+  const TsnVoice = (() => {
+    const SR = 22050;
+    let VG = 1, AG = 0.55, FG = 3.2;
+    const FR = 200;
+    const FS = 1.08;
+
+    const V = {
+      i: [300, 2300, 3000], e: [440, 2050, 2750], "ɛ": [570, 1850, 2650], a: [820, 1320, 2650],
+      "ɔ": [600, 950, 2550], o: [470, 860, 2500], u: [330, 760, 2400], "ə": [520, 1380, 2550],
+      y: [300, 1950, 2450], m: [260, 1000, 2300], n: [260, 1650, 2600], "ŋ": [260, 1300, 2300],
+    };
+
+    const TONES = {
+      "55": [5, 5], "33": [3, 3], "22": [2, 2], "32": [3, 2], "21": [2, 1], "31": [3, 1],
+      "335": [3, 3, 5], "215": [2, 1, 5], "325": [3, 2, 5], "225": [2, 2, 5], "553": [5, 5, 3],
+      "44": [4, 4], "35": [3, 5], "5": [5, 5], "3": [3, 3], "2": [2, 2], "333": [3, 3], "321": [3, 2, 1],
+    };
+
+    const STOP = { b: "lab", d: "alv", g: "vel", p: "lab", t: "alv", k: "vel" };
+    const ASP = { p: 1, t: 1, k: 1, ts: 1 };
+
+    function parse(raw) {
+      let s = String(raw || "").toLowerCase().replace(/^[?ʔ]/, "").replace(/ng/g, "ŋ").replace(/[*()]/g, "");
+      const tm = s.match(/(\d+)$/);
+      const tone = tm ? tm[1] : "33";
+      s = s.replace(/\d+$/, "");
+      const im = s.match(/^(ts|dz|ɬ|ŋ|[bpmfdtnlgkhvysz])/);
+      let ini = im ? im[1] : "";
+      let fin = s.slice(ini.length);
+      if (!fin && (ini === "m" || ini === "ŋ")) { fin = ini; ini = ""; }
+      if (ini === "y" && !/^i/.test(fin)) fin = "i" + fin;
+      if (ini === "y") ini = "";
+      if (ini === "z") ini = "dz";
+
+      let coda = "";
+      const cm = fin.match(/(m|n|ŋ|p|t|k)$/);
+      if (cm && fin.length > 1) { coda = cm[1]; fin = fin.slice(0, -1); }
+
+      const vs = [...fin.replace(/ei/g, "e").replace(/ii/g, "i").replace(/[^aeiouɔəɛy]/g, "")];
+      if (!vs.length) vs.push(fin === "m" ? "m" : fin === "ŋ" ? "ŋ" : "ə");
+
+      const levels = TONES[tone] || (tone.length >= 2 ? [...tone].map(Number) : [3, 3]);
+      return { ini, vs, coda, levels, tone };
+    }
+
+    const fmt = v => (V[v] || V["ə"]).map(f => f * FS);
+
+    function locus(place, f2v) {
+      if (place === "lab") return [250, 900 * FS, 2200 * FS];
+      if (place === "alv") return [260, 1750 * FS, 2750 * FS];
+      return [260, (f2v > 1500 * FS ? 2350 : 1250) * FS, 2050 * FS];
+    }
+
+    const placeOf = c => STOP[c] || { m: "lab", n: "alv", "ŋ": "vel", l: "alv", s: "alv", "ɬ": "alv", ts: "alv", dz: "alv", f: "lab", v: "lab" }[c] || null;
+
+    /* build a frame track of parameters for a list of syllables */
+
+    function plan(list, rate) {
+      const k = 0.8 / (rate || 1);
+      const frames = [];
+      let t = 0;
+
+      const key = [];
+      const push = (time, p) => key.push({ time, ...p });
+
+      const pitchKeys = [];
+      const lvHz = lv => 168 * Math.pow(2, ((lv - 1) * 2.45) / 12);
+
+      push(0, { av: 0, ah: 0, af: 0, f: fmt("ə"), nas: 0, fric: null });
+      t = 0.06;
+
+      list.forEach((sy, si) => {
+        const last = si === list.length - 1;
+        const checked = /[ptk]/.test(sy.coda);
+        const rising = sy.levels.length === 3;
+        let stretch = k * (last ? 1.22 : 1) * (rising ? 1.18 : 1);
+
+        const first = fmt(sy.vs[0]);
+        const lastV = fmt(sy.vs[sy.vs.length - 1]);
+        const place = placeOf(sy.ini);
+        const lo = place ? locus(place, first[1]) : first;
+        const onset = [lo[0], (lo[1] + first[1]) / 2, (lo[2] + first[2]) / 2];
+
+        const c = sy.ini;
+        let voiceStart;
+
+        if (STOP[c] || c === "ts" || c === "dz") {
+          push(t, { av: 0, ah: 0, af: 0, f: onset, nas: 0, fric: null });
+          t += (si ? 0.035 : 0.02) * stretch;
+          push(t, { av: 0, ah: 0, af: 0, f: onset, nas: 0, fric: null });
+          const burst = c === "ts" || c === "dz" ? "alv" : STOP[c];
+          push(t + 0.001, { av: 0, ah: 0, af: 1, f: onset, nas: 0, fric: "b-" + burst + (burst === "vel" ? (first[1] > 1500 * FS ? "f" : "b") : "") });
+          t += 0.012 * stretch;
+          if (c === "dz" || c === "ts") {
+            push(t, { av: 0, ah: 0, af: 0.7, f: onset, nas: 0, fric: "s" });
+            t += (c === "ts" ? 0.075 : 0.055) * stretch;
+            push(t, { av: 0, ah: 0, af: 0.55, f: onset, nas: 0, fric: "s" });
+          }
+          if (ASP[c]) {
+            push(t + 0.002, { av: 0, ah: 0.55, af: 0, f: onset, nas: 0, fric: null });
+            t += 0.06 * stretch;
+            push(t, { av: 0, ah: 0.4, af: 0, f: [first[0] * 0.8, first[1], first[2]], nas: 0, fric: null });
+          } else {
+            push(t + 0.002, { av: 0, ah: 0.25, af: 0, f: onset, nas: 0, fric: null });
+            t += 0.012 * stretch;
+          }
+          voiceStart = t;
+          push(t + 0.004, { av: 0.6, ah: 0.06, af: 0, f: onset, nas: 0, fric: null });
+        } else if (c === "s" || c === "ɬ" || c === "f") {
+          const amp = c === "f" ? 0.4 : c === "ɬ" ? 0.5 : 0.8;
+          push(t, { av: 0, ah: 0, af: 0, f: onset, nas: 0, fric: c });
+          push(t + 0.025 * stretch, { av: 0, ah: 0, af: amp, f: onset, nas: 0, fric: c });
+          t += (c === "f" ? 0.085 : 0.1) * stretch;
+          push(t, { av: 0, ah: 0, af: amp * 0.85, f: onset, nas: 0, fric: c });
+          voiceStart = t + 0.01 * stretch;
+          push(voiceStart, { av: 0.55, ah: 0.05, af: 0, f: onset, nas: 0, fric: null });
+        } else if (c === "h") {
+          push(t, { av: 0, ah: 0, af: 0, f: first, nas: 0, fric: null });
+          push(t + 0.02 * stretch, { av: 0, ah: 0.5, af: 0, f: first, nas: 0, fric: null });
+          t += 0.075 * stretch;
+          push(t, { av: 0, ah: 0.4, af: 0, f: first, nas: 0, fric: null });
+          voiceStart = t;
+          push(t + 0.012 * stretch, { av: 0.7, ah: 0.08, af: 0, f: first, nas: 0, fric: null });
+        } else if (c === "m" || c === "n" || c === "ŋ") {
+          if (si > 0) { push(t, { av: 0.15, ah: 0, af: 0, f: fmt(c), nas: 1, fric: null }); }
+          voiceStart = t;
+          push(t + 0.01, { av: 0.42, ah: 0, af: 0, f: fmt(c), nas: 1, fric: null });
+          t += 0.06 * stretch;
+          push(t, { av: 0.45, ah: 0, af: 0, f: fmt(c), nas: 1, fric: null });
+          push(t + 0.012, { av: 0.75, ah: 0, af: 0, f: onset, nas: 0.25, fric: null });
+        } else if (c === "l") {
+          voiceStart = t;
+          push(t + 0.01, { av: 0.5, ah: 0, af: 0, f: [360 * FS, 1150 * FS, 2850 * FS], nas: 0, fric: null, lat: 1 });
+          t += 0.06 * stretch;
+          push(t, { av: 0.55, ah: 0, af: 0, f: [360 * FS, 1200 * FS, 2850 * FS], nas: 0, fric: null, lat: 1 });
+        } else if (c === "v") {
+          voiceStart = t;
+          push(t + 0.01, { av: 0.45, ah: 0, af: 0.08, f: [300 * FS, 1000 * FS, 2300 * FS], nas: 0, fric: "f" });
+          t += 0.055 * stretch;
+          push(t, { av: 0.5, ah: 0, af: 0.05, f: [320 * FS, 1050 * FS, 2350 * FS], nas: 0, fric: "f" });
+        } else {
+          voiceStart = t;
+          push(t, { av: 0, ah: 0.05, af: 0, f: first, nas: 0, fric: null });
+          push(t + 0.025 * stretch, { av: 0.8, ah: 0.04, af: 0, f: first, nas: 0, fric: null });
+        }
+
+        const nasalCoda = /[mnŋ]/.test(sy.coda);
+        let vowelDur = (checked ? 0.115 : nasalCoda ? 0.15 : 0.2) * stretch;
+        if (sy.vs.length > 1) vowelDur *= 1.12;
+
+        const n = sy.vs.length;
+        const shares = sy.vs.map((v, i) => {
+          if (n === 1) return 1;
+          if (i === 0 && (v === "i" || v === "u") && n > 1 && !(n === 2 && i === 0 && (sy.vs[1] === "i" || sy.vs[1] === "u"))) return 0.22;
+          if (i === n - 1 && (v === "i" || v === "u")) return 0.38;
+          return 1;
+        });
+        const sum = shares.reduce((a, b) => a + b, 0);
+
+        let vt = t;
+        sy.vs.forEach((v, i) => {
+          const d = vowelDur * shares[i] / sum;
+          const f = fmt(v);
+          const glide = shares[i] < 1;
+          push(vt + d * (glide ? 0.5 : 0.35), { av: 1, ah: 0.04, af: 0, f, nas: 0, fric: null });
+          if (!glide) push(vt + d * 0.75, { av: 1, ah: 0.04, af: 0, f, nas: 0, fric: null });
+          vt += d;
+        });
+        t = vt;
+
+        if (nasalCoda) {
+          const mf = fmt(sy.coda);
+          push(t, { av: 0.85, ah: 0.02, af: 0, f: locus(placeOf(sy.coda), lastV[1]).map((x, i) => (x + lastV[i]) / 2), nas: 0.5, fric: null });
+          push(t + 0.015 * stretch, { av: 0.48, ah: 0, af: 0, f: mf, nas: 1, fric: null });
+          t += (last ? 0.12 : 0.085) * stretch;
+          push(t, { av: 0.35, ah: 0, af: 0, f: mf, nas: 1, fric: null });
+          pitchKeys.push({ a: voiceStart, b: t, levels: sy.levels });
+          push(t + 0.025 * stretch, { av: 0, ah: 0, af: 0, f: mf, nas: 1, fric: null });
+          t += 0.02 * stretch;
+        } else if (checked) {
+          const lf = locus(placeOf(sy.coda), lastV[1]);
+          t += 0.03 * stretch;
+          push(t, { av: 0.8, ah: 0.02, af: 0, f: [lf[0] + 120, lf[1], lf[2]], nas: 0, fric: null });
+          pitchKeys.push({ a: voiceStart, b: t, levels: sy.levels });
+          push(t + 0.008, { av: 0, ah: 0, af: 0, f: lf, nas: 0, fric: null });
+          t += 0.06 * stretch;
+          push(t, { av: 0, ah: 0, af: 0, f: lf, nas: 0, fric: null });
+        } else {
+          pitchKeys.push({ a: voiceStart, b: t + 0.03 * stretch, levels: sy.levels });
+          push(t + 0.03 * stretch, { av: last ? 0.55 : 0.75, ah: 0.06, af: 0, f: lastV, nas: 0, fric: null });
+          t += (last ? 0.09 : 0.045) * stretch;
+          push(t, { av: last ? 0 : 0.3, ah: last ? 0.02 : 0.04, af: 0, f: lastV, nas: 0, fric: null });
+          if (!last) t += 0.02 * stretch;
+        }
+      });
+
+      t += 0.08;
+      push(t, { av: 0, ah: 0, af: 0, f: fmt("ə"), nas: 0, fric: null });
+
+      key.sort((a, b) => a.time - b.time);
+
+      const total = t;
+      const nf = Math.ceil(total * FR) + 1;
+      let j = 0;
+      for (let i = 0; i < nf; i++) {
+        const time = i / FR;
+        while (j < key.length - 2 && key[j + 1].time <= time) j++;
+        const A = key[j], B = key[Math.min(j + 1, key.length - 1)];
+        const span = Math.max(1e-6, B.time - A.time);
+        const x = Math.max(0, Math.min(1, (time - A.time) / span));
+        const mix = (a, b) => a + (b - a) * x;
+        frames.push({
+          av: mix(A.av, B.av), ah: mix(A.ah, B.ah), af: mix(A.af, B.af),
+          f: [0, 1, 2].map(q => mix(A.f[q], B.f[q])),
+          nas: mix(A.nas, B.nas), lat: mix(A.lat || 0, B.lat || 0),
+          fric: x < 0.5 ? (A.fric || B.fric) : (B.fric || A.fric),
+          f0: 0,
+        });
+      }
+
+      const smooth = (get, set, a) => {
+        let y = get(frames[0]);
+        frames.forEach(fr => { y += (get(fr) - y) * a; set(fr, y); });
+      };
+      for (let q = 0; q < 3; q++) smooth(fr => fr.f[q], (fr, y) => { fr.f[q] = y; }, 0.45);
+
+      const f0 = new Float32Array(nf);
+      const dec = lvHz(1) * 0;
+      pitchKeys.forEach((pk, pi) => {
+        const a = Math.floor(pk.a * FR), b = Math.ceil(pk.b * FR);
+        const L = pk.levels;
+        for (let i = a; i <= b && i < nf; i++) {
+          const x = Math.max(0, Math.min(1, (i - a) / Math.max(1, b - a)));
+          const u = Math.min(1, Math.max(0, (x - 0.08) / 0.84)) * (L.length - 1);
+          const q = Math.min(L.length - 2, Math.floor(u));
+          const w = u - q;
+          const ease = w * w * (3 - 2 * w);
+          const lv = L.length === 1 ? L[0] : L[q] + (L[q + 1] - L[q]) * ease;
+          const decl = 1 - 0.035 * (pi / Math.max(1, pitchKeys.length));
+          f0[i] = lvHz(lv) * decl + dec;
+        }
+      });
+
+      let prev = lvHz(3);
+      for (let i = 0; i < nf; i++) {
+        if (f0[i] > 0) prev = f0[i];
+        else {
+          let nx = i;
+          while (nx < nf && !(f0[nx] > 0)) nx++;
+          f0[i] = nx < nf ? f0[nx] : prev;
+        }
+      }
+      let y = f0[0];
+      for (let i = 0; i < nf; i++) { y += (f0[i] - y) * 0.55; frames[i].f0 = y; }
+
+      return { frames, total };
+    }
+
+    /* two-pole resonator and antiresonator (Klatt 1980) */
+
+    function Res() { this.y1 = 0; this.y2 = 0; this.a = 0; this.b = 0; this.c = 0; }
+    Res.prototype.set = function (f, bw) {
+      const T = 1 / SR;
+      const c = -Math.exp(-2 * Math.PI * bw * T);
+      const b = 2 * Math.exp(-Math.PI * bw * T) * Math.cos(2 * Math.PI * f * T);
+      this.a = 1 - b - c; this.b = b; this.c = c;
+    };
+    Res.prototype.run = function (x) {
+      const y = this.a * x + this.b * this.y1 + this.c * this.y2;
+      this.y2 = this.y1; this.y1 = y;
+      return y;
+    };
+
+    function BP() { this.x1 = 0; this.x2 = 0; this.y1 = 0; this.y2 = 0; }
+    BP.prototype.set = function (f, bw) {
+      const w = 2 * Math.PI * Math.min(f, SR * 0.45) / SR;
+      const q = Math.max(0.3, f / bw);
+      const al = Math.sin(w) / (2 * q);
+      const a0 = 1 + al;
+      this.b0 = al / a0; this.b2 = -al / a0; this.a1 = -2 * Math.cos(w) / a0; this.a2 = (1 - al) / a0;
+    };
+    BP.prototype.run = function (x) {
+      const y = this.b0 * x + this.b2 * this.x2 - this.a1 * this.y1 - this.a2 * this.y2;
+      this.x2 = this.x1; this.x1 = x; this.y2 = this.y1; this.y1 = y;
+      return y;
+    };
+
+    function Anti() { this.x1 = 0; this.x2 = 0; this.a = 1; this.b = 0; this.c = 0; }
+    Anti.prototype.set = function (f, bw) {
+      const T = 1 / SR;
+      const c0 = -Math.exp(-2 * Math.PI * bw * T);
+      const b0 = 2 * Math.exp(-Math.PI * bw * T) * Math.cos(2 * Math.PI * f * T);
+      const a0 = 1 - b0 - c0;
+      this.a = 1 / a0; this.b = -b0 / a0; this.c = -c0 / a0;
+    };
+    Anti.prototype.run = function (x) {
+      const y = this.a * x + this.b * this.x1 + this.c * this.x2;
+      this.x2 = this.x1; this.x1 = x;
+      return y;
+    };
+
+    const FRIC = {
+      s: [[6200, 1800, 1], [4200, 1500, 0.35]],
+      "ɬ": [[3300, 1900, 0.8], [5600, 2600, 0.6], [1400, 500, 0.12]],
+      f: [[7000, 4000, 0.6], [2500, 3000, 0.25]],
+      "b-lab": [[900, 1400, 0.5], [3000, 3000, 0.15]],
+      "b-alv": [[4200, 1800, 1], [2800, 1200, 0.4]],
+      "b-velf": [[2500, 700, 1], [4000, 2000, 0.3]],
+      "b-velb": [[1500, 600, 1], [3200, 2000, 0.25]],
+    };
+
+    function synth(rom, rate) {
+      const list = String(rom || "").split(/\s+/).filter(Boolean).map(parse);
+      if (!list.length) return null;
+
+      const { frames, total } = plan(list, rate);
+      const n = Math.ceil(total * SR);
+      const out = new Float32Array(n);
+
+      const R = [new Res(), new Res(), new Res(), new Res(), new Res()];
+      const NP = new Res(), NZ = new Anti();
+      const tilt = new Res();
+      tilt.set(0, 900);
+      const fr = {};
+      ["s", "ɬ", "f", "b-lab", "b-alv", "b-velf", "b-velb"].forEach(k => { fr[k] = FRIC[k].map(() => new BP()); fr[k].forEach((r, i) => r.set(FRIC[k][i][0], FRIC[k][i][1])); });
+
+      let phase = 0, seed = 22222;
+      const noise = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x3fffffff - 1; };
+      let jit = 1, lastPrev = 0, hp = 0;
+      let open = 0.62;
+
+      for (let i = 0; i < n; i++) {
+        const fpos = i / SR * FR;
+        const a = Math.min(frames.length - 1, Math.floor(fpos));
+        const b = Math.min(frames.length - 1, a + 1);
+        const x = fpos - a;
+        const A = frames[a], B = frames[b];
+        const L = (p, q) => p + (q - p) * x;
+
+        if (i % 32 === 0) {
+          const F = [L(A.f[0], B.f[0]), L(A.f[1], B.f[1]), L(A.f[2], B.f[2])];
+          const nas = L(A.nas, B.nas);
+          const lat = L(A.lat, B.lat);
+          R[0].set(F[0], 70 + 120 * nas);
+          R[1].set(F[1], 90 + 160 * nas + 120 * lat);
+          R[2].set(F[2], 150 + 140 * nas);
+          R[3].set(3700 * FS, 260);
+          R[4].set(4600 * FS, 320);
+          NP.set(270, 100);
+          NZ.set(270 + (1 - nas) * 1, 100 + nas * 0);
+          if (nas > 0.02) NZ.set(450 + (1 - nas) * 200, 110);
+          else NZ.set(270, 100);
+        }
+
+        const f0 = L(A.f0, B.f0) * jit;
+        phase += f0 / SR;
+        let pulse = 0;
+        if (phase >= 1) { phase -= 1; jit = 1 + noise() * 0.006; }
+        if (phase < open) {
+          const u = phase / open;
+          pulse = 2 * u - 3 * u * u;
+        }
+        const g = pulse - 0.5 * tilt.run(pulse);
+
+        const av = L(A.av, B.av);
+        const ah = L(A.ah, B.ah);
+        const af = L(A.af, B.af);
+        const nz = noise();
+        const breath = nz * (phase < open ? 1 : 0.4);
+
+        let src = av * g * VG + ah * breath * AG;
+        const nas = L(A.nas, B.nas);
+        if (nas > 0.02) src = NZ.run(NP.run(src));
+
+        let y = src;
+        for (let q = 0; q < 5; q++) y = R[q].run(y);
+        if (nas > 0.6) y *= 1 - (nas - 0.6) * 0.8;
+
+        const fk = x < 0.5 ? (A.fric || B.fric) : (B.fric || A.fric);
+        if (af > 0.001 && fk && fr[fk]) {
+          let fy = 0;
+          fr[fk].forEach((r, k) => { fy += r.run(nz) * FRIC[fk][k][2]; });
+          y += fy * af * FG;
+        }
+
+        hp = 0.995 * (hp + y - lastPrev);
+        lastPrev = y;
+        out[i] = hp;
+      }
+
+      let peak = 0;
+      for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(out[i]));
+      if (peak) for (let i = 0; i < n; i++) out[i] = out[i] / peak * 0.88;
+      return out;
+    }
+
+    function wav(buf) {
+      const n = buf.length;
+      const bytes = new Uint8Array(44 + n * 2);
+      const dv = new DataView(bytes.buffer);
+      const str = (o, t) => { for (let i = 0; i < t.length; i++) bytes[o + i] = t.charCodeAt(i); };
+      str(0, "RIFF"); dv.setUint32(4, 36 + n * 2, true); str(8, "WAVE");
+      str(12, "fmt "); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true); dv.setUint16(22, 1, true);
+      dv.setUint32(24, SR, true); dv.setUint32(28, SR * 2, true); dv.setUint16(32, 2, true); dv.setUint16(34, 16, true);
+      str(36, "data"); dv.setUint32(40, n * 2, true);
+      for (let i = 0; i < n; i++) dv.setInt16(44 + i * 2, Math.max(-1, Math.min(1, buf[i])) * 32767, true);
+      return bytes;
+    }
+
+    function dataUri(rom, rate) {
+      const buf = synth(rom, rate);
+      if (!buf) return null;
+      const bytes = wav(buf);
+      let bin = "";
+      for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      return "data:audio/wav;base64," + btoa(bin);
+    }
+
+    const gains = (v, a, f) => { VG = v; AG = a; FG = f; };
+
+    return { SR, parse, synth, wav, dataUri, gains };
+  })();
+
 
 
   /* tone engine: builds a small WAV in JavaScript and plays it through an audio element */
@@ -1089,16 +1619,32 @@
       return true;
     }
 
-    return { play, stop, render, syllables };
+    function playUri(uri) {
+      Voice.stop();
+      if (!player) player = new Audio();
+      stop();
+      player.src = uri;
+      const pr = player.play();
+      if (pr && pr.catch) pr.catch(() => toast("Sound was blocked. Tap the button again."));
+    }
+
+    return { play, playUri, stop, render, syllables };
   })();
+
+  function sayTsn(rom) {
+    const clean = String(rom || "").split(/\s+/).filter(s => /\d$/.test(s)).join(" ");
+    if (!clean) { toast("There's nothing to say here."); return; }
+    const uri = TsnVoice.dataUri(clean, settings.rate);
+    if (uri) Tones.playUri(uri);
+  }
 
   function sayVoice(text, lang) {
     Tones.stop();
     const r = Voice.speak(text, lang);
     if (r === "ok") return;
-    const name = lang === "yue" ? "Cantonese (Hong Kong)" : "Chinese (China mainland)";
+    const name = { yue: "Cantonese (Hong Kong)", cmn: "Chinese (China mainland)", es: "Spanish", fr: "French", de: "German" }[lang];
     toast(r === "missing"
-      ? `No ${lang === "yue" ? "Cantonese" : "Mandarin"} voice on this device. On iPhone, add one in Settings › Accessibility › Spoken Content › Voices › ${name}.`
+      ? `No ${NAMES[lang]} voice on this device. On iPhone, add one in Settings › Accessibility › Spoken Content › Voices › ${name}.`
       : "This browser can't speak text. Try Safari or Chrome.");
   }
 
@@ -1173,11 +1719,66 @@
     },
   };
 
+  const EU_GRAMMAR = {
+    es: {
+      "está": "A form of estar, \"to be\" for states and feelings: está caliente, \"it's hot\". Spanish drops \"it\".",
+      "estás": "\"You are\", from estar, used for how someone is right now.",
+      "es": "\"Is\", from ser, used for what something is.",
+      "hay": "\"There is\" or \"there are\".",
+      "hace": "Literally \"it makes\". Spanish uses it for weather: hace calor, \"it's hot\".",
+      "que": "\"That\": links two parts of a sentence.",
+      "y": "\"And\".",
+      "lo": "\"It\" as an object, placed before the verb.",
+      "me": "\"Me\" or \"to me\", placed before the verb.",
+      "te": "\"You\" or \"to you\", placed before the verb.",
+      "a": "\"To\". Also marks a person who receives the action.",
+    },
+    fr: {
+      "on": "\"We\" in everyday speech (formally \"one\"). Very common at home.",
+      "il fait": "Literally \"it makes\". French uses it for weather: il fait froid.",
+      "il y a": "\"There is\" or \"there are\".",
+      "c'est": "\"It is\" or \"that's\".",
+      "je": "\"I\".",
+      "est": "\"Is\".",
+      "suis": "\"Am\": je suis, \"I am\".",
+      "ne": "The first half of French \"not\": ne ... pas wraps around the verb.",
+      "pas": "The second half of French \"not\": ne ... pas.",
+      "et": "\"And\".",
+      "a": "\"Has\". Also builds the past tense: il a mangé.",
+      "as": "\"Have\" for tu. Builds the past tense: tu as mangé, \"you ate\".",
+      "ont": "\"Have\" for ils.",
+    },
+    de: {
+      "es": "\"It\". German needs a subject even when English hides it.",
+      "ist": "\"Is\".",
+      "bin": "\"Am\": ich bin.",
+      "sind": "\"Are\" or \"have\" for movement verbs in the past.",
+      "hat": "\"Has\". Builds the past tense, with the main verb at the end.",
+      "hast": "\"Have\" for du. Builds the past tense: hast du gegessen?",
+      "habe": "\"Have\" for ich. Builds the past tense, with the main verb at the end.",
+      "habt": "\"Have\" for ihr.",
+      "mal": "A softener, like \"just\": warte mal, \"wait a sec\".",
+      "und": "\"And\".",
+      "dass": "\"That\": sends the verb to the end of its clause.",
+      "uns": "\"Us\": lass uns = \"let's\".",
+      "dir": "\"You\" or \"to you\", the familiar form.",
+      "mir": "\"Me\" or \"to me\".",
+      "man": "\"One\" or \"you\" in general, like French on.",
+      "es ist": "\"It is\".",
+      "das ist": "\"That is\".",
+      "geht's": "Short for geht es, \"how goes it\".",
+    },
+  };
+
   const MEASURES = new Set("張件隻架部條對雙把間味舊本份首輪粒杯碗支枝座位艘张条双间块本份首轮粒".split(""));
 
   function grammarNote(lang, hz) {
     const g = GRAMMAR[lang] || {};
     if (g[hz]) return g[hz];
+    if (isEU(lang)) {
+      const e = EU_GRAMMAR[lang] || {};
+      return e[hz] || e[hz.toLowerCase()] || null;
+    }
     if (hz.length === 1 && MEASURES.has(hz)) return MEASURE;
     if (hz.length > 1 && MEASURES.has(hz[0]) && hz.length <= 3) return `Starts with the measure word ${hz[0]}. ` + MEASURE;
     return null;
@@ -1196,25 +1797,28 @@
     const parts = [];
     if (means.length) parts.push(`<p><b>Means:</b> ${esc(means.join(" + "))}</p>`);
     if (gnote) parts.push(`<p>${noteHtml(gnote)}</p>`);
-    if (!means.length && !gnote) parts.push("<p>A grammar word with no direct English equivalent. It shapes the tone or structure of the sentence.</p>");
+    if (!means.length && !gnote) parts.push(isEU(lang)
+      ? "<p>A grammar word English leaves out here. It holds the sentence together.</p>"
+      : "<p>A grammar word with no direct English equivalent. It shapes the tone or structure of the sentence.</p>");
     if (t.sure === false) parts.push("<p>Not confirmed in this use, so check it with a native speaker.</p>");
 
     const kind = means.length ? NAMES[lang] : `${NAMES[lang]} · grammar word`;
 
-    box.innerHTML = `<div class="wi-head"><span class="wi-hz ${lang === "cmn" ? "hz-cmn" : "hz-yue"}">${esc(t.hz)}</span><span class="wi-rom">${romHtml(lang, t.rom)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`;
+    box.innerHTML = isEU(lang)
+      ? `<div class="wi-head"><span class="wi-w">${esc(t.hz)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`
+      : `<div class="wi-head"><span class="wi-hz ${lang === "cmn" ? "hz-cmn" : "hz-yue"}">${esc(t.hz)}</span><span class="wi-rom">${romHtml(lang, t.rom)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`;
 
     const plays = box.querySelector(".plays");
-    if (/[㐀-鿿]/.test(t.hz)) {
-      if (lang !== "tsn") {
-        const b = el("button", "pbtn", `${speaker}Listen`);
-        b.type = "button";
-        b.addEventListener("click", () => sayVoice(t.hz, lang));
-        plays.appendChild(b);
-      }
-      const h = el("button", "pbtn", `${wave}Tones`);
-      h.type = "button";
-      h.addEventListener("click", () => sayTones(lang, t.rom));
-      plays.appendChild(h);
+    if (isEU(lang)) {
+      const b = el("button", "pbtn", `${speaker}Listen`);
+      b.type = "button";
+      b.addEventListener("click", () => sayVoice(t.hz, lang));
+      plays.appendChild(b);
+    } else if (/[㐀-鿿]/.test(t.hz)) {
+      const b = el("button", "pbtn", `${speaker}Listen`);
+      b.type = "button";
+      b.addEventListener("click", () => lang === "tsn" ? sayTsn(t.rom) : sayVoice(t.hz, lang));
+      plays.appendChild(b);
     }
 
     box.hidden = false;
@@ -1265,7 +1869,7 @@
     wrap.appendChild(el("div", "label", "Word by word"));
     const scroll = el("div", "lanes-scroll");
     const lanes = el("div", "lanes");
-    const rows = {}, toks = { tsn: [], yue: [], en: [], cmn: [] };
+    const rows = {}, toks = { tsn: [], yue: [], en: [], cmn: [], es: [], fr: [], de: [] };
 
     LANES.forEach(lang => {
       const lane = el("div", "lane");
@@ -1287,8 +1891,11 @@
         (p[lang] || []).forEach(t => {
           const refs = t.refs || [];
           const sure = t.sure !== false;
-          const b = el("button", "tok" + (refs.length ? "" : " grammar"),
-            `${melody(lang, [t], "mini")}<span class="rom">${romHtml(lang, t.rom)}</span>${sure ? "" : '<span class="q" title="Not confirmed">?</span>'}`);
+          const inner = isEU(lang)
+            ? `<span class="w">${esc(t.hz)}</span>`
+            : `${melody(lang, [t], "mini")}<span class="rom">${romHtml(lang, t.rom)}</span>`;
+          const b = el("button", "tok" + (refs.length ? "" : " grammar") + (isEU(lang) ? " eu" : ""),
+            `${inner}${sure ? "" : '<span class="q" title="Not confirmed">?</span>'}`);
           b.type = "button";
           b._refs = refs;
           b._lang = lang;
@@ -1337,8 +1944,10 @@
       entry.sel = entry.sel === tok ? null : tok;
       applyFocus(entry);
       showInfo(entry, entry.sel);
-      if (settings.tap && entry.sel && tok._tok && /[\u3400-\u9fff]/.test(tok._tok.hz)) {
-        if (tok._lang === "tsn") sayTones("tsn", tok._tok.rom);
+      if (settings.tap && entry.sel && tok._tok && isEU(tok._lang)) {
+        sayVoice(tok._tok.hz, tok._lang);
+      } else if (settings.tap && entry.sel && tok._tok && /[\u3400-\u9fff]/.test(tok._tok.hz)) {
+        if (tok._lang === "tsn") sayTsn(tok._tok.rom);
         else sayVoice(tok._tok.hz, tok._lang);
       }
     });
@@ -1469,7 +2078,10 @@
 
   function renderChips() {
     const nav = $("toc");
-    nav.innerHTML = '<h2 id="toc-title">Contents</h2>';
+    nav.innerHTML = "";
+    const det = el("details", "toc-d");
+    det.id = "toc-d";
+    det.appendChild(el("summary", "", `<span id="toc-title">Contents</span><span class="n">${CATS.length} topics</span>${chevron}`));
     const ol = el("ol", "");
     CATS.forEach(c => {
       const n = PHRASES.filter(p => p.cat === c).length;
@@ -1483,7 +2095,8 @@
       li.appendChild(b);
       ol.appendChild(li);
     });
-    nav.appendChild(ol);
+    det.appendChild(ol);
+    nav.appendChild(det);
   }
 
   function renderList() {
@@ -1507,7 +2120,7 @@
       head.innerHTML = `<h3>${esc(c)}<span class="n">${group.length}</span></h3>`;
       const up = el("button", "link", "Contents");
       up.type = "button";
-      up.addEventListener("click", () => $("toc").scrollIntoView({ behavior: "smooth", block: "start" }));
+      up.addEventListener("click", () => { $("toc-d").open = true; $("toc").scrollIntoView({ behavior: "smooth", block: "start" }); });
       head.appendChild(up);
       main.appendChild(head);
       const ul = el("ul", "list");
@@ -1530,7 +2143,7 @@
       const key = keyOf(g);
       if (!key) return;
       const pick = lang => (p[lang] || []).filter(t => (t.refs || []).length === 1 && t.refs[0] === k && !PARTICLES.has(t.hz));
-      const v = { yue: pick("yue"), cmn: pick("cmn"), tsn: pick("tsn") };
+      const v = { yue: pick("yue"), cmn: pick("cmn"), tsn: pick("tsn"), es: pick("es"), fr: pick("fr"), de: pick("de") };
       if (!v.yue.length || !v.cmn.length) return;
       if (!WORDS.has(key)) WORDS.set(key, v);
     });
@@ -1580,17 +2193,20 @@
   function fromWords(key) {
     const v = WORDS.get(key);
     if (!v) return null;
-    return { yue: v.yue, cmn: v.cmn, tsn: v.tsn, src: "phrasebook" };
+    return { yue: v.yue, cmn: v.cmn, tsn: v.tsn, es: v.es, fr: v.fr, de: v.de, src: "phrasebook" };
   }
 
   function fromLex(key) {
     const v = LEX[key];
     if (!v) return null;
-    const core = v.y[2] === 1;
+    const core = !!v.y && v.y[2] === 1;
     return {
-      yue: [{ hz: v.y[0], rom: v.y[1], sure: core }],
-      cmn: [{ hz: v.m[0], rom: v.m[1] }],
+      yue: v.y ? [{ hz: v.y[0], rom: v.y[1], sure: core }] : [],
+      cmn: v.m ? [{ hz: v.m[0], rom: v.m[1] }] : [],
       tsn: v.t ? [{ hz: v.t[0], rom: v.t[1] }] : [],
+      es: v.s ? [{ hz: v.s, rom: "" }] : [],
+      fr: v.f ? [{ hz: v.f, rom: "" }] : [],
+      de: v.d ? [{ hz: v.d, rom: "" }] : [],
       src: core ? "core" : "dict",
     };
   }
@@ -1631,7 +2247,8 @@
       }
 
       if (!hit && /^\d+$/.test(words[i])) {
-        hit = { n: 1, gloss: words[i], v: { yue: [{ hz: words[i], rom: "" }], cmn: [{ hz: words[i], rom: "" }], tsn: [{ hz: words[i], rom: "" }], src: "num" } };
+        const num = [{ hz: words[i], rom: "" }];
+        hit = { n: 1, gloss: words[i], v: { yue: num, cmn: num, tsn: num, es: num, fr: num, de: num, src: "num" } };
       }
 
       if (hit) {
@@ -1649,6 +2266,7 @@
           yue: [{ hz: "呀", rom: "aa3" }],
           cmn: yesNo ? [{ hz: "吗", rom: "ma" }] : [],
           tsn: [{ hz: "啊", rom: "a33" }],
+          es: [], fr: [], de: [],
           src: "particle",
         },
       });
@@ -1656,7 +2274,7 @@
 
     if (!chunks.length) return null;
 
-    const out = { en: text, gloss: [], yue: [], cmn: [], tsn: [], missing: [], guess: true };
+    const out = { en: text, gloss: [], yue: [], cmn: [], tsn: [], es: [], fr: [], de: [], missing: [], guess: true };
     let found = 0, counted = 0, noTsn = 0, dict = 0;
 
     chunks.forEach((c, k) => {
@@ -1667,8 +2285,8 @@
       if (c.n) found++;
       if (c.v.src === "dict") dict++;
       if (c.n && !c.v.tsn.length) noTsn++;
-      ["yue", "cmn", "tsn"].forEach(lang => {
-        c.v[lang].forEach(t => {
+      ["yue", "cmn", "tsn", "es", "fr", "de"].forEach(lang => {
+        (c.v[lang] || []).forEach(t => {
           const prev = out[lang][out[lang].length - 1];
           if (prev && prev._src === t) { prev.refs.push(k); return; }
           out[lang].push({ hz: t.hz, rom: t.rom, refs: [k], sure: lang === "yue" ? t.sure !== false && c.v.src !== "dict" : t.sure !== false, _src: t });
@@ -1676,7 +2294,7 @@
       });
     });
 
-    const notes = ["A word-by-word build in English word order. Chinese often orders words differently and adds particles, so compare it with the closest saved sentences."];
+    const notes = ["A word-by-word build in English word order. Chinese, Spanish, French and German often order words differently and add small grammar words, so compare it with the closest saved sentences."];
     if (dict) notes.push("Cantonese words marked ? come from a general dictionary and may sound formal or Mandarin-style.");
     if (noTsn) notes.push(`${noTsn} word${noTsn === 1 ? " has" : "s have"} no Taishanese entry, so that row has gaps.`);
     if (out.missing.length) notes.push("English words marked ? weren't found.");
@@ -1783,13 +2401,23 @@
     drawAll();
   }
 
-  ["tsn", "yue", "cmn"].forEach(l => {
+  const SHORT = { tsn: "Taishanese", yue: "Cantonese", cmn: "Mandarin", es: "Spanish", fr: "French", de: "German" };
+
+  ["tsn", "yue", "cmn", "es", "fr", "de"].forEach(l => {
     const box = $("col-" + l);
     const saved = store.get("phrasebook-col-" + l);
     if (saved !== null) box.checked = saved === "1";
     show[l] = box.checked;
+
+    const chip = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span>${SHORT[l]}`);
+    chip.type = "button";
+    chip.setAttribute("aria-pressed", box.checked ? "true" : "false");
+    chip.addEventListener("click", () => { box.checked = !box.checked; box.dispatchEvent(new Event("change")); });
+    $("langs").appendChild(chip);
+
     box.addEventListener("change", () => {
       show[l] = box.checked;
+      chip.setAttribute("aria-pressed", box.checked ? "true" : "false");
       store.set("phrasebook-col-" + l, box.checked ? "1" : "0");
       applyShow();
     });
@@ -1816,6 +2444,25 @@
 
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawAll);
 
+  const SKIN_BG = { paper: "#ffffff", cream: "#f7f1e3", mist: "#eceef0", dusk: "#3a3d42", charcoal: "#1f2023", night: "#000000" };
+  const skin = $("skin");
+
+  function applySkin(v) {
+    if (!SKIN_BG[v]) v = "paper";
+    if (v === "paper") document.documentElement.removeAttribute("data-skin");
+    else document.documentElement.setAttribute("data-skin", v);
+    let m = document.querySelector('meta[name="theme-color"]');
+    if (!m) { m = document.createElement("meta"); m.name = "theme-color"; document.head.appendChild(m); }
+    m.content = SKIN_BG[v];
+    return v;
+  }
+
+  skin.value = applySkin(store.get("phrasebook-skin") || "paper");
+  skin.addEventListener("change", () => {
+    store.set("phrasebook-skin", applySkin(skin.value));
+    drawAll();
+  });
+
   const spelling = $("spelling");
   spelling.value = store.get("phrasebook-spelling") === "std" ? "std" : "easy";
   ROMAN.mode = spelling.value;
@@ -1840,4 +2487,7 @@
 
   renderChips();
   renderList();
+
+  const firstRow = document.querySelector("#list .row-btn");
+  if (firstRow && store.get("phrasebook-intro-closed") !== "1") firstRow.click();
 </script>

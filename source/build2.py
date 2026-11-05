@@ -45,12 +45,34 @@ for part in "abcd":
         e["g_yue"], e["g_cmn"] = gy3[e["en"]], gc3[e["en"]]
         data.append(e)
 
-order = ["Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Goodbyes"]
+data += parse("batches/batch4a.txt")
+
+from parse_batch import eu_tokens
+
+EU = {}
+for part in "abc":
+    cur = None
+    for line in open(f"eu/{part}.txt", encoding = "utf-8"):
+        line = line.rstrip("\n")
+        if line.startswith("#"):
+            cur = int(line[1:]); EU[cur] = {}
+        elif line[:3] in ("s: ", "f: ", "d: "):
+            EU[cur][{"s": "es", "f": "fr", "d": "de"}[line[0]]] = eu_tokens(line[3:])
+
+assert len(data) == 329 and sorted(EU) == list(range(329)), (len(data), len(EU))
+for i, p in enumerate(data):
+    p.update(EU[i])
+
+data += parse("batches/jokes.txt")
+data += parse("batches/daily.txt")
+
+order = ["Start Here", "Talking About the Day", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:
     n = len(p["gloss"])
-    for lang in ("yue", "cmn", "tsn"):
+    for lang in ("yue", "cmn", "tsn", "es", "fr", "de"):
+        assert p.get(lang), (p["en"], lang)
         for tok in p[lang]:
             assert all(0 <= r < n for r in tok["refs"]), (p["en"], lang, tok)
 
@@ -71,7 +93,13 @@ g0 = page.index("  const GRAMMAR = {")
 g1 = page.index("  const MEASURES = new Set")
 page = page[:g0] + tag_standalone(page[g0:g1]) + page[g1:]
 page = page.replace("__PHRASES__", json.dumps(data, ensure_ascii = False))
-page = page.replace("__WORDS__", open("words.json", encoding = "utf-8").read().replace("</", "<\\/"))
+lex = json.load(open("words.json", encoding = "utf-8"))
+for f in ("eu/core_eu.txt", "eu/topic_eu.txt"):
+    for line in open(f, encoding = "utf-8"):
+        en, es, fr, de = line.rstrip("\n").split("|")
+        e = lex.setdefault(en.lower(), {})
+        e.setdefault("s", es); e.setdefault("f", fr); e.setdefault("d", de)
+page = page.replace("__WORDS__", json.dumps(lex, ensure_ascii = False, separators = (",", ":")).replace("</", "<\\/"))
 
 open(sys.argv[1], "w", encoding = "utf-8").write(page)
 
