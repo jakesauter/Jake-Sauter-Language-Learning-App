@@ -486,6 +486,12 @@
 
   .tok .hz { font-size: 1.4rem; line-height: 1.15; white-space: nowrap; }
   .tok .rom { font-size: 0.72rem; color: var(--muted); line-height: 1.2; white-space: nowrap; }
+  .tok .rom.std { color: var(--ink-2); }
+  .tok .rom.easy { font-style: italic; margin-top: 1px; }
+  .rom.std .syl sup { display: inline; }
+  .rom.easy .syl sup { display: none; }
+  .wi-rom { display: inline-grid; line-height: 1.25; }
+  .wi-rom .rom.easy { font-style: italic; color: var(--muted); }
   .tok .en { font-size: var(--t-sm); font-weight: 700; line-height: 1.2; white-space: nowrap; }
   .tok .en.soft { font-weight: 400; font-style: italic; }
   .tok .w { font-size: var(--t-md, 1rem); line-height: 1.25; white-space: nowrap; padding: 0.15rem 0; }
@@ -645,7 +651,7 @@
         </label>
       </div>
       <div class="row">
-        <span class="label">Spelling</span>
+        <span class="label">Notes spelling</span>
         <label for="spelling">
           <select id="spelling">
             <option value="easy">Easy English</option>
@@ -683,7 +689,7 @@
       <h3>Word rows</h3>
       <p>Each language is a row, read left to right in its own word order. Lines link each word to its English meaning and to the matching word in the next row: Taishanese, Cantonese, English, Mandarin, then Spanish, French and German. Tap a word to trace it.</p>
       <p>A dashed box is a particle with no English equivalent. A <b>?</b> marks a word that couldn't be confirmed. English in <i>(parentheses)</i> is implied or describes a tone.</p>
-      <p>The round button at the start of each row plays the whole line in that language; the small one under it plays just the tones. Spelling is in easy English by default; switch to the standard systems under View.</p>
+      <p>The round button at the start of each row plays the whole line in that language. Each word box shows two spellings: the standard romanization on top (Jyutping, pinyin or Stephen Li's Taishanese, with tone numbers), and an easy English sound-alike below in italics. Notes use easy English by default; switch them to the standard systems under View.</p>
       <p>Translations of new sentences are word-by-word builds: they keep English word order and skip most particles, so treat them as a starting point.</p>
       <p><b>Listen</b> uses your device's own Cantonese, Mandarin, Spanish, French and German voices. No phone ships a Taishanese voice, so this app has its own Taishanese speech engine. It builds every consonant, vowel and tone from the romanization, including the hissy ɬ and the rising changed tones. It sounds robotic, but it works even with the phone on silent. Tapping a word also speaks it.</p>
       <p>Spanish follows Latin American usage (ustedes, manejar, la alberca). Lines use the friendly tú, tu and du forms you would use with family.</p>
@@ -886,6 +892,19 @@
     return romParts(lang, rom).map(x => x.num
       ? `<span class="syl">${esc(x.show)}<sup>${x.num}</sup></span>`
       : esc(x.show)).join(" ");
+  }
+
+  function romAs(mode, fn) {
+    const keep = ROMAN.mode;
+    ROMAN.mode = mode;
+    try { return fn(); } finally { ROMAN.mode = keep; }
+  }
+
+  function romPair(lang, rom) {
+    if (!rom) return "";
+    const std = romAs("std", () => romHtml(lang, rom));
+    const easy = romAs("easy", () => romHtml(lang, rom));
+    return `<span class="rom std">${std}</span><span class="rom easy">${easy}</span>`;
   }
 
   function romText(lang, rom) {
@@ -1806,7 +1825,7 @@
 
     box.innerHTML = isEU(lang)
       ? `<div class="wi-head"><span class="wi-w">${esc(t.hz)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`
-      : `<div class="wi-head"><span class="wi-hz ${lang === "cmn" ? "hz-cmn" : "hz-yue"}">${esc(t.hz)}</span><span class="wi-rom">${romHtml(lang, t.rom)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`;
+      : `<div class="wi-head"><span class="wi-hz ${lang === "cmn" ? "hz-cmn" : "hz-yue"}">${esc(t.hz)}</span><span class="wi-rom">${romPair(lang, t.rom)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`;
 
     const plays = box.querySelector(".plays");
     if (isEU(lang)) {
@@ -1893,7 +1912,7 @@
           const sure = t.sure !== false;
           const inner = isEU(lang)
             ? `<span class="w">${esc(t.hz)}</span>`
-            : `${melody(lang, [t], "mini")}<span class="rom">${romHtml(lang, t.rom)}</span>`;
+            : `${melody(lang, [t], "mini")}${romPair(lang, t.rom)}`;
           const b = el("button", "tok" + (refs.length ? "" : " grammar") + (isEU(lang) ? " eu" : ""),
             `${inner}${sure ? "" : '<span class="q" title="Not confirmed">?</span>'}`);
           b.type = "button";
