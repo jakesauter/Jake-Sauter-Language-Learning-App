@@ -1,0 +1,1843 @@
+<title>Family Phrasebook</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Noto+Sans+HK:wght@400;500;700&family=Noto+Sans+SC:wght@400;500&display=swap">
+
+<style>
+  /* Ink-on-paper phrasebook: sticky search, scannable sentence list, interlinear word rows joined by drawn lines */
+  :root {
+    --paper: #ffffff;
+    --ink: #111111;
+    --ink-2: #3a3a3a;
+    --muted: #6b6b6b;
+    --line: #e2e2df;
+    --wash: #f4f4f1;
+
+    --f-latin: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+    --f-yue: "Noto Sans HK", "PingFang HK", "Microsoft JhengHei", sans-serif;
+    --f-cmn: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+    --t-xs: 0.75rem;
+    --t-sm: 0.875rem;
+    --t-md: 1rem;
+    --t-lg: 1.25rem;
+    --t-xl: 1.75rem;
+
+    --s-1: 4px;
+    --s-2: 8px;
+    --s-3: 12px;
+    --s-4: 16px;
+    --s-5: 24px;
+    --s-6: 32px;
+
+    --r: 10px;
+
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+
+  [hidden] { display: none !important; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-latin);
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto;
+    height: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: var(--paper);
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  button { font: inherit; color: inherit; }
+
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .label {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .hz-yue { font-family: var(--f-yue); }
+  .hz-cmn { font-family: var(--f-cmn); }
+
+
+  /* header */
+
+  header.top { padding-block: var(--s-6) var(--s-3); display: grid; gap: var(--s-1); }
+
+  h1 { margin: 0; font-size: var(--t-xl); line-height: 1.15; letter-spacing: -0.01em; }
+
+  .sub { margin: 0; color: var(--muted); font-size: var(--t-sm); }
+
+
+  /* sticky search */
+
+  .bar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    background: var(--paper);
+    padding-block: var(--s-3) var(--s-2);
+    display: grid;
+    gap: var(--s-2);
+  }
+
+  .bar { border-bottom: 1px solid var(--line); }
+  .bar > * { min-width: 0; }
+
+  .search { display: flex; gap: var(--s-2); }
+
+  .search input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    font-size: var(--t-md);
+    color: var(--ink);
+    background: var(--wash);
+    border: 1px solid transparent;
+    border-radius: var(--r);
+    padding: 11px 14px;
+  }
+
+  .search input:focus { background: var(--paper); border-color: var(--ink); outline: none; }
+
+  .btn {
+    flex: none;
+    font-size: var(--t-sm);
+    font-weight: 700;
+    border-radius: var(--r);
+    padding: 0 16px;
+    min-height: 44px;
+    cursor: pointer;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .btn.quiet { background: var(--paper); color: var(--ink); border-color: var(--line); }
+  .btn.quiet[aria-expanded="true"] { border-color: var(--ink); }
+
+  .chips { display: flex; gap: var(--s-2); overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .chips::-webkit-scrollbar { display: none; }
+
+  .chip {
+    flex: none;
+    font-size: var(--t-sm);
+    border: 1px solid var(--line);
+    background: var(--paper);
+    border-radius: 999px;
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+
+  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  .chip .n { color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+  .chip[aria-pressed="true"] .n { color: var(--line); }
+
+
+  /* view panel */
+
+  .view {
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: var(--s-3) var(--s-4);
+    display: grid;
+    gap: var(--s-3);
+  }
+
+  .view .row { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
+
+  .view label { display: flex; align-items: center; gap: var(--s-2); font-size: var(--t-sm); cursor: pointer; min-height: 32px; }
+
+  input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--ink); margin: 0; }
+
+  .link { background: none; border: 0; padding: 0; font-size: var(--t-sm); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+
+  /* result */
+
+  .result { display: grid; gap: var(--s-3); padding-top: var(--s-4); }
+  .result:empty { display: none; }
+
+  .result-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-3); flex-wrap: wrap; }
+
+  .result-head .what { font-size: var(--t-sm); color: var(--muted); }
+
+  .result .detail { border: 1px solid var(--ink); border-radius: var(--r); padding: var(--s-4); }
+
+  .near { display: grid; gap: var(--s-1); }
+
+
+  /* list */
+
+  main { padding-block: var(--s-4) var(--s-6); }
+
+  .group-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-3);
+    margin: var(--s-6) 0 var(--s-1);
+    scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 88px);
+  }
+
+  .group-title:first-child { margin-top: var(--s-2); }
+
+  .group-title h3 { margin: 0; font-size: var(--t-lg); line-height: 1.2; }
+  .group-title .n { color: var(--muted); font-size: var(--t-sm); font-weight: 400; margin-left: var(--s-2); font-variant-numeric: tabular-nums; }
+  .group-title .link { font-weight: 400; color: var(--muted); }
+
+  .toc { padding-block: var(--s-5) var(--s-2); scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 88px); }
+  .toc h2 { margin: 0 0 var(--s-2); font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+  .toc ol { list-style: none; margin: 0; padding: 0; }
+
+  .toc button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-2);
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 9px 0;
+    font-size: var(--t-md);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .toc button:hover span:first-child { text-decoration: underline; text-underline-offset: 3px; }
+  .toc .n { color: var(--muted); font-size: var(--t-sm); font-variant-numeric: tabular-nums; }
+
+  ul.list { list-style: none; margin: 0; padding: 0; }
+
+  li.item { border-bottom: 1px solid var(--line); }
+
+  .row-btn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--s-3);
+    align-items: center;
+    text-align: left;
+    background: none;
+    border: 0;
+    padding: var(--s-3) 0;
+    cursor: pointer;
+  }
+
+  .row-btn .en { font-weight: 700; font-size: var(--t-md); line-height: 1.3; }
+
+  .row-btn .pv { display: flex; flex-wrap: wrap; gap: 0 var(--s-2); align-items: baseline; margin-top: 2px; }
+  .row-btn .pv .hz-yue { font-size: var(--t-lg); line-height: 1.35; }
+  .row-btn .pv .rom { font-size: var(--t-sm); color: var(--muted); }
+
+  .chev { width: 20px; height: 20px; transition: transform 0.2s ease; }
+  .row-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+
+  .item .detail { padding-bottom: var(--s-5); }
+
+  .empty { color: var(--muted); padding-block: var(--s-5); }
+
+
+  /* detail */
+
+  .detail { display: grid; gap: var(--s-5); min-width: 0; }
+  .detail > * { min-width: 0; }
+  .result > * { min-width: 0; }
+
+  .detail h2 { margin: 0; font-size: var(--t-lg); line-height: 1.25; text-wrap: balance; }
+
+  .say { display: grid; gap: var(--s-3); }
+
+  .say-line { display: grid; grid-template-columns: 1fr; gap: 2px; }
+  .say-line > div { min-width: 0; }
+
+
+  .melody { display: flex; flex-wrap: wrap; gap: 0 3px; }
+  .melody .ch { display: grid; justify-items: center; }
+  .melody .ch .cs { display: flex; gap: 1px; }
+  .melody .ch svg { width: 1.35rem; height: 0.95rem; overflow: visible; }
+  .melody .ch .z { font-size: 1.5rem; line-height: 1.25; }
+
+  .say-line .hz-cmn.big { font-size: 1.5rem; line-height: 1.25; padding-top: 0.95rem; }
+
+  .melody.mini { justify-content: center; flex-wrap: nowrap; }
+  .melody.mini .ch svg { width: 1.05rem; height: 0.7rem; }
+  .melody.mini .ch .z { font-size: 1.4rem; line-height: 1.15; }
+
+  .wordinfo {
+    display: grid;
+    gap: var(--s-2);
+    border: 1px solid var(--ink);
+    border-radius: var(--r);
+    padding: var(--s-3) var(--s-4);
+    margin-top: var(--s-2);
+  }
+
+  .wordinfo .wi-head { display: flex; align-items: baseline; gap: var(--s-3); flex-wrap: wrap; }
+  .wordinfo .wi-hz { font-size: 1.75rem; line-height: 1.1; }
+  .wordinfo .wi-rom { color: var(--muted); font-size: var(--t-sm); }
+  .wordinfo .wi-kind { font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .wordinfo p { margin: 0; font-size: 0.95rem; max-width: 60ch; }
+  .wordinfo .plays { margin-top: 0; }
+  .say-line .rom { font-size: var(--t-sm); color: var(--muted); margin-top: 2px; }
+
+  .plays { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+  .pbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 30px;
+    padding: 3px 11px 3px 8px;
+    font-size: var(--t-xs);
+    font-weight: 700;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .pbtn svg { width: 14px; height: 14px; }
+  .pbtn:hover, .pbtn.playing { border-color: var(--ink); }
+
+  .view select {
+    font: inherit;
+    font-size: var(--t-sm);
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 4px 8px;
+  }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    width: min(560px, calc(100vw - 32px));
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: var(--r);
+    padding: 12px 16px;
+    font-size: var(--t-sm);
+    z-index: 30;
+  }
+
+  .lanes-scroll { overflow-x: auto; margin-inline: -4px; padding: 4px 4px 8px; }
+
+  .lanes { position: relative; display: grid; row-gap: 34px; width: max-content; min-width: 100%; padding-top: 14px; }
+
+  .lane { position: relative; display: flex; gap: var(--s-2); z-index: 1; }
+
+  .lane-play {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    flex: none;
+    width: 38px;
+    display: grid;
+    align-content: center;
+    gap: 4px;
+    background: var(--paper);
+    box-shadow: 6px 0 6px -4px var(--paper);
+  }
+
+  .lp {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .lp.alt { width: 34px; height: 24px; border-radius: 8px; background: var(--paper); color: var(--ink); border-color: var(--line); }
+  .lp svg { width: 15px; height: 15px; }
+  .lp.alt svg { width: 13px; height: 13px; }
+
+  .hear { display: grid; gap: 6px; }
+  .hear-row { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; }
+  .hear-name { min-width: 6.5em; font-size: var(--t-sm); font-weight: 700; }
+
+  .lane-label {
+    background: var(--paper);
+    padding-right: 4px;
+    z-index: 2;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .tok {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 1px;
+    min-width: 3.4em;
+    min-height: 54px;
+    padding: 5px 9px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+
+  .tok.grammar { border-style: dashed; }
+  .tok.gap { border-style: dotted; color: var(--muted); }
+
+  .tok .hz { font-size: 1.4rem; line-height: 1.15; white-space: nowrap; }
+  .tok .rom { font-size: 0.72rem; color: var(--muted); line-height: 1.2; white-space: nowrap; }
+  .tok .en { font-size: var(--t-sm); font-weight: 700; line-height: 1.2; white-space: nowrap; }
+  .tok .en.soft { font-weight: 400; font-style: italic; }
+
+  .tok .q {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .lanes > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 0; }
+  .lanes > svg path { fill: none; stroke: var(--ink); stroke-width: 1.3; transition: opacity 0.15s ease, stroke-width 0.15s ease; }
+  .lanes > svg circle { fill: var(--ink); transition: opacity 0.15s ease; }
+
+  .lanes.focus .tok:not(.on) { opacity: 0.25; }
+  .lanes.focus > svg .ln:not(.on) { opacity: 0.1; }
+  .lanes.focus > svg .ln.on path { stroke-width: 2.4; }
+  .lanes.focus .tok.on { background: var(--ink); color: var(--paper); }
+  .lanes.focus .tok.on .rom { color: var(--line); }
+  .lanes.focus .tok.on svg .pitch { stroke: var(--paper); }
+  .lanes.focus .tok.on svg .head { fill: var(--paper); }
+  .lanes.focus .tok.on svg .guide { stroke: var(--ink-2); }
+
+  .hint { font-size: var(--t-xs); color: var(--muted); margin: var(--s-1) 0 0; }
+
+  .notes { display: grid; gap: var(--s-2); background: var(--wash); border-radius: var(--r); padding: var(--s-3) var(--s-4); font-size: 0.95rem; }
+  .notes p { margin: 0; max-width: 65ch; }
+  .notes b { font-size: var(--t-xs); letter-spacing: 0.08em; text-transform: uppercase; margin-right: var(--s-2); }
+
+  .google { display: grid; gap: var(--s-1); font-size: var(--t-sm); color: var(--ink-2); }
+  .google div { display: flex; gap: var(--s-2); flex-wrap: wrap; align-items: baseline; }
+  .google .g { font-size: var(--t-md); color: var(--ink); }
+
+  .nr { color: var(--muted); font-size: 0.92em; white-space: nowrap; }
+
+
+  /* tones */
+
+  .tc { display: inline-block; width: 1.05em; height: 1.05em; vertical-align: -0.18em; margin-right: 0.1em; overflow: visible; }
+
+  svg .guide { display: none; }
+  .tone .big .guide { display: inline; stroke: var(--line); stroke-width: 1; }
+  svg .pitch { fill: none; stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  svg .head { fill: var(--ink); }
+
+  .syl { white-space: nowrap; }
+  .syl sup { font-size: 0.72em; margin-left: 1px; }
+  body:not(.nums) .syl sup { display: none; }
+
+
+  /* guide dialog */
+
+  dialog.guide {
+    width: min(640px, calc(100vw - 24px));
+    max-height: calc(100vh - 48px);
+    border: 1px solid var(--ink);
+    border-radius: 14px;
+    padding: 0;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  dialog.guide::backdrop { background: rgba(17, 17, 17, 0.35); }
+
+  .guide-in { padding: var(--s-5); display: grid; gap: var(--s-5); }
+
+  .guide-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); }
+  .guide-head h2 { margin: 0; font-size: var(--t-lg); }
+
+  .guide section { display: grid; gap: var(--s-3); }
+  .guide h3 { margin: 0; font-size: var(--t-md); }
+  .guide p { margin: 0; font-size: 0.95rem; max-width: 62ch; }
+
+  .tones { display: grid; gap: var(--s-2); }
+  .tones.six { grid-template-columns: repeat(6, 1fr); }
+  .tones.five { grid-template-columns: repeat(5, 1fr); }
+
+  .tone { display: grid; justify-items: center; gap: 2px; text-align: center; min-width: 0; }
+  .tone .big { width: 40px; height: 40px; overflow: visible; }
+  .tone .big .pitch { stroke-width: 3; }
+  .tone .num { font-weight: 700; font-size: var(--t-sm); font-variant-numeric: tabular-nums; }
+  .tone .name { font-size: 0.7rem; color: var(--muted); line-height: 1.2; }
+  .tone .ex { font-family: var(--f-yue); font-size: var(--t-lg); line-height: 1.2; }
+  .tone .exen { font-size: 0.7rem; line-height: 1.2; }
+
+  .changed { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-4); font-size: var(--t-sm); color: var(--muted); align-items: center; }
+  .changed span { white-space: nowrap; }
+
+  .sounds { display: grid; grid-template-columns: auto 1fr; gap: 2px var(--s-3); font-size: 0.95rem; }
+
+  @media (max-width: 400px) {
+
+    .tone .big { width: 34px; height: 34px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <h1>Family Phrasebook</h1>
+    <p class="sub"><span id="count"></span> everyday sentences in Taishanese, Cantonese and Mandarin, word by word.</p>
+  </header>
+
+  <div class="bar">
+    <form class="search" id="search-form" autocomplete="off" role="search">
+      <input id="q" type="search" placeholder="Type any sentence or search" aria-label="Type any English sentence, or search the phrasebook" maxlength="200">
+      <button class="btn" id="go" type="submit">Translate</button>
+      <button class="btn quiet" id="view-btn" type="button" aria-expanded="false" aria-controls="view">View</button>
+    </form>
+
+    <div class="view" id="view" hidden>
+      <div class="row">
+        <span class="label">Show</span>
+        <label for="col-tsn"><input type="checkbox" id="col-tsn" checked> Taishanese</label>
+        <label for="col-yue"><input type="checkbox" id="col-yue" checked> Cantonese</label>
+        <label for="col-cmn"><input type="checkbox" id="col-cmn" checked> Mandarin</label>
+      </div>
+      <div class="row">
+        <label for="show-nums"><input type="checkbox" id="show-nums"> Tone numbers</label>
+        <button class="link" id="guide-btn" type="button">Tone and reading guide</button>
+      </div>
+      <div class="row">
+        <span class="label">Sound</span>
+        <label for="tap-speak"><input type="checkbox" id="tap-speak" checked> Speak words when tapped</label>
+      </div>
+      <div class="row">
+        <span class="label">Spelling</span>
+        <label for="spelling">
+          <select id="spelling">
+            <option value="easy">Easy English</option>
+            <option value="std">Standard (Jyutping, pinyin, Stephen Li)</option>
+          </select>
+        </label>
+        <label for="speed">Speed
+          <select id="speed">
+            <option value="1">Normal</option>
+            <option value="0.75">Slower</option>
+            <option value="0.5">Slow</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="result" id="result" aria-live="polite"></section>
+
+  <nav class="toc" id="toc" aria-labelledby="toc-title"></nav>
+
+  <main id="list"></main>
+
+</div>
+
+<dialog class="guide" id="guide" aria-labelledby="guide-title">
+  <div class="guide-in">
+    <div class="guide-head">
+      <h2 id="guide-title">Reading guide</h2>
+      <button class="btn quiet" id="guide-close" type="button">Close</button>
+    </div>
+
+    <section>
+      <h3>Word rows</h3>
+      <p>Each language is a row, read left to right in its own word order. Lines drop from every Chinese word to its English meaning, and from Taishanese words to their Cantonese twins. Tap a word to trace it.</p>
+      <p>A dashed box is a particle with no English equivalent. A <b>?</b> marks a word that couldn't be confirmed. English in <i>(parentheses)</i> is implied or describes a tone.</p>
+      <p>The round button at the start of each row plays the whole line in that language; the small one under it plays just the tones. Spelling is in easy English by default; switch to the standard systems under View.</p>
+      <p>Translations of new sentences are word-by-word builds: they keep English word order and skip most particles, so treat them as a starting point.</p>
+      <p><b>Listen</b> uses your device's own Cantonese and Mandarin voices. No voice speaks Taishanese, so <b>Tones</b> plays each syllable's pitch line in order instead; it works for all three languages. Tapping a word also speaks it.</p>
+    </section>
+
+    <section>
+      <h3>Cantonese tones</h3>
+      <div class="tones six" id="tones-yue"></div>
+      <p>Each line is your voice's pitch, low at the bottom and high at the top, ending at the dot. Same sound <b>si</b>, six meanings. Tone 1 sounds like Mandarin's 1st tone (ā), tone 2 like Mandarin's 2nd (á).</p>
+    </section>
+
+    <section>
+      <h3>Taishanese tones</h3>
+      <div class="tones five" id="tones-tsn"></div>
+      <p>Five main tones, shown on <b>hau</b>. The digits are pitch levels from 1 (low) to 5 (high).</p>
+      <div class="changed" id="tones-changed"></div>
+      <div class="sounds">
+        <b>ɬ</b><span>a hissy "thl", like Welsh "ll"; replaces Cantonese s</span>
+        <b>ŋ</b><span>"ng" as in sing, even at the start of a word</span>
+        <b>ɔ</b><span>"aw" as in law</span>
+        <b>ə</b><span>"uh" as in sofa</span>
+        <b>ɛ</b><span>"e" as in bet</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>Mandarin tones</h3>
+      <p>Pinyin marks the tone: ā high flat, á rising, ǎ dip, à falling, a light.</p>
+    </section>
+
+    <section>
+      <h3>Sources</h3>
+      <p>Taishanese from Stephen Li's Taishanese dictionary. Word builds also use CC-CEDICT, Rime Cantonese Jyutping data, OpenCC and Jieba word frequencies. Google Translate output is shown for comparison on saved sentences.</p>
+    </section>
+  </div>
+</dialog>
+
+<script>
+  const PHRASES = __PHRASES__;
+  const LEX = __WORDS__;
+
+  const NS = "http://www.w3.org/2000/svg";
+  const LANES = ["tsn", "yue", "en", "cmn"];
+  const NAMES = { tsn: "Taishanese", yue: "Cantonese", en: "English", cmn: "Mandarin" };
+  const YUE_TONE = { 1: [5, 5], 2: [3, 5], 3: [3, 3], 4: [2, 1], 5: [2, 3], 6: [2, 2] };
+
+  const $ = id => document.getElementById(id);
+
+  const el = (tag, cls, html) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (html !== undefined) n.innerHTML = html;
+    return n;
+  };
+
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  const norm = s => String(s || "").toLowerCase().replace(/[’‘]/g, "'").replace(/[^a-z0-9' ]+/g, " ").replace(/\s+/g, " ").trim();
+
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+  };
+
+
+  /* tones */
+
+  function contourSvg(levels, cls) {
+    if (!levels || !levels.length) return "";
+    const y = lv => 22 - (lv - 1) * 5;
+    const n = levels.length;
+    const pts = levels.map((lv, i) => [n === 1 ? 12 : 3 + (18 * i) / (n - 1), y(lv)]);
+    const d = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + "," + p[1]).join(" ");
+    const last = pts[n - 1];
+    return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">` +
+      `<line class="guide" x1="1" y1="2" x2="23" y2="2"/>` +
+      `<line class="guide" x1="1" y1="22" x2="23" y2="22"/>` +
+      `<path class="pitch" d="${d}"/>` +
+      `<circle class="head" cx="${last[0].toFixed(1)}" cy="${last[1]}" r="2.6"/>` +
+      `</svg>`;
+  }
+
+  function splitSyl(lang, s) {
+    if (lang === "yue") {
+      const m = s.match(/^(.+?)([1-6])$/);
+      return m ? { base: m[1], num: m[2], levels: YUE_TONE[m[2]] } : { base: s, num: "", levels: null };
+    }
+    if (lang === "tsn") {
+      const m = s.match(/^(.+?)([1-5]{2,3})$/);
+      return m ? { base: m[1], num: m[2], levels: [...m[2]].map(Number) } : { base: s, num: "", levels: null };
+    }
+    return { base: s, num: "", levels: null };
+  }
+
+  /* easy English spelling for Jyutping, pinyin and Stephen Li's Taishanese */
+
+  const ROMAN = { mode: "easy" };
+
+  const YUE_F = {
+    aa: "ah", aai: "ai", aau: "ow", aam: "ahm", aan: "ahn", aang: "ahng", aap: "ahp", aat: "aht", aak: "ahk",
+    ai: "ai", au: "ow", am: "um", an: "un", ang: "ung", ap: "up", at: "ut", ak: "uk",
+    e: "eh", ei: "ay", eng: "eng", ek: "ek", eu: "ew", em: "em", ep: "ep",
+    i: "ee", iu: "yoo", im: "eem", in: "een", ing: "ing", ip: "eep", it: "eet", ik: "ik",
+    o: "aw", oi: "oy", ou: "oh", on: "awn", ong: "awng", ot: "awt", ok: "awk",
+    u: "oo", ui: "ooy", un: "oon", ung: "oong", ut: "oot", uk: "ook",
+    oe: "eu", oeng: "eung", oek: "euk", eoi: "eui", eon: "un", eot: "ut",
+    yu: "yu", yun: "yun", yut: "yut",
+  };
+
+  function easyYue(s) {
+    if (s === "m" || s === "ng" || s === "hm" || s === "hng") return s;
+    const m = s.match(/^(ng|gw|kw|[bpmfdtnlgkhwzcsj])?(.*)$/);
+    const ini = m[1] || "";
+    const fin = m[2];
+    const f = YUE_F[fin] ?? fin;
+    let I = { z: "j", c: "ch", j: "y" }[ini] ?? ini;
+    if (ini === "j" && (f.startsWith("y") || fin.startsWith("yu"))) I = "";
+    return I + f;
+  }
+
+  const CMN_WHOLE = {
+    yi: "ee", yin: "een", ying: "ing", yu: "yu", yue: "yweh", yuan: "ywen", yun: "yun",
+    ya: "yah", yao: "yow", yan: "yen", yang: "yahng", ye: "yeh", you: "yo", yong: "yoong",
+    wu: "woo", wa: "wah", wo: "waw", wai: "wai", wei: "way", wan: "wahn", wen: "wun", wang: "wahng", weng: "wung",
+    er: "ar", a: "ah", ai: "ai", ao: "ow", an: "ahn", ang: "ahng", o: "aw", ou: "oh", e: "uh", ei: "ay", en: "un", eng: "ung",
+  };
+
+  const CMN_F = {
+    a: "ah", ai: "ai", ao: "ow", an: "ahn", ang: "ahng", o: "aw", ou: "oh", ong: "oong", e: "uh", ei: "ay", en: "un", eng: "ung",
+    i: "ee", ia: "yah", iao: "yow", ian: "yen", iang: "yahng", ie: "yeh", in: "een", ing: "ing", iong: "yoong", iu: "yo",
+    u: "oo", ua: "wah", uai: "wai", uan: "wahn", uang: "wahng", ui: "way", un: "oon", uo: "waw",
+    "ü": "yu", "üe": "weh", "üan": "wen", "ün": "yun",
+  };
+
+  const CMN_I = { q: "ch", x: "sh", zh: "j", z: "dz", c: "ts" };
+  const CMN_BUZZ = { zh: "jr", ch: "chr", sh: "shr", r: "r", z: "dz", c: "ts", s: "s" };
+
+  function easyCmn(syl) {
+    let s = syl.normalize("NFD").replace(/[\u0300\u0301\u0304\u030c]/g, "").normalize("NFC").toLowerCase().replace(/v/g, "ü");
+    let er = "";
+    if (s.length > 2 && s.endsWith("r") && s !== "er") { s = s.slice(0, -1); er = "r"; }
+    if (CMN_WHOLE[s]) return CMN_WHOLE[s] + er;
+    const m = s.match(/^(zh|ch|sh|[bpmfdtnlgkhjqxrzcs])?(.*)$/);
+    const ini = m[1] || "";
+    let fin = m[2];
+    if (fin === "i" && CMN_BUZZ[ini]) return CMN_BUZZ[ini] + er;
+    if (/^[jqx]$/.test(ini) && fin.startsWith("u")) fin = "ü" + fin.slice(1);
+    return (CMN_I[ini] ?? ini) + (CMN_F[fin] ?? fin) + er;
+  }
+
+  const TSN_F = {
+    a: "ah", ai: "ai", au: "ow", am: "ahm", an: "ahn", ang: "ahng", ap: "ahp", at: "aht", ak: "ahk",
+    "ɔ": "aw", "ɔi": "oy", "ɔu": "oh", "ɔn": "awn", "ɔng": "awng", "ɔk": "awk", "ɔt": "awt", "ɔm": "awm", "ɔp": "awp",
+    "ə": "uh", "əu": "eu", "əng": "ung", "ək": "uk", "əm": "um", "ən": "un", "əp": "up", "ət": "ut",
+    "ɛ": "eh", "ɛt": "et", "ɛk": "ek", "ɛn": "en", "ɛng": "eng", "ɛp": "ep", "ɛm": "em",
+    e: "eh", ei: "ay", ein: "ayn", eng: "eng", et: "et", ek: "ek",
+    i: "ee", ia: "yah", iak: "yahk", iang: "yahng", iam: "yahm", iap: "yahp", iat: "yaht", ian: "yahn", iau: "yow", iu: "yoo",
+    im: "eem", in: "een", ip: "eep", it: "eet", ik: "ik", ing: "ing",
+    o: "aw", u: "oo", ui: "ooy", un: "oon", ut: "oot", uk: "ook", ung: "oong",
+  };
+
+  function easyTsn(s) {
+    let t = s.replace(/ŋ/g, "ng");
+    if (t === "m" || t === "ng") return t;
+    const m = t.match(/^(ng|ts|dz|ɬ|[bpmfdtnlgkhvysz])?(.*)$/);
+    const ini = m[1] || "";
+    const fin = m[2];
+    let f = TSN_F[fin];
+    if (f === undefined) f = fin.replace(/ɔ/g, "aw").replace(/ə/g, "uh").replace(/ɛ/g, "eh");
+    let I = { ts: "ch", dz: "j", "ɬ": "lh" }[ini] ?? ini;
+    if (ini === "y" && f.startsWith("y")) I = "";
+    if (ini === "y" && f.startsWith("ee")) I = "y";
+    return I + f;
+  }
+
+  function easySyl(lang, base) {
+    if (lang === "yue") return easyYue(base);
+    if (lang === "tsn") return easyTsn(base);
+    return easyCmn(base);
+  }
+
+  function romParts(lang, rom) {
+    return String(rom || "").split(" ").filter(Boolean).map(s => {
+      if (lang === "cmn") return { show: ROMAN.mode === "easy" ? easyCmn(s) : s, num: "" };
+      const x = splitSyl(lang, s);
+      if (!x.levels) return { show: s, num: "" };
+      return { show: ROMAN.mode === "easy" ? easySyl(lang, x.base) : x.base, num: x.num };
+    });
+  }
+
+  function romHtml(lang, rom) {
+    return romParts(lang, rom).map(x => x.num
+      ? `<span class="syl">${esc(x.show)}<sup>${x.num}</sup></span>`
+      : esc(x.show)).join(" ");
+  }
+
+  function romText(lang, rom) {
+    return romParts(lang, rom).map(x => ROMAN.mode === "easy" ? x.show : x.show + x.num).join(" ");
+  }
+
+  function lanePlay(lang, p) {
+    const slot = el("div", "lane-play");
+    if (lang === "en") return slot;
+
+    const toks = p[lang] || [];
+    const text = toks.map(t => t.hz).join("");
+    const rom = toks.map(t => t.rom).join(" ");
+
+    if (lang !== "tsn") {
+      const b = el("button", "lp", speaker);
+      b.type = "button";
+      b.setAttribute("aria-label", `Listen to the whole sentence in ${NAMES[lang]}`);
+      b.addEventListener("click", e => { e.stopPropagation(); sayVoice(text, lang); });
+      slot.appendChild(b);
+    }
+
+    const h = el("button", lang === "tsn" ? "lp" : "lp alt", wave);
+    h.type = "button";
+    h.setAttribute("aria-label", `Play the ${NAMES[lang]} tones for the whole sentence`);
+    h.addEventListener("click", e => { e.stopPropagation(); sayTones(lang, rom); });
+    slot.appendChild(h);
+
+    return slot;
+  }
+
+  function melody(lang, tokens, cls) {
+    const out = [];
+    tokens.forEach(t => {
+      const chars = [...t.hz];
+      const syls = String(t.rom || "").split(" ").filter(Boolean).map(s => lang === "cmn" ? { levels: pinyinLevels(s) } : splitSyl(lang, s));
+      if (chars.length === syls.length) {
+        chars.forEach((ch, i) => out.push(`<span class="ch">${contourSvg(syls[i].levels, "")}<span class="z">${esc(ch)}</span></span>`));
+      } else {
+        out.push(`<span class="ch"><span class="cs">${syls.map(s => contourSvg(s.levels, "")).join("")}</span><span class="z">${esc(t.hz)}</span></span>`);
+      }
+    });
+    return `<div class="melody ${lang === "cmn" ? "hz-cmn" : "hz-yue"}${cls ? " " + cls : ""}">${out.join("")}</div>`;
+  }
+
+  $("tones-yue").innerHTML = [
+    [1, "high flat", "詩", "poem"], [2, "rising", "史", "history"], [3, "mid flat", "試", "try"],
+    [4, "low falling", "時", "time"], [5, "low rising", "市", "market"], [6, "low flat", "事", "matter"],
+  ].map(([n, name, ex, en]) =>
+    `<div class="tone">${contourSvg(YUE_TONE[n], "big")}<span class="num">${n}</span><span class="name">${name}</span><span class="ex">${ex}</span><span class="exen">si${n}<br>${en}</span></div>`
+  ).join("");
+
+  $("tones-tsn").innerHTML = [
+    ["55", "high", "口", "mouth"], ["33", "mid", "偷", "steal"], ["22", "low", "頭", "head"],
+    ["32", "mid falling", "皓", "bright"], ["21", "low falling", "厚", "thick"],
+  ].map(([n, name, ex, en]) =>
+    `<div class="tone">${contourSvg([...n].map(Number), "big")}<span class="num">${n}</span><span class="name">${name}</span><span class="ex">${ex}</span><span class="exen">hau${n}<br>${en}</span></div>`
+  ).join("");
+
+  $("tones-changed").innerHTML = "Changed tones you'll see: " +
+    ["215", "225", "325", "335"].map(n => `<span>${contourSvg([...n].map(Number), "tc")}${n}</span>`).join("");
+
+
+  /* view state */
+
+  const show = { tsn: true, yue: true, en: true, cmn: true };
+  let maps = [];
+
+  const ro = new ResizeObserver(items => items.forEach(it => {
+    const m = maps.find(x => x.lanes === it.target);
+    if (m) draw(m);
+  }));
+
+
+  /* sound: device voices for Cantonese and Mandarin, a tone-melody engine for all three */
+
+  const speaker = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10L5 10H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.5 3.5a6 6 0 0 1 0 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>';
+  const wave = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 11 L4 5 L7 9 L10 3 L13 8 L15 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  let toastTimer = null;
+
+  function toast(msg) {
+    let t = document.querySelector(".toast");
+    if (!t) { t = el("div", "toast"); t.setAttribute("role", "status"); document.body.appendChild(t); }
+    t.textContent = msg;
+    t.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { t.hidden = true; }, 6000);
+  }
+
+  const settings = { tap: true, rate: 1 };
+
+  const PINYIN_TONE = { "\u0304": [5, 5], "\u0301": [3, 5], "\u030c": [2, 1, 4], "\u0300": [5, 1] };
+
+  function pinyinLevels(syl) {
+    const d = syl.normalize("NFD");
+    for (const mark in PINYIN_TONE) if (d.includes(mark)) return PINYIN_TONE[mark];
+    return /[a-z]/i.test(syl) ? [3] : null;
+  }
+
+  function levelsFor(lang, rom) {
+    return String(rom || "").split(" ").filter(Boolean).map(s =>
+      lang === "cmn" ? pinyinLevels(s) : splitSyl(lang, s).levels
+    );
+  }
+
+  const Voice = (() => {
+    const ok = typeof window.speechSynthesis !== "undefined" && typeof window.SpeechSynthesisUtterance !== "undefined";
+    let voices = [];
+
+    const load = () => { try { voices = window.speechSynthesis.getVoices() || []; } catch (e) { voices = []; } };
+
+    if (ok) {
+      load();
+      try { window.speechSynthesis.addEventListener("voiceschanged", load); } catch (e) { window.speechSynthesis.onvoiceschanged = load; }
+    }
+
+    const WANT = {
+      yue: [/^zh[-_]HK/i, /^yue/i, /cantonese|粵|粤/i],
+      cmn: [/^zh[-_]CN/i, /^cmn/i, /^zh[-_]TW/i, /^zh$/i],
+    };
+
+    const pick = lang => {
+      for (const re of WANT[lang]) {
+        const v = voices.find(v => re.test(v.lang) || re.test(v.name));
+        if (v) return v;
+      }
+      return null;
+    };
+
+    function speak(text, lang) {
+      if (!ok) return "none";
+      load();
+      const v = pick(lang);
+      if (!v && voices.length) return "missing";
+      try {
+        const synth = window.speechSynthesis;
+        if (synth.speaking || synth.pending) synth.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === "yue" ? "zh-HK" : "zh-CN";
+        if (v) u.voice = v;
+        u.rate = settings.rate;
+        let started = false;
+        u.onstart = () => { started = true; };
+        u.onerror = e => {
+          if (e && (e.error === "canceled" || e.error === "interrupted")) return;
+          toast("The voice couldn't play here. On iPhone, check the side switch isn't on silent, or try the downloaded file in Safari.");
+        };
+        synth.speak(u);
+        if (synth.paused) synth.resume();
+        setTimeout(() => {
+          if (!started && !synth.speaking) toast("No sound? On iPhone, turn off silent mode and check the volume. Tones play either way.");
+        }, 2500);
+        return "ok";
+      } catch (e) {
+        return "none";
+      }
+    }
+
+    function stop() {
+      try {
+        const synth = window.speechSynthesis;
+        if (ok && (synth.speaking || synth.pending)) synth.cancel();
+      } catch (e) {}
+    }
+
+    return { speak, stop };
+  })();
+
+
+  /* tone engine: builds a small WAV in JavaScript and plays it through an audio element */
+
+  const Tones = (() => {
+    const RATE = 22050;
+    let player = null;
+
+    const VOWELS = {
+      a: [750, 1200, 2500], e: [550, 1850, 2500], "ɛ": [580, 1800, 2500], i: [300, 2250, 3000],
+      o: [500, 850, 2400], "ɔ": [580, 900, 2400], u: [350, 800, 2300], "ə": [500, 1400, 2400],
+      y: [300, 1900, 2400], "ü": [300, 1900, 2400], m: [260, 1100, 2300],
+    };
+
+    const FRICATIVE = /^(s|ɬ|f|h|sh|ch|c|z|zh|x|q|j|ts|dz)/;
+
+    function vowelOf(base) {
+      const b = base.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+      const m = b.match(/[aeiouɔəɛyü]/);
+      if (m) return VOWELS[m[0]];
+      return VOWELS.m;
+    }
+
+    const freq = lv => 140 * Math.pow(2, ((lv - 1) * 3) / 12);
+
+    function syllables(lang, rom) {
+      return String(rom || "").split(" ").filter(Boolean).map(s => {
+        if (lang === "cmn") return { base: s, levels: pinyinLevels(s) };
+        const x = splitSyl(lang, s);
+        return { base: x.base, levels: x.levels };
+      });
+    }
+
+    function render(list) {
+      const unit = 0.38 / settings.rate;
+      const gap = 0.07 / settings.rate;
+
+      const segs = list.map(sy => {
+        const d = !sy.levels ? unit * 0.4 : sy.levels.length === 1 ? unit * 0.6 : sy.levels.length === 3 ? unit * 1.3 : unit;
+        return { ...sy, d };
+      });
+
+      const total = segs.reduce((a, sg) => a + sg.d + gap, 0.1);
+      const n = Math.ceil(total * RATE);
+      const buf = new Float32Array(n);
+      const bw = [90, 110, 160];
+      const fw = [1, 0.6, 0.25];
+
+      let pos = Math.floor(0.05 * RATE);
+
+      segs.forEach(sg => {
+        const len = Math.floor(sg.d * RATE);
+        if (!sg.levels) { pos += len + Math.floor(gap * RATE); return; }
+
+        const fm = vowelOf(sg.base);
+        const noisy = FRICATIVE.test(sg.base.toLowerCase());
+        const lv = sg.levels;
+        let phase = 0;
+
+        for (let i = 0; i < len && pos + i < n; i++) {
+          const x = i / len;
+          let level = lv[0];
+          if (lv.length > 1) {
+            const u = Math.min(1, Math.max(0, (x - 0.1) / 0.8)) * (lv.length - 1);
+            const k = Math.min(lv.length - 2, Math.floor(u));
+            level = lv[k] + (lv[k + 1] - lv[k]) * (u - k);
+          }
+
+          const f0 = freq(level);
+          phase += (2 * Math.PI * f0) / RATE;
+
+          let v = 0;
+          const maxH = Math.min(28, Math.floor(4000 / f0));
+          for (let h = 1; h <= maxH; h++) {
+            const fh = f0 * h;
+            let amp = 0;
+            for (let j = 0; j < 3; j++) amp += fw[j] / (1 + Math.pow((fh - fm[j]) / bw[j], 2));
+            v += (amp / Math.sqrt(h)) * Math.sin(h * phase);
+          }
+
+          const t = i / RATE;
+          const env = Math.min(1, t / 0.025) * Math.min(1, (sg.d - t) / 0.06);
+          let smp = v * env;
+          if (noisy && t < 0.06) smp = smp * (t / 0.06) + (Math.random() * 2 - 1) * 0.3 * (1 - t / 0.06);
+
+          buf[pos + i] += smp;
+        }
+
+        pos += len + Math.floor(gap * RATE);
+      });
+
+      let peak = 0;
+      for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(buf[i]));
+      const g = peak ? 0.85 / peak : 1;
+
+      const bytes = new Uint8Array(44 + n * 2);
+      const dv = new DataView(bytes.buffer);
+      const str = (o, t) => { for (let i = 0; i < t.length; i++) bytes[o + i] = t.charCodeAt(i); };
+
+      str(0, "RIFF"); dv.setUint32(4, 36 + n * 2, true); str(8, "WAVE");
+      str(12, "fmt "); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true); dv.setUint16(22, 1, true);
+      dv.setUint32(24, RATE, true); dv.setUint32(28, RATE * 2, true); dv.setUint16(32, 2, true); dv.setUint16(34, 16, true);
+      str(36, "data"); dv.setUint32(40, n * 2, true);
+      for (let i = 0; i < n; i++) dv.setInt16(44 + i * 2, Math.max(-1, Math.min(1, buf[i] * g)) * 32767, true);
+
+      let bin = "";
+      for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      return "data:audio/wav;base64," + btoa(bin);
+    }
+
+    function stop() {
+      if (player) { try { player.pause(); } catch (e) {} }
+    }
+
+    function play(lang, rom) {
+      const list = syllables(lang, rom);
+      if (!list.some(sy => sy.levels)) return false;
+      Voice.stop();
+      if (!player) player = new Audio();
+      stop();
+      player.src = render(list);
+      const pr = player.play();
+      if (pr && pr.catch) pr.catch(() => toast("Sound was blocked. Tap the button again."));
+      return true;
+    }
+
+    return { play, stop, render, syllables };
+  })();
+
+  function sayVoice(text, lang) {
+    Tones.stop();
+    const r = Voice.speak(text, lang);
+    if (r === "ok") return;
+    const name = lang === "yue" ? "Cantonese (Hong Kong)" : "Chinese (China mainland)";
+    toast(r === "missing"
+      ? `No ${lang === "yue" ? "Cantonese" : "Mandarin"} voice on this device. On iPhone, add one in Settings › Accessibility › Spoken Content › Voices › ${name}.`
+      : "This browser can't speak text. Try Safari or Chrome.");
+  }
+
+  function sayTones(lang, rom) {
+    if (!Tones.play(lang, rom)) toast("There are no tones to play here.");
+  }
+
+
+  /* word card: what a tapped word means, and what grammar words do */
+
+  const MEASURE = "Measure word. Chinese puts one between a number or 'this/that' and the noun, where English just says 'a' or 'the'.";
+
+  const GRAMMAR = {
+    yue: {
+      "呀": "Softens a question or statement, like a friendly tone of voice. It has no English word.",
+      "啊": "Softens a question or statement, like a friendly tone of voice.",
+      "啦": "A friendly push at the end: \"let's\", \"go ahead\", \"come on\".",
+      "喇": "Marks a change or something now done: \"now\", \"already\".",
+      "囉": "\"That's how it is\", \"obviously\".",
+      "㗎": "Adds emphasis, or asks about how something is or already happened.",
+      "嘅": "Like English \"of\" or \"'s\". At the end of a sentence it describes what kind of thing or person.",
+      "咗": "After a verb: the action is done, like English \"-ed\".",
+      "緊": "After a verb: in the middle of doing it, like English \"-ing\".",
+      "過": "After a verb: have ever done it.",
+      "吓": "After a verb: do it a little or briefly (試吓 si3 haa5 \"have a try\").",
+      "啲": "\"Some\", or \"the\" for things you don't count. After an adjective it means \"a bit more\" (慢啲 maan6 di1 \"slower\").",
+      "得": "After a verb it links to how things turned out (瞓得好 fan3 dak1 hou2 \"slept well\"). It can also mean \"can\" (食得 sik6 dak1 \"can eat\").",
+      "先": "At the end of a sentence: \"first\", before anything else.",
+      "都": "\"Also\" or \"all\". Often needed with \"every\".",
+      "未": "\"Not yet?\" at the end of a question.",
+      "未呀": "\"Not yet?\" at the end of a question, softened with 呀 aa3.",
+      "唔": "Not.",
+      "冇": "Don't have, or there isn't.",
+      "係": "Is, am, are.",
+      "喺": "At, in.",
+      "將": "Moves the object before the verb, like Mandarin 把 bǎ.",
+      "定": "\"Or\", in questions only.",
+      "啫": "\"Only, just\".",
+      "晒": "\"All, completely\" (恭喜晒 gung1 hei2 saai3 \"congratulations all round\").",
+      "個": MEASURE + " 個 go3 is the all-purpose one.",
+    },
+    cmn: {
+      "吗": "Turns a statement into a yes/no question.",
+      "吧": "\"Let's\", or softens a suggestion.",
+      "了": "Marks a change or a finished action.",
+      "的": "Like English \"of\" or \"'s\". At the end it describes how or when something happened.",
+      "啊": "Softens a statement or exclamation.",
+      "呢": "Softens a question, like \"then?\" or \"and?\".",
+      "过": "After a verb: have ever done it.",
+      "着": "After a verb: an ongoing state.",
+      "得": "Links a verb to how well it went (睡得好 shuì de hǎo \"slept well\").",
+      "把": "Moves the object before the verb. It's also a measure word for things with handles.",
+      "在": "At, in. Before a verb it can mean \"in the middle of\".",
+      "都": "\"Also\" or \"all\".",
+      "就": "\"Then\", or \"right away\".",
+      "还": "Still.",
+      "也": "Also.",
+      "个": MEASURE + " 个 ge is the all-purpose one.",
+      "就像": "\"Just like\".",
+      "来": "Before a verb it means \"let me\" or \"I'll\" (我来做 wǒ lái zuò \"I'll do it\").",
+    },
+    tsn: {
+      "啊": "Softens a question or statement, like Cantonese 呀 aa3.",
+      "啦": "A friendly push or \"now, already\", like Cantonese 啦 laa1 and 喇 laa3.",
+      "個": "Measure word, and also \"of\" or \"'s\", like Cantonese 嘅 ge3.",
+      "得": "After a verb it links to how things turned out, or means \"can\", like Cantonese 得 dak1.",
+      "尼": "\"Some\" or \"a bit\", like Cantonese 啲 di1.",
+      "唔曾": "\"Not yet, never\", like Cantonese 未 mei6.",
+      "冇": "Don't have, or there isn't.",
+      "還": "Still.",
+      "都": "\"Also\" or \"all\".",
+    },
+  };
+
+  const MEASURES = new Set("張件隻架部條對雙把間味舊本份首輪粒杯碗支枝座位艘张条双间块本份首轮粒".split(""));
+
+  function grammarNote(lang, hz) {
+    const g = GRAMMAR[lang] || {};
+    if (g[hz]) return g[hz];
+    if (hz.length === 1 && MEASURES.has(hz)) return MEASURE;
+    if (hz.length > 1 && MEASURES.has(hz[0]) && hz.length <= 3) return `Starts with the measure word ${hz[0]}. ` + MEASURE;
+    return null;
+  }
+
+  function showInfo(entry, tok) {
+    const box = entry.info;
+    if (!tok || !tok._tok) { box.hidden = true; box.innerHTML = ""; return; }
+
+    const t = tok._tok;
+    const lang = tok._lang;
+    const p = entry.p;
+    const means = (t.refs || []).map(r => p.gloss[r]).filter(Boolean);
+    const gnote = grammarNote(lang, t.hz);
+
+    const parts = [];
+    if (means.length) parts.push(`<p><b>Means:</b> ${esc(means.join(" + "))}</p>`);
+    if (gnote) parts.push(`<p>${noteHtml(gnote)}</p>`);
+    if (!means.length && !gnote) parts.push("<p>A grammar word with no direct English equivalent. It shapes the tone or structure of the sentence.</p>");
+    if (t.sure === false) parts.push("<p>Not confirmed in this use, so check it with a native speaker.</p>");
+
+    const kind = means.length ? NAMES[lang] : `${NAMES[lang]} · grammar word`;
+
+    box.innerHTML = `<div class="wi-head"><span class="wi-hz ${lang === "cmn" ? "hz-cmn" : "hz-yue"}">${esc(t.hz)}</span><span class="wi-rom">${romHtml(lang, t.rom)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`;
+
+    const plays = box.querySelector(".plays");
+    if (/[㐀-鿿]/.test(t.hz)) {
+      if (lang !== "tsn") {
+        const b = el("button", "pbtn", `${speaker}Listen`);
+        b.type = "button";
+        b.addEventListener("click", () => sayVoice(t.hz, lang));
+        plays.appendChild(b);
+      }
+      const h = el("button", "pbtn", `${wave}Tones`);
+      h.type = "button";
+      h.addEventListener("click", () => sayTones(lang, t.rom));
+      plays.appendChild(h);
+    }
+
+    box.hidden = false;
+  }
+
+  /* detail */
+
+  function sayLine(lang, toks) {
+    if (!toks || !toks.length) return null;
+    const row = el("div", "say-line");
+    row.dataset.lang = lang;
+    row.hidden = !show[lang];
+    const top = lang === "cmn"
+      ? `<div class="hz-cmn big">${esc(toks.map(t => t.hz).join(""))}</div>`
+      : melody(lang, toks);
+    row.innerHTML = `<span class="label">${NAMES[lang]}</span><div>${top}<div class="rom">${toks.map(t => romHtml(lang, t.rom)).join(" ")}</div><div class="plays"></div></div>`;
+
+    const plays = row.querySelector(".plays");
+    const text = toks.map(t => t.hz).join("");
+    const rom = toks.map(t => t.rom).join(" ");
+
+    if (lang !== "tsn") {
+      const b = el("button", "pbtn", `${speaker}Listen`);
+      b.type = "button";
+      b.setAttribute("aria-label", `Listen in ${NAMES[lang]}`);
+      b.addEventListener("click", () => sayVoice(text, lang));
+      plays.appendChild(b);
+    }
+
+    const h = el("button", "pbtn", `${wave}${lang === "tsn" ? "Hear the tones" : "Tones"}`);
+    h.type = "button";
+    h.setAttribute("aria-label", `Hum the ${NAMES[lang]} tones`);
+    h.addEventListener("click", () => sayTones(lang, rom));
+    plays.appendChild(h);
+
+    return row;
+  }
+
+  const noteHtml = t => esc(t).replace(/⟨(?:(yue|cmn|tsn):)?([^⟩]*)⟩/g, (m, lang, r) => `<span class="nr">${romText(lang || "yue", r)}</span>`);
+
+  function renderDetail(p) {
+    const box = el("div", "detail");
+
+    if (p.title !== false) box.appendChild(el("h2", "", esc(p.en)));
+
+
+    const wrap = el("div", "");
+    wrap.appendChild(el("div", "label", "Word by word"));
+    const scroll = el("div", "lanes-scroll");
+    const lanes = el("div", "lanes");
+    const rows = {}, toks = { tsn: [], yue: [], en: [], cmn: [] };
+
+    LANES.forEach(lang => {
+      const lane = el("div", "lane");
+      lane.dataset.lang = lang;
+      lane.appendChild(el("span", "lane-label", NAMES[lang]));
+      lane.appendChild(lanePlay(lang, p));
+
+      if (lang === "en") {
+        p.gloss.forEach((g, k) => {
+          const soft = g.startsWith("(");
+          const missing = p.missing && p.missing.includes(k);
+          const b = el("button", "tok" + (missing ? " gap" : ""), `<span class="en${soft ? " soft" : ""}">${esc(g)}</span>${missing ? '<span class="q" title="Not found">?</span>' : ""}`);
+          b.type = "button";
+          b._refs = [k];
+          lane.appendChild(b);
+          toks.en.push(b);
+        });
+      } else {
+        (p[lang] || []).forEach(t => {
+          const refs = t.refs || [];
+          const sure = t.sure !== false;
+          const b = el("button", "tok" + (refs.length ? "" : " grammar"),
+            `${melody(lang, [t], "mini")}<span class="rom">${romHtml(lang, t.rom)}</span>${sure ? "" : '<span class="q" title="Not confirmed">?</span>'}`);
+          b.type = "button";
+          b._refs = refs;
+          b._lang = lang;
+          b._tok = t;
+          b.setAttribute("aria-label", `${t.hz} ${t.rom || ""}${sure ? "" : ", not confirmed"}`);
+          lane.appendChild(b);
+          toks[lang].push(b);
+        });
+      }
+
+      rows[lang] = lane;
+      lanes.appendChild(lane);
+    });
+
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("aria-hidden", "true");
+    lanes.appendChild(svg);
+    scroll.appendChild(lanes);
+    wrap.appendChild(scroll);
+    const info = el("div", "wordinfo");
+    info.hidden = true;
+    wrap.appendChild(info);
+    wrap.appendChild(el("p", "hint", "Tap a word to trace it and see what it means. Swipe sideways on long sentences."));
+    box.appendChild(wrap);
+
+    const notes = [];
+    if (p.tip) notes.push(`<p><b>Note</b>${noteHtml(p.tip)}</p>`);
+    if (p.tsn_tip) notes.push(`<p><b>Taishanese</b>${noteHtml(p.tsn_tip)}</p>`);
+    if (notes.length) box.appendChild(el("div", "notes", notes.join("")));
+
+    if (p.g_yue || p.g_cmn) {
+      const g = el("div", "google");
+      g.appendChild(el("span", "label", "Google Translate, for comparison"));
+      if (p.g_yue) g.appendChild(el("div", "", `<span>Cantonese</span><span class="g hz-yue">${esc(p.g_yue)}</span>${p.g_yue_rom ? `<span class="nr">${esc(romText("yue", p.g_yue_rom))}</span>` : ""}`));
+      if (p.g_cmn) g.appendChild(el("div", "", `<span>Mandarin</span><span class="g hz-cmn">${esc(p.g_cmn)}</span>${p.g_cmn_rom ? `<span class="nr">${esc(romText("cmn", p.g_cmn_rom))}</span>` : ""}`));
+      box.appendChild(g);
+    }
+
+    const entry = { lanes, svg, rows, toks, links: [], sel: null, info, p };
+    maps.push(entry);
+    ro.observe(lanes);
+
+    lanes.addEventListener("click", e => {
+      const tok = e.target.closest(".tok");
+      if (!tok) return;
+      entry.sel = entry.sel === tok ? null : tok;
+      applyFocus(entry);
+      showInfo(entry, entry.sel);
+      if (settings.tap && entry.sel && tok._tok && /[\u3400-\u9fff]/.test(tok._tok.hz)) {
+        if (tok._lang === "tsn") sayTones("tsn", tok._tok.rom);
+        else sayVoice(tok._tok.hz, tok._lang);
+      }
+    });
+
+    requestAnimationFrame(() => draw(entry));
+    return box;
+  }
+
+  function applyFocus(entry) {
+    entry.lanes.classList.remove("focus");
+    entry.lanes.querySelectorAll(".on").forEach(n => n.classList.remove("on"));
+    const tok = entry.sel;
+    if (!tok) return;
+
+    const gl = new Set(tok._refs);
+    entry.lanes.classList.add("focus");
+    tok.classList.add("on");
+
+    LANES.forEach(lang => entry.toks[lang].forEach(b => {
+      if (b._refs.some(r => gl.has(r))) b.classList.add("on");
+    }));
+
+    entry.links.forEach(l => l.g.classList.toggle("on", l.a.classList.contains("on") && l.b.classList.contains("on")));
+  }
+
+  function draw(entry) {
+    const { lanes, svg, rows, toks } = entry;
+    if (!lanes.isConnected || !lanes.offsetParent) return;
+
+    const vis = LANES.filter(l => show[l] && toks[l].length);
+    LANES.forEach(l => { rows[l].hidden = !vis.includes(l); });
+
+    const box = lanes.getBoundingClientRect();
+    svg.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
+    svg.innerHTML = "";
+    entry.links = [];
+
+    const pt = (n, bottom) => {
+      const r = n.getBoundingClientRect();
+      return [r.left + r.width / 2 - box.left, (bottom ? r.bottom : r.top) - box.top];
+    };
+
+    const add = (a, b) => {
+      const p0 = pt(a, true), p1 = pt(b, false);
+      const g = document.createElementNS(NS, "g");
+      g.setAttribute("class", "ln");
+      const dy = (p1[1] - p0[1]) * 0.55;
+      const path = document.createElementNS(NS, "path");
+      path.setAttribute("d", `M${p0[0]},${p0[1]} C${p0[0]},${p0[1] + dy} ${p1[0]},${p1[1] - dy} ${p1[0]},${p1[1]}`);
+      g.appendChild(path);
+      [p0, p1].forEach(([x, y]) => {
+        const c = document.createElementNS(NS, "circle");
+        c.setAttribute("cx", x);
+        c.setAttribute("cy", y);
+        c.setAttribute("r", 2.4);
+        g.appendChild(c);
+      });
+      svg.appendChild(g);
+      entry.links.push({ a, b, g });
+    };
+
+    for (let i = 0; i < vis.length - 1; i++) {
+      const A = vis[i], B = vis[i + 1];
+      toks[A].forEach(a => toks[B].forEach(b => {
+        if (a._refs.some(r => b._refs.includes(r))) add(a, b);
+      }));
+    }
+
+    if (entry.sel) applyFocus(entry);
+  }
+
+  const drawAll = () => maps.forEach(draw);
+
+  function forget(container) {
+    maps.filter(m => container.contains(m.lanes)).forEach(m => ro.unobserve(m.lanes));
+    maps = maps.filter(m => !container.contains(m.lanes));
+  }
+
+
+  /* list */
+
+  const CATS = [];
+  PHRASES.forEach(p => { if (!CATS.includes(p.cat)) CATS.push(p.cat); });
+
+  let topic = "All";
+  let filter = "";
+
+  $("count").textContent = PHRASES.length;
+
+  const chevron = '<svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  function rowItem(p) {
+    const li = el("li", "item");
+    const btn = el("button", "row-btn");
+    btn.type = "button";
+    btn.setAttribute("aria-expanded", "false");
+    const yue = p.yue.map(t => t.hz).join("");
+    const rom = romText("yue", p.yue.map(t => t.rom).join(" "));
+    btn.innerHTML = `<span><div class="en">${esc(p.en)}</div><div class="pv"><span class="hz-yue">${esc(yue)}</span><span class="rom">${esc(rom)}</span></div></span>${chevron}`;
+    li.appendChild(btn);
+
+    let detail = null;
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", open ? "false" : "true");
+      if (open) {
+        forget(detail);
+        detail.remove();
+        detail = null;
+      } else {
+        detail = renderDetail({ ...p, title: false });
+        li.appendChild(detail);
+      }
+    });
+
+    return li;
+  }
+
+  function matches(p) {
+    if (topic !== "All" && p.cat !== topic) return false;
+    if (!filter) return true;
+    const q = filter.toLowerCase();
+    const hay = [p.en, ...p.gloss, ...["yue", "cmn", "tsn"].flatMap(l => p[l].map(t => t.hz + " " + t.rom))].join(" ").toLowerCase();
+    return hay.includes(q);
+  }
+
+  const topicId = c => "topic-" + c.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+  function renderChips() {
+    const nav = $("toc");
+    nav.innerHTML = '<h2 id="toc-title">Contents</h2>';
+    const ol = el("ol", "");
+    CATS.forEach(c => {
+      const n = PHRASES.filter(p => p.cat === c).length;
+      const li = el("li", "");
+      const b = el("button", "", `<span>${esc(c)}</span><span class="n">${n}</span>`);
+      b.type = "button";
+      b.addEventListener("click", () => {
+        const h = document.getElementById(topicId(c));
+        if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      li.appendChild(b);
+      ol.appendChild(li);
+    });
+    nav.appendChild(ol);
+  }
+
+  function renderList() {
+    const main = $("list");
+    forget(main);
+    main.innerHTML = "";
+
+    const items = PHRASES.filter(matches);
+    $("toc").hidden = !!filter;
+    if (!items.length) {
+      main.appendChild(el("p", "empty", filter ? "No saved sentences match. Press Translate to build it word by word." : "No sentences in this topic."));
+      return;
+    }
+
+    const cats = topic === "All" ? CATS : [topic];
+    cats.forEach(c => {
+      const group = items.filter(p => p.cat === c);
+      if (!group.length) return;
+      const head = el("div", "group-title");
+      head.id = topicId(c);
+      head.innerHTML = `<h3>${esc(c)}<span class="n">${group.length}</span></h3>`;
+      const up = el("button", "link", "Contents");
+      up.type = "button";
+      up.addEventListener("click", () => $("toc").scrollIntoView({ behavior: "smooth", block: "start" }));
+      head.appendChild(up);
+      main.appendChild(head);
+      const ul = el("ul", "list");
+      group.forEach(p => ul.appendChild(rowItem(p)));
+      main.appendChild(ul);
+    });
+  }
+
+
+  /* word builder */
+
+  const WORDS = new Map();
+
+  const PARTICLES = new Set(["吗", "呀", "啊", "吧", "啦", "喇", "了", "嘅", "的", "㗎", "呢"]);
+
+  const keyOf = g => norm(g.replace(/\([^)]*\)/g, " ")).replace(/^(the|a|an|my|some) /, "").replace(/\?$/, "");
+
+  PHRASES.forEach(p => {
+    p.gloss.forEach((g, k) => {
+      const key = keyOf(g);
+      if (!key) return;
+      const pick = lang => (p[lang] || []).filter(t => (t.refs || []).length === 1 && t.refs[0] === k && !PARTICLES.has(t.hz));
+      const v = { yue: pick("yue"), cmn: pick("cmn"), tsn: pick("tsn") };
+      if (!v.yue.length || !v.cmn.length) return;
+      if (!WORDS.has(key)) WORDS.set(key, v);
+    });
+  });
+
+  const IRREG = {
+    am: "be", is: "be", are: "be", was: "be", were: "be", been: "be", being: "be",
+    has: "have", had: "have", having: "have", does: "do", did: "do", done: "do",
+    went: "go", gone: "go", goes: "go", ate: "eat", eaten: "eat", drank: "drink", drunk: "drink",
+    saw: "see", seen: "see", came: "come", gave: "give", given: "give", took: "take", taken: "take",
+    said: "say", made: "make", got: "get", gotten: "get", knew: "know", known: "know",
+    thought: "think", bought: "buy", slept: "sleep", ran: "run", sat: "sit", told: "tell",
+    felt: "feel", left: "leave", brought: "bring", taught: "teach", met: "meet", paid: "pay",
+    spoke: "speak", spoken: "speak", wrote: "write", written: "write", swam: "swim", drove: "drive",
+    driven: "drive", forgot: "forget", forgotten: "forget", began: "begin", found: "find",
+    children: "child", kids: "kid", people: "person", men: "man", women: "woman",
+    better: "good", best: "good", worse: "bad", feet: "foot", teeth: "tooth",
+  };
+
+  function lemmas(w) {
+    const out = [w];
+    if (IRREG[w]) out.push(IRREG[w]);
+    if (w.endsWith("ies")) out.push(w.slice(0, -3) + "y");
+    if (w.endsWith("es")) out.push(w.slice(0, -2));
+    if (w.endsWith("s") && !w.endsWith("ss")) out.push(w.slice(0, -1));
+    if (w.endsWith("ing")) {
+      const b = w.slice(0, -3);
+      out.push(b, b + "e");
+      if (/(.)\1$/.test(b)) out.push(b.slice(0, -1));
+    }
+    if (w.endsWith("ed")) {
+      const b = w.slice(0, -2);
+      out.push(b, w.slice(0, -1));
+      if (/(.)\1$/.test(b)) out.push(b.slice(0, -1));
+      if (b.endsWith("i")) out.push(b.slice(0, -1) + "y");
+    }
+    if (w.endsWith("er")) out.push(w.slice(0, -2), w.slice(0, -1));
+    if (w.endsWith("ly")) out.push(w.slice(0, -2));
+    return [...new Set(out)];
+  }
+
+  const SKIP = new Set("a an the is are am was were be been being to of".split(" "));
+  const AUX = new Set("do does did".split(" "));
+  const PRON = new Set("i you we they he she it".split(" "));
+  const YESNO = new Set("do does did is are am was were can could will would should have has may shall".split(" "));
+
+  function fromWords(key) {
+    const v = WORDS.get(key);
+    if (!v) return null;
+    return { yue: v.yue, cmn: v.cmn, tsn: v.tsn, src: "phrasebook" };
+  }
+
+  function fromLex(key) {
+    const v = LEX[key];
+    if (!v) return null;
+    const core = v.y[2] === 1;
+    return {
+      yue: [{ hz: v.y[0], rom: v.y[1], sure: core }],
+      cmn: [{ hz: v.m[0], rom: v.m[1] }],
+      tsn: v.t ? [{ hz: v.t[0], rom: v.t[1] }] : [],
+      src: core ? "core" : "dict",
+    };
+  }
+
+  function expand(text) {
+    let s = " " + String(text).toLowerCase().replace(/[’‘]/g, "'") + " ";
+    s = s.replace(/\bcan't\b/g, "can not").replace(/\bwon't\b/g, "will not").replace(/\blet's\b/g, "let us");
+    s = s.replace(/n't\b/g, " not").replace(/'m\b/g, " am").replace(/'re\b/g, " are").replace(/'ll\b/g, " will").replace(/'ve\b/g, " have").replace(/'d\b/g, " would").replace(/'s\b/g, " is");
+    return norm(s).split(" ").filter(Boolean);
+  }
+
+  function buildGuess(text) {
+    const raw = expand(text);
+    if (!raw.length) return null;
+
+    const question = /\?\s*$/.test(text);
+    const yesNo = question && YESNO.has(raw[0]);
+    const imperative = raw[0] === "do" && raw[1] === "not" || raw[0] === "please" || raw[0] === "let";
+
+    const words = raw.filter((w, i) => !(AUX.has(w) && PRON.has(raw[i + 1])) && !(w === "do" && raw[i + 1] === "not"));
+
+    const chunks = [];
+    let i = 0;
+
+    while (i < words.length) {
+      let hit = null;
+
+      for (let n = Math.min(4, words.length - i); n >= 1 && !hit; n--) {
+        const span = words.slice(i, i + n);
+        if (n === 1 && SKIP.has(span[0])) break;
+        const head = span.slice(0, -1).join(" ");
+        for (const last of lemmas(span[n - 1])) {
+          const key = (head ? head + " " : "") + last;
+          let v = fromWords(key) || fromLex(key);
+          if (key === "not" && imperative && i <= 1) v = fromLex("don't");
+          if (v) { hit = { n, gloss: key === "not" && imperative && i <= 1 ? "don't" : span.join(" "), v }; break; }
+        }
+      }
+
+      if (!hit && /^\d+$/.test(words[i])) {
+        hit = { n: 1, gloss: words[i], v: { yue: [{ hz: words[i], rom: "" }], cmn: [{ hz: words[i], rom: "" }], tsn: [{ hz: words[i], rom: "" }], src: "num" } };
+      }
+
+      if (hit) {
+        chunks.push(hit);
+        i += hit.n;
+      } else {
+        if (!SKIP.has(words[i])) chunks.push({ n: 1, gloss: words[i], v: null });
+        i += 1;
+      }
+    }
+
+    if (question) {
+      chunks.push({
+        n: 0, gloss: "(question)", v: {
+          yue: [{ hz: "呀", rom: "aa3" }],
+          cmn: yesNo ? [{ hz: "吗", rom: "ma" }] : [],
+          tsn: [{ hz: "啊", rom: "a33" }],
+          src: "particle",
+        },
+      });
+    }
+
+    if (!chunks.length) return null;
+
+    const out = { en: text, gloss: [], yue: [], cmn: [], tsn: [], missing: [], guess: true };
+    let found = 0, counted = 0, noTsn = 0, dict = 0;
+
+    chunks.forEach((c, k) => {
+      const g = c.gloss.replace(/\bi\b/g, "I");
+      out.gloss.push(k === 0 ? g.charAt(0).toUpperCase() + g.slice(1) : g);
+      if (c.n) counted++;
+      if (!c.v) { out.missing.push(k); return; }
+      if (c.n) found++;
+      if (c.v.src === "dict") dict++;
+      if (c.n && !c.v.tsn.length) noTsn++;
+      ["yue", "cmn", "tsn"].forEach(lang => {
+        c.v[lang].forEach(t => {
+          const prev = out[lang][out[lang].length - 1];
+          if (prev && prev._src === t) { prev.refs.push(k); return; }
+          out[lang].push({ hz: t.hz, rom: t.rom, refs: [k], sure: lang === "yue" ? t.sure !== false && c.v.src !== "dict" : t.sure !== false, _src: t });
+        });
+      });
+    });
+
+    const notes = ["A word-by-word build in English word order. Chinese often orders words differently and adds particles, so compare it with the closest saved sentences."];
+    if (dict) notes.push("Cantonese words marked ? come from a general dictionary and may sound formal or Mandarin-style.");
+    if (noTsn) notes.push(`${noTsn} word${noTsn === 1 ? " has" : "s have"} no Taishanese entry, so that row has gaps.`);
+    if (out.missing.length) notes.push("English words marked ? weren't found.");
+    out.tip = notes.join(" ");
+
+    return { p: out, found, counted };
+  }
+
+  function closest(text, n) {
+    const ws = new Set(expand(text).filter(w => !SKIP.has(w) && !PRON.has(w) && !AUX.has(w)).flatMap(lemmas));
+    if (!ws.size) return [];
+    return PHRASES
+      .map(p => {
+        const pw = new Set(expand(p.en + " " + p.gloss.join(" ")).flatMap(lemmas));
+        let s = 0;
+        ws.forEach(w => { if (pw.has(w)) s++; });
+        return { p, s };
+      })
+      .filter(x => x.s > 0)
+      .sort((a, b) => b.s - a.s)
+      .slice(0, n)
+      .map(x => x.p);
+  }
+
+
+  /* search + translate */
+
+  const result = $("result");
+
+  function clearResult() {
+    forget(result);
+    result.innerHTML = "";
+  }
+
+  function showResult(text) {
+    clearResult();
+
+    const exact = PHRASES.find(p => norm(p.en) === norm(text));
+
+    const head = el("div", "result-head");
+    const close = el("button", "link", "Clear");
+    close.type = "button";
+    close.addEventListener("click", () => { $("q").value = ""; filter = ""; clearResult(); renderList(); });
+
+    if (exact) {
+      head.appendChild(el("span", "what", `Saved sentence · ${esc(exact.cat)}`));
+      head.appendChild(close);
+      result.appendChild(head);
+      result.appendChild(renderDetail(exact));
+      return;
+    }
+
+    const g = buildGuess(text);
+    if (!g || !g.found) {
+      head.appendChild(el("span", "what", "None of these words were found."));
+      head.appendChild(close);
+      result.appendChild(head);
+      return;
+    }
+
+    head.appendChild(el("span", "what", `Word-by-word build · ${g.found} of ${g.counted} words found`));
+    head.appendChild(close);
+    result.appendChild(head);
+    result.appendChild(renderDetail(g.p));
+
+    const near = closest(text, 3).filter(p => p !== exact);
+    if (near.length) {
+      const box = el("div", "near");
+      box.appendChild(el("div", "label", "Closest saved sentences"));
+      const ul = el("ul", "list");
+      near.forEach(p => ul.appendChild(rowItem(p)));
+      box.appendChild(ul);
+      result.appendChild(box);
+    }
+  }
+
+  $("search-form").addEventListener("submit", e => {
+    e.preventDefault();
+    const text = $("q").value.trim().replace(/\s+/g, " ");
+    if (!text) return;
+    filter = "";
+    renderList();
+    showResult(text);
+    $("q").blur();
+  });
+
+  $("q").addEventListener("input", e => {
+    filter = e.target.value.trim();
+    renderList();
+    if (!filter) clearResult();
+  });
+
+
+  /* view controls */
+
+  $("view-btn").addEventListener("click", () => {
+    const open = $("view-btn").getAttribute("aria-expanded") === "true";
+    $("view-btn").setAttribute("aria-expanded", open ? "false" : "true");
+    $("view").hidden = open;
+  });
+
+  function applyShow() {
+    document.querySelectorAll(".say-line, .hear-row").forEach(r => { r.hidden = !show[r.dataset.lang]; });
+    drawAll();
+  }
+
+  ["tsn", "yue", "cmn"].forEach(l => {
+    const box = $("col-" + l);
+    const saved = store.get("phrasebook-col-" + l);
+    if (saved !== null) box.checked = saved === "1";
+    show[l] = box.checked;
+    box.addEventListener("change", () => {
+      show[l] = box.checked;
+      store.set("phrasebook-col-" + l, box.checked ? "1" : "0");
+      applyShow();
+    });
+  });
+
+  const nums = $("show-nums");
+  nums.checked = store.get("phrasebook-nums") === "1";
+  document.body.classList.toggle("nums", nums.checked);
+  nums.addEventListener("change", () => {
+    document.body.classList.toggle("nums", nums.checked);
+    store.set("phrasebook-nums", nums.checked ? "1" : "0");
+    drawAll();
+  });
+
+  $("guide-btn").addEventListener("click", () => {
+    const d = $("guide");
+    if (typeof d.showModal === "function") d.showModal(); else d.setAttribute("open", "");
+  });
+
+  $("guide-close").addEventListener("click", () => {
+    const d = $("guide");
+    if (typeof d.close === "function") d.close(); else d.removeAttribute("open");
+  });
+
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawAll);
+
+  const spelling = $("spelling");
+  spelling.value = store.get("phrasebook-spelling") === "std" ? "std" : "easy";
+  ROMAN.mode = spelling.value;
+  spelling.addEventListener("change", () => {
+    ROMAN.mode = spelling.value;
+    store.set("phrasebook-spelling", spelling.value);
+    renderList();
+    const q = $("q").value.trim();
+    if (result.children.length && q) showResult(q); else clearResult();
+  });
+
+  const tap = $("tap-speak");
+  tap.checked = store.get("phrasebook-tap") !== "0";
+  settings.tap = tap.checked;
+  tap.addEventListener("change", () => { settings.tap = tap.checked; store.set("phrasebook-tap", tap.checked ? "1" : "0"); });
+
+  const speed = $("speed");
+  const savedSpeed = store.get("phrasebook-speed");
+  if (savedSpeed && [...speed.options].some(o => o.value === savedSpeed)) speed.value = savedSpeed;
+  settings.rate = Number(speed.value);
+  speed.addEventListener("change", () => { settings.rate = Number(speed.value); store.set("phrasebook-speed", speed.value); });
+
+  renderChips();
+  renderList();
+</script>

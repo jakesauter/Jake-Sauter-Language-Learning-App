@@ -1,0 +1,369 @@
+i|我|ngo5|我|wo3
+me|我|ngo5|我|wo3
+my|我嘅|ngo5 ge3|我的|wo3 de5
+mine|我嘅|ngo5 ge3|我的|wo3 de5
+you|你|nei5|你|ni3
+your|你嘅|nei5 ge3|你的|ni3 de5
+he|佢|keoi5|他|ta1
+him|佢|keoi5|他|ta1
+his|佢嘅|keoi5 ge3|他的|ta1 de5
+she|佢|keoi5|她|ta1
+her|佢|keoi5|她|ta1
+it|佢|keoi5|它|ta1
+we|我哋|ngo5 dei6|我们|wo3 men5
+us|我哋|ngo5 dei6|我们|wo3 men5
+our|我哋嘅|ngo5 dei6 ge3|我们的|wo3 men5 de5
+they|佢哋|keoi5 dei6|他们|ta1 men5
+them|佢哋|keoi5 dei6|他们|ta1 men5
+their|佢哋嘅|keoi5 dei6 ge3|他们的|ta1 men5 de5
+you all|你哋|nei5 dei6|你们|ni3 men5
+everyone|大家|daai6 gaa1|大家|da4 jia1
+everybody|大家|daai6 gaa1|大家|da4 jia1
+someone|有人|jau5 jan4|有人|you3 ren2
+myself|我自己|ngo5 zi6 gei2|我自己|wo3 zi4 ji3
+yourself|你自己|nei5 zi6 gei2|你自己|ni3 zi4 ji3
+be|係|hai6|是|shi4
+is|係|hai6|是|shi4
+not|唔|m4|不|bu4
+no|唔係|m4 hai6|不是|bu2 shi4
+yes|係|hai6|是|shi4
+don't|唔好|m4 hou2|别|bie2
+do not|唔好|m4 hou2|别|bie2
+can't|唔可以|m4 ho2 ji5|不能|bu4 neng2
+cannot|唔可以|m4 ho2 ji5|不能|bu4 neng2
+have|有|jau5|有|you3
+has|有|jau5|有|you3
+don't have|冇|mou5|没有|mei2 you3
+there is|有|jau5|有|you3
+there are|有|jau5|有|you3
+what|咩|me1|什么|shen2 me5
+who|邊個|bin1 go3|谁|shei2
+where|邊度|bin1 dou6|哪里|na3 li3
+when|幾時|gei2 si4|什么时候|shen2 me5 shi2 hou5
+why|點解|dim2 gaai2|为什么|wei4 shen2 me5
+how|點|dim2|怎么|zen3 me5
+how much|幾多錢|gei2 do1 cin2|多少钱|duo1 shao5 qian2
+how many|幾多|gei2 do1|多少|duo1 shao5
+which|邊個|bin1 go3|哪个|na3 ge5
+this|呢個|ni1 go3|这个|zhe4 ge5
+that|嗰個|go2 go3|那个|na4 ge5
+these|呢啲|ni1 di1|这些|zhe4 xie1
+those|嗰啲|go2 di1|那些|na4 xie1
+here|呢度|ni1 dou6|这里|zhe4 li3
+there|嗰度|go2 dou6|那里|na4 li3
+now|而家|ji4 gaa1|现在|xian4 zai4
+today|今日|gam1 jat6|今天|jin1 tian1
+tonight|今晚|gam1 maan5|今晚|jin1 wan3
+tomorrow|聽日|ting1 jat6|明天|ming2 tian1
+yesterday|尋日|cam4 jat6|昨天|zuo2 tian1
+morning|朝早|ziu1 zou2|早上|zao3 shang5
+afternoon|下晝|haa6 zau3|下午|xia4 wu3
+evening|夜晚|je6 maan5|晚上|wan3 shang5
+night|夜晚|je6 maan5|晚上|wan3 shang5
+later|遲啲|ci4 di1|待会儿|dai1 hui4 r5
+soon|就快|zau6 faai3|快|kuai4
+always|成日|seng4 jat6|总是|zong3 shi4
+often|成日|seng4 jat6|经常|jing1 chang2
+sometimes|有時|jau5 si4|有时|you3 shi2
+never|從來唔|cung4 loi4 m4|从来不|cong2 lai2 bu4
+again|再|zoi3|再|zai4
+already|已經|ji5 ging1|已经|yi3 jing1
+still|仲|zung6|还|hai2
+also|都|dou1|也|ye3
+too|太|taai3|太|tai4
+very|好|hou2|很|hen3
+really|真係|zan1 hai6|真的|zhen1 de5
+so|好|hou2|这么|zhe4 me5
+a little|少少|siu2 siu2|一点|yi4 dian3
+a bit|少少|siu2 siu2|一点|yi4 dian3
+a lot|好多|hou2 do1|很多|hen3 duo1
+many|好多|hou2 do1|很多|hen3 duo1
+much|好多|hou2 do1|很多|hen3 duo1
+more|多啲|do1 di1|多一点|duo1 yi4 dian3
+less|少啲|siu2 di1|少一点|shao3 yi4 dian3
+all|全部|cyun4 bou6|全部|quan2 bu4
+only|淨係|zing6 hai6|只|zhi3
+maybe|可能|ho2 nang4|可能|ke3 neng2
+together|一齊|jat1 cai4|一起|yi4 qi3
+and|同|tung4|和|he2
+with|同|tung4|跟|gen1
+or|定係|ding6 hai6|还是|hai2 shi4
+but|但係|daan6 hai6|但是|dan4 shi4
+because|因為|jan1 wai6|因为|yin1 wei4
+if|如果|jyu4 gwo2|如果|ru2 guo3
+then|就|zau6|就|jiu4
+for|為|wai6|为|wei4
+from|由|jau4|从|cong2
+to|去|heoi3|到|dao4
+in|喺|hai2|在|zai4
+at|喺|hai2|在|zai4
+inside|入面|jap6 min6|里面|li3 mian4
+outside|出面|ceot1 min6|外面|wai4 mian4
+up|上|soeng5|上|shang4
+down|落|lok6|下|xia4
+left|左|zo2|左|zuo3
+right|右|jau6|右|you4
+near|近|kan5|近|jin4
+far|遠|jyun5|远|yuan3
+eat|食|sik6|吃|chi1
+drink|飲|jam2|喝|he1
+sleep|瞓覺|fan3 gaau3|睡觉|shui4 jiao4
+go|去|heoi3|去|qu4
+come|嚟|lai4|来|lai2
+go home|返屋企|faan1 uk1 kei2|回家|hui2 jia1
+return|返|faan1|回|hui2
+leave|走|zau2|走|zou3
+walk|行|haang4|走|zou3
+run|跑|paau2|跑|pao3
+sit|坐|co5|坐|zuo4
+stand|企|kei5|站|zhan4
+wait|等|dang2|等|deng3
+see|睇|tai2|看|kan4
+look|睇|tai2|看|kan4
+watch|睇|tai2|看|kan4
+hear|聽|teng1|听|ting1
+listen|聽|teng1|听|ting1
+say|講|gong2|说|shuo1
+speak|講|gong2|说|shuo1
+talk|傾偈|king1 gai2|聊天|liao2 tian1
+tell|話畀|waa6 bei2|告诉|gao4 su5
+ask|問|man6|问|wen4
+call|打畀|daa2 bei2|打电话给|da3 dian4 hua4 gei3
+know|知|zi1|知道|zhi1 dao5
+think|諗|nam2|想|xiang3
+understand|明|ming4|明白|ming2 bai5
+remember|記得|gei3 dak1|记得|ji4 de5
+forget|唔記得|m4 gei3 dak1|忘记|wang4 ji4
+want|想|soeng2|想|xiang3
+want to|想|soeng2|想|xiang3
+need|要|jiu3|需要|xu1 yao4
+need to|要|jiu3|要|yao4
+have to|要|jiu3|得|dei3
+must|一定要|jat1 ding6 jiu3|必须|bi4 xu1
+can|可以|ho2 ji5|可以|ke3 yi3
+could|可以|ho2 ji5|可以|ke3 yi3
+may|可以|ho2 ji5|可以|ke3 yi3
+will|會|wui5|会|hui4
+would|會|wui5|会|hui4
+should|應該|jing1 goi1|应该|ying1 gai1
+like|鍾意|zung1 ji3|喜欢|xi3 huan5
+love|愛|oi3|爱|ai4
+give|畀|bei2|给|gei3
+take|攞|lo2|拿|na2
+get|攞|lo2|拿|na2
+bring|帶|daai3|带|dai4
+carry|拎|ling1|拿|na2
+buy|買|maai5|买|mai3
+sell|賣|maai6|卖|mai4
+pay|畀錢|bei2 cin2|付钱|fu4 qian2
+use|用|jung6|用|yong4
+do|做|zou6|做|zuo4
+make|整|zing2|做|zuo4
+cook|煮|zyu2|做饭|zuo4 fan4
+wash|洗|sai2|洗|xi3
+clean|執|zap1|收拾|shou1 shi5
+open|開|hoi1|开|kai1
+close|閂|saan1|关|guan1
+turn on|開|hoi1|打开|da3 kai1
+turn off|閂|saan1|关掉|guan1 diao4
+put|放|fong3|放|fang4
+play|玩|waan2|玩|wan2
+work|做嘢|zou6 je5|工作|gong1 zuo4
+study|讀書|duk6 syu1|学习|xue2 xi2
+learn|學|hok6|学|xue2
+teach|教|gaau3|教|jiao1
+help|幫|bong1|帮|bang1
+live|住|zyu6|住|zhu4
+stay|留|lau4|留|liu2
+try|試|si3|试|shi4
+start|開始|hoi1 ci2|开始|kai1 shi3
+finish|搞掂|gaau2 dim6|做完|zuo4 wan2
+drive|揸車|zaa1 ce1|开车|kai1 che1
+swim|游水|jau4 seoi2|游泳|you2 yong3
+rest|休息|jau1 sik1|休息|xiu1 xi5
+feel|覺得|gok3 dak1|觉得|jue2 de5
+know how|識|sik1|会|hui4
+meet|見|gin3|见|jian4
+visit|探|taam3|看望|kan4 wang4
+miss|掛住|gwaa3 zyu6|想念|xiang3 nian4
+good|好|hou2|好|hao3
+bad|差|caa1|差|cha4
+big|大|daai6|大|da4
+small|細|sai3|小|xiao3
+little|細|sai3|小|xiao3
+hot|熱|jit6|热|re4
+cold|凍|dung3|冷|leng3
+warm|暖|nyun5|暖和|nuan3 huo5
+cool|涼|loeng4|凉快|liang2 kuai5
+beautiful|靚|leng3|漂亮|piao4 liang5
+pretty|靚|leng3|漂亮|piao4 liang5
+delicious|好食|hou2 sik6|好吃|hao3 chi1
+tasty|好味|hou2 mei6|好吃|hao3 chi1
+happy|開心|hoi1 sam1|开心|kai1 xin1
+sad|唔開心|m4 hoi1 sam1|难过|nan2 guo4
+angry|嬲|nau1|生气|sheng1 qi4
+tired|攰|gui6|累|lei4
+hungry|肚餓|tou5 ngo6|饿|e4
+thirsty|口渴|hau2 hot3|渴|ke3
+full|飽|baau2|饱|bao3
+sick|病|beng6|生病|sheng1 bing4
+busy|忙|mong4|忙|mang2
+free|得閒|dak1 haan4|有空|you3 kong4
+fast|快|faai3|快|kuai4
+slow|慢|maan6|慢|man4
+early|早|zou2|早|zao3
+late|遲|ci4|晚|wan3
+cheap|平|peng4|便宜|pian2 yi5
+expensive|貴|gwai3|贵|gui4
+new|新|san1|新|xin1
+old|舊|gau6|旧|jiu4
+same|一樣|jat1 joeng6|一样|yi2 yang4
+different|唔同|m4 tung4|不一样|bu4 yi2 yang4
+easy|容易|jung4 ji6|容易|rong2 yi4
+difficult|難|naan4|难|nan2
+right|啱|ngaam1|对|dui4
+correct|啱|ngaam1|对|dui4
+wrong|錯|co3|错|cuo4
+okay|好|hou2|好|hao3
+ok|好|hou2|好|hao3
+hello|你好|nei5 hou2|你好|ni3 hao3
+hi|你好|nei5 hou2|你好|ni3 hao3
+bye|拜拜|baai1 baai3|拜拜|bai2 bai5
+goodbye|拜拜|baai1 baai3|再见|zai4 jian4
+thank you|多謝|do1 ze6|谢谢|xie4 xie5
+thanks|多謝|do1 ze6|谢谢|xie4 xie5
+please|唔該|m4 goi1|请|qing3
+sorry|對唔住|deoi3 m4 zyu6|对不起|dui4 bu5 qi3
+excuse me|唔好意思|m4 hou2 ji3 si1|不好意思|bu4 hao3 yi4 si5
+welcome|歡迎|fun1 jing4|欢迎|huan1 ying2
+person|人|jan4|人|ren2
+people|人|jan4|人|ren2
+man|男人|naam4 jan2|男人|nan2 ren2
+woman|女人|neoi5 jan2|女人|nv3 ren2
+child|細路|sai3 lou6|孩子|hai2 zi5
+kid|細路|sai3 lou6|孩子|hai2 zi5
+baby|BB|bi4 bi1|宝宝|bao3 bao5
+family|屋企人|uk1 kei2 jan4|家人|jia1 ren2
+mom|媽媽|maa4 maa1|妈妈|ma1 ma5
+mother|媽媽|maa4 maa1|妈妈|ma1 ma5
+dad|爸爸|baa4 baa1|爸爸|ba4 ba5
+father|爸爸|baa4 baa1|爸爸|ba4 ba5
+parents|父母|fu6 mou5|父母|fu4 mu3
+grandma|嫲嫲|maa4 maa4|奶奶|nai3 nai5
+grandpa|爺爺|je4 je2|爷爷|ye2 ye5
+grandmother|嫲嫲|maa4 maa4|奶奶|nai3 nai5
+grandfather|爺爺|je4 je2|爷爷|ye2 ye5
+brother|兄弟|hing1 dai6|兄弟|xiong1 di4
+older brother|哥哥|go4 go1|哥哥|ge1 ge5
+younger brother|細佬|sai3 lou2|弟弟|di4 di5
+sister|姊妹|zi2 mui6|姐妹|jie3 mei4
+older sister|家姐|gaa1 ze1|姐姐|jie3 jie5
+younger sister|妹妹|mui4 mui2|妹妹|mei4 mei5
+uncle|叔叔|suk1 suk1|叔叔|shu1 shu5
+aunt|姨媽|ji4 maa1|阿姨|a1 yi2
+son|仔|zai2|儿子|er2 zi5
+daughter|女|neoi2|女儿|nv3 er2
+husband|老公|lou5 gung1|老公|lao3 gong1
+wife|老婆|lou5 po4|老婆|lao3 po2
+friend|朋友|pang4 jau5|朋友|peng2 you5
+girlfriend|女朋友|neoi5 pang4 jau5|女朋友|nv3 peng2 you5
+boyfriend|男朋友|naam4 pang4 jau5|男朋友|nan2 peng2 you5
+name|名|meng2|名字|ming2 zi5
+home|屋企|uk1 kei2|家|jia1
+house|屋|uk1|房子|fang2 zi5
+room|房|fong2|房间|fang2 jian1
+kitchen|廚房|cyu4 fong2|厨房|chu2 fang2
+bathroom|廁所|ci3 so2|洗手间|xi3 shou3 jian1
+toilet|廁所|ci3 so2|厕所|ce4 suo3
+bed|床|cong4|床|chuang2
+door|門|mun4|门|men2
+car|車|ce1|车|che1
+bus|巴士|baa1 si2|公交车|gong1 jiao1 che1
+plane|飛機|fei1 gei1|飞机|fei1 ji1
+road|路|lou6|路|lu4
+store|舖頭|pou3 tau2|商店|shang1 dian4
+shop|舖頭|pou3 tau2|商店|shang1 dian4
+supermarket|超市|ciu1 si5|超市|chao1 shi4
+restaurant|餐廳|caan1 teng1|餐厅|can1 ting1
+school|學校|hok6 haau6|学校|xue2 xiao4
+hospital|醫院|ji1 jyun2|医院|yi1 yuan4
+beach|沙灘|saa1 taan1|海滩|hai3 tan1
+pool|泳池|wing6 ci4|游泳池|you2 yong3 chi2
+park|公園|gung1 jyun2|公园|gong1 yuan2
+money|錢|cin2|钱|qian2
+phone|電話|din6 waa2|手机|shou3 ji1
+thing|嘢|je5|东西|dong1 xi5
+things|嘢|je5|东西|dong1 xi5
+something|啲嘢|di1 je5|一些东西|yi4 xie1 dong1 xi5
+anything|乜嘢|mat1 je5|什么|shen2 me5
+food|嘢食|je5 sik6|食物|shi2 wu4
+rice|飯|faan6|米饭|mi3 fan4
+meal|餐|caan1|饭|fan4
+breakfast|早餐|zou2 caan1|早饭|zao3 fan4
+lunch|午餐|ng5 caan1|午饭|wu3 fan4
+dinner|晚飯|maan5 faan6|晚饭|wan3 fan4
+noodles|麵|min6|面条|mian4 tiao2
+soup|湯|tong1|汤|tang1
+water|水|seoi2|水|shui3
+tea|茶|caa4|茶|cha2
+coffee|咖啡|gaa3 fe1|咖啡|ka1 fei1
+milk|牛奶|ngau4 naai5|牛奶|niu2 nai3
+fruit|生果|saang1 gwo2|水果|shui3 guo3
+vegetables|菜|coi3|蔬菜|shu1 cai4
+meat|肉|juk6|肉|rou4
+chicken|雞|gai1|鸡|ji1
+fish|魚|jyu2|鱼|yu2
+pork|豬肉|zyu1 juk6|猪肉|zhu1 rou4
+beef|牛肉|ngau4 juk6|牛肉|niu2 rou4
+egg|蛋|daan2|鸡蛋|ji1 dan4
+dog|狗|gau2|狗|gou3
+cat|貓|maau1|猫|mao1
+weather|天氣|tin1 hei3|天气|tian1 qi4
+rain|雨|jyu5|雨|yu3
+sun|太陽|taai3 joeng4|太阳|tai4 yang2
+wind|風|fung1|风|feng1
+time|時間|si4 gaan3|时间|shi2 jian1
+hour|鐘頭|zung1 tau4|小时|xiao3 shi2
+minute|分鐘|fan1 zung1|分钟|fen1 zhong1
+day|日|jat6|天|tian1
+week|禮拜|lai5 baai3|星期|xing1 qi1
+month|月|jyut6|月|yue4
+year|年|nin4|年|nian2
+birthday|生日|saang1 jat6|生日|sheng1 ri4
+job|工|gung1|工作|gong1 zuo4
+one|一|jat1|一|yi1
+two|兩|loeng5|两|liang3
+three|三|saam1|三|san1
+four|四|sei3|四|si4
+five|五|ng5|五|wu3
+six|六|luk6|六|liu4
+seven|七|cat1|七|qi1
+eight|八|baat3|八|ba1
+nine|九|gau2|九|jiu3
+ten|十|sap6|十|shi2
+hundred|百|baak3|百|bai3
+thousand|千|cin1|千|qian1
+first|第一|dai6 jat1|第一|di4 yi1
+computer|電腦|din6 nou5|电脑|dian4 nao3
+tv|電視|din6 si6|电视|dian4 shi4
+television|電視|din6 si6|电视|dian4 shi4
+ice cream|雪糕|syut3 gou1|冰淇淋|bing1 qi2 lin2
+taxi|的士|dik1 si2|出租车|chu1 zu1 che1
+bicycle|單車|daan1 ce1|自行车|zi4 xing2 che1
+umbrella|遮|ze1|伞|san3
+clothes|衫|saam1|衣服|yi1 fu5
+shoes|鞋|haai4|鞋|xie2
+picture|相|soeng2|照片|zhao4 pian4
+photo|相|soeng2|照片|zhao4 pian4
+movie|戲|hei3|电影|dian4 ying3
+cake|蛋糕|daan6 gou1|蛋糕|dan4 gao1
+fun|好玩|hou2 waan2|好玩|hao3 wan2
+interesting|有趣|jau5 ceoi3|有意思|you3 yi4 si5
+boring|悶|mun6|无聊|wu2 liao2
+cute|得意|dak1 ji3|可爱|ke3 ai4
+handsome|靚仔|leng3 zai2|帅|shuai4
+smart|叻|lek1|聪明|cong1 ming5
+lucky|好彩|hou2 coi2|幸运|xing4 yun4
+safe|安全|on1 cyun4|安全|an1 quan2
+ready|準備好|zeon2 bei6 hou2|准备好|zhun3 bei4 hao3
+dirty|污糟|wu1 zou1|脏|zang1
