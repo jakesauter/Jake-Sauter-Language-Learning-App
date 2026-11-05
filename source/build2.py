@@ -66,7 +66,15 @@ for i, p in enumerate(data):
 data += parse("batches/jokes.txt")
 data += parse("batches/daily.txt")
 
-order = ["Start Here", "Talking About the Day", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes"]
+en5 = lines("batches/batch5_en.txt")
+gy5 = dict(zip(en5, lines("batches/batch5_yue.txt")))
+gc5 = dict(zip(en5, lines("batches/batch5_cmn.txt")))
+for part in "ab":
+    for e in parse(f"batches/batch5{part}.txt"):
+        e["g_yue"], e["g_cmn"] = gy5[e["en"]], gc5[e["en"]]
+        data.append(e)
+
+order = ["Start Here", "Talking About the Day", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:

@@ -1,0 +1,384 @@
+@ Talking About the Day | Good morning, did you sleep okay?
+g: Good morning / you / slept / well or not?
+y: 早晨/zou2 san4/0 ; 你/nei5/1 ; 瞓得/fan3 dak1/2 ; 好唔好/hou2 m4 hou2/3 ; 呀/aa3/-
+m: 早上好/zǎo shang hǎo/0 ; 你/nǐ/1 ; 昨晚/zuó wǎn/- ; 睡得/shuì de/2 ; 好吗/hǎo ma/3
+t: 早晨/dɔu55 sin22/0 ; 你/ni33/1 ; 瞓得/fun33 ak33/2 ; 好唔好/hɔu55 m22 hɔu55/3 ; 啊/a33/-
+s: Buenos días/0 ; ¿dormiste/1,2 ; bien/3
+f: Bonjour/0 ; tu/1 ; as bien/3 ; dormi/2
+d: Guten Morgen/0 ; hast/- ; du/1 ; gut/3 ; geschlafen/2
+n: 早晨 zou2 san4 is the everyday Cantonese "good morning". "Good-not-good" 好唔好 makes the question.
+nt: Same structure: 瞓得好唔好 fun33 ak33 hɔu55 m22 hɔu55.
+
+@ Talking About the Day | What do you want for breakfast?
+g: You / want to eat / what / breakfast
+y: 你/nei5/0 ; 想食/soeng2 sik6/1 ; 乜嘢/mat1 je5/2 ; 早餐/zou2 caan1/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 想吃/xiǎng chī/1 ; 什么/shén me/2 ; 早餐/zǎo cān/3
+t: 你/ni33/0 ; 想吃/ɬiaŋ55 hiak33/1? ; 乜嘢/mɔt55 yia33/2 ; 早餐/dɔu55 tan335/3 ; 啊/a33/-
+s: ¿Qué/2 ; quieres/0,1 ; desayunar/1,3
+f: Tu/0 ; veux/1 ; quoi/2 ; pour le petit-déj/3
+d: Was/2 ; möchtest/1 ; du/0 ; zum Frühstück/3
+n: "What breakfast" sits as one phrase: 乜嘢早餐.
+nt: Breakfast is 早餐 dɔu55 tan335.
+
+@ Around the House | I'll make the coffee.
+g: I / make / coffee / (then)
+y: 我/ngo5/0 ; 去/heoi3/- ; 沖/cung1/1 ; 咖啡/gaa3 fe1/2 ; 啦/laa1/3
+m: 我/wǒ/0 ; 去/qù/- ; 冲/chōng/1 ; 咖啡/kā fēi/2
+t: 我/ŋɔi33/0 ; 去/hui33/- ; 沖/tsəŋ33/1? ; 咖啡/ga33 fia55/2 ; 啦/la55/3
+s: Yo/0 ; hago/1 ; el café/2
+f: Je/0 ; fais/1 ; le café/2
+d: Ich/0 ; mache/1 ; den Kaffee/2
+n: Coffee and tea are 沖 cung1 "poured with hot water", not 做 "made".
+nt: Coffee is 咖啡 ga33 fia55.
+
+@ Talking About the Day | Did you eat yet? I saved you some.
+g: You / ate / yet? / I / saved / some / for you
+y: 你/nei5/0 ; 食咗飯/sik6 zo2 faan6/1 ; 未/mei6/2 ; 我/ngo5/3 ; 留咗/lau4 zo2/4 ; 啲/di1/5 ; 畀你/bei2 nei5/6
+m: 你/nǐ/0 ; 吃过/chī guo/1 ; 了吗/le ma/2 ; 我/wǒ/3 ; 给你/gěi nǐ/6 ; 留了/liú le/4 ; 一些/yì xiē/5
+t: 你/ni33/0 ; 吃啊飯/hiak33 ə33 fan32/1 ; 唔曾/miaŋ21/2 ; 我/ŋɔi33/3 ; 留啊/liu22 ə33/4 ; 啲/nit55/5? ; 畀你/i55 ni33/6
+s: ¿Ya/2 ; comiste/0,1 ; Te/6 ; guardé/3,4 ; un poco/5
+f: Tu/0 ; as/1 ; déjà/2 ; mangé/1 ; Je/3 ; t'en/6 ; ai gardé/4 ; un peu/5
+d: Hast/- ; du/0 ; schon/2 ; gegessen/1 ; Ich/3 ; habe/- ; dir/6 ; was/5 ; aufgehoben/4
+n: 留 lau4 is "keep, save". Google's 慳 means "save money", so 留 is the right word here.
+nt: 唔曾 miaŋ21 is "yet?", the same as in "Have you eaten yet?".
+
+@ Talking About the Day | I'm heading out now.
+g: I / now / going out / (now)
+y: 我/ngo5/0 ; 而家/ji4 gaa1/1 ; 出去/ceot1 heoi3/2 ; 喇/laa3/3
+m: 我/wǒ/0 ; 现在/xiàn zài/1 ; 要出门/yào chū mén/2 ; 了/le/3
+t: 我/ŋɔi33/0 ; 而家/yi22 ga33/1? ; 出門/tsut55 mɔn22/2 ; 啦/la55/3
+s: Ya/1 ; me voy/0,2
+f: Je/0 ; sors/2 ; maintenant/1
+d: Ich/0 ; gehe/2 ; jetzt/1 ; los/2
+n: 我而家出去喇 is the natural version. Google's 出緊去 means "in the middle of going out".
+nt: Going out the door is 出門 tsut55 mɔn22.
+
+@ Talking About the Day | Drive safe, text me when you get there.
+g: Drive / carefully / arrive / send a message / to me
+y: 揸車/zaa1 ce1/0 ; 小心啲/siu2 sam1 di1/1 ; 到咗/dou3 zo2/2 ; 發個短訊/faat3 go3 dyun2 seon3/3 ; 畀我/bei2 ngo5/4
+m: 开车/kāi chē/0 ; 小心/xiǎo xīn/1 ; 到了/dào le/2 ; 发个信息/fā ge xìn xī/3 ; 给我/gěi wǒ/4
+t: 開車/hɔi33 tsia33/0 ; 小心/ɬiau55 ɬim335/1 ; 到/ɔu33/2 ; 發信息/fat33 ɬin33 ɬɛt55/3 ; 畀我/i55 ŋɔi33/4
+s: Maneja/0 ; con cuidado/1 ; y/- ; mándame un mensaje/3,4 ; cuando llegues/2
+f: Conduis/0 ; prudemment/1 ; et/- ; envoie-moi un texto/3,4 ; quand tu arrives/2
+d: Fahr/0 ; vorsichtig/1 ; und/- ; schreib mir/3,4 ; wenn du da bist/2
+n: 揸車 is "grip the car", meaning drive. Many people say "send 個 message" in mixed English instead of 發個短訊.
+nt: Drive is 開車 hɔi33 tsia33.
+
+@ Talking About the Day | What time will you be home?
+g: You / what time / get back / home
+y: 你/nei5/0 ; 幾點/gei2 dim2/1 ; 返/faan1/2 ; 屋企/uk1 kei2/3 ; 呀/aa3/-
+m: 你/nǐ/0 ; 几点/jǐ diǎn/1 ; 回/huí/2 ; 家/jiā/3
+t: 你/ni33/0 ; 幾點/gi55 iam55/1 ; 返/fan33/2 ; 屋企/ək55 ki55/3 ; 啊/a33/-
+s: ¿A qué hora/1 ; llegas/0,2 ; a casa/3
+f: Tu/0 ; rentres/2,3 ; à quelle heure/1
+d: Wann/1 ; bist/- ; du/0 ; zu Hause/3 ; da/2
+n: Google got this one right. 返屋企 faan1 uk1 kei2 is "go back home".
+nt: Home is 屋企 ək55 ki55.
+
+@ Talking About the Day | I'll be home around six.
+g: I / around six / will be back / home
+y: 我/ngo5/0 ; 六點幾/luk6 dim2 gei2/1 ; 返到/faan1 dou3/2 ; 屋企/uk1 kei2/3
+m: 我/wǒ/0 ; 大概六点/dà gài liù diǎn/1 ; 到/dào/2 ; 家/jiā/3
+t: 我/ŋɔi33/0 ; 六點幾/lək32 iam55 gi55/1? ; 返到/fan33 ɔu33/2 ; 屋企/ək55 ki55/3
+s: Llego/0,2 ; a casa/3 ; como a las seis/1
+f: Je/0 ; rentre/2,3 ; vers six heures/1
+d: Ich/0 ; bin/- ; gegen sechs/1 ; zu Hause/3 ; da/2
+n: 六點幾 "six-something" is how Cantonese says "around six, a bit after".
+nt: 幾 gi55 after a time means "something past".
+
+@ Talking About the Day | Do you need me to pick anything up?
+g: Need? / me / buy / anything / to bring back
+y: 使唔使/sai2 m4 sai2/0 ; 我/ngo5/1 ; 買/maai5/2 ; 啲嘢/di1 je5/3 ; 返嚟/faan1 lai4/4 ; 呀/aa3/-
+m: 需要/xū yào/0 ; 我/wǒ/1 ; 顺便/shùn biàn/- ; 带点什么/dài diǎn shén me/2,3 ; 回来/huí lái/4 ; 吗/ma/0
+t: 使唔使/sɔi55 m22 sɔi55/0? ; 我/ŋɔi33/1 ; 買/mai33/2 ; 嘢/yia33/3 ; 返來/fan33 lɔi22/4 ; 啊/a33/-
+s: ¿Necesitas/0 ; que/- ; te/- ; traiga/1,2,4 ; algo/3
+f: Tu/- ; as besoin/0 ; que je/1 ; rapporte/2,4 ; quelque chose/3
+d: Soll/0 ; ich/1 ; dir/- ; was/3 ; mitbringen/2,4
+n: 使唔使 "need-not-need" is the yes-or-no "do you need".
+nt: 返來 fan33 lɔi22 is "come back".
+
+@ Around the House | We're out of milk.
+g: (At) home / no more / milk / (now)
+y: 屋企/uk1 kei2/0 ; 冇晒/mou5 saai3/1 ; 奶/naai5/2 ; 喇/laa3/3
+m: 家里/jiā li/0 ; 没/méi/1 ; 牛奶/niú nǎi/2 ; 了/le/3
+t: 屋企/ək55 ki55/0 ; 冇/mɔu33/1 ; 牛奶/ŋəu22 nai21/2 ; 啦/la55/3
+s: Se acabó/1 ; la leche/2
+f: Il n'y a plus/1 ; de lait/2
+d: Die Milch/2 ; ist/- ; alle/1
+n: 冇晒 mou5 saai3 is "none left at all". Cantonese often just says 奶 for milk.
+nt: Milk is 牛奶 ŋəu22 nai21, literally "cow milk".
+
+@ Talking About the Day | I'll stop by the store on the way home.
+g: I / on the way home / stop by / the store
+y: 我/ngo5/0 ; 返屋企/faan1 uk1 kei2/1 ; 順路/seon6 lou6/1 ; 去/heoi3/2 ; 超市/ciu1 si5/3
+m: 我/wǒ/0 ; 回家路上/huí jiā lù shang/1 ; 顺便去/shùn biàn qù/2 ; 趟商店/tàng shāng diàn/3
+t: 我/ŋɔi33/0 ; 返屋企/fan33 ək55 ki55/1 ; 順便/sun32 bein325/1 ; 去/hui33/2 ; 士多舖/si21 dɔ55 pu335/3
+s: Paso/0,2 ; a la tienda/3 ; de regreso a casa/1
+f: Je/0 ; passe/2 ; au magasin/3 ; en rentrant/1
+d: Ich/0 ; gehe/2 ; auf dem Heimweg/1 ; kurz/- ; einkaufen/3
+n: 順路 seon6 lou6 is "on the way". It's shorter than Google's version.
+nt: 順便 sun32 bein325 is "while you're at it".
+
+@ Health | How was the doctor's appointment?
+g: Seeing / the doctor / how (was it)
+y: 睇/tai2/0 ; 醫生/ji1 sang1/1 ; 點呀/dim2 aa3/2
+m: 看/kàn/0 ; 医生/yī shēng/1 ; 怎么样/zěn me yàng/2
+t: 睇/hai55/0 ; 醫生/yi33 saŋ335/1 ; 點啊/iam55 a33/2
+s: ¿Cómo/2 ; te fue/2 ; con el doctor/0,1
+f: Ça s'est passé/2 ; comment/2 ; chez le médecin/0,1
+d: Wie/2 ; war/2 ; es/- ; beim Arzt/0,1
+n: Just "see doctor how?" Google's 預約係點樣 sounds like a form.
+nt: To see a doctor is 睇醫生 hai55 yi33 saŋ335.
+
+@ Talking About the Day | Did grandma call today?
+g: Grandma / today / called / yet?
+y: 婆婆/po4 po2/0 ; 今日/gam1 jat6/1 ; 打咗嚟/daa2 zo2 lai4/2 ; 未呀/mei6 aa3/3
+m: 今天/jīn tiān/1 ; 奶奶/nǎi nai/0 ; 打电话来了/dǎ diàn huà lái le/2 ; 吗/ma/3
+t: 阿婆/a33 pɔ22/0? ; 今日/gim33 ŋit21/1 ; 打電話來/a55 ein32 va325 lɔi22/2 ; 唔曾/miaŋ21/3
+s: ¿Hoy/1 ; llamó/2 ; la abuela/0
+f: Mamie/0 ; a appelé/2 ; aujourd'hui/1
+d: Hat/- ; Oma/0 ; heute/1 ; schon/3 ; angerufen/2
+n: 婆婆 po4 po2 is mom's mom; 嫲嫲 maa4 maa4 is dad's mom. Use the one that fits.
+nt: Dad's mom is 阿人 a33 ŋin22.
+
+@ Talking About the Day | Tell her I said hi.
+g: Help me / say hi / to her
+y: 幫我/bong1 ngo5/0 ; 同佢/tung4 keoi5/2 ; 講聲/gong2 seng1/1 ; hi/haai1/1
+m: 替我/tì wǒ/0 ; 向她/xiàng tā/2 ; 问好/wèn hǎo/1
+t: 幫我/bɔŋ33 ŋɔi33/0 ; 同佢/həŋ22 kui33/2 ; 講聲/gɔŋ55 siaŋ33/1? ; hi/hai33/1
+s: Salúdala/1,2 ; de mi parte/0
+f: Dis-lui/1,2 ; bonjour/1 ; de ma part/0
+d: Grüß/1 ; sie/2 ; von mir/0
+n: 幫我同佢講聲 hi is exactly how people say it, English "hi" and all.
+nt: 講聲 is "say a word" to someone.
+
+@ Around the House | The kids are already asleep.
+g: The kids / already / asleep
+y: 啲細路/di1 sai3 lou6/0 ; 已經/ji5 ging1/1 ; 瞓咗/fan3 zo2/2 ; 喇/laa3/-
+m: 孩子们/hái zi men/0 ; 已经/yǐ jīng/1 ; 睡了/shuì le/2
+t: 細佬哥/ɬai33 lau55 gɔ55/0 ; 已經/yi21 gein33/1? ; 瞓啊/fun33 ə33/2 ; 啦/la55/-
+s: Los niños/0 ; ya/1 ; se durmieron/2
+f: Les enfants/0 ; dorment/2 ; déjà/1
+d: Die Kinder/0 ; schlafen/2 ; schon/1
+n: 細路 sai3 lou6 is "little ones", the everyday word for kids.
+nt: Kids are 細佬哥 ɬai33 lau55 gɔ55.
+
+@ Cooking Together | Dinner's almost ready, wash your hands.
+g: Almost / can eat / dinner / go / wash your hands
+y: 就快/zau6 faai3/0 ; 食得/sik6 dak1/1 ; 飯/faan6/2 ; 去/heoi3/3 ; 洗手/sai2 sau2/4 ; 啦/laa1/-
+m: 晚饭/wǎn fàn/2 ; 快好了/kuài hǎo le/0,1 ; 去/qù/3 ; 洗洗手/xǐ xi shǒu/4 ; 吧/ba/-
+t: 快/fai33/0 ; 吃得/hiak33 ak33/1? ; 飯/fan32/2 ; 去/hui33/3 ; 洗手/ɬai55 siu55/4 ; 啦/la55/-
+s: Ya/0 ; casi/0 ; está la cena/1,2 ; lávense las manos/3,4
+f: Le dîner/2 ; est presque/0 ; prêt/1 ; allez/3 ; vous laver les mains/4
+d: Das Essen/2 ; ist/- ; gleich/0 ; fertig/1 ; geht/3 ; Hände waschen/4
+n: 就快食得飯 "almost can eat rice" is the real dinner call. Google's 晚餐準備好 is stiff.
+nt: Wash hands is 洗手 ɬai55 siu55.
+
+@ Cooking Together | Can you help me chop the vegetables?
+g: Can? / help me / chop / the vegetables
+y: 可唔可以/ho2 m4 ho2 ji5/0 ; 幫我/bong1 ngo5/1 ; 切/cit3/2 ; 菜/coi3/3 ; 呀/aa3/-
+m: 能/néng/0 ; 帮我/bāng wǒ/1 ; 切一下/qiē yí xià/2 ; 菜/cài/3 ; 吗/ma/0
+t: 可唔可以/hɔ55 m22 hɔ55 yi21/0? ; 幫我/bɔŋ33 ŋɔi33/1 ; 切/tɛt33/2 ; 菜/tɔi33/3 ; 啊/a33/-
+s: ¿Me ayudas/0,1 ; a picar/2 ; las verduras/3
+f: Tu peux/0 ; m'aider/1 ; à couper/2 ; les légumes/3
+d: Kannst/0 ; du/- ; mir/1 ; helfen/1 ; das Gemüse/3 ; zu schneiden/2
+n: 菜 coi3 means vegetables and also "dishes" in general.
+nt: Chop is 切 tɛt33.
+
+@ Cooking Together | How much salt should I add?
+g: Should / add / how much / salt
+y: 應該/jing1 goi1/0 ; 落/lok6/1 ; 幾多/gei2 do1/2 ; 鹽/jim4/3 ; 呀/aa3/-
+m: 该/gāi/0 ; 放/fàng/1 ; 多少/duō shao/2 ; 盐/yán/3
+t: 應該/yein33 gɔi33/0? ; 落/lɔk32/1? ; 幾多/gi55 ɔ335/2 ; 鹽/yiam22/3 ; 啊/a33/-
+s: ¿Cuánta/2 ; sal/3 ; le pongo/0,1
+f: Je mets/0,1 ; combien de/2 ; sel/3
+d: Wie viel/2 ; Salz/3 ; soll ich/0 ; reintun/1
+n: In the kitchen you 落 lok6 "drop in" salt, not 加 "add".
+nt: Salt is 鹽 yiam22.
+
+@ Cooking Together | Taste this, is it good?
+g: Try / this / tasty or not?
+y: 試吓/si3 haa5/0 ; 呢個/ni1 go3/1 ; 好唔好食/hou2 m4 hou2 sik6/2
+m: 尝尝/cháng chang/0 ; 这个/zhè ge/1 ; 味道怎么样/wèi dào zěn me yàng/2
+t: 試下/si33 ha21/0? ; 呢個/ni55 gɔi33/1? ; 好唔好吃/hɔu55 m22 hɔu55 hiak33/2
+s: Prueba/0 ; esto/1 ; ¿está rico/2
+f: Goûte/0 ; ça/1 ; c'est bon/2
+d: Probier/0 ; mal/- ; das/1 ; schmeckt's/2
+n: Google got this one right. 好唔好食 is "good-not-good to eat".
+nt: 吃 is hiak33.
+
+@ Cooking Together | It needs a little more soy sauce.
+g: Need / a bit more / soy sauce
+y: 要/jiu3/0 ; 多少少/do1 siu2 siu2/1 ; 豉油/si6 jau4/2
+m: 还需要/hái xū yào/0 ; 再加点/zài jiā diǎn/1 ; 酱油/jiàng yóu/2
+t: 要/yiau33/0? ; 加啲/ga33 nit55/1? ; 豉油/si32 yiu225/2
+s: Le falta/0 ; un poco más de/1 ; salsa de soya/2
+f: Il faut/0 ; un peu plus de/1 ; sauce soja/2
+d: Da/- ; fehlt/0 ; noch etwas/1 ; Sojasoße/2
+n: Cantonese says 豉油 si6 jau4; Mandarin says 酱油 jiàng yóu.
+nt: Soy sauce is 豉油 si32 yiu225.
+
+@ Cooking Together | Don't burn the rice!
+g: Don't / burn / the rice
+y: 唔好/m4 hou2/0 ; 煲燶/bou1 nung1/1 ; 啲飯/di1 faan6/2 ; 呀/aa3/-
+m: 别/bié/0 ; 把饭/bǎ fàn/2 ; 煮糊了/zhǔ hú le/1
+t: 唔好/mɔu55/0 ; 煲燶/bɔu33 nəŋ33/1? ; 飯/fan32/2 ; 啊/a33/-
+s: ¡No/0 ; se te queme/1 ; el arroz/2
+f: Ne/0 ; fais pas/0 ; brûler/1 ; le riz/2
+d: Lass/- ; den Reis/2 ; nicht/0 ; anbrennen/1
+n: 燶 nung1 is "burnt". Google's 燒飯 means "cook rice", the opposite of the warning.
+nt: Burnt is 燶 nəŋ33.
+
+@ Cooking Together | Who's doing the dishes tonight?
+g: Tonight / who / washes / the dishes
+y: 今晚/gam1 maan5/0 ; 邊個/bin1 go3/1 ; 洗碗/sai2 wun2/2,3 ; 呀/aa3/-
+m: 今晚/jīn wǎn/0 ; 谁/shéi/1 ; 洗碗/xǐ wǎn/2,3
+t: 今晚/gim33 man21/0 ; 谁/sui55/1 ; 洗碗/ɬai55 vɔn55/2,3 ; 啊/a33/-
+s: ¿Quién/1 ; lava/2 ; los trastes/3 ; hoy/0
+f: Qui/1 ; fait/2 ; la vaisselle/3 ; ce soir/0
+d: Wer/1 ; spült/2,3 ; heute Abend/0
+n: Google got this one right. 洗碗 is "wash bowls".
+nt: Bowl is 碗 vɔn55.
+
+@ Cooking Together | It's your turn to do the dishes.
+g: Your turn / wash / the dishes / (go on)
+y: 輪到你/leon4 dou3 nei5/0 ; 洗/sai2/1 ; 碗/wun2/2 ; 喇/laa3/3
+m: 轮到你/lún dào nǐ/0 ; 洗碗/xǐ wǎn/1,2 ; 了/le/3
+t: 輪到你/lun22 ɔu33 ni33/0? ; 洗碗/ɬai55 vɔn55/1,2 ; 啦/la55/3
+s: Te toca/0 ; lavar/1 ; los trastes/2
+f: C'est ton tour/0 ; de faire/1 ; la vaisselle/2
+d: Du bist dran/0 ; mit dem Abwasch/1,2
+n: 輪到你 "turn reaches you". Good for teasing a sibling.
+nt: 到 is ɔu33.
+
+@ Meals | I'm so full I can't move.
+g: I / (am so) full / can't move
+y: 我/ngo5/0 ; 飽到/baau2 dou3/1 ; 郁唔到/juk1 m4 dou2/2
+m: 我/wǒ/0 ; 吃得太饱了/chī de tài bǎo le/1 ; 动都动不了/dòng dōu dòng bù liǎo/2
+t: 我/ŋɔi33/0 ; 飽到/bɔu55 ɔu33/1 ; 郁唔到/yək55 m22 ɔu55/2?
+s: Estoy/0 ; tan lleno/1 ; que no me puedo mover/2
+f: J'ai/0 ; tellement mangé/1 ; que je ne peux plus bouger/2
+d: Ich/0 ; bin/- ; so satt/1 ; ich kann mich nicht bewegen/2
+n: Google got this one right. "Full until can't move" is a classic after a family dinner.
+nt: Full is 飽 bɔu55.
+
+@ Meals | Let's go for a walk after dinner.
+g: After eating / go / for a walk / let's
+y: 食完飯/sik6 jyun4 faan6/0 ; 去/heoi3/1 ; 行吓/haang4 haa5/2 ; 啦/laa1/3
+m: 晚饭后/wǎn fàn hòu/0 ; 我们/wǒ men/- ; 去/qù/1 ; 散散步/sàn san bù/2 ; 吧/ba/3
+t: 吃完飯/hiak33 yɔn22 fan32/0 ; 去/hui33/1 ; 行街/haŋ22 gai21/2 ; 啦/la55/3
+s: Vamos/1,3 ; a caminar/2 ; después de cenar/0
+f: Allons/1,3 ; marcher/2 ; après le dîner/0
+d: Lass/3 ; uns/- ; nach dem Essen/0 ; spazieren gehen/1,2
+n: 行吓 haang4 haa5 "walk a bit" is the casual stroll. 散步 is fine too.
+nt: 行街 haŋ22 gai21 is "walk the streets".
+
+@ Around the House | What should we watch tonight?
+g: Tonight / we / watch / what
+y: 今晚/gam1 maan5/0 ; 我哋/ngo5 dei6/1 ; 睇/tai2/2 ; 乜嘢/mat1 je5/3 ; 好呀/hou2 aa3/-
+m: 今晚/jīn wǎn/0 ; 看/kàn/2 ; 什么节目/shén me jié mù/3 ; 好呢/hǎo ne/-
+t: 今晚/gim33 man21/0 ; 我/ŋɔi21/1? ; 睇/hai55/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
+s: ¿Qué/3 ; vemos/1,2 ; esta noche/0
+f: On/1 ; regarde/2 ; quoi/3 ; ce soir/0
+d: Was/3 ; schauen/2 ; wir/1 ; heute Abend/0
+n: Ending with 好呀 "is good?" makes it a friendly "what shall we".
+nt: Plural "we" may be the tone-changed ŋɔi21. Check with family.
+
+@ Around the House | Pick something, I don't care.
+g: You / pick / I / don't mind
+y: 你/nei5/0 ; 揀/gaan2/1 ; 啦/laa1/- ; 我/ngo5/2 ; 冇所謂/mou5 so2 wai6/3
+m: 你/nǐ/0 ; 挑吧/tiāo ba/1 ; 我/wǒ/2 ; 无所谓/wú suǒ wèi/3
+t: 你/ni33/0 ; 揀/gan55/1 ; 啦/la55/- ; 我/ŋɔi33/2 ; 隨便/tui22 bein325/3
+s: Escoge/0,1 ; tú/0 ; a mí/2 ; me da igual/3
+f: Choisis/0,1 ; moi/2 ; ça m'est égal/3
+d: Such/1 ; du/0 ; was aus/1 ; mir/2 ; ist's egal/3
+n: 冇所謂 mou5 so2 wai6 is "no big deal either way". Google's 我唔理 sounds rude.
+nt: 隨便 tui22 bein325 is "whatever".
+
+@ Around the House | This show is so boring.
+g: This / show / (is) so / boring
+y: 呢個/ni1 go3/0 ; 節目/zit3 muk6/1 ; 好/hou2/2 ; 悶/mun6/3
+m: 这个/zhè ge/0 ; 节目/jié mù/1 ; 真/zhēn/2 ; 无聊/wú liáo/3
+t: 呢個/ni55 gɔi33/0? ; 節目/dɛt55 mək32/1? ; 好/hɔu55/2 ; 冇乜索/mɔu33 mɔt55 ɬɔk21/3
+s: Esta/0 ; serie/1 ; es/- ; muy/2 ; aburrida/3
+f: Cette/0 ; émission/1 ; est/- ; trop/2 ; nulle/3
+d: Die/0 ; Sendung/1 ; ist/- ; so/2 ; langweilig/3
+n: Google got this one right. 悶 mun6 is "boring" and also "bored".
+nt: Stephen Li gives 冇乜索 mɔu33 mɔt55 ɬɔk21 for "boring".
+
+@ Around the House | Turn it up, I can't hear.
+g: Turn up / the volume / I / can't hear
+y: 校大/gaau3 daai6/0 ; 聲啲/seng1 di1/1 ; 我/ngo5/2 ; 聽唔到/teng1 m4 dou2/3
+m: 声音/shēng yīn/1 ; 调大点/tiáo dà diǎn/0 ; 我/wǒ/2 ; 听不见/tīng bu jiàn/3
+t: 校/gau33/0? ; 大聲啲/ai32 siaŋ33 nit55/0,1? ; 我/ŋɔi33/2 ; 聽唔到/hiaŋ33 m22 ɔu55/3
+s: Súbele/0,1 ; no oigo/2,3
+f: Monte/0 ; le son/1 ; j'entends rien/2,3
+d: Mach/0 ; lauter/0,1 ; ich/2 ; höre nichts/3
+n: 校大聲 gaau3 daai6 seng1 "adjust bigger sound" is what people say to the TV.
+nt: Can't hear is 聽唔到 hiaŋ33 m22 ɔu55.
+
+@ Around the House | It's getting late, I'm going to bed.
+g: (It's) late / I / go / to sleep
+y: 好夜喇/hou2 je6 laa3/0 ; 我/ngo5/1 ; 去/heoi3/2 ; 瞓喇/fan3 laa3/3
+m: 不早了/bù zǎo le/0 ; 我/wǒ/1 ; 要去/yào qù/2 ; 睡了/shuì le/3
+t: 好夜啦/hɔu55 yia215 la55/0 ; 我/ŋɔi33/1 ; 去/hui33/2 ; 瞓覺/fun33 gɔu33/3
+s: Ya/0 ; es tarde/0 ; me voy/1,2 ; a dormir/3
+f: Il est tard/0 ; je/1 ; vais/2 ; me coucher/3
+d: Es ist spät/0 ; ich/1 ; gehe/2 ; ins Bett/3
+n: Cantonese says 好夜 "very night" for "late".
+nt: Night is 夜 yia215.
+
+@ Around the House | Don't stay up too late.
+g: Don't / sleep / too late
+y: 唔好/m4 hou2/0 ; 瞓得/fan3 dak1/1 ; 太夜/taai3 je6/2 ; 呀/aa3/-
+m: 别/bié/0 ; 熬/áo/1 ; 太晚/tài wǎn/2
+t: 唔好/mɔu55/0 ; 瞓得/fun33 ak33/1 ; 太夜/hai33 yia215/2? ; 啊/a33/-
+s: No/0 ; te desveles/1,2
+f: Ne/0 ; te couche/1 ; pas/0 ; trop tard/2
+d: Bleib/1 ; nicht/0 ; zu lange/2 ; auf/1
+n: Google's 太遲 is understandable, but 太夜 is what people say.
+nt: 太 may be hai33 with Taishanese t→h. Check it.
+
+@ Around the House | Lock the door before you go to bed.
+g: Before sleeping / remember to / lock / the door
+y: 瞓覺前/fan3 gaau3 cin4/0 ; 記得/gei3 dak1/1 ; 鎖/so2/2 ; 門/mun4/3
+m: 睡前/shuì qián/0 ; 记得/jì de/1 ; 锁/suǒ/2 ; 门/mén/3
+t: 瞓覺前/fun33 gɔu33 tein22/0? ; 記得/gi33 ak55/1? ; 鎖/ɬɔ55/2 ; 門/mɔn22/3
+s: Cierra/2 ; la puerta/3 ; antes de dormir/0
+f: Ferme/2 ; la porte/3 ; avant de te coucher/0
+d: Schließ/2 ; die Tür/3 ; ab/2 ; bevor du ins Bett gehst/0
+n: 記得 gei3 dak1 "remember to" makes it a reminder instead of an order.
+nt: Lock is 鎖 ɬɔ55, door is 門 mɔn22.
+
+@ Cooking Together | Did you turn off the stove?
+g: You / turned off / the stove / yet?
+y: 你/nei5/0 ; 熄咗/sik1 zo2/1 ; 個爐/go3 lou4/2 ; 未呀/mei6 aa3/3
+m: 你/nǐ/0 ; 关火/guān huǒ/1,2 ; 了吗/le ma/3
+t: 你/ni33/0 ; 熄啊/ɬɛk55 ə33/1? ; 爐/lu22/2 ; 唔曾/miaŋ21/3
+s: ¿Apagaste/0,1 ; la estufa/2
+f: Tu/0 ; as éteint/1 ; le feu/2
+d: Hast/- ; du/0 ; den Herd/2 ; ausgemacht/1
+n: Google got this one right. 熄 sik1 means "put out" for fire, lights and stoves.
+nt: Stove is 爐 lu22.
+
+@ Around the House | It's freezing in here.
+g: Here / (is) so / cold / (to death)
+y: 呢度/ni1 dou6/0 ; 好/hou2/1 ; 凍/dung3/2 ; 呀/aa3/-
+m: 屋里/wū li/0 ; 冷/lěng/2 ; 死了/sǐ le/1,3
+t: 呢度/ni55 u32/0? ; 好/hɔu55/1 ; 冷/laŋ33/2 ; 啊/a33/-
+s: Aquí/0 ; hace/- ; un frío/2 ; terrible/1
+f: On/- ; gèle/2 ; ici/0
+d: Hier/0 ; ist/- ; es/- ; eiskalt/1,2
+n: Cantonese 凍 dung3 means cold weather or cold food. Mandarin adds 死了 "to death".
+nt: Stephen Li gives 冷 laŋ33 for cold.
+
+@ Around the House | Can you close the window?
+g: Can? / close / the window
+y: 可唔可以/ho2 m4 ho2 ji5/0 ; 閂/saan1/1 ; 個窗/go3 coeng1/2 ; 呀/aa3/-
+m: 能/néng/0 ; 把窗户/bǎ chuāng hu/2 ; 关上/guān shàng/1 ; 吗/ma/0
+t: 可唔可以/hɔ55 m22 hɔ55 yi21/0? ; 閂/san33/1 ; 窗/tɔŋ335/2 ; 啊/a33/-
+s: ¿Puedes/0 ; cerrar/1 ; la ventana/2
+f: Tu peux/0 ; fermer/1 ; la fenêtre/2
+d: Kannst/0 ; du/- ; das Fenster/2 ; zumachen/1
+n: Google got this one right. 閂 saan1 is the Cantonese word for close or shut.
+nt: Window is 窗 tɔŋ335.
