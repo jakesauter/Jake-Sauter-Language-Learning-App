@@ -90,7 +90,7 @@
 
   /* header */
 
-  header.top { padding-block: var(--s-6) var(--s-3); display: grid; gap: var(--s-1); }
+  header.top { padding-block: var(--s-4) var(--s-3); display: grid; gap: var(--s-2); }
 
   h1 { margin: 0; font-size: var(--t-xl); line-height: 1.15; letter-spacing: -0.01em; }
 
@@ -112,8 +112,37 @@
   .bar { border-bottom: 1px solid var(--line); box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
   .bar > * { min-width: 0; }
 
-  .top-row { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--s-2); }
-  .top-row h1 { min-width: 0; }
+  .banner {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 12px 14px 10px;
+    border-radius: 18px;
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .banner .b-bg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.09; pointer-events: none; }
+  .banner .b-mark { position: relative; width: 62px; height: 62px; display: block; }
+  .banner .bgf { fill: var(--ink); }
+  .banner .bgs { stroke: var(--ink); }
+  .banner .b-text { position: relative; min-width: 0; }
+  .banner h1 { margin: 0; line-height: 0; }
+  .banner .b-word { display: block; height: 34px; width: auto; max-width: 100%; }
+  .banner .tag { margin: 6px 0 0; font-size: var(--t-sm); font-weight: 600; line-height: 1.3; opacity: 0.85; }
+  .banner .uilang { position: relative; align-self: start; border-color: color-mix(in srgb, var(--paper) 35%, transparent); color: var(--paper); }
+  .banner .uilang select { color: var(--paper); }
+  .banner .uilang select option { color: initial; }
+
+  @media (min-width: 560px) {
+    .banner { padding: 18px 18px 18px 14px; gap: 16px; }
+    .banner .b-mark { width: 84px; height: 84px; }
+    .banner .b-word { height: 46px; }
+    .banner .tag { font-size: 1rem; }
+  }
 
   .uilang {
     flex: none;
@@ -625,8 +654,13 @@
 <div class="wrap">
 
   <header class="top">
-    <div class="top-row">
-      <h1 data-i18n="app_title">Polygrok</h1>
+    <div class="banner">
+      <svg class="b-bg" viewBox="0 0 400 160" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M420,30 L400,64.6 L360,64.6 L340,30 L360,-4.600000000000001 L400,-4.600000000000001 Z"/><path d="M360,65 L340,99.6 L300,99.6 L280,65 L300,30.4 L340,30.4 Z"/><path d="M420,100 L400,134.6 L360,134.6 L340,100 L360,65.4 L400,65.4 Z"/><path d="M300,30 L280,64.6 L240,64.6 L220,30 L240,-4.600000000000001 L280,-4.600000000000001 Z"/><path d="M360,135 L340,169.6 L300,169.6 L280,135 L300,100.4 L340,100.4 Z"/><path d="M240,65 L220,99.6 L180,99.6 L160,65 L180,30.4 L220,30.4 Z"/><path d="M300,100 L280,134.6 L240,134.6 L220,100 L240,65.4 L280,65.4 Z"/><path d="M420,170 L400,204.6 L360,204.6 L340,170 L360,135.4 L400,135.4 Z"/></g></svg>
+      <svg class="b-mark" viewBox="0 0 512 512" aria-hidden="true"><g transform="translate(0 0) scale(1.0)"><path d="M446.0,216.0 L371.0,345.9 L221.0,345.9 L146.0,216.0 L221.0,86.1 L371.0,86.1 Z" class="bgf" stroke="currentColor" stroke-width="13" stroke-linejoin="round" opacity="0.45"/><path d="M404.0,258.0 L329.0,387.9 L179.0,387.9 L104.0,258.0 L179.0,128.1 L329.0,128.1 Z" class="bgf" stroke="currentColor" stroke-width="15" stroke-linejoin="round" opacity="0.75"/><path d="M362.0,300.0 L287.0,429.9 L137.0,429.9 L128.0,414.3 L65.0,468.0 L95.8,358.5 L62.0,300.0 L137.0,170.1 L287.0,170.1 Z" fill="currentColor" class="bgs" stroke-width="24" stroke-linejoin="round" paint-order="stroke"/><path d="M71 548V440H388V548ZM71 410V302H388V410ZM466 298V-95H598V-62H788V-91H927V298H758V421H976V558H758V695C823 705 887 719 943 736L857 853C751 820 593 795 447 783C461 752 477 698 482 665C528 668 577 672 626 677V558H418V421H626V298ZM598 69V167H788V69ZM132 807C150 772 173 728 188 691H26V578H424V691H255L315 723C300 761 270 817 243 860ZM67 269V-82H189V-42H394V269ZM189 155H270V73H189Z" class="bgf" transform="translate(133.31 364.08) scale(0.15707 -0.15707)"/><path d="M424.0,58.0 L431.5,84.5 L458.0,92.0 L431.5,99.5 L424.0,126.0 L416.5,99.5 L390.0,92.0 L416.5,84.5 Z" fill="currentColor"/><path d="M470.0,145.0 L473.3,156.7 L485.0,160.0 L473.3,163.3 L470.0,175.0 L466.7,163.3 L455.0,160.0 L466.7,156.7 Z" fill="currentColor"/></g></svg>
+      <div class="b-text">
+        <h1><span class="vh" data-i18n="app_title">Polygrok</span><svg class="b-word" viewBox="0 -2 426 104" role="img" aria-label="Polygrok"><g transform="translate(0.0 78.0) scale(0.04883 -0.04883)" fill="currentColor"><path d="M86 -418H486V156H490C538 40 638 -24 778 -24C1055 -24 1234 194 1234 530C1234 853 1047 1080 782 1080C645 1080 549 1027 487 924H482V1056H86ZM659 290C550 290 472 384 472 530C472 675 550 768 659 768C768 768 830 675 830 530C830 384 768 290 659 290ZM1882 -24C2226 -24 2458 190 2458 528C2458 865 2226 1080 1882 1080C1539 1080 1306 865 1306 528C1306 189 1539 -24 1882 -24ZM1882 288C1787 288 1710 369 1710 528C1710 687 1787 768 1882 768C1977 768 2054 687 2054 528C2054 369 1977 288 1882 288ZM2970 1490H2570V0H2970ZM3163 -418H3435C3625 -418 3725 -340 3802 -134L4248 1056H3836L3698 608C3677 540 3657 470 3639 401C3620 470 3601 539 3581 608L3448 1056H3032L3437 0L3432 -16C3409 -90 3397 -114 3323 -114H3163ZM4856 -432C5213 -432 5418 -278 5418 76V1056H5020V914H5019C4956 1019 4859 1080 4722 1080C4457 1080 4270 853 4270 542C4270 237 4449 16 4726 16C4864 16 4971 70 5020 195H5021V32C5021 -96 4967 -158 4856 -158C4769 -158 4714 -123 4700 -72H4322C4355 -274 4504 -432 4856 -432ZM4845 322C4736 322 4674 411 4674 550C4674 688 4736 776 4845 776C4954 776 5032 688 5032 550C5032 411 4954 322 4845 322ZM5570 0H5970V506C5970 647 6049 736 6174 736H6320V1056H6220C6075 1056 5998 1006 5960 864H5958V1056H5570ZM7626 0H8026V293L8084 365L8308 0H8762L8378 592L8750 1056H8298L8030 712H8026V1490H7626Z"/><path d="M7497.7,528.0 L7217.8,1012.7 L6658.2,1012.7 L6378.3,528.0 L6658.2,43.3 L7217.8,43.3 Z M7069.5,300.2 L6806.5,300.2 L6675.0,528.0 L6806.5,755.8 L7069.5,755.8 L7201.0,528.0 Z" fill-rule="evenodd"/></g></svg></h1>
+        <p class="tag" data-i18n="tagline">Grok a language, word by word.</p>
+      </div>
       <label class="uilang" for="ui-lang">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
         <span class="vh" data-i18n="ui_lang">App language</span>
@@ -762,7 +796,7 @@
 
   const UI = {
     en: {
-      _name: "English", _lang: "en",
+      _name: "English", _lang: "en", tagline: "Grok a language, word by word.",
       app_title: "Polygrok", wbw: "Word by word",
       sub: "{n} everyday sentences, word by word, in up to seven languages.",
       search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
@@ -805,7 +839,7 @@
     },
 
     es: {
-      _name: "Español", _lang: "es",
+      _name: "Español", _lang: "es", tagline: "Entiende un idioma a fondo, palabra por palabra.",
       app_title: "Polygrok", wbw: "Palabra por palabra",
       sub: "{n} frases cotidianas, palabra por palabra, en hasta siete idiomas.",
       search_ph: "Escribe una frase o busca", search_aria: "Escribe una frase en inglés o busca en la guía",
@@ -848,7 +882,7 @@
     },
 
     fr: {
-      _name: "Français", _lang: "fr",
+      _name: "Français", _lang: "fr", tagline: "Comprends une langue à fond, mot à mot.",
       app_title: "Polygrok", wbw: "Mot à mot",
       sub: "{n} phrases du quotidien, mot à mot, dans jusqu'à sept langues.",
       search_ph: "Tape une phrase ou cherche", search_aria: "Tape une phrase en anglais, ou cherche dans le guide",
@@ -891,7 +925,7 @@
     },
 
     de: {
-      _name: "Deutsch", _lang: "de",
+      _name: "Deutsch", _lang: "de", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
       app_title: "Polygrok", wbw: "Wort für Wort",
       sub: "{n} Alltagssätze, Wort für Wort, in bis zu sieben Sprachen.",
       search_ph: "Satz eingeben oder suchen", search_aria: "Englischen Satz eingeben oder im Guide suchen",
@@ -934,7 +968,7 @@
     },
 
     yue: {
-      _name: "廣東話", _lang: "zh-HK",
+      _name: "廣東話", _lang: "zh-HK", tagline: "逐個字，真正識一種語言。",
       app_title: "Polygrok", wbw: "逐個字",
       sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
       search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
@@ -977,7 +1011,7 @@
     },
 
     cmn: {
-      _name: "普通话", _lang: "zh-CN",
+      _name: "普通话", _lang: "zh-CN", tagline: "逐词逐句，真正懂一门语言。",
       app_title: "Polygrok", wbw: "逐词",
       sub: "{n} 个日常句子，逐词拆解，最多七种语言。",
       search_ph: "输入任意句子或搜索", search_aria: "输入一句英文，或在指南中搜索",

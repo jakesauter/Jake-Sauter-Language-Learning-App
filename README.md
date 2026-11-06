@@ -1,3 +1,5 @@
+![Polygrok](banner.png)
+
 # Polygrok
 
 *Polyglot + grok: understand a language deeply, word by word.*
