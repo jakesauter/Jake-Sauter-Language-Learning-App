@@ -261,7 +261,22 @@
     return ZR;
   }
 
-  function zhRuby(html) {
+  let ZM = null;
+
+  function zhMeanings() {
+    if (ZM) return ZM;
+    ZM = new Map();
+    JYUT_MEAN.split("|").forEach(x => { const c = [...x][0]; if (c) ZM.set(c, x.slice(c.length)); });
+    return ZM;
+  }
+
+  function zhRuby(html, withMeaning = true) {
     const m = zhSounds();
-    return String(html).split(/(<[^>]+>)/).map(part => part.startsWith("<") ? part : part.replace(/[㐀-鿿]/g, c => m.has(c) ? `<ruby>${c}<rt>${esc(romText("yue", m.get(c)))}</rt></ruby>` : c)).join("");
+    const g = zhMeanings();
+    return String(html).split(/(<[^>]+>)/).map(part => part.startsWith("<") ? part : part.replace(/[⺀-⿟㐀-鿿]/g, c => {
+      const snd = m.has(c) ? esc(romText("yue", m.get(c))) : "";
+      const mean = withMeaning && g.has(c) ? esc(g.get(c)) : "";
+      if (!snd && !mean) return c;
+      return `<span class="zg"><small class="zs">${snd || "&nbsp;"}</small><b>${c}</b>${withMeaning ? `<small class="zm">${mean || "&nbsp;"}</small>` : ""}</span>`;
+    })).join("");
   }

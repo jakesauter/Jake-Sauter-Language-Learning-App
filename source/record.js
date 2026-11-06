@@ -75,8 +75,8 @@
           const w = cs.slice(i, i + n).join("");
           if (m.has(w)) { hit = [w, m.get(w)]; break; }
         }
-        if (hit) { out.push(`<span class="gl"><b>${zhRuby(esc(hit[0]))}</b><small>${esc(hit[1])}</small></span>`); i += [...hit[0]].length; }
-        else { out.push(`<span class="gl"><b>${zhRuby(esc(cs[i]))}</b><small>&nbsp;</small></span>`); i++; }
+        if (hit) { out.push(`<span class="gl"><b>${esc(hit[0])}</b><small>${esc(hit[1])}</small></span>`); i += [...hit[0]].length; }
+        else { out.push(`<span class="gl"><b>${esc(cs[i])}</b><small>&nbsp;</small></span>`); i++; }
       }
       return out.join("");
     }

@@ -9,7 +9,7 @@ hooks = open("hooks.js", encoding="utf-8").read()
 icons = open("icons.js", encoding="utf-8").read()
 practice = open("practice.js", encoding="utf-8").read()
 import json
-roots = "  const JYUT_RAW = " + json.dumps(open("jyut.txt", encoding="utf-8").read(), ensure_ascii=False) + ";\n\n" + open("roots.js", encoding="utf-8").read()
+roots = "  const JYUT_RAW = " + json.dumps(open("jyut.txt", encoding="utf-8").read(), ensure_ascii=False) + ";\n\n" + "  const JYUT_MEAN = " + json.dumps(open("zhmean.txt", encoding="utf-8").read(), ensure_ascii=False) + ";\n\n" + open("roots.js", encoding="utf-8").read()
 book = open("book.js", encoding="utf-8").read()
 
 rep('''  const LANES = ["tsn", "yue", "en", "cmn", "es", "fr", "de"];''', icons + "\n\n" + hooks + "\n\n" + roots + '''
@@ -101,6 +101,10 @@ rep('''    if (result.children.length && q) showResult(q);
 
 rep('''  .wi-w { font-size: 1.35rem; font-weight: 600; }''', '''  .wi-w { font-size: 1.35rem; font-weight: 600; }
 
+  .zg { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; line-height: 1.1; margin: 0 2px; }
+  .zg b { font-weight: inherit; font-size: 1.1em; }
+  .zg small { font-size: 0.62em; font-weight: 400; color: var(--muted); white-space: nowrap; font-style: normal; letter-spacing: 0; }
+  .zg .zm { color: var(--ink-2); }
   ruby { ruby-position: over; }
   rt { font-size: 0.58em; font-weight: 400; color: var(--muted); letter-spacing: 0; font-style: normal; }
   .hooks p, .wi-hooks p, .pr-hooks p, dialog.learn p, dialog.learn li { line-height: 1.95; }
