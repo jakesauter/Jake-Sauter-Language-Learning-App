@@ -545,6 +545,9 @@
   .tok .w { font-size: var(--t-md, 1rem); line-height: 1.25; white-space: nowrap; padding: 0.15rem 0; }
   .wi-w { font-size: 1.35rem; font-weight: 600; }
 
+  ruby { ruby-position: over; }
+  rt { font-size: 0.58em; font-weight: 400; color: var(--muted); letter-spacing: 0; font-style: normal; }
+  .hooks p, .wi-hooks p, .pr-hooks p, dialog.learn p, dialog.learn li { line-height: 1.95; }
   .ico { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
   .toc-name { display: inline-flex; align-items: center; gap: 10px; }
   .toc-name .ico { width: 20px; height: 20px; color: var(--ink-2); }
@@ -574,6 +577,57 @@
   .book-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; min-height: 52px; }
   .book-cta .ico { width: 20px; height: 20px; }
   .book-cta .n { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .rec-form { display: grid; gap: var(--s-3); }
+  .rec-l { display: grid; gap: 4px; font-size: var(--t-xs); font-weight: 700; color: var(--muted); }
+  .rec-in { font: inherit; font-size: 1rem; font-weight: 400; color: var(--ink); background: var(--wash); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; width: 100%; box-sizing: border-box; }
+  .rec-check { display: flex; gap: 10px; align-items: flex-start; font-size: var(--t-sm); color: var(--ink-2); }
+  .rec-check input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--ink); flex: none; }
+  .rec-go { justify-content: center; }
+  .rec-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .rec-row { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+  .rec-row span:first-child { display: grid; gap: 2px; min-width: 0; }
+  .rec-row small, .rec-meta { color: var(--muted); font-size: var(--t-xs); }
+  .rec-meta { flex: none; font-variant-numeric: tabular-nums; }
+  .rec-home summary { cursor: pointer; font-size: var(--t-sm); color: var(--ink-2); }
+  .rec-home-row { display: flex; gap: 6px; margin-top: 8px; }
+  .rec-alert { margin: 0; padding: 10px 12px; border: 1px solid var(--ink); border-radius: 10px; font-size: var(--t-sm); }
+  .rec-live { display: flex; align-items: center; gap: 12px; }
+  .rec-live b { font-size: 2rem; font-variant-numeric: tabular-nums; }
+  .rec-live canvas { flex: 1; min-width: 0; height: 36px; color: var(--ink); }
+  .rec-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--ink); animation: recblink 1.2s infinite; flex: none; }
+  @keyframes recblink { 50% { opacity: 0.2; } }
+  .rec-acts { display: grid; gap: 8px; }
+  .sq { display: inline-block; width: 14px; height: 14px; background: currentColor; border-radius: 2px; flex: none; }
+  .rec-stop .sq { width: 22px; height: 22px; }
+  .rec-caps { display: grid; gap: 6px; padding: 12px 14px; background: var(--wash); border-radius: 12px; min-height: 60px; font-size: 1.1rem; }
+  .rec-caps p { margin: 0; }
+  .rec-caps .interim { color: var(--muted); }
+  .rec-player { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; }
+  .rec-play { display: inline-flex; align-items: center; gap: 8px; }
+  .rec-play svg { width: 18px; height: 18px; }
+  .rec-seek { flex: 1 1 100%; accent-color: var(--ink); }
+  .rec-tm { font-size: var(--t-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .rec-speeds { display: flex; gap: 4px; margin-left: auto; }
+  .rec-marks, .rec-lines { display: grid; gap: 10px; }
+  .rec-mark { display: grid; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; }
+  .rec-mark-head { display: flex; align-items: center; gap: 6px; }
+  .rec-mark-head .link { margin-left: auto; font-size: 1.3rem; padding: 0 6px; }
+  .rec-mark .pbtn svg, .rec-line .pbtn svg { width: 14px; height: 14px; }
+  .pbtn.on { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+  .rec-gloss { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .rec-gloss:empty { display: none; }
+  .gl { display: grid; justify-items: center; line-height: 1.2; }
+  .gl b { font-weight: 600; font-size: 1.1rem; }
+  .gl small { font-size: 0.7rem; color: var(--muted); }
+  .rec-line { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
+  .rec-line-tx p { margin: 0 0 4px; }
+  .rec-line-tx .link { font-size: var(--t-xs); }
+  .clip-item { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start; padding: 12px 0; }
+  .clip-item .pbtn svg { width: 14px; height: 14px; }
+  .clip-tx { display: grid; gap: 4px; }
+  .clip-said { font-size: 1.15rem; }
+  .clip-tx small { color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
+  .clip-tx small .ico { width: 13px; height: 13px; }
   .now-tip { display: flex; align-items: flex-start; gap: 8px; margin-top: var(--s-2); padding: 0; background: none; border: 0; font: inherit; font-size: var(--t-sm); color: var(--ink-2); text-align: left; cursor: pointer; }
   .now-tip .ico { width: 18px; height: 18px; margin-top: 2px; }
   .book-acts { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -832,6 +886,7 @@
     <div class="learn-bar">
       <button class="practice-cta" id="practice-btn" type="button"></button>
       <button class="book-cta" id="book-btn" type="button"></button>
+      <button class="book-cta" id="rec-btn" type="button"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="r_btn">Record</span></button>
       <button class="learn-link" id="learn-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="learn_btn">How to learn with Polygrok</span></button>
     </div>
     <button class="now-tip" id="now-tip" type="button"></button>
@@ -963,7 +1018,7 @@
 
   const UI = {
     en: {
-      _name: "English", _lang: "en", b_btn: "My phrasebook", b_save: "Save to my phrasebook", bk_saved: "In my phrasebook", b_know: "I know this", b_known: "Known", b_title: "My phrasebook", b_lead: "The sentences you actually need, in one place. Saved sentences go into Practice first. Sentences you mark as known are skipped as new cards.", b_tab_saved: "Saved", b_tab_known: "Known", b_empty: "Nothing saved yet. Open any sentence, or translate your own, and tap Save to my phrasebook.", b_empty_known: "Nothing marked as known yet. Open a sentence you already know and tap I know this.", b_copy: "Copy as text", b_copied: "Copied", b_practice: "Practice these", l_tab_why: "Why it works", l_tab_day: "Your day", l_tab_rules: "Rules and roots", l_tab_read: "Reading list", l_day_lead: "When each kind of practice helps most, from morning coffee to bed.", l_rules_tip: "Open any word to see its parts and sound family, worked out from these rules.", l_read_lead: "Key books in language teaching, learning science and linguistic anthropology, plus research papers on arXiv.", now_morning: "Morning: review what's due. Sleep just locked in yesterday's words.", now_day: "Daytime: shadow a few sentences, or use one with the family.", now_evening: "Evening: a good time to learn new sentences.", now_night: "Before bed: a quick look at today's sentences, then sleep on it.", p_title: "Practice", p_lead: "Practicing {lang}. A few minutes a day, spaced out, beats long sessions.", p_due: "due today", p_new: "new today", p_learned: "learned", p_streak: "day streak", p_start: "Start today's session", p_start_d: "Recall, say it aloud, and listen, mixed together", p_listen: "Listening quiz", p_listen_d: "Hear a sentence and pick its meaning", p_tones: "Tone trainer", p_tones_d: "Hear a syllable and pick its pitch", p_newper: "New sentences per day", p_why: "How this works", p_nothing: "Nothing is due right now. Come back later, or raise new sentences per day.", p_back: "Back", p_newtag: "New", p_say: "Say it out loud in {lang}, then tap Show. Guess if you're not sure.", p_reveal: "Show", p_again: "Again", p_hard: "Hard", p_good: "Good", p_easy: "Easy", p_rate: "How well did you remember it?", p_listen_q: "Listen to the {lang} and pick what it means.", p_play: "Play", p_right: "Right!", p_wrong: "Not quite.", p_next: "Next", p_shadow: "Shadow 3×", p_your_turn: "Your turn ({n}/3)", p_done: "{n} cards reviewed", p_done_pct: "{p}% remembered", p_sleep: "Come back tomorrow: sleep helps new words settle into long-term memory.", p_after: "{d} still due · {s}-day streak", p_tone_q: "Listen to one syllable. Which pitch shape is it?", p_tone_done: "Keep going: ears learn tones from many different examples.", p_cta: "{d} due · {n} new · {s}-day streak", p_add: "Add to practice", p_added: "In practice ✓", hooks_h: "Memory hooks", myhook: "Your own hook", myhook_ph: "Write a sound-alike, image or story that helps you. Hooks you make yourself stick best.", l_title: "How Polygrok helps you learn", l_lead: "What memory research says works for adults learning a new language, and how this app uses it.", l_inapp: "In Polygrok:", l_routine_h: "A good daily routine", learn_btn: "How to learn with Polygrok", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Grok a language, word by word.",
+      _name: "English", _lang: "en", r_btn: "Record", r_title: "Recordings", r_lead: "Record family and friends talking, then go back through it slowly: mark moments, loop them, write down what you hear, and save clips to your phrasebook. Recordings stay on this phone.", r_consent: "Ask people before you record them.", r_who: "Who's talking?", r_who_ph: "Grandma, Uncle Wing…", r_lang: "Language", r_mixed: "Mixed", r_live: "Live captions (your phone's speech recognition, where available)", r_start: "Start recording", r_stop: "Stop", r_mark: "Mark this moment", r_marks: "{n} marks", r_none: "No recordings yet.", r_back: "All recordings", r_said: "What they said", r_said_ph: "Characters, romanization or just the sounds", r_mean: "What it means", r_mean_ph: "Your best guess, or ask them later", r_loop: "Loop", r_clip_save: "Save clip to my phrasebook", r_clip_saved: "In my phrasebook", r_lines: "Transcript", r_gloss_note: "Rough word-by-word meaning from Polygrok's dictionary.", r_share: "Save or share the file", r_delete: "Delete", r_delete_sure: "Tap again to delete", r_home: "Transcribe on my home computer", r_home_set: "Home computer (optional)", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "Test", r_home_ok: "Connected", r_home_fail: "Couldn't reach it. Is the computer on, with Tailscale connected on this phone?", r_home_busy: "Transcribing on your home computer…", r_mic_fail: "Couldn't use the microphone here. Open Polygrok from its website or Home Screen icon and allow the microphone.", r_live_fail: "Live captions aren't available here. The recording is still going.", r_store: "Recordings are saved in this browser. Add Polygrok to your Home Screen so the iPhone keeps them, and save important ones to Files.", r_rec: "Recording", r_tsn_note: "No speech engine knows Taishanese yet, so captions use Cantonese, the closest. Your notes on these recordings could become the training data for one.", b_btn: "My phrasebook", b_save: "Save to my phrasebook", bk_saved: "In my phrasebook", b_know: "I know this", b_known: "Known", b_title: "My phrasebook", b_lead: "The sentences you actually need, in one place. Saved sentences go into Practice first. Sentences you mark as known are skipped as new cards.", b_tab_saved: "Saved", b_tab_known: "Known", b_empty: "Nothing saved yet. Open any sentence, or translate your own, and tap Save to my phrasebook.", b_empty_known: "Nothing marked as known yet. Open a sentence you already know and tap I know this.", b_copy: "Copy as text", b_copied: "Copied", b_practice: "Practice these", l_tab_why: "Why it works", l_tab_day: "Your day", l_tab_rules: "Rules and roots", l_tab_read: "Reading list", l_day_lead: "When each kind of practice helps most, from morning coffee to bed.", l_rules_tip: "Open any word to see its parts and sound family, worked out from these rules.", l_read_lead: "Key books in language teaching, learning science and linguistic anthropology, plus research papers on arXiv.", now_morning: "Morning: review what's due. Sleep just locked in yesterday's words.", now_day: "Daytime: shadow a few sentences, or use one with the family.", now_evening: "Evening: a good time to learn new sentences.", now_night: "Before bed: a quick look at today's sentences, then sleep on it.", p_title: "Practice", p_lead: "Practicing {lang}. A few minutes a day, spaced out, beats long sessions.", p_due: "due today", p_new: "new today", p_learned: "learned", p_streak: "day streak", p_start: "Start today's session", p_start_d: "Recall, say it aloud, and listen, mixed together", p_listen: "Listening quiz", p_listen_d: "Hear a sentence and pick its meaning", p_tones: "Tone trainer", p_tones_d: "Hear a syllable and pick its pitch", p_newper: "New sentences per day", p_why: "How this works", p_nothing: "Nothing is due right now. Come back later, or raise new sentences per day.", p_back: "Back", p_newtag: "New", p_say: "Say it out loud in {lang}, then tap Show. Guess if you're not sure.", p_reveal: "Show", p_again: "Again", p_hard: "Hard", p_good: "Good", p_easy: "Easy", p_rate: "How well did you remember it?", p_listen_q: "Listen to the {lang} and pick what it means.", p_play: "Play", p_right: "Right!", p_wrong: "Not quite.", p_next: "Next", p_shadow: "Shadow 3×", p_your_turn: "Your turn ({n}/3)", p_done: "{n} cards reviewed", p_done_pct: "{p}% remembered", p_sleep: "Come back tomorrow: sleep helps new words settle into long-term memory.", p_after: "{d} still due · {s}-day streak", p_tone_q: "Listen to one syllable. Which pitch shape is it?", p_tone_done: "Keep going: ears learn tones from many different examples.", p_cta: "{d} due · {n} new · {s}-day streak", p_add: "Add to practice", p_added: "In practice ✓", hooks_h: "Memory hooks", myhook: "Your own hook", myhook_ph: "Write a sound-alike, image or story that helps you. Hooks you make yourself stick best.", l_title: "How Polygrok helps you learn", l_lead: "What memory research says works for adults learning a new language, and how this app uses it.", l_inapp: "In Polygrok:", l_routine_h: "A good daily routine", learn_btn: "How to learn with Polygrok", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Grok a language, word by word.",
       app_title: "Polygrok", wbw: "Word by word",
       sub: "{n} everyday sentences, word by word, in up to seven languages.",
       search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
@@ -1006,7 +1061,7 @@
     },
 
     es: {
-      _name: "Español", _lang: "es", b_btn: "Mi libro de frases", b_save: "Guardar en mi libro", bk_saved: "En mi libro", b_know: "Ya la sé", b_known: "Sabida", b_title: "Mi libro de frases", b_lead: "Las frases que de verdad necesitas, en un solo lugar. Las guardadas salen primero en Practicar. Las que marcas como sabidas no aparecen como nuevas.", b_tab_saved: "Guardadas", b_tab_known: "Sabidas", b_empty: "Aún no hay nada guardado. Abre una frase, o traduce la tuya, y toca Guardar en mi libro.", b_empty_known: "Aún no marcaste ninguna como sabida. Abre una frase que ya conoces y toca Ya la sé.", b_copy: "Copiar como texto", b_copied: "Copiado", b_practice: "Practicar estas", l_tab_why: "Por qué funciona", l_tab_day: "Tu día", l_tab_rules: "Reglas y raíces", l_tab_read: "Lecturas", l_day_lead: "Cuándo ayuda más cada tipo de práctica, del café de la mañana a la cama.", l_rules_tip: "Abre cualquier palabra para ver sus partes y su familia de sonido, según estas reglas.", l_read_lead: "Libros clave sobre enseñanza de idiomas, ciencia del aprendizaje y antropología lingüística, y artículos de investigación en arXiv.", now_morning: "Mañana: repasa lo pendiente. El sueño acaba de fijar las palabras de ayer.", now_day: "Durante el día: repite unas frases o usa una con la familia.", now_evening: "Tarde: buen momento para aprender frases nuevas.", now_night: "Antes de dormir: un vistazo a las frases de hoy y a dormir.", p_title: "Practicar", p_lead: "Practicando {lang}. Unos minutos al día, espaciados, rinden más que sesiones largas.", p_due: "para hoy", p_new: "nuevas hoy", p_learned: "aprendidas", p_streak: "días seguidos", p_start: "Empezar la sesión de hoy", p_start_d: "Recordar, decirlo en voz alta y escuchar, mezclado", p_listen: "Prueba de escucha", p_listen_d: "Escucha una frase y elige su significado", p_tones: "Entrenador de tonos", p_tones_d: "Escucha una sílaba y elige su tono", p_newper: "Frases nuevas por día", p_why: "Cómo funciona", p_nothing: "No hay nada pendiente. Vuelve más tarde o sube las frases nuevas por día.", p_back: "Volver", p_newtag: "Nueva", p_say: "Dilo en voz alta en {lang} y luego toca Mostrar. Adivina si no estás seguro.", p_reveal: "Mostrar", p_again: "Otra vez", p_hard: "Difícil", p_good: "Bien", p_easy: "Fácil", p_rate: "¿Qué tan bien lo recordaste?", p_listen_q: "Escucha el {lang} y elige qué significa.", p_play: "Reproducir", p_right: "¡Correcto!", p_wrong: "No exactamente.", p_next: "Siguiente", p_shadow: "Repetir 3×", p_your_turn: "Tu turno ({n}/3)", p_done: "{n} tarjetas repasadas", p_done_pct: "{p}% recordado", p_sleep: "Vuelve mañana: el sueño ayuda a fijar las palabras nuevas.", p_after: "{d} pendientes · racha de {s} días", p_tone_q: "Escucha una sílaba. ¿Qué forma de tono tiene?", p_tone_done: "Sigue así: el oído aprende tonos con muchos ejemplos distintos.", p_cta: "{d} pendientes · {n} nuevas · racha de {s} días", p_add: "Añadir a práctica", p_added: "En práctica ✓", hooks_h: "Trucos para recordar", myhook: "Tu propio truco", myhook_ph: "Escribe un parecido, imagen o historia que te ayude. Los trucos propios se recuerdan mejor.", l_title: "Cómo te ayuda Polygrok a aprender", l_lead: "Lo que la investigación sobre la memoria dice que funciona para adultos que aprenden otro idioma, y cómo lo usa esta app.", l_inapp: "En Polygrok:", l_routine_h: "Una buena rutina diaria", learn_btn: "Cómo aprender con Polygrok", full_title: "Frase completa", show_big: "Mostrar en grande", c_head: "Versión natural", c_note: "Armada a partir de la estructura de la frase y reordenada según la gramática de cada idioma. Compruébala con un hablante nativo y compárala con las frases guardadas más parecidas.", tagline: "Entiende un idioma a fondo, palabra por palabra.",
+      _name: "Español", _lang: "es", r_btn: "Grabar", r_title: "Grabaciones", r_lead: "Graba a tu familia y amigos hablando y luego repásalo despacio: marca momentos, repítelos en bucle, escribe lo que oyes y guarda fragmentos en tu libro de frases. Las grabaciones se quedan en este teléfono.", r_consent: "Pide permiso antes de grabar a alguien.", r_who: "¿Quién habla?", r_who_ph: "Abuela, tío Wing…", r_lang: "Idioma", r_mixed: "Mezcla", r_live: "Subtítulos en vivo (reconocimiento de voz del teléfono, si está disponible)", r_start: "Empezar a grabar", r_stop: "Detener", r_mark: "Marcar este momento", r_marks: "{n} marcas", r_none: "Aún no hay grabaciones.", r_back: "Todas las grabaciones", r_said: "Lo que dijeron", r_said_ph: "Caracteres, romanización o solo los sonidos", r_mean: "Lo que significa", r_mean_ph: "Tu mejor suposición, o pregúntales luego", r_loop: "Bucle", r_clip_save: "Guardar fragmento en mi libro", r_clip_saved: "En mi libro", r_lines: "Transcripción", r_gloss_note: "Significado aproximado palabra por palabra según el diccionario de Polygrok.", r_share: "Guardar o compartir el archivo", r_delete: "Borrar", r_delete_sure: "Toca otra vez para borrar", r_home: "Transcribir en mi computadora de casa", r_home_set: "Computadora de casa (opcional)", r_home_ph: "https://tu-pc.tu-tailnet.ts.net", r_home_test: "Probar", r_home_ok: "Conectado", r_home_fail: "No se pudo conectar. ¿Está encendida la computadora y Tailscale activo en este teléfono?", r_home_busy: "Transcribiendo en tu computadora…", r_mic_fail: "No se pudo usar el micrófono aquí. Abre Polygrok desde su web o el icono de inicio y permite el micrófono.", r_live_fail: "Los subtítulos en vivo no están disponibles aquí. La grabación sigue.", r_store: "Las grabaciones se guardan en este navegador. Añade Polygrok a la pantalla de inicio para que el iPhone las conserve, y guarda las importantes en Archivos.", r_rec: "Grabando", r_tsn_note: "Ningún motor de voz conoce el taishanés todavía, así que los subtítulos usan cantonés, el más cercano. Tus notas sobre estas grabaciones podrían servir para entrenar uno.", b_btn: "Mi libro de frases", b_save: "Guardar en mi libro", bk_saved: "En mi libro", b_know: "Ya la sé", b_known: "Sabida", b_title: "Mi libro de frases", b_lead: "Las frases que de verdad necesitas, en un solo lugar. Las guardadas salen primero en Practicar. Las que marcas como sabidas no aparecen como nuevas.", b_tab_saved: "Guardadas", b_tab_known: "Sabidas", b_empty: "Aún no hay nada guardado. Abre una frase, o traduce la tuya, y toca Guardar en mi libro.", b_empty_known: "Aún no marcaste ninguna como sabida. Abre una frase que ya conoces y toca Ya la sé.", b_copy: "Copiar como texto", b_copied: "Copiado", b_practice: "Practicar estas", l_tab_why: "Por qué funciona", l_tab_day: "Tu día", l_tab_rules: "Reglas y raíces", l_tab_read: "Lecturas", l_day_lead: "Cuándo ayuda más cada tipo de práctica, del café de la mañana a la cama.", l_rules_tip: "Abre cualquier palabra para ver sus partes y su familia de sonido, según estas reglas.", l_read_lead: "Libros clave sobre enseñanza de idiomas, ciencia del aprendizaje y antropología lingüística, y artículos de investigación en arXiv.", now_morning: "Mañana: repasa lo pendiente. El sueño acaba de fijar las palabras de ayer.", now_day: "Durante el día: repite unas frases o usa una con la familia.", now_evening: "Tarde: buen momento para aprender frases nuevas.", now_night: "Antes de dormir: un vistazo a las frases de hoy y a dormir.", p_title: "Practicar", p_lead: "Practicando {lang}. Unos minutos al día, espaciados, rinden más que sesiones largas.", p_due: "para hoy", p_new: "nuevas hoy", p_learned: "aprendidas", p_streak: "días seguidos", p_start: "Empezar la sesión de hoy", p_start_d: "Recordar, decirlo en voz alta y escuchar, mezclado", p_listen: "Prueba de escucha", p_listen_d: "Escucha una frase y elige su significado", p_tones: "Entrenador de tonos", p_tones_d: "Escucha una sílaba y elige su tono", p_newper: "Frases nuevas por día", p_why: "Cómo funciona", p_nothing: "No hay nada pendiente. Vuelve más tarde o sube las frases nuevas por día.", p_back: "Volver", p_newtag: "Nueva", p_say: "Dilo en voz alta en {lang} y luego toca Mostrar. Adivina si no estás seguro.", p_reveal: "Mostrar", p_again: "Otra vez", p_hard: "Difícil", p_good: "Bien", p_easy: "Fácil", p_rate: "¿Qué tan bien lo recordaste?", p_listen_q: "Escucha el {lang} y elige qué significa.", p_play: "Reproducir", p_right: "¡Correcto!", p_wrong: "No exactamente.", p_next: "Siguiente", p_shadow: "Repetir 3×", p_your_turn: "Tu turno ({n}/3)", p_done: "{n} tarjetas repasadas", p_done_pct: "{p}% recordado", p_sleep: "Vuelve mañana: el sueño ayuda a fijar las palabras nuevas.", p_after: "{d} pendientes · racha de {s} días", p_tone_q: "Escucha una sílaba. ¿Qué forma de tono tiene?", p_tone_done: "Sigue así: el oído aprende tonos con muchos ejemplos distintos.", p_cta: "{d} pendientes · {n} nuevas · racha de {s} días", p_add: "Añadir a práctica", p_added: "En práctica ✓", hooks_h: "Trucos para recordar", myhook: "Tu propio truco", myhook_ph: "Escribe un parecido, imagen o historia que te ayude. Los trucos propios se recuerdan mejor.", l_title: "Cómo te ayuda Polygrok a aprender", l_lead: "Lo que la investigación sobre la memoria dice que funciona para adultos que aprenden otro idioma, y cómo lo usa esta app.", l_inapp: "En Polygrok:", l_routine_h: "Una buena rutina diaria", learn_btn: "Cómo aprender con Polygrok", full_title: "Frase completa", show_big: "Mostrar en grande", c_head: "Versión natural", c_note: "Armada a partir de la estructura de la frase y reordenada según la gramática de cada idioma. Compruébala con un hablante nativo y compárala con las frases guardadas más parecidas.", tagline: "Entiende un idioma a fondo, palabra por palabra.",
       app_title: "Polygrok", wbw: "Palabra por palabra",
       sub: "{n} frases cotidianas, palabra por palabra, en hasta siete idiomas.",
       search_ph: "Escribe una frase o busca", search_aria: "Escribe una frase en inglés o busca en la guía",
@@ -1049,7 +1104,7 @@
     },
 
     fr: {
-      _name: "Français", _lang: "fr", b_btn: "Mon carnet", b_save: "Ajouter à mon carnet", bk_saved: "Dans mon carnet", b_know: "Je la connais", b_known: "Connue", b_title: "Mon carnet de phrases", b_lead: "Les phrases dont tu as vraiment besoin, au même endroit. Les phrases enregistrées passent en premier à l'entraînement. Celles marquées comme connues ne reviennent pas comme nouvelles.", b_tab_saved: "Enregistrées", b_tab_known: "Connues", b_empty: "Rien d'enregistré pour l'instant. Ouvre une phrase, ou traduis la tienne, et touche Ajouter à mon carnet.", b_empty_known: "Aucune phrase connue pour l'instant. Ouvre une phrase que tu connais et touche Je la connais.", b_copy: "Copier en texte", b_copied: "Copié", b_practice: "M'entraîner sur celles-ci", l_tab_why: "Pourquoi ça marche", l_tab_day: "Ta journée", l_tab_rules: "Règles et racines", l_tab_read: "À lire", l_day_lead: "Quand chaque type d'entraînement aide le plus, du café du matin au coucher.", l_rules_tip: "Ouvre n'importe quel mot pour voir ses parties et sa famille de sons, d'après ces règles.", l_read_lead: "Les livres clés sur l'enseignement des langues, les sciences de l'apprentissage et l'anthropologie linguistique, et des articles sur arXiv.", now_morning: "Matin : révise ce qui est dû. Le sommeil vient de fixer les mots d'hier.", now_day: "Journée : répète quelques phrases ou utilise-en une en famille.", now_evening: "Soir : bon moment pour apprendre de nouvelles phrases.", now_night: "Avant de dormir : un coup d'œil aux phrases du jour, puis dors dessus.", p_title: "S'entraîner", p_lead: "Tu pratiques le {lang}. Quelques minutes par jour, espacées, valent mieux que de longues séances.", p_due: "à revoir", p_new: "nouvelles", p_learned: "apprises", p_streak: "jours d'affilée", p_start: "Commencer la séance du jour", p_start_d: "Se rappeler, dire à voix haute et écouter, en mélange", p_listen: "Quiz d'écoute", p_listen_d: "Écoute une phrase et choisis son sens", p_tones: "Entraîneur de tons", p_tones_d: "Écoute une syllabe et choisis son ton", p_newper: "Nouvelles phrases par jour", p_why: "Comment ça marche", p_nothing: "Rien à revoir pour l'instant. Reviens plus tard ou augmente les nouvelles phrases.", p_back: "Retour", p_newtag: "Nouveau", p_say: "Dis-le à voix haute en {lang}, puis touche Afficher. Devine si tu hésites.", p_reveal: "Afficher", p_again: "Encore", p_hard: "Difficile", p_good: "Bien", p_easy: "Facile", p_rate: "Tu t'en es souvenu comment ?", p_listen_q: "Écoute le {lang} et choisis ce que ça veut dire.", p_play: "Écouter", p_right: "Bravo !", p_wrong: "Pas tout à fait.", p_next: "Suivant", p_shadow: "Répéter 3×", p_your_turn: "À toi ({n}/3)", p_done: "{n} cartes revues", p_done_pct: "{p} % retenu", p_sleep: "Reviens demain : le sommeil aide à fixer les mots nouveaux.", p_after: "{d} à revoir · {s} jours d'affilée", p_tone_q: "Écoute une syllabe. Quelle forme de ton ?", p_tone_done: "Continue : l'oreille apprend les tons avec beaucoup d'exemples variés.", p_cta: "{d} à revoir · {n} nouvelles · {s} jours", p_add: "Ajouter à l'entraînement", p_added: "Dans l'entraînement ✓", hooks_h: "Astuces de mémoire", myhook: "Ton astuce", myhook_ph: "Écris un son proche, une image ou une histoire. Les astuces qu'on invente soi-même tiennent mieux.", l_title: "Comment Polygrok t'aide à apprendre", l_lead: "Ce que la recherche sur la mémoire montre pour les adultes qui apprennent une langue, et comment l'app l'utilise.", l_inapp: "Dans Polygrok :", l_routine_h: "Une bonne routine quotidienne", learn_btn: "Apprendre avec Polygrok", full_title: "Phrase complète", show_big: "Afficher en grand", c_head: "Version naturelle", c_note: "Construite à partir de la structure de la phrase, puis remise dans l'ordre et la grammaire de chaque langue. Vérifie avec un locuteur natif et compare avec les phrases enregistrées.", tagline: "Comprends une langue à fond, mot à mot.",
+      _name: "Français", _lang: "fr", r_btn: "Enregistrer", r_title: "Enregistrements", r_lead: "Enregistre ta famille et tes amis qui parlent, puis réécoute lentement : marque des moments, mets-les en boucle, note ce que tu entends et ajoute des extraits à ton carnet. Les enregistrements restent sur ce téléphone.", r_consent: "Demande la permission avant d'enregistrer quelqu'un.", r_who: "Qui parle ?", r_who_ph: "Grand-mère, oncle Wing…", r_lang: "Langue", r_mixed: "Mélange", r_live: "Sous-titres en direct (reconnaissance vocale du téléphone, si disponible)", r_start: "Commencer l'enregistrement", r_stop: "Arrêter", r_mark: "Marquer ce moment", r_marks: "{n} repères", r_none: "Aucun enregistrement pour l'instant.", r_back: "Tous les enregistrements", r_said: "Ce qu'ils ont dit", r_said_ph: "Caractères, romanisation ou juste les sons", r_mean: "Ce que ça veut dire", r_mean_ph: "Ta meilleure idée, ou demande-leur plus tard", r_loop: "Boucle", r_clip_save: "Ajouter l'extrait à mon carnet", r_clip_saved: "Dans mon carnet", r_lines: "Transcription", r_gloss_note: "Sens approximatif mot à mot d'après le dictionnaire de Polygrok.", r_share: "Enregistrer ou partager le fichier", r_delete: "Supprimer", r_delete_sure: "Touche encore pour supprimer", r_home: "Transcrire sur mon ordinateur", r_home_set: "Ordinateur à la maison (facultatif)", r_home_ph: "https://ton-pc.ton-tailnet.ts.net", r_home_test: "Tester", r_home_ok: "Connecté", r_home_fail: "Impossible de le joindre. L'ordinateur est-il allumé, avec Tailscale actif sur ce téléphone ?", r_home_busy: "Transcription sur ton ordinateur…", r_mic_fail: "Impossible d'utiliser le micro ici. Ouvre Polygrok depuis son site ou l'icône d'accueil et autorise le micro.", r_live_fail: "Les sous-titres en direct ne sont pas disponibles ici. L'enregistrement continue.", r_store: "Les enregistrements sont gardés dans ce navigateur. Ajoute Polygrok à l'écran d'accueil pour que l'iPhone les conserve, et garde les importants dans Fichiers.", r_rec: "Enregistrement", r_tsn_note: "Aucun moteur vocal ne connaît encore le taishanais, donc les sous-titres utilisent le cantonais, le plus proche. Tes notes sur ces enregistrements pourraient servir à en entraîner un.", b_btn: "Mon carnet", b_save: "Ajouter à mon carnet", bk_saved: "Dans mon carnet", b_know: "Je la connais", b_known: "Connue", b_title: "Mon carnet de phrases", b_lead: "Les phrases dont tu as vraiment besoin, au même endroit. Les phrases enregistrées passent en premier à l'entraînement. Celles marquées comme connues ne reviennent pas comme nouvelles.", b_tab_saved: "Enregistrées", b_tab_known: "Connues", b_empty: "Rien d'enregistré pour l'instant. Ouvre une phrase, ou traduis la tienne, et touche Ajouter à mon carnet.", b_empty_known: "Aucune phrase connue pour l'instant. Ouvre une phrase que tu connais et touche Je la connais.", b_copy: "Copier en texte", b_copied: "Copié", b_practice: "M'entraîner sur celles-ci", l_tab_why: "Pourquoi ça marche", l_tab_day: "Ta journée", l_tab_rules: "Règles et racines", l_tab_read: "À lire", l_day_lead: "Quand chaque type d'entraînement aide le plus, du café du matin au coucher.", l_rules_tip: "Ouvre n'importe quel mot pour voir ses parties et sa famille de sons, d'après ces règles.", l_read_lead: "Les livres clés sur l'enseignement des langues, les sciences de l'apprentissage et l'anthropologie linguistique, et des articles sur arXiv.", now_morning: "Matin : révise ce qui est dû. Le sommeil vient de fixer les mots d'hier.", now_day: "Journée : répète quelques phrases ou utilise-en une en famille.", now_evening: "Soir : bon moment pour apprendre de nouvelles phrases.", now_night: "Avant de dormir : un coup d'œil aux phrases du jour, puis dors dessus.", p_title: "S'entraîner", p_lead: "Tu pratiques le {lang}. Quelques minutes par jour, espacées, valent mieux que de longues séances.", p_due: "à revoir", p_new: "nouvelles", p_learned: "apprises", p_streak: "jours d'affilée", p_start: "Commencer la séance du jour", p_start_d: "Se rappeler, dire à voix haute et écouter, en mélange", p_listen: "Quiz d'écoute", p_listen_d: "Écoute une phrase et choisis son sens", p_tones: "Entraîneur de tons", p_tones_d: "Écoute une syllabe et choisis son ton", p_newper: "Nouvelles phrases par jour", p_why: "Comment ça marche", p_nothing: "Rien à revoir pour l'instant. Reviens plus tard ou augmente les nouvelles phrases.", p_back: "Retour", p_newtag: "Nouveau", p_say: "Dis-le à voix haute en {lang}, puis touche Afficher. Devine si tu hésites.", p_reveal: "Afficher", p_again: "Encore", p_hard: "Difficile", p_good: "Bien", p_easy: "Facile", p_rate: "Tu t'en es souvenu comment ?", p_listen_q: "Écoute le {lang} et choisis ce que ça veut dire.", p_play: "Écouter", p_right: "Bravo !", p_wrong: "Pas tout à fait.", p_next: "Suivant", p_shadow: "Répéter 3×", p_your_turn: "À toi ({n}/3)", p_done: "{n} cartes revues", p_done_pct: "{p} % retenu", p_sleep: "Reviens demain : le sommeil aide à fixer les mots nouveaux.", p_after: "{d} à revoir · {s} jours d'affilée", p_tone_q: "Écoute une syllabe. Quelle forme de ton ?", p_tone_done: "Continue : l'oreille apprend les tons avec beaucoup d'exemples variés.", p_cta: "{d} à revoir · {n} nouvelles · {s} jours", p_add: "Ajouter à l'entraînement", p_added: "Dans l'entraînement ✓", hooks_h: "Astuces de mémoire", myhook: "Ton astuce", myhook_ph: "Écris un son proche, une image ou une histoire. Les astuces qu'on invente soi-même tiennent mieux.", l_title: "Comment Polygrok t'aide à apprendre", l_lead: "Ce que la recherche sur la mémoire montre pour les adultes qui apprennent une langue, et comment l'app l'utilise.", l_inapp: "Dans Polygrok :", l_routine_h: "Une bonne routine quotidienne", learn_btn: "Apprendre avec Polygrok", full_title: "Phrase complète", show_big: "Afficher en grand", c_head: "Version naturelle", c_note: "Construite à partir de la structure de la phrase, puis remise dans l'ordre et la grammaire de chaque langue. Vérifie avec un locuteur natif et compare avec les phrases enregistrées.", tagline: "Comprends une langue à fond, mot à mot.",
       app_title: "Polygrok", wbw: "Mot à mot",
       sub: "{n} phrases du quotidien, mot à mot, dans jusqu'à sept langues.",
       search_ph: "Tape une phrase ou cherche", search_aria: "Tape une phrase en anglais, ou cherche dans le guide",
@@ -1092,7 +1147,7 @@
     },
 
     de: {
-      _name: "Deutsch", _lang: "de", b_btn: "Mein Sprachführer", b_save: "In meinem Sprachführer speichern", bk_saved: "Im Sprachführer", b_know: "Kann ich schon", b_known: "Gekonnt", b_title: "Mein Sprachführer", b_lead: "Die Sätze, die du wirklich brauchst, an einem Ort. Gespeicherte Sätze kommen beim Üben zuerst. Als gekonnt markierte Sätze werden nicht als neu abgefragt.", b_tab_saved: "Gespeichert", b_tab_known: "Gekonnt", b_empty: "Noch nichts gespeichert. Öffne einen Satz oder übersetze deinen eigenen und tippe auf Speichern.", b_empty_known: "Noch nichts als gekonnt markiert. Öffne einen Satz, den du kennst, und tippe auf Kann ich schon.", b_copy: "Als Text kopieren", b_copied: "Kopiert", b_practice: "Diese üben", l_tab_why: "Warum es wirkt", l_tab_day: "Dein Tag", l_tab_rules: "Regeln und Wurzeln", l_tab_read: "Leseliste", l_day_lead: "Wann welche Übung am meisten bringt, vom Morgenkaffee bis zum Schlafengehen.", l_rules_tip: "Öffne ein Wort, um seine Teile und seine Lautfamilie nach diesen Regeln zu sehen.", l_read_lead: "Wichtige Bücher zu Sprachunterricht, Lernforschung und linguistischer Anthropologie, dazu Forschungsartikel auf arXiv.", now_morning: "Morgens: Fälliges wiederholen. Der Schlaf hat die Wörter von gestern gerade gefestigt.", now_day: "Tagsüber: ein paar Sätze nachsprechen oder einen mit der Familie benutzen.", now_evening: "Abends: eine gute Zeit für neue Sätze.", now_night: "Vor dem Schlafen: ein kurzer Blick auf die Sätze von heute, dann drüber schlafen.", p_title: "Üben", p_lead: "Du übst {lang}. Ein paar Minuten täglich, verteilt, wirken besser als lange Sitzungen.", p_due: "heute fällig", p_new: "neu heute", p_learned: "gelernt", p_streak: "Tage in Folge", p_start: "Heutige Übung starten", p_start_d: "Erinnern, laut sprechen und hören, gemischt", p_listen: "Hörquiz", p_listen_d: "Hör einen Satz und wähle die Bedeutung", p_tones: "Tontrainer", p_tones_d: "Hör eine Silbe und wähle ihren Ton", p_newper: "Neue Sätze pro Tag", p_why: "So funktioniert's", p_nothing: "Gerade ist nichts fällig. Komm später wieder oder erhöhe die neuen Sätze pro Tag.", p_back: "Zurück", p_newtag: "Neu", p_say: "Sag es laut auf {lang}, dann tippe auf Zeigen. Rate, wenn du unsicher bist.", p_reveal: "Zeigen", p_again: "Nochmal", p_hard: "Schwer", p_good: "Gut", p_easy: "Leicht", p_rate: "Wie gut hast du es gewusst?", p_listen_q: "Hör das {lang} und wähle die Bedeutung.", p_play: "Abspielen", p_right: "Richtig!", p_wrong: "Nicht ganz.", p_next: "Weiter", p_shadow: "Nachsprechen 3×", p_your_turn: "Du bist dran ({n}/3)", p_done: "{n} Karten wiederholt", p_done_pct: "{p} % gewusst", p_sleep: "Komm morgen wieder: Schlaf hilft, neue Wörter zu festigen.", p_after: "{d} noch fällig · {s} Tage in Folge", p_tone_q: "Hör eine Silbe. Welche Tonform hat sie?", p_tone_done: "Weiter so: Das Ohr lernt Töne an vielen verschiedenen Beispielen.", p_cta: "{d} fällig · {n} neu · {s} Tage", p_add: "Zum Üben hinzufügen", p_added: "Wird geübt ✓", hooks_h: "Merkhilfen", myhook: "Deine eigene Merkhilfe", myhook_ph: "Schreib einen Gleichklang, ein Bild oder eine Geschichte. Selbst erfundene Merkhilfen halten am besten.", l_title: "Wie Polygrok dir beim Lernen hilft", l_lead: "Was die Gedächtnisforschung für Erwachsene empfiehlt, die eine neue Sprache lernen, und wie die App es nutzt.", l_inapp: "In Polygrok:", l_routine_h: "Eine gute tägliche Routine", learn_btn: "Lernen mit Polygrok", full_title: "Ganzer Satz", show_big: "Groß anzeigen", c_head: "Natürliche Version", c_note: "Aus dem Satzbau erstellt und in Wortstellung und Grammatik jeder Sprache gebracht. Prüfe sie mit einem Muttersprachler und vergleiche mit den gespeicherten Sätzen.", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
+      _name: "Deutsch", _lang: "de", r_btn: "Aufnehmen", r_title: "Aufnahmen", r_lead: "Nimm Familie und Freunde beim Reden auf und geh es später langsam durch: Stellen markieren, in Schleife hören, aufschreiben, was du hörst, und Ausschnitte im Sprachführer speichern. Die Aufnahmen bleiben auf diesem Telefon.", r_consent: "Frag die Leute, bevor du sie aufnimmst.", r_who: "Wer spricht?", r_who_ph: "Oma, Onkel Wing…", r_lang: "Sprache", r_mixed: "Gemischt", r_live: "Live-Untertitel (Spracherkennung des Telefons, falls verfügbar)", r_start: "Aufnahme starten", r_stop: "Stopp", r_mark: "Diese Stelle markieren", r_marks: "{n} Markierungen", r_none: "Noch keine Aufnahmen.", r_back: "Alle Aufnahmen", r_said: "Was gesagt wurde", r_said_ph: "Schriftzeichen, Umschrift oder nur die Laute", r_mean: "Was es bedeutet", r_mean_ph: "Deine beste Vermutung, oder frag später nach", r_loop: "Schleife", r_clip_save: "Ausschnitt im Sprachführer speichern", r_clip_saved: "Im Sprachführer", r_lines: "Transkript", r_gloss_note: "Grobe Wort-für-Wort-Bedeutung aus dem Polygrok-Wörterbuch.", r_share: "Datei sichern oder teilen", r_delete: "Löschen", r_delete_sure: "Zum Löschen nochmal tippen", r_home: "Auf meinem Computer zu Hause transkribieren", r_home_set: "Computer zu Hause (optional)", r_home_ph: "https://dein-pc.dein-tailnet.ts.net", r_home_test: "Testen", r_home_ok: "Verbunden", r_home_fail: "Nicht erreichbar. Ist der Computer an und Tailscale auf diesem Telefon verbunden?", r_home_busy: "Wird auf deinem Computer transkribiert…", r_mic_fail: "Das Mikrofon geht hier nicht. Öffne Polygrok über die Website oder das Home-Bildschirm-Symbol und erlaube das Mikrofon.", r_live_fail: "Live-Untertitel sind hier nicht verfügbar. Die Aufnahme läuft weiter.", r_store: "Aufnahmen werden in diesem Browser gespeichert. Leg Polygrok auf den Home-Bildschirm, damit das iPhone sie behält, und sichere wichtige in Dateien.", r_rec: "Aufnahme läuft", r_tsn_note: "Noch kein Spracherkenner kann Taishanesisch, daher nutzen die Untertitel Kantonesisch, das am nächsten ist. Deine Notizen zu diesen Aufnahmen könnten Trainingsdaten für einen werden.", b_btn: "Mein Sprachführer", b_save: "In meinem Sprachführer speichern", bk_saved: "Im Sprachführer", b_know: "Kann ich schon", b_known: "Gekonnt", b_title: "Mein Sprachführer", b_lead: "Die Sätze, die du wirklich brauchst, an einem Ort. Gespeicherte Sätze kommen beim Üben zuerst. Als gekonnt markierte Sätze werden nicht als neu abgefragt.", b_tab_saved: "Gespeichert", b_tab_known: "Gekonnt", b_empty: "Noch nichts gespeichert. Öffne einen Satz oder übersetze deinen eigenen und tippe auf Speichern.", b_empty_known: "Noch nichts als gekonnt markiert. Öffne einen Satz, den du kennst, und tippe auf Kann ich schon.", b_copy: "Als Text kopieren", b_copied: "Kopiert", b_practice: "Diese üben", l_tab_why: "Warum es wirkt", l_tab_day: "Dein Tag", l_tab_rules: "Regeln und Wurzeln", l_tab_read: "Leseliste", l_day_lead: "Wann welche Übung am meisten bringt, vom Morgenkaffee bis zum Schlafengehen.", l_rules_tip: "Öffne ein Wort, um seine Teile und seine Lautfamilie nach diesen Regeln zu sehen.", l_read_lead: "Wichtige Bücher zu Sprachunterricht, Lernforschung und linguistischer Anthropologie, dazu Forschungsartikel auf arXiv.", now_morning: "Morgens: Fälliges wiederholen. Der Schlaf hat die Wörter von gestern gerade gefestigt.", now_day: "Tagsüber: ein paar Sätze nachsprechen oder einen mit der Familie benutzen.", now_evening: "Abends: eine gute Zeit für neue Sätze.", now_night: "Vor dem Schlafen: ein kurzer Blick auf die Sätze von heute, dann drüber schlafen.", p_title: "Üben", p_lead: "Du übst {lang}. Ein paar Minuten täglich, verteilt, wirken besser als lange Sitzungen.", p_due: "heute fällig", p_new: "neu heute", p_learned: "gelernt", p_streak: "Tage in Folge", p_start: "Heutige Übung starten", p_start_d: "Erinnern, laut sprechen und hören, gemischt", p_listen: "Hörquiz", p_listen_d: "Hör einen Satz und wähle die Bedeutung", p_tones: "Tontrainer", p_tones_d: "Hör eine Silbe und wähle ihren Ton", p_newper: "Neue Sätze pro Tag", p_why: "So funktioniert's", p_nothing: "Gerade ist nichts fällig. Komm später wieder oder erhöhe die neuen Sätze pro Tag.", p_back: "Zurück", p_newtag: "Neu", p_say: "Sag es laut auf {lang}, dann tippe auf Zeigen. Rate, wenn du unsicher bist.", p_reveal: "Zeigen", p_again: "Nochmal", p_hard: "Schwer", p_good: "Gut", p_easy: "Leicht", p_rate: "Wie gut hast du es gewusst?", p_listen_q: "Hör das {lang} und wähle die Bedeutung.", p_play: "Abspielen", p_right: "Richtig!", p_wrong: "Nicht ganz.", p_next: "Weiter", p_shadow: "Nachsprechen 3×", p_your_turn: "Du bist dran ({n}/3)", p_done: "{n} Karten wiederholt", p_done_pct: "{p} % gewusst", p_sleep: "Komm morgen wieder: Schlaf hilft, neue Wörter zu festigen.", p_after: "{d} noch fällig · {s} Tage in Folge", p_tone_q: "Hör eine Silbe. Welche Tonform hat sie?", p_tone_done: "Weiter so: Das Ohr lernt Töne an vielen verschiedenen Beispielen.", p_cta: "{d} fällig · {n} neu · {s} Tage", p_add: "Zum Üben hinzufügen", p_added: "Wird geübt ✓", hooks_h: "Merkhilfen", myhook: "Deine eigene Merkhilfe", myhook_ph: "Schreib einen Gleichklang, ein Bild oder eine Geschichte. Selbst erfundene Merkhilfen halten am besten.", l_title: "Wie Polygrok dir beim Lernen hilft", l_lead: "Was die Gedächtnisforschung für Erwachsene empfiehlt, die eine neue Sprache lernen, und wie die App es nutzt.", l_inapp: "In Polygrok:", l_routine_h: "Eine gute tägliche Routine", learn_btn: "Lernen mit Polygrok", full_title: "Ganzer Satz", show_big: "Groß anzeigen", c_head: "Natürliche Version", c_note: "Aus dem Satzbau erstellt und in Wortstellung und Grammatik jeder Sprache gebracht. Prüfe sie mit einem Muttersprachler und vergleiche mit den gespeicherten Sätzen.", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
       app_title: "Polygrok", wbw: "Wort für Wort",
       sub: "{n} Alltagssätze, Wort für Wort, in bis zu sieben Sprachen.",
       search_ph: "Satz eingeben oder suchen", search_aria: "Englischen Satz eingeben oder im Guide suchen",
@@ -1135,7 +1190,7 @@
     },
 
     yue: {
-      _name: "廣東話", _lang: "zh-HK", b_btn: "我嘅短語簿", b_save: "加入我嘅短語簿", bk_saved: "喺短語簿", b_know: "我識呢句", b_known: "識咗", b_title: "我嘅短語簿", b_lead: "你真係用得著嘅句子，全部放埋一齊。儲咗嘅句子練習時會先出。標咗識嘅句子唔會當新句再出。", b_tab_saved: "已儲", b_tab_known: "識咗", b_empty: "仲未儲任何句子。打開一句，或者翻譯你自己嘅句子，撳「加入我嘅短語簿」。", b_empty_known: "仲未標任何句子做識咗。打開一句你已經識嘅，撳「我識呢句」。", b_copy: "複製成文字", b_copied: "複製咗", b_practice: "練習呢啲", l_tab_why: "點解有效", l_tab_day: "你嘅一日", l_tab_rules: "規則同字源", l_tab_read: "閱讀清單", l_day_lead: "由朝早飲咖啡到瞓覺，每種練習幾時最有用。", l_rules_tip: "打開任何一個字，就會睇到佢嘅部件同聲音家族。", l_read_lead: "語言教學、學習科學同語言人類學嘅重要書籍，仲有 arXiv 上嘅研究論文。", now_morning: "朝早：溫返要溫嘅。瞓完覺，琴日啲字啱啱記牢咗。", now_day: "日頭：跟讀幾句，或者同屋企人用一句。", now_evening: "夜晚：學新句嘅好時間。", now_night: "瞓覺前：睇一睇今日啲句子，然後瞓覺。", p_title: "練習", p_lead: "練緊{lang}。每日幾分鐘、分開幾次，好過一次過練好耐。", p_due: "今日要溫", p_new: "今日新句", p_learned: "學咗", p_streak: "連續日數", p_start: "開始今日練習", p_start_d: "諗、讀出聲、聽，混埋一齊", p_listen: "聽力測驗", p_listen_d: "聽一句，揀返意思", p_tones: "聲調訓練", p_tones_d: "聽一個音，揀佢嘅聲調", p_newper: "每日新句數量", p_why: "點解有效", p_nothing: "而家冇嘢要溫。遲啲再嚟，或者加多啲每日新句。", p_back: "返回", p_newtag: "新", p_say: "用{lang}讀出聲，然後撳「顯示」。唔肯定都估吓。", p_reveal: "顯示", p_again: "再嚟", p_hard: "難", p_good: "好", p_easy: "易", p_rate: "你記得幾清楚？", p_listen_q: "聽{lang}，揀返意思。", p_play: "播放", p_right: "啱！", p_wrong: "唔係咁啱。", p_next: "下一個", p_shadow: "跟讀 3 次", p_your_turn: "到你（{n}/3）", p_done: "溫咗 {n} 張卡", p_done_pct: "記得 {p}%", p_sleep: "聽日再嚟：瞓覺幫新字記得牢。", p_after: "仲有 {d} 個要溫 · 連續 {s} 日", p_tone_q: "聽一個音。佢係邊個聲調？", p_tone_done: "繼續：耳仔要聽好多唔同例子先學得識聲調。", p_cta: "{d} 要溫 · {n} 新 · 連續 {s} 日", p_add: "加入練習", p_added: "練習中 ✓", hooks_h: "記憶小貼士", myhook: "你自己嘅記法", myhook_ph: "寫低諧音、畫面或者小故事。自己諗嘅記法最記得。", l_title: "Polygrok 點樣幫你學", l_lead: "記憶研究話成人學新語言咩方法有效，同埋呢個 app 點用。", l_inapp: "喺 Polygrok：", l_routine_h: "每日好習慣", learn_btn: "點樣用 Polygrok 學", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
+      _name: "廣東話", _lang: "zh-HK", r_btn: "錄音", r_title: "錄音", r_lead: "錄低屋企人同朋友傾偈，之後慢慢再聽：標記重點、重複播放、寫低聽到嘅嘢，再將片段儲落短語簿。錄音只會留喺呢部手機。", r_consent: "錄之前問吓人哋先。", r_who: "邊個講緊？", r_who_ph: "婆婆、榮叔…", r_lang: "語言", r_mixed: "混合", r_live: "即時字幕（用手機嘅語音辨識，如果有）", r_start: "開始錄音", r_stop: "停", r_mark: "標記呢一刻", r_marks: "{n} 個標記", r_none: "仲未有錄音。", r_back: "全部錄音", r_said: "佢哋講咗咩", r_said_ph: "漢字、拼音或者淨係啲音", r_mean: "係咩意思", r_mean_ph: "估吓，或者遲啲問佢哋", r_loop: "重複", r_clip_save: "將片段儲落短語簿", r_clip_saved: "喺短語簿", r_lines: "文字稿", r_gloss_note: "用 Polygrok 字典逐個字大概翻譯。", r_share: "儲存或分享檔案", r_delete: "刪除", r_delete_sure: "再撳一次就刪除", r_home: "喺屋企電腦轉文字", r_home_set: "屋企電腦（可選）", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "測試", r_home_ok: "已連線", r_home_fail: "連唔到。部電腦開咗未？呢部手機有冇開 Tailscale？", r_home_busy: "喺屋企電腦轉緊文字…", r_mic_fail: "呢度用唔到咪。由網站或者主畫面圖示打開 Polygrok，再允許使用咪。", r_live_fail: "呢度用唔到即時字幕，錄音照錄緊。", r_store: "錄音儲喺呢個瀏覽器。將 Polygrok 加到主畫面，iPhone 先會一直保留，重要嘅記得儲去「檔案」。", r_rec: "錄緊音", r_tsn_note: "暫時冇語音引擎識台山話，所以字幕用最接近嘅廣東話。你對呢啲錄音嘅筆記，將來可以用嚟訓練一個。", b_btn: "我嘅短語簿", b_save: "加入我嘅短語簿", bk_saved: "喺短語簿", b_know: "我識呢句", b_known: "識咗", b_title: "我嘅短語簿", b_lead: "你真係用得著嘅句子，全部放埋一齊。儲咗嘅句子練習時會先出。標咗識嘅句子唔會當新句再出。", b_tab_saved: "已儲", b_tab_known: "識咗", b_empty: "仲未儲任何句子。打開一句，或者翻譯你自己嘅句子，撳「加入我嘅短語簿」。", b_empty_known: "仲未標任何句子做識咗。打開一句你已經識嘅，撳「我識呢句」。", b_copy: "複製成文字", b_copied: "複製咗", b_practice: "練習呢啲", l_tab_why: "點解有效", l_tab_day: "你嘅一日", l_tab_rules: "規則同字源", l_tab_read: "閱讀清單", l_day_lead: "由朝早飲咖啡到瞓覺，每種練習幾時最有用。", l_rules_tip: "打開任何一個字，就會睇到佢嘅部件同聲音家族。", l_read_lead: "語言教學、學習科學同語言人類學嘅重要書籍，仲有 arXiv 上嘅研究論文。", now_morning: "朝早：溫返要溫嘅。瞓完覺，琴日啲字啱啱記牢咗。", now_day: "日頭：跟讀幾句，或者同屋企人用一句。", now_evening: "夜晚：學新句嘅好時間。", now_night: "瞓覺前：睇一睇今日啲句子，然後瞓覺。", p_title: "練習", p_lead: "練緊{lang}。每日幾分鐘、分開幾次，好過一次過練好耐。", p_due: "今日要溫", p_new: "今日新句", p_learned: "學咗", p_streak: "連續日數", p_start: "開始今日練習", p_start_d: "諗、讀出聲、聽，混埋一齊", p_listen: "聽力測驗", p_listen_d: "聽一句，揀返意思", p_tones: "聲調訓練", p_tones_d: "聽一個音，揀佢嘅聲調", p_newper: "每日新句數量", p_why: "點解有效", p_nothing: "而家冇嘢要溫。遲啲再嚟，或者加多啲每日新句。", p_back: "返回", p_newtag: "新", p_say: "用{lang}讀出聲，然後撳「顯示」。唔肯定都估吓。", p_reveal: "顯示", p_again: "再嚟", p_hard: "難", p_good: "好", p_easy: "易", p_rate: "你記得幾清楚？", p_listen_q: "聽{lang}，揀返意思。", p_play: "播放", p_right: "啱！", p_wrong: "唔係咁啱。", p_next: "下一個", p_shadow: "跟讀 3 次", p_your_turn: "到你（{n}/3）", p_done: "溫咗 {n} 張卡", p_done_pct: "記得 {p}%", p_sleep: "聽日再嚟：瞓覺幫新字記得牢。", p_after: "仲有 {d} 個要溫 · 連續 {s} 日", p_tone_q: "聽一個音。佢係邊個聲調？", p_tone_done: "繼續：耳仔要聽好多唔同例子先學得識聲調。", p_cta: "{d} 要溫 · {n} 新 · 連續 {s} 日", p_add: "加入練習", p_added: "練習中 ✓", hooks_h: "記憶小貼士", myhook: "你自己嘅記法", myhook_ph: "寫低諧音、畫面或者小故事。自己諗嘅記法最記得。", l_title: "Polygrok 點樣幫你學", l_lead: "記憶研究話成人學新語言咩方法有效，同埋呢個 app 點用。", l_inapp: "喺 Polygrok：", l_routine_h: "每日好習慣", learn_btn: "點樣用 Polygrok 學", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
       app_title: "Polygrok", wbw: "逐個字",
       sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
       search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
@@ -1178,7 +1233,7 @@
     },
 
     cmn: {
-      _name: "普通话", _lang: "zh-CN", b_btn: "我的短语本", b_save: "加入我的短语本", bk_saved: "在短语本中", b_know: "我会这句", b_known: "已会", b_title: "我的短语本", b_lead: "你真正用得上的句子，都放在一起。收藏的句子练习时先出现。标为已会的句子不再作为新句出现。", b_tab_saved: "已收藏", b_tab_known: "已会", b_empty: "还没有收藏。打开任意一句，或翻译你自己的句子，点“加入我的短语本”。", b_empty_known: "还没有标为已会的句子。打开一句你已经会的，点“我会这句”。", b_copy: "复制为文字", b_copied: "已复制", b_practice: "练习这些", l_tab_why: "为什么有效", l_tab_day: "你的一天", l_tab_rules: "规则与字源", l_tab_read: "阅读书单", l_day_lead: "从早上喝咖啡到睡前，每种练习什么时候最有用。", l_rules_tip: "打开任意一个字，就能看到它的部件和声音家族。", l_read_lead: "语言教学、学习科学和语言人类学的重要书籍，以及 arXiv 上的研究论文。", now_morning: "早上：复习到期的内容。睡眠刚把昨天的词记牢。", now_day: "白天：跟读几句，或者和家人用一句。", now_evening: "晚上：学新句子的好时间。", now_night: "睡前：看一眼今天的句子，然后睡觉。", p_title: "练习", p_lead: "正在练习{lang}。每天几分钟、分散进行，比一次练很久更有效。", p_due: "今天待复习", p_new: "今天新句", p_learned: "已学", p_streak: "连续天数", p_start: "开始今天的练习", p_start_d: "回忆、说出声、听，混合进行", p_listen: "听力测验", p_listen_d: "听一句，选出意思", p_tones: "声调训练", p_tones_d: "听一个音节，选出声调", p_newper: "每天新句数量", p_why: "为什么有效", p_nothing: "现在没有要复习的。稍后再来，或增加每天新句数量。", p_back: "返回", p_newtag: "新", p_say: "用{lang}说出声，然后点“显示”。不确定也猜一猜。", p_reveal: "显示", p_again: "再来", p_hard: "难", p_good: "好", p_easy: "容易", p_rate: "你记得怎么样？", p_listen_q: "听{lang}，选出意思。", p_play: "播放", p_right: "对了！", p_wrong: "不太对。", p_next: "下一个", p_shadow: "跟读 3 次", p_your_turn: "轮到你（{n}/3）", p_done: "复习了 {n} 张卡", p_done_pct: "记住 {p}%", p_sleep: "明天再来：睡眠帮助新词进入长期记忆。", p_after: "还有 {d} 个待复习 · 连续 {s} 天", p_tone_q: "听一个音节。它是哪个声调？", p_tone_done: "继续：耳朵通过大量不同的例子学会声调。", p_cta: "{d} 待复习 · {n} 新 · 连续 {s} 天", p_add: "加入练习", p_added: "练习中 ✓", hooks_h: "记忆提示", myhook: "你自己的记法", myhook_ph: "写下谐音、画面或小故事。自己想的记法最牢。", l_title: "Polygrok 如何帮你学习", l_lead: "记忆研究表明哪些方法对成人学新语言有效，以及本应用如何运用。", l_inapp: "在 Polygrok 中：", l_routine_h: "每日好习惯", learn_btn: "如何用 Polygrok 学习", full_title: "整句", show_big: "放大显示", c_head: "自然句子", c_note: "根据句子结构（谁、做什么、什么时候、在哪里）生成，再按每种语言的语法排列。请向母语者确认，并与最相近的已存句子比较。", tagline: "逐词逐句，真正懂一门语言。",
+      _name: "普通话", _lang: "zh-CN", r_btn: "录音", r_title: "录音", r_lead: "录下家人和朋友聊天，之后慢慢回听：标记重点、循环播放、写下听到的内容，并把片段存进短语本。录音只保存在这部手机上。", r_consent: "录之前先征得对方同意。", r_who: "谁在说话？", r_who_ph: "奶奶、荣叔…", r_lang: "语言", r_mixed: "混合", r_live: "实时字幕（使用手机的语音识别，如果有）", r_start: "开始录音", r_stop: "停止", r_mark: "标记这一刻", r_marks: "{n} 个标记", r_none: "还没有录音。", r_back: "全部录音", r_said: "他们说了什么", r_said_ph: "汉字、拼音或者只是声音", r_mean: "是什么意思", r_mean_ph: "猜一猜，或者以后问他们", r_loop: "循环", r_clip_save: "把片段存进短语本", r_clip_saved: "在短语本中", r_lines: "文字稿", r_gloss_note: "根据 Polygrok 词典的大致逐词意思。", r_share: "保存或分享文件", r_delete: "删除", r_delete_sure: "再点一次删除", r_home: "在家里的电脑上转写", r_home_set: "家里的电脑（可选）", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "测试", r_home_ok: "已连接", r_home_fail: "连接不上。电脑开着吗？这部手机开了 Tailscale 吗？", r_home_busy: "正在家里的电脑上转写…", r_mic_fail: "这里无法使用麦克风。请从网站或主屏幕图标打开 Polygrok，并允许使用麦克风。", r_live_fail: "这里无法使用实时字幕，录音仍在进行。", r_store: "录音保存在这个浏览器中。把 Polygrok 添加到主屏幕，iPhone 才会一直保留，重要的请存到“文件”。", r_rec: "正在录音", r_tsn_note: "目前还没有语音引擎能识别台山话，所以字幕使用最接近的粤语。你对这些录音的笔记将来可以用来训练一个。", b_btn: "我的短语本", b_save: "加入我的短语本", bk_saved: "在短语本中", b_know: "我会这句", b_known: "已会", b_title: "我的短语本", b_lead: "你真正用得上的句子，都放在一起。收藏的句子练习时先出现。标为已会的句子不再作为新句出现。", b_tab_saved: "已收藏", b_tab_known: "已会", b_empty: "还没有收藏。打开任意一句，或翻译你自己的句子，点“加入我的短语本”。", b_empty_known: "还没有标为已会的句子。打开一句你已经会的，点“我会这句”。", b_copy: "复制为文字", b_copied: "已复制", b_practice: "练习这些", l_tab_why: "为什么有效", l_tab_day: "你的一天", l_tab_rules: "规则与字源", l_tab_read: "阅读书单", l_day_lead: "从早上喝咖啡到睡前，每种练习什么时候最有用。", l_rules_tip: "打开任意一个字，就能看到它的部件和声音家族。", l_read_lead: "语言教学、学习科学和语言人类学的重要书籍，以及 arXiv 上的研究论文。", now_morning: "早上：复习到期的内容。睡眠刚把昨天的词记牢。", now_day: "白天：跟读几句，或者和家人用一句。", now_evening: "晚上：学新句子的好时间。", now_night: "睡前：看一眼今天的句子，然后睡觉。", p_title: "练习", p_lead: "正在练习{lang}。每天几分钟、分散进行，比一次练很久更有效。", p_due: "今天待复习", p_new: "今天新句", p_learned: "已学", p_streak: "连续天数", p_start: "开始今天的练习", p_start_d: "回忆、说出声、听，混合进行", p_listen: "听力测验", p_listen_d: "听一句，选出意思", p_tones: "声调训练", p_tones_d: "听一个音节，选出声调", p_newper: "每天新句数量", p_why: "为什么有效", p_nothing: "现在没有要复习的。稍后再来，或增加每天新句数量。", p_back: "返回", p_newtag: "新", p_say: "用{lang}说出声，然后点“显示”。不确定也猜一猜。", p_reveal: "显示", p_again: "再来", p_hard: "难", p_good: "好", p_easy: "容易", p_rate: "你记得怎么样？", p_listen_q: "听{lang}，选出意思。", p_play: "播放", p_right: "对了！", p_wrong: "不太对。", p_next: "下一个", p_shadow: "跟读 3 次", p_your_turn: "轮到你（{n}/3）", p_done: "复习了 {n} 张卡", p_done_pct: "记住 {p}%", p_sleep: "明天再来：睡眠帮助新词进入长期记忆。", p_after: "还有 {d} 个待复习 · 连续 {s} 天", p_tone_q: "听一个音节。它是哪个声调？", p_tone_done: "继续：耳朵通过大量不同的例子学会声调。", p_cta: "{d} 待复习 · {n} 新 · 连续 {s} 天", p_add: "加入练习", p_added: "练习中 ✓", hooks_h: "记忆提示", myhook: "你自己的记法", myhook_ph: "写下谐音、画面或小故事。自己想的记法最牢。", l_title: "Polygrok 如何帮你学习", l_lead: "记忆研究表明哪些方法对成人学新语言有效，以及本应用如何运用。", l_inapp: "在 Polygrok 中：", l_routine_h: "每日好习惯", learn_btn: "如何用 Polygrok 学习", full_title: "整句", show_big: "放大显示", c_head: "自然句子", c_note: "根据句子结构（谁、做什么、什么时候、在哪里）生成，再按每种语言的语法排列。请向母语者确认，并与最相近的已存句子比较。", tagline: "逐词逐句，真正懂一门语言。",
       app_title: "Polygrok", wbw: "逐词",
       sub: "{n} 个日常句子，逐词拆解，最多七种语言。",
       search_ph: "输入任意句子或搜索", search_aria: "输入一句英文，或在指南中搜索",
@@ -1424,6 +1479,8 @@
   function myHookKey(lang, hz) { return "polygrok-hook-" + lang + "-" + hz; }
 
 
+  const JYUT_RAW = "一jat1,丁ding1,七cat1,丈zoeng6,三saam1,上soeng5,下haa6,不bat1,丐koi3,丑cau2,且ce2,丕pei1,世sai3,丘jau1,丙bing2,丞sing4,丟diu1,両loeng2,並bing6,丫aa1,中zung1,丰fung1,串cyun3,丸jyun2,丹daan1,主zyu2,乃naai5,久gau2,么jiu1,之zi1,乍zaa3,乎fu4,乏fat6,乒bing1,乓bam1,乖gwaai1,乘sing4,乙jyut6,乜mat1,九gau2,乞hat1,也jaa5,乩gei1,乪kek6,乳jyu5,乸naa2,乾gon1,亂lyun6,了liu5,予jyu5,事si6,二ji6,亍cuk1,于jyu1,云wan4,互wu6,五ng5,井zeng2,亘gang2,亙gang2,些se1,亞aa3,亟gik1,亡mong4,亢kong3,交gaau1,亥hoi6,亦jik6,亨hang1,享hoeng2,京ging1,亭ting4,亮loeng6,亹mei5,人jan4,什sap6,仁jan4,仂lak6,仃ding1,仄zak1,仆puk1,仇sau4,今gam1,介gaai3,仍jing4,仔zai2,仕si6,他taa1,仗zoeng3,付fu6,仙sin1,仝tung4,仟cin1,代doi6,令ling6,以ji5,仫mo1,仰joeng5,仱ging1,仲zung6,仳pei2,仵ng5,件gin6,任jam6,份fan6,仿fong2,企kei5,伄diu3,伉kong3,伊ji1,伍ng5,伎gei6,伏fuk6,伐fat6,休jau1,伔daam6,伕fu1,伙fo2,伢ngaa4,伯baak3,估gu2,伴bun6,伶ling4,伸san1,伺si6,似ci5,伽gaa1,佃din6,但daan6,佇cyu5,佈bou3,佊bei2,位wai6,低dai1,住zyu6,佐zo3,佑jau6,佔zim3,何ho4,佗taa1,佘se4,余jyu4,佚dit6,佛fat6,作zok3,佝keoi1,佞ning6,佟tung4,你nei5,佢keoi5,佣jung6,佩pui3,佬lou2,佮daap6,佯joeng4,佳gaai1,併ping3,佻tiu1,佼gaau2,使si2,侃hon2,侄zat6,來loi4,侈ci2,侉kwaa1,例lai6,侍si6,侏zyu1,侖leon4,侗tung4,供gung1,依ji1,侮mou5,侯hau4,侵cam1,侶leoi5,侷guk6,侸syu6,便bin6,俁jyu5,係hai6,促cuk1,俄ngo4,俉ng6,俊zeon3,俎zo2,俏ciu3,俐lei6,俑jung2,俗zuk6,俘fu1,俚lei5,俜ping1,保bou2,俞jyu4,俟zi6,俠hap6,信seon3,俬si1,修sau1,俯fu2,俱keoi1,俳paai4,俸fung2,俹aa3,倀caang4,倆loeng5,倉cong1,個go3,倌gun1,倍pui5,倏suk1,們mun4,倒dou2,倓daam6,倔gwat6,倖hang6,倘tong2,候hau6,倚ji2,倜tik1,借ze3,倡coeng1,値zik6,倥hung1,倦gyun6,倨geoi3,倩sin6,倪ngai6,倫leon4,倭wo1,倮lo2,倻je4,值zik6,偁can3,偃jin2,假gaa2,偈gai2,偉wai5,偌je6,偎wui1,偏pin1,偕haai4,做zou6,停ting4,健gin6,偪bik1,側zak1,偵zing1,偶ngau5,偷tau1,偸tau1,傀faai3,傅fu6,傈leot6,傍pong4,傑git6,傖caang1,傘saan3,備bei6,傚haau6,傝taam3,傢gaa1,催ceoi1,傭jung4,傯zung2,傲ngou6,傳cyun4,債zaai3,傷soeng1,傻so4,傾king1,僂leoi5,僅gan2,僆leng1,像zoeng6,僑kiu4,僕buk6,僖hei1,僚liu4,僞ngai6,僥hiu1,僧zang1,僬ziu1,僭cim3,僮tung4,僱gu3,僳suk1,僵goeng1,價gaa3,僻pik1,儀ji4,儂nung4,億jik1,儅dong1,儆ging2,儈kui2,儉gim6,儐ban1,儒jyu4,儕caai4,儘zeon2,償soeng4,儡leoi5,優jau1,儲cyu5,儳caam3,儷lai6,儸lo4,儻tong2,儼jim5,兀ngat6,允wan5,元jyun4,兄hing1,充cung1,兆siu6,兇hung1,先sin1,光gwong1,克hak1,兌deoi3,免min5,兒ji4,兔tou3,兜dau1,兢ging1,入jap6,內noi6,全cyun4,兩loeng5,八baat3,公gung1,六luk6,兮hai4,共gung6,兵bing1,其kei4,具geoi6,典din2,兼gim1,冀kei3,円jyun4,冇mou5,冉jim5,冊caak3,再zoi3,冏gwing2,冑zau6,冒mou6,冕min5,冗jung2,冚ham6,冞mei4,冠gun3,冢cung2,冤jyun1,冥ming5,冧lam3,冪mik6,冬dung1,冰bing1,冲cung1,冶je5,冷laang5,冽lit6,凄cai1,准zeon2,凊cing3,凋diu1,凌ling4,凍dung3,减gaam2,凑cau3,凜lam5,凝jing4,几gei1,凡faan4,凭bang6,凰wong4,凱hoi2,凳dang3,凶hung1,凸dat6,凹nap1,出ceot1,凼tam5,函haam4,刀dou1,刁diu1,刃jan6,分fan1,切cit3,刈ngaai6,刉gei1,刊hon1,刎man5,刑jing4,划waak6,刖jyut6,列lit6,初co1,判pun3,別bit6,刨paau4,利lei6,刪saan1,刮gwaat3,到dou2,制zai3,刷caat3,券gyun3,刺ci3,刻hak1,剁doek3,剃tai3,則zak1,削soek3,剋hak1,剌laat6,前cin4,剎saat3,剒co3,剔tik1,剖fau2,剛gong1,剝mok1,剢doek3,剩sing6,剪zin2,剮gwaa2,副fu3,割got3,創cong3,剷caan2,剽piu3,剿ziu2,劃waak6,劄zaap3,劇kek6,劈pek3,劉lau4,劊kui2,劍gim3,劏tong1,劑zai1,劓ji6,劖caam4,力lik6,功gung1,加gaa1,劣lyut6,助zo6,努nou5,劫gip3,劵gyun3,効haau6,劼kit3,劾hat6,勁ging6,勃but6,勇jung5,勉min5,勐maang5,勑cik1,勒laak6,動dung6,勗juk1,勘ham3,務mou6,勛fan1,勝sing3,勞lou4,募mou6,勡piu3,勢sai3,勤kan4,勳fan1,勵lai6,勸hyun3,勺zoek3,勻wan4,勼gau1,勾ngau1,勿mat6,包baau1,匆cung1,匈hung1,匍pou4,匏paau4,匐fuk6,匕bei3,化faa3,北bak1,匙si4,匝zaap3,匠zoeng6,匡hong1,匣haap6,匪fei2,匯wui6,匱gwai6,匹pat1,匾bin2,匿nik1,區keoi1,十sap6,千cin1,卅saa1,升sing1,午ng5,卉wai2,半bun3,卑bei1,卒zeot1,卓coek3,協hip3,南naam4,博bok3,卜buk1,卟buk1,占zim1,卡kaa1,卦gwaa3,卯maau5,印jan3,危ngai4,即zik1,卵leon2,卷gyun2,卸se3,卹seot1,卻koek3,卼ngat6,卿hing1,厂am1,厄aak1,厔zat1,厘lei4,厚hau5,厝cou3,原jyun4,厠ci3,厥kyut3,厭jim3,厲lai6,厴jim2,去heoi3,厾duk1,參caam1,又jau6,叉caa1,及kap6,友jau5,反faan2,収sau1,叔suk1,取ceoi2,受sau6,叛bun6,叟sau2,叠dip6,叢cung4,口hau2,古gu2,句geoi3,另ling6,叨tou1,叩kau3,只zi2,叫giu3,召ziu6,叭baa1,叮ding1,可ho2,台toi4,叱cik1,史si2,右jau6,叵po2,叶hip3,司si1,叻lek1,叼diu1,吁jyu1,吃hek3,各gok3,吆jiu1,合hap6,吉gat1,吊diu3,吋cyun3,同tung4,名ming4,后hau6,吏lei6,吐tou3,向hoeng3,吒zaa1,吓haa2,吔jaa1,吖aa1,君gwan1,吝leon6,吞tan1,吟jam4,吠fai6,吡bei2,吥bat1,否fau2,吧baa6,吩fan1,含ham4,听jan5,吭hang1,吮syun5,吱zi1,吳ng4,吵caau2,吶naap6,吸kap1,吹ceoi1,吺dau1,吻man5,吼haau1,吽hau1,吾ng4,呀aa4,呂leoi5,呃ngaak1,呆ngoi4,呈cing4,告gou3,呍ngau4,呎cek3,呑tan1,呔taai1,呠pan3,呢ne1,呤ling4,呥jam1,呦jau1,周zau1,呫cip3,呯ping4,呱gwaa1,呲zi1,味mei6,呵ho2,呶naau4,呷gaat3,呻san1,呼fu1,命ming6,呾daat3,咀zeoi2,咁gam3,咂zaap3,咄deot1,咆paau4,咇bit1,咋zaa3,和wo4,咎gau3,咏wing6,咐fu3,咑daa1,咒zau3,咓aa5,咔kaa1,咕gu1,咖gaa3,咗zo2,咚dung1,咠cap1,咣gwong1,咤zaa3,咥dit6,咦ji2,咧le4,咨zi1,咩me1,咪mai1,咫zi2,咬ngaau5,咭kaat1,咯gok3,咱zaa1,咳kat1,咸haam4,咹hon1,咻jau1,咽jin1,咾lou5,咿ji1,哀oi1,品ban2,哂can2,哄hung3,哆do1,哇waa1,哈haa1,哉zoi1,哋dei6,哌paai3,响hoeng2,哎aai1,哏gan1,哐hong1,哚doe2,員jyun4,哣dau6,哥go1,哦o4,哧ci1,哨saau3,哩le5,哪naa5,哬ho4,哭huk1,哮haau1,哰lou4,哲zit3,哳zaat3,哴loeng6,哺bou6,哼hang1,哽gang2,哿go1,唁jin6,唂guk1,唄baa6,唅ham3,唆so1,唇seon4,唈jap1,唉aai1,唎lei6,唏hei1,唐tong4,唑zo6,唔m4,唚cam3,唞tau2,唥laang1,唧zek1,唪baang6,唫gam3,唬fu2,售sau6,唯wai4,唱coeng3,唳lai6,唵am2,唷jo1,唸nim6,唾to3,唿fat1,啁zaau1,啃hang2,啄doek3,啅doek3,商soeng1,啉lam4,啊aa3,啋coi1,問man6,啐ceoi3,啓kai2,啕tou4,啖daam6,啜zyut3,啝wo3,啞aa2,啡fe1,啤be1,啥saa2,啦laa1,啩gwaa3,啪paak1,啫ze1,啱ngaam1,啲di1,啵bo1,啶ding6,啷long1,啹goe1,啻ci3,啼tai4,啾zau1,喀haak3,喁jung4,喂wai3,喃naam4,善sin6,喇laa3,喉hau4,喊haam3,喋dip6,喎wo3,喐juk1,喑jam1,喔ak1,喘cyun2,喙fui3,喚wun6,喜hei2,喝hot3,喟wai2,喥dok6,喧hyun1,喨loeng6,喪song1,喫hek3,喬kiu4,喭jin6,單daan1,喱lei1,喲jo1,喳zaa1,喴wai1,喵meu1,喹fui1,喺hai2,喻jyu6,喼gip1,嗅cau3,嗆coeng1,嗇sik1,嗉seoi3,嗊gung3,嗌aai3,嗍sok3,嗎maa1,嗐haai6,嗒taap3,嗓song2,嗔can1,嗖sau1,嗗gut2,嗚wu1,嗜si3,嗝gaak3,嗞zi1,嗟ze1,嗡jung1,嗣zi6,嗤ci1,嗥hou4,嗦so1,嗨hoi1,嗩so2,嗪ceon4,嗬ho2,嗮saai3,嗯ng6,嗰go2,嗱naa4,嗲de2,嗵tung1,嗶bat1,嗷ngou4,嗻ze1,嗽sau3,嘀dik6,嘁ci1,嘅ge3,嘆taan3,嘈cou4,嘉gaa1,嘌piu1,嘍lau4,嘎ga4,嘔au2,嘖zaak3,嘗soeng4,嘚dak1,嘛maa3,嘜mak1,嘞la3,嘟dyut1,嘢je5,嘣bang1,嘥saai1,嘧mat6,嘩waa1,嘬caai3,嘭paang4,嘮lou4,嘯siu3,嘰gi1,嘲zaau1,嘴zeoi2,嘶sai1,嘸fu2,嘹liu4,嘻hei1,嘽cin2,嘿hei1,噁ok3,噃bo3,噅fai1,噆caam2,噈hap6,噉gam2,噌zang1,噍zau1,噎jit3,噏ngap1,噒leon1,噓heoi1,噔dang1,噖jam4,噗pok3,噘kyut3,噙kam4,噚cam4,噝si1,噠daat6,噢jyu2,噤gam3,噥nung4,器hei3,噩ngok6,噪cou3,噬sai6,噯oi2,噱koek6,噴pan3,噶got3,噸deon1,噹dong1,噻sak1,噼pet1,嚅jyu4,嚇haak3,嚎hou4,嚏tai3,嚐soeng4,嚒mo1,嚓caat3,嚕lu3,嚙ngit6,嚟lai4,嚡haai4,嚤mo1,嚥jin3,嚦lik1,嚨lung4,嚫can3,嚮hoeng3,嚳guk1,嚴jim4,嚷joeng6,嚹la4,嚼zoek3,嚿gau6,囀zyun2,囁zip3,囂hiu1,囈ngai6,囉lo1,囊nong4,囌sou1,囍hei2,囑zuk1,囒laan4,囔nong4,囖lo4,囚cau4,四sei3,囝naam4,回wui4,囟seon2,因jan1,囡naam4,囤tyun4,囪cung1,囫fat1,困kwan3,囹ling4,固gu3,囿jau6,圃pou2,圄jyu5,圇leon4,圈hyun1,國gwok3,圍wai4,圐ku1,園jyun4,圓jyun4,圖tou4,團tyun4,圙loek6,圜jyun4,土tou2,在zoi6,圩wai4,圭gwai1,圮pei2,地dei6,圳zan3,圾saap3,址zi2,坂baan2,均gwan1,坊fong1,坌ban6,坍taan1,坎ham1,坐co5,坑haang1,坡bo1,坤kwan1,坦taan2,坨to4,坪ping4,坭nai4,坯pui1,坳aau3,坷ho1,坺baat6,坼caak3,垂seoi4,垃laap6,型jing4,垛do2,垠ngan4,垢gau3,垣wun4,垮kwaa1,埂gang2,埃oi1,埄bung6,埇cung1,埋maai4,城sing4,埔bou3,埕cing4,埗bou6,埞deng6,域wik6,埠fau6,埤bai3,埵do2,執zap1,培pui4,基gei1,堂tong4,堅gin1,堆deoi1,堇gan2,堊ok3,堙jan1,堝gwo1,堡bou2,堤tai4,堪ham1,堯jiu4,堰jin2,報bou3,場coeng4,堵dou2,塊faai3,塌taap3,塍sing4,塑sou3,塒si4,塔taap3,塗tou4,塘tong4,塚cung2,塞sak1,塢wu2,填tin4,塬jyun4,塱long5,塵can4,塹cim3,塾suk6,境ging2,墅seoi6,墈ham3,墊zin3,墒soeng1,墓mou6,墜zeoi6,增zang1,墟heoi1,墨mak6,墩deon1,墮do6,墳fan4,墶daat3,墻coeng4,墾han2,壁bik1,壅jung1,壆bok3,壇taan4,壑kok3,壓aat3,壕hou4,壘leoi5,壚lou4,壞waai6,壟lung5,壤joeng6,壩baa3,士si6,壬jam4,壯zong3,壹jat1,壺wu4,壼kwan2,壽sau6,夀sau6,夏haa6,夔kwai4,夕zik6,外ngoi6,夙suk1,多do1,夜je6,夠gau3,夢mung6,夤jan4,夥fo2,大daai6,天tin1,太taai3,夫fu1,夭jiu1,央joeng1,夯haang1,失sat1,夷ji4,夸kwaa1,夾gaap3,奀ngan1,奄jim1,奅paau3,奇kei4,奈noi6,奉fung6,奎fui1,奏zau3,奐wun6,契kai3,奓ce1,奔ban1,奕jik6,套tou3,奚hai4,奠din6,奢ce1,奧ou3,奩lim4,奪dyut6,奮fan5,女neoi5,奴nou4,奶naai5,奸gaan1,她taa1,奼caa3,好hou2,妁zoek3,如jyu4,妃fei1,妄mong5,妊jam4,妍jin4,妒dou3,妓gei6,妖jiu2,妗kam2,妙miu6,妝zong1,妞nau2,妣bei2,妤jyu4,妥to5,妨fong4,妮nei4,妯cau1,妹mui1,妻cai1,妾cip3,姆mou5,姊zi2,始ci2,姍saan1,姐ze2,姑gu1,姒ci5,姓sing3,委wai2,姘ping1,姚jiu4,姜goeng1,姣haau4,姥lou5,姦gaan1,姨ji1,姩nin4,姪zat6,姬gei1,姮hang4,姻jan1,姿zi1,威wai1,娃waa1,娉ping1,娌lei5,娑so1,娓mei5,娘noeng4,娛jyu4,娜naa4,娟gyun1,娠san1,娥ngo4,娩faan3,娶ceoi2,娼coeng1,娿o1,婀o2,婁lau4,婄pau3,婆po4,婉jyun2,婊biu2,婕zit3,婚fan1,婢pei5,婦fu5,婪laam4,婭aa3,婷ting4,婺mou6,婿sai3,媁wai4,媌maau4,媒mui4,媚mei4,媛wun4,媧wo1,媲bei2,媳sik1,媵jan6,媽maa1,媾gau3,嫁gaa3,嫂sou2,嫉zat6,嫋niu1,嫌jim4,嫏long4,嫖piu4,嫗jyu2,嫘leoi4,嫠lei4,嫡dik1,嫣jin1,嫦soeng4,嫩nyun6,嫪lou6,嫰nyun6,嫲maa4,嫵mou4,嫺haan4,嫻haan4,嫽liu4,嬉hei1,嬋sim4,嬌giu1,嬗sin6,嬛hyun1,嬡oi3,嬤maa1,嬪ban3,嬰jing1,嬲nau1,嬸sam2,孀soeng1,孃noeng4,孌lyun2,子zi2,孑kit3,孓kyut3,孔hung2,孕jan6,孖maa1,字zi6,存cyun4,孚fu1,孜zi1,孝haau3,孟maang6,孢baau1,季gwai3,孤gu1,孥nou4,孩haai4,孫syun1,孬bou2,孭me1,孰suk6,孱caan3,孳zi1,孵fu1,學hok6,孺jyu4,孻laai1,孽jip6,孿lyun4,它taa1,宅zaak2,宇jyu5,守sau2,安on1,宋sung3,完jyun4,宏wang4,宓mat6,宕dong6,宗zung1,官gun1,宙zau6,定ding6,宛jyun2,宜ji4,客haak3,宣syun1,室sat1,宥jau6,宦waan6,宮gung1,宰zoi2,害hoi6,宴jin3,宵siu1,家gaa1,容jung4,宿suk1,寂zik6,寄gei3,寅jan4,密mat6,寇kau3,富fu3,寐mei6,寒hon4,寓jyu6,寞mok6,察caat3,寡gwaa2,寢cam2,寤ng6,寥liu4,實sat6,寧ning4,寨zaai6,審sam2,寫se2,寬fun1,寮liu4,寰waan4,寳bou2,寵cung2,寶bou2,寸cyun3,寺zi2,封fung1,射se6,將zoeng1,專zyun1,尉wai3,尊zyun1,尋cam4,對deoi3,導dou6,小siu2,尐dit1,少siu2,尖zim1,尚soeng6,尤jau4,尬gaai3,就zau6,尷gaam3,尸si1,尹wan5,尺cek3,尻haau1,尼nei4,尾mei5,尿niu6,局guk6,屁pei3,屄bei1,居geoi1,屆gaai3,屈wat1,屋uk1,屌diu2,屍si1,屎si2,屏ping4,屐kek6,屑sit3,展zin2,屘mei1,屙o1,屜tai3,屠tou4,屢leoi5,屣saai2,層cang4,履lei5,屬suk6,屯tyun4,山saan1,屹ngat6,岌kap1,岔caa3,岡gong1,岩ngaam4,岬gaap3,岭leng5,岱doi6,岳ngok6,岷man4,岸ngon6,峇baa1,峋seon1,峒tung4,峙zi6,峨ngo4,峭ciu3,峯fung1,峰fung1,島dou2,峻zeon3,峽hap6,崁ham3,崇sung4,崍loi4,崎kei1,崑kwan1,崔ceoi1,崖ngaai4,崗gong1,崙leon4,崛gwat6,崢zang1,崧sung1,崩bang1,崮gu3,崴wai1,崽zai2,嵊sing6,嵋mei4,嵌ham3,嵐laam4,嵛jyu4,嵩sung1,嵴zek3,嶂zoeng3,嶄zaam2,嶇keoi1,嶙leon4,嶸wing4,嶺ling5,嶼zeoi6,嶽ngok6,巉caam4,巋kwai1,巍ngai4,巒lyun4,巔din1,巖ngaam4,川cyun1,州zau1,巡ceon4,巢caau4,工gung1,左zo2,巧haau2,巨geoi6,巫mou4,差caa1,己gei2,已ji5,巳zi6,巴baa1,巷hong6,巹gan2,巾gan1,巿fat1,市si5,布bou3,帆faan4,希hei1,帎daam3,帑nou4,帔pei3,帕paak3,帖tip3,帘lim4,帚zaau2,帛baak6,帝dai3,帥seoi3,師si1,席zik6,帳zoeng3,帶daai3,帷wai4,常soeng4,帹saap3,帽mou2,幀zing3,幃wai4,幄aak1,幅fuk1,幌fong2,幔maan6,幕mok6,幗gwok3,幛zoeng3,幟ci3,幡faan1,幢dung6,幣bai6,幫bong1,干gon1,平ping4,年nin4,幸hang6,幹gon3,幺jiu1,幻waan6,幼jau3,幽jau1,幾gei2,庄zong1,庇bei3,序zeoi6,底dai2,庖paau4,店dim3,庚gang1,府fu2,度dou6,座zo6,庫fu3,庭ting4,庵am1,庶syu3,康hong1,庸jung4,庹tok3,廁ci3,廂soeng1,廈haa6,廉lim4,廊long4,廑gan2,廓gwok3,廚cyu4,廝si1,廟miu2,廠cong2,廡mou5,廢fai3,廣gwong2,廬lou4,廳teng1,廴jan5,延jin4,廷ting4,廹baak3,建gin3,廾gung2,廿jaa6,弁bin6,弄lung6,弈jik6,弊bai6,弋jik6,式sik1,弒si3,弓gung1,弔diu3,引jan5,弗fat1,弘wang4,弛ci4,弟dai6,弦jyun4,弧wu4,弩nou5,弭mai5,弮gyun2,弱joek6,弳ging3,張zoeng1,弶goeng6,強koeng4,弼bat6,彆bit3,彈daan2,彊goeng1,彌nei4,彎waan1,彗seoi6,彘zi6,彙wai6,彝ji4,彞ji4,彠wok6,形jing4,彤tung4,彥jin6,彩coi2,彪biu1,彬ban1,彭paang4,彰zoeng1,影jing2,彳cik1,彷pong4,彸zung1,役jik6,彼bei2,彿fat1,往wong5,征zing1,待doi6,徇seon1,很han2,徊wui4,律leot6,後hau6,徐ceoi4,徑ging3,徒tou4,得dak1,徘pui4,徙saai2,徛gei3,從cung4,徠loi4,御jyu6,徨wong4,復fuk6,循ceon4,徬bong6,微mei4,徵zing1,德dak1,徹cit3,徼giu1,徽fai1,心sam1,必bit1,忌gei6,忍jan2,忐taan2,忑tik1,忒tik1,忖cyun2,志zi3,忘mong4,忙mong4,忟man4,忠zung1,忡cung1,忤ng5,忪sung1,快faai3,忱sam4,忳tyun4,念nim6,忸nau2,忽fat1,忿fan5,怍zok6,怎zam2,怒nou6,怔zing1,怕paa3,怖bou3,怙wu6,怛daat3,思si1,怠toi5,怡ji4,急gap1,怦ping1,性sing3,怨jyun3,怩nei4,怪gwaai3,怯hip3,怵zeot1,恁jam6,恃ci5,恆hang4,恍fong2,恐hung2,恒hang4,恕syu3,恙joeng6,恢fui1,恣zi3,恤seot1,恥ci2,恨han6,恩jan1,恪kok3,恫dung6,恬tim5,恭gung1,息sik1,恰hap1,恿jung2,悄ciu2,悅jyut6,悉sik1,悌dai6,悍hon5,悒jap1,悔fui3,悖bui6,悚sung2,悛cyun1,悝fui1,悟ng6,悠jau4,患waan6,悧lei4,您nei5,悱fei2,悲bei1,悴seoi6,悵coeng3,悶mun6,悸gwai3,悻hang6,悼dou6,悽cai1,惃gwan2,情cing4,惆cau4,惋wun2,惑waak6,惓gyun3,惕tik1,惗nam2,惘mong5,惙zyut3,惚fat1,惜sik1,惝cong2,惟wai4,惠wai6,惡ok3,惦dim3,惰do6,惱nou5,想soeng2,惴zeoi3,惶wong4,惹je5,惺sing1,惻cak1,愁sau4,愆hin1,愈jyu6,愉jyu6,愎bik1,意ji3,愕ngok6,愚jyu4,愛oi3,愜hip3,感gam2,愣ling6,愧kwai5,愩gung1,愴cong3,愷hoi2,愾koi3,慄leot6,慇jan1,慈ci4,態taai3,慌fong1,慍wan2,慎san6,慕mou6,慘caam2,慚caam4,慟dung6,慢maan6,慣gwaan3,慧wai6,慨koi3,慪au1,慫sung2,慮leoi6,慰wai3,慳haan1,慶hing3,慷hong2,慼cik1,慾juk6,憂jau1,憊bei6,憋bit3,憎zang1,憐lin4,憑pang4,憔ciu4,憚daan6,憝deoi3,憤fan5,憧cung1,憨ham1,憩hei3,憫man5,憬ging2,憲hin3,憶jik1,憷zeot1,憸cim1,憾ham6,懂dung2,懃kan4,懇han2,懈haai6,應jing1,懊ou3,懞mung4,懟deoi6,懣mun6,懦no6,懨jim1,懮jau1,懲cing4,懵mung2,懶laan5,懷waai4,懸jyun4,懺caam3,懼geoi6,懾sip3,懿ji3,戀lyun2,戇ngong6,戈gwo1,戊mou6,戌seot1,戍syu3,戎jung4,成sing4,我ngo5,戒gaai3,戔caan4,戕coeng4,或waak6,戙dung6,戚cik1,戛aat3,戟gik1,戥dang6,戧coeng1,截zit6,戮luk6,戰zin3,戲hei3,戳coek3,戴daai3,戶wu6,戽fu3,戾leoi6,房fong4,所so2,扁bin2,扅ji4,扇sin3,扈wu6,扉fei1,扊jim5,手sau2,才coi4,扎zaat3,扑bok1,扒paa2,打daa2,扔jing4,托tok3,扚dik1,扛gong1,扠caa1,扣kau3,扤at1,扭nau2,扮baan6,扯ce2,扱caap3,扲ngam4,扳paan1,扶fu4,扷ou3,批pai1,扻ham2,扼aak1,扽dan3,找zaau2,承sing4,技gei6,抃bin6,抄caau1,抆man2,抉kyut3,把baa2,抌dam2,抏jyun4,抑jik1,抒syu1,抓zaau2,投tau4,抖dau2,抗kong3,折zit3,抝aau3,抦bing2,抨paang1,披pei1,抰joeng2,抱pou5,抵dai2,抹maat3,抻can2,押aat3,抽cau1,抿man5,拂bat6,拃zaa3,拄zyu2,担daam1,拆caak3,拇mou5,拈nim1,拉laai1,拊fu2,拋paau1,拌bun6,拍paak3,拎ling1,拐gwaai2,拑kim4,拒keoi5,拓tok3,拔bat6,拖to1,拗aau3,拘keoi1,拙zyut6,拚pun3,招ziu1,拜baai3,拞dai2,拫han4,括gwaat3,拭sik1,拮gat1,拯cing2,拱gung2,拳kyun4,拴saan1,拶zaat3,拷haau1,拼ping3,拽jai6,拾sap6,拿naa4,持ci4,指zi2,挈hit3,按on3,挍gaau3,挎kwaa3,挐jyu4,挑tiu1,挖waat3,挨aai1,挪no4,挫co3,挭gaang3,振zan3,挹jap1,挺ting5,挼no4,挽waan5,挾hip3,捅tung2,捆kwan2,捉zuk1,捋lyut3,捌baat3,捍hon5,捎saau1,捏nip6,捐gyun1,捕bou6,捧pung2,捨se2,捩lai2,捫mun4,捭baai2,据geoi3,捱ngaai4,捲gyun2,捵can2,捶ceoi4,捷zit6,捹fing6,捺naat6,捻nip6,捽cyut3,掀hin1,掁caang4,掂dim3,掃sou3,掄leon4,掅cing3,掇dyut3,授sau6,掉diu6,掌zoeng2,掏tou4,掐haap3,排paai4,掕ling4,掖jik6,掗aa2,掘gwat6,掙zang1,掛gwaa3,掝kwik1,掟deng3,掠loek6,採coi2,探taam3,掣zai3,接zip3,控hung3,推teoi1,掩jim2,措cou3,掬guk1,掮kin4,掯kang3,掰maak3,掱paa4,掹mang1,掽pung3,揀gaan2,揄jau4,揆kwai4,揇naam3,揈fang3,揉jau4,揎syun1,描miu4,提tai4,插caap3,揖jap1,揗seon5,揘waang4,揙pin1,揚joeng4,換wun6,揜jim2,揞am2,揠aat3,握aak1,揢kaa1,揣cyun2,揦laa2,揩haai1,揪zau1,揭kit3,揮fai1,揳gaat3,援wun4,揶je4,揸zaa1,揹bui3,揼dam1,搇kam2,搉gok3,搊cau1,搋caai1,損syun2,搏bok3,搐caau1,搓co1,搔sou1,搕ap1,搖jiu4,搗dou2,搛gim1,搜sau2,搞gaau2,搡song2,搣mit1,搥ceoi4,搦nik1,搪tong4,搬bun1,搭daap3,搰fat1,搲waa2,搳hat6,搴gin2,搵wan2,搶coeng2,搽caa4,搾zaa3,摀ng6,摁jan1,摎gau1,摑gwaak3,摒bing2,摔seot1,摘zaak6,摙lin2,摜gwaan3,摞lo3,摟lau2,摥tong3,摧ceoi1,摩mo1,摪zoeng1,摯zi3,摱maan1,摳kau1,摵cik1,摶tyun4,摷caau3,摸mo2,摹mou4,摺zip3,摻caam1,撂liu1,撅kyut3,撇pit3,撈laau1,撍cim4,撏cam4,撐caang1,撒saat3,撓naau4,撕si1,撖ham1,撚nan2,撛leon5,撝fai1,撞zong6,撟giu2,撠gik1,撢daan6,撣daan6,撤cit3,撥but6,撦ce2,撨siu1,撩liu4,撫fu2,撬giu6,播bo3,撮cyut3,撰zaan3,撲pok3,撳gam6,撻taat1,撼ham6,撾gwo1,撿gim2,擀gon2,擁jung2,擂leoi4,擄lou5,擅sin6,擇zaak6,擉cok3,擊gik1,擋dong2,操cou1,擎king4,擏geng6,擒kam4,擔daam1,擗bik1,擘maak3,擙ngou1,據geoi3,擝mang1,擠zai1,擡toi4,擢zok6,擤sang3,擦caat3,擪aap3,擬ji4,擮zit6,擯ban3,擰ning6,擱gok3,擲zaak6,擳zit1,擴kwong3,擷kit3,擸laap3,擺baai2,擻sau2,擾jiu2,攀paan1,攆lin5,攉fok3,攊lik6,攋laai6,攏lung5,攔laan4,攘joeng4,攙caam1,攛cyun1,攜kwai4,攝sip3,攞lo2,攢cyun4,攣lyun1,攤taan1,攥zaan6,攪gaau2,攬laam2,支zi1,攰gui6,收sau1,攸jau4,改goi2,攻gung1,放fong3,政zing3,故gu3,敆gap3,效haau6,敎gaau3,敏man5,救gau3,敕cik1,敖ngou4,敗baai6,敘zeoi6,教gaau3,敝bai6,敞cong2,敢gam2,散saan3,敦deon1,敨dau2,敬ging3,敲haau1,整zing2,敵dik6,敷fu1,數sou2,斂lim5,斃bai6,文man4,斐fei2,斑baan1,斕laan4,斗dau2,料liu2,斛huk6,斜ce4,斝gaa2,斟zam1,斡gun2,斤gan1,斥cik1,斧fu2,斫zoek3,斬zaam2,斯si1,新san1,斲doek3,斷dyun6,方fong1,於jyu1,施si1,旁pong4,旄mou4,旅leoi5,旆bui3,旋syun4,旎nei5,族zuk6,旖ji2,旗kei4,既gei3,日jat6,旦daan3,旨zi2,早zou2,旬ceon4,旭juk1,旮go1,旯lo1,旰gon3,旱hon5,旺wong6,旻man4,昀wan4,昂ngong4,昆kwan1,昇sing1,昌coeng1,明ming4,昏fan1,易ji6,昔sik1,星sing1,映jing2,春ceon1,昧mui6,昨zok3,昭ciu1,是si6,昵nik1,時si4,晃fong2,晉zeon3,晌hoeng2,晏aan3,晒saai3,晗ham4,晚maan5,晝zau3,晡bou1,晤ng6,晦fui3,晨san4,普pou2,景ging2,晰sik1,晴cing4,晶zing1,晷gwai2,智zi3,晾long6,暄hyun1,暆ji4,暇haa4,暈wan4,暉fai1,暌kwai4,暑syu2,暖nyun5,暗am3,暝ming4,暡jung2,暢coeng3,暫zaam6,暮mou6,暱nik1,暴bou6,暹cim3,曀ai3,曆lik6,曇taam4,曉hiu2,曖oi2,曙cyu5,曚mung4,曜jiu6,曝bou6,曠kwong3,曦hei1,曨lung4,曬saai3,曰joek6,曱gaat6,曲kuk1,曳jai5,更gang3,曷aat3,書syu1,曹cou4,曼maan6,曾cang4,替tai3,最zeoi3,會wui5,月jyut6,有jau5,朊jyun2,朋pang4,服fuk6,朏fei2,朐keoi4,朔sok3,朕zam6,朗long5,朘syun1,望mong6,朝ziu1,期kei4,朦mung4,朧lung4,木muk6,未mei6,末mut6,本bun2,札zaat3,朱zyu1,朴pok3,朵do2,朶do2,朽nau2,杆gon1,杈caa1,杉caam3,杌ngat6,李lei5,杏hang6,材coi4,村cyun1,杓biu1,杖zoeng6,杜dou6,杞gei2,束cuk1,杠gong1,杧mong1,杪miu5,杬jyun4,杭hong4,杯bui1,杰git6,東dung1,杳miu5,杵cyu5,杷paa4,松cung4,板baan2,枇pei4,枉wong2,枋fong1,析sik1,枒aa1,枓dau2,枕zam2,林lam4,枘jeoi6,枚mui4,果gwo2,枝zi1,枯fu1,枰ping4,枳zi2,架gaa3,枷gaa1,枸gau2,柄beng3,柏paak3,某mau5,柑gam1,柒cat1,染jim5,柔jau4,柘ze3,柚jau2,柜geoi2,柞zaa3,柢dai2,查caa4,柩gau6,柬gaan2,柯o1,柱cyu5,柳lau5,柴caai4,柵caak3,柺gwaai2,査caa4,柿ci2,栓saan1,栗leot6,校haau6,栢baak3,栩heoi2,株zyu1,栱gung2,核hat6,根gan1,格gaak3,栽zoi1,桀git6,桁haang4,桂gwai3,桃tou4,桄gwong1,桅ngai4,框kwaang1,案on3,桉on1,桌coek3,桎zat1,桐tung4,桑song1,桓wun4,桔gat1,桕kau5,桴fau4,桶tung2,桷gok2,桿gon1,梁loeng4,梅mui4,梆bong1,梏gok3,梓zi2,梔zi1,梗gang2,梘gaan2,條tiu4,梟hiu1,梢saau1,梣sam4,梦mung6,梧ng4,梨lei4,梭so1,梯tai1,械haai6,梳so1,梵faan6,棄hei3,棉min4,棋kei4,棍gwan3,棒paang5,棕zung1,棖caang4,棗zou2,棘gik1,棚paang4,棟dung6,棠tong4,棣dai6,棧zaan6,森sam1,棯nim1,棱ling4,棲cai1,棵po1,棹coek3,棺gun1,棻fan1,椅ji2,椋loeng4,植zik6,椎zeoi1,椏aa1,椒ziu1,椗ding3,椰je4,椽cyun4,椿ceon1,楂zaa1,楊joeng4,楓fung1,楔sit3,楚co2,楞ling4,楣mei4,楦hyun3,楨zing1,業jip6,楮cyu2,極gik6,楷kaai2,楸cau1,楹jing4,概koi3,榃dam4,榆jyu4,榔long4,榕jung4,榖guk1,榛zeon1,榜bong2,榦gon3,榧fei2,榨zaa3,榪maa5,榫seon2,榮wing4,榴lau4,榷kok3,榻taap3,榾gwat1,榿hei1,槃pun4,構kau3,槌ceoi4,槍coeng1,槐waai4,槓gung3,槜zeoi3,槤lin4,槨gwok3,槭cik1,槲huk6,槳zoeng2,槵waan6,槺hong1,槽cou4,樁zong1,樂lok6,樅cung1,樑loeng4,樓lau4,樖po1,標biu1,樞syu1,樟zoeng1,模mou4,樣joeng6,樵ciu4,樸pok3,樹syu6,樺waa4,樽zeon1,橄gam2,橇hiu1,橈naau4,橋kiu4,橐tok3,橕caang1,橘gwat1,橙caang2,橛kyut3,機gei1,橡zoeng6,橢to5,橫waang4,檀taan4,檄hat6,檐jam4,檔dong3,檗baak3,檢gim2,檬mung1,檯toi2,檳ban1,檸ning4,檻haam5,櫂zaau6,櫃gwai6,櫈dang3,櫓lou5,櫚leoi4,櫛zit3,櫝duk6,櫞jyun4,櫟joek6,櫥cyu4,櫪lik1,櫳lung4,櫻jing1,櫼cim1,欄laan4,權kyun4,欏lo4,欒lyun4,欖laam5,欞ling4,欠him3,次ci3,欣jan1,欬haai1,欲juk6,欶cuk1,欷hei1,欸oi1,欺hei1,欽jam1,款fun2,欿ham2,歃saap3,歇hit3,歉hip3,歌go1,歎taan3,歐au1,歔heoi1,歛lim5,歡fun1,止zi2,正zing3,此ci2,步bou6,武mou5,歧kei4,歪me2,歲seoi3,歷lik6,歸gwai1,歹daai2,死sei2,殀jiu2,殂cou4,殃joeng1,殄tin5,殆toi5,殉seon1,殊syu4,殍piu5,殖zik6,殗jip3,殘caan4,殛gik1,殜dip6,殞wan5,殤soeng1,殫daan1,殭goeng1,殮lim5,殯ban3,殲cim1,殳syu4,段dyun6,殷jan2,殺saat3,殻hok3,殼hok3,殽haau6,殿din6,毀wai2,毅ngai6,毆au2,毋mou4,母mou5,每mui5,毐aai2,毒duk6,比bei2,毖bei3,毗pei4,毛mou4,毡zin1,毫hou4,毬kau4,毯taan2,毽jin2,氂lei4,氅cong2,氈zin1,氊zin1,氏si6,民man4,氓man4,氖naai5,氘dou1,氛fan1,氟fat1,氣hei3,氤jan1,氧joeng5,氨on1,氪hak1,氫hing1,氮daam6,氯luk6,氰cing1,氳wan1,水seoi2,永wing5,氹tam5,氼nik6,氽cyun1,氾faan3,汀ding1,汁zap1,求kau4,汆cyun1,汐zik6,汕saan3,汗hon6,汙waa1,汛seon3,汝jyu5,汞gung3,江gong1,池ci4,污wu1,汨mik6,汪wong1,汰taai3,汲kap1,汶man4,決kyut3,汽hei3,汾fan4,沁sam3,沂ji4,沃juk1,沈sam2,沉cam4,沊dam2,沌deon6,沏cai1,沐muk6,沒mut6,沓daap6,沖cung1,沙saa1,沛pui3,沫mut6,沬mui6,沮zeoi1,沱to4,河ho4,沸fai3,油jau4,治zi6,沼ziu2,沽gu1,沾zim1,沿jyun4,況fong3,泄sit3,泉cyun4,泊paak3,泌bei3,泔gam1,法faat3,泗si3,泛faan6,泡pou5,波bo1,泣jap1,泥nai4,注zyu3,泮pun3,泯man5,泰taai3,泱joeng1,泳wing6,泵bam1,洄wui4,洇jan1,洋joeng4,洒ceoi1,洗sai2,洙syu4,洛lok6,洞dung6,津zeon1,洧fui2,洩sit3,洪hung4,洮tou4,洱ji5,洲zau1,洵hyun3,洶hung1,洹wun4,活wut6,洽hap1,派paai3,流lau4,浙zit3,浚zeon3,浜bong1,浠hei1,浣wun2,浦pou2,浩hou6,浪long6,浬hoi2 lei5,浮fau4,浴juk6,海hoi2,浸zam3,浹gaap3,浽neoi5,涅nip6,涇ging1,消siu1,涉sip3,涌cung1,涎jin4,涓gyun1,涔sam4,涕tai3,涪fau4,涮saan3,涯ngaai4,液jik6,涴jyun1,涵haam4,涸hok6,涼loeng4,涿doek3,淄zi1,淅sik1,淆ngaau4,淇kei4,淋lam4,淌tong2,淑suk6,淒cai1,淘tou4,淚leoi6,淝fei4,淞sung1,淠pei3,淡daam6,淤jyu1,淥luk6,淨zing6,淩ling4,淪leon4,淫jam4,淬ceoi3,淮waai4,淯juk6,淰naam5,深sam1,淳seon4,淵jyun1,混wan6,淹jim1,淺cin2,添tim1,淼miu5,清cing1,渙wun6,渚zyu2,減gaam2,渝jyu4,渠keoi4,渡dou6,渣zaa1,渤but6,渥ak1,渦wo1,渧dai3,測caak1,渭wai6,港gong2,渲hyun1,渴hot3,游jau4,渺miu5,渻saang2,渾wan6,湃baai3,湄mei4,湆jap1,湊cau3,湍teon1,湎min5,湔zin1,湖wu4,湘soeng1,湛zaam3,湟wong4,湣fan1,湧jung2,湮jin1,湯tong1,湴baan6,溉koi3,溏tong4,源jyun4,準zeon2,溘hap6,溚daap3,溜lau4,溝kau1,溟ming4,溢jat6,溦mei4,溪kai1,溫wan1,溯sou3,溲sau1,溴cau3,溶jung4,溷wan6,溺nik1,溼sap1,滂pong4,滄cong1,滅mit6,滇tin4,滋zi1,滌dik6,滎jing4,滑waat6,滓zi2,滔tou1,滕tang4,滘gaau3,滬wu6,滭bat1,滮biu1,滯zai6,滲sam3,滴dik6,滷lou5,滸wu2,滾gwan2,滿mun5,漁jyu4,漂piu1,漆cat1,漉luk6,漏lau6,漓lei4,演jin2,漚au1,漠mok6,漢hon3,漣lin4,漩syun4,漪ji2,漫maan6,漬zik1,漯taap3,漱sau3,漲zoeng3,漸zim6,漾joeng6,漿zoeng1,潁wing6,潎pik1,潑put3,潔git3,潘pun1,潛cim4,潝hap1,潢wong4,潤jeon6,潦liu2,潭taam4,潮ciu4,潰kui2,潲saau3,潷bat1,潺saan4,潼tung4,澀gip3,澄cing4,澆giu1,澇lou6,澈cit3,澎paang4,澗gaan3,澡zou2,澤zaak6,澩hok6,澱din6,澳ou3,澹daam6,激gik1,濁zuk6,濂lim4,濃nung4,濊kut3,濘ning6,濛mung4,濞bai3,濟zai3,濡jyu4,濤tou4,濫laam6,濮buk6,濯zok6,濱ban1,濺zin3,濾leoi6,瀄zit1,瀆duk6,瀉se3,瀋sam2,瀍cin4,瀎mit6,瀏lau4,瀑buk6,瀕ban1,瀘lou4,瀚hon6,瀛jing4,瀝lik1,瀟siu1,瀡seoi5,瀧lung4,瀨laai6,瀰nei4,瀾laan4,灌gun3,灑saa2,灕lei4,灘taan1,灣waan1,灤lyun4,火fo2,灰fui1,灸gau3,灼coek3,災zoi1,炆man1,炊ceoi1,炎jim4,炒caau2,炔kyut3,炕kong3,炖dan6,炙zek3,炠saap6,炩ling6,炫jyun4,炬geoi6,炭taan3,炮paau3,炯gwing2,炳bing2,炷zyu3,炸zaa3,烈lit6,烊joeng4,烏wu1,烘hung3,烙lok3,烚saap6,烜hyun1,烤haau1,烯hei1,烴ting1,烷jyun2,烹paang1,烽fung1,焉jin1,焊hon2,焌ceot1,焗guk6,焙bui6,焚fan4,焠ceoi3,無mou4,焢hung1,焦ziu1,焫naat3,焮jan1,焯zoek3,焰jim6,然jin4,煅dyun3,煉lin6,煊hyun1,煌wong4,煎zin1,煙jin1,煜juk1,煞saat3,煠saap6,煢king4,煤mui4,煥wun6,煦heoi2,照ziu3,煨wui1,煩faan4,煮zyu2,煲bou1,煸pin1,煽sin3,熄sik1,熊hung4,熏fan1,熒jing4,熔jung4,熙hei1,熛biu1,熝luk6,熟suk6,熠jap1,熢pung4,熨tong3,熬ngou4,熰au1,熱jit6,熵soeng1,熹hei1,熾ci3,燂cam4,燃jin4,燄jim6,燈dang1,燉dan6,燎liu4,燐leon4,燒siu1,燕jin3,燘fui2,燙tong3,燜mun6,營jing4,燥cou3,燦caan3,燧seoi6,燬wai2,燭zuk1,燮sip3,燴wui6,燶lung1,燻fan1,燼zeon6,燿jiu6,爆baau3,爉laap6,爍soek3,爐lou4,爛laan6,爧ling4,爨cyun3,爪zaau2,爬paa4,爭zang1,爲wai4,爵zoek3,父fu6,爸baa1,爹de1,爺je4,爽song2,爾ji5,牀cong4,牆coeng4,片pin3,版baan2,牌paai4,牒dip6,牖jau5,牘duk6,牙ngaa4,牛ngau4,牝pan5,牟mau4,牠taa1,牡maau5,牢lou4,牧muk6,物mat6,牯gu2,牲sang1,牴dai2,特dak6,牽hin1,牾ng5,犀sai1,犁lai4,犄gei1,犍gin1,犒hou3,犖lok3,犛lei4,犢duk6,犦bok6,犧hei1,犪kwai4,犬hyun2,犯faan6,犰kau4,狀zong6,狂kwong4,狄dik6,狍paau4,狎haap6,狐wu4,狒fai3,狓pei1,狗gau2,狙zeoi1,狠han2,狡gaau2,狩sau3,狳jyu4,狷gyun1,狸lei4,狹haap3,狻syun1,狼long4,狽bui3,猁lei6,猄geng1,猊ngai4,猖coeng1,猙zang1,猛maang5,猜caai1,猝cyut3,猞se3,猢wu4,猥wui1,猩sing1,猰aat3,猴hau4,猶jau4,猸mei4,猻syun1,猾waat6,猿jyun4,獁maa5,獃ngoi4,獄juk6,獅si1,獎zoeng2,獐zoeng1,獒ngou4,獕ceoi1,獗kyut3,獠liu4,獨duk6,獯fan1,獰ning4,獲wok6,獴mung4,獵lip6,獷gwong2,獸sau3,獺caat3,獻hin3,獼mei4,獾fun1,玀lo4,玃fok3,玄jyun4,率leot2,玉juk6,王wong4,玎ding1,玖gau2,玩waan2,玫mui4,玲ling4,玳doi6,玷dim3,玻bo1,珀paak3,珉man4,珊saan1,珍zan1,珓gaau3,珞lok3,珠zyu1,珥ji5,珧jiu4,班baan1,珼bui3,現jin6,球kau4,琅long4,理lei5,琉lau4,琊je4,琚geoi1,琢doek3,琥fu2,琦kei4,琪kei4,琰jim5,琳lam4,琴kam4,琵pei4,琶paa4,琺faat3,琿wan4,瑁mou6,瑋wai5,瑕haa4,瑙nou5,瑚wu4,瑛jing1,瑜jyu4,瑞seoi6,瑟sat1,瑣so2,瑤jiu4,瑩jing4,瑪maa5,瑯long4,瑰gwai3,璀ceoi1,璃lei4,璇syun4,璋zoeng1,璐lou6,璜wong4,璞pok3,璣gei1,璧bik1,璨caan3,璫dong1,環waan4,璺man4,璽saai2,瓊king4,瓏lung4,瓔jing1,瓜gwaa1,瓠wok6,瓢piu4,瓣faan6,瓤nong4,瓦ngaa5,瓴ling4,瓶ping4,瓷ci4,甄jan1,甌au1,甑zang3,甕ung3,甖aang1,甘gam1,甚sam6,甜tim4,生saang1,產caan2,産caan2,甥saang1,甦sou1,用jung6,甩lat1,甪luk6,甫fu2,田tin4,由jau4,甲gaap3,申san1,甴zaat2,男naam4,甸din1,町ding1,甾zi1,畀bei2,界gaai3,畏wai3,畔bun6,留lau4,畚bun2,畜cuk1,畝mau5,畢bat1,略loek6,番faan1,畫waa2,畬jyu4,異ji6,當dong1,畸kei1,畹jyun2,畿gei1,疆goeng1,疇cau4,疊dip6,疋ngaa5,疍daan6,疏so1,疑ji4,疔ding1,疙ngat6,疚gau3,疝saan3,疣jau4,疤baa1,疥gaai3,疫jik6,疲pei4,疵ci1,疸taan2,疹can2,疼tang4,疽zeoi1,疾zat6,疿fai2,痂gaa1,痄zaa3,病beng6,症zing3,痊cyun4,痍ji4,痑taan1,痔zi6,痕han4,痘dau2,痙ging6,痛tung3,痞pei2,痠syun1,痢lei6,痣zi3,痤co4,痦ng6,痧saa1,痰taam4,痱fai2,痲maa4,痶din2,痹bei3,痺bei3,痼gu3,痾o1,瘀jyu2,瘁seoi6,瘉jyu6,瘋fung1,瘌laat3,瘍joeng4,瘓wun6,瘕gaa1,瘙sou3,瘟wan1,瘡cong1,瘢baan1,瘤lau2,瘦sau3,瘧joek6,瘩daap3,瘰leoi4,瘴zoeng3,瘸ke4,瘼mok6,癀wong4,療liu4,癆lou4,癇gaan2,癈fai3,癌ngaam4,癍baan1,癎gaan2,癐gui6,癒jyu6,癔ji3,癖pik1,癘lai6,癟bit6,癡ci1,癢joeng5,癥zing1,癦mak2,癧lek6,癩laai3,癪zik1,癬sin2,癭jing2,癮jan5,癯keoi4,癰jung1,癱taan1,癲din1,癸gwai3,登dang1,發faat3,白baak6,百baak3,皁zou6,的dik1,皆gaai1,皇wong4,皈gwai1,皋gou1,皎gaau2,皒ngo4,皓hou6,皖wun2,皙sik1,皚ngoi4,皮pei4,皰paau3,皺zau3,皿ming5,盂jyu4,盃bui1,盅zung1,盆pun4,盈jing4,益jik1,盎ong3,盒hap6,盔kwai1,盛sing6,盜dou6,盞zaan2,盟mang4,盡zeon6,監gaam1,盤pun4,盥gun3,盧lou4,盪dong6,目muk6,盯ding1,盲maang4,直zik6,相soeng1,盼paan3,盾teon5,省saang2,眄min5,眇miu5,眈daam1,眉mei4,看hon3,眛mui6,真zan1,眠min4,眥zi6,眦zi6,眨zaam2,眩jyun4,眯mai4,眲nei6,眳ming4,眵ci1,眶kwaang1,眷gyun3,眸mau4,眺tiu3,眼ngaan5,眽maak6,着zoek6,睃ling6,睄ciu4,睇tai2,睏kwan3,睖ling6,睚ngaai4,睛zing1,睜zang1,睞loi6,睡seoi6,睢seoi1,督duk1,睥pai5,睦muk6,睨ngai6,睩luk1,睪gou1,睫zit3,睬coi2,睹dou2,睺hau1,睽kwai4,睾gou1,睿jeoi6,瞄miu4,瞅cau2,瞇mai5,瞈jung2,瞋can1,瞌hap1,瞎hat6,瞏king4,瞑ming5,瞓fan3,瞞mun4,瞠caang1,瞤seon3,瞥pit3,瞧ciu4,瞪dang1,瞬seon3,瞭liu4,瞰ham3,瞳tung4,瞸jip6,瞻zim1,瞼gim2,瞿keoi4,矇mung4,矋lai6,矍fok3,矓lung4,矖saai2,矗cuk1,矚zuk1,矛maau4,矜ging1,矢ci2,矣ji5,知zi1,矩geoi2,短dyun2,矮ai2,矯giu2,石sek6,矴ding3,矸gon1,矺zaak3,矻fat1,矽zik6,砂saa1,砌cai3,砍ham2,砒pei1,研jin4,砝faat3,砢lo2,砣to4,砥dai2,砦zaai6,砧zam1,砬laa1,砭bin1,砰ping1,砲paau3,破po3,砵but3,砷san1,砸zaak3,硃zyu1,硅gwai1,硇naau4,硐dung6,硒sai1,硝siu1,硤hap6,硨ce1,硫lau4,硬ngaang6,确kok3,硯jin2,硼paang4,碇ding3,碉diu1,碌luk1,碎seoi3,碑bei1,碓deoi3,碗wun2,碘din2,碟dip6,碣kit3,碧bik1,碩sek6,碰pung3,碳taan3,碴zaa1,確kok3,碼maa5,碾nin5,磁ci4,磅bong6,磊leoi5,磋co1,磐pun4,磕hap6,磚zyun1,磡ham3,磣cam2,磧cik1,磨mo4,磬hing3,磯gei1,磲keoi4,磷leon4,磺wong4,礁ziu1,礄kiu4,礆gaan2,礎co2,礙ngoi6,礜jyu6,礦kwong3,礪lai6,礫lik1,礬faan4,示si6,社se5,祀zi6,祁kei4,祆hin1,祇kei4,祈kei4,祉ci2,祐jau6,祓fat1,祕bei3,祖zou2,祚zou6,祛keoi1,祝zuk1,神san4,祟seoi6,祠ci4,祥coeng4,票piu3,祭zai3,祿luk6,禀ban2,禁gam3,禊hai6,禍wo6,禎zing1,福fuk1,禕ji1,禛zan1,禡maa6,禦jyu6,禧hei1,禪sim4,禮lai5,禱tou2,禳joeng4,禹jyu5,禺jyu4,禽kam4,禾wo4,禿tuk1,秀sau3,私si1,秈sin1,秉bing2,秋cau1,科fo1,秒miu5,租zou1,秣mut3,秤cing3,秦ceon4,秧joeng1,秩dit6,秸gaai1,移ji4,稀hei1,稂long4,稃fu1,稅seoi3,稈gon2,程cing4,稍saau2,稔nam5,稚zi6,稟ban2,稠cau4,稨bin2,種zung2,稱cing1,稷zik1,稻dou6,稼gaa3,稽kai1,稿gou2,穀guk1,穆muk6,穌sou1,積zik1,穎wing6,穗seoi6,穡sik1,穢wai3,穩wan2,穫wok6,穰joeng4,穴jyut6,究gau3,穹kung4,空hung1,穿cyun1,突dat6,窄zaak3,窅jiu2,窈miu5,窒zat6,窕tiu5,窖gaau3,窗coeng1,窘kwan3,窟fat1,窠fo1,窣seot1,窨jam3,窩wo1,窪waa1,窬jyu4,窮kung4,窯jiu4,窰jiu4,窸sik1,窺kwai1,窾fun2,窿lung1,竄cyun2,竅hiu3,竇dau3,竈zou3,竉lung1,竊sit3,立laap6,站zaam6,竟ging2,章zoeng1,竣zeon3,童tung4,竦sung2,竪syu6,竭kit3,端dyun1,競ging3,竹zuk1,竺zuk1,竽jyu1,竿gon1,笄gai1,笆baa1,笈kap1,笊zaau3,笋seon2,笑siu3,笙sang1,笛dek2,笞ci1,笠lap1,笥si3,符fu4,笨ban6,笪daat3,笫zi2,第dai6,笭ling4,笮zaa3,笱gau2,笸po2,笹sai3,筅sin2,筆bat1,等dang2,筊gaau2,筋gan1,筌cyun4,筍seon2,筏fat6,筐hong1,筒tung2,筓gai1,答daap3,策caak3,筮sai6,筲saau1,筵jin4,筷faai3,箆bei6,箇go3,箋zin1,箍ku1,箏zang1,箔bok6,箕gei1,算syun3,箜hung1,箝kim4,管gun2,箭zin3,箱soeng1,箴zam1,箸zyu6,節zit3,範faan6,篆syun6,篇pin1,築zuk1,篋haap6,篔wan4,篙gou1,篡saan3,篤duk1,篥leot6,篦bai1,篩sai1,篱lei4,篷pung4,篸caam2,篾mit6,簁sai1,簇cuk1,簉cau3,簋gwai2,簍lau5,簕laak6,簞daan1,簡gaan2,簣gwai6,簧wong4,簪zaam1,簫siu1,簷sim4,簸bo2,簹dong1,簽cim1,簾lim2,簿bou2,籀zau6,籃laam4,籌cau4,籍zik6,籐tang4,籙luk6,籟laai6,籠lung4,籤cim1,籬lei4,籮lo4,籲jyu6,米mai5,籽zi2,粉fan2,粑baa1,粒lap1,粕pok3,粗cou1,粘nim1,粟suk1,粢ci1,粥zuk1,粱loeng4,粲caan3,粳gaang1,粵jyut6,粹seoi6,粼leon4,精zing1,粿gwo2,糅jau2,糉zung2,糊wu4,糍ci4,糕gou1,糖tong4,糗jau2,糙cou3,糜mei4,糝saam2,糞fan3,糟zou1,糠hong1,糧loeng4,糨goeng6,糭zung2,糯no6,糰tyun4,糲lai6,糴dek6,糶tiu3,系hai6,糾gau2,紀gei2,紁caa3,紂zau6,約joek3,紅hung4,紆jyu1,紇gat1,紈jyun4,紉jan6,紊man6,紋man4,納naap6,紐nau2,紓syu1,純seon4,紕pei1,紗saa1,紙zi2,級kap1,紛fan1,紜wan4,紝jam4,素sou3,紡fong2,索sok3,紥zaat3,紫zi2,紮zaat3,累leoi6,細sai3,紳san1,紶heoi2,紹siu6,紺gam3,絀zyut3,終zung1,絃jin4,組zou2,絆bun6,結git3,絕zyut6,絛tou1,絝fu3,絞gaau2,絡lok3,絢hyun3,絣bang1,給kap1,絨jung2,絮seoi5,統tung2,絲si1,絹gyun3,綁bong2,綏seoi1,綑kwan2,經ging1,綜zung1,綟lit6,綠luk6,綢cau4,綫sin3,綬sau6,維wai4,綰waan2,綱gong1,網mong5,綳baang6,綴zeoi6,綵coi2,綷ceoi3,綸leon4,綺ji2,綻zaan6,綽coek3,綾ling4,綿min4,緄gwan2,緊gan2,緋fei1,緒seoi5,緘gaam1,緙hak1,線sin3,緝cap1,緞dyun6,締tai3,緡fan1,緣jyun4,編pin1,緩wun4,緬min5,緯wai5,緲miu5,練lin6,緻zi3,縈jing4,縉zeon3,縊ai3,縐zau3,縛bok3,縝can2,縞gou2,縟juk6,縣jyun6,縩coi3,縫fung4,縭lei4,縮suk1,縱zung3,縴hin1,縷lau5,縹piu5,總zung2,績zik1,繁faan4,繃bang1,繄ai1,繆mau4,繇jau4,繈koeng5,繑hiu1,織zik1,繕sin6,繙faan1,繚liu4,繞jiu2,繡sau3,繩sing4,繪kui2,繫hai6,繭gaan2,繮goeng1,繯jyun6,繳giu2,繹jik6,繼gai3,繽ban1,纂zyun2,纈kit3,纊kwong3,續zuk6,纍leoi4,纏cin4,纓jing1,纔coi4,纖cim1,纜laam6,缶fau2,缸gong1,缺kyut3,罄hing3,罅laa3,罈taam4,罌aang1,罍leoi4,罐gun3,罔mong5,罕hon2,罡gong1,罧sam1,罨ap1,罩zaau3,罪zeoi6,置zi3,罯am2,罰fat6,署cyu5,罵maa6,罷baa6,罹lei4,羅lo4,羆bei1,羈gei1,羊joeng4,羌goeng1,美mei5,羔gou1,羚ling4,羞sau1,羡sin6,羣kwan4,群kwan4,羥koeng5,羧so1,羨sin6,義ji6,羮gang1,羯kit3,羲hei1,羶zin1,羹gang1,羼caan2,羽jyu5,羿ngai6,翁jung1,翅ci3,翌jik6,習zaap6,翔coeng4,翕jap1,翟dik6,翠ceoi3,翡fei2,翥zyu2,翦zin2,翩pin1,翮hat6,翰hon6,翱ngou4,翳ai3,翹kiu4,翻faan1,翼jik6,耀jiu6,老lou5,考haau2,耄mou6,者ze2,耆kei4,耇gau2,耋dit6,而ji4,耍saa2,耐noi6,耒loi6,耕gaang1,耗hou3,耘wan4,耙paa4,耜ci5,耥tong2,耦ngau5,耨nau6,耳ji5,耵ding1,耶je4,耷daap3,耻ci2,耽daam1,耿gang2,聃daam1,聆ling4,聊liu4,聒kut3,聖sing3,聘ping3,聚zeoi6,聞man4,聯lyun4,聰cung1,聲sing1,聳sung2,聵kui2,聶nip6,職zik1,聹ning4,聽teng1,聾lung4,聿jyut6,肄ji6,肅suk1,肆si3,肇siu6,肉juk6,肊jik1,肋laak6,肌gei1,肏caau3,肓fong1,肖ciu3,肘zaau2,肚tou5,肛gong1,肝gon1,股gu2,肢zi1,肥fei4,肩gin1,肪fong1,肭nat6,肯hang2,肱gwang1,育juk6,肴ngaau4,肶bei2,肺fai3,肽taai3,胂san1,胃wai6,胄zau6,胆daam2,背bui3,胎toi1,胐deot1,胖bun6,胗can2,胚pui1,胝dai1,胞baau1,胡wu4,胤jan6,胥seoi1,胭jin1,胯kwaa3,胰ji4,胱gwong1,胳gok3,胴dung6,胵ci1,胸hung1,胺on1,胼pin4,能nang4,脂zi1,脅hip3,脆ceoi3,脇hip3,脈mak6,脊zek3,脌nin1,脖but6,脚goek3,脛hing5,脢mui4,脣seon4,脤san5,脧ceoi1,脫tyut3,脯fu2,脲niu6,脷lei6,脹zoeng3,脾pei4,腆tin2,腈cing1,腋jik6,腌jim1,腍jam6,腎san6,腐fu6,腑fu2,腓fei4,腔hong1,腕wun2,腚ding6,腡lo4,腥seng1,腦nou5,腧syu3,腩naam5,腫zung2,腬nau6,腮soi1,腯dat1,腰jiu1,腱gin3,腳goek3,腸coeng4,腹fuk1,腺sin3,腿teoi2,膀pong4,膁him2,膂leoi5,膃wat1,膆sou3,膇deoi3,膈gaak3,膉jik1,膊bok3,膍pei4,膏gou1,膕gwok3,膘biu1,膚fu1,膛tong4,膜mok2,膝sat1,膠gaau1,膥ceon1,膨paang4,膩nei6,膪ceoi2,膲ziu1,膳sin6,膶jeon2,膺jing1,膻daan6,膽daam2,膾kui2,膿nung4,臀tyun4,臂bei3,臃jung1,臆jik1,臉lim5,臊sou1,臌gu2,臍ci4,臏ban3,臘laap6,臟zong6,臠lyun5,臢zaam1,臣san4,臥ngo6,臨lam4,自zi6,臬jit6,臭cau3,臲jit6,至zi3,致zi3,臺toi4,臻zeon1,臼kau5,臽haam6,臾jyu4,舀jiu5,舂zung1,舄sik1,舅kau5,與jyu5,興hing1,舉geoi2,舊gau6,舋jan3,舌sit3,舍se3,舎se3,舐laai2,舒syu1,舔tim2,舖pou3,舗pou3,舘gun2,舛cyun2,舜seon3,舞mou5,舟zau1,舢saan1,舦taai5,舨baan2,航hong4,舫fong2,般bun1,舵to4,舶bok6,舷jin4,船syun4,艇teng5,艋maang5,艔dou2,艙cong1,艟cung1,艦laam6,艨mung4,艮gan3,良loeng4,艱gaan1,色sik1,艷jim6,艽gaau1,艾ngaai6,艿jing4,芋wu6,芍coek3,芎gung1,芏dou6,芑hei2,芒mong4,芙fu4,芝zi1,芡him3,芥gaai3,芪kei4,芫jim4,芬fan1,芭baa1,芯sam1,芰gei6,花faa1,芳fong1,芷zi2,芸wan4,芹kan4,芻co1,芽ngaa4,芾fai3,苑jyun2,苒jim5,苓ling4,苔toi4,苕tiu4,苗miu4,苛ho1,苜muk6,苞baau1,苟gau2,苡ji5,苣geoi6,若joek6,苦fu2,苫sim1,苯bun2,英jing1,苲zaa2,苴caa1,苷gam1,苻fu4,茀bat6,茁zyut3,茂mau6,范faan6,茄ke2,茅maau4,茉mut6,茗ming4,茘lai6,茛gan3,茜sai1,茨ci4,茫mong4,茬caa4,茭gaau1,茱zyu1,茲zi1,茳gong1,茴wui4,茵jan1,茶caa4,茸jung4,茹jyu4,茼tung4,荀seon1,荃cyun4,荇hang6,草cou2,荊ging1,荏jam5,荒fong1,荔lai6,荳dau6,荷ho4,荸but6,荼tou4,荽sai1,莆pou4,莉lei6,莊zong1,莎saa1,莒geoi2,莓mui4,莖ging3,莘san1,莞gun2,莠jau5,莢gaap3,莧jin6,莨loeng4,莩fu1,莫mok6,莽mong5,菁cing1,菂dik1,菅gaan1,菇gu1,菊guk1,菌kwan2,菓gwo2,菖coeng1,菜coi3,菟tou3,菠bo1,菢bou6,菩pou4,菪dong6,華waa4,菰gu1,菱ling4,菲fei1,菴am1,菸jin1,萁kei4,萃seoi6,萄tou4,萇coeng4,萊loi4,萋cai1,萌mang4,萍ping4,萎wai2,萘noi6,萜tip3,萣ding6,萬maan6,萱hyun1,萵wo1,萸jyu4,萹bin1,落lok6,葆bou2,葉jip6,著zoek3,葙soeng1,葚sam4,葛got3,葡pou4,董dung2,葦wai5,葩baa1,葫wu4,葬zong3,葵kwai4,葷fan1,葺cap1,葾jyun1,蒂dai3,蒐sau1,蒔si4,蒙mung4,蒜syun3,蒞lei6,蒟geoi2,蒡bong2,蒲pou4,蒸zing1,蒺zaat6,蒻joek6,蒼cong1,蒿hou1,蓄cuk1,蓆zik6,蓉jung4,蓊jung2,蓋goi3,蓐juk6,蓑so1,蓓pui4,蓖bei1,蓬pung4,蓮lin4,蓽bat1,蓿suk1,蔃goeng2,蔑mit6,蔓maan6,蔔baak6,蔗ze3,蔘sam1,蔚wai3,蔞lau4,蔟cau3,蔡coi3,蔣zoeng2,蔥cung1,蔫jin1,蔬so1,蔭jam3,蔴maa4,蔸dau1,蔻kau3,蔽bai3,蕁cam4,蕃faan1,蕈cam5,蕉ziu1,蕊jeoi5,蕌leoi5,蕎kiu4,蕓wan4,蕙wai6,蕞zeoi3,蕠jyu4,蕤jeoi6,蕨kyut3,蕩dong6,蕪mou4,蕭siu1,蕹ung3,蕺cap1,蕻hung4,蕾leoi4,薂hat6,薄bok6,薅hou1,薇mei4,薈wai3,薊gai3,薌hoeng1,薏ji3,薑goeng1,薔coeng4,薘daat6,薛sit3,薦zin3,薩saat3,薪san1,薯syu4,薰fan1,薳jyun5,薸piu1,薹toi4,薺cai5,藉ze3,藊bin2,藍laam4,藏cong4,藐miu5,藕ngau5,藘leoi4,藜lai4,藝ngai6,藞lo5,藤tang4,藥joek6,藩faan4,藪sau2,藹oi2,藺leon6,藻zou2,藿fok3,蘅hang4,蘆lou4,蘇sou1,蘊wan5,蘋ping4,蘑mo4,蘘joeng4,蘚sin2,蘢lung4,蘭laan4,蘵zik1,蘸zaam3,蘼mei4,蘿lo4,虉jik6,虎fu2,虐joek6,虔kin4,處cyu3,虛heoi1,虜lou5,虞jyu4,號hou6,虢gwik1,虧kwai1,虫cung4,虯kau4,虱sat1,虹hung4,虺fui1,虻mang4,蚊man1,蚌pong5,蚍pei4,蚓jan5,蚖jyun4,蚝ci3,蚣gung1,蚤zou2,蚧gaai3,蚪dau2,蚯jau1,蚰jau4,蚱zaa3,蚴jau2,蚵ho4,蚶ham1,蚺jim4,蛀zyu3,蛄gu1,蛆zeoi1,蛇se4,蛉ling4,蛋daan2,蛐kuk1,蛔wui4,蛙waa1,蛛zyu1,蛞fut3,蛟gaau1,蛤gap3,蛭zat6,蛸saau1,蛹jung2,蛻seoi3,蛾ngo4,蜀suk6,蜂fung1,蜃san6,蜆hin2,蜇zit3,蜈ng4,蜉fau4,蜊lei4,蜍ceoi4,蜎gyun1,蜐gip3,蜑daan6,蜒jin4,蜓ting4,蜘zi1,蜚fei2,蜜mat6,蜞kei4,蜢maang2,蜣goeng1,蜥sik1,蜴jik6,蜷kyun4,蜻cing1,蜿jyun1,蝌fo1,蝎kit3,蝓jyu4,蝕sit6,蝗wong4,蝙pin1,蝞mei6,蝟wai6,蝠fuk1,蝦haa1,蝨sat1,蝮fuk1,蝰fui1,蝲laat6,蝴wu4,蝶dip6,蝸wo1,蝻naam4,蝽ceon1,螂long4,螃pong4,螄si1,螅sik1,螆zi1,螈jyun4,螉jung1,融jung4,螗tong4,螞maa5,螢jing4,螬cou4,螭ci1,螯ngou4,螳tong4,螵piu1,螺lo4,螻lau4,螽zung1,蟀seot1,蟄zaap6,蟆maa4,蟈gwok3,蟊maau4,蟋sik1,蟎mun5,蟑zoeng1,蟒mong5,蟛paang4,蟝keoi2,蟠pun4,蟣gei1,蟥wong4,蟧lou4,蟪wai6,蟬sim4,蟮sin6,蟯jiu4,蟲cung4,蟶cing1,蟹haai5,蟻ngai5,蟾sim4,蠄kam4,蠅jing4,蠆caai3,蠊lim4,蠍kit3,蠐cai4,蠑wing4,蠓mung2,蠔hou4,蠕jyu4,蠛mit6,蠟laap6,蠢ceon2,蠣lai6,蠨siu1,蠮jit6,蠱gu2,蠲gyun1,蠵kwai4,蠶caam4,蠹dou3,蠻maan4,血hyut3,衆zung3,衊mit6,行haang4,衍hin2,術seot6,衕dung6,街gaai1,衙ngaa4,衚wu4,衛wai6,衝cung1,衡hang4,衣ji1,表biu2,衩caa3,衫saam1,衰seoi1,衲naap6,衷cung1,衽jam5,衾kam1,衿kam1,袁jyun4,袂mai6,袈gaa1,袋doi6,袍pou4,袐bat1,袒taan2,袓ze1,袖zau6,袞gwan2,被bei6,袱fuk6,袴fu3,袷gaap3,袼gaak3,裁coi4,裂lit6,裇seot1,裊niu5,裎cing2,裏leoi5,裒fau4,裔jeoi6,裕jyu6,裘kau4,裙kwan4,補bou2,裝zong1,裟saa1,裡leoi5,裨pei4,裰zyut3,裱biu2,裳soeng4,裴pui4,裸lo2,裹gwo2,製zai3,褂gwaa3,複fuk1,褐hot3,褒bou1,褓bou2,褙bui3,褡daap3,褥juk6,褦le5,褪tan3,褫ci2,褲fu3,褳lin4,褵lei4,褶zaap3,褸lau1,褻sit3,襁koeng5,襄soeng1,襖ou2,襟kam1,襠dong1,襤laam4,襦jyu4,襪mat6,襬baai2,襯can3,襲zaap6,襶daai3,西sai1,要jiu3,覆fuk1,覇baa3,覈hat6,覊gei1,見gin3,規kwai1,覓mik6,視si6,覘cim1,覡hat6,覦jyu4,親can1,覬gei3,覮jing4,覲gan3,覴dang1,覷ceoi3,覺gok3,覽laam5,觀gun1,角gok3,觔gan1,觜zeoi2,解gaai2,觥gwang1,觫cuk1,觱bat1,觳huk6,觵gwang1,觸zuk1,言jin4,訂ding6,訃fu6,計gai3,訊seon3,訌hung3,討tou2,訓fan3,訕saan3,訖ngat6,託tok3,記gei3,訛ngo4,訝ngaa6,訟zung6,訣kyut3,訥naap6,訪fong2,訬caau1,設cit3,許heoi2,訴sou3,訶ho1,診can2,註zyu3,証zing3,訾ci1,詁gu2,詆dai2,詈lei6,詎geoi6,詏aau2,詐zaa3,詔ziu3,評ping4,詛zo3,詞ci4,詠wing6,詡heoi2,詢seon1,詣ngai6,試si3,詩si1,詫caa3,詬gau3,詭gwai2,詮cyun4,詰kit3,話waa6,該goi1,詳coeng4,詹zim1,詼fui1,誅zyu1,誆gwaang6,誇kwaa1,誌zi3,認jing6,誑gwong2,誓sai6,誕daan3,誘jau5,語jyu5,誠sing4,誡gaai3,誣mou4,誤ng6,誦zung6,誨fui3,說syut3,誰seoi4,課fo3,誹fei2,誼ji4,調diu6,諂cim2,諄deon1,談taam4,諉wai2,請cing2,諍zaang3,諒loeng6,論leon6,諗nam2,諛jyu4,諜dip6,諢wan6,諤ngok6,諦dai3,諧haai4,諫gaan3,諭jyu6,諮zi1,諱wai5,諳am1,諷fung3,諸zyu1,諺jin6,諾nok6,謀mau4,謁jit3,謂wai6,謄tang4,謅zau3,謊fong1,謎mai4,謐mat6,謔joek6,謗pong3,謙him1,謚si3,講gong2,謝ze6,謠jiu4,謦hing3,謨mou4,謫zaak6,謬mau6,謹gan2,謾maan4,譁waa1,譅sap1,證zing3,譎kyut3,譏gei1,譖zam3,識sik1,譚taam4,譜pou2,譠taan1,警ging2,譫zim1,譬pei3,譭wai2,譯jik6,議ji5,譴hin2,護wu6,譽jyu6,讀duk6,變bin3,讌jin3,讒caam4,讓joeng6,讕laan4,讖caam3,讚zaan3,谷guk1,谿hai4,豁kut3,豆dau6,豇gong1,豈hei2,豉si6,豌wun1,豎syu6,豐fung1,豔jim6,豕ci2,豚tyun4,豞kau3,象zoeng6,豪hou4,豫jyu6,豬zyu1,豸zi6,豹paau3,豺caai4,貂diu1,貅jau1,貉hok6,貊maak6,貌maau6,貎maau6,貐jyu5,貓maau1,貔pei4,貝bui3,貞zing1,負fu6,財coi4,貢gung3,貧pan4,貨fo3,販faan5,貪taam1,貫gun3,責zaak3,貯cyu5,貲zi1,貳ji6,貴gwai3,貶bin2,買maai5,貸taai3,費fai3,貼tip3,貽ji4,貿mau6,賀ho6,賂lou6,賃jam6,賄kui2,賅goi1,資zi1,賈gaa2,賊caak6,賑zan3,賒se1,賓ban1,賙zau1,賜ci3,賞soeng2,賠pui4,賢jin4,賣maai6,賤zin6,賦fu3,質zat1,賬zoeng3,賭dou2,賴laai6,賺zaan6,購kau3,賽coi3,贄zi3,贅zeoi6,贈zang6,贊zaan3,贋ngaan6,贍sin6,贏jeng4,贓zong1,贔bei6,贖suk6,贗ngaan6,贛gam3,赤cek3,赦se3,赧naan5,赫hak1,赭ze2,走zau2,赳gau2,赴fu6,起hei2,赸saan3,趁can3,趄ce3,超ciu1,越jyut6,趌gat6,趑ci1,趔lit6,趕gon2,趙ziu6,趟tong3,趢luk6,趣ceoi3,趨ceoi1,趯dek3,趲zaan2,足zuk1,趴paa1,趷gat6,趺fu1,趻cam2,趼gaan2,趾zi2,趿cap1,跂kei4,跆toi4,跈din2,跉ling4,跋but6,跌dit3,跎to4,跏gaa1,跑paau2,跚saan1,跛bai1,距keoi5,跟gan1,跡zik1,跣sin2,跤gaau1,跨kwaa1,跩jai6,跪gwai6,路lou6,跲gaap3,跳tiu3,跴caai2,踅ci3,踉loeng6,踊jung2,踎mau1,踏daap6,踐cin5,踘guk1,踜ling4,踝waa5,踞geoi3,踟ci4,踢tek3,踣baak6,踥cip3,踩caai2,踪zung1,踭zaang1,踮dim2,踱dok6,踵zung2,踶ci4,踹jaai2,踺gin6,踿zuk1,蹀dip6,蹂jau4,蹄tai4,蹅caa1,蹆tan3,蹇gin2,蹈dou6,蹉co1,蹊hai4,蹋daap6,蹌coeng1,蹔zaam6,蹙cuk1,蹚tong1,蹟zik1,蹣mun4,蹤zung1,蹦bang1,蹧zou1,蹩bit6,蹬dang1,蹭sang3,蹲deon1,蹴cuk1,蹶kyut3,蹸leon6,蹺hiu1,蹻giu2,蹼buk6,躀gwaan3,躁cou3,躂taat3,躆geoi3,躇cyu4,躉dan2,躊cau4,躋zai1,躍joek6,躓zi3,躔cin4,躕ceoi4,躙leon6,躚sin1,躝laan1,躞sip3,躡nip6,躥cyun1,躪leon6,身san1,躬gung1,躭daam1,躲do2,躺tong2,躽jin2,軀keoi1,軃do2,車ce1,軋aat3,軌gwai2,軍gwan1,軒hin1,軔jan6,軚taai5,軛aak1,軟jyun5,軨ling4,軫zan2,軭waang1,軲gu1,軸zuk6,軻o1,軼jat6,軾sik1,輂guk1,較gaau3,載zoi3,輊zi3,輋ce4,輒zip3,輓waan5,輔fu6,輕hing1,輛loeng6,輜zi1,輝fai1,輟zyut3,輦lin5,輩bui3,輪leon4,輯cap1,輸syu1,輻fuk1,輾zin2,輿jyu4,轂gu1,轄hat6,轅jyun4,轆luk1,轇gaau1,轉zyun3,轍cit3,轎kiu2,轕got3,轟gwang1,轡bei3,辛san1,辜gu1,辟pik1,辣laat6,辦baan6,辨bin6,辭ci4,辮bin1,辯bin6,辰san4,辱juk6,農nung4,辻sap6,迂jyu1,迄ngat6,迅seon3,迆ji4,迎jing4,近gan6,迓ngaa6,返faan2,迢tiu4,迥gwing2,迦gaa1,迪dik6,迫bik1,迭dit6,迮zaak3,述seot6,迴wui4,迷mai4,迸bing3,迹zik1,追zeoi1,迾laat6,退teoi3,送sung3,逃tou4,逅hau6,逆jik6,逍siu1,透tau3,逐zuk6,途tou4,逕ging3,逗dau6,這ze2,通tung1,逛kwaang3,逝sai6,逞cing2,速cuk1,造zou6,逡ceon1,逢fung4,連lin4,逮dai6,週zau1,進zeon3,逳juk1,逸jat6,逼bik1,逾jyu6,遁deon6,遂seoi6,遄cyun2,遇jyu6,遊jau4,運wan6,遍pin3,過gwo3,遏aat3,遐haa4,遑wong4,遒cau4,道dou6,達daat6,違wai4,遙jiu4,遛lau6,遜seon3,遞dai6,遠jyun5,遢taap3,遣hin2,遨ngou4,適sik1,遭zou1,遮ze1,遯deon6,遱lau4,遲ci4,遴leon4,遵zeon1,遷cin1,選syun2,遺wai4,遼liu4,遽geoi6,避bei6,邀jiu1,邁maai6,邂haai5,邃seoi6,還waan4,邇ji5,邈miu5,邊bin1,邋laap6,邏lo4,邑jap1,邕jung1,邛kung4,邢jing4,那naa5,邦bong1,邨cyun1,邪ce4,邯hon4,邱jau1,邵siu6,邸dai2,郁juk1,郊gaau1,郎long4,郞long4,郡gwan6,郢cing2,郤gwik1,部bou6,郭gwok3,郵jau4,都dou1,鄂ngok6,鄄gyun3,鄉hoeng1,鄒zau1,鄙pei2,鄧dang6,鄭zeng6,鄰leon4,鄲daan1,鄴jip6,酉jau5,酊ding2,酋jau4,酌zoek3,配pui3,酎zau6,酒zau2,酗jyu3,酚fan1,酡to4,酢zok6,酣ham4,酥sou1,酩ming5,酪lok3,酬cau4,酮tung4,酯zi2,酰sin1,酲cing4,酵haau1,酶mui4,酷huk6,酸syun1,醃jip3,醇seon4,醉zeoi3,醋cou3,醌kwan1,醍tai4,醐wu4,醒sing2,醚mai4,醛cyun4,醜cau2,醞wan5,醣tong4,醫ji1,醬zoeng3,醮ziu3,醴lai5,醺fan1,釀joeng6,釁jan6,釅jim6,采coi2,釉jau6,釋sik1,里lei5,重cung4,野je5,量loeng4,釐lei4,金gam1,釘ding1,釜fu2,針zam1,釣diu3,釦kau3,釩faan4,釵caai1,釺cin1,鈀baa2,鈉naap6,鈍deon6,鈒kap1,鈔caau1,鈕nau2,鈞gwan1,鈣koi3,鈦taai3,鈪aak2,鈴ling4,鈷gu1,鈸but6,鈾jau2,鉀gaap3,鉅geoi6,鉆cim1,鉈si1,鉑bok6,鉗kim4,鉛jyun4,鉞jyut6,鉢but3,鉤ngau1,鉧mou5,鉸gaau2,銀ngan4,銃cung3,銅tung4,銑sin2,銖zyu1,銘ming5,銜haam4,銨on1,銬kaau3,銯mik6,銲hon6,銳jeoi6,銶kau4,銷siu1,銻tai1,銼co3,鋁leoi5,鋃long4,鋅san1,鋇bui3,鋌ding6,鋏gaap3,鋒fung1,鋤co4,鋥caang3,鋩mong4,鋪pou1,鋰lei5,鋸goe3,鋹coeng2,鋼gong3,錄luk6,錐zeoi1,錕gwan1,錘ceoi4,錚zang1,錠ding3,錢cin2,錦gam2,錨naau4,錫sek3,錮gu3,錯co3,錳maang5,錶biu1,鍁hin1,鍊lin6,鍋wo1,鍍dou6,鍘zaap6,鍛dyun3,鍟seng3,鍥kit3,鍪mau4,鍬ciu1,鍵gin6,鍼zam1,鍾zung1,鎂mei5,鎅gaai3,鎊bong6,鎔jung4,鎖so2,鎗caang1,鎚ceoi4,鎢wu1,鎦lau4,鎧hoi2,鎩saat3,鎬gou2,鎮zan3,鎳nip1,鏃zuk1,鏇syun4,鏈lin2,鏊ngou4,鏍lo4,鏗hang1,鏘coeng1,鏟caan2,鏡geng3,鏢biu1,鏤lau6,鏨zaam6,鏰bang1,鏹koeng5,鏽sau3,鏾sin3,鐃naau4,鐐liu4,鐔cam4,鐗gaan2,鐘zung1,鐙dang1,鐧gaan2,鐫syun6,鐮lim4,鐱cim1,鐲zuk6,鐳leoi4,鐵tit3,鐸dok6,鐺dong1,鑄zyu3,鑊wok6,鑑gaam3,鑒gaam3,鑔caa2,鑞laap6,鑠soek3,鑣biu1,鑫jam1,鑰joek6,鑲soeng1,鑷nip6,鑼lo4,鑽zyun3,鑾lyun4,鑿zok6,長coeng4,镽liu4,門mun4,閂saan1,閃sim2,閉bai3,開hoi1,閎wang4,閏jeon6,閒haan4,間gaan1,閔man5,閘zaap6,閡goi1,閣gok3,閤gap3,閥fat6,閦cuk1,閨gwai1,閩man5,閪hai1,閫kwan2,閭leoi4,閱jyut6,閲jyut6,閹jim1,閻jim4,閾wik6,闃gwik1,闆baan2,闈wai4,闊fut3,闌laan4,闍dou1,闐tin4,闔hap6,闕kyut3,闖cong2,闙kai2,關gwaan1,闡zin2,闢pik1,闥taat3,阜fau6,阡cin1,阪baan2,阮jyun2,阱zeng2,防fong4,阻zo2,阿aa3,陀to4,陂bei1,附fu6,陋lau6,陌mak6,降gong3,限haan6,陛bai6,陝sim2,陡dau2,院jyun2,陣zan6,除ceoi4,陪pui4,陰jam1,陲seoi4,陳can4,陴pei4,陵ling4,陶tou4,陷ham6,陸luk6,陽joeng4,隄tai4,隅jyu4,隆lung4,隉jit6,隊deoi6,隋ceoi4,隍wong4,階gaai1,隔gaak3,隕wan5,隘aai3,隙kwik1,際zai3,障zoeng3,隠jan2,隣leon4,隧seoi6,隨ceoi4,險him2,隱jan2,隴lung5,隸dai6,隻zek3,隼zeon2,雀zoek3,雁ngaan6,雄hung4,雅ngaa5,集zaap6,雇gu3,雉zi6,雋zeon3,雌ci1,雍jung1,雕diu1,雖seoi1,雙soeng1,雛co1,雜zaap6,雞gai1,離lei4,難naan4,雨jyu5,雪syut3,雫lo5,雯man4,雲wan4,零ling4,雷leoi4,雹bok6,電din6,需seoi1,霄siu1,霆ting4,震zan3,霉mui4,霍fok3,霎saap3,霓ngai4,霖lam4,霜soeng1,霞haa4,霧mou6,霰sin3,露lou6,霸baa3,霹pik1,霽zai3,霾maai4,靂lik1,靄oi2,靈ling4,靑ceng1,青cing1,靖zing6,靚leng3,靛din6,靜zing6,非fei1,靠kaau3,靡mei4,面min6,靦din2,革gaak3,靪ding1,靭jan6,靴hoe1,靶baa2,靼daat3,靿aau2,鞅joeng1,鞋haai4,鞍on1,鞏gung2,鞘ciu3,鞠guk1,鞣jau4,鞦cau1,鞫guk1,鞭bin1,韁goeng1,韃taat3,韆cin1,韋wai5,韌jan6,韓hon4,韙wai5,韜tou1,韞wan3,韭gau2,韮gau2,音jam1,韶siu4,韻wan5,響hoeng2,頁jip6,頂ding2,頃king2,項hong6,順seon6,頇hon1,須seoi1,頌zung6,預jyu6,頑waan4,頒baan1,頓deon6,頕daam1,頗po2,領ling5,頜hap6,頡kit3,頤ji4,頦goi2,頭tau4,頰gaap3,頷ham5,頸geng2,頹teoi4,頻pan4,頽teoi4,顆fo2,題tai4,額ngaak6,顎ngok6,顏ngaan4,顒jung4,顔ngaan4,顗ngai5,願jyun6,顛din1,類leoi6,顢mun1,顥hou6,顧gu3,顫zin3,顯hin2,顰pan4,顱lou4,顳nip6,顴kyun4,風fung1,颭zim2,颯saap3,颱toi4,颳gwaat3,颶geoi6,颺joeng4,颻jiu4,颼sau1,飄piu1,飆biu1,飛fei1,食sik6,飢gei1,飣ding3,飧syun1,飩tan1,飪jam6,飭cik1,飯faan6,飲jam2,飴ji4,飼zi6,飽baau2,飾sik1,餃gaau2,餄hap6,餅beng2,餈ci4,餉hoeng2,養joeng5,餌nei6,餎lok3,餐caan1,餑but6,餒neoi5,餓ngo6,餔bou1,餘jyu4,餚ngaau4,餛wan4,餞zin3,餡haam2,館gun2,餬wu4,餮tit3,餲aai3,餵wai3,餸sung3,餼hei3,餾lau6,餿sau1,饃mo4,饅maan6,饈sau1,饉gan2,饊saan2,饋gwai6,饌zaan6,饑gei1,饒jiu4,饔jung1,饕tou1,饗hoeng2,饜jim3,饞caam4,饢nong4,首sau2,馗kwai4,香hoeng1,馠ham4,馥fuk1,馨hing1,馬maa5,馭jyu6,馮fung4,馱to4,馳ci4,馴seon4,駁bok3,駐zyu3,駑nou4,駒keoi1,駕gaa3,駙fu6,駛sai2,駝to4,駟si3,駢pin4,駭haai5,駮bok3,駱lok6,駿zeon3,騁cing2,騃daai1,騎ke4,騏kei4,騖mou6,騙pin3,騫hin1,騭zat1,騮lau4,騰tang4,騶zau1,騷sou1,騸sin3,騾leoi4,驀mak6,驁ngou4,驅keoi1,驌suk1,驍hiu1,驎leon4,驕giu1,驗jim6,驚ging1,驛jik6,驟zaau6,驢lou4,驥kei3,驦soeng1,驪lei4,骨gwat1,骯kong3,骰sik1,骶dai2,骷fu1,骸hoi4,骹haau1,骺hau4,骼gaak3,骾gang2,骿pin4,髀bei2,髆bok3,髏lau4,髒zong1,髓seoi5,體tai2,髖fun1,高gou1,髣fong2,髦mou4,髧daam6,髭zi1,髮faat3,髯jim4,髴fai3,髹jau1,髻gai3,鬃cung4,鬆sung1,鬍wu4,鬒can2,鬙sang1,鬚sou1,鬟waan4,鬢ban3,鬣lip6,鬥dau3,鬧naau6,鬨hung3,鬩jik1,鬭dau3,鬮gau1,鬱wat1,鬻juk6,鬼gwai2,魁fui1,魂wan4,魃baat6,魄paak3,魅mei6,魆fat1,魍mong5,魎loeng5,魏ngai4,魔mo1,魘jim2,魚jyu2,魟gung1,魠tok3,魣jyu4,魨tyun4,魯lou5,魷jau4,魽haam4,鮋jau4,鮍pei4,鮎nim4,鮐toi1,鮑baau1,鮒fu6,鮓zaa2,鮨kei4,鮪fui2,鮫gaau1,鮮sin1,鯁gang2,鯇waan5,鯉lei5,鯊saa1,鯔zi1,鯕kei4,鯗soeng2,鯛diu1,鯧coeng1,鯨king4,鯪ling4,鯭maang1,鯰nim4,鯽zik1,鯿bin1,鰂caak6,鰆ceon1,鰈dip6,鰍cau1,鰐ngok6,鰓soi1,鰟fong4,鰥gwaan1,鰨taap3,鰩jiu4,鰭kei4,鰮wan1,鰱lin4,鰲ngou4,鰹gin1,鰻maan6,鰽cau4,鰾piu5,鱀kei3,鱅jung4,鱆zeon1,鱈syut3,鱉bit3,鱒zyun1,鱔sin5,鱗leon4,鱝fan5,鱟hau6,鱠kui2,鱥gwai3,鱧lai5,鱭cai5,鱲laap6,鱷ngok6,鱸lou4,鱺lei4,鳥niu5,鳧fu4,鳩gau1,鳯fung6,鳳fung6,鳴ming4,鳶jyun1,鳽gin1,鳾si1,鴆zam6,鴇bou2,鴉aa1,鴒ling4,鴔fuk6,鴕to4,鴛jyun1,鴝keoi4,鴞hiu1,鴟ci1,鴣gu1,鴦joeng1,鴨aap3,鴴hang4,鴷lit6,鴻hung4,鴿gaap3,鵂jau1,鵐mou4,鵑gyun1,鵒juk6,鵓but6,鵖gip3,鵛ging1,鵜tai4,鵝ngo4,鵟kong4,鵠huk6,鵡mou5,鵪am1,鵬paang4,鵯bei1,鵰diu1,鵲coek3,鵾gwan1,鶇dung1,鶉ceon1,鶖cau1,鶘wu4,鶚ngok6,鶥mei4,鶩mou6,鶪gwik1,鶯ang1,鶲jung1,鶴hok6,鶹lau4,鶺zek3,鶻gwat1,鶼gim1,鶿ci4,鷂jiu4,鷈tai1,鷉tai1,鷓ze3,鷗au1,鷚lau4,鷦ziu1,鷯liu1,鷲zau6,鷳haan4,鷸wat6,鷹jing1,鷺lou6,鷿pik1,鸊pik1,鸌wok6,鸏mung4,鸕lou4,鸚jing1,鸛gun3,鸝lei4,鸞lyun4,鹵lou5,鹹haam4,鹼gaan2,鹽jim4,鹿luk6,麂gei2,麇gwan1,麈zyu2,麒kei4,麓luk1,麖ging1,麗lai6,麝se6,麟leon4,麥mak6,麩fu1,麪min6,麴guk1,麻maa4,麼mo1,麾fai1,黃wong4,黅gam1,黇tin1,黍syu2,黎lai4,黏nim1,黐ci1,黑hak1,黔kim4,默mak6,黚kim4,黛doi6,黜zeot1,黝jau2,點dim2,黠kit3,黢zeot1,黨dong2,黯am3,黴mei4,黷duk6,黸lou1,黹zi2,鼆man4,鼉to4,鼎ding2,鼓gu2,鼠syu2,鼩keoi4,鼬jau2,鼯ng4,鼱cing1,鼴jin2,鼷hai4,鼻bei6,鼾hon4,齊cai4,齋zaai1,齎zai1,齏zai1,齒ci2,齕hat6,齙baau6,齜caai4,齟zeoi2,齡ling4,齣ceot1,齦ngan4,齧jit3,齪cuk1,齬jyu5,齮ji2,齱cuk1,齲geoi2,齵jyu4,齶ngok6,齷ak1,龍lung4,龐pong4,龔gung1,龕am1,龜gwai1";
+
   /* rules and roots: character parts, sound families, sound shifts between languages, and each language's "axioms" */
 
   const RAD = {
@@ -1664,6 +1721,33 @@
       ["Anderson, Vocabulary and the Brain: evidence from neuroimaging", "https://arxiv.org/abs/1611.10003"],
     ]],
   ];
+
+
+  /* every Chinese character in explanations gets its sound on top, so nothing is ever shown without a pronunciation */
+
+  let ZR = null;
+
+  function zhSounds() {
+    if (ZR) return ZR;
+    const cnt = new Map();
+    PHRASES.forEach(p => (p.yue || []).forEach(t => {
+      const cs = [...(t.hz || "")];
+      const ss = String(t.rom || "").trim().split(/\s+/);
+      if (cs.length !== ss.length) return;
+      cs.forEach((c, i) => { const k = c + "|" + ss[i]; cnt.set(k, (cnt.get(k) || 0) + 1); });
+    }));
+    ZR = new Map();
+    const best = new Map();
+    cnt.forEach((n, k) => { const [c, s] = k.split("|"); if (!best.has(c) || n > best.get(c)) { best.set(c, n); ZR.set(c, s); } });
+    Object.entries(PHON).forEach(([c, v]) => { if (!ZR.has(c)) ZR.set(c, v[0]); });
+    JYUT_RAW.split(",").forEach(x => { const c = x[0]; if (c && !ZR.has(c)) ZR.set(c, x.slice(1)); });
+    return ZR;
+  }
+
+  function zhRuby(html) {
+    const m = zhSounds();
+    return String(html).split(/(<[^>]+>)/).map(part => part.startsWith("<") ? part : part.replace(/[㐀-鿿]/g, c => m.has(c) ? `<ruby>${c}<rt>${esc(romText("yue", m.get(c)))}</rt></ruby>` : c)).join("");
+  }
 
 
   const LANES = ["tsn", "yue", "en", "cmn", "es", "fr", "de"];
@@ -2864,7 +2948,7 @@
     return row;
   }
 
-  const noteHtml = t => esc(t).replace(/⟨(?:(yue|cmn|tsn):)?([^⟩]*)⟩/g, (m, lang, r) => `<span class="nr">${romText(lang || "yue", r)}</span>`);
+  const noteHtml = t => zhRuby(esc(t)).replace(/⟨(?:(yue|cmn|tsn):)?([^⟩]*)⟩/g, (m, lang, r) => `<span class="nr">${romText(lang || "yue", r)}</span>`);
 
   function renderDetail(p) {
     const box = el("div", "detail");
@@ -2972,7 +3056,7 @@
     if (hk.length) {
       const hb = el("div", "hooks");
       hb.appendChild(el("div", "label", esc(tr("hooks_h"))));
-      hk.slice(0, 5).forEach(([l, w, h]) => hb.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${l === "cmn" ? "hz-cmn" : l === "en" ? "" : "hz-yue"}">${esc(w)}</b> ${noteHtml(h[1])}</span>`)));
+      hk.slice(0, 5).forEach(([l, w, h]) => hb.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${l === "cmn" ? "hz-cmn" : l === "en" ? "" : "hz-yue"}">${zhRuby(esc(w))}</b> ${noteHtml(h[1])}</span>`)));
       lr.appendChild(hb);
     }
     if (lr.children.length) box.appendChild(lr);
@@ -5082,7 +5166,7 @@
       if (!ZH.has(lang)) (p.gloss || []).forEach(g => { const k = g.toLowerCase().replace(/[^a-z ]/g, "").trim(); if (EU_HOOKS[k]) hooks.push([g, ["bridge", EU_HOOKS[k]]]); });
       if (hooks.length) {
         const hk = el("div", "pr-hooks");
-        hooks.slice(0, 3).forEach(([w, h]) => hk.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${ZH.has(lang) ? cls : ""}">${esc(w)}</b> ${esc(h[1])}</span>`)));
+        hooks.slice(0, 3).forEach(([w, h]) => hk.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${ZH.has(lang) ? cls : ""}">${zhRuby(esc(w))}</b> ${zhRuby(esc(h[1]))}</span>`)));
         a.appendChild(hk);
       }
       const tools = el("div", "pr-tools");
@@ -5305,7 +5389,7 @@
     } else {
       body = `<p>${esc(tr("l_read_lead"))}</p>` + READING.map(([h, xs]) => `<section><h3>${esc(h)}</h3><ul class="lp-src">${xs.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("")}</ul></section>`).join("");
     }
-    d.innerHTML = `<div class="guide-in"><div class="guide-head"><h2>${esc(tr("l_title"))}</h2><button class="btn quiet" type="button" id="learn-close">${esc(tr("g_close"))}</button></div>${seg}${body}</div>`;
+    d.innerHTML = `<div class="guide-in"><div class="guide-head"><h2>${esc(tr("l_title"))}</h2><button class="btn quiet" type="button" id="learn-close">${esc(tr("g_close"))}</button></div>${seg}${zhRuby(body)}</div>`;
     d.querySelector("#learn-close").addEventListener("click", () => d.close());
     d.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => { learnTab = b.dataset.tab; openLearn(); d.scrollTop = 0; }));
     if (!d.open) d.showModal();
@@ -5370,19 +5454,27 @@
       updateBtn();
     }
 
+    function saveClip(key, c, updateOnly) {
+      if (updateOnly) { if (data[key] && data[key].s) { data[key].c = c; save(); } return; }
+      if (data[key] && data[key].s) delete data[key];
+      else data[key] = { s: Date.now(), c };
+      save();
+      updateBtn();
+    }
+
     const find = en => PHRASES.find(p => p.en === en) || (data[en] && data[en].p);
 
     function list(which) {
       return Object.entries(data)
         .filter(([, r]) => which === "known" ? r.k : r.s)
         .sort((a, b) => (which === "known" ? b[1].k - a[1].k : b[1].s - a[1].s))
-        .map(([en]) => find(en))
+        .map(([en, r]) => r.c ? { clip: r.c, key: en } : find(en))
         .filter(Boolean);
     }
 
     function asText(ps) {
       const langs = LANES.filter(l => l !== "en" && show[l]);
-      return ps.map(p => [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
+      return ps.map(p => p.clip ? [p.clip.mean, p.clip.said, p.clip.who].filter(Boolean).join("\n") : [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
     }
 
     function updateBtn() {
@@ -5457,14 +5549,621 @@
         }
         body.appendChild(tools);
         const ul = el("ul", "list");
-        ps.forEach(p => ul.appendChild(rowItem(p)));
+        ps.forEach(p => ul.appendChild(p.clip ? clipItem(p, d) : rowItem(p)));
         body.appendChild(ul);
       }
       d.appendChild(body);
       d.querySelector("[data-x]").addEventListener("click", () => d.close());
     }
 
-    return { isSaved, isKnown, count, toggleSave, toggleKnown, controls, open, updateBtn };
+    function clipItem(p, d) {
+      const c = p.clip;
+      const li = el("li", "item clip-item");
+      const play = el("button", "pbtn", `${speaker}<span>${esc(tr("p_play"))}</span>`);
+      play.type = "button";
+      play.addEventListener("click", async () => { if (!(await Rec.playClip(c))) play.disabled = true; });
+      const tx = el("div", "clip-tx", `<div class="en">${esc(c.mean || "…")}</div>${c.said ? `<div class="clip-said">${esc(c.said)}</div>` : ""}${c.said && /[\u3400-\u9fff]/.test(c.said) ? `<div class="rec-gloss">${Rec.gloss(c.said)}</div>` : ""}<small>${icon("mic")} ${esc([c.who, c.lang === "mix" ? tr("r_mixed") : NAMES[c.lang]].filter(Boolean).join(" · "))}</small>`);
+      const rm = el("button", "link", "×");
+      rm.type = "button";
+      rm.setAttribute("aria-label", tr("r_delete"));
+      rm.addEventListener("click", () => { delete data[p.key]; save(); updateBtn(); paintDialog(d); });
+      li.append(play, tx, rm);
+      return li;
+    }
+
+    return { saveClip, isSaved, isKnown, count, toggleSave, toggleKnown, controls, open, updateBtn };
+  })();
+
+
+  /* recordings: capture family and friends talking, keep it on the phone, and work through it slowly later */
+
+  const Rec = (() => {
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const SR_LANG = { tsn: "zh-HK", yue: "zh-HK", cmn: "zh-CN", es: "es-MX", fr: "fr-FR", de: "de-DE", en: "en-US", mix: "zh-HK" };
+    const HOME_LANG = { tsn: "yue", yue: "yue", cmn: "zh", es: "es", fr: "fr", de: "de", en: "en", mix: "" };
+    const REC_LANGS = ["tsn", "yue", "cmn", "es", "fr", "de", "en", "mix"];
+
+    const DB = (() => {
+      let p;
+      const open = () => p || (p = new Promise((res, rej) => {
+        const r = indexedDB.open("polygrok-rec", 1);
+        r.onupgradeneeded = () => r.result.createObjectStore("recs", { keyPath: "id" });
+        r.onsuccess = () => res(r.result);
+        r.onerror = () => rej(r.error);
+      }));
+      const run = (mode, fn) => open().then(db => new Promise((res, rej) => {
+        const t = db.transaction("recs", mode);
+        const q = fn(t.objectStore("recs"));
+        t.oncomplete = () => res(q && "result" in q ? q.result : undefined);
+        t.onerror = () => rej(t.error);
+      }));
+      return {
+        all: () => run("readonly", s => s.getAll()),
+        get: id => run("readonly", s => s.get(id)),
+        put: r => run("readwrite", s => s.put(r)),
+        del: id => run("readwrite", s => s.delete(id)),
+      };
+    })();
+
+    let dlg = null;
+    let view = { name: "list" };
+    let live = null;
+    let player = null;
+
+    const langName = l => l === "mix" ? tr("r_mixed") : NAMES[l];
+    const fmt = s => { s = Math.max(0, Math.round(s)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
+    const blobOf = r => new Blob([r.buf], { type: r.type || "audio/mp4" });
+    const homeUrl = () => (store.get("polygrok-home") || "").replace(/\/+$/, "");
+
+    function pickMime() {
+      if (!window.MediaRecorder || !MediaRecorder.isTypeSupported) return "";
+      return ["audio/mp4", "audio/webm;codecs=opus", "audio/webm"].find(t => MediaRecorder.isTypeSupported(t)) || "";
+    }
+
+
+    /* rough offline gloss for Chinese transcripts, from the words in this guide */
+
+    let ZH = null;
+
+    function zhMap() {
+      if (ZH) return ZH;
+      const cnt = new Map();
+      PHRASES.forEach(p => ["yue", "cmn", "tsn"].forEach(l => (p[l] || []).forEach(t => {
+        if (!t.hz || (t.refs || []).length !== 1) return;
+        const g = (p.gloss[t.refs[0]] || "").replace(/\([^)]*\)/g, "").trim().toLowerCase();
+        if (!g) return;
+        const m = cnt.get(t.hz) || new Map();
+        m.set(g, (m.get(g) || 0) + 1);
+        cnt.set(t.hz, m);
+      })));
+      ZH = new Map();
+      cnt.forEach((m, hz) => ZH.set(hz, [...m.entries()].sort((a, b) => b[1] - a[1])[0][0]));
+      return ZH;
+    }
+
+    function gloss(text) {
+      const m = zhMap();
+      const out = [];
+      const cs = [...text];
+      let i = 0;
+      while (i < cs.length) {
+        let hit = null;
+        for (let n = Math.min(5, cs.length - i); n > 0; n--) {
+          const w = cs.slice(i, i + n).join("");
+          if (m.has(w)) { hit = [w, m.get(w)]; break; }
+        }
+        if (hit) { out.push(`<span class="gl"><b>${zhRuby(esc(hit[0]))}</b><small>${esc(hit[1])}</small></span>`); i += [...hit[0]].length; }
+        else { out.push(`<span class="gl"><b>${zhRuby(esc(cs[i]))}</b><small>&nbsp;</small></span>`); i++; }
+      }
+      return out.join("");
+    }
+
+    const isZh = s => /[㐀-鿿]/.test(s);
+
+
+    /* dialog shell */
+
+    function open() {
+      if (!dlg) {
+        dlg = document.createElement("dialog");
+        dlg.id = "rec";
+        dlg.className = "practice rec";
+        document.body.appendChild(dlg);
+        dlg.addEventListener("close", () => { stopPlayer(); if (live) stopRec(true); });
+      }
+      if (!live) view = { name: "list" };
+      paint();
+      if (!dlg.open) dlg.showModal();
+      try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
+    }
+
+    function shell(title) {
+      dlg.innerHTML = `<div class="pr-top"><span class="pr-title">${icon("mic")}${esc(title)}</span><button class="btn quiet" type="button" data-x>${esc(tr("g_close"))}</button></div>`;
+      dlg.querySelector("[data-x]").addEventListener("click", () => dlg.close());
+      const body = el("div", "pr-body");
+      dlg.appendChild(body);
+      return body;
+    }
+
+    function paint() {
+      if (view.name === "live") return paintLive();
+      if (view.name === "detail") return paintDetail(view.id);
+      return paintList();
+    }
+
+
+    /* list + start */
+
+    async function paintList() {
+      const body = shell(tr("r_title"));
+      body.appendChild(el("p", "pr-lead", esc(tr("r_lead"))));
+
+      const form = el("div", "rec-form");
+      const who = document.createElement("input");
+      who.className = "rec-in";
+      who.placeholder = tr("r_who_ph");
+      who.value = store.get("polygrok-rec-who") || "";
+      const lang = document.createElement("select");
+      lang.className = "rec-in";
+      REC_LANGS.forEach(l => lang.appendChild(new Option(langName(l), l)));
+      lang.value = store.get("polygrok-rec-lang") || "yue";
+      const wl = el("label", "rec-l", `<span>${esc(tr("r_who"))}</span>`);
+      wl.appendChild(who);
+      const ll = el("label", "rec-l", `<span>${esc(tr("r_lang"))}</span>`);
+      ll.appendChild(lang);
+      form.append(wl, ll);
+
+      let liveBox = null;
+      if (SR) {
+        liveBox = document.createElement("input");
+        liveBox.type = "checkbox";
+        liveBox.checked = !!store.get("polygrok-rec-live");
+        const lab = el("label", "rec-check", "");
+        lab.appendChild(liveBox);
+        lab.appendChild(el("span", "", esc(tr("r_live"))));
+        form.appendChild(lab);
+      }
+      const note = el("p", "pr-hint", "");
+      const paintNote = () => { note.textContent = lang.value === "tsn" ? tr("r_tsn_note") : tr("r_consent"); };
+      paintNote();
+      lang.addEventListener("change", paintNote);
+      form.appendChild(note);
+
+      const go = el("button", "btn pr-big rec-go", `${icon("mic")}<span><b>${esc(tr("r_start"))}</b></span>`);
+      go.type = "button";
+      go.addEventListener("click", () => {
+        store.set("polygrok-rec-who", who.value.trim());
+        store.set("polygrok-rec-lang", lang.value);
+        if (liveBox) store.set("polygrok-rec-live", liveBox.checked);
+        startRec({ who: who.value.trim(), lang: lang.value, captions: !!(liveBox && liveBox.checked) });
+      });
+      form.appendChild(go);
+      body.appendChild(form);
+
+      const ul = el("ul", "rec-list");
+      body.appendChild(ul);
+      let recs = [];
+      try { recs = (await DB.all()).sort((a, b) => b.at - a.at); } catch (e) {}
+      if (!recs.length) ul.appendChild(el("li", "pr-hint", esc(tr("r_none"))));
+      recs.forEach(r => {
+        const li = el("li", "");
+        const b = el("button", "rec-row", `<span><b>${esc(r.who || tr("r_title"))}</b><small>${esc(new Date(r.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }))} · ${esc(langName(r.lang))}</small></span><span class="rec-meta">${fmt(r.dur)}${r.marks.length ? ` · ${esc(tr("r_marks", { n: r.marks.length }))}` : ""}</span>`);
+        b.type = "button";
+        b.addEventListener("click", () => { view = { name: "detail", id: r.id }; paint(); });
+        li.appendChild(b);
+        ul.appendChild(li);
+      });
+
+      body.appendChild(homeSettings());
+      body.appendChild(el("p", "pr-hint", esc(tr("r_store"))));
+    }
+
+    function homeSettings() {
+      const box = el("details", "rec-home");
+      box.appendChild(el("summary", "", esc(tr("r_home_set"))));
+      const row = el("div", "rec-home-row");
+      const inp = document.createElement("input");
+      inp.className = "rec-in";
+      inp.type = "url";
+      inp.placeholder = tr("r_home_ph");
+      inp.value = store.get("polygrok-home") || "";
+      inp.addEventListener("change", () => store.set("polygrok-home", inp.value.trim()));
+      const test = el("button", "pbtn", esc(tr("r_home_test")));
+      test.type = "button";
+      const msg = el("p", "pr-hint", "");
+      test.addEventListener("click", async () => {
+        store.set("polygrok-home", inp.value.trim());
+        msg.textContent = "…";
+        try {
+          const r = await fetch(homeUrl() + "/health", { cache: "no-store" });
+          const j = await r.json();
+          msg.textContent = `${tr("r_home_ok")}: ${j.model || ""} ${j.device || ""}`;
+        } catch (e) { msg.textContent = tr("r_home_fail"); }
+      });
+      row.append(inp, test);
+      box.append(row, msg);
+      return box;
+    }
+
+
+    /* recording */
+
+    async function startRec(opts) {
+      let stream;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: true } });
+      } catch (e) {
+        alertIn(tr("r_mic_fail"));
+        return;
+      }
+      const mime = pickMime();
+      const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      const chunks = [];
+      mr.ondataavailable = e => { if (e.data && e.data.size) chunks.push(e.data); };
+      live = { ...opts, stream, mr, chunks, t0: performance.now(), marks: [], lines: [], interim: "", ac: null, raf: 0, sr: null, restarts: 0 };
+      mr.start(1000);
+
+      try {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        const ac = new AC();
+        const an = ac.createAnalyser();
+        an.fftSize = 512;
+        ac.createMediaStreamSource(stream).connect(an);
+        live.ac = ac;
+        live.an = an;
+      } catch (e) {}
+
+      if (opts.captions && SR) startCaptions();
+      view = { name: "live" };
+      paint();
+    }
+
+    const elapsed = () => live ? (performance.now() - live.t0) / 1000 : 0;
+
+    function startCaptions() {
+      try {
+        const sr = new SR();
+        sr.lang = SR_LANG[live.lang] || "zh-HK";
+        sr.continuous = true;
+        sr.interimResults = true;
+        sr.onresult = e => {
+          let interim = "";
+          for (let i = e.resultIndex; i < e.results.length; i++) {
+            const r = e.results[i];
+            if (r.isFinal) live.lines.push({ t: Math.max(0, elapsed() - 2), text: r[0].transcript.trim(), src: "live" });
+            else interim += r[0].transcript;
+          }
+          live.interim = interim;
+          paintCaptions();
+        };
+        sr.onerror = e => { if (e.error === "not-allowed" || e.error === "service-not-allowed" || e.error === "network") { live.srDead = true; const n = $("rec-cap-note"); if (n) n.textContent = tr("r_live_fail"); } };
+        sr.onend = () => { if (live && !live.stopping && !live.srDead && live.restarts++ < 40) { try { sr.start(); } catch (e) {} } };
+        sr.start();
+        live.sr = sr;
+      } catch (e) { live.srDead = true; }
+    }
+
+    function paintCaptions() {
+      const box = $("rec-caps");
+      if (!box || !live) return;
+      const last = live.lines.slice(-4).map(l => `<p>${esc(l.text)}</p>`).join("");
+      box.innerHTML = last + (live.interim ? `<p class="interim">${esc(live.interim)}</p>` : "");
+    }
+
+    function paintLive() {
+      const body = shell(tr("r_rec"));
+      const top = el("div", "rec-live");
+      top.innerHTML = `<span class="rec-dot" aria-hidden="true"></span><b id="rec-time">0:00</b><canvas id="rec-meter" width="240" height="36" aria-hidden="true"></canvas>`;
+      body.appendChild(top);
+      body.appendChild(el("p", "pr-hint", esc(`${live.who ? live.who + " · " : ""}${langName(live.lang)}`)));
+      const acts = el("div", "rec-acts");
+      const mark = el("button", "btn pr-big", `${icon("bookmark")}<span><b>${esc(tr("r_mark"))}</b><small id="rec-mk">${esc(tr("r_marks", { n: live.marks.length }))}</small></span>`);
+      mark.type = "button";
+      mark.addEventListener("click", () => {
+        live.marks.push({ t: Math.max(0, elapsed() - 3), said: "", mean: "" });
+        $("rec-mk").textContent = tr("r_marks", { n: live.marks.length });
+        try { navigator.vibrate && navigator.vibrate(20); } catch (e) {}
+      });
+      const stop = el("button", "btn quiet pr-big rec-stop", `<span class="sq" aria-hidden="true"></span><span><b>${esc(tr("r_stop"))}</b></span>`);
+      stop.type = "button";
+      stop.addEventListener("click", () => stopRec(false));
+      acts.append(mark, stop);
+      body.appendChild(acts);
+      if (live.sr || live.captions) {
+        const n = el("p", "pr-hint", live.srDead ? esc(tr("r_live_fail")) : "");
+        n.id = "rec-cap-note";
+        body.appendChild(n);
+        const caps = el("div", "rec-caps");
+        caps.id = "rec-caps";
+        body.appendChild(caps);
+        paintCaptions();
+      }
+      tick();
+    }
+
+    function tick() {
+      if (!live) return;
+      const t = $("rec-time");
+      if (t) t.textContent = fmt(elapsed());
+      const c = $("rec-meter");
+      if (c && live.an) {
+        const g = c.getContext("2d");
+        const d = new Uint8Array(live.an.fftSize);
+        live.an.getByteTimeDomainData(d);
+        let peak = 0;
+        for (const v of d) peak = Math.max(peak, Math.abs(v - 128));
+        live.hist = (live.hist || []).concat(peak / 128).slice(-60);
+        const ink = getComputedStyle(c).color;
+        g.clearRect(0, 0, c.width, c.height);
+        g.fillStyle = ink;
+        live.hist.forEach((v, i) => { const h = Math.max(2, v * c.height); g.fillRect(i * 4, (c.height - h) / 2, 2, h); });
+      }
+      live.raf = requestAnimationFrame(tick);
+    }
+
+    function stopRec(discard) {
+      if (!live) return;
+      const L = live;
+      L.stopping = true;
+      cancelAnimationFrame(L.raf);
+      try { L.sr && L.sr.stop(); } catch (e) {}
+      const dur = elapsed();
+      L.mr.onstop = async () => {
+        L.stream.getTracks().forEach(t => t.stop());
+        try { L.ac && L.ac.close(); } catch (e) {}
+        live = null;
+        if (discard || !L.chunks.length) { view = { name: "list" }; if (dlg.open) paint(); return; }
+        const type = L.chunks[0].type || L.mr.mimeType || "audio/mp4";
+        const buf = await new Blob(L.chunks, { type }).arrayBuffer();
+        const r = { id: "r" + Date.now().toString(36), at: Date.now(), who: L.who, lang: L.lang, dur, type, buf, marks: L.marks, lines: L.lines };
+        try { await DB.put(r); } catch (e) { alertIn(tr("r_mic_fail")); }
+        view = { name: "detail", id: r.id };
+        if (dlg.open) paint();
+      };
+      try { L.mr.stop(); } catch (e) { L.mr.onstop(); }
+    }
+
+    function alertIn(msg) {
+      const b = dlg && dlg.querySelector(".pr-body");
+      if (b) b.prepend(el("p", "rec-alert", esc(msg)));
+    }
+
+
+    /* playback and study */
+
+    function stopPlayer() {
+      if (!player) return;
+      try { player.a.pause(); URL.revokeObjectURL(player.url); } catch (e) {}
+      cancelAnimationFrame(player.raf);
+      player = null;
+    }
+
+    async function paintDetail(id) {
+      stopPlayer();
+      const r = await DB.get(id);
+      if (!r) { view = { name: "list" }; return paint(); }
+      const body = shell(r.who || tr("r_title"));
+      const back = el("button", "link", `← ${esc(tr("r_back"))}`);
+      back.type = "button";
+      back.addEventListener("click", () => { stopPlayer(); view = { name: "list" }; paint(); });
+      body.appendChild(back);
+      body.appendChild(el("p", "pr-hint", esc(`${new Date(r.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" })} · ${langName(r.lang)} · ${fmt(r.dur)}`)));
+
+      const url = URL.createObjectURL(blobOf(r));
+      const a = new Audio(url);
+      a.preload = "auto";
+      player = { a, url, loop: null, raf: 0 };
+      const save = () => DB.put(r).catch(() => {});
+
+      const pl = el("div", "rec-player");
+      const playB = el("button", "btn rec-play", "");
+      playB.type = "button";
+      const paintPlay = () => { playB.innerHTML = a.paused ? `${speaker}<span>${esc(tr("p_play"))}</span>` : `<span class="sq" aria-hidden="true"></span><span>${esc(tr("r_stop"))}</span>`; };
+      paintPlay();
+      playB.addEventListener("click", () => { a.paused ? a.play().catch(() => {}) : a.pause(); });
+      a.addEventListener("play", paintPlay);
+      a.addEventListener("pause", paintPlay);
+      const back5 = el("button", "pbtn", "−5s");
+      back5.type = "button";
+      back5.addEventListener("click", () => { a.currentTime = Math.max(0, a.currentTime - 5); });
+      const seek = document.createElement("input");
+      seek.type = "range";
+      seek.min = 0;
+      seek.step = 0.1;
+      seek.max = r.dur || 1;
+      seek.value = 0;
+      seek.className = "rec-seek";
+      seek.addEventListener("input", () => { a.currentTime = +seek.value; });
+      const tm = el("span", "rec-tm", `0:00 / ${fmt(r.dur)}`);
+      const speeds = el("div", "rec-speeds");
+      [0.5, 0.75, 1].forEach(s => {
+        const b = el("button", "chip", `${s}×`);
+        b.type = "button";
+        b.setAttribute("aria-pressed", s === 1 ? "true" : "false");
+        b.addEventListener("click", () => { a.playbackRate = s; speeds.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false")); });
+        speeds.appendChild(b);
+      });
+      const addMark = el("button", "pbtn", `${icon("bookmark")}${esc(tr("r_mark"))}`);
+      addMark.type = "button";
+      addMark.addEventListener("click", () => { r.marks.push({ t: a.currentTime, said: "", mean: "" }); r.marks.sort((x, y) => x.t - y.t); save(); paintMarks(); });
+      pl.append(playB, back5, seek, tm, speeds, addMark);
+      body.appendChild(pl);
+
+      const frame = () => {
+        if (!player) return;
+        seek.value = a.currentTime;
+        tm.textContent = `${fmt(a.currentTime)} / ${fmt(r.dur)}`;
+        if (player.loop && a.currentTime >= player.loop[1]) a.currentTime = player.loop[0];
+        if (player.stopAt && a.currentTime >= player.stopAt) { a.pause(); player.stopAt = 0; }
+        player.raf = requestAnimationFrame(frame);
+      };
+      frame();
+
+      const span = (m, i) => [Math.max(0, m.t - 1), Math.min(r.dur || m.t + 6, r.marks[i + 1] ? Math.min(r.marks[i + 1].t, m.t + 12) : m.t + 6)];
+
+      const marksBox = el("div", "rec-marks");
+      body.appendChild(marksBox);
+
+      function paintMarks() {
+        marksBox.innerHTML = "";
+        if (!r.marks.length) return;
+        marksBox.appendChild(el("div", "label", esc(tr("r_marks", { n: r.marks.length }))));
+        r.marks.forEach((m, i) => {
+          const card = el("div", "rec-mark");
+          const head = el("div", "rec-mark-head");
+          const go = el("button", "pbtn", `${speaker}${fmt(m.t)}`);
+          go.type = "button";
+          go.addEventListener("click", () => { const [s0, s1] = span(m, i); player.loop = null; player.stopAt = s1; a.currentTime = s0; a.play().catch(() => {}); });
+          const lp = el("button", "pbtn", `${esc(tr("r_loop"))}`);
+          lp.type = "button";
+          const paintLp = () => lp.classList.toggle("on", !!(player.loop && player.loop.i === i));
+          lp.addEventListener("click", () => {
+            if (player.loop && player.loop.i === i) { player.loop = null; a.pause(); }
+            else { const s = span(m, i); player.loop = [s[0], s[1]]; player.loop.i = i; player.stopAt = 0; a.currentTime = s[0]; a.play().catch(() => {}); }
+            marksBox.querySelectorAll(".rec-mark").forEach((x, k) => x.querySelector(".lp").classList.toggle("on", !!(player.loop && player.loop.i === k)));
+          });
+          lp.classList.add("lp");
+          paintLp();
+          const del = el("button", "link", "×");
+          del.type = "button";
+          del.setAttribute("aria-label", tr("r_delete"));
+          del.addEventListener("click", () => { r.marks.splice(i, 1); player.loop = null; save(); paintMarks(); });
+          head.append(go, lp, del);
+          card.appendChild(head);
+          const f = (key, ph, prop) => {
+            const l = el("label", "my-hook-l", `<span>${esc(tr(key))}</span>`);
+            const t = document.createElement("textarea");
+            t.className = "my-hook";
+            t.rows = 1;
+            t.placeholder = tr(ph);
+            t.value = m[prop] || "";
+            t.addEventListener("input", () => { m[prop] = t.value; save(); paintClip(); });
+            l.appendChild(t);
+            return l;
+          };
+          card.append(f("r_said", "r_said_ph", "said"), f("r_mean", "r_mean_ph", "mean"));
+          const g = el("div", "rec-gloss", "");
+          card.appendChild(g);
+          const clip = el("button", "pbtn", "");
+          clip.type = "button";
+          const key = () => `clip:${r.id}:${Math.round(m.t * 10)}`;
+          function paintClip() {
+            const on = Book.isSaved(key());
+            clip.innerHTML = `${icon(on ? "check" : "bookmark")}${esc(tr(on ? "r_clip_saved" : "r_clip_save"))}`;
+            clip.classList.toggle("on", on);
+            g.innerHTML = m.said && isZh(m.said) ? gloss(m.said) : "";
+            if (on) Book.saveClip(key(), clipData(r, m, i), true);
+          }
+          clip.addEventListener("click", () => { Book.saveClip(key(), clipData(r, m, i)); paintClip(); });
+          paintClip();
+          card.appendChild(clip);
+          marksBox.appendChild(card);
+        });
+      }
+
+      function clipData(r, m, i) {
+        const [t0, t1] = span(m, i);
+        return { rec: r.id, t0, t1, said: m.said, mean: m.mean, lang: r.lang, who: r.who };
+      }
+
+      paintMarks();
+
+      const linesBox = el("div", "rec-lines");
+      body.appendChild(linesBox);
+      function paintLines() {
+        linesBox.innerHTML = "";
+        if (!r.lines.length) return;
+        linesBox.appendChild(el("div", "label", esc(tr("r_lines"))));
+        if (r.lines.some(l => isZh(l.text))) linesBox.appendChild(el("p", "pr-hint", esc(tr("r_gloss_note"))));
+        r.lines.forEach(l => {
+          const row = el("div", "rec-line");
+          const t = el("button", "pbtn", fmt(l.t));
+          t.type = "button";
+          t.addEventListener("click", () => { player.loop = null; player.stopAt = 0; a.currentTime = Math.max(0, l.t - 0.5); a.play().catch(() => {}); });
+          const tx = el("div", "rec-line-tx", `<p>${isZh(l.text) ? esc(l.text) : esc(l.text)}</p>${isZh(l.text) ? `<div class="rec-gloss">${gloss(l.text)}</div>` : ""}${l.en ? `<p class="pr-hint">${esc(l.en)}</p>` : ""}`);
+          const mk = el("button", "link", `+ ${esc(tr("r_mark"))}`);
+          mk.type = "button";
+          mk.addEventListener("click", () => { r.marks.push({ t: l.t, said: l.text, mean: l.en || "" }); r.marks.sort((x, y) => x.t - y.t); save(); paintMarks(); });
+          tx.appendChild(mk);
+          row.append(t, tx);
+          linesBox.appendChild(row);
+        });
+      }
+      paintLines();
+
+      const tools = el("div", "pr-tools rec-tools");
+      if (homeUrl()) {
+        const hb = el("button", "pbtn", `${icon("house")}${esc(tr("r_home"))}`);
+        hb.type = "button";
+        const hm = el("p", "pr-hint", "");
+        hb.addEventListener("click", async () => {
+          hb.disabled = true;
+          hm.textContent = tr("r_home_busy");
+          try {
+            const fd = new FormData();
+            const ext = (r.type || "").includes("webm") ? "webm" : "m4a";
+            fd.append("file", blobOf(r), `${r.id}.${ext}`);
+            fd.append("language", HOME_LANG[r.lang] || "");
+            fd.append("translate", "1");
+            const res = await fetch(homeUrl() + "/transcribe", { method: "POST", body: fd });
+            if (!res.ok) throw new Error(res.status);
+            const j = await res.json();
+            r.lines = r.lines.filter(l => l.src !== "home").concat((j.segments || []).map(s => ({ t: s.start, text: s.text.trim(), en: s.en || "", src: "home" }))).sort((x, y) => x.t - y.t);
+            await DB.put(r);
+            hm.textContent = "";
+            paintLines();
+          } catch (e) { hm.textContent = tr("r_home_fail"); }
+          hb.disabled = false;
+        });
+        tools.append(hb);
+        body.appendChild(tools);
+        body.appendChild(hm);
+      }
+
+      const tools2 = el("div", "pr-tools");
+      const sh = el("button", "pbtn", `${icon("copy")}${esc(tr("r_share"))}`);
+      sh.type = "button";
+      sh.addEventListener("click", async () => {
+        const ext = (r.type || "").includes("webm") ? "webm" : "m4a";
+        const name = `${(r.who || "recording").replace(/[^\w\- ]+/g, "")} ${new Date(r.at).toISOString().slice(0, 10)}.${ext}`;
+        const file = new File([blobOf(r)], name, { type: r.type });
+        try {
+          if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: name }); return; }
+        } catch (e) { if (e && e.name === "AbortError") return; }
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = name;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      });
+      const del = el("button", "pbtn", esc(tr("r_delete")));
+      del.type = "button";
+      let armed = false;
+      del.addEventListener("click", async () => {
+        if (!armed) { armed = true; del.textContent = tr("r_delete_sure"); setTimeout(() => { armed = false; del.textContent = tr("r_delete"); }, 3000); return; }
+        stopPlayer();
+        await DB.del(r.id).catch(() => {});
+        view = { name: "list" };
+        paint();
+      });
+      tools2.append(sh, del);
+      body.appendChild(tools2);
+    }
+
+    async function playClip(c) {
+      const r = await DB.get(c.rec).catch(() => null);
+      if (!r) return false;
+      if (Rec._clip) { try { Rec._clip.pause(); URL.revokeObjectURL(Rec._clip.src); } catch (e) {} }
+      const a = new Audio(URL.createObjectURL(blobOf(r)));
+      Rec._clip = a;
+      a.addEventListener("loadedmetadata", () => { a.currentTime = c.t0; a.play().catch(() => {}); }, { once: true });
+      a.addEventListener("timeupdate", () => { if (a.currentTime >= c.t1) a.pause(); });
+      a.load();
+      return true;
+    }
+
+    return { open, playClip, gloss };
   })();
 
 
@@ -5663,6 +6362,7 @@
   paintNow();
   $("now-tip").addEventListener("click", () => openLearn("day"));
   $("book-btn").addEventListener("click", () => Book.open());
+  $("rec-btn").addEventListener("click", () => Rec.open());
   window.__paintNow = paintNow;
   $("practice-btn").addEventListener("click", () => Practice.open());
   $("learn-btn").addEventListener("click", () => openLearn());

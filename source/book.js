@@ -32,19 +32,27 @@
       updateBtn();
     }
 
+    function saveClip(key, c, updateOnly) {
+      if (updateOnly) { if (data[key] && data[key].s) { data[key].c = c; save(); } return; }
+      if (data[key] && data[key].s) delete data[key];
+      else data[key] = { s: Date.now(), c };
+      save();
+      updateBtn();
+    }
+
     const find = en => PHRASES.find(p => p.en === en) || (data[en] && data[en].p);
 
     function list(which) {
       return Object.entries(data)
         .filter(([, r]) => which === "known" ? r.k : r.s)
         .sort((a, b) => (which === "known" ? b[1].k - a[1].k : b[1].s - a[1].s))
-        .map(([en]) => find(en))
+        .map(([en, r]) => r.c ? { clip: r.c, key: en } : find(en))
         .filter(Boolean);
     }
 
     function asText(ps) {
       const langs = LANES.filter(l => l !== "en" && show[l]);
-      return ps.map(p => [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
+      return ps.map(p => p.clip ? [p.clip.mean, p.clip.said, p.clip.who].filter(Boolean).join("\n") : [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
     }
 
     function updateBtn() {
@@ -119,12 +127,27 @@
         }
         body.appendChild(tools);
         const ul = el("ul", "list");
-        ps.forEach(p => ul.appendChild(rowItem(p)));
+        ps.forEach(p => ul.appendChild(p.clip ? clipItem(p, d) : rowItem(p)));
         body.appendChild(ul);
       }
       d.appendChild(body);
       d.querySelector("[data-x]").addEventListener("click", () => d.close());
     }
 
-    return { isSaved, isKnown, count, toggleSave, toggleKnown, controls, open, updateBtn };
+    function clipItem(p, d) {
+      const c = p.clip;
+      const li = el("li", "item clip-item");
+      const play = el("button", "pbtn", `${speaker}<span>${esc(tr("p_play"))}</span>`);
+      play.type = "button";
+      play.addEventListener("click", async () => { if (!(await Rec.playClip(c))) play.disabled = true; });
+      const tx = el("div", "clip-tx", `<div class="en">${esc(c.mean || "…")}</div>${c.said ? `<div class="clip-said">${esc(c.said)}</div>` : ""}${c.said && /[\u3400-\u9fff]/.test(c.said) ? `<div class="rec-gloss">${Rec.gloss(c.said)}</div>` : ""}<small>${icon("mic")} ${esc([c.who, c.lang === "mix" ? tr("r_mixed") : NAMES[c.lang]].filter(Boolean).join(" · "))}</small>`);
+      const rm = el("button", "link", "×");
+      rm.type = "button";
+      rm.setAttribute("aria-label", tr("r_delete"));
+      rm.addEventListener("click", () => { delete data[p.key]; save(); updateBtn(); paintDialog(d); });
+      li.append(play, tx, rm);
+      return li;
+    }
+
+    return { saveClip, isSaved, isKnown, count, toggleSave, toggleKnown, controls, open, updateBtn };
   })();

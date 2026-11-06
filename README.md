@@ -19,6 +19,8 @@ A phone-friendly guide to everyday family conversation, broken down word by word
 - Easy English spelling by default, with Jyutping, pinyin and Stephen Li's Taishanese romanization available under View
 - Type any English sentence and a built-in sentence composer rebuilds it in each language's own grammar: Chinese word order, aspect and question particles, and Spanish, French and German conjugation, articles and word order
 - A full-sentence section under every card, with a full-screen view to show someone who speaks only that language
+- **Record** family and friends, then work through it slowly: mark moments, loop them at 0.5× speed, write what you hear and what it means, and save voice clips to your phrasebook. Recordings stay on the phone. Live captions use the phone's own speech recognition where the browser allows it, and an optional home server (`server/`) transcribes and translates on your own GPU, with no cloud bill
+- Every Chinese character in explanations shows its pronunciation above it (Rime Cantonese dictionary, CC BY 4.0)
 - **My phrasebook**: save the sentences you actually need (including ones you translate yourself), mark what you already know, and copy the whole list as text
 
 ## Built on learning science

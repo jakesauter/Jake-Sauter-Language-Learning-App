@@ -238,3 +238,30 @@
       ["Anderson, Vocabulary and the Brain: evidence from neuroimaging", "https://arxiv.org/abs/1611.10003"],
     ]],
   ];
+
+
+  /* every Chinese character in explanations gets its sound on top, so nothing is ever shown without a pronunciation */
+
+  let ZR = null;
+
+  function zhSounds() {
+    if (ZR) return ZR;
+    const cnt = new Map();
+    PHRASES.forEach(p => (p.yue || []).forEach(t => {
+      const cs = [...(t.hz || "")];
+      const ss = String(t.rom || "").trim().split(/\s+/);
+      if (cs.length !== ss.length) return;
+      cs.forEach((c, i) => { const k = c + "|" + ss[i]; cnt.set(k, (cnt.get(k) || 0) + 1); });
+    }));
+    ZR = new Map();
+    const best = new Map();
+    cnt.forEach((n, k) => { const [c, s] = k.split("|"); if (!best.has(c) || n > best.get(c)) { best.set(c, n); ZR.set(c, s); } });
+    Object.entries(PHON).forEach(([c, v]) => { if (!ZR.has(c)) ZR.set(c, v[0]); });
+    JYUT_RAW.split(",").forEach(x => { const c = x[0]; if (c && !ZR.has(c)) ZR.set(c, x.slice(1)); });
+    return ZR;
+  }
+
+  function zhRuby(html) {
+    const m = zhSounds();
+    return String(html).split(/(<[^>]+>)/).map(part => part.startsWith("<") ? part : part.replace(/[㐀-鿿]/g, c => m.has(c) ? `<ruby>${c}<rt>${esc(romText("yue", m.get(c)))}</rt></ruby>` : c)).join("");
+  }

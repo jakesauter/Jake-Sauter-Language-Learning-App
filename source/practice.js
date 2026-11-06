@@ -207,7 +207,7 @@
       if (!ZH.has(lang)) (p.gloss || []).forEach(g => { const k = g.toLowerCase().replace(/[^a-z ]/g, "").trim(); if (EU_HOOKS[k]) hooks.push([g, ["bridge", EU_HOOKS[k]]]); });
       if (hooks.length) {
         const hk = el("div", "pr-hooks");
-        hooks.slice(0, 3).forEach(([w, h]) => hk.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${ZH.has(lang) ? cls : ""}">${esc(w)}</b> ${esc(h[1])}</span>`)));
+        hooks.slice(0, 3).forEach(([w, h]) => hk.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${ZH.has(lang) ? cls : ""}">${zhRuby(esc(w))}</b> ${zhRuby(esc(h[1]))}</span>`)));
         a.appendChild(hk);
       }
       const tools = el("div", "pr-tools");
@@ -430,7 +430,7 @@
     } else {
       body = `<p>${esc(tr("l_read_lead"))}</p>` + READING.map(([h, xs]) => `<section><h3>${esc(h)}</h3><ul class="lp-src">${xs.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("")}</ul></section>`).join("");
     }
-    d.innerHTML = `<div class="guide-in"><div class="guide-head"><h2>${esc(tr("l_title"))}</h2><button class="btn quiet" type="button" id="learn-close">${esc(tr("g_close"))}</button></div>${seg}${body}</div>`;
+    d.innerHTML = `<div class="guide-in"><div class="guide-head"><h2>${esc(tr("l_title"))}</h2><button class="btn quiet" type="button" id="learn-close">${esc(tr("g_close"))}</button></div>${seg}${zhRuby(body)}</div>`;
     d.querySelector("#learn-close").addEventListener("click", () => d.close());
     d.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => { learnTab = b.dataset.tab; openLearn(); d.scrollTop = 0; }));
     if (!d.open) d.showModal();
