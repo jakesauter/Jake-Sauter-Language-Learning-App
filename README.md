@@ -1,4 +1,6 @@
-# Language Learning Guide
+# Polygrok
+
+*Polyglot + grok: understand a language deeply, word by word.*
 
 A phone-friendly guide to everyday family conversation, broken down word by word in **Taishanese, Cantonese, English, Mandarin, Spanish, French and German**.
 

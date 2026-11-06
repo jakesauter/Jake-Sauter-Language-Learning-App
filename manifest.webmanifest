@@ -1,6 +1,6 @@
 {
-  "name": "Language Learning Guide",
-  "short_name": "Languages",
+  "name": "Polygrok",
+  "short_name": "Polygrok",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
