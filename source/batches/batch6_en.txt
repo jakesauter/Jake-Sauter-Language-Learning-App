@@ -1,0 +1,65 @@
+I want to eat.
+Do you want to eat?
+I don't want to eat.
+Did you eat?
+I didn't eat.
+I'm eating.
+I'm going to eat later.
+Let's eat together.
+I want to go out.
+Do you want to go out?
+I don't want to go out.
+Did you go out today?
+I'm going out now.
+Let's go out tonight.
+I want to sleep.
+Did you sleep well?
+I didn't sleep well.
+I'm going to sleep now.
+I can cook.
+Can you cook?
+I can't cook.
+Who cooked this?
+I'm cooking dinner.
+Let's cook together.
+I like it.
+Do you like it?
+I don't like it.
+I really like this.
+I need help.
+Do you need help?
+I don't need anything.
+I know.
+I don't know.
+Do you know?
+I understand.
+Do you understand?
+I don't understand.
+I forgot.
+Don't forget.
+I remember.
+Do you remember?
+I'm busy.
+Are you busy?
+I'm not busy.
+I'm tired.
+Are you tired?
+I'm not tired.
+It's good.
+Is it good?
+It's not good.
+It's ready.
+Is it ready?
+It's not ready yet.
+I'm coming.
+Are you coming?
+I'm not coming.
+Who is coming?
+When are you coming?
+Where are you going?
+What are you doing?
+What did you do?
+What do you want?
+Why not?
+How much is it?
+How many people?

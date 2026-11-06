@@ -2852,6 +2852,12 @@
       sit: W("坐低", "co5 dai1", "坐下", "zuò xià", "坐", "tɔ33"),
       bathroom: W("廁所", "ci3 so2", "洗手间", "xǐ shǒu jiān", "廁所", "tsi33 sɔ55", false),
       toilet: W("廁所", "ci3 so2", "厕所", "cè suǒ", "廁所", "tsi33 sɔ55", false),
+      "go out": W("出去", "ceot1 heoi3", "出去", "chū qù", "出去", "tsut55 hui33"),
+      "help n": W("幫手", "bong1 sau2", "帮助", "bāng zhù", "幫手", "bɔŋ33 siu55", false),
+      something: W("嘢", "je5", "东西", "dōng xi", "嘢", "yia33"),
+      anything: W("任何嘢", "jam6 ho4 je5", "任何东西", "rèn hé dōng xi", "乜嘢", "mɔt55 yia33", false),
+      it: W("佢", "keoi5", "它", "tā", "佢", "kui33"),
+      need: W("需要", "seoi1 jiu3", "需要", "xū yào", "需要", "ɬui33 yiau33", false),
       milk: W("牛奶", "ngau4 naai5", "牛奶", "niú nǎi", "牛奶", "ŋəu22 nai21"),
       friend: W("朋友", "pang4 jau5", "朋友", "péng you", "朋友", "paŋ22 yiu21"),
       phone: W("電話", "din6 waa2", "手机", "shǒu jī", "手機", "siu55 gi33"),
@@ -3241,6 +3247,7 @@
       if ((aux === "have" || aux === "has") && w[0] && (PAST_EN[w[0]] || /ed$|en$/.test(w[0]))) P.tense = "past";
 
       if (w[0] === "not") { P.neg = true; w = w.slice(1); }
+      while (["really", "just", "usually", "still"].includes(w[0])) { if (w[0] === "really") P.really = true; w = w.slice(1); }
 
       if (w[0] === "going" && w[1] === "to") { P.tense = "fut"; w = w.slice(2); if (["am", "is", "are"].includes(aux)) aux = null; }
       const MODALS = [["want", "to", "want"], ["wanted", "to", "want"], ["need", "to", "need"], ["needed", "to", "need"], ["have", "to", "need"], ["has", "to", "need"], ["had", "to", "need"], ["like", "to", "like"], ["love", "to", "like"], ["try", "to", "try"]];
@@ -3257,8 +3264,11 @@
         if (ab.has(w[0])) { if (w[0] === "was" || w[0] === "were") P.tense = "past"; w = w.slice(1); }
         if (w[0] === "not") { P.neg = true; w = w.slice(1); }
         const pv = isVerbWord(w[0]);
-        P.prog = P.tense !== "past" && !P.wh && !MOTION.has(pv) && !P.time.some(t => /tomorrow|tonight|next|later|soon|weekend/.test(t));
-        if (!P.prog && P.tense !== "past" && (MOTION.has(pv) || P.time.some(t => /tomorrow|tonight|next|later|soon|weekend/.test(t)))) P.tense = "fut";
+        const futT = P.time.some(t => /tomorrow|tonight|next|later|soon|weekend/.test(t));
+        P.prog = P.tense !== "past" && P.wh !== "when" && !futT;
+        if (!P.prog && P.tense !== "past" && futT) P.tense = "fut";
+        P.motionProg = P.prog && MOTION.has(pv);
+        if (P.motionProg && P.time.length) { P.prog = false; P.motionNow = true; }
         aux = null;
       }
       else if (ab.has(aux) || ab.has(w[0])) {
@@ -3286,14 +3296,14 @@
         const vw = w[0] && isVerbWord(w[0]);
         if (vw) {
           P.verb = vw;
-          if (PAST_EN[w[0]] || (/ed$/.test(w[0]) && aux !== "have")) { if (!P.modal || P.modal === "need") P.tense = P.modal ? P.tense : "past"; }
+          if (PAST_EN[w[0]] || (/ed$/.test(w[0]) && w[0] !== vw && aux !== "have")) { if (!P.modal || P.modal === "need") P.tense = P.modal ? P.tense : "past"; }
           if (aux === "have" || aux === "has") P.tense = "past";
           w = w.slice(1);
           if ((w[0] === "down" || w[0] === "up") && ["sit", "stand", "calm", "lie", "wake", "get", "hurry", "shut"].includes(P.verb)) w = w.slice(1);
           if (w[0] === "well") { P.well = true; w = w.slice(1); }
           if (w[0] === "up" || w[0] === "out" || w[0] === "off" || w[0] === "on") {
             const ph = P.verb + " " + w[0];
-            if (LEX[ph]) { P.verb = ph; w = w.slice(1); }
+            if (LEX[ph] || CORE[ph]) { P.verb = ph; w = w.slice(1); }
           }
         } else if (P.modal === "want" || P.modal === "need" || P.modal === "like") {
           P.verb = { want: "want", need: "need", like: "like" }[P.modal];
@@ -3323,12 +3333,17 @@
       };
 
       if (P.there) { while (w[0] === "any" || w[0] === "some") w = w.slice(1); P.obj = np(); }
+      const ADV = new Set(["together", "too", "also", "well", "yet", "now", "here", "there", "later", "again", "already", "home"]);
+      if ((P.verb || P.copula) && ["it", "this", "that"].includes(w[0]) && (!w[1] || ADV.has(w[1]) || ["with", "to", "at", "for"].includes(w[1]))) { P.objDem = w[0]; w = w.slice(1); }
+      if ((P.modal === "need" || P.verb === "need") && P.verb === "help" && !w.length) { P.verb = "need"; P.modal = null; P.obj = { word: "help n" }; }
+      if (P.verb === "need" && w[0] === "help") { P.obj = { word: "help n" }; w = w.slice(1); }
+      if (["anything", "something"].includes(w[0])) { P.obj = { word: w[0] }; w = w.slice(1); }
       if (P.verb || P.copula) {
         if (P.verb === "call" || P.verb === "help" || P.verb === "visit" || P.verb === "tell" || P.verb === "ask" || P.verb === "teach" || P.verb === "meet" || P.verb === "miss" || P.verb === "love" || P.verb === "like" || P.verb === "see") {
           if (w[0] === "you" && w[1] === "all") { P.objPron = "you all"; w = w.slice(2); }
           else if (["me", "you", "him", "her", "us", "them"].includes(w[0])) { P.objPron = w[0]; w = w.slice(1); }
         }
-        if (w[0] && !["to", "at", "in", "with", "for", "from", "on"].includes(w[0])) P.obj = np();
+        if (!P.obj && !P.objDem && w[0] && !["to", "at", "in", "with", "for", "from", "on"].includes(w[0]) && !ADV.has(w[0])) P.obj = np();
       }
 
       while (w.length) {
@@ -3354,7 +3369,7 @@
         else if (h === "yet") { P.yet = true; w = w.slice(1); }
         else if (h === "well") { P.well = true; w = w.slice(1); }
         else if (h === "more" && !P.obj) { P.more = true; w = w.slice(1); }
-        else if (!P.obj && (P.verb || P.copula)) { P.obj = np(); }
+        else if (!P.obj && !P.objDem && (P.verb || P.copula) && !ADV.has(h)) { P.obj = np(); }
         else { P.unknown.push(h); w = w.slice(1); }
       }
 
@@ -3362,7 +3377,7 @@
       if (MOTION.has(P.verb) && P.obj && !P.place && (P.verb === "go" || P.obj.word === "home")) { P.place = P.obj; P.placeType = "to"; P.obj = null; }
       if (P.verb === "have" && P.obj && MEALS[P.obj.word]) P.verb = "eat";
       if (P.verb === "eat" && P.obj && MEALS[P.obj.word]) P.meal = P.obj.word;
-      if (P.verb === "want" && P.obj) P.wantN = true;
+      if (P.verb === "want" && (P.obj || P.wh === "what")) P.wantN = true;
 
       if (!P.verb && !P.adj && !P.copula && !P.there) return null;
       if (P.unknown.length > 1) return null;
@@ -3387,7 +3402,7 @@
     const EUX = {
       cantonese: ["cantonés", "le cantonais", "Kantonesisch"], mandarin: ["mandarín", "le mandarin", "Mandarin"], taishanese: ["taishanés", "le taïshanais", "Taishanesisch"],
       english: ["inglés", "l'anglais", "Englisch"], chinese: ["chino", "le chinois", "Chinesisch"], spanish: ["español", "l'espagnol", "Spanisch"], french: ["francés", "le français", "Französisch"], german: ["alemán", "l'allemand", "Deutsch"],
-      sit: ["sentarse", "s'asseoir", "sich setzen"], bathroom: ["el baño", "les toilettes", "die Toilette"], key: ["la llave", "la clé", "der Schlüssel"],
+      sit: ["sentarse", "s'asseoir", "sich setzen"], "go out": ["salir", "sortir", "ausgehen"], bathroom: ["el baño", "les toilettes", "die Toilette"], key: ["la llave", "la clé", "der Schlüssel"],
     };
 
     function euWord(key, lang) {
@@ -3413,13 +3428,16 @@
       if (P.neg) ix.neg = gl(P.tense === "past" ? "didn't" : P.imperative ? "don't" : "not");
       if (P.modal) ix.modal = gl({ want: "want to", can: "can", need: "need to", should: "should", like: "like to", try: "try to" }[P.modal]);
       if (P.tense === "fut" && !P.modal) ix.fut = gl("will");
-      if (P.verb) ix.verb = gl(P.tense === "past" && !P.modal ? P.verb + " (past)" : P.verb);
+      const pastOf = v => { const k = Object.keys(PAST_EN).find(x => PAST_EN[x] === v && !/ed$/.test(x)); return k || (v.endsWith("e") ? v + "d" : v + "ed"); };
+      if (P.verb) ix.verb = gl(P.tense === "past" && !P.modal && !P.neg && !(P.q && !P.wh) ? (P.verb.includes(" ") ? pastOf(P.verb.split(" ")[0]) + " " + P.verb.split(" ").slice(1).join(" ") : pastOf(P.verb)) : P.verb.replace(/ n$/, ""));
       if (P.adj) ix.adj = gl((P.degree ? P.degree + " " : "") + P.adj);
       if (P.copula) ix.cop = gl("is");
       if (P.there) ix.there = gl("there is");
       if (P.objPron) ix.objPron = gl(P.objPron);
       if (P.obj) ix.obj = gl(((P.obj.det && P.obj.det !== "the" && P.obj.det !== "a" && P.obj.det !== "an") ? P.obj.det + " " : "") + (P.obj.adj && P.obj.adj.length ? P.obj.adj.join(" ") + " " : "") + (P.obj.word || P.obj.pron));
       if (P.more) ix.more = gl("more");
+      if (P.objDem) ix.objDem = gl(P.objDem);
+      if (P.really) ix.really = gl("really");
       if (P.place) ix.place = gl((P.placeType === "to" && P.place.word !== "home" && P.place.word !== "where" ? "to " : P.placeType === "at" && P.place.word !== "here" && P.place.word !== "there" && P.place.word !== "where" ? "at " : "") + (P.place.word === "where" ? "where" : (P.place.det && P.place.det !== "the" ? P.place.det + " " : "") + P.place.word));
       if (P.withNP) ix.with = gl("with " + (P.withNP.pron || ((P.withNP.det && P.withNP.det !== "the" ? P.withNP.det + " " : "") + P.withNP.word)));
       if (P.forNP) ix.for = gl("for " + (P.forNP.pron || P.forNP.word));
@@ -3496,7 +3514,7 @@
         if (P.withNP) { put(FN.with, ix.with); npZh(P.withNP, ix.with); put(FN.togetherV, ix.with); }
         if (P.together && !P.withNP) put(CORE.together, ix.together);
         if (P.place && P.placeType !== "to") { put(FN.at, ix.place); npZh(P.place, ix.place); }
-        if (P.prog && L === "cmn") put({ cmn: ["在", "zài"] }, ix.verb);
+        if (P.prog && L === "cmn" && !P.neg) put(P.motionProg ? { cmn: ["要", "yào"] } : { cmn: ["在", "zài"] }, ix.verb);
       };
       if (P.adj || P.there || P.copula) preVerb();
 
@@ -3505,8 +3523,9 @@
         put({ yue: ["唔好", "m4 hou2"], cmn: ["别", "bié"], tsn: ["唔好", "mɔu55"] }, ix.neg);
       }
 
-      const modal = P.modal ? { want: FN.want, can: (SKILL.has(P.verb) ? FN.know : FN.can), need: FN.need, should: FN.should, like: FN.like, try: { yue: ["試吓", "si3 haa5"], cmn: ["试试", "shì shi"], tsn: ["試下", "si33 ha21", false] } }[P.modal] : (P.tense === "fut" ? FN.will : null);
+      const modal = (P.tense === "fut" && P.neg && !P.modal) ? null : P.modal ? { want: FN.want, can: (SKILL.has(P.verb) ? FN.know : FN.can), need: FN.need, should: FN.should, like: FN.like, try: { yue: ["試吓", "si3 haa5"], cmn: ["试试", "shì shi"], tsn: ["試下", "si33 ha21", false] } }[P.modal] : (P.tense === "fut" ? FN.will : null);
 
+      if (P.motionProg && P.neg && L !== "cmn") { put(FN.notWill, ix.neg); }
       const aNotAWord = (w, ref) => {
         const x = w[L];
         if (!x) return;
@@ -3516,9 +3535,16 @@
         toks.push({ hz: first + neg[0] + x[0], rom: fr + " " + neg[1] + " " + x[1], refs: [].concat(ref), sure: x[2] !== false });
       };
 
+      if (P.adj && ["ready", "done", "finished"].includes(P.adj)) {
+        const R = { yue: ["準備好", "zeon2 bei6 hou2"], cmn: ["准备好", "zhǔn bèi hǎo"], tsn: ["準備好", "dzun55 bi32 hɔu55", false] }[L];
+        if (P.neg) toks.push({ hz: L === "cmn" ? "还没" : L === "tsn" ? "還唔曾" : "仲未", rom: L === "cmn" ? "hái méi" : L === "tsn" ? "van21 miaŋ21" : "zung6 mei6", refs: [ix.neg], sure: L !== "tsn" });
+        toks.push({ hz: R[0], rom: R[1], refs: [ix.adj], sure: R[2] !== false });
+        if (yesno) toks.push(L === "cmn" ? { hz: "了吗", rom: "le ma", refs: [ix.q], sure: true } : L === "tsn" ? { hz: "唔曾", rom: "miaŋ21", refs: [ix.q], sure: true } : { hz: "未呀", rom: "mei6 aa3", refs: [ix.q], sure: true });
+        else if (!P.neg) toks.push(L === "cmn" ? { hz: "了", rom: "le", refs: [ix.adj], sure: true } : L === "tsn" ? { hz: "啦", rom: "la55", refs: [ix.adj], sure: true } : { hz: "喇", rom: "laa3", refs: [ix.adj], sure: true });
+        return toks;
+      }
+      if (P.adj && P.adj === "good" && P.subj === "it" && !P.degree && !yesno && !P.neg && L === "yue") { toks.push({ hz: "好正", rom: "hou2 zeng3", refs: [ix.adj], sure: true }); return toks; }
       if (P.adj) {
-        if (P.subj == null && !P.imperative) {
-        }
         const adjW = zhWord(P.adj);
         if (P.neg && !P.imperative) put(FN.not, ix.neg);
         if (yesno && !P.neg && L !== "cmn") { if (adjW) aNotAWord(adjW, ix.adj); else word(P.adj, ix.adj); }
@@ -3556,7 +3582,8 @@
       if (pastYesNo && !P.yet && !P.well) put(FN.haveNot, ix.q);
 
       if (neg && !(P.imperative) && !(P.modal === "can" && ["find", "see", "hear", "sleep"].includes(P.verb))) {
-        if (P.modal || P.tense !== "past") put(neg, ix.neg); else put(FN.notPast, ix.neg);
+        if (P.motionProg && L !== "cmn") {}
+        else if (P.modal || P.tense !== "past") put(neg, ix.neg); else put(FN.notPast, ix.neg);
       }
 
       const RES = { find: { yue: ["搵", "wan2"], cmn: ["找", "zhǎo"], tsn: ["搵", "vun55"] }, see: { yue: ["睇", "tai2"], cmn: ["看", "kàn"], tsn: ["睇", "hai55"] }, hear: { yue: ["聽", "teng1"], cmn: ["听", "tīng"], tsn: ["聽", "hiaŋ33"] }, sleep: { yue: ["瞓", "fan3"], cmn: ["睡", "shuì"], tsn: ["瞓", "fun33"] } };
@@ -3590,6 +3617,17 @@
       if (P.verb) {
         const homeV = { go: { yue: ["返", "faan1"], cmn: ["回", "huí"], tsn: ["返", "fan33"] }, come: { yue: ["返嚟", "faan1 lai4"], cmn: ["回", "huí"], tsn: ["返來", "fan33 lɔi22"] } };
         const goHome = P.place && P.place.word === "home" && homeV[P.verb];
+        if (P.well && P.neg) {
+          const st0 = { sleep: { yue: ["瞓", "fan3"], cmn: ["睡", "shuì"], tsn: ["瞓", "fun33"] }, eat: { yue: ["食", "sik6"], cmn: ["吃", "chī"], tsn: ["吃", "hiak33"] } }[P.verb] || zhWord(P.verb);
+          const x0 = st0 && st0[L];
+          if (x0) {
+            const n = toks.findIndex(t => /^(冇|没|唔|不)$/.test(t.hz));
+            if (n >= 0) toks.splice(n, 1);
+            if (L === "cmn") toks.push({ hz: "没" + x0[0] + "好", rom: "méi " + x0[1].split(" ")[0] + " hǎo", refs: [ix.neg, ix.verb], sure: true });
+            else toks.push({ hz: x0[0] + "得唔好", rom: x0[1].split(" ")[0] + (L === "tsn" ? " ak33 m22 hɔu55" : " dak1 m4 hou2"), refs: [ix.verb, ix.neg], sure: true });
+            return toks;
+          }
+        }
         if (P.well) {
           const st = { sleep: { yue: ["瞓", "fan3"], cmn: ["睡", "shuì"], tsn: ["瞓", "fun33"] }, eat: { yue: ["食", "sik6"], cmn: ["吃", "chī"], tsn: ["吃", "hiak33"] } }[P.verb] || zhWord(P.verb);
           const x = st && st[L];
@@ -3602,12 +3640,24 @@
             return toks;
           }
         }
-        let vw = goHome ? homeV[P.verb] : P.wantN ? { yue: ["要", "jiu3"], cmn: ["要", "yào"], tsn: ["要", "yiau33", false] } : P.verb === "cook" && P.obj ? { yue: ["煮", "zyu2"], cmn: ["做", "zuò"], tsn: ["煮", "dzi55"] } : zhWord(P.verb);
+        if (P.verb === "eat" && pastYesNo && !P.obj && !P.wh) {
+          const ate = { yue: [["你", "nei5"], ["食咗飯", "sik6 zo2 faan6"], ["未呀", "mei6 aa3"]], cmn: [["你", "nǐ"], ["吃饭", "chī fàn"], ["了吗", "le ma"]], tsn: [["你", "ni33"], ["吃啊飯", "hiak33 ə33 fan32"], ["唔曾", "miaŋ21"]] }[L];
+          toks.length = 0;
+          if (P.subj && P.subj !== "you") { const z = zhWord(P.subj); if (z) toks.push({ hz: z[L][0], rom: z[L][1], refs: [ix.subj], sure: true }); } else toks.push({ hz: ate[0][0], rom: ate[0][1], refs: [ix.subj], sure: true });
+          toks.push({ hz: ate[1][0], rom: ate[1][1], refs: [ix.verb], sure: true });
+          toks.push({ hz: ate[2][0], rom: ate[2][1], refs: [ix.q], sure: true });
+          return toks;
+        }
+        if (P.really && P.verb === "like") put({ yue: ["真係好", "zan1 hai6 hou2"], cmn: ["非常", "fēi cháng"], tsn: ["真係好", "tsin33 hai32 hɔu55", false] }, ix.really);
+        let vw = goHome ? homeV[P.verb] : P.wantN ? (P.wh === "what" ? { yue: ["想要", "soeng2 jiu3"], cmn: ["想要", "xiǎng yào"], tsn: ["想要", "ɬiaŋ55 yiau33", false] } : { yue: ["要", "jiu3"], cmn: ["要", "yào"], tsn: ["要", "yiau33", false] }) : P.verb === "cook" && (P.obj || P.objDem) ? { yue: ["煮", "zyu2"], cmn: ["做", "zuò"], tsn: ["煮", "dzi55"] } : zhWord(P.verb);
         const isGoCome = P.verb === "go" || P.verb === "come";
-        if (aNotA && !P.neg && !pastYesNo && vw && !P.yet) { aNotAWord(vw, ix.verb); aNotA = false; }
+        if (aNotA && !P.neg && !pastYesNo && vw && !P.yet && !P.prog) { aNotAWord(vw, ix.verb); aNotA = false; }
         else if (vw) put(vw, ix.verb); else word(P.verb, ix.verb);
-        if (P.tense === "past" && !P.neg && !P.modal && !pastYesNo && !(L === "cmn" && !P.obj && !P.wh) || (P.tense === "past" && !P.neg && !P.modal && P.yet && L !== "cmn")) put(FN.past, ix.verb);
-        if (P.prog && L !== "cmn") put({ yue: ["緊", "gan2"], tsn: ["緊", "gin55", false] }, ix.verb);
+        if (P.tense === "past" && !P.neg && !P.modal && !pastYesNo && !(L === "cmn" && !P.obj && !P.objDem && !P.wh) || (P.tense === "past" && !P.neg && !P.modal && P.yet && L !== "cmn")) put(FN.past, ix.verb);
+        if (P.prog && L !== "cmn" && !P.neg) put({ yue: ["緊", "gan2"], tsn: ["緊", "gin55", false] }, ix.verb);
+        if (P.objDem) put({ it: (P.verb === "like" && !yesno) ? CORE.it : null, this: FN.this, that: FN.that }[P.objDem] || { yue: null, cmn: null, tsn: null }, ix.objDem);
+        if (!P.obj && !P.objDem && !P.wh && !P.place && !P.objPron && ["eat"].includes(P.verb) && !P.neg && !P.prog === false) put({ yue: ["嘢", "je5"], cmn: ["东西", "dōng xi"], tsn: ["嘢", "yia33"] }, ix.verb);
+        else if (!P.obj && !P.objDem && !P.wh && !P.place && P.verb === "eat" && (P.modal === "want") && !P.neg) put({ yue: ["嘢", "je5"], cmn: ["东西", "dōng xi"], tsn: ["嘢", "yia33"] }, ix.verb);
         if (P.objPron) word(P.objPron, ix.objPron);
         if (isGoCome && P.place && !(goHome && L === "cmn" && false)) npZh(goHome && L === "cmn" ? { word: "home" } : P.place, ix.place);
         if (P.wh === "what" && !P.obj) put(CORE.what, ix.wh);
@@ -3618,7 +3668,7 @@
         npZh(P.obj, ix.obj);
         if (P.forNP) { }
         if (P.alot) put(CORE["a lot"], ix.alot);
-        if (P.tense === "past" && !P.neg && !P.modal && L === "cmn" && !pastYesNo && !P.obj && !P.wh) put(FN.past, ix.verb);
+        if (P.tense === "past" && !P.neg && !P.modal && L === "cmn" && !pastYesNo && !P.obj && !P.objDem && !P.wh) put(FN.past, ix.verb);
       }
 
       if (P.wh === "howmuch") put(FN.howMuch, ix.wh);
@@ -3780,15 +3830,18 @@
           else { push("vamos a", ix.lets); push(inf + (refl ? "nos" : ""), ix.verb); }
         } else if (likeV) {
           neg();
-          const obj = P.obj && P.verb === "like" ? npEU({ ...P.obj, det: P.obj.det || "the" }, "es", "subj", P) : "";
+          const obj = P.obj && P.verb === "like" && !["anything", "something"].includes(P.obj.word) ? npEU({ ...P.obj, det: P.obj.det || "the" }, "es", "subj", P) : "";
           push(esIO[p5], ix.subj ?? ix.verb);
           push((P.tense === "past" ? "gustó" : (P.obj && P.obj.plural ? "gustan" : "gusta")), ix.modal ?? ix.verb);
           if (P.verb !== "like") push(inf, ix.verb);
           if (obj) push(obj, ix.obj);
+          if (P.objDem && P.objDem !== "it") push({ this: "esto", that: "eso" }[P.objDem], ix.objDem);
+          if (P.really) push("mucho", ix.really);
         } else {
           neg();
           if (refl) push(esRefl[p5], ix.verb);
           if (objPronEs) push(objPronEs, ix.objPron);
+          if (P.objDem === "it" && !P.modal && P.tense !== "fut") push("lo", ix.objDem);
           const modalInf = { want: "querer", can: "poder", need: "tener", should: "deber", try: "intentar" }[P.modal];
           if (modalInf) {
             push((P.tense === "past" ? esPret(modalInf, p5) : esPresent(modalInf, p5)) + (P.modal === "need" ? " que" : ""), ix.modal);
@@ -3797,13 +3850,19 @@
             push(esPresent("ir", p5) + " a", ix.fut); push(inf, ix.verb);
           } else if (P.tense === "past") {
             push(esPret(inf, p5), ix.verb);
+          } else if (P.prog && !P.motionProg && !P.neg) {
+            const ger = { dormir: "durmiendo", leer: "leyendo", ir: "yendo", decir: "diciendo", venir: "viniendo", pedir: "pidiendo", oír: "oyendo", traer: "trayendo" }[inf] || inf.replace(/ar$/, "ando").replace(/[eií]r$/, "iendo");
+            push(esPresent("estar", p5), ix.verb); push(ger, ix.verb);
           } else {
             push(esPresent(inf, p5), ix.verb);
           }
         }
         if (!likeV) {
           if (P.more && !P.obj) push("más", ix.more);
-          if (!P.meal) push(npEU(P.obj, "es", "obj", P), ix.obj);
+          if (P.obj && ["anything", "something"].includes(P.obj.word)) push(P.neg ? "nada" : "algo", ix.obj);
+          else if (P.obj && P.obj.word === "help n") push("ayuda", ix.obj);
+          else if (!P.meal) push(npEU(P.obj, "es", "obj", P), ix.obj);
+          if (P.objDem && P.objDem !== "it") push({ this: "esto", that: "eso" }[P.objDem], ix.objDem);
         }
       }
       if (P.place) push(P.place.word === "where" ? "" : npEU(P.place, "es", P.placeType === "to" ? "to" : "at"), ix.place);
@@ -3811,7 +3870,8 @@
       if (P.together) push("juntos", ix.together);
       if (P.also) push("también", ix.also);
       if (P.alot) push("mucho", ix.alot);
-      if (P.yet) push("ya", ix.yet);
+      if (P.yet && !P.neg) push("ya", ix.yet);
+      if (P.yet && P.neg) { const k = T.findIndex(t => t.hz === "no"); if (k >= 0) T[k].hz = "todavía no"; }
       if (P.well) push("bien", ix.verb);
       P.time.forEach((t, k) => { if (k > 0 || P.wh || P.imperative) push(TIME_X[t][3], ix["time" + k]); });
       if (P.please) push("por favor", ix.please);
@@ -3882,7 +3942,7 @@
           const deg = { very: "très", so: "tellement", too: "trop", really: "vraiment", "a little": "un peu" }[P.degree];
           let a = euWord(P.adj, "fr") || P.adj;
           if (P.subj === "she" && !/e$/.test(a)) a += "e";
-          if (!subj && !P.imperative) { subj = "c'"; push("C'est", ix.adj); push((deg ? deg + " " : "") + a, ix.adj); }
+          if ((!subj || P.subj === "it") && !P.imperative) { push(P.neg ? (P.yet ? "Ce n'est pas encore" : "Ce n'est pas") : "C'est", [ix.adj, ix.neg].filter(x => x !== undefined)); push((deg ? deg + " " : "") + a, ix.adj); }
           else if (P.imperative) { push(P.neg ? "Ne sois pas" : "Sois", ix.adj); push(a, ix.adj); }
           else {
             if (P.tense === "past") { verbGroup(frPresent("avoir", pi), ix.adj, "été"); }
@@ -3929,14 +3989,18 @@
           if (extra) push(extra, ix.verb);
         }
         if (P.more && !P.obj) push("plus", ix.more);
-        if (!P.meal) push(npEU(P.obj, "fr", "obj", P), ix.obj);
+        if (P.really) push("vraiment", ix.really);
+        if (P.objDem) push("ça", ix.objDem);
+        if (P.obj && ["anything", "something"].includes(P.obj.word)) { if (P.neg) { const k = T.findIndex(t => / pas$/.test(t.hz)); if (k >= 0) T[k].hz = T[k].hz.replace(/ pas$/, ""); } push(inf === "avoir" && extra === "besoin" ? (P.neg ? "de rien" : "de quelque chose") : (P.neg ? "rien" : "quelque chose"), ix.obj); }
+        else if (P.obj && P.obj.word === "help n") push("d'aide", ix.obj);
+        else if (!P.meal) push(npEU(P.obj, "fr", "obj", P), ix.obj);
       }
       if (P.place && P.place.word !== "where" && inf !== "rentrer") push(npEU(P.place, "fr", P.placeType === "to" ? "to" : "at"), ix.place);
       if (P.withNP) push(npEU(P.withNP, "fr", "with"), ix.with);
       if (P.together) push("ensemble", ix.together);
       if (P.also) push("aussi", ix.also);
       if (P.alot) push("beaucoup", ix.alot);
-      if (P.yet) push("déjà", ix.yet);
+      if (P.yet && !P.neg) push("déjà", ix.yet);
       if (whEnd) push(whEnd, ix.wh);
       P.time.forEach((t, k) => push(TIME_X[t][4], ix["time" + k]));
       if (P.please) push(P.subj === "you all" ? "s'il vous plaît" : "s'il te plaît", ix.please);
@@ -3972,7 +4036,7 @@
         } else {
           finite = P.tense === "past" ? (["war", "warst", "war", "waren", "wart", "waren", "waren"][pi]) : dePresent("sein", pi); finRef = ix.adj;
           const deg = { very: "sehr", so: "so", too: "zu", really: "echt", "a little": "ein bisschen" }[P.degree];
-          if (P.neg) mid.push(["nicht", ix.neg]);
+          if (P.neg) mid.push([P.yet ? "noch nicht" : "nicht", ix.neg]);
           mid.push([(deg ? deg + " " : "") + (euWord(P.adj, "de") || P.adj), ix.adj]);
           if (!subj && !P.imperative) return deOrder(T, push, P, ix, wh, "es", finite, finRef, mid, tail, yesno);
         }
@@ -4042,10 +4106,13 @@
           if (sp.before) tail.push([sp.before, ix.verb]);
           if (sp.pre) tail.push([sp.pre, ix.verb]);
         }
-        const objS = P.meal ? "" : npEU(P.obj, "de", "obj", P);
+        const objS = P.meal ? "" : P.obj && ["anything", "something"].includes(P.obj.word) ? (P.neg ? "nichts" : "etwas") : P.obj && P.obj.word === "help n" ? "Hilfe" : npEU(P.obj, "de", "obj", P);
+        if (P.objDem) mid.push([{ it: "es", this: "das", that: "das" }[P.objDem], ix.objDem]);
+        if (P.really) mid.push(["wirklich", ix.really]);
+        if (P.prog && !P.motionProg && !P.neg && P.tense === "pres" && !P.modal) mid.push(["gerade", ix.verb]);
         if (objS) mid.push([objS, ix.obj]);
         if (P.more && !P.obj) mid.push(["mehr", ix.more]);
-        if (P.neg && !(objS && /^kein/.test(objS))) tail.unshift(["nicht", ix.neg]);
+        if (P.neg && !(objS && /^(kein|nichts)/.test(objS))) tail.unshift([P.yet ? "noch nicht" : P.well ? "nicht gut" : "nicht", ix.neg]);
       } else return [];
 
       return deOrder(T, push, P, ix, wh, subj, finite, finRef, mid, tail, yesno);
@@ -4077,8 +4144,8 @@
       }
       if (P.time.length) P.time.forEach((t, k) => push(TIME_X[t][5], ix["time" + k]));
       if (P.also) push("auch", ix.also);
-      if (P.yet) push("schon", ix.yet);
-      if (P.well) push("gut", ix.verb);
+      if (P.yet && !P.neg) push("schon", ix.yet);
+      if (P.well && !P.neg) push("gut", ix.verb);
       if (P.together) push("zusammen", ix.together);
       mid.forEach(([h, r]) => push(h, r));
       if (P.withNP) push(npEU(P.withNP, "de", "with"), ix.with);
@@ -4120,6 +4187,9 @@
       "i love you": [["我愛你", "ngo5 oi3 nei5"], ["我爱你", "wǒ ài nǐ"], ["我愛你", "ŋɔi33 ɔi33 ni33", false], "Te quiero", "Je t'aime", "Ich liebe dich", ["I", "love", "you"]],
       "i love you all": [["我好錫你哋", "ngo5 hou2 sek3 nei5 dei6"], ["我爱你们", "wǒ ài nǐ men"], ["我好錫你", "ŋɔi33 hɔu55 ɬɛk33 ni21", false], "Los quiero mucho", "Je vous aime", "Ich hab euch lieb", ["I", "love", "you all"]],
       "what is your name": [["你叫乜嘢名呀", "nei5 giu3 mat1 je5 meng2 aa3"], ["你叫什么名字", "nǐ jiào shén me míng zi"], ["你估乜名啊", "ni33 gu55 mɔt55 miaŋ22 a33"], "¿Cómo te llamas?", "Comment tu t'appelles?", "Wie heißt du?", ["What", "is", "your name"]],
+      "why not": [["點解唔得", "dim2 gaai2 m4 dak1"], ["为什么不呢", "wèi shén me bù ne"], ["做乜唔得", "du33 mɔt55 m22 ak55", false], "¿Por qué no?", "Pourquoi pas?", "Warum nicht?", ["Why", "not"]],
+      "how much is it": [["幾多錢呀", "gei2 do1 cin2 aa3"], ["多少钱", "duō shao qián"], ["幾多錢啊", "gi55 ɔ335 tein225 a33", false], "¿Cuánto cuesta?", "C'est combien?", "Wie viel kostet das?", ["How much", "is it"]],
+      "how many people": [["有幾多人呀", "jau5 gei2 do1 jan4 aa3"], ["几个人", "jǐ ge rén"], ["有幾多人啊", "yiu33 gi55 ɔ335 ŋin22 a33", false], "¿Cuántas personas?", "Combien de personnes?", "Wie viele Leute?", ["How many", "people"]],
       "excuse me": [["唔好意思", "m4 hou2 ji3 si1"], ["不好意思", "bù hǎo yì si"], ["唔好意思", "m22 hɔu55 yi33 ɬu55", false], "Disculpa", "Excuse-moi", "Entschuldigung", ["Excuse me"]],
     };
 
@@ -4172,7 +4242,8 @@
       };
       const tk = (h, r) => ({ hz: h, rom: "", refs: r });
       const es = { where: [tk("¿Dónde", [0]), tk(plural ? "están" : "está", [1]), tk(subj.es + "?", [2])], what: [tk("¿Qué", [0]), tk(plural ? "son" : "es", [1]), tk(subj.es + "?", [2])], who: [tk("¿Quién", [0]), tk("es", [1]), tk(subj.es + "?", [2])], how: [tk("¿Cómo", [0]), tk(plural ? "están" : "está", [1]), tk(subj.es + "?", [2])] }[P.wh];
-      const fr = { where: [tk("Où", [0]), tk(plural ? "sont" : "est", [1]), tk(subj.fr + "?", [2])], what: [tk("C'est", [1]), tk("quoi,", [0]), tk(subj.fr + "?", [2])], who: [tk("Qui", [0]), tk("est", [1]), tk(subj.fr + "?", [2])], how: [tk("Comment", [0]), tk(plural ? "vont" : "va", [1]), tk(subj.fr + "?", [2])] }[P.wh];
+      const plFr = n.plural || /^(les|mes|tes|ses|nos|vos|leurs) /.test(subj.fr);
+      const fr = { where: [tk("Où", [0]), tk(plFr ? "sont" : "est", [1]), tk(subj.fr + "?", [2])], what: [tk("C'est", [1]), tk("quoi,", [0]), tk(subj.fr + "?", [2])], who: [tk("Qui", [0]), tk("est", [1]), tk(subj.fr + "?", [2])], how: [tk("Comment", [0]), tk(plFr ? "vont" : "va", [1]), tk(subj.fr + "?", [2])] }[P.wh];
       const de = { where: [tk("Wo", [0]), tk(plural ? "sind" : "ist", [1]), tk(subj.de + "?", [2])], what: [tk("Was", [0]), tk("ist", [1]), tk(subj.de + "?", [2])], who: [tk("Wer", [0]), tk("ist", [1]), tk(subj.de + "?", [2])], how: [tk("Wie", [0]), tk(plural ? "sind" : "ist", [1]), tk(subj.de + "?", [2])] }[P.wh];
       const p = { en: text, gloss, yue: zh("yue"), cmn: zh("cmn"), tsn: zh("tsn"), es, fr, de, guess: true, composed: true, tip: tr("c_note") };
       return { p, found: 3, counted: 3 };

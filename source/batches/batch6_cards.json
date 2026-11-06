@@ -1,0 +1,10482 @@
+[
+ {
+  "cat": "Quick Patterns",
+  "en": "I want to eat.",
+  "gloss": [
+   "I",
+   "want to",
+   "eat"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "soeng2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嘢",
+    "rom": "je5",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "东西",
+    "rom": "dōng xi",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "ɬiaŋ55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嘢",
+    "rom": "yia33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Quiero",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comer",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "manger",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "will",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "essen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you want to eat?",
+  "gloss": [
+   "You",
+   "want to",
+   "eat",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想唔想",
+    "rom": "soeng2 m4 soeng2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嘢",
+    "rom": "je5",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "东西",
+    "rom": "dōng xi",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想唔想",
+    "rom": "ɬiaŋ55 m22 ɬiaŋ55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嘢",
+    "rom": "yia33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Quieres",
+    "rom": "",
+    "refs": [
+     1,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comer?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "manger?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Willst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "essen?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't want to eat.",
+  "gloss": [
+   "I",
+   "not",
+   "want to",
+   "eat"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "soeng2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "ɬiaŋ55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quiero",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comer",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne veux pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "manger",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "will",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "essen",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Did you eat?",
+  "gloss": [
+   "You",
+   "eat",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食咗飯",
+    "rom": "sik6 zo2 faan6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "未呀",
+    "rom": "mei6 aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃饭",
+    "rom": "chī fàn",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了吗",
+    "rom": "le ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃啊飯",
+    "rom": "hiak33 ə33 fan32",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔曾",
+    "rom": "miaŋ21",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Comiste?",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "as",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mangé?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Hast",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gegessen?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I didn't eat.",
+  "gloss": [
+   "I",
+   "didn't",
+   "eat"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "冇",
+    "rom": "mou5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "没",
+    "rom": "méi",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "冇",
+    "rom": "mɔu33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comí",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "n'ai pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mangé",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "habe",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gegessen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm eating.",
+  "gloss": [
+   "I",
+   "eat"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嘢",
+    "rom": "je5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "在",
+    "rom": "zài",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "东西",
+    "rom": "dōng xi",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "嘢",
+    "rom": "yia33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Estoy",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comiendo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mange",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "esse",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gerade",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm going to eat later.",
+  "gloss": [
+   "I",
+   "will",
+   "eat",
+   "later"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "遲啲",
+    "rom": "ci4 di1",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "會",
+    "rom": "wui5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "等一下",
+    "rom": "děng yí xià",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "会",
+    "rom": "huì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "遲啲",
+    "rom": "tsi22 nit55",
+    "refs": [
+     3
+    ],
+    "sure": false
+   },
+   {
+    "hz": "會",
+    "rom": "vui32",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Más tarde",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "voy a",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comer",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vais",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "manger",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "plus tard",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "werde",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "später",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "essen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Let's eat together.",
+  "gloss": [
+   "Let's",
+   "eat",
+   "together"
+  ],
+  "yue": [
+   {
+    "hz": "我哋",
+    "rom": "ngo5 dei6",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "一齊",
+    "rom": "jat1 cai4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "食",
+    "rom": "sik6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "laa1",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我们",
+    "rom": "wǒ men",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "一起",
+    "rom": "yì qǐ",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "chī",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吧",
+    "rom": "ba",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi21",
+    "refs": [
+     0
+    ],
+    "sure": false
+   },
+   {
+    "hz": "一齊",
+    "rom": "yit55 tai225",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吃",
+    "rom": "hiak33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "la55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Vamos a",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comer",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "juntos",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Mangeons",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ensemble",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Lass",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "uns",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "zusammen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "essen",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I want to go out.",
+  "gloss": [
+   "I",
+   "want to",
+   "go out"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "soeng2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "ɬiaŋ55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Quiero",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "salir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sortir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "will",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ausgehen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you want to go out?",
+  "gloss": [
+   "You",
+   "want to",
+   "go out",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想唔想",
+    "rom": "soeng2 m4 soeng2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想唔想",
+    "rom": "ɬiaŋ55 m22 ɬiaŋ55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Quieres",
+    "rom": "",
+    "refs": [
+     1,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "salir?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sortir?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Willst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ausgehen?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't want to go out.",
+  "gloss": [
+   "I",
+   "not",
+   "want to",
+   "go out"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "soeng2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "ɬiaŋ55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quiero",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "salir",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne veux pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sortir",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "will",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ausgehen",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Did you go out today?",
+  "gloss": [
+   "You",
+   "go out",
+   "today",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "今日",
+    "rom": "gam1 jat6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "有冇",
+    "rom": "jau5 mou5",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "今天",
+    "rom": "jīn tiān",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "有没有",
+    "rom": "yǒu méi yǒu",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "今日",
+    "rom": "gim33 ŋit21",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "有冇",
+    "rom": "yiu33 mɔu55",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Hoy",
+    "rom": "",
+    "refs": [
+     2,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "saliste?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sorti",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "aujourd'hui?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Bist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "heute",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ausgegangen?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm going out now.",
+  "gloss": [
+   "I",
+   "go out",
+   "now"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "而家",
+    "rom": "ji4 gaa1",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "现在",
+    "rom": "xiàn zài",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "而家",
+    "rom": "yi22 ga33",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Ahora",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "salgo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sors",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "maintenant",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gehe",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "jetzt",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "aus",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Let's go out tonight.",
+  "gloss": [
+   "Let's",
+   "go out",
+   "tonight"
+  ],
+  "yue": [
+   {
+    "hz": "我哋",
+    "rom": "ngo5 dei6",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "今晚",
+    "rom": "gam1 maan5",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "ceot1 heoi3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "laa1",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我们",
+    "rom": "wǒ men",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "今晚",
+    "rom": "jīn wǎn",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "chū qù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吧",
+    "rom": "ba",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi21",
+    "refs": [
+     0
+    ],
+    "sure": false
+   },
+   {
+    "hz": "今晚",
+    "rom": "gim33 man21",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "出去",
+    "rom": "tsut55 hui33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "la55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Esta noche",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vamos a",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "salir",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Sortons",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ce soir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Lass",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "uns",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "heute Abend",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ausgehen",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I want to sleep.",
+  "gloss": [
+   "I",
+   "want to",
+   "sleep"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "soeng2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓覺",
+    "rom": "fan3 gaau3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "xiǎng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "睡觉",
+    "rom": "shuì jiào",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想",
+    "rom": "ɬiaŋ55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "瞓覺",
+    "rom": "fun33 gɔu33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Quiero",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dormir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dormir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "will",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "schlafen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Did you sleep well?",
+  "gloss": [
+   "You",
+   "sleep",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓得好唔好",
+    "rom": "fan3 dak1 hou2 m4 hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "睡得好",
+    "rom": "shuì de hǎo",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓得好唔好",
+    "rom": "fun33 ak33 hɔu55 m22 hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Dormiste",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bien?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "as",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bien dormi?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Hast",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gut",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "geschlafen?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I didn't sleep well.",
+  "gloss": [
+   "I",
+   "didn't",
+   "sleep"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓得唔好",
+    "rom": "fan3 dak1 m4 hou2",
+    "refs": [
+     2,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "没睡好",
+    "rom": "méi shuì hǎo",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓得唔好",
+    "rom": "fun33 ak33 m22 hɔu55",
+    "refs": [
+     2,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dormí",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bien",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "n'ai pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bien dormi",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "habe",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht gut",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "geschlafen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm going to sleep now.",
+  "gloss": [
+   "I",
+   "will",
+   "sleep",
+   "now"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "而家",
+    "rom": "ji4 gaa1",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "會",
+    "rom": "wui5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "瞓覺",
+    "rom": "fan3 gaau3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "现在",
+    "rom": "xiàn zài",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "会",
+    "rom": "huì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "睡觉",
+    "rom": "shuì jiào",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "而家",
+    "rom": "yi22 ga33",
+    "refs": [
+     3
+    ],
+    "sure": false
+   },
+   {
+    "hz": "會",
+    "rom": "vui32",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "瞓覺",
+    "rom": "fun33 gɔu33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Ahora",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "voy a",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dormir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vais",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dormir",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "maintenant",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "werde",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "jetzt",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "schlafen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I can cook.",
+  "gloss": [
+   "I",
+   "can",
+   "cook"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sik1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "zyu2 faan6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "会",
+    "rom": "huì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做饭",
+    "rom": "zuò fàn",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sɛt55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "dzi55 fan32",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Puedo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinar",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "peux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cuisiner",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kann",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kochen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Can you cook?",
+  "gloss": [
+   "You",
+   "can",
+   "cook",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識唔識",
+    "rom": "sik1 m4 sik1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "zyu2 faan6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "会",
+    "rom": "huì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做饭",
+    "rom": "zuò fàn",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識唔識",
+    "rom": "sɛt55 m22 sɛt55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "dzi55 fan32",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Puedes",
+    "rom": "",
+    "refs": [
+     1,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinar?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "peux",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cuisiner?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Kannst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kochen?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I can't cook.",
+  "gloss": [
+   "I",
+   "not",
+   "can",
+   "cook"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sik1",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "zyu2 faan6",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "会",
+    "rom": "huì",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做饭",
+    "rom": "zuò fàn",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sɛt55",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "dzi55 fan32",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "puedo",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinar",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne peux pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cuisiner",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kann",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kochen",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Who cooked this?",
+  "gloss": [
+   "Who",
+   "cooked",
+   "this"
+  ],
+  "yue": [
+   {
+    "hz": "邊個",
+    "rom": "bin1 go3",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮",
+    "rom": "zyu2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "咗",
+    "rom": "zo2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呢個",
+    "rom": "ni1 go3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "谁",
+    "rom": "shéi",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zuò",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了",
+    "rom": "le",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "这个",
+    "rom": "zhè ge",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "谁",
+    "rom": "sui55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮",
+    "rom": "dzi55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "ə33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "該個",
+    "rom": "kɔi21 gɔi33",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Quién",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinó",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "esto?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Qui",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "a",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cuisiné",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ça?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wer",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "hat",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "das",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gekocht?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm cooking dinner.",
+  "gloss": [
+   "I",
+   "cook",
+   "dinner"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮",
+    "rom": "zyu2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "晚飯",
+    "rom": "maan5 faan6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "在",
+    "rom": "zài",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zuò",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "晚饭",
+    "rom": "wǎn fàn",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮",
+    "rom": "dzi55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "晚飯",
+    "rom": "man21 fan32",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Estoy",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinando",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "la cena",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "prépare",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "le dîner",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "koche",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gerade",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "das Abendessen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Let's cook together.",
+  "gloss": [
+   "Let's",
+   "cook",
+   "together"
+  ],
+  "yue": [
+   {
+    "hz": "我哋",
+    "rom": "ngo5 dei6",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "一齊",
+    "rom": "jat1 cai4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "zyu2 faan6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "laa1",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我们",
+    "rom": "wǒ men",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "一起",
+    "rom": "yì qǐ",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做饭",
+    "rom": "zuò fàn",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吧",
+    "rom": "ba",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi21",
+    "refs": [
+     0
+    ],
+    "sure": false
+   },
+   {
+    "hz": "一齊",
+    "rom": "yit55 tai225",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "煮飯",
+    "rom": "dzi55 fan32",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啦",
+    "rom": "la55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Vamos a",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cocinar",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "juntos",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Cuisinons",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ensemble",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Lass",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "uns",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "zusammen",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kochen",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I like it.",
+  "gloss": [
+   "I",
+   "like",
+   "it"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "鍾意",
+    "rom": "zung1 ji3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "佢",
+    "rom": "keoi5",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "喜欢",
+    "rom": "xǐ huan",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "它",
+    "rom": "tā",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "中意",
+    "rom": "dzəŋ33 yi33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "佢",
+    "rom": "kui33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Me",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gusta",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "J'aime",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ça",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mag",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you like it?",
+  "gloss": [
+   "You",
+   "like",
+   "it",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "鍾唔鍾意",
+    "rom": "zung1 m4 zung1 ji3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "喜欢",
+    "rom": "xǐ huan",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "中唔中意",
+    "rom": "dzəŋ33 m22 dzəŋ33 yi33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Te",
+    "rom": "",
+    "refs": [
+     0,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gusta?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "aimes",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ça?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Magst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't like it.",
+  "gloss": [
+   "I",
+   "not",
+   "like",
+   "it"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "鍾意",
+    "rom": "zung1 ji3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "佢",
+    "rom": "keoi5",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "喜欢",
+    "rom": "xǐ huan",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "它",
+    "rom": "tā",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "中意",
+    "rom": "dzəŋ33 yi33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "佢",
+    "rom": "kui33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "me",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gusta",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "n'aime pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ça",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mag",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I really like this.",
+  "gloss": [
+   "I",
+   "like",
+   "this",
+   "really"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "真係好",
+    "rom": "zan1 hai6 hou2",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "鍾意",
+    "rom": "zung1 ji3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呢個",
+    "rom": "ni1 go3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "非常",
+    "rom": "fēi cháng",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "喜欢",
+    "rom": "xǐ huan",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "这个",
+    "rom": "zhè ge",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "真係好",
+    "rom": "tsin33 hai32 hɔu55",
+    "refs": [
+     3
+    ],
+    "sure": false
+   },
+   {
+    "hz": "中意",
+    "rom": "dzəŋ33 yi33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "該個",
+    "rom": "kɔi21 gɔi33",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Me",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gusta",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "esto",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mucho",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "J'aime",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vraiment",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ça",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mag",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "das",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "wirklich",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I need help.",
+  "gloss": [
+   "I",
+   "need",
+   "help n"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "seoi1 jiu3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "幫手",
+    "rom": "bong1 sau2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "xū yào",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "帮助",
+    "rom": "bāng zhù",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "ɬui33 yiau33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "幫手",
+    "rom": "bɔŋ33 siu55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Necesito",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ayuda",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "J'ai",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "besoin",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "d'aide",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "brauche",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "Hilfe",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you need help?",
+  "gloss": [
+   "You",
+   "need",
+   "help n",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需唔需要",
+    "rom": "seoi1 m4 seoi1 jiu3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "幫手",
+    "rom": "bong1 sau2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "xū yào",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "帮助",
+    "rom": "bāng zhù",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需唔需要",
+    "rom": "ɬui33 m22 ɬui33 yiau33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "幫手",
+    "rom": "bɔŋ33 siu55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Necesitas",
+    "rom": "",
+    "refs": [
+     1,
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ayuda?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "as",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "besoin",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "d'aide?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Brauchst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "Hilfe?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't need anything.",
+  "gloss": [
+   "I",
+   "not",
+   "need",
+   "anything"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "seoi1 jiu3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "任何嘢",
+    "rom": "jam6 ho4 je5",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "xū yào",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "任何东西",
+    "rom": "rèn hé dōng xi",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "需要",
+    "rom": "ɬui33 yiau33",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mɔt55 yia33",
+    "refs": [
+     3
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "necesito",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nada",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "n'ai",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "besoin",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "de rien",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "brauche",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nichts",
+    "rom": "",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I know.",
+  "gloss": [
+   "I",
+   "know"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知",
+    "rom": "zi1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知道",
+    "rom": "zhī dao",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sɛt55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Sé",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sais",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "weiß",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't know.",
+  "gloss": [
+   "I",
+   "not",
+   "know"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知",
+    "rom": "zi1",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知道",
+    "rom": "zhī dao",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識",
+    "rom": "sɛt55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sé",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne sais pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "weiß",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you know?",
+  "gloss": [
+   "You",
+   "know",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知唔知",
+    "rom": "zi1 m4 zi1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "知道",
+    "rom": "zhī dao",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "識唔識",
+    "rom": "sɛt55 m22 sɛt55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Sabes?",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "sais?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Weißt",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I understand.",
+  "gloss": [
+   "I",
+   "understand"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明",
+    "rom": "ming4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明白",
+    "rom": "míng bai",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明",
+    "rom": "mein22",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Entiendo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comprends",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "verstehe",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you understand?",
+  "gloss": [
+   "You",
+   "understand",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明唔明",
+    "rom": "ming4 m4 ming4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明白",
+    "rom": "míng bai",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明唔明",
+    "rom": "mein22 m22 mein22",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Entiendes?",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "comprends?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Verstehst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I don't understand.",
+  "gloss": [
+   "I",
+   "not",
+   "understand"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明",
+    "rom": "ming4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明白",
+    "rom": "míng bai",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "明",
+    "rom": "mein22",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "entiendo",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne comprends pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "verstehe",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I forgot.",
+  "gloss": [
+   "I",
+   "forgot"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔記得",
+    "rom": "m4 gei3 dak1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "咗",
+    "rom": "zo2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忘记",
+    "rom": "wàng jì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了",
+    "rom": "le",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔記得",
+    "rom": "m22 gi33 ak33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "ə33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Olvidé",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "J'ai",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "oublié",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "habe",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vergessen",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Don't forget.",
+  "gloss": [
+   "Don't",
+   "forget"
+  ],
+  "yue": [
+   {
+    "hz": "唔好",
+    "rom": "m4 hou2",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔記得",
+    "rom": "m4 gei3 dak1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "别",
+    "rom": "bié",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忘记",
+    "rom": "wàng jì",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "唔好",
+    "rom": "mɔu55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔記得",
+    "rom": "m22 gi33 ak33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "olvides",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "N'oublie pas",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Vergiss",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I remember.",
+  "gloss": [
+   "I",
+   "remember"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "記得",
+    "rom": "gei3 dak1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "记得",
+    "rom": "jì de",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "記得",
+    "rom": "gi33 ak33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Me",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "acuerdo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "me souviens",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "erinnere",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "mich",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Do you remember?",
+  "gloss": [
+   "You",
+   "remember",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "記唔記得",
+    "rom": "gei3 m4 gei3 dak1",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "记得",
+    "rom": "jì de",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "記唔記得",
+    "rom": "gi33 m22 gi33 ak33",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Te",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "acuerdas?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "te souviens?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Erinnerst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "dich?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm busy.",
+  "gloss": [
+   "I",
+   "busy"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "mong4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "很",
+    "rom": "hěn",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "máng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "mɔŋ22",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Estoy",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ocupado",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "suis",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "occupé",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bin",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "beschäftigt",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Are you busy?",
+  "gloss": [
+   "You",
+   "busy",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙唔忙",
+    "rom": "mong4 m4 mong4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "máng",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙唔忙",
+    "rom": "mɔŋ22 m22 mɔŋ22",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Estás",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ocupado?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "occupé?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Bist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "beschäftigt?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm not busy.",
+  "gloss": [
+   "I",
+   "not",
+   "busy"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "mong4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "máng",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "忙",
+    "rom": "mɔŋ22",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "estoy",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ocupado",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne suis pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "occupé",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bin",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "beschäftigt",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm tired.",
+  "gloss": [
+   "I",
+   "tired"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰",
+    "rom": "gui6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "很",
+    "rom": "hěn",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "累",
+    "rom": "lèi",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰",
+    "rom": "gui32",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Estoy",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cansado",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "suis",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fatigué",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bin",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "müde",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Are you tired?",
+  "gloss": [
+   "You",
+   "tired",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰唔攰",
+    "rom": "gui6 m4 gui6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "累",
+    "rom": "lèi",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰唔攰",
+    "rom": "gui32 m22 gui32",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Estás",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cansado?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fatigué?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Bist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "müde?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm not tired.",
+  "gloss": [
+   "I",
+   "not",
+   "tired"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰",
+    "rom": "gui6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "累",
+    "rom": "lèi",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "攰",
+    "rom": "gui32",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "estoy",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "cansado",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne suis pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fatigué",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bin",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "müde",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "It's good.",
+  "gloss": [
+   "It",
+   "good"
+  ],
+  "yue": [
+   {
+    "hz": "好正",
+    "rom": "hou2 zeng3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "很",
+    "rom": "hěn",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hǎo",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "好",
+    "rom": "hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Es",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bueno",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "C'est",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bon",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gut",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Is it good?",
+  "gloss": [
+   "It",
+   "good",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "好唔好",
+    "rom": "hou2 m4 hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "好",
+    "rom": "hǎo",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "好唔好",
+    "rom": "hɔu55 m22 hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Es",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bueno?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "C'est",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bon?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gut?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "It's not good.",
+  "gloss": [
+   "It",
+   "not",
+   "good"
+  ],
+  "yue": [
+   {
+    "hz": "唔",
+    "rom": "m4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hou2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hǎo",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "唔",
+    "rom": "m22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "好",
+    "rom": "hɔu55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bueno",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Ce n'est pas",
+    "rom": "",
+    "refs": [
+     2,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "bon",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ist",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gut",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "It's ready.",
+  "gloss": [
+   "It",
+   "ready"
+  ],
+  "yue": [
+   {
+    "hz": "準備好",
+    "rom": "zeon2 bei6 hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "喇",
+    "rom": "laa3",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "准备好",
+    "rom": "zhǔn bèi hǎo",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了",
+    "rom": "le",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "準備好",
+    "rom": "dzun55 bi32 hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啦",
+    "rom": "la55",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "Está",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "listo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "C'est",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "prêt",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fertig",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Is it ready?",
+  "gloss": [
+   "It",
+   "ready",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "準備好",
+    "rom": "zeon2 bei6 hou2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "未呀",
+    "rom": "mei6 aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "准备好",
+    "rom": "zhǔn bèi hǎo",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了吗",
+    "rom": "le ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "準備好",
+    "rom": "dzun55 bi32 hɔu55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "唔曾",
+    "rom": "miaŋ21",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Está",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "listo?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "C'est",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "prêt?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ist",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fertig?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "It's not ready yet.",
+  "gloss": [
+   "It",
+   "not",
+   "ready",
+   "yet"
+  ],
+  "yue": [
+   {
+    "hz": "仲未",
+    "rom": "zung6 mei6",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "準備好",
+    "rom": "zeon2 bei6 hou2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "还没",
+    "rom": "hái méi",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "准备好",
+    "rom": "zhǔn bèi hǎo",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "還唔曾",
+    "rom": "van21 miaŋ21",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "準備好",
+    "rom": "dzun55 bi32 hɔu55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Todavía no",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "está",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "listo",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Ce n'est pas encore",
+    "rom": "",
+    "refs": [
+     2,
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "prêt",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Es",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ist",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "noch nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fertig",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm coming.",
+  "gloss": [
+   "I",
+   "come"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嚟",
+    "rom": "lai4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "要",
+    "rom": "yào",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "来",
+    "rom": "lái",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "來",
+    "rom": "lɔi22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "Vengo",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "viens",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "komme",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Are you coming?",
+  "gloss": [
+   "You",
+   "come",
+   "(question)"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嚟",
+    "rom": "lai4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "要",
+    "rom": "yào",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "来",
+    "rom": "lái",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "吗",
+    "rom": "ma",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "來",
+    "rom": "lɔi22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Vienes?",
+    "rom": "",
+    "refs": [
+     1,
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "viens?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Kommst",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "I'm not coming.",
+  "gloss": [
+   "I",
+   "not",
+   "come"
+  ],
+  "yue": [
+   {
+    "hz": "我",
+    "rom": "ngo5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔會",
+    "rom": "m4 wui5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嚟",
+    "rom": "lai4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "我",
+    "rom": "wǒ",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "不",
+    "rom": "bù",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "来",
+    "rom": "lái",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "我",
+    "rom": "ŋɔi33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "唔會",
+    "rom": "m22 vui32",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "來",
+    "rom": "lɔi22",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "No",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vengo",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Je",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "ne viens pas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Ich",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "komme",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "nicht",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Who is coming?",
+  "gloss": [
+   "Who",
+   "come"
+  ],
+  "yue": [
+   {
+    "hz": "邊個",
+    "rom": "bin1 go3",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嚟",
+    "rom": "lai4",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "谁",
+    "rom": "shéi",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "要",
+    "rom": "yào",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "来",
+    "rom": "lái",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "谁",
+    "rom": "sui55",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "來",
+    "rom": "lɔi22",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     1
+    ],
+    "sure": false
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Quién",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "viene?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Qui",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vient?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wer",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kommt?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "When are you coming?",
+  "gloss": [
+   "When",
+   "you",
+   "come"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "幾時",
+    "rom": "gei2 si4",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "嚟",
+    "rom": "lai4",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "什么时候",
+    "rom": "shén me shí hou",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "来",
+    "rom": "lái",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "幾時",
+    "rom": "gi55 si215",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "來",
+    "rom": "lɔi22",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Cuándo",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vienes?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "viens",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quand?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wann",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "kommst",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Where are you going?",
+  "gloss": [
+   "Where",
+   "you",
+   "go",
+   "where"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "去",
+    "rom": "heoi3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "邊度",
+    "rom": "bin1 dou6",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "要",
+    "rom": "yào",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "去",
+    "rom": "qù",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "哪里",
+    "rom": "nǎ li",
+    "refs": [
+     3
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "去",
+    "rom": "hui33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "哪",
+    "rom": "nai215",
+    "refs": [
+     3
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿A dónde",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vas?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "vas",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "où?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wohin",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gehst",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "What are you doing?",
+  "gloss": [
+   "What",
+   "you",
+   "do"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zou6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gan2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mat1 je5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "在",
+    "rom": "zài",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zuò",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "什么",
+    "rom": "shén me",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "du33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "緊",
+    "rom": "gin55",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mɔt55 yia33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Qué",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "estás",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "haciendo?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fais",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quoi?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Was",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "machst",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gerade?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "What did you do?",
+  "gloss": [
+   "What",
+   "you",
+   "did"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zou6",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "咗",
+    "rom": "zo2",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mat1 je5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "zuò",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "了",
+    "rom": "le",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "什么",
+    "rom": "shén me",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "做",
+    "rom": "du33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "ə33",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mɔt55 yia33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Qué",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "hiciste?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "as",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "fait",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quoi?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Was",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "hast",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "gemacht?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "What do you want?",
+  "gloss": [
+   "What",
+   "you",
+   "want"
+  ],
+  "yue": [
+   {
+    "hz": "你",
+    "rom": "nei5",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想要",
+    "rom": "soeng2 jiu3",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mat1 je5",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "呀",
+    "rom": "aa3",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "你",
+    "rom": "nǐ",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想要",
+    "rom": "xiǎng yào",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "什么",
+    "rom": "shén me",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "你",
+    "rom": "ni33",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "想要",
+    "rom": "ɬiaŋ55 yiau33",
+    "refs": [
+     2
+    ],
+    "sure": false
+   },
+   {
+    "hz": "乜嘢",
+    "rom": "mɔt55 yia33",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a33",
+    "refs": [],
+    "sure": true
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Qué",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quieres?",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Tu",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "veux",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "quoi?",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Was",
+    "rom": "",
+    "refs": [
+     0
+    ],
+    "sure": true
+   },
+   {
+    "hz": "willst",
+    "rom": "",
+    "refs": [
+     2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "du?",
+    "rom": "",
+    "refs": [
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "Why not?",
+  "gloss": [
+   "Why",
+   "not"
+  ],
+  "yue": [
+   {
+    "hz": "點解唔得",
+    "rom": "dim2 gaai2 m4 dak1",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "为什么不呢",
+    "rom": "wèi shén me bù ne",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "做乜唔得",
+    "rom": "du33 mɔt55 m22 ak55",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Por qué no?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Pourquoi pas?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Warum nicht?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "How much is it?",
+  "gloss": [
+   "How much",
+   "is it"
+  ],
+  "yue": [
+   {
+    "hz": "幾多錢呀",
+    "rom": "gei2 do1 cin2 aa3",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "多少钱",
+    "rom": "duō shao qián",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "幾多錢啊",
+    "rom": "gi55 ɔ335 tein225 a33",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Cuánto cuesta?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "C'est combien?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wie viel kostet das?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ]
+ },
+ {
+  "cat": "Quick Patterns",
+  "en": "How many people?",
+  "gloss": [
+   "How many",
+   "people"
+  ],
+  "yue": [
+   {
+    "hz": "有幾多人呀",
+    "rom": "jau5 gei2 do1 jan4 aa3",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "cmn": [
+   {
+    "hz": "几个人",
+    "rom": "jǐ ge rén",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "tsn": [
+   {
+    "hz": "有幾多人啊",
+    "rom": "yiu33 gi55 ɔ335 ŋin22 a33",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": false
+   }
+  ],
+  "es": [
+   {
+    "hz": "¿Cuántas personas?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "fr": [
+   {
+    "hz": "Combien de personnes?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ],
+  "de": [
+   {
+    "hz": "Wie viele Leute?",
+    "rom": "",
+    "refs": [
+     0,
+     1
+    ],
+    "sure": true
+   }
+  ]
+ }
+]
