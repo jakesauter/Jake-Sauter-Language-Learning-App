@@ -1,0 +1,405 @@
+= 130 Sorry, I'm late.
+pt: Desculpa/0 ; eu/1 ; me atrasei/2,3
+fa: ببخشید{bebakhshid}/0 ; دیر کردم{dir kardam}/1,2,3
+fw: ببخشید، دیر کردم. || bebakhshid, dir kardam.
+la: آسف{āsif}/0 ; تأخرت{tʾakhkhart}/1,2,3
+eg: آسف، اتأخرت. || āsif, itʾakhkhart.
+ms: آسف على التأخير. || āsif ʿalā at-ta'khīr.
+he: סליחה{slicha}/0 ; איחרתי{icharti}/1,2,3
+tr: Pardon/0 ; geç kaldım/1,2,3
+= 131 Have you eaten yet?
+pt: Você/0 ; já/3 ; comeu/1,2
+fa: غذا{ghazā}/2 ; خوردی{khordi}/0,1 ; یا نه{yā na}/3
+fw: آیا غذا خورده‌ای؟ || āyā ghazā khorde-i?
+la: أكلت{akalt}/0,1,2 ; ولا لسا{walla lissa}/3
+eg: كلت ولا لسه؟ || kalt walla lissa?
+ms: هل أكلتَ بعد؟ || hal akalta baʿd?
+he: כבר{kvar}/3 ; אכלת{akhalta}/0,1,2
+tr: Yemek/2 ; yedin mi/0,1 ; artık/3
+= 132 This is really delicious!
+pt: Isso/0 ; está/- ; muito/1 ; gostoso/2
+fa: این{in}/0 ; خیلی{kheyli}/1 ; خوشمزه‌ست{khoshmaze-st}/2
+fw: این واقعاً خوشمزه است! || in vāqe'an khoshmaze ast!
+la: هاد{hād}/0 ; كتير{ktīr}/1 ; طيب{ṭayyib}/2
+eg: ده جميل أوي! || da gamīl awi!
+ms: هذا لذيذ حقًا! || hādhā ladhīdh ḥaqqan!
+he: זה{ze}/0 ; ממש{mamash}/1 ; טעים{ta'im}/2
+tr: Bu/0 ; gerçekten/1 ; çok lezzetli/2
+= 133 I'm full, thank you.
+pt: Estou/0 ; satisfeito/1,2 ; obrigado/3
+fa: سیر شدم{sir shodam}/0,1,2 ; مرسی{mersi}/3
+fw: سیر شدم، متشکرم. || sir shodam, motashakkeram.
+la: شبعت{shbiʿt}/0,1,2 ; شكرًا{shukran}/3
+eg: شبعت، شكرًا. || shibiʿt, shukran.
+ms: شبعت، شكرًا. || shabiʿtu, shukran.
+he: אני{ani}/0 ; שבע{save'a}/1,2 ; תודה{toda}/3
+tr: Doydum/0,1,2 ; teşekkürler/3
+= 134 Please pass me the soy sauce.
+pt: Me/2 ; passa/1 ; o shoyu/3 ; por favor/0
+fa: لطفاً{lotfan}/0 ; سس سویا رو{sos-e soyā ro}/3 ; بده{bede}/1 ; به من{be man}/2
+fw: لطفاً سس سویا را به من بدهید. || lotfan sos-e soyā rā be man bedahid.
+la: إذا بتريد{iza btrīd}/0 ; ناولني{nāwilni}/1,2 ; صويا{ṣōya}/3
+eg: لو سمحت ادّيني الصويا. || law samaḥt iddīni iṣ-ṣōya.
+ms: من فضلك ناولني صلصة الصويا. || min faḍlik nāwilnī ṣalṣat aṣ-ṣūyā.
+he: תעביר לי{taavir li}/1,2 ; את הסויה{et ha-soya}/3 ; בבקשה{bevakasha}/0
+tr: Soya sosunu/3 ; bana/2 ; uzatır mısın/1 ; lütfen/0
+= 135 Everyone, let's eat!
+pt: Pessoal/0 ; vamos/1 ; comer/2
+fa: بچه‌ها{bachehā}/0 ; بفرمایید{befarmāyid}/1 ; غذا{ghazā}/2
+fw: همگی، بفرمایید غذا! || hamegi, befarmāyid ghazā!
+la: يلا{yalla}/1 ; يا جماعة{ya jamāʿa}/0 ; عالأكل{ʿal-akl}/2
+eg: يلا يا جماعة ناكل! || yalla ya gamāʿa nākul!
+ms: هيا جميعًا، لنأكل! || hayyā jamīʿan, li-na'kul!
+he: כולם{kulam}/0 ; בואו{bo'u}/1 ; לאכול{le'ekhol}/2
+tr: Hadi/1 ; millet/0 ; yemeğe/2
+= 136 Would you like more tea?
+pt: Quer/0 ; mais/1 ; chá/2
+fa: بازم{bāz-am}/1 ; چای{chāy}/2 ; می‌خوای{mikhāy}/0
+fw: باز هم چای می‌خواهی؟ || bāz ham chāy mikhāhi?
+la: بدك{baddak}/0 ; كمان{kamān}/1 ; شاي{shāy}/2
+eg: عايز شاي تاني؟ || ʿāyiz shāy tāni?
+ms: هل تريد المزيد من الشاي؟ || hal turīd al-mazīd min ash-shāy?
+he: רוצה{rotse}/0 ; עוד{od}/1 ; תה{te}/2
+tr: Biraz daha/1 ; çay/2 ; ister misin/0
+= 137 Are you hungry?
+pt: Você/0 ; está com fome/1
+fa: گشنته{goshnate}/0,1
+fw: گرسنه‌ای؟ || gorosne-i?
+la: إنت{inta}/0 ; جوعان{jūʿān}/1
+eg: إنت جعان؟ || inta gaʿān?
+ms: هل أنت جائع؟ || hal anta jā'iʿ?
+he: אתה{ata}/0 ; רעב{ra'ev}/1
+tr: Aç mısın/0,1
+= 138 What would you like to eat?
+pt: O que/3 ; você/0 ; quer/1 ; comer/2
+fa: چی{chi}/3 ; می‌خوای{mikhāy}/0,1 ; بخوری{bokhori}/2
+fw: چه می‌خواهی بخوری؟ || che mikhāhi bokhori?
+la: شو{shu}/3 ; بدك{baddak}/0,1 ; تاكل{tākul}/2
+eg: عايز تاكل إيه؟ || ʿāyiz tākul ēh?
+ms: ماذا تريد أن تأكل؟ || mādhā turīd an ta'kul?
+he: מה{ma}/3 ; אתה רוצה{ata rotse}/0,1 ; לאכול{le'ekhol}/2
+tr: Ne/3 ; yemek/2 ; istersin/0,1
+= 139 Do you like spicy food?
+pt: Você/0 ; gosta de/1 ; comida/2 ; apimentada/3
+fa: غذای تند{ghazā-ye tond}/2,3 ; دوست داری{dust dāri}/0,1
+fw: غذای تند دوست داری؟ || ghazā-ye tond dust dāri?
+la: بتحب{bitḥibb}/0,1 ; الأكل{il-akl}/2 ; الحار{il-ḥārr}/3
+eg: بتحب الأكل الحراق؟ || bitḥibb il-akl il-ḥarrāʾ?
+ms: هل تحب الطعام الحار؟ || hal tuḥibb aṭ-ṭaʿām al-ḥārr?
+he: אתה{ata}/0 ; אוהב{ohev}/1 ; אוכל{okhel}/2 ; חריף{charif}/3
+tr: Acı/3 ; yemek/2 ; sever misin/0,1
+= 140 I can't eat spicy food.
+pt: Eu/0 ; não consigo comer/1 ; comida apimentada/2
+fa: من{man}/0 ; نمی‌تونم{nemitunam}/1 ; غذای تند{ghazā-ye tond}/2 ; بخورم{bokhoram}/1
+fw: من نمی‌توانم غذای تند بخورم. || man nemitavānam ghazā-ye tond bokhoram.
+la: أنا{ana}/0 ; ما بقدر{ma b'dar}/1 ; آكل{ākul}/1 ; حار{ḥārr}/2
+eg: أنا ما أقدرش آكل حراق. || ana ma aʾdarsh ākul ḥarrāʾ.
+ms: لا أستطيع أكل الطعام الحار. || lā astaṭīʿ akl aṭ-ṭaʿām al-ḥārr.
+he: אני{ani}/0 ; לא יכול לאכול{lo yakhol le'ekhol}/1 ; חריף{charif}/2
+tr: Acı/2 ; yiyemem/0,1
+= 141 Can I have some more rice?
+pt: Posso/0 ; pegar/1 ; mais um pouco/2 ; de arroz/3
+fa: می‌شه{mishe}/0 ; یه کم دیگه{ye kam-e dige}/2 ; برنج{berenj}/3 ; بکشم{bekesham}/1
+fw: ممکن است کمی دیگر برنج بکشم؟ || momken ast kami digar berenj bekesham?
+la: فيني{fīni}/0 ; آخد{ākhud}/1 ; كمان شوي{kamān shway}/2 ; رز{rizz}/3
+eg: ممكن شوية رز كمان؟ || mumkin shwayyit ruzz kamān?
+ms: هل يمكنني أخذ المزيد من الأرز؟ || hal yumkinunī akhdh al-mazīd min al-aruzz?
+he: אפשר{efshar}/0 ; עוד קצת{od ktsat}/1,2 ; אורז{orez}/3
+tr: Biraz daha/2 ; pilav/3 ; alabilir miyim/0,1
+= 142 Let me wash the dishes.
+pt: Deixa/0 ; que eu/1 ; lavo/2 ; a louça/3
+fa: بذار{bezār}/0 ; من{man}/1 ; ظرفا رو{zarfā ro}/3 ; بشورم{beshuram}/2
+fw: بگذارید من ظرف‌ها را بشویم. || bogzārid man zarf-hā rā beshuyam.
+la: خليني{khallīni}/0,1 ; إغسل{ighsil}/2 ; الصحون{iṣ-ṣḥūn}/3
+eg: سيبني أغسل المواعين. || sibni aghsil il-mawāʿīn.
+ms: دعني أغسل الصحون. || daʿnī aghsil aṣ-ṣuḥūn.
+he: תן לי{ten li}/0,1 ; לשטוף{lishtof}/2 ; את הכלים{et ha-kelim}/3
+tr: Bulaşıkları/3 ; ben/1 ; yıkayayım/0,2
+= 143 Who cooked this?
+pt: Quem/2 ; fez/3 ; isso/0
+fa: اینو{ino}/0 ; کی{ki}/2 ; پخته{pokhte}/3
+fw: این را چه کسی پخته است؟ || in rā che kasi pokhte ast?
+la: مين{mīn}/2 ; طبخ{ṭabakh}/3 ; هاد{hād}/0
+eg: مين اللي طبخ ده؟ || mīn illi ṭabakh da?
+ms: من طبخ هذا؟ || man ṭabakha hādhā?
+he: מי{mi}/2 ; בישל{bishel}/3 ; את זה{et ze}/0
+tr: Bunu/0 ; kim/2 ; pişirdi/3
+= 144 This soup is very good.
+pt: Esta/0 ; sopa/1 ; está/- ; muito/2 ; boa/3
+fa: این{in}/0 ; سوپ{sup}/1 ; خیلی{kheyli}/2 ; خوبه{khube}/3
+fw: این سوپ خیلی خوب است. || in sup kheyli khub ast.
+la: هالشوربة{hash-shōrba}/0,1 ; كتير{ktīr}/2 ; طيبة{ṭayybe}/3
+eg: الشوربة دي حلوة أوي. || ish-shurba di ḥilwa awi.
+ms: هذا الحساء لذيذ جدًا. || hādhā al-ḥasā' ladhīdh jiddan.
+he: המרק{ha-marak}/1 ; הזה{ha-ze}/0 ; ממש{mamash}/2 ; טוב{tov}/3
+tr: Bu/0 ; çorba/1 ; çok/2 ; güzel/3
+= 145 Can you teach me how to make this?
+pt: Você/0 ; pode/1 ; me/3 ; ensinar/2 ; a fazer/4,5 ; isso/6
+fa: می‌تونی{mituni}/0,1 ; بهم{behem}/3 ; یاد بدی{yād bedi}/2 ; اینو{ino}/6 ; چطوری{chetori}/4 ; درست کنم{dorost konam}/5
+fw: می‌توانی به من یاد بدهی این را چطور درست کنم؟ || mitavāni be man yād bedahi in rā chetor dorost konam?
+la: فيك{fīk}/0,1 ; تعلمني{tʿallimni}/2,3 ; كيف{kīf}/4 ; أعمل{aʿmil}/5 ; هاد{hād}/6
+eg: ممكن تعلمني أعمل ده إزاي؟ || mumkin tiʿallimni aʿmil da izzāy?
+ms: هل يمكنك أن تعلمني كيف أصنع هذا؟ || hal yumkinuka an tuʿallimanī kayfa aṣnaʿ hādhā?
+he: אתה יכול{ata yakhol}/0,1 ; ללמד אותי{lelamed oti}/2,3 ; איך{eykh}/4 ; להכין{lehakhin}/5 ; את זה{et ze}/6
+tr: Bunu/6 ; nasıl/4 ; yapacağımı/5 ; bana/3 ; öğretebilir misin/0,1,2
+= 146 Let's go out for dim sum.
+pt: Vamos/3 ; sair/1 ; para comer/- ; dim sum/2
+fa: بیا{biyā}/3 ; بریم{berim}/0,1 ; دیم‌سام{dimsām}/2 ; بخوریم{bokhorim}/2
+fw: بیا برای خوردن دیم‌سام بیرون برویم. || biyā barāye khordan-e dimsām birun beravim.
+la: يلا{yalla}/3 ; نطلع{niṭlaʿ}/0,1 ; ناكل{nākul}/- ; ديم سام{dim sam}/2
+eg: يلا نخرج ناكل ديم سام. || yalla nukhrug nākul dim sam.
+ms: لنخرج لتناول الديم سام. || li-nakhruj li-tanāwul ad-dim sām.
+he: בואו{bo'u}/3 ; נצא{netse}/0,1 ; לדים סאם{le-dim sam}/2
+tr: Hadi/3 ; dim sum/2 ; yemeye/- ; çıkalım/0,1
+= 147 I'll pay the bill.
+pt: Deixa/0 ; que eu/1 ; pago a conta/2
+fa: بذار{bezār}/0 ; من{man}/1 ; حساب کنم{hesāb konam}/2
+fw: اجازه بدهید من حساب کنم. || ejāze bedahid man hesāb konam.
+la: خليني{khallīni}/0,1 ; إدفع{idfaʿ}/2 ; الحساب{il-ḥsāb}/2
+eg: سيبني أدفع الحساب. || sibni adfaʿ il-ḥisāb.
+ms: سأدفع الحساب. || sa-adfaʿu al-ḥisāb.
+he: תן לי{ten li}/0,1 ; לשלם{leshalem}/2
+tr: Hesabı/2 ; ben/1 ; ödeyeyim/0,2
+= 148 Dinner is ready!
+pt: O jantar/1 ; está pronto/0,2
+fa: شام{shām}/1 ; حاضره{hāzere}/0,2
+fw: شام آماده است! || shām āmāde ast!
+la: العشا{il-ʿasha}/1 ; جاهز{jāhiz}/0,2
+eg: العشا جاهز! || il-ʿasha gāhiz!
+ms: العشاء جاهز! || al-ʿashā' jāhiz!
+he: ארוחת הערב{aruchat ha-erev}/1 ; מוכנה{mukhana}/0,2
+tr: Akşam yemeği/1 ; hazır/0,2
+= 149 Come eat!
+pt: Vem/0 ; comer/1
+fa: بیا{biyā}/0 ; غذا{ghazā}/1 ; بخور{bokhor}/1
+fw: بیا غذا بخور! || biyā ghazā bokhor!
+la: تعا{taʿa}/0 ; كول{kūl}/1 ; يلا{yalla}/2
+eg: تعالى كُل! || taʿāla kul!
+ms: تعالَ وكُل! || taʿāla wa-kul!
+he: בוא{bo}/0 ; לאכול{le'ekhol}/1
+tr: Gel/0 ; ye/1 ; hadi/2
+= 150 Wash your hands before eating.
+pt: Lave/2 ; as mãos/2 ; antes de/1 ; comer/0
+fa: قبل از{qabl az}/1 ; غذا{ghazā}/0 ; دستاتو{dastāto}/2 ; بشور{beshur}/2
+fw: قبل از غذا دست‌هایت را بشوی. || qabl az ghazā dast-hāyat rā beshuy.
+la: غسل إيديك{ghassil īdēk}/2 ; قبل{ʾabl}/1 ; الأكل{il-akl}/0
+eg: اغسل إيدك قبل الأكل. || ighsil īdak ʾabl il-akl.
+ms: اغسل يديك قبل الأكل. || ighsil yadayka qabl al-akl.
+he: תשטוף ידיים{tishtof yadayim}/2 ; לפני{lifney}/1 ; האוכל{ha-okhel}/0
+tr: Yemekten/0 ; önce/1 ; ellerini yıka/2
+= 151 Grab some chopsticks.
+pt: Pega/0 ; um par de/1 ; hashi/2
+fa: یه جفت{ye joft}/1 ; چوب‌غذا{chub-ghazā}/2 ; بردار{bardār}/0
+fw: یک جفت چوب غذاخوری بردار. || yek joft chub-e ghazākhori bardār.
+la: جيب{jīb}/0 ; عيدان{ʿīdān}/2
+eg: هات عيدان أكل. || hāt ʿīdān akl.
+ms: أحضر بعض العيدان. || aḥḍir baʿḍ al-ʿīdān.
+he: תביא{tavi}/0 ; צ'ופסטיקס{chopstiks}/2
+tr: Bir çift/1 ; çubuk/2 ; al/0
+= 152 Pass me a bowl, please.
+pt: Me/4 ; passa/1 ; uma/2 ; tigela/3 ; por favor/0
+fa: لطفاً{lotfan}/0 ; یه{ye}/2 ; کاسه{kāse}/3 ; بده{bede}/1 ; بهم{behem}/4
+fw: لطفاً یک کاسه به من بدهید. || lotfan yek kāse be man bedahid.
+la: ناولني{nāwilni}/1,4 ; زبدية{zibdiyye}/2,3 ; إذا بتريد{iza btrīd}/0
+eg: ادّيني طبق لو سمحت. || iddīni ṭabaʾ law samaḥt.
+ms: ناولني وعاءً من فضلك. || nāwilnī wiʿā'an min faḍlik.
+he: תעביר לי{taavir li}/1,4 ; קערה{ke'ara}/2,3 ; בבקשה{bevakasha}/0
+tr: Bana/4 ; bir/2 ; kâse/3 ; uzatır mısın/1 ; lütfen/0
+= 153 Eat more vegetables.
+pt: Coma/0 ; mais/1 ; verdura/2
+fa: سبزی{sabzi}/2 ; بیشتر{bishtar}/1 ; بخور{bokhor}/0
+fw: سبزیجات بیشتری بخور. || sabzijāt-e bishtari bokhor.
+la: كول{kūl}/0 ; خضرة{khuḍra}/2 ; أكتر{aktar}/1
+eg: كُل خضار أكتر. || kul khuḍār aktar.
+ms: كُل المزيد من الخضروات. || kul al-mazīd min al-khaḍrawāt.
+he: תאכל{tokhal}/0 ; יותר{yoter}/1 ; ירקות{yerakot}/2
+tr: Daha çok/1 ; sebze/2 ; ye/0
+= 154 Try some of this.
+pt: Experimenta/0 ; um pouco/1 ; disso/2
+fa: یه کم{ye kam}/1 ; از این{az in}/2 ; امتحان کن{emtehān kon}/0
+fw: کمی از این را امتحان کن. || kami az in rā emtehān kon.
+la: دوق{dū'}/0 ; شوي{shway}/1 ; من هاد{min hād}/2
+eg: دوق شوية من ده. || dūʾ shwayya min da.
+ms: جرّب قليلًا من هذا. || jarrib qalīlan min hādhā.
+he: תטעם{tit'am}/0 ; קצת{ktsat}/1 ; מזה{mi-ze}/2
+tr: Bundan/2 ; biraz/1 ; dene/0
+= 155 Is there any more soup?
+pt: Ainda/0 ; tem/1 ; sopa/2
+fa: بازم{bāz-am}/0 ; سوپ{sup}/2 ; هست{hast}/1
+fw: باز هم سوپ هست؟ || bāz ham sup hast?
+la: في{fī}/1 ; كمان{kamān}/0 ; شوربة{shōrba}/2
+eg: فيه شوربة تاني؟ || fīh shurba tāni?
+ms: هل بقي حساء؟ || hal baqiya ḥasā'?
+he: יש{yesh}/1 ; עוד{od}/0 ; מרק{marak}/2
+tr: Hâlâ/0 ; çorba/2 ; var mı/1
+= 156 I'm still hungry.
+pt: Eu/0 ; ainda/1 ; estou com fome/2
+fa: من{man}/0 ; هنوز{hanuz}/1 ; گشنمه{goshname}/2
+fw: من هنوز گرسنه هستم. || man hanuz gorosne hastam.
+la: أنا{ana}/0 ; لسا{lissa}/1 ; جوعان{jūʿān}/2
+eg: أنا لسه جعان. || ana lissa gaʿān.
+ms: ما زلتُ جائعًا. || mā ziltu jā'iʿan.
+he: אני{ani}/0 ; עדיין{adayin}/1 ; רעב{ra'ev}/2
+tr: Hâlâ/1 ; açım/0,2
+= 157 I've had enough, thank you.
+pt: Já/- ; comi/0 ; o suficiente/1 ; obrigado/2
+fa: بسمه{basame}/0,1 ; مرسی{mersi}/2
+fw: کافی است، متشکرم. || kāfi ast, motashakkeram.
+la: خلص{khalaṣ}/1 ; بكفي{bikaffi}/0,1 ; شكرًا{shukran}/2
+eg: كفاية كده، شكرًا. || kifāya kida, shukran.
+ms: يكفيني هذا، شكرًا. || yakfīnī hādhā, shukran.
+he: מספיק לי{maspik li}/0,1 ; תודה{toda}/2
+tr: Yeter/1 ; teşekkürler/2
+= 158 This is too salty.
+pt: Isso/0 ; está/- ; salgado/2 ; demais/1
+fa: این{in}/0 ; خیلی{kheyli}/1 ; شوره{shure}/2
+fw: این خیلی شور است. || in kheyli shur ast.
+la: هاد{hād}/0 ; كتير{ktīr}/1 ; مالح{māliḥ}/2
+eg: ده مالح أوي. || da māliḥ awi.
+ms: هذا مالح جدًا. || hādhā māliḥ jiddan.
+he: זה{ze}/0 ; מלוח{maluach}/2 ; מדי{miday}/1
+tr: Bu/0 ; çok/1 ; tuzlu/2
+= 159 It's a little bland.
+pt: Está/- ; um pouco/0 ; sem graça/1
+fa: یه کم{ye kam}/0 ; بی‌مزه‌ست{bimaze-st}/1
+fw: کمی بی‌مزه است. || kami bimaze ast.
+la: شوي{shway}/0 ; ماسخ{māsikh}/1
+eg: مسيخ شوية. || masīkh shwayya.
+ms: إنه بلا طعم قليلًا. || innahu bilā ṭaʿm qalīlan.
+he: זה{ze}/- ; קצת{ktsat}/0 ; תפל{tafel}/1
+tr: Biraz/0 ; tatsız/1
+= 160 This is so fresh.
+pt: Isso/0 ; está/- ; tão/1 ; fresco/2
+fa: این{in}/0 ; خیلی{kheyli}/1 ; تازه‌ست{tāze-st}/2
+fw: این خیلی تازه است. || in kheyli tāze ast.
+la: هاد{hād}/0 ; كتير{ktīr}/1 ; طازة{ṭāza}/2
+eg: ده طازة أوي. || da ṭāza awi.
+ms: هذا طازج جدًا. || hādhā ṭāzaj jiddan.
+he: זה{ze}/0 ; כל כך{kol kakh}/1 ; טרי{tari}/2
+tr: Bu/0 ; çok/1 ; taze/2
+= 161 Is this spicy?
+pt: Isso/0 ; é apimentado/1
+fa: این{in}/0 ; تنده{tonde}/1
+fw: این تند است؟ || in tond ast?
+la: هاد{hād}/0 ; حار{ḥārr}/1
+eg: ده حراق؟ || da ḥarrāʾ?
+ms: هل هذا حار؟ || hal hādhā ḥārr?
+he: זה{ze}/0 ; חריף{charif}/1
+tr: Bu/0 ; acı mı/1
+= 162 What's in this dish?
+pt: O que/3 ; tem/2 ; nesse/0 ; prato/1
+fa: توی این غذا{tu-ye in ghazā}/0,1 ; چی{chi}/3 ; هست{hast}/2
+fw: در این غذا چه چیزی هست؟ || dar in ghazā che chizi hast?
+la: شو{shu}/3 ; في{fī}/2 ; بهالأكلة{b-hal-akle}/0,1
+eg: الأكلة دي فيها إيه؟ || il-akla di fīha ēh?
+ms: ما مكونات هذا الطبق؟ || mā mukawwināt hādhā aṭ-ṭabaq?
+he: מה{ma}/3 ; יש{yesh}/2 ; במנה הזאת{ba-mana ha-zot}/0,1
+tr: Bu yemekte/0,1 ; ne/3 ; var/2
+= 163 I've never tried this before.
+pt: Eu/0 ; nunca/1 ; provei/2 ; isso/3
+fa: من{man}/0 ; تا حالا{tā hālā}/1 ; اینو{ino}/3 ; نخورده بودم{nakhorde budam}/2
+fw: من تا به حال این را امتحان نکرده‌ام. || man tā be hāl in rā emtehān nakarde-am.
+la: أنا{ana}/0 ; عمري ما{ʿumri ma}/1 ; دقت{duʾt}/2 ; هاد{hād}/3
+eg: عمري ما دقت ده قبل كده. || ʿumri ma duʾt da ʾabl kida.
+ms: لم أجرب هذا من قبل. || lam ujarrib hādhā min qabl.
+he: אף פעם{af pa'am}/1 ; לא טעמתי{lo ta'amti}/0,2 ; את זה{et ze}/3
+tr: Bunu/3 ; daha önce/1 ; hiç denemedim/0,2
+= 164 I love your cooking.
+pt: Eu/- ; adoro/2,3 ; a sua/0 ; comida/1
+fa: دستپختت{dastpokhtet}/0,1 ; خیلی{kheyli}/2 ; خوبه{khube}/3
+fw: دستپخت شما خیلی عالی است. || dastpokht-e shomā kheyli āli ast.
+la: طبخك{ṭabkhak}/0,1 ; كتير{ktīr}/2 ; طيب{ṭayyib}/3
+eg: أكلك جميل أوي. || aklak gamīl awi.
+ms: أحب طبخك. || uḥibbu ṭabkhak.
+he: אני{ani}/- ; אוהב{ohev}/2,3 ; את הבישול שלך{et ha-bishul shelkha}/0,1
+tr: Yemeklerine/0,1 ; bayılıyorum/2,3
+= 165 Who wants the last piece?
+pt: Quem/0 ; quer/1 ; o último/2 ; pedaço/3
+fa: آخریش{ākharish}/2,3 ; رو{ro}/- ; کی{ki}/0 ; می‌خواد{mikhād}/1
+fw: چه کسی آخرین تکه را می‌خواهد؟ || che kasi ākharin tekke rā mikhāhad?
+la: مين{mīn}/0 ; بدو{baddo}/1 ; آخر{ākhir}/2 ; شقفة{sha'fe}/3
+eg: مين عايز آخر حتة؟ || mīn ʿāyiz ākhir ḥitta?
+ms: من يريد القطعة الأخيرة؟ || man yurīd al-qiṭʿa al-akhīra?
+he: מי{mi}/0 ; רוצה{rotse}/1 ; את החתיכה האחרונה{et ha-chatikha ha-acharona}/2,3
+tr: Son/2 ; parçayı/3 ; kim/0 ; ister/1
+= 166 Save some for later.
+pt: Guarda/0 ; um pouco/1 ; para depois/2,3
+fa: یه کم{ye kam}/1 ; برای بعد{barāye ba'd}/2 ; نگه دار{negah dār}/0
+fw: کمی برای بعد نگه دار. || kami barāye ba'd negah dār.
+la: خبّي{khabbi}/0 ; شوي{shway}/1 ; لبعدين{la-baʿdēn}/2,3
+eg: سيب شوية لبعدين. || sīb shwayya li-baʿdēn.
+ms: احتفظ ببعضه لوقت لاحق. || iḥtafiẓ bi-baʿḍihi li-waqt lāḥiq.
+he: תשאיר{tash'ir}/0 ; קצת{ktsat}/1 ; לאחר כך{le-achar kakh}/2,3
+tr: Sonraya/2 ; biraz/1 ; ayır/0
+= 167 Put the leftovers in the fridge.
+pt: Coloca/2 ; as sobras/1 ; na geladeira/3
+fa: باقی‌مونده‌ها رو{bāqimundehā ro}/1 ; بذار{bezār}/2 ; توی یخچال{tu-ye yakhchāl}/3
+fw: باقی‌مانده‌ها را در یخچال بگذار. || bāqimāndehā rā dar yakhchāl begozār.
+la: حط{ḥuṭṭ}/2 ; البقية{il-baʾiyye}/1 ; بالبراد{bil-barrād}/3
+eg: حط الباقي في التلاجة. || ḥuṭṭ il-bāʾi fit-tallāga.
+ms: ضع البقايا في الثلاجة. || ḍaʿ al-baqāyā fī ath-thallāja.
+he: תכניס{takhnis}/2 ; את השאריות{et ha-she'eriyot}/1 ; למקרר{la-mekarer}/3
+tr: Artıkları/1 ; buzdolabına/3 ; koy/2
+= 168 Let's order takeout tonight.
+pt: Vamos/3 ; pedir/1 ; comida/2 ; hoje à noite/0
+fa: امشب{emshab}/0 ; بیا{biyā}/3 ; غذا{ghazā}/2 ; سفارش بدیم{sefāresh bedim}/1
+fw: امشب بیا غذا سفارش بدهیم. || emshab biyā ghazā sefāresh bedahim.
+la: يلا{yalla}/3 ; نطلب{niṭlub}/1 ; أكل{akl}/2 ; الليلة{il-lēle}/0
+eg: يلا نطلب أكل من برّه النهارده. || yalla niṭlub akl min barra in-naharda.
+ms: لنطلب طعامًا جاهزًا الليلة. || li-naṭlub ṭaʿāman jāhizan al-layla.
+he: בואו{bo'u}/3 ; נזמין{nazmin}/1 ; אוכל{okhel}/2 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; dışarıdan/2 ; yemek söyleyelim/1,3
+= 169 What do you want for dinner?
+pt: O que/3 ; você/0 ; quer comer/2 ; no jantar/1
+fa: شام{shām}/1 ; چی{chi}/3 ; می‌خوای{mikhāy}/0,2
+fw: برای شام چه می‌خواهی؟ || barāye shām che mikhāhi?
+la: شو{shu}/3 ; بدك{baddak}/0,2 ; عالعشا{ʿal-ʿasha}/1
+eg: عايز تتعشى إيه؟ || ʿāyiz titʿashsha ēh?
+ms: ماذا تريد على العشاء؟ || mādhā turīd ʿalā al-ʿashā'?
+he: מה{ma}/3 ; אתה רוצה{ata rotse}/0,2 ; לארוחת ערב{le-aruchat erev}/1
+tr: Akşam yemeğinde/1 ; ne/3 ; istersin/0,2
+= 170 Let's eat out tonight.
+pt: Vamos/3 ; comer/2 ; fora/1 ; hoje à noite/0
+fa: امشب{emshab}/0 ; بیا{biyā}/3 ; بریم بیرون{berim birun}/1 ; غذا بخوریم{ghazā bokhorim}/2
+fw: امشب بیا بیرون غذا بخوریم. || emshab biyā birun ghazā bokhorim.
+la: يلا{yalla}/3 ; ناكل{nākul}/2 ; برّا{barra}/1 ; الليلة{il-lēle}/0
+eg: يلا ناكل برّه النهارده. || yalla nākul barra in-naharda.
+ms: لنتناول العشاء خارجًا الليلة. || li-natanāwal al-ʿashā' khārijan al-layla.
+he: בואו{bo'u}/3 ; נאכל{nokhal}/2 ; בחוץ{ba-chuts}/1 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; dışarıda/1 ; yiyelim/2,3
+= 171 I'll make breakfast.
+pt: Deixa/0 ; que eu/1 ; faço/2 ; o café da manhã/3
+fa: بذار{bezār}/0 ; من{man}/1 ; صبحونه{sobhune}/3 ; درست کنم{dorost konam}/2
+fw: من صبحانه درست می‌کنم. || man sobhāne dorost mikonam.
+la: خليني{khallīni}/0,1 ; إعمل{iʿmil}/2 ; الفطور{il-fṭūr}/3
+eg: أنا هعمل الفطار. || ana haʿmil il-fiṭār.
+ms: سأُعِدّ الفطور. || sa-uʿiddu al-fuṭūr.
+he: אני{ani}/1 ; אכין{akhin}/2 ; ארוחת בוקר{aruchat boker}/3
+tr: Kahvaltıyı/3 ; ben/1 ; hazırlarım/0,2
+= 172 Do you want some coffee?
+pt: Você/0 ; quer/1 ; tomar/2 ; um café/3
+fa: قهوه{qahve}/3 ; می‌خوری{mikhori}/0,1,2
+fw: قهوه میل دارید؟ || qahve meyl dārid?
+la: بدك{baddak}/0,1 ; تشرب{tishrab}/2 ; قهوة{ʾahwe}/3
+eg: عايز تشرب قهوة؟ || ʿāyiz tishrab ʾahwa?
+ms: هل تريد بعض القهوة؟ || hal turīd baʿḍ al-qahwa?
+he: אתה{ata}/0 ; רוצה{rotse}/1 ; קפה{kafe}/3
+tr: Kahve/3 ; içer misin/0,1,2
+= 173 I'm going to make some tea.
+pt: Eu/0 ; vou/1 ; fazer/2 ; chá/3
+fa: من{man}/0 ; میرم{miram}/1 ; چای{chāy}/3 ; درست کنم{dorost konam}/2
+fw: من می‌روم چای درست کنم. || man miravam chāy dorost konam.
+la: أنا{ana}/0 ; رايح{rāyiḥ}/1 ; إعمل{iʿmil}/2 ; شاي{shāy}/3
+eg: أنا هعمل شاي. || ana haʿmil shāy.
+ms: سأُعِدّ بعض الشاي. || sa-uʿiddu baʿḍ ash-shāy.
+he: אני{ani}/0 ; הולך{holekh}/1 ; להכין{lehakhin}/2 ; תה{te}/3
+tr: Çay/3 ; yapmaya/2 ; gidiyorum/0,1
+= 174 Do you want hot or cold water?
+pt: Você/0 ; quer/1 ; água quente/2 ; ou/3 ; gelada/4
+fa: آب گرم{āb-e garm}/2 ; می‌خوای{mikhāy}/0,1 ; یا{yā}/3 ; سرد{sard}/4
+fw: آب گرم می‌خواهی یا سرد؟ || āb-e garm mikhāhi yā sard?
+la: بدك{baddak}/0,1 ; مي سخنة{mayy sukhne}/2 ; ولا{walla}/3 ; باردة{bārde}/4
+eg: عايز مية سخنة ولا ساقعة؟ || ʿāyiz mayya sukhna walla sāʾʿa?
+ms: هل تريد ماءً ساخنًا أم باردًا؟ || hal turīd mā'an sākhinan am bāridan?
+he: אתה{ata}/0 ; רוצה{rotse}/1 ; מים חמים{mayim chamim}/2 ; או{o}/3 ; קרים{karim}/4
+tr: Sıcak su mu/2 ; soğuk mu/3,4 ; istersin/0,1

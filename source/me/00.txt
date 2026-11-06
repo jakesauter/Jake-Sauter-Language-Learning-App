@@ -1,0 +1,360 @@
+= 0 I made an app to learn Cantonese and Taishanese.
+pt: Eu/0 ; fiz/1 ; um aplicativo/2 ; para aprender/3 ; cantonês/4 ; e/5 ; taishanês/6
+fa: من{man}/0 ; یه برنامه{ye barnāme}/2 ; ساختم{sākhtam}/1 ; که{ke}/- ; کانتونی{kāntoni}/4 ; و{o}/5 ; تایشانی{tāyshāni}/6 ; یاد بگیرم{yād begiram}/3
+fw: من یک برنامه ساختم تا کانتونی و تایشانی یاد بگیرم. || man yek barnāme sākhtam tā kāntoni va tāyshāni yād begiram.
+la: أنا{ana}/0 ; عملت{ʿmilt}/1 ; تطبيق{taṭbīq}/2 ; مشان إتعلم{mishān itʿallam}/3 ; كانتوني{kantōni}/4 ; و{w}/5 ; تايشاني{tayshāni}/6
+eg: أنا عملت تطبيق علشان أتعلم كانتوني وتايشاني. || ana ʿamalt taṭbīʾ ʿashān atʿallim kantōni w tayshāni.
+ms: صنعتُ تطبيقًا لأتعلم الكانتونية والتايشانية. || ṣanaʿtu taṭbīqan li-ataʿallama al-kantōniyya wa-t-tayshāniyya.
+he: בניתי{baniti}/0,1 ; אפליקציה{aplikatsya}/2 ; כדי ללמוד{kdey lilmod}/3 ; קנטונזית{kantonezit}/4 ; וטאישנית{ve-taishanit}/5,6
+tr: Kantonca/4 ; ve/5 ; Taishanca/6 ; öğrenmek için/3 ; bir uygulama/2 ; yaptım/0,1
+= 1 So I can talk with all of you.
+pt: Assim/0 ; eu/1 ; posso/2 ; conversar/5 ; com/3 ; todos vocês/4
+fa: که{ke}/0 ; بتونم{betunam}/1,2 ; با{bā}/3 ; همه‌تون{hamatun}/4 ; حرف بزنم{harf bezanam}/5
+fw: تا بتوانم با همه‌ی شما صحبت کنم. || tā betavānam bā hame-ye shomā sohbat konam.
+la: مشان{mishān}/0 ; إقدر{ʾi'dar}/1,2 ; إحكي{iḥki}/5 ; معكن{maʿkon}/3 ; كلكن{kellkon}/4
+eg: علشان أقدر أتكلم معاكم كلكم. || ʿashān a'dar atkallim maʿākum kullukum.
+ms: لكي أستطيع التحدث معكم جميعًا. || li-kay astaṭīʿa at-taḥadduth maʿakum jamīʿan.
+he: כדי ש{kdey she}/0 ; אוכל{ukhal}/1,2 ; לדבר{ledaber}/5 ; עם{im}/3 ; כולכם{kulkhem}/4
+tr: Böylece/0 ; hepinizle/3,4 ; konuşabilirim/1,2,5
+= 2 If I say something wrong, please tell me.
+pt: Se/0 ; eu/1 ; falar/2 ; algo errado/3 ; por favor/4 ; me/6 ; diga/5
+fa: اگه{age}/0 ; چیزی رو{chizi ro}/2 ; اشتباه{eshtebāh}/3 ; گفتم{goftam}/1,2 ; لطفاً{lotfan}/4 ; بهم{behem}/6 ; بگید{begid}/5
+fw: اگر چیزی را اشتباه گفتم، لطفاً به من بگویید. || agar chizi rā eshtebāh goftam, lotfan be man beguyid.
+la: إذا{iza}/0 ; قلت{ʾilt}/1,2 ; شي غلط{shi ghalaṭ}/3 ; إذا بتريد{iza btrīd}/4 ; قلّي{ʾelli}/5,6
+eg: لو قلت حاجة غلط، من فضلك قولّي. || law ʾult ḥāga ghalaṭ, min faḍlak ʾulli.
+ms: إذا قلتُ شيئًا خاطئًا، فأخبرني من فضلك. || idhā qultu shay'an khāṭi'an, fa-akhbirnī min faḍlik.
+he: אם{im}/0 ; אני{ani}/1 ; אומר{omer}/2 ; משהו לא נכון{mashehu lo nakhon}/3 ; בבקשה{bevakasha}/4 ; תגידו{tagidu}/5 ; לי{li}/6
+tr: Yanlış/3 ; bir şey/- ; söylersem/0,1,2 ; lütfen/4 ; bana/6 ; söyleyin/5
+= 3 I'm home!
+pt: Cheguei/0,1 ; em casa/2
+fa: من{man}/0 ; اومدم{umadam}/1 ; خونه{khune}/2
+fw: من به خانه آمدم! || man be khāne āmadam!
+la: أنا{ana}/0 ; وصلت{wṣelt}/1 ; عالبيت{ʿal-bēt}/2
+eg: أنا وصلت البيت! || ana wṣelt el-bēt!
+ms: لقد عدتُ إلى البيت! || laqad ʿudtu ilā al-bayt!
+he: אני{ani}/0 ; בבית{babayit}/1,2
+tr: Ben/0 ; geldim/1,2
+= 4 What did you do today?
+pt: O que/3 ; você/0 ; fez/2 ; hoje/1
+fa: امروز{emruz}/1 ; چی کار{chi kār}/3 ; کردی{kardi}/0,2
+fw: امروز چه کار کردی؟ || emruz che kār kardi?
+la: شو{shu}/3 ; عملت{ʿmilt}/0,2 ; اليوم{il-yōm}/1
+eg: عملت إيه النهارده؟ || ʿamalt ēh in-naharda?
+ms: ماذا فعلتَ اليوم؟ || mādhā faʿalta al-yawm?
+he: מה{ma}/3 ; עשית{asita}/0,2 ; היום{hayom}/1
+tr: Bugün/1 ; ne/3 ; yaptın/0,2
+= 5 What did you have for lunch?
+pt: O que/3 ; você/0 ; almoçou/1,2
+fa: ناهار{nāhār}/1 ; چی{chi}/3 ; خوردی{khordi}/0,2
+fw: ناهار چه خوردی؟ || nāhār che khordi?
+la: شو{shu}/3 ; أكلت{akalt}/0,2 ; عالغدا{ʿal-ghada}/1
+eg: كلت إيه على الغدا؟ || kalt ēh ʿala l-ghada?
+ms: ماذا تناولتَ على الغداء؟ || mādhā tanāwalta ʿalā al-ghadā'?
+he: מה{ma}/3 ; אכלת{akhalta}/0,2 ; בצהריים{batsohorayim}/1
+tr: Öğle yemeğinde/1 ; ne/3 ; yedin/0,2
+= 6 Did anything fun happen today?
+pt: Aconteceu/1 ; alguma coisa/2 ; divertida/3 ; hoje/0
+fa: امروز{emruz}/0 ; چیز باحالی{chiz-e bāhāli}/2,3 ; پیش اومد{pish umad}/1
+fw: امروز اتفاق جالبی افتاد؟ || emruz ettefāq-e jālebi oftād?
+la: صار{ṣār}/1 ; شي{shi}/2 ; حلو{ḥilu}/3 ; اليوم{il-yōm}/0
+eg: حصل حاجة حلوة النهارده؟ || ḥaṣal ḥāga ḥilwa in-naharda?
+ms: هل حدث شيء ممتع اليوم؟ || hal ḥadatha shay' mumtiʿ al-yawm?
+he: קרה{kara}/1 ; משהו{mashehu}/2 ; כיף{kef}/3 ; היום{hayom}/0
+tr: Bugün/0 ; eğlenceli/3 ; bir şey/2 ; oldu mu/1
+= 7 Work was so busy today.
+pt: O trabalho/1 ; foi/- ; muito/2 ; corrido/3 ; hoje/0
+fa: امروز{emruz}/0 ; سر کار{sar-e kār}/1 ; خیلی{kheyli}/2 ; شلوغ بود{sholugh bud}/3
+fw: امروز کار خیلی شلوغ بود. || emruz kār kheyli sholugh bud.
+la: الشغل{ish-shoghl}/1 ; كان{kān}/- ; كتير{ktīr}/2 ; ضاغط{ḍāghiṭ}/3 ; اليوم{il-yōm}/0
+eg: الشغل كان زحمة أوي النهارده. || ish-shughl kān zaḥma awi in-naharda.
+ms: كان العمل مزدحمًا جدًا اليوم. || kāna al-ʿamal muzdaḥiman jiddan al-yawm.
+he: היה{haya}/- ; ממש{mamash}/2 ; עמוס{amus}/3 ; בעבודה{ba-avoda}/1 ; היום{hayom}/0
+tr: Bugün/0 ; iş/1 ; çok/2 ; yoğundu/3
+= 8 What's for dinner tonight?
+pt: O que/2 ; tem/- ; para o jantar/1 ; hoje à noite/0
+fa: امشب{emshab}/0 ; شام{shām}/1 ; چی داریم{chi dārim}/2
+fw: امشب برای شام چه داریم؟ || emshab barāye shām che dārim?
+la: شو{shu}/2 ; في{fī}/- ; عشا{ʿasha}/1 ; الليلة{il-lēle}/0
+eg: إيه العشا النهارده؟ || ēh il-ʿasha in-naharda?
+ms: ماذا سنأكل على العشاء الليلة؟ || mādhā sa-na'kul ʿalā al-ʿashā' al-layla?
+he: מה{ma}/2 ; יש{yesh}/- ; לארוחת ערב{le-aruchat erev}/1 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; yemekte/1 ; ne var/2
+= 9 Did you go out today?
+pt: Você/0 ; saiu/2 ; hoje/1 ; ou não/3
+fa: امروز{emruz}/1 ; رفتی بیرون{rafti birun}/0,2 ; یا نه{yā na}/3
+fw: امروز بیرون رفتی؟ || emruz birun rafti?
+la: طلعت{ṭleʿt}/0,2 ; اليوم{il-yōm}/1 ; ولا لأ{walla laʾ}/3
+eg: خرجت النهارده؟ || kharagt in-naharda?
+ms: هل خرجتَ اليوم؟ || hal kharajta al-yawm?
+he: יצאת{yatsata}/0,2 ; היום{hayom}/1
+tr: Bugün/1 ; dışarı çıktın mı/0,2,3
+= 10 What time did you get home?
+pt: A que horas/1 ; você/0 ; chegou/2 ; em casa/3
+fa: ساعت چند{sā'at-e chand}/1 ; رسیدی{residi}/0,2 ; خونه{khune}/3
+fw: ساعت چند به خانه رسیدی؟ || sā'at-e chand be khāne residi?
+la: أيمتى{aymta}/1 ; وصلت{wṣelt}/0,2 ; عالبيت{ʿal-bēt}/3
+eg: رجعت البيت الساعة كام؟ || rgiʿt il-bēt is-sāʿa kām?
+ms: متى وصلتَ إلى البيت؟ || matā waṣalta ilā al-bayt?
+he: מתי{matay}/1 ; הגעת{higata}/0,2 ; הביתה{habayta}/3
+tr: Eve/3 ; saat kaçta/1 ; geldin/0,2
+= 11 What are you watching?
+pt: O que/2 ; você/0 ; está assistindo/1
+fa: داری{dāri}/0,1 ; چی{chi}/2 ; نگاه می‌کنی{negāh mikoni}/1
+fw: چه چیزی تماشا می‌کنی؟ || che chizi tamāshā mikoni?
+la: شو{shu}/2 ; عم تحضر{ʿam tiḥḍar}/0,1
+eg: بتتفرج على إيه؟ || btitfarrag ʿala ēh?
+ms: ماذا تشاهد؟ || mādhā tushāhid?
+he: מה{ma}/2 ; אתה רואה{ata ro'e}/0,1
+tr: Ne/2 ; izliyorsun/0,1
+= 12 Let's watch something together tonight.
+pt: Vamos/4 ; assistir/2 ; alguma coisa/3 ; juntos/1 ; hoje à noite/0
+fa: امشب{emshab}/0 ; بیا{biyā}/4 ; با هم{bā ham}/1 ; یه چیزی{ye chizi}/3 ; ببینیم{bebinim}/2
+fw: امشب بیا با هم چیزی تماشا کنیم. || emshab biyā bā ham chizi tamāshā konim.
+la: يلا{yalla}/4 ; نحضر{niḥḍar}/2 ; شي{shi}/3 ; سوا{sawa}/1 ; الليلة{il-lēle}/0
+eg: يلا نتفرج على حاجة سوا النهارده بالليل. || yalla nitfarrag ʿala ḥāga sawa in-naharda bil-lēl.
+ms: لنشاهد شيئًا معًا الليلة. || li-nushāhid shay'an maʿan al-layla.
+he: בואו{bo'u}/4 ; נראה{nir'e}/2 ; משהו{mashehu}/3 ; ביחד{beyachad}/1 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; birlikte/1 ; bir şey/3 ; izleyelim/2,4
+= 13 I'm going to the store. Do you need anything?
+pt: Eu/0 ; vou/1 ; ao mercado/2 ; Você/3 ; precisa de/4 ; alguma coisa/5
+fa: من{man}/0 ; دارم میرم{dāram miram}/1 ; مغازه{maghāze}/2 ; چیزی{chizi}/5 ; لازم داری{lāzem dāri}/3,4
+fw: من دارم به مغازه می‌روم. چیزی لازم داری؟ || man dāram be maghāze miravam. chizi lāzem dāri?
+la: أنا{ana}/0 ; رايح{rāyiḥ}/1 ; عالدكانة{ʿad-dekkāne}/2 ; بدك{baddak}/3,4 ; شي{shi}/5
+eg: أنا رايح السوبرماركت. عايز حاجة؟ || ana rāyiḥ is-subermarket. ʿāyiz ḥāga?
+ms: أنا ذاهب إلى المتجر. هل تحتاج شيئًا؟ || anā dhāhib ilā al-matjar. hal taḥtāj shay'an?
+he: אני{ani}/0 ; הולך{holekh}/1 ; לחנות{la-chanut}/2 ; אתה{ata}/3 ; צריך{tsarikh}/4 ; משהו{mashehu}/5
+tr: Markete/2 ; gidiyorum/0,1 ; Bir şeye/5 ; ihtiyacın var mı/3,4
+= 14 Did you call grandma?
+pt: Você/0 ; ligou/1 ; para a vovó/2 ; já/3
+fa: به مامان‌بزرگ{be māmān-bozorg}/2 ; زنگ زدی{zang zadi}/0,1
+fw: به مادربزرگ زنگ زدی؟ || be mādarbozorg zang zadi?
+la: حكيت{ḥakēt}/0,1 ; تيتا{teta}/2 ; لهلق{la-halla'}/3
+eg: كلمت تيتة؟ || kallimt tēta?
+ms: هل اتصلتَ بجدتك؟ || hal ittaṣalta bi-jaddatik?
+he: התקשרת{hitkasharta}/0,1 ; לסבתא{le-savta}/2
+tr: Anneanneni/2 ; aradın mı/0,1
+= 15 How are you feeling today?
+pt: Como/3 ; você/0 ; está se sentindo/2 ; hoje/1
+fa: امروز{emruz}/1 ; حالت{hālet}/0,2 ; چطوره{chetore}/3
+fw: امروز حالت چطور است؟ || emruz hālat chetor ast?
+la: كيفك{kīfak}/0,2,3 ; اليوم{il-yōm}/1
+eg: عامل إيه النهارده؟ || ʿāmil ēh in-naharda?
+ms: كيف تشعر اليوم؟ || kayfa tashʿur al-yawm?
+he: איך{eykh}/3 ; אתה מרגיש{ata margish}/0,2 ; היום{hayom}/1
+tr: Bugün/1 ; nasıl/3 ; hissediyorsun/0,2
+= 16 Today was a good day.
+pt: Hoje/0 ; foi/1 ; um dia/- ; muito bom/2
+fa: امروز{emruz}/0 ; روز خیلی خوبی بود{ruz-e kheyli khubi bud}/1,2
+fw: امروز روز خوبی بود. || emruz ruz-e khubi bud.
+la: اليوم{il-yōm}/0 ; كان{kān}/1 ; نهار حلو{nhār ḥilu}/2
+eg: النهارده كان يوم حلو. || in-naharda kān yōm ḥilw.
+ms: كان اليوم يومًا جيدًا. || kāna al-yawm yawman jayyidan.
+he: היום{hayom}/0 ; היה{haya}/1 ; יום טוב{yom tov}/2
+tr: Bugün/0 ; güzel bir gündü/1,2
+= 17 Good morning, did you sleep okay?
+pt: Bom dia/0 ; você/1 ; dormiu/2 ; bem/3
+fa: صبح بخیر{sobh bekheyr}/0 ; خوب{khub}/3 ; خوابیدی{khābidi}/1,2
+fw: صبح بخیر، خوب خوابیدی؟ || sobh bekheyr, khub khābidi?
+la: صباح الخير{ṣabāḥ il-khēr}/0 ; نمت{nimt}/1,2 ; منيح{mnīḥ}/3
+eg: صباح الخير، نمت كويس؟ || ṣabāḥ il-khēr, nimt kwayyis?
+ms: صباح الخير، هل نمتَ جيدًا؟ || ṣabāḥ al-khayr, hal nimta jayyidan?
+he: בוקר טוב{boker tov}/0 ; ישנת{yashanta}/1,2 ; טוב{tov}/3
+tr: Günaydın/0 ; iyi/3 ; uyudun mu/1,2
+= 18 What do you want for breakfast?
+pt: O que/2 ; você/0 ; quer comer/1 ; no café da manhã/3
+fa: صبحونه{sobhune}/3 ; چی{chi}/2 ; می‌خوای بخوری{mikhāy bokhori}/0,1
+fw: برای صبحانه چه می‌خواهی بخوری؟ || barāye sobhāne che mikhāhi bokhori?
+la: شو{shu}/2 ; بدك تاكل{baddak tākul}/0,1 ; عالفطور{ʿal-fṭūr}/3
+eg: عايز تفطر إيه؟ || ʿāyiz tifṭar ēh?
+ms: ماذا تريد أن تأكل على الفطور؟ || mādhā turīd an ta'kul ʿalā al-fuṭūr?
+he: מה{ma}/2 ; אתה רוצה{ata rotse}/0,1 ; לארוחת בוקר{le-aruchat boker}/3
+tr: Kahvaltıda/3 ; ne/2 ; yemek istersin/0,1
+= 19 Did you eat yet? I saved you some.
+pt: Você/0 ; já/2 ; comeu/1 ; Eu/3 ; guardei/4 ; um pouco/5 ; para você/6
+fa: غذا خوردی{ghazā khordi}/0,1 ; یا نه{yā na}/2 ; یه کم{ye kam}/5 ; برات{barāt}/6 ; نگه داشتم{negah dāshtam}/3,4
+fw: غذا خوردی؟ کمی برایت نگه داشتم. || ghazā khordi? kami barāyat negah dāshtam.
+la: أكلت{akalt}/0,1 ; لهلق{la-halla'}/2 ; خبيتلك{khabbaytellak}/3,4,6 ; شوي{shway}/5
+eg: كلت ولا لسه؟ شايلالك شوية. || kalt walla lissa? shayllak shwayya.
+ms: هل أكلتَ؟ احتفظتُ لك ببعض الطعام. || hal akalta? iḥtafaẓtu laka bi-baʿḍ aṭ-ṭaʿām.
+he: אכלת{akhalta}/0,1 ; כבר{kvar}/2 ; שמרתי{shamarti}/3,4 ; לך{lekha}/6 ; קצת{ktsat}/5
+tr: Yemek yedin mi/0,1 ; Sana/6 ; biraz/5 ; ayırdım/3,4
+= 20 I'm heading out now.
+pt: Eu/0 ; já/1,3 ; estou saindo/2
+fa: من{man}/0 ; دیگه{dige}/3 ; دارم میرم بیرون{dāram miram birun}/2
+fw: من الان بیرون می‌روم. || man al'ān birun miravam.
+la: أنا{ana}/0 ; طالع{ṭāliʿ}/2 ; هلق{halla'}/1
+eg: أنا خارج دلوقتي. || ana khārig dilwaʾti.
+ms: سأخرج الآن. || sa-akhruj al-ān.
+he: אני{ani}/0 ; יוצא{yotse}/2 ; עכשיו{akhshav}/1
+tr: Ben/0 ; şimdi/1 ; çıkıyorum/2
+= 21 Drive safe, text me when you get there.
+pt: Dirija/0 ; com cuidado/1 ; me/4 ; manda mensagem/3 ; quando chegar/2
+fa: با احتیاط{bā ehtiyāt}/1 ; رانندگی کن{rānandegi kon}/0 ; رسیدی{residi}/2 ; بهم{behem}/4 ; پیام بده{payām bede}/3
+fw: با احتیاط رانندگی کن و وقتی رسیدی به من پیام بده. || bā ehtiyāt rānandegi kon va vaqti residi be man payām bede.
+la: سوق{sū'}/0 ; على مهلك{ʿala mahlak}/1 ; لما توصل{lamma tiwṣal}/2 ; بعتلي{baʿtilli}/3,4 ; رسالة{risāle}/3
+eg: سوق بالراحة، وابعتلي رسالة لما توصل. || sūʾ bir-rāḥa, w ibʿatli risāla lamma tiwṣal.
+ms: قُد بحذر، وأرسل لي رسالة عندما تصل. || qud bi-ḥadhar, wa-arsil lī risāla ʿindamā taṣil.
+he: סע{sa}/0 ; בזהירות{bizehirut}/1 ; תשלח לי{tishlach li}/3,4 ; הודעה{hoda'a}/3 ; כשתגיע{keshe-tagia}/2
+tr: Dikkatli/1 ; sür/0 ; varınca/2 ; bana/4 ; mesaj at/3
+= 22 What time will you be home?
+pt: A que horas/1 ; você/0 ; volta/2 ; para casa/3
+fa: ساعت چند{sā'at-e chand}/1 ; میای{miyāy}/0,2 ; خونه{khune}/3
+fw: ساعت چند به خانه می‌آیی؟ || sā'at-e chand be khāne mi'āyi?
+la: أيمتى{aymta}/1 ; راجع{rājiʿ}/0,2 ; عالبيت{ʿal-bēt}/3
+eg: هترجع البيت الساعة كام؟ || hatirgaʿ il-bēt is-sāʿa kām?
+ms: متى ستعود إلى البيت؟ || matā sa-taʿūd ilā al-bayt?
+he: מתי{matay}/1 ; תהיה{tihye}/0,2 ; בבית{babayit}/3
+tr: Eve/3 ; saat kaçta/1 ; gelirsin/0,2
+= 23 I'll be home around six.
+pt: Eu/0 ; chego/2 ; em casa/3 ; lá pelas seis/1
+fa: من{man}/0 ; حدود ساعت شش{hodud-e sā'at-e shish}/1 ; میام{miyām}/2 ; خونه{khune}/3
+fw: من حدود ساعت شش به خانه می‌آیم. || man hodud-e sā'at-e shesh be khāne mi'āyam.
+la: أنا{ana}/0 ; براجع{brājiʿ}/2 ; عالبيت{ʿal-bēt}/3 ; عالستة تقريبًا{ʿas-sitte ta'rīban}/1
+eg: هرجع البيت حوالي الساعة ستة. || hargaʿ il-bēt ḥawāli s-sāʿa sitta.
+ms: سأعود إلى البيت حوالي السادسة. || sa-aʿūd ilā al-bayt ḥawālī as-sādisa.
+he: אני{ani}/0 ; אהיה{ehye}/2 ; בבית{babayit}/3 ; בסביבות שש{bisvivot shesh}/1
+tr: Saat altı gibi/1 ; evde/3 ; olurum/0,2
+= 24 Do you need me to pick anything up?
+pt: Precisa que/0 ; eu/1 ; compre/2 ; alguma coisa/3 ; e traga/4
+fa: می‌خوای{mikhāy}/0 ; من{man}/1 ; چیزی{chizi}/3 ; بخرم{bekharam}/2 ; بیارم{biyāram}/4
+fw: می‌خواهی چیزی بخرم و بیاورم؟ || mikhāhi chizi bekharam va biyāvaram?
+la: بدك{baddak}/0 ; جبلك{jiblak}/1,4 ; شي{shi}/3 ; معي{maʿi}/2
+eg: عايزني أجيبلك حاجة؟ || ʿayizni agiblak ḥāga?
+ms: هل تحتاج أن أشتري لك شيئًا؟ || hal taḥtāj an ashtariya laka shay'an?
+he: צריך{tsarikh}/0 ; שאביא{she-avi}/1,4 ; משהו{mashehu}/3
+tr: Bir şey/3 ; almamı/1,2 ; ister misin/0,4
+= 25 I'll stop by the store on the way home.
+pt: Eu/0 ; passo/2 ; no mercado/3 ; no caminho para casa/1
+fa: من{man}/0 ; سر راه خونه{sar-e rāh-e khune}/1 ; یه سر{ye sar}/2 ; به مغازه{be maghāze}/3 ; می‌زنم{mizanam}/2
+fw: سر راه خانه به مغازه سر می‌زنم. || sar-e rāh-e khāne be maghāze sar mizanam.
+la: بمرق{bmorr}/0,2 ; عالدكانة{ʿad-dekkāne}/3 ; بطريقي عالبيت{b-ṭarī'i ʿal-bēt}/1
+eg: هعدي على السوبرماركت وأنا راجع. || haʿaddi ʿala s-subermarket w ana rāgiʿ.
+ms: سأمرّ بالمتجر في طريقي إلى البيت. || sa-amurru bil-matjar fī ṭarīqī ilā al-bayt.
+he: אני{ani}/0 ; אקפוץ{ekpots}/2 ; לחנות{la-chanut}/3 ; בדרך הביתה{baderekh habayta}/1
+tr: Eve dönerken/1 ; markete/3 ; uğrarım/0,2
+= 26 Did grandma call today?
+pt: A vovó/0 ; ligou/2 ; hoje/1
+fa: مامان‌بزرگ{māmān-bozorg}/0 ; امروز{emruz}/1 ; زنگ زد{zang zad}/2
+fw: مادربزرگ امروز زنگ زد؟ || mādarbozorg emruz zang zad?
+la: تيتا{teta}/0 ; حكت{ḥakat}/2 ; اليوم{il-yōm}/1
+eg: تيتة اتصلت النهارده؟ || tēta ittaṣalit in-naharda?
+ms: هل اتصلت الجدة اليوم؟ || hal ittaṣalat al-jadda al-yawm?
+he: סבתא{savta}/0 ; התקשרה{hitkashra}/2 ; היום{hayom}/1
+tr: Anneannem/0 ; bugün/1 ; aradı mı/2,3
+= 27 Tell her I said hi.
+pt: Manda/0 ; um oi/1 ; para ela/2
+fa: از طرف من{az taraf-e man}/0 ; بهش{behesh}/2 ; سلام برسون{salām berasun}/1
+fw: از طرف من به او سلام برسان. || az taraf-e man be u salām berasān.
+la: سلّملي{sallimli}/0,1 ; عليها{ʿalēha}/2
+eg: سلّملي عليها. || sallimli ʿalēha.
+ms: أبلغها تحياتي. || ablighhā taḥiyyātī.
+he: תגיד לה{tagid la}/0,2 ; שלום ממני{shalom mimeni}/1
+tr: Ona/2 ; benden/0 ; selam söyle/1
+= 28 I want to eat.
+pt: Eu/0 ; quero/1 ; comer/2
+fa: من{man}/0 ; می‌خوام{mikhām}/1 ; غذا بخورم{ghazā bokhoram}/2
+fw: من می‌خواهم غذا بخورم. || man mikhāham ghazā bokhoram.
+la: أنا{ana}/0 ; بدي{baddi}/1 ; آكل{ākul}/2
+eg: أنا عايز آكل. || ana ʿāyiz ākul.
+ms: أريد أن آكل. || urīdu an ākul.
+he: אני{ani}/0 ; רוצה{rotse}/1 ; לאכול{le'ekhol}/2
+tr: Yemek/2 ; yemek istiyorum/0,1
+= 29 Do you want to eat?
+pt: Você/0 ; quer/1 ; comer/2
+fa: می‌خوای{mikhāy}/0,1 ; غذا بخوری{ghazā bokhori}/2
+fw: می‌خواهی غذا بخوری؟ || mikhāhi ghazā bokhori?
+la: بدك{baddak}/0,1 ; تاكل{tākul}/2
+eg: عايز تاكل؟ || ʿāyiz tākul?
+ms: هل تريد أن تأكل؟ || hal turīd an ta'kul?
+he: אתה{ata}/0 ; רוצה{rotse}/1 ; לאכול{le'ekhol}/2
+tr: Yemek/2 ; ister misin/0,1,3
+= 30 I don't want to eat.
+pt: Eu/0 ; não/1 ; quero/2 ; comer/3
+fa: من{man}/0 ; نمی‌خوام{nemikhām}/1,2 ; غذا بخورم{ghazā bokhoram}/3
+fw: من نمی‌خواهم غذا بخورم. || man nemikhāham ghazā bokhoram.
+la: أنا{ana}/0 ; ما بدي{ma baddi}/1,2 ; آكل{ākul}/3
+eg: أنا مش عايز آكل. || ana mish ʿāyiz ākul.
+ms: لا أريد أن آكل. || lā urīdu an ākul.
+he: אני{ani}/0 ; לא{lo}/1 ; רוצה{rotse}/2 ; לאכול{le'ekhol}/3
+tr: Yemek/3 ; yemek istemiyorum/0,1,2
+= 31 Did you eat?
+pt: Você/0 ; comeu/1
+fa: غذا{ghazā}/1 ; خوردی{khordi}/0,1
+fw: غذا خوردی؟ || ghazā khordi?
+la: أكلت{akalt}/0,1
+eg: كلت؟ || kalt?
+ms: هل أكلت؟ || hal akalta?
+he: אכלת{akhalta}/0,1
+tr: Yemek/1 ; yedin mi/0,1,2
+= 32 I didn't eat.
+pt: Eu/0 ; não/1 ; comi/2
+fa: من{man}/0 ; غذا{ghazā}/2 ; نخوردم{nakhordam}/1,2
+fw: من غذا نخوردم. || man ghazā nakhordam.
+la: أنا{ana}/0 ; ما أكلت{ma akalt}/1,2
+eg: أنا ما كلتش. || ana ma kaltish.
+ms: لم آكل. || lam ākul.
+he: אני{ani}/0 ; לא{lo}/1 ; אכלתי{akhalti}/2
+tr: Yemek/2 ; yemedim/0,1,2
+= 33 I'm eating.
+pt: Eu/0 ; estou comendo/1
+fa: من{man}/0 ; دارم غذا می‌خورم{dāram ghazā mikhoram}/1
+fw: من دارم غذا می‌خورم. || man dāram ghazā mikhoram.
+la: أنا{ana}/0 ; عم آكل{ʿam ākul}/1
+eg: أنا باكل. || ana bākul.
+ms: أنا آكل الآن. || anā ākulu al-ān.
+he: אני{ani}/0 ; אוכל{okhel}/1
+tr: Yemek/1 ; yiyorum/0,1
+= 34 I'm going to eat later.
+pt: Eu/0 ; vou/1 ; comer/2 ; mais tarde/3
+fa: من{man}/0 ; بعداً{ba'dan}/3 ; غذا می‌خورم{ghazā mikhoram}/1,2
+fw: من بعداً غذا خواهم خورد. || man ba'dan ghazā khāham khord.
+la: أنا{ana}/0 ; رح{raḥ}/1 ; آكل{ākul}/2 ; بعدين{baʿdēn}/3
+eg: أنا هاكل بعدين. || ana hākul baʿdēn.
+ms: سآكل لاحقًا. || sa-ākulu lāḥiqan.
+he: אני{ani}/0 ; אוכל{okhal}/1,2 ; אחר כך{achar kakh}/3
+tr: Sonra/3 ; yiyeceğim/0,1,2
+= 35 Let's eat together.
+pt: Vamos/0 ; comer/1 ; juntos/2
+fa: بیا{biyā}/0 ; با هم{bā ham}/2 ; غذا بخوریم{ghazā bokhorim}/1
+fw: بیا با هم غذا بخوریم. || biyā bā ham ghazā bokhorim.
+la: يلا{yalla}/0 ; ناكل{nākul}/1 ; سوا{sawa}/2
+eg: يلا ناكل سوا. || yalla nākul sawa.
+ms: لنأكل معًا. || li-na'kul maʿan.
+he: בואו{bo'u}/0 ; נאכל{nokhal}/1 ; ביחד{beyachad}/2
+tr: Birlikte/2 ; yiyelim/0,1
+= 36 I want to go out.
+pt: Eu/0 ; quero/1 ; sair/2
+fa: من{man}/0 ; می‌خوام{mikhām}/1 ; برم بیرون{baram birun}/2
+fw: من می‌خواهم بیرون بروم. || man mikhāham birun beravam.
+la: أنا{ana}/0 ; بدي{baddi}/1 ; إطلع{iṭlaʿ}/2
+eg: أنا عايز أخرج. || ana ʿāyiz akhrug.
+ms: أريد أن أخرج. || urīdu an akhruj.
+he: אני{ani}/0 ; רוצה{rotse}/1 ; לצאת{latset}/2
+tr: Dışarı çıkmak/2 ; istiyorum/0,1
+= 37 Do you want to go out?
+pt: Você/0 ; quer/1 ; sair/2
+fa: می‌خوای{mikhāy}/0,1 ; بری بیرون{beri birun}/2
+fw: می‌خواهی بیرون بروی؟ || mikhāhi birun beravi?
+la: بدك{baddak}/0,1 ; تطلع{tiṭlaʿ}/2
+eg: عايز تخرج؟ || ʿāyiz tukhrug?
+ms: هل تريد أن تخرج؟ || hal turīd an takhruj?
+he: אתה{ata}/0 ; רוצה{rotse}/1 ; לצאת{latset}/2
+tr: Dışarı çıkmak/2 ; ister misin/0,1,3
+= 38 I don't want to go out.
+pt: Eu/0 ; não/1 ; quero/2 ; sair/3
+fa: من{man}/0 ; نمی‌خوام{nemikhām}/1,2 ; برم بیرون{baram birun}/3
+fw: من نمی‌خواهم بیرون بروم. || man nemikhāham birun beravam.
+la: أنا{ana}/0 ; ما بدي{ma baddi}/1,2 ; إطلع{iṭlaʿ}/3
+eg: أنا مش عايز أخرج. || ana mish ʿāyiz akhrug.
+ms: لا أريد أن أخرج. || lā urīdu an akhruj.
+he: אני{ani}/0 ; לא{lo}/1 ; רוצה{rotse}/2 ; לצאת{latset}/3
+tr: Dışarı çıkmak/3 ; istemiyorum/0,1,2
+= 39 Did you go out today?
+pt: Você/0 ; saiu/1 ; hoje/2
+fa: امروز{emruz}/2 ; رفتی بیرون{rafti birun}/0,1
+fw: امروز بیرون رفتی؟ || emruz birun rafti?
+la: طلعت{ṭleʿt}/0,1 ; اليوم{il-yōm}/2
+eg: خرجت النهارده؟ || kharagt in-naharda?
+ms: هل خرجتَ اليوم؟ || hal kharajta al-yawm?
+he: יצאת{yatsata}/0,1 ; היום{hayom}/2
+tr: Bugün/2 ; dışarı çıktın mı/0,1,3

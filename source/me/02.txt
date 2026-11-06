@@ -1,0 +1,405 @@
+= 85 When are you coming?
+pt: Quando/0 ; você/1 ; vem/2
+fa: کی{key}/0 ; میای{miyāy}/1,2
+fw: کی می‌آیی؟ || key mi'āyi?
+la: أيمتى{aymta}/0 ; جاي{jāy}/1,2
+eg: هتيجي إمتى؟ || hatīgi imta?
+ms: متى ستأتي؟ || matā sa-ta'tī?
+he: מתי{matay}/0 ; אתה בא{ata ba}/1,2
+tr: Ne zaman/0 ; geliyorsun/1,2
+= 86 Where are you going?
+pt: Aonde/0,3 ; você/1 ; vai/2
+fa: کجا{kojā}/0,3 ; داری میری{dāri miri}/1,2
+fw: کجا می‌روی؟ || kojā miravi?
+la: لوين{lawēn}/0,3 ; رايح{rāyiḥ}/1,2
+eg: رايح فين؟ || rāyiḥ fēn?
+ms: إلى أين أنت ذاهب؟ || ilā ayna anta dhāhib?
+he: לאן{le'an}/0,3 ; אתה הולך{ata holekh}/1,2
+tr: Nereye/0,3 ; gidiyorsun/1,2
+= 87 What are you doing?
+pt: O que/0 ; você/1 ; está fazendo/2
+fa: چی کار{chi kār}/0 ; می‌کنی{mikoni}/1,2
+fw: چه کار می‌کنی؟ || che kār mikoni?
+la: شو{shu}/0 ; عم تعمل{ʿam taʿmil}/1,2
+eg: بتعمل إيه؟ || btiʿmil ēh?
+ms: ماذا تفعل؟ || mādhā tafʿal?
+he: מה{ma}/0 ; אתה עושה{ata ose}/1,2
+tr: Ne/0 ; yapıyorsun/1,2
+= 88 What did you do?
+pt: O que/0 ; você/1 ; fez/2
+fa: چی کار{chi kār}/0 ; کردی{kardi}/1,2
+fw: چه کار کردی؟ || che kār kardi?
+la: شو{shu}/0 ; عملت{ʿmilt}/1,2
+eg: عملت إيه؟ || ʿamalt ēh?
+ms: ماذا فعلت؟ || mādhā faʿalta?
+he: מה{ma}/0 ; עשית{asita}/1,2
+tr: Ne/0 ; yaptın/1,2
+= 89 What do you want?
+pt: O que/0 ; você/1 ; quer/2
+fa: چی{chi}/0 ; می‌خوای{mikhāy}/1,2
+fw: چه می‌خواهی؟ || che mikhāhi?
+la: شو{shu}/0 ; بدك{baddak}/1,2
+eg: عايز إيه؟ || ʿāyiz ēh?
+ms: ماذا تريد؟ || mādhā turīd?
+he: מה{ma}/0 ; אתה רוצה{ata rotse}/1,2
+tr: Ne/0 ; istiyorsun/1,2
+= 90 Why not?
+pt: Por que/0 ; não/1
+fa: چرا{cherā}/0 ; که نه{ke na}/1
+fw: چرا که نه؟ || cherā ke na?
+la: ليش{lēsh}/0 ; لأ{laʾ}/1
+eg: ليه لأ؟ || lēh laʾ?
+ms: لِمَ لا؟ || lima lā?
+he: למה{lama}/0 ; לא{lo}/1
+tr: Neden/0 ; olmasın/1
+= 91 How much is it?
+pt: Quanto/0 ; custa/1
+fa: چنده{chande}/0,1
+fw: قیمتش چند است؟ || qeymatash chand ast?
+la: قديش{ʾaddēsh}/0 ; حقه{ḥaʾʾo}/1
+eg: بكام ده؟ || bi-kām da?
+ms: كم سعره؟ || kam siʿruhu?
+he: כמה{kama}/0 ; זה עולה{ze ole}/1
+tr: Ne kadar/0 ; bu/1
+= 92 How many people?
+pt: Quantas/0 ; pessoas/1
+fa: چند{chand}/0 ; نفر{nafar}/1
+fw: چند نفر؟ || chand nafar?
+la: كم{kam}/0 ; واحد{wāḥad}/1
+eg: كام واحد؟ || kām wāḥid?
+ms: كم شخصًا؟ || kam shakhṣan?
+he: כמה{kama}/0 ; אנשים{anashim}/1
+tr: Kaç/0 ; kişi/1
+= 93 Good morning!
+pt: Bom dia/0
+fa: صبح بخیر{sobh bekheyr}/0
+fw: صبح بخیر! || sobh bekheyr!
+la: صباح الخير{ṣabāḥ il-khēr}/0
+eg: صباح الخير! || ṣabāḥ il-khēr!
+ms: صباح الخير! || ṣabāḥ al-khayr!
+he: בוקר טוב{boker tov}/0
+tr: Günaydın/0
+= 94 Good night, sleep well.
+pt: Boa noite/0 ; durma/1 ; bem/2
+fa: شب بخیر{shab bekheyr}/0 ; خوب{khub}/2 ; بخوابی{bekhābi}/1
+fw: شب بخیر، خوب بخوابی. || shab bekheyr, khub bekhābi.
+la: تصبح على خير{tiṣbaḥ ʿala khēr}/0 ; نوم{nōm}/1 ; الهنا{il-hana}/2
+eg: تصبح على خير، نام كويس. || tiṣbaḥ ʿala khēr, nām kwayyis.
+ms: تصبح على خير، نومًا هنيئًا. || tuṣbiḥ ʿalā khayr, nawman hanī'an.
+he: לילה טוב{layla tov}/0 ; תישן{tishan}/1 ; טוב{tov}/2
+tr: İyi geceler/0 ; iyi/2 ; uykular/1
+= 95 Nice to meet you.
+pt: Muito/0 ; prazer/1 ; em te conhecer/2,3
+fa: از آشنایی{az āshnāyi}/2 ; باهاتون{bāhātun}/3 ; خوشوقتم{khoshvaqtam}/0,1
+fw: از آشنایی با شما خوشوقتم. || az āshnāyi bā shomā khoshvaqtam.
+la: تشرفنا{tsharrafna}/0,1,2,3
+eg: فرصة سعيدة. || furṣa saʿīda.
+ms: تشرفتُ بلقائك. || tasharraftu bi-liqā'ik.
+he: נעים{na'im}/0,1 ; מאוד{me'od}/0 ; להכיר{lehakir}/2,3
+tr: Tanıştığımıza/2,3 ; çok/0 ; memnun oldum/1
+= 96 How have you been?
+pt: Como/2 ; você/0 ; tem passado/1
+fa: این روزا{in ruzā}/1 ; چطوری{chetori}/0,2
+fw: این روزها چطور هستی؟ || in ruzhā chetor hasti?
+la: كيفك{kīfak}/0,2 ; هالفترة{hal-fatra}/1
+eg: عامل إيه اليومين دول؟ || ʿāmil ēh il-yomēn dōl?
+ms: كيف حالك هذه الأيام؟ || kayfa ḥāluka hādhihi al-ayyām?
+he: מה{ma}/2 ; נשמע{nishma}/2 ; לאחרונה{le-acharona}/1
+tr: Son zamanlarda/1 ; nasılsın/0,2
+= 97 How is your health?
+pt: Como/2 ; está/2 ; a sua saúde/0,1
+fa: حالتون{hālet}/0 ; سلامتی‌تون{salāmatitun}/1 ; خوبه{khube}/2
+fw: سلامتی شما چطور است؟ || salāmati-ye shomā chetor ast?
+la: كيف{kīf}/2 ; صحتك{ṣiḥḥtak}/0,1
+eg: صحتك عاملة إيه؟ || ṣiḥḥitak ʿamla ēh?
+ms: كيف صحتك؟ || kayfa ṣiḥḥatuk?
+he: איך{eykh}/2 ; הבריאות{ha-bri'ut}/1 ; שלך{shelkha}/0
+tr: Sağlığın/0,1 ; nasıl/2
+= 98 Good afternoon.
+pt: Boa tarde/0
+fa: عصر بخیر{asr bekheyr}/0
+fw: عصر بخیر. || asr bekheyr.
+la: مرحبا{marḥaba}/0
+eg: مساء الخير. || masā' il-khēr.
+ms: مساء الخير. || masā' al-khayr.
+he: צהריים טובים{tsohorayim tovim}/0
+tr: Tünaydın/0
+= 99 Long time no see!
+pt: Quanto tempo/0 ; sem/1 ; te ver/2
+fa: چه عجب{che ajab}/0 ; ما رو{mā ro}/- ; دیدی{didi}/2
+fw: مدت‌ها است که شما را ندیده‌ام! || moddat-hā ast ke shomā rā nadide-am!
+la: من زمان{min zamān}/0 ; ما شفناك{ma shifnāk}/1,2
+eg: وحشتني! من زمان ما شفتكش! || waḥashtini! min zamān ma shuftaksh!
+ms: لم أرك منذ زمن طويل! || lam arak mundhu zaman ṭawīl!
+he: מזמן{mizman}/0 ; לא{lo}/1 ; ראינו אותך{ra'inu otkha}/2
+tr: Görüşmeyeli/1,2 ; çok oldu/0
+= 100 You look great.
+pt: Você/0 ; está/1 ; ótimo/2
+fa: خیلی{kheyli}/2 ; خوب{khub}/2 ; به نظر میای{be nazar miyāy}/0,1
+fw: خیلی خوب به نظر می‌رسی. || kheyli khub be nazar mirasi.
+la: شكلك{shaklak}/0,1 ; كتير حلو{ktīr ḥilu}/2
+eg: شكلك حلو أوي. || shaklak ḥilw awi.
+ms: تبدو رائعًا. || tabdū rā'iʿan.
+he: אתה{ata}/0 ; נראה{nir'e}/1 ; מעולה{me'ule}/2
+tr: Harika/2 ; görünüyorsun/0,1
+= 101 You haven't changed at all.
+pt: Você/0 ; não mudou/2 ; nada/1
+fa: تو{to}/0 ; اصلاً{aslan}/1 ; عوض نشدی{avaz nashodi}/2
+fw: تو اصلاً تغییر نکرده‌ای. || to aslan taghyir nakarde-i.
+la: إنت{inta}/0 ; ما تغيرت{ma tghayyart}/2 ; أبدًا{abadan}/1
+eg: إنت ما اتغيرتش خالص. || inta ma itghayyartish khāliṣ.
+ms: لم تتغير أبدًا. || lam tataghayyar abadan.
+he: לא{lo}/1 ; השתנית{hishtanita}/0,2 ; בכלל{bikhlal}/1
+tr: Hiç/1 ; değişmemişsin/0,2
+= 102 Have you lost weight?
+pt: Você/0 ; emagreceu/1
+fa: لاغر شدی{lāghar shodi}/0,1
+fw: لاغر شده‌ای؟ || lāghar shode-i?
+la: ضعفت{ḍʿift}/0,1
+eg: إنت خسيت؟ || inta khassēt?
+ms: هل فقدت بعض الوزن؟ || hal faqadta baʿḍ al-wazn?
+he: רזית{razita}/0,1
+tr: Kilo mu verdin/0,1,2
+= 103 I like your haircut.
+pt: Gostei/2,3 ; do seu/0 ; cabelo/1
+fa: موهات{muhāt}/0,1 ; خیلی{kheyli}/2 ; قشنگه{qashange}/3
+fw: مدل موهایت خیلی قشنگ است. || model-e muhāyat kheyli qashang ast.
+la: قصة شعرك{ʾaṣṣet shaʿrak}/0,1 ; كتير{ktīr}/2 ; حلوة{ḥilwe}/3
+eg: قصة شعرك حلوة أوي. || ʾaṣṣit shaʿrak ḥilwa awi.
+ms: تعجبني قصة شعرك. || tuʿjibunī qaṣṣat shaʿrik.
+he: התספורת{ha-tisporet}/1 ; שלך{shelkha}/0 ; ממש{mamash}/2 ; יפה{yafa}/3
+tr: Saçın/0,1 ; çok/2 ; güzel olmuş/3
+= 104 That shirt looks nice on you.
+pt: Essa camisa/2 ; fica/1 ; muito bem/3 ; em você/0
+fa: این پیرهن{in pirhan}/2 ; خیلی بهت میاد{kheyli behet miyād}/0,1,3
+fw: این پیراهن خیلی به تو می‌آید. || in pirāhan kheyli be to mi'āyad.
+la: هالقميص{hal-ʾamīṣ}/2 ; كتير لابقلك{ktīr lābi'lak}/0,1,3
+eg: القميص ده لايق عليك أوي. || il-ʾamīṣ da lāyiʾ ʿalēk awi.
+ms: هذا القميص يليق بك. || hādhā al-qamīṣ yalīqu bik.
+he: החולצה הזאת{ha-chultsa ha-zot}/2 ; ממש{mamash}/3 ; מתאימה לך{mat'ima lekha}/0,1,3
+tr: O gömlek/2 ; sana/0 ; çok yakışmış/1,3
+= 105 What is your name?
+pt: Qual/2 ; é/1 ; o seu nome/0,3
+fa: اسمت{esmet}/0,3 ; چیه{chiye}/1,2
+fw: نام شما چیست؟ || nām-e shomā chist?
+la: شو{shu}/2 ; اسمك{ismak}/0,1,3
+eg: اسمك إيه؟ || ismak ēh?
+ms: ما اسمك؟ || mā ismuk?
+he: איך{eykh}/2 ; קוראים לך{kor'im lekha}/0,1,3
+tr: Adın/0,3 ; ne/1,2
+= 106 How old is he?
+pt: Quantos anos/1,2 ; ele/0 ; tem/-
+fa: اون{un}/0 ; چند سالشه{chand sālesh-e}/1,2
+fw: او چند سال دارد؟ || u chand sāl dārad?
+la: قديش{ʾaddēsh}/1 ; عمره{ʿumro}/0,2
+eg: عنده كام سنة؟ || ʿandu kām sana?
+ms: كم عمره؟ || kam ʿumruhu?
+he: בן{ben}/2 ; כמה{kama}/1 ; הוא{hu}/0
+tr: O/0 ; kaç/1 ; yaşında/2
+= 107 How is everyone doing?
+pt: Como/1 ; estão/1 ; todos/0
+fa: همه{hame}/0 ; چطورن{chetoran}/1
+fw: همه چطورند؟ || hame chetorand?
+la: كيف{kīf}/1 ; الكل{il-kell}/0
+eg: الكل عامل إيه؟ || il-kull ʿāmil ēh?
+ms: كيف حال الجميع؟ || kayfa ḥāl al-jamīʿ?
+he: מה{ma}/1 ; שלום{shlom}/1 ; כולם{kulam}/0
+tr: Herkes/0 ; nasıl/1
+= 108 How is your mom?
+pt: Como/2 ; está/2 ; sua/0 ; mãe/1
+fa: مامانت{māmānet}/0,1 ; چطوره{chetore}/2
+fw: مادرت چطور است؟ || mādarat chetor ast?
+la: كيفها{kīfha}/2 ; إمك{immak}/0,1
+eg: مامتك عاملة إيه؟ || mamtak ʿamla ēh?
+ms: كيف حال والدتك؟ || kayfa ḥāl wālidatik?
+he: מה{ma}/2 ; שלום{shlom}/2 ; אמא שלך{ima shelkha}/0,1
+tr: Annen/0,1 ; nasıl/2
+= 109 Say hi to your parents for me.
+pt: Manda/1 ; um oi/1 ; para os seus/2 ; pais/3 ; por mim/0
+fa: از طرف من{az taraf-e man}/0 ; به پدر و مادرت{be pedar o mādaret}/2,3 ; سلام برسون{salām berasun}/1
+fw: از طرف من به پدر و مادرت سلام برسان. || az taraf-e man be pedar o mādarat salām berasān.
+la: سلّملي{sallimli}/0,1 ; على أهلك{ʿala ahlak}/2,3
+eg: سلّملي على باباك ومامتك. || sallimli ʿala bābāk w māmtak.
+ms: أبلغ والديك تحياتي. || abligh wālidayka taḥiyyātī.
+he: תמסור{timsor}/1 ; ד"ש{dash}/1 ; להורים שלך{la-horim shelkha}/2,3 ; ממני{mimeni}/0
+tr: Annenlere babanlara/2,3 ; benden/0 ; selam söyle/1
+= 110 When is your birthday?
+pt: Quando/1 ; é/- ; o seu/0 ; aniversário/2
+fa: تولدت{tavallodet}/0,2 ; کِیه{keye}/1
+fw: تولدت چه روزی است؟ || tavallodat che ruzi ast?
+la: أيمتى{aymta}/1 ; عيد ميلادك{ʿīd milādak}/0,2
+eg: عيد ميلادك إمتى؟ || ʿīd milādak imta?
+ms: متى عيد ميلادك؟ || matā ʿīd mīlādik?
+he: מתי{matay}/1 ; יום ההולדת שלך{yom ha-huledet shelkha}/0,2
+tr: Doğum günün/0,2 ; ne zaman/1
+= 111 How old are your kids now?
+pt: Quantos anos/3 ; os seus/0 ; filhos/1 ; têm/- ; agora/2
+fa: بچه‌هات{bachehāt}/0,1 ; الان{alān}/2 ; چند سالشونه{chand sāleshune}/3
+fw: فرزندانت الان چند سال دارند؟ || farzandānat al'ān chand sāl dārand?
+la: قديش{ʾaddēsh}/3 ; عمر ولادك{ʿumr wlādak}/0,1,3 ; هلق{halla'}/2
+eg: ولادك عندهم كام سنة دلوقتي؟ || wilādak ʿanduhum kām sana dilwaʾti?
+ms: كم أعمار أطفالك الآن؟ || kam aʿmār aṭfālik al-ān?
+he: בני כמה{bney kama}/3 ; הילדים שלך{ha-yeladim shelkha}/0,1 ; עכשיו{akhshav}/2
+tr: Çocukların/0,1 ; şimdi/2 ; kaç yaşında/3
+= 112 Your kids are so cute.
+pt: Seus/0 ; filhos/1 ; são/- ; tão/2 ; fofos/3
+fa: بچه‌هات{bachehāt}/0,1 ; خیلی{kheyli}/2 ; نازن{nāzan}/3
+fw: فرزندانت خیلی ناز هستند. || farzandānat kheyli nāz hastand.
+la: ولادك{wlādak}/0,1 ; كتير{ktīr}/2 ; مهضومين{mahḍūmīn}/3
+eg: ولادك زي العسل. || wilādak zayy il-ʿasal.
+ms: أطفالك لطيفون جدًا. || aṭfāluka laṭīfūn jiddan.
+he: הילדים שלך{ha-yeladim shelkha}/0,1 ; כל כך{kol kakh}/2 ; חמודים{chamudim}/3
+tr: Çocukların/0,1 ; çok/2 ; tatlı/3
+= 113 They have grown so much.
+pt: Eles/0 ; cresceram/1 ; tanto/2
+fa: خیلی{kheyli}/2 ; بزرگ شدن{bozorg shodan}/0,1
+fw: آن‌ها خیلی بزرگ شده‌اند. || ānhā kheyli bozorg shode-and.
+la: كبروا{kibru}/0,1 ; كتير{ktīr}/2
+eg: كبروا أوي. || kibru awi.
+ms: لقد كبروا كثيرًا. || laqad kabirū kathīran.
+he: הם{hem}/0 ; גדלו{gadlu}/1 ; כל כך{kol kakh}/2
+tr: Çok/2 ; büyümüşler/0,1
+= 114 Does your brother still live nearby?
+pt: Seu/0 ; irmão/1 ; ainda/2 ; mora/3 ; aqui perto/4
+fa: داداشت{dādāshet}/0,1 ; هنوز{hanuz}/2 ; همین نزدیکی{hamin nazdiki}/4 ; زندگی می‌کنه{zendegi mikone}/3
+fw: برادرت هنوز همین نزدیکی زندگی می‌کند؟ || barādarat hanuz hamin nazdiki zendegi mikonad?
+la: أخوك{akhūk}/0,1 ; لسا{lissa}/2 ; ساكن{sākin}/3 ; قريب{ʾarīb}/4
+eg: أخوك لسه ساكن قريب؟ || akhūk lissa sākin ʾurayyib?
+ms: هل ما زال أخوك يسكن قريبًا؟ || hal mā zāla akhūka yaskun qarīban?
+he: אחיך{achikha}/0,1 ; עדיין{adayin}/2 ; גר{gar}/3 ; קרוב{karov}/4
+tr: Kardeşin/0,1 ; hâlâ/2 ; yakında mı/4 ; oturuyor/3
+= 115 Are you married?
+pt: Você/0 ; é casado/1
+fa: ازدواج کردی{ezdevāj kardi}/0,1,2
+fw: ازدواج کرده‌ای؟ || ezdevāj karde-i?
+la: إنت{inta}/0 ; متجوز{mitjawwiz}/1
+eg: إنت متجوز؟ || inta mitgawwiz?
+ms: هل أنت متزوج؟ || hal anta mutazawwij?
+he: אתה{ata}/0 ; נשוי{nasui}/1
+tr: Evli misin/0,1,2
+= 116 How did you two meet?
+pt: Como/1 ; vocês dois/0 ; se conheceram/2
+fa: شما دو تا{shomā do tā}/0 ; چطوری{chetori}/1 ; با هم آشنا شدین{bā ham āshnā shodin}/2
+fw: شما دو نفر چطور با هم آشنا شدید؟ || shomā do nafar chetor bā ham āshnā shodid?
+la: كيف{kīf}/1 ; تعرفتوا{tʿarraftu}/0,2 ; عبعض{ʿa-baʿḍ}/2
+eg: إنتوا اتعرفتوا على بعض إزاي؟ || intu itʿaraftu ʿala baʿḍ izzāy?
+ms: كيف تعارفتما؟ || kayfa taʿāraftumā?
+he: איך{eykh}/1 ; הכרתם{hikartem}/0,2
+tr: Siz ikiniz/0 ; nasıl/1 ; tanıştınız/2
+= 117 We've been together for two years.
+pt: Estamos/0 ; juntos/1 ; há dois anos/2
+fa: ما{mā}/0 ; دو ساله{do sāle}/2 ; با همیم{bā hamim}/1
+fw: ما دو سال است که با هم هستیم. || mā do sāl ast ke bā ham hastim.
+la: نحنا{niḥna}/0 ; سوا{sawa}/1 ; من سنتين{min sintēn}/2
+eg: إحنا مع بعض بقالنا سنتين. || iḥna maʿa baʿḍ baʾālna sanatēn.
+ms: نحن معًا منذ سنتين. || naḥnu maʿan mundhu sanatayn.
+he: אנחנו{anachnu}/0 ; ביחד{beyachad}/1 ; שנתיים{shnatayim}/2
+tr: İki yıldır/2 ; birlikteyiz/0,1
+= 118 Where did you grow up?
+pt: Onde/1 ; você/0 ; cresceu/2
+fa: کجا{kojā}/1 ; بزرگ شدی{bozorg shodi}/0,2
+fw: کجا بزرگ شدی؟ || kojā bozorg shodi?
+la: وين{wēn}/1 ; كبرت{kbirt}/0,2
+eg: إنت اتربيت فين؟ || inta itrabbēt fēn?
+ms: أين نشأت؟ || ayna nasha'ta?
+he: איפה{eyfo}/1 ; גדלת{gadalta}/0,2
+tr: Nerede/1 ; büyüdün/0,2
+= 119 Where are you from?
+pt: De onde/2 ; você/0 ; é/1
+fa: اهل کجایی{ahl-e kojāyi}/0,1,2,3
+fw: اهل کجا هستید؟ || ahl-e kojā hastid?
+la: من وين{min wēn}/2 ; إنت{inta}/0
+eg: إنت منين؟ || inta minēn?
+ms: من أين أنت؟ || min ayna anta?
+he: מאיפה{me'eyfo}/2 ; אתה{ata}/0
+tr: Nerelisin/0,1,2,3
+= 120 How long have you lived here?
+pt: Há quanto tempo/3 ; você/0 ; mora/2 ; aqui/1
+fa: چند وقته{chand vaqte}/3 ; اینجا{injā}/1 ; زندگی می‌کنی{zendegi mikoni}/0,2
+fw: چند وقت است که اینجا زندگی می‌کنی؟ || chand vaqt ast ke injā zendegi mikoni?
+la: من قديش{min ʾaddēsh}/3 ; ساكن{sākin}/0,2 ; هون{hōn}/1
+eg: بقالك قد إيه ساكن هنا؟ || baʾālak ʾadd ēh sākin hina?
+ms: منذ متى تعيش هنا؟ || mundhu matā taʿīsh hunā?
+he: כמה זמן{kama zman}/3 ; אתה גר{ata gar}/0,2 ; כאן{kan}/1
+tr: Ne zamandır/3 ; burada/1 ; oturuyorsun/0,2
+= 121 Do you have any brothers or sisters?
+pt: Você/0 ; tem/1 ; irmãos/2
+fa: خواهر برادر{khāhar barādar}/2 ; داری{dāri}/0,1
+fw: خواهر یا برادر داری؟ || khāhar yā barādar dāri?
+la: عندك{ʿandak}/0,1 ; إخوة{ikhwe}/2
+eg: عندك إخوات؟ || ʿandak ikhwāt?
+ms: هل لديك إخوة أو أخوات؟ || hal ladayka ikhwa aw akhawāt?
+he: יש לך{yesh lekha}/0,1 ; אחים{achim}/2
+tr: Kardeşin/2 ; var mı/0,1
+= 122 How many people are in your family?
+pt: Quantas/3 ; pessoas/4 ; tem/2 ; na sua/0 ; família/1
+fa: خانواده‌ت{khānevādat}/0,1 ; چند نفرن{chand nafaran}/2,3,4
+fw: خانواده‌ی تو چند نفر هستند؟ || khānevāde-ye to chand nafar hastand?
+la: كم{kam}/3 ; واحد{wāḥad}/4 ; بعيلتك{b-ʿēltak}/0,1,2
+eg: عيلتك كام واحد؟ || ʿēltak kām wāḥid?
+ms: كم عدد أفراد عائلتك؟ || kam ʿadad afrād ʿā'ilatik?
+he: כמה{kama}/3 ; אנשים{anashim}/4 ; יש{yesh}/2 ; במשפחה שלך{ba-mishpacha shelkha}/0,1
+tr: Ailen/0,1 ; kaç/3 ; kişi/4
+= 123 Please sit down.
+pt: Por favor/0 ; sente-se/1
+fa: لطفاً{lotfan}/0 ; بفرمایید بشینید{befarmāyid beshinid}/1
+fw: لطفاً بنشینید. || lotfan beneshinid.
+la: تفضل{tfaḍḍal}/0 ; اقعد{ʾʿod}/1
+eg: اتفضل اقعد. || itfaḍḍal uʾʿud.
+ms: تفضل بالجلوس. || tafaḍḍal bil-julūs.
+he: בבקשה{bevakasha}/0 ; שב{shev}/1
+tr: Lütfen/0 ; oturun/1
+= 124 Make yourself at home.
+pt: Fique/0 ; à vontade/3 ; como em casa/1,2
+fa: اینجا رو{injā ro}/- ; مثل{mesl-e}/0 ; خونه‌ی خودت{khune-ye khodet}/1,2 ; بدون{bedun}/0
+fw: اینجا را مثل خانه‌ی خودت بدان. || injā rā mesl-e khāne-ye khodat bedān.
+la: البيت{il-bēt}/2 ; بيتك{bētak}/1,2
+eg: البيت بيتك. || il-bēt bētak.
+ms: البيت بيتك. || al-bayt baytuk.
+he: תרגיש{targish}/0 ; כמו בבית{kmo babayit}/1,2
+tr: Kendi evin/1,2 ; gibi/0 ; rahat ol/3
+= 125 Your home is beautiful.
+pt: Sua/0 ; casa/1 ; é/- ; muito/2 ; bonita/3
+fa: خونه‌ت{khunat}/0,1 ; خیلی{kheyli}/2 ; قشنگه{qashange}/3
+fw: خانه‌ات خیلی زیباست. || khāne-at kheyli zibāst.
+la: بيتك{bētak}/0,1 ; كتير{ktīr}/2 ; حلو{ḥilu}/3
+eg: بيتك حلو أوي. || bētak ḥilw awi.
+ms: بيتك جميل. || baytuka jamīl.
+he: הבית שלך{ha-bayit shelkha}/0,1 ; ממש{mamash}/2 ; יפה{yafe}/3
+tr: Evin/0,1 ; çok/2 ; güzel/3
+= 126 Happy birthday!
+pt: Feliz/1 ; aniversário/0
+fa: تولدت{tavallodet}/0 ; مبارک{mobārak}/1
+fw: تولدت مبارک! || tavallodat mobārak!
+la: عيد ميلاد{ʿīd milād}/0 ; سعيد{saʿīd}/1
+eg: كل سنة وإنت طيب! || kull sana w inta ṭayyib!
+ms: عيد ميلاد سعيد! || ʿīd mīlād saʿīd!
+he: יום הולדת{yom huledet}/0 ; שמח{same'ach}/1
+tr: Doğum günün/0 ; kutlu olsun/1
+= 127 Happy New Year!
+pt: Feliz/1 ; Ano Novo/0
+fa: سال نو{sāl-e no}/0 ; مبارک{mobārak}/1
+fw: سال نو مبارک! || sāl-e no mobārak!
+la: سنة{sene}/0 ; سعيدة{saʿīde}/1
+eg: سنة سعيدة! || sana saʿīda!
+ms: سنة جديدة سعيدة! || sana jadīda saʿīda!
+he: שנה טובה{shana tova}/0,1
+tr: Mutlu/1 ; yıllar/0
+= 128 I miss you all.
+pt: Estou/0 ; com muita/1 ; saudade/2 ; de vocês/3
+fa: دلم{delam}/0 ; براتون{barātun}/3 ; خیلی{kheyli}/1 ; تنگ شده{tang shode}/2
+fw: دلم برای همه‌ی شما تنگ شده است. || delam barāye hame-ye shomā tang shode ast.
+la: اشتقتلكن{ishtaʾtilkon}/0,2,3 ; كتير{ktīr}/1
+eg: وحشتوني أوي. || waḥashtūni awi.
+ms: اشتقتُ إليكم جميعًا. || ishtaqtu ilaykum jamīʿan.
+he: אני{ani}/0 ; מתגעגע{mitga'ge'a}/2 ; מאוד{me'od}/1 ; לכולכם{lekhulkhem}/3
+tr: Hepinizi/3 ; çok/1 ; özledim/0,2
+= 129 Thank you for the gift.
+pt: Obrigado/0,1 ; pelo presente/2
+fa: مرسی{mersi}/0,1 ; بابت کادو{bābat-e kādo}/2
+fw: از هدیه‌ی شما سپاسگزارم. || az hediye-ye shomā sepāsgozāram.
+la: شكرًا{shukran}/0,1 ; عالهدية{ʿal-hdiyye}/2
+eg: شكرًا على الهدية. || shukran ʿala l-hidiyya.
+ms: شكرًا على الهدية. || shukran ʿalā al-hadiyya.
+he: תודה{toda}/0,1 ; על המתנה{al ha-matana}/2
+tr: Hediye için/2 ; teşekkürler/0,1

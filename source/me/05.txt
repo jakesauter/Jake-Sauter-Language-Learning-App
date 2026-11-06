@@ -1,0 +1,405 @@
+= 220 What time is it?
+pt: Que horas/1 ; são/- ; agora/0
+fa: ساعت چنده{sā'at chande}/0,1
+fw: ساعت چند است؟ || sā'at chand ast?
+la: قديش{ʾaddēsh}/1 ; الساعة{is-sāʿa}/1 ; هلق{halla'}/0
+eg: الساعة كام؟ || is-sāʿa kām?
+ms: كم الساعة الآن؟ || kam as-sāʿa al-ān?
+he: מה{ma}/1 ; השעה{ha-sha'a}/1 ; עכשיו{akhshav}/0
+tr: Saat/1 ; kaç/1
+= 221 It's almost dinner time.
+pt: Já é/- ; quase/0 ; hora/2 ; do jantar/1
+fa: تقریباً{taqriban}/0 ; وقت{vaqt-e}/2 ; شامه{shāme}/1
+fw: تقریباً وقت شام است. || taqriban vaqt-e shām ast.
+la: قرّب{ʾarrab}/0 ; وقت{waʾt}/2 ; العشا{il-ʿasha}/1
+eg: قرّب ميعاد العشا. || ʾarrab miʿād il-ʿasha.
+ms: اقترب وقت العشاء. || iqtaraba waqt al-ʿashā'.
+he: כמעט{kim'at}/0 ; זמן{zman}/2 ; ארוחת ערב{aruchat erev}/1
+tr: Neredeyse/0 ; akşam yemeği/1 ; vakti/2
+= 222 I'm running late.
+pt: Eu/0 ; estou atrasado/1
+fa: من{man}/0 ; دیرم شده{diram shode}/1
+fw: من دیرم شده است. || man diram shode ast.
+la: أنا{ana}/0 ; متأخر{mitʾakhkhir}/1
+eg: أنا متأخر. || ana mitʾakhkhar.
+ms: أنا متأخر. || anā muta'akhkhir.
+he: אני{ani}/0 ; מאחר{me'acher}/1
+tr: Geç/1 ; kalıyorum/0,1
+= 223 We have plenty of time.
+pt: Nós/0 ; temos/1 ; bastante/2 ; tempo/3
+fa: ما{mā}/0 ; خیلی{kheyli}/2 ; وقت{vaqt}/3 ; داریم{dārim}/1
+fw: ما وقت زیادی داریم. || mā vaqt-e ziyādi dārim.
+la: معنا{maʿna}/0,1 ; وقت{waʾt}/3 ; كتير{ktīr}/2
+eg: معانا وقت كتير. || maʿāna waʾt kitīr.
+ms: لدينا متسع من الوقت. || ladaynā muttasaʿ min al-waqt.
+he: יש לנו{yesh lanu}/0,1 ; הרבה{harbe}/2 ; זמן{zman}/3
+tr: Bol bol/2 ; vaktimiz/0,3 ; var/1
+= 224 I'm running a little late.
+pt: Estou/0 ; um pouco/1 ; atrasado/2
+fa: من{man}/0 ; یه کم{ye kam}/1 ; دیرم شده{diram shode}/2
+fw: من کمی دیرم شده است. || man kami diram shode ast.
+la: أنا{ana}/0 ; متأخر{mitʾakhkhir}/2 ; شوي{shway}/1
+eg: أنا متأخر شوية. || ana mitʾakhkhar shwayya.
+ms: أنا متأخر قليلًا. || anā muta'akhkhir qalīlan.
+he: אני{ani}/0 ; קצת{ktsat}/1 ; מאחר{me'acher}/2
+tr: Biraz/1 ; geç kalıyorum/0,2
+= 225 What are your plans this weekend?
+pt: Quais/3 ; são/- ; seus/1 ; planos/4 ; para este fim de semana/0
+fa: این آخر هفته{in ākhar-e hafte}/0 ; چه{che}/3 ; برنامه‌ای{barnāme-i}/4 ; داری{dāri}/1,2
+fw: برای این آخر هفته چه برنامه‌ای داری؟ || barāye in ākhar-e hafte che barnāme-i dāri?
+la: شو{shu}/3 ; خططك{khiṭaṭak}/1,4 ; لهالويكند{la-hal-wīkend}/0
+eg: إيه خططك في الويك إند؟ || ēh khuṭaṭak fil-wīk end?
+ms: ما خططك لنهاية هذا الأسبوع؟ || mā khuṭaṭuka li-nihāyat hādhā al-usbūʿ?
+he: מה{ma}/3 ; התוכניות שלך{ha-tokhniyot shelkha}/1,4 ; לסוף השבוע{le-sof ha-shavua}/0
+tr: Bu hafta sonu/0 ; ne/3 ; planların/1,4 ; var/2
+= 226 I'm going to bed.
+pt: Eu/0 ; vou/1 ; dormir/2
+fa: من{man}/0 ; میرم{miram}/1 ; بخوابم{bekhābam}/2
+fw: من می‌روم بخوابم. || man miravam bekhābam.
+la: أنا{ana}/0 ; رايح{rāyiḥ}/1 ; نام{nām}/2
+eg: أنا رايح أنام. || ana rāyiḥ anām.
+ms: سأذهب إلى النوم. || sa-adhhabu ilā an-nawm.
+he: אני{ani}/0 ; הולך{holekh}/1 ; לישון{lishon}/2
+tr: Yatmaya/2 ; gidiyorum/0,1
+= 227 Did you sleep well?
+pt: Você/0 ; dormiu/1 ; bem/2
+fa: خوب{khub}/2 ; خوابیدی{khābidi}/0,1
+fw: خوب خوابیدی؟ || khub khābidi?
+la: نمت{nimt}/0,1 ; منيح{mnīḥ}/2
+eg: نمت كويس؟ || nimt kwayyis?
+ms: هل نمتَ جيدًا؟ || hal nimta jayyidan?
+he: ישנת{yashanta}/0,1 ; טוב{tov}/2
+tr: İyi/2 ; uyudun mu/0,1
+= 228 Wake up, it's late.
+pt: Acorda/0 ; já/1 ; está tarde/2
+fa: پاشو{pāsho}/0 ; دیر شده{dir shode}/1,2
+fw: بیدار شو، دیر شده است. || bidār sho, dir shode ast.
+la: فيق{fīʾ}/0 ; صار{ṣār}/1 ; الوقت{il-waʾt}/- ; متأخر{mitʾakhkhir}/2
+eg: اصحى، الوقت اتأخر. || iṣḥa, il-waʾt itʾakhkhar.
+ms: استيقظ، لقد تأخر الوقت. || istayqiẓ, laqad ta'akhkhara al-waqt.
+he: תתעורר{titorer}/0 ; כבר{kvar}/1 ; מאוחר{me'uchar}/2
+tr: Kalk/0 ; geç oldu/1,2
+= 229 I'm going to take a shower.
+pt: Eu/0 ; vou/1 ; tomar banho/2
+fa: من{man}/0 ; میرم{miram}/1 ; دوش بگیرم{dush begiram}/2
+fw: من می‌روم دوش بگیرم. || man miravam dush begiram.
+la: أنا{ana}/0 ; رايح{rāyiḥ}/1 ; إتحمم{itḥammam}/2
+eg: أنا داخل أستحمى. || ana dākhil astaḥamma.
+ms: سأستحم. || sa-astaḥimm.
+he: אני{ani}/0 ; הולך{holekh}/1 ; להתקלח{lehitkale'ach}/2
+tr: Duş/2 ; almaya gidiyorum/0,1
+= 230 Can I borrow a towel?
+pt: Posso/0 ; pegar emprestado/1 ; uma/2 ; toalha/3
+fa: می‌شه{mishe}/0 ; یه{ye}/2 ; حوله{howle}/3 ; قرض بگیرم{qarz begiram}/1
+fw: ممکن است یک حوله قرض بگیرم؟ || momken ast yek howle qarz begiram?
+la: فيني{fīni}/0 ; آخد{ākhud}/1 ; منشفة{manshafe}/2,3
+eg: ممكن آخد فوطة؟ || mumkin ākhud fūṭa?
+ms: هل يمكنني استعارة منشفة؟ || hal yumkinunī istiʿārat minshafa?
+he: אפשר{efshar}/0 ; לקחת{lakachat}/1 ; מגבת{magevet}/2,3
+tr: Bir/2 ; havlu/3 ; alabilir miyim/0,1
+= 231 Where do you keep the cups?
+pt: Onde/2 ; vocês/- ; guardam/1 ; os copos/0
+fa: لیوانا{livānā}/0 ; کجاست{kojāst}/1,2
+fw: لیوان‌ها کجا هستند؟ || livān-hā kojā hastand?
+la: وين{wēn}/2 ; بتحطوا{bitḥuṭṭu}/1 ; الكاسات{il-kāsāt}/0
+eg: الكبايات فين؟ || il-kubbayāt fēn?
+ms: أين تضعون الأكواب؟ || ayna taḍaʿūn al-akwāb?
+he: איפה{eyfo}/2 ; אתם שמים{atem samim}/1 ; את הכוסות{et ha-kosot}/0
+tr: Bardakları/0 ; nereye/2 ; koyuyorsunuz/1
+= 232 Can I use your charger?
+pt: Posso/0 ; usar/1 ; o seu/2 ; carregador/3
+fa: می‌شه{mishe}/0 ; شارژرتو{shārzheret-o}/2,3 ; استفاده کنم{estefāde konam}/1
+fw: ممکن است از شارژر شما استفاده کنم؟ || momken ast az shārzher-e shomā estefāde konam?
+la: فيني{fīni}/0 ; إستعمل{istaʿmil}/1 ; شاحنك{shāḥnak}/2,3
+eg: ممكن أستخدم الشاحن بتاعك؟ || mumkin astakhdim ish-shāḥin bitāʿak?
+ms: هل يمكنني استخدام شاحنك؟ || hal yumkinunī istikhdām shāḥinik?
+he: אפשר{efshar}/0 ; להשתמש{lehishtamesh}/1 ; במטען שלך{ba-mit'an shelkha}/2,3
+tr: Şarj aletini/2,3 ; kullanabilir miyim/0,1
+= 233 What's the wifi password?
+pt: Qual/3 ; é/2 ; a senha/1 ; do wifi/0
+fa: رمز{ramz-e}/1 ; وای‌فای{vāy-fāy}/0 ; چیه{chiye}/2,3
+fw: رمز وای‌فای چیست؟ || ramz-e vāy-fāy chist?
+la: شو{shu}/3 ; كلمة السر{kilmet is-sirr}/1 ; تبع الواي فاي{tabaʿ il-wāy fāy}/0
+eg: باسورد الواي فاي إيه؟ || pāsword il-wāy fāy ēh?
+ms: ما كلمة مرور الواي فاي؟ || mā kalimat murūr al-wāy fāy?
+he: מה{ma}/3 ; הסיסמה{ha-sisma}/1 ; של הוויי פיי{shel ha-wi-fi}/0
+tr: Wifi/0 ; şifresi/1 ; ne/2,3
+= 234 Turn down the TV, please.
+pt: Abaixa/1 ; a TV/2 ; por favor/0
+fa: لطفاً{lotfan}/0 ; صدای تلویزیون رو{sedā-ye televiziyon ro}/2 ; کم کن{kam kon}/1
+fw: لطفاً صدای تلویزیون را کم کن. || lotfan sedā-ye televiziyon rā kam kon.
+la: وطّي{waṭṭi}/1 ; صوت التلفزيون{ṣōt it-tilfizyōn}/2 ; إذا بتريد{iza btrīd}/0
+eg: وطّي التلفزيون لو سمحت. || waṭṭi it-tilivizyōn law samaḥt.
+ms: اخفض صوت التلفاز من فضلك. || ikhfiḍ ṣawt at-tilfāz min faḍlik.
+he: תנמיך{tanmikh}/1 ; את הטלוויזיה{et ha-televizya}/2 ; בבקשה{bevakasha}/0
+tr: Lütfen/0 ; televizyonun sesini/2 ; kıs/1
+= 235 I'll take out the trash.
+pt: Deixa/0 ; que eu/1 ; levo/2 ; o lixo/3
+fa: بذار{bezār}/0 ; من{man}/1 ; آشغالا رو{āshghālā ro}/3 ; ببرم بیرون{bebaram birun}/2
+fw: من زباله‌ها را بیرون می‌برم. || man zobāle-hā rā birun mibaram.
+la: خليني{khallīni}/0,1 ; كبّ{kibb}/2 ; الزبالة{iz-zbāle}/3
+eg: أنا هطلّع الزبالة. || ana haṭallaʿ iz-zibāla.
+ms: سأُخرج القمامة. || sa-ukhrij al-qumāma.
+he: אני{ani}/1 ; אוריד{orid}/2 ; את הזבל{et ha-zevel}/3
+tr: Çöpü/3 ; ben/1 ; çıkarırım/0,2
+= 236 Let me help you clean up.
+pt: Deixa/0 ; eu/1 ; te/3 ; ajudar/2 ; a arrumar/4
+fa: بذار{bezār}/0 ; کمکت کنم{komaket konam}/1,2,3 ; جمع کنیم{jam' konim}/4
+fw: اجازه بده در جمع‌وجور کردن کمکت کنم. || ejāze bede dar jam'-o-jur kardan komakat konam.
+la: خليني{khallīni}/0,1 ; ساعدك{sāʿdak}/2,3 ; بالترتيب{bit-tartīb}/4
+eg: سيبني أساعدك في التنضيف. || sibni asaʿdak fit-tanḍīf.
+ms: دعني أساعدك في التنظيف. || daʿnī usāʿiduka fī at-tanẓīf.
+he: תן לי{ten li}/0,1 ; לעזור לך{la'azor lekha}/2,3 ; לסדר{lesader}/4
+tr: Toparlamana/4 ; yardım edeyim/0,1,2,3
+= 237 I'll make the coffee.
+pt: Eu/0 ; faço/1 ; o café/2
+fa: من{man}/0 ; قهوه{qahve}/2 ; درست می‌کنم{dorost mikonam}/1
+fw: من قهوه درست می‌کنم. || man qahve dorost mikonam.
+la: أنا{ana}/0 ; بعمل{baʿmil}/1 ; القهوة{il-ʾahwe}/2
+eg: أنا هعمل القهوة. || ana haʿmil il-ʾahwa.
+ms: سأُعِدّ القهوة. || sa-uʿiddu al-qahwa.
+he: אני{ani}/0 ; אכין{akhin}/1 ; את הקפה{et ha-kafe}/2
+tr: Kahveyi/2 ; ben/0 ; yaparım/1
+= 238 We're out of milk.
+pt: Acabou/1 ; o leite/2 ; em casa/0
+fa: شیر{shir}/2 ; تموم شده{tamum shode}/1
+fw: شیر تمام شده است. || shir tamām shode ast.
+la: خلص{khilṣ}/1 ; الحليب{il-ḥalīb}/2
+eg: اللبن خلص. || il-laban khiliṣ.
+ms: نفد الحليب. || nafida al-ḥalīb.
+he: נגמר{nigmar}/1 ; החלב{ha-chalav}/2
+tr: Süt/2 ; bitti/1
+= 239 The kids are already asleep.
+pt: As crianças/0 ; já/1 ; dormiram/2
+fa: بچه‌ها{bachehā}/0 ; دیگه{dige}/1 ; خوابیدن{khābidan}/2
+fw: بچه‌ها دیگر خوابیده‌اند. || bachehā digar khābide-and.
+la: الولاد{il-wlād}/0 ; نامو{nāmu}/2 ; خلص{khalaṣ}/1
+eg: العيال ناموا خلاص. || il-ʿiyāl nāmu khalāṣ.
+ms: الأطفال نائمون بالفعل. || al-aṭfāl nā'imūn bil-fiʿl.
+he: הילדים{ha-yeladim}/0 ; כבר{kvar}/1 ; ישנים{yeshenim}/2
+tr: Çocuklar/0 ; çoktan/1 ; uyudu/2
+= 240 What should we watch tonight?
+pt: O que/3 ; a gente/1 ; assiste/2 ; hoje à noite/0
+fa: امشب{emshab}/0 ; چی{chi}/3 ; ببینیم{bebinim}/1,2
+fw: امشب چه چیزی تماشا کنیم؟ || emshab che chizi tamāshā konim?
+la: شو{shu}/3 ; منحضر{mniḥḍar}/1,2 ; الليلة{il-lēle}/0
+eg: نتفرج على إيه النهارده بالليل؟ || nitfarrag ʿala ēh in-naharda bil-lēl?
+ms: ماذا نشاهد الليلة؟ || mādhā nushāhid al-layla?
+he: מה{ma}/3 ; נראה{nir'e}/1,2 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; ne/3 ; izleyelim/1,2
+= 241 Pick something, I don't care.
+pt: Escolhe/1 ; você/0 ; eu/2 ; não ligo/3
+fa: تو{to}/0 ; یه چیزی انتخاب کن{ye chizi entekhāb kon}/1 ; برام{barām}/2 ; فرقی نمی‌کنه{farqi nemikone}/3
+fw: تو چیزی انتخاب کن، برای من فرقی نمی‌کند. || to chizi entekhāb kon, barāye man farqi nemikonad.
+la: نقّي{naʾʾi}/0,1 ; شي{shi}/- ; ما بتفرق معي{ma btifra' maʿi}/2,3
+eg: اختار حاجة، مش فارقة معايا. || ikhtār ḥāga, mish farʾa maʿāya.
+ms: اختر شيئًا، لا يهمني. || ikhtar shay'an, lā yahummunī.
+he: תבחר{tivchar}/0,1 ; משהו{mashehu}/- ; לא אכפת לי{lo ikhpat li}/2,3
+tr: Sen/0 ; bir şey seç/1 ; benim için/2 ; fark etmez/3
+= 242 This show is so boring.
+pt: Esse/0 ; programa/1 ; é/- ; tão/2 ; chato/3
+fa: این{in}/0 ; برنامه{barnāme}/1 ; خیلی{kheyli}/2 ; خسته‌کننده‌ست{khaste-konande-st}/3
+fw: این برنامه خیلی خسته‌کننده است. || in barnāme kheyli khaste-konande ast.
+la: هالمسلسل{hal-musalsal}/0,1 ; كتير{ktīr}/2 ; بيضجّر{biḍajjir}/3
+eg: البرنامج ده ممل أوي. || il-barnāmig da mumill awi.
+ms: هذا البرنامج ممل جدًا. || hādhā al-barnāmaj mumill jiddan.
+he: התוכנית{ha-tokhnit}/1 ; הזאת{ha-zot}/0 ; כל כך{kol kakh}/2 ; משעממת{mesha'amemet}/3
+tr: Bu/0 ; dizi/1 ; çok/2 ; sıkıcı/3
+= 243 Turn it up, I can't hear.
+pt: Aumenta/0 ; o volume/1 ; eu/2 ; não estou ouvindo/3
+fa: صداشو{sedāsh-o}/1 ; زیاد کن{ziyād kon}/0 ; نمی‌شنوم{nemishenavam}/2,3
+fw: صدایش را زیاد کن، نمی‌شنوم. || sedāyash rā ziyād kon, nemishenavam.
+la: علّي{ʿalli}/0 ; الصوت{iṣ-ṣōt}/1 ; ما عم إسمع{ma ʿam ismaʿ}/2,3
+eg: علّي الصوت، مش سامع. || ʿalli iṣ-ṣōt, mish sāmiʿ.
+ms: ارفع الصوت، لا أسمع. || irfaʿ aṣ-ṣawt, lā asmaʿ.
+he: תגביר{tagbir}/0 ; את הקול{et ha-kol}/1 ; אני לא שומע{ani lo shome'a}/2,3
+tr: Sesini/1 ; aç/0 ; duyamıyorum/2,3
+= 244 It's getting late, I'm going to bed.
+pt: Está ficando tarde/0 ; eu/1 ; vou/2 ; dormir/3
+fa: دیر وقته{dir vaqte}/0 ; من{man}/1 ; میرم{miram}/2 ; بخوابم{bekhābam}/3
+fw: دیر وقت است، من می‌روم بخوابم. || dir vaqt ast, man miravam bekhābam.
+la: تأخر الوقت{tʾakhkhar il-waʾt}/0 ; أنا{ana}/1 ; رايح{rāyiḥ}/2 ; نام{nām}/3
+eg: الوقت اتأخر، أنا رايح أنام. || il-waʾt itʾakhkhar, ana rāyiḥ anām.
+ms: لقد تأخر الوقت، سأذهب إلى النوم. || laqad ta'akhkhara al-waqt, sa-adhhabu ilā an-nawm.
+he: נהיה מאוחר{naʿase me'uchar}/0 ; אני{ani}/1 ; הולך{holekh}/2 ; לישון{lishon}/3
+tr: Geç oldu/0 ; ben/1 ; yatmaya/3 ; gidiyorum/2
+= 245 Don't stay up too late.
+pt: Não/0 ; vá dormir/1 ; muito tarde/2
+fa: زیاد{ziyād}/2 ; بیدار نمون{bidār namun}/0,1
+fw: تا دیر وقت بیدار نمان. || tā dir vaqt bidār namān.
+la: لا{la}/0 ; تسهر{tishar}/1 ; كتير{ktīr}/2
+eg: ما تسهرش أوي. || ma tisharsh awi.
+ms: لا تسهر كثيرًا. || lā tashar kathīran.
+he: אל{al}/0 ; תלך לישון{telekh lishon}/1 ; מאוחר מדי{me'uchar miday}/2
+tr: Çok/2 ; geç/2 ; yatma/0,1
+= 246 Lock the door before you go to bed.
+pt: Antes de dormir/0 ; lembra de/1 ; trancar/2 ; a porta/3
+fa: قبل از خواب{qabl az khāb}/0 ; یادت باشه{yādet bāshe}/1 ; درو{dar-o}/3 ; قفل کنی{qofl koni}/2
+fw: قبل از خواب در را قفل کن. || qabl az khāb dar rā qofl kon.
+la: قبل ما تنام{ʾabl ma tnām}/0 ; سكّر{sakkir}/2 ; الباب{il-bāb}/3 ; بالمفتاح{bil-miftāḥ}/2
+eg: اقفل الباب قبل ما تنام. || iʾfil il-bāb ʾabl ma tnām.
+ms: أقفل الباب قبل أن تنام. || aqfil al-bāb qabla an tanām.
+he: תנעל{tin'al}/2 ; את הדלת{et ha-delet}/3 ; לפני השינה{lifney ha-shena}/0
+tr: Yatmadan önce/0 ; kapıyı/3 ; kilitlemeyi unutma/1,2
+= 247 It's freezing in here.
+pt: Está/- ; congelando/1,2,3 ; aqui/0
+fa: اینجا{injā}/0 ; خیلی{kheyli}/1 ; سرده{sarde}/2
+fw: اینجا خیلی سرد است. || injā kheyli sard ast.
+la: هون{hōn}/0 ; كتير{ktīr}/1 ; برد{bard}/2,3
+eg: الدنيا تلج هنا. || id-dunya talg hina.
+ms: الجو بارد جدًا هنا. || al-jaww bārid jiddan hunā.
+he: קפוא{kafu}/1,2,3 ; פה{po}/0
+tr: Burası/0 ; buz gibi/1,2,3
+= 248 Can you close the window?
+pt: Pode/0 ; fechar/1 ; a janela/2
+fa: می‌شه{mishe}/0 ; پنجره رو{panjere ro}/2 ; ببندی{bebandi}/1
+fw: ممکن است پنجره را ببندی؟ || momken ast panjere rā bebandi?
+la: فيك{fīk}/0 ; تسكّر{tsakkir}/1 ; الشباك{ish-shibbāk}/2
+eg: ممكن تقفل الشباك؟ || mumkin tiʾfil ish-shibbāk?
+ms: هل يمكنك إغلاق النافذة؟ || hal yumkinuka ighlāq an-nāfidha?
+he: אתה יכול{ata yakhol}/0 ; לסגור{lisgor}/1 ; את החלון{et ha-chalon}/2
+tr: Pencereyi/2 ; kapatır mısın/0,1
+= 249 Where did you put my keys?
+pt: Onde/3 ; você/0 ; colocou/1 ; as minhas chaves/2
+fa: کلیدامو{kelidām-o}/2 ; کجا{kojā}/3 ; گذاشتی{gozāshti}/0,1
+fw: کلیدهایم را کجا گذاشتی؟ || kelid-hāyam rā kojā gozāshti?
+la: وين{wēn}/3 ; حطيت{ḥaṭṭēt}/0,1 ; مفاتيحي{mafātīḥi}/2
+eg: حطيت مفاتيحي فين؟ || ḥaṭṭēt mafatīḥi fēn?
+ms: أين وضعتَ مفاتيحي؟ || ayna waḍaʿta mafātīḥī?
+he: איפה{eyfo}/3 ; שמת{samta}/0,1 ; את המפתחות שלי{et ha-maftechot sheli}/2
+tr: Anahtarlarımı/2 ; nereye/3 ; koydun/0,1
+= 250 I can't find my phone.
+pt: Eu/0 ; não acho/1 ; o meu celular/2
+fa: گوشیمو{gushim-o}/2 ; پیدا نمی‌کنم{peydā nemikonam}/0,1
+fw: نمی‌توانم تلفنم را پیدا کنم. || nemitavānam telefonam rā peydā konam.
+la: مش{mish}/1 ; لاقي{lāʾi}/0,1 ; تلفوني{talafōni}/2
+eg: مش لاقي موبايلي. || mish lāʾi mubāyli.
+ms: لا أجد هاتفي. || lā ajidu hātifī.
+he: אני{ani}/0 ; לא מוצא{lo motse}/1 ; את הטלפון שלי{et ha-telefon sheli}/2
+tr: Telefonumu/2 ; bulamıyorum/0,1
+= 251 It's on the table.
+pt: Está/- ; em cima/0 ; da mesa/1
+fa: روی{ru-ye}/0 ; میزه{mize}/1
+fw: روی میز است. || ru-ye miz ast.
+la: عالطاولة{ʿaṭ-ṭāwle}/0,1
+eg: على الترابيزة. || ʿat-tarabēza.
+ms: إنه على الطاولة. || innahu ʿalā aṭ-ṭāwila.
+he: זה{ze}/- ; על{al}/0 ; השולחן{ha-shulchan}/1
+tr: Masanın/1 ; üstünde/0
+= 252 Dinner's almost ready, wash your hands.
+pt: O jantar/2 ; está quase/0 ; pronto/1 ; vai/3 ; lavar as mãos/4
+fa: شام{shām}/2 ; تقریباً{taqriban}/0 ; حاضره{hāzere}/1 ; برو{boro}/3 ; دستاتو بشور{dastāto beshur}/4
+fw: شام تقریباً آماده است، برو دست‌هایت را بشوی. || shām taqriban āmāde ast, boro dast-hāyat rā beshuy.
+la: العشا{il-ʿasha}/2 ; قرّب{ʾarrab}/0 ; يجهز{yijhaz}/1 ; روح{rūḥ}/3 ; غسل إيديك{ghassil īdēk}/4
+eg: العشا قرّب يجهز، روح اغسل إيدك. || il-ʿasha ʾarrab yighaz, rūḥ ighsil īdak.
+ms: العشاء جاهز تقريبًا، اغسل يديك. || al-ʿashā' jāhiz taqrīban, ighsil yadayk.
+he: ארוחת הערב{aruchat ha-erev}/2 ; כמעט{kim'at}/0 ; מוכנה{mukhana}/1 ; לך{lekh}/3 ; לשטוף ידיים{lishtof yadayim}/4
+tr: Yemek/2 ; neredeyse/0 ; hazır/1 ; git/3 ; ellerini yıka/4
+= 253 Can you help me chop the vegetables?
+pt: Pode/0 ; me ajudar/1 ; a picar/2 ; os legumes/3
+fa: می‌شه{mishe}/0 ; کمکم کنی{komakam koni}/1 ; سبزیا رو{sabziyā ro}/3 ; خرد کنیم{khord konim}/2
+fw: ممکن است کمکم کنی سبزیجات را خرد کنیم؟ || momken ast komakam koni sabzijāt rā khord konim?
+la: فيك{fīk}/0 ; تساعدني{tsāʿidni}/1 ; قطّع{ʾaṭṭiʿ}/2 ; الخضرة{il-khuḍra}/3
+eg: ممكن تساعدني أقطّع الخضار؟ || mumkin tisaʿidni aʾaṭṭaʿ il-khuḍār?
+ms: هل يمكنك مساعدتي في تقطيع الخضروات؟ || hal yumkinuka musāʿadatī fī taqṭīʿ al-khaḍrawāt?
+he: אתה יכול{ata yakhol}/0 ; לעזור לי{la'azor li}/1 ; לחתוך{lachtokh}/2 ; את הירקות{et ha-yerakot}/3
+tr: Sebzeleri/3 ; doğramama/2 ; yardım eder misin/0,1
+= 254 How much salt should I add?
+pt: Quanto/2 ; sal/3 ; eu/- ; ponho/0,1
+fa: چقدر{cheqadr}/2 ; نمک{namak}/3 ; بریزم{berizam}/0,1
+fw: چقدر نمک بریزم؟ || cheqadr namak berizam?
+la: قديش{ʾaddēsh}/2 ; ملح{milḥ}/3 ; حط{ḥuṭṭ}/0,1
+eg: أحط ملح قد إيه؟ || aḥuṭṭ malḥ ʾadd ēh?
+ms: كم من الملح يجب أن أضيف؟ || kam min al-milḥ yajib an uḍīf?
+he: כמה{kama}/2 ; מלח{melach}/3 ; לשים{lasim}/0,1
+tr: Ne kadar/2 ; tuz/3 ; koyayım/0,1
+= 255 Taste this, is it good?
+pt: Prova/0 ; isso/1 ; está bom/2
+fa: اینو{ino}/1 ; بچش{bechesh}/0 ; خوبه{khube}/2
+fw: این را بچش، خوب است؟ || in rā bechesh, khub ast?
+la: دوق{dū'}/0 ; هاد{hād}/1 ; طيب{ṭayyib}/2
+eg: دوق ده، حلو؟ || dūʾ da, ḥilw?
+ms: تذوق هذا، هل هو جيد؟ || tadhawwaq hādhā, hal huwa jayyid?
+he: תטעם{tit'am}/0 ; את זה{et ze}/1 ; טוב{tov}/2
+tr: Bunu/1 ; tat/0 ; güzel mi/2
+= 256 It needs a little more soy sauce.
+pt: Precisa de/0 ; um pouco mais de/1 ; shoyu/2
+fa: یه کم دیگه{ye kam-e dige}/1 ; سس سویا{sos-e soyā}/2 ; لازم داره{lāzem dāre}/0
+fw: کمی سس سویای بیشتری لازم دارد. || kami sos-e soyā-ye bishtari lāzem dārad.
+la: بدو{baddo}/0 ; كمان شوي{kamān shway}/1 ; صويا{ṣōya}/2
+eg: محتاج صويا كمان شوية. || miḥtāg ṣōya kamān shwayya.
+ms: يحتاج إلى قليل من صلصة الصويا. || yaḥtāj ilā qalīl min ṣalṣat aṣ-ṣūyā.
+he: צריך{tsarikh}/0 ; עוד קצת{od ktsat}/1 ; סויה{soya}/2
+tr: Biraz daha/1 ; soya sosu/2 ; lazım/0
+= 257 Don't burn the rice!
+pt: Não/0 ; queima/1 ; o arroz/2
+fa: برنجو{berenj-o}/2 ; نسوزونی{nasuzuni}/0,1
+fw: برنج را نسوزان! || berenj rā nasuzān!
+la: لا{la}/0 ; تحرق{tiḥriʾ}/1 ; الرز{ir-rizz}/2
+eg: ما تحرقش الرز! || ma tiḥraʾsh ir-ruzz!
+ms: لا تحرق الأرز! || lā tuḥriq al-aruzz!
+he: אל{al}/0 ; תשרוף{tisrof}/1 ; את האורז{et ha-orez}/2
+tr: Pilavı/2 ; yakma/0,1
+= 258 Who's doing the dishes tonight?
+pt: Quem/1 ; vai lavar/2 ; a louça/3 ; hoje à noite/0
+fa: امشب{emshab}/0 ; کی{ki}/1 ; ظرفا رو{zarfā ro}/3 ; می‌شوره{mishure}/2
+fw: امشب چه کسی ظرف‌ها را می‌شوید؟ || emshab che kasi zarf-hā rā mishuyad?
+la: مين{mīn}/1 ; رح يجلي{raḥ yijli}/2 ; الصحون{iṣ-ṣḥūn}/3 ; الليلة{il-lēle}/0
+eg: مين هيغسل المواعين النهارده؟ || mīn hayighsil il-mawāʿīn in-naharda?
+ms: من سيغسل الصحون الليلة؟ || man sa-yaghsil aṣ-ṣuḥūn al-layla?
+he: מי{mi}/1 ; שוטף{shotef}/2 ; כלים{kelim}/3 ; הערב{ha-erev}/0
+tr: Bu akşam/0 ; bulaşıkları/3 ; kim/1 ; yıkıyor/2
+= 259 It's your turn to do the dishes.
+pt: É a sua vez/0 ; de lavar/1 ; a louça/2
+fa: نوبت توئه{nobat-e to-e}/0 ; ظرفا رو{zarfā ro}/2 ; بشوری{beshuri}/1
+fw: نوبت توست که ظرف‌ها را بشویی. || nobat-e tost ke zarf-hā rā beshuyi.
+la: دورك{dōrak}/0 ; تجلي{tijli}/1 ; الصحون{iṣ-ṣḥūn}/2
+eg: دورك تغسل المواعين. || dōrak tighsil il-mawāʿīn.
+ms: حان دورك لغسل الصحون. || ḥāna dawruka li-ghasl aṣ-ṣuḥūn.
+he: התור שלך{ha-tor shelkha}/0 ; לשטוף{lishtof}/1 ; כלים{kelim}/2
+tr: Bulaşık/2 ; sırası/0 ; sende/0
+= 260 Did you turn off the stove?
+pt: Você/0 ; desligou/1 ; o fogão/2
+fa: گازو{gāz-o}/2 ; خاموش کردی{khāmush kardi}/0,1
+fw: اجاق گاز را خاموش کردی؟ || ojāq gāz rā khāmush kardi?
+la: طفيت{ṭaffēt}/0,1 ; الغاز{il-ghāz}/2
+eg: قفلت البوتاجاز؟ || ʾafalt il-butagāz?
+ms: هل أطفأتَ الموقد؟ || hal aṭfa'ta al-mawqid?
+he: כיבית{kibita}/0,1 ; את הכיריים{et ha-kirayim}/2
+tr: Ocağı/2 ; kapattın mı/0,1,3
+= 261 Can you teach me grandma's recipe?
+pt: Pode/0 ; me ensinar/1 ; a receita/2,4 ; da vovó/3
+fa: می‌شه{mishe}/0 ; دستور غذای مامان‌بزرگو{dastur-e ghazā-ye māmān-bozorg-o}/2,3,4 ; بهم یاد بدی{behem yād bedi}/1
+fw: ممکن است دستور پخت مادربزرگ را به من یاد بدهی؟ || momken ast dastur-e pokht-e mādarbozorg rā be man yād bedahi?
+la: فيك{fīk}/0 ; تعلمني{tʿallimni}/1 ; طبخة{ṭabkhet}/2,4 ; تيتا{teta}/3
+eg: ممكن تعلمني وصفة تيتة؟ || mumkin tiʿallimni waṣfit tēta?
+ms: هل يمكنك أن تعلمني وصفة جدتي؟ || hal yumkinuka an tuʿallimanī waṣfat jaddatī?
+he: אתה יכול{ata yakhol}/0 ; ללמד אותי{lelamed oti}/1 ; את המתכון{et ha-matkon}/2,4 ; של סבתא{shel savta}/3
+tr: Anneannemin/3 ; tarifini/2,4 ; bana öğretir misin/0,1
+= 262 Let's have a barbecue on Sunday.
+pt: Vamos/3 ; fazer/- ; um churrasco/2 ; no domingo/0 ; juntos/1
+fa: یکشنبه{yekshanbe}/0 ; بیا{biyā}/3 ; با هم{bā ham}/1 ; کباب درست کنیم{kabāb dorost konim}/2
+fw: بیا یکشنبه با هم کباب درست کنیم. || biyā yekshanbe bā ham kabāb dorost konim.
+la: يلا{yalla}/3 ; نعمل{naʿmil}/- ; مشاوي{mashāwi}/2 ; يوم الأحد{yōm il-aḥad}/0 ; سوا{sawa}/1
+eg: يلا نعمل شوي يوم الحد. || yalla niʿmil shawi yōm il-ḥadd.
+ms: لنقم بحفل شواء يوم الأحد. || li-naqum bi-ḥafl shiwā' yawm al-aḥad.
+he: בואו{bo'u}/3 ; נעשה{na'ase}/- ; על האש{al ha-esh}/2 ; ביום ראשון{be-yom rishon}/0
+tr: Pazar günü/0 ; birlikte/1 ; mangal/2 ; yapalım/3
+= 263 Should we invite your cousins?
+pt: A gente/- ; deveria/0 ; convidar/1 ; os seus primos/2 ; também/3
+fa: پسرخاله‌دخترخاله‌هات رو{pesarkhāle-dokhtarkhālehāt ro}/2 ; هم{ham}/3 ; دعوت کنیم{da'vat konim}/0,1
+fw: آیا عموزاده‌هایت را هم دعوت کنیم؟ || āyā amuzādehāyat rā ham da'vat konim?
+la: نعزم{niʿzim}/0,1 ; ولاد عمك{wlād ʿammak}/2 ; كمان{kamān}/3
+eg: نعزم ولاد عمك كمان؟ || niʿzim wilād ʿammak kamān?
+ms: هل ندعو أبناء عمك أيضًا؟ || hal nadʿū abnā' ʿammik ayḍan?
+he: להזמין{lehazmin}/0,1 ; גם{gam}/3 ; את בני הדודים שלך{et bney ha-dodim shelkha}/2
+tr: Kuzenlerini/2 ; de/3 ; davet edelim mi/0,1
+= 264 I'll bring dessert.
+pt: Eu/0 ; levo/1 ; a sobremesa/2
+fa: من{man}/0 ; دسر{deser}/2 ; میارم{miyāram}/1
+fw: من دسر می‌آورم. || man deser mi'āvaram.
+la: أنا{ana}/0 ; بجيب{bjīb}/1 ; الحلو{il-ḥilu}/2
+eg: أنا هجيب الحلو. || ana hagīb il-ḥilw.
+ms: سأحضر الحلوى. || sa-uḥḍiru al-ḥalwā.
+he: אני{ani}/0 ; אביא{avi}/1 ; קינוח{kinu'ach}/2
+tr: Tatlıyı/2 ; ben/0 ; getiririm/1

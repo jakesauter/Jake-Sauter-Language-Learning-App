@@ -1,0 +1,423 @@
+= 265 The wedding is next month.
+pt: O casamento/1 ; é/- ; no mês que vem/0
+fa: عروسی{arusi}/1 ; ماه دیگه‌ست{māh-e dige-st}/0
+fw: عروسی ماه آینده است. || arusi māh-e āyande ast.
+la: العرس{il-ʿurs}/1 ; الشهر الجاي{ish-shahr ij-jāy}/0
+eg: الفرح الشهر الجاي. || il-faraḥ ish-shahr ig-gāy.
+ms: الزفاف في الشهر القادم. || az-zifāf fī ash-shahr al-qādim.
+he: החתונה{ha-chatuna}/1 ; בחודש הבא{ba-chodesh ha-ba}/0
+tr: Düğün/1 ; gelecek ay/0
+= 266 What should I wear to the wedding?
+pt: O que/5 ; eu/2 ; devo/3 ; vestir/4 ; no casamento/0,1
+fa: برای عروسی{barāye arusi}/0,1 ; چی{chi}/5 ; بپوشم{bepusham}/2,3,4
+fw: برای عروسی چه بپوشم؟ || barāye arusi che bepusham?
+la: شو{shu}/5 ; لازم{lāzim}/3 ; إلبس{ilbas}/2,4 ; للعرس{lal-ʿurs}/0,1
+eg: ألبس إيه في الفرح؟ || albis ēh fil-faraḥ?
+ms: ماذا يجب أن أرتدي في الزفاف؟ || mādhā yajib an artadī fī az-zifāf?
+he: מה{ma}/5 ; ללבוש{lilbosh}/2,3,4 ; לחתונה{la-chatuna}/0,1
+tr: Düğüne/0,1 ; ne/5 ; giysem/2,3,4
+= 267 Have you bought a gift yet?
+pt: Você/0 ; já/3 ; comprou/1 ; um presente/2
+fa: کادو{kādo}/2 ; خریدی{kharidi}/0,1 ; یا نه{yā na}/3
+fw: هدیه خریده‌ای؟ || hediye kharide-i?
+la: اشتريت{ishtarēt}/0,1 ; هدية{hdiyye}/2 ; لهلق{la-halla'}/3
+eg: اشتريت الهدية ولا لسه؟ || ishtarēt il-hidiyya walla lissa?
+ms: هل اشتريتَ هدية بعد؟ || hal ishtarayta hadiyya baʿd?
+he: כבר{kvar}/3 ; קנית{kanita}/0,1 ; מתנה{matana}/2
+tr: Hediye/2 ; aldın mı/0,1 ; artık/3
+= 268 Your cousin is having a baby!
+pt: Sua prima/0 ; vai/1 ; ter/2 ; um bebê/3
+fa: دخترخاله‌ت{dokhtarkhālat}/0 ; داره{dāre}/1 ; بچه‌دار می‌شه{bachedār mishe}/2,3
+fw: دخترخاله‌ات دارد بچه‌دار می‌شود! || dokhtarkhāle-at dārad bachedār mishavad!
+la: بنت عمك{bint ʿammak}/0 ; رح{raḥ}/1 ; تجيب{tjīb}/2 ; بيبي{bēbi}/3
+eg: بنت عمك هتولد! || bint ʿammak hatwlid!
+ms: ابنة عمك ستنجب طفلًا! || ibnat ʿammik sa-tunjib ṭiflan!
+he: בת הדודה שלך{bat ha-doda shelkha}/0 ; עומדת{omedet}/1 ; ללדת{laledet}/2,3
+tr: Kuzenin/0 ; bebek/3 ; bekliyor/1,2
+= 269 When is the baby due?
+pt: Quando/1 ; o bebê/0 ; nasce/2
+fa: بچه{bache}/0 ; کِی{key}/1 ; به دنیا میاد{be donyā miyād}/2
+fw: بچه کی به دنیا می‌آید؟ || bache key be donyā mi'āyad?
+la: أيمتى{aymta}/1 ; موعد{mawʿid}/2 ; الولادة{il-wilāde}/0
+eg: الولادة إمتى؟ || il-wilāda imta?
+ms: متى موعد ولادة الطفل؟ || matā mawʿid wilādat aṭ-ṭifl?
+he: מתי{matay}/1 ; התינוק{ha-tinok}/0 ; אמור להיוולד{amur lehivaled}/2
+tr: Bebek/0 ; ne zaman/1 ; doğacak/2
+= 270 Let's all go to dim sum on Saturday.
+pt: Vamos/4 ; todos/1 ; comer dim sum/2,3 ; no sábado/0
+fa: شنبه{shanbe}/0 ; بیاین{biyāyn}/4 ; همه{hame}/1 ; بریم{berim}/2 ; دیم‌سام{dimsām}/3
+fw: بیایید شنبه همه با هم برای دیم‌سام برویم. || biyāyid shanbe hame bā ham barāye dimsām beravim.
+la: يلا{yalla}/4 ; كلنا{kellna}/1 ; نروح{nrūḥ}/2 ; عالديم سام{ʿad-dim sam}/3 ; يوم السبت{yōm is-sabt}/0
+eg: يلا كلنا نروح ناكل ديم سام يوم السبت. || yalla kullina nrūḥ nākul dim sam yōm is-sabt.
+ms: لنذهب جميعًا لتناول الديم سام يوم السبت. || li-nadhhab jamīʿan li-tanāwul ad-dim sām yawm as-sabt.
+he: בואו{bo'u}/4 ; כולנו{kulanu}/1 ; נלך{nelekh}/2 ; לדים סאם{le-dim sam}/3 ; בשבת{be-shabat}/0
+tr: Cumartesi/0 ; hep beraber/1 ; dim sum'a/3 ; gidelim/2,4
+= 271 I'll call to book a table.
+pt: Eu/0 ; ligo/1 ; para reservar/2 ; uma mesa/3
+fa: من{man}/0 ; زنگ می‌زنم{zang mizanam}/1 ; یه میز{ye miz}/3 ; رزرو کنم{rezerv konam}/2
+fw: من زنگ می‌زنم تا یک میز رزرو کنم. || man zang mizanam tā yek miz rezerv konam.
+la: أنا{ana}/0 ; بتصل{bittiṣil}/1 ; إحجز{iḥjiz}/2 ; طاولة{ṭāwle}/3
+eg: أنا هتصل أحجز ترابيزة. || ana hattiṣil aḥgiz tarabēza.
+ms: سأتصل لحجز طاولة. || sa-attaṣil li-ḥajz ṭāwila.
+he: אני{ani}/0 ; אתקשר{etkasher}/1 ; להזמין{lehazmin}/2 ; שולחן{shulchan}/3
+tr: Masa/3 ; ayırtmak için/2 ; ararım/0,1
+= 272 Who's coming to dinner?
+pt: Quem/0 ; vem/1 ; jantar/2
+fa: کی{ki}/0 ; برای شام{barāye shām}/2 ; میاد{miyād}/1
+fw: چه کسی برای شام می‌آید؟ || che kasi barāye shām mi'āyad?
+la: مين{mīn}/0 ; جاي{jāy}/1 ; عالعشا{ʿal-ʿasha}/2
+eg: مين جاي العشا؟ || mīn gāy il-ʿasha?
+ms: من سيأتي إلى العشاء؟ || man sa-ya'tī ilā al-ʿashā'?
+he: מי{mi}/0 ; בא{ba}/1 ; לארוחת ערב{le-aruchat erev}/2
+tr: Akşam yemeğine/2 ; kim/0 ; geliyor/1
+= 273 Your aunt is coming to visit next week.
+pt: Sua tia/0 ; vem/2 ; visitar/3 ; na semana que vem/1
+fa: خاله‌ت{khālat}/0 ; هفته‌ی دیگه{hafte-ye dige}/1 ; میاد{miyād}/2 ; دیدن{didan}/3
+fw: خاله‌ات هفته‌ی آینده به دیدن می‌آید. || khāle-at hafte-ye āyande be didan mi'āyad.
+la: خالتك{khāltak}/0 ; جاي{jāye}/2 ; تزورنا{tzūrna}/3 ; الجمعة الجاي{ij-jumʿa ij-jāye}/1
+eg: خالتك جاية تزورنا الأسبوع الجاي. || khaltak gayya tzurna il-usbūʿ ig-gāy.
+ms: ستأتي عمتك لزيارتنا الأسبوع القادم. || sa-ta'tī ʿammatuka li-ziyāratinā al-usbūʿ al-qādim.
+he: הדודה שלך{ha-doda shelkha}/0 ; באה{ba'a}/2 ; לבקר{levaker}/3 ; בשבוע הבא{ba-shavua ha-ba}/1
+tr: Teyzen/0 ; gelecek hafta/1 ; ziyarete/3 ; geliyor/2
+= 274 She's staying with us for a few days.
+pt: Ela/0 ; vai ficar/2 ; com a gente/1 ; alguns dias/3
+fa: چند روز{chand ruz}/3 ; پیش ما{pish-e mā}/1 ; می‌مونه{mimune}/0,2
+fw: او چند روز پیش ما می‌ماند. || u chand ruz pish-e mā mimānad.
+la: رح تقعد{raḥ tiʾʿod}/0,2 ; عنا{ʿanna}/1 ; كم يوم{kam yōm}/3
+eg: هتقعد معانا كام يوم. || hatuʾʿud maʿāna kām yōm.
+ms: ستبقى معنا بضعة أيام. || sa-tabqā maʿanā biḍʿat ayyām.
+he: היא{hi}/0 ; נשארת{nish'eret}/2 ; אצלנו{etslenu}/1 ; כמה ימים{kama yamim}/3
+tr: Birkaç gün/3 ; bizde/1 ; kalacak/0,2
+= 275 Let's clean the house before she comes.
+pt: Vamos/4 ; limpar/2 ; a casa/3 ; antes de ela chegar/0
+fa: قبل از اینکه بیاد{qabl az inke biyād}/0 ; بیا{biyā}/4 ; خونه رو{khune ro}/3 ; تمیز کنیم{tamiz konim}/1,2
+fw: بیا قبل از آمدنش خانه را تمیز کنیم. || biyā qabl az āmadanash khāne rā tamiz konim.
+la: يلا{yalla}/4 ; ننضف{nnaḍḍif}/1,2 ; البيت{il-bēt}/3 ; قبل ما تجي{ʾabl ma tiji}/0
+eg: يلا ننضف البيت قبل ما تيجي. || yalla nnaḍḍaf il-bēt ʾabl ma tīgi.
+ms: لننظف البيت قبل أن تأتي. || li-nunaẓẓif al-bayt qabla an ta'tī.
+he: בואו{bo'u}/4 ; ננקה{nenake}/1,2 ; את הבית{et ha-bayit}/3 ; לפני שהיא באה{lifney she-hi ba'a}/0
+tr: O gelmeden önce/0 ; evi/3 ; temizleyelim/1,2,4
+= 276 How much longer until we get there?
+pt: Quanto tempo/0 ; ainda/1 ; falta/2 ; para chegar/3
+fa: چقدر دیگه{cheqadr-e dige}/0,1 ; مونده{munde}/2 ; برسیم{beresim}/3
+fw: چقدر دیگر مانده تا برسیم؟ || cheqadr-e digar mānde tā beresim?
+la: قديش{ʾaddēsh}/0 ; بعد{baʿd}/1 ; لنوصل{la-nūṣal}/2,3
+eg: لسه قد إيه ونوصل؟ || lissa ʾadd ēh w niwṣal?
+ms: كم بقي حتى نصل؟ || kam baqiya ḥattā naṣil?
+he: עוד{od}/1 ; כמה זמן{kama zman}/0 ; עד שנגיע{ad she-nagi'a}/2,3
+tr: Varmamıza/3 ; daha/1 ; ne kadar/0 ; var/2
+= 277 Do we need to stop for a rest?
+pt: A gente/- ; precisa/0 ; parar/1 ; um pouco/2 ; para descansar/3
+fa: لازمه{lāzeme}/0 ; یه کم{ye kam}/2 ; وایسیم{vāysim}/1 ; استراحت کنیم{esterāhat konim}/3
+fw: لازم است کمی بایستیم و استراحت کنیم؟ || lāzem ast kami bāyestim va esterāhat konim?
+la: لازم{lāzim}/0 ; نوقف{nūʾaf}/1 ; شوي{shway}/2 ; نرتاح{nirtāḥ}/3
+eg: محتاجين نقف نرتاح شوية؟ || miḥtagīn nuʾaf nirtāḥ shwayya?
+ms: هل نحتاج إلى التوقف للراحة؟ || hal naḥtāj ilā at-tawaqquf lir-rāḥa?
+he: צריך{tsarikh}/0 ; לעצור{laatsor}/1 ; לנוח{lanu'ach}/3 ; קצת{ktsat}/2
+tr: Biraz/2 ; dinlenmek için/3 ; durmamız gerekiyor mu/0,1
+= 278 I'll drive, you can sleep.
+pt: Eu/0 ; dirijo/1 ; você/2 ; pode/3 ; dormir/4
+fa: من{man}/0 ; رانندگی می‌کنم{rānandegi mikonam}/1 ; تو{to}/2 ; می‌تونی{mituni}/3 ; بخوابی{bekhābi}/4
+fw: من رانندگی می‌کنم، تو می‌توانی بخوابی. || man rānandegi mikonam, to mitavāni bekhābi.
+la: أنا{ana}/0 ; بسوق{bsū'}/1 ; إنت{inta}/2 ; فيك{fīk}/3 ; تنام{tnām}/4
+eg: أنا هسوق، وإنت نام. || ana hasūʾ, w inta nām.
+ms: سأقود أنا، ويمكنك أن تنام. || sa-aqūdu anā, wa-yumkinuka an tanām.
+he: אני{ani}/0 ; אנהג{enhag}/1 ; אתה{ata}/2 ; יכול{yakhol}/3 ; לישון{lishon}/4
+tr: Ben/0 ; sürerim/1 ; sen/2 ; uyuyabilirsin/3,4
+= 279 Do you need to use the bathroom?
+pt: Você/0 ; precisa/1 ; ir/2 ; ao banheiro/3
+fa: دستشویی{dastshuyi}/3 ; لازم داری{lāzem dāri}/0,1 ; بری{beri}/2
+fw: لازم است به دستشویی بروی؟ || lāzem ast be dastshuyi beravi?
+la: بدك{baddak}/0,1 ; تفوت{tfūt}/2 ; عالحمام{ʿal-ḥammām}/3
+eg: محتاج تدخل الحمام؟ || miḥtāg tudkhul il-ḥammām?
+ms: هل تحتاج إلى دورة المياه؟ || hal taḥtāj ilā dawrat al-miyāh?
+he: אתה{ata}/0 ; צריך{tsarikh}/1 ; ללכת{lalekhet}/2 ; לשירותים{la-sherutim}/3
+tr: Tuvalete/3 ; gitmen/2 ; gerekiyor mu/0,1,4
+= 280 What time do we leave tomorrow?
+pt: A que horas/2 ; a gente/0 ; sai/3 ; amanhã/1
+fa: فردا{fardā}/1 ; ساعت چند{sā'at-e chand}/2 ; راه می‌افتیم{rāh mioftim}/0,3
+fw: فردا ساعت چند حرکت می‌کنیم؟ || fardā sā'at-e chand harekat mikonim?
+la: بكرا{bukra}/1 ; أيمتى{aymta}/2 ; منطلع{minṭlaʿ}/0,3
+eg: بكرة هنمشي الساعة كام؟ || bukra hanimshi is-sāʿa kām?
+ms: متى نغادر غدًا؟ || matā nughādir ghadan?
+he: מתי{matay}/2 ; אנחנו יוצאים{anachnu yots'im}/0,3 ; מחר{machar}/1
+tr: Yarın/1 ; saat kaçta/2 ; çıkıyoruz/0,3
+= 281 Do you have everything?
+pt: Você/0 ; pegou/2 ; tudo/1,2
+fa: همه‌ی وسایلت{hame-ye vasāyelet}/0,1 ; رو برداشتی{ro bardāshti}/2
+fw: همه‌ی وسایلت را برداشتی؟ || hame-ye vasāyelat rā bardāshti?
+la: أخدت{akhadt}/2 ; كل{kell}/2 ; أغراضك{aghrāḍak}/0,1
+eg: خدت كل حاجتك؟ || khadt kull ḥagtak?
+ms: هل أخذتَ كل شيء؟ || hal akhadhta kull shay'?
+he: לקחת{lakachta}/2 ; הכול{hakol}/1,2
+tr: Her şeyini/0,1 ; aldın mı/2
+= 282 Don't forget your phone.
+pt: Não/0 ; esqueça/1 ; o celular/3
+fa: گوشیتو{gushit-o}/3 ; یادت نره{yādet nare}/0,1 ; برداری{bardāri}/2
+fw: تلفنت را فراموش نکن. || telefonat rā farāmush nakon.
+la: لا{la}/0 ; تنسى{tinsa}/1 ; تلفونك{talafōnak}/3
+eg: ما تنساش موبايلك. || ma tinsāsh mubāylak.
+ms: لا تنسَ هاتفك. || lā tansa hātifak.
+he: אל{al}/0 ; תשכח{tishkach}/1 ; את הטלפון{et ha-telefon}/3
+tr: Telefonunu/3 ; almayı/2 ; unutma/0,1
+= 283 Put on your seatbelt.
+pt: Coloca/0 ; o cinto/2 ; direito/1
+fa: کمربندتو{kamarbandet-o}/2 ; ببند{beband}/0
+fw: کمربند ایمنی‌ات را ببند. || kamarband-e imeni-at rā beband.
+la: حط{ḥuṭṭ}/0 ; الحزام{il-ḥzām}/2 ; منيح{mnīḥ}/1
+eg: اربط الحزام. || urbuṭ il-ḥizām.
+ms: اربط حزام الأمان. || urbuṭ ḥizām al-amān.
+he: תחגור{tachgor}/0 ; חגורת בטיחות{chagorat betichut}/2
+tr: Emniyet kemerini/2 ; tak/0
+= 284 Is it far from here?
+pt: É/- ; longe/2 ; daqui/0,1
+fa: از اینجا{az injā}/0,1 ; دوره{dure}/2
+fw: از اینجا دور است؟ || az injā dur ast?
+la: بعيد{bʿīd}/2 ; من هون{min hōn}/0,1
+eg: بعيد من هنا؟ || biʿīd min hina?
+ms: هل هو بعيد من هنا؟ || hal huwa baʿīd min hunā?
+he: זה{ze}/- ; רחוק{rachok}/2 ; מכאן{mi-kan}/0,1
+tr: Buradan/0,1 ; uzak mı/2
+= 285 We're almost there.
+pt: Estamos/0 ; quase/1 ; chegando/2
+fa: تقریباً{taqriban}/1 ; رسیدیم{residim}/0,2
+fw: تقریباً رسیده‌ایم. || taqriban reside-im.
+la: قرّبنا{ʾarrabna}/0,1 ; نوصل{nūṣal}/2
+eg: قرّبنا نوصل. || ʾarrabna niwṣal.
+ms: كدنا نصل. || kidnā naṣil.
+he: כמעט{kim'at}/1 ; הגענו{higanu}/0,2
+tr: Neredeyse/1 ; geldik/0,2
+= 286 Turn left here.
+pt: Vira/1 ; à esquerda/2 ; aqui/0
+fa: اینجا{injā}/0 ; بپیچ{bepich}/1 ; چپ{chap}/2
+fw: اینجا به چپ بپیچ. || injā be chap bepich.
+la: لف{liff}/1 ; شمال{shmāl}/2 ; هون{hōn}/0
+eg: لف شمال هنا. || liff shmāl hina.
+ms: انعطف يسارًا هنا. || inʿaṭif yasāran hunā.
+he: תפנה{tifne}/1 ; שמאלה{smola}/2 ; כאן{kan}/0
+tr: Burada/0 ; sola/2 ; dön/1
+= 287 Where should we park?
+pt: Onde/3 ; a gente/0 ; estaciona/1,2
+fa: کجا{kojā}/3 ; پارک کنیم{pārk konim}/0,1,2
+fw: کجا پارک کنیم؟ || kojā pārk konim?
+la: وين{wēn}/3 ; منصف{minṣuff}/0,1,2
+eg: نركن فين؟ || nirkin fēn?
+ms: أين نركن السيارة؟ || ayna narkun as-sayyāra?
+he: איפה{eyfo}/3 ; נחנה{nachane}/0,1,2
+tr: Nereye/3 ; park edelim/0,1,2
+= 288 I'm a little tired.
+pt: Estou/0 ; um pouco/1 ; cansado/2
+fa: من{man}/0 ; یه کم{ye kam}/1 ; خسته‌ام{khaste-am}/2
+fw: من کمی خسته هستم. || man kami khaste hastam.
+la: أنا{ana}/0 ; تعبان{taʿbān}/2 ; شوي{shway}/1
+eg: أنا تعبان شوية. || ana taʿbān shwayya.
+ms: أنا متعب قليلًا. || anā mutʿab qalīlan.
+he: אני{ani}/0 ; קצת{ktsat}/1 ; עייף{ayef}/2
+tr: Biraz/1 ; yorgunum/0,2
+= 289 Let's take a photo together.
+pt: Vamos/4 ; tirar/2 ; uma foto/3 ; juntos/1
+fa: بیا{biyā}/4 ; با هم{bā ham}/1 ; یه عکس{ye aks}/3 ; بگیریم{begirim}/2
+fw: بیا با هم یک عکس بگیریم. || biyā bā ham yek aks begirim.
+la: يلا{yalla}/4 ; نتصور{nitṣawwar}/2,3 ; سوا{sawa}/1
+eg: يلا نتصور سوا. || yalla nitṣawwar sawa.
+ms: لنلتقط صورة معًا. || li-naltaqiṭ ṣūra maʿan.
+he: בואו{bo'u}/4 ; נצטלם{nitstalem}/2,3 ; ביחד{beyachad}/1
+tr: Birlikte/1 ; fotoğraf/3 ; çekilelim/2,4
+= 290 Let's leave early to avoid traffic.
+pt: Vamos sair/0 ; cedo/1 ; para evitar/2 ; o trânsito/3
+fa: زود{zud}/1 ; راه بیفتیم{rāh biyoftim}/0 ; که به ترافیک{ke be terāfik}/3 ; نخوریم{nakhorim}/2
+fw: زود حرکت کنیم تا به ترافیک برنخوریم. || zud harekat konim tā be terāfik barnakhorim.
+la: خلينا نطلع{khallīna niṭlaʿ}/0 ; بكير{bakkīr}/1 ; مشان نهرب من{mishān nihrab min}/2 ; العجقة{il-ʿaj'a}/3
+eg: يلا نمشي بدري علشان الزحمة. || yalla nimshi badri ʿashān iz-zaḥma.
+ms: لنغادر مبكرًا لتجنب الزحام. || li-nughādir mubakkiran li-tajannub az-ziḥām.
+he: בואו נצא{bo'u netse}/0 ; מוקדם{mukdam}/1 ; כדי להימנע{kdey lehimana}/2 ; מפקקים{mi-pkakim}/3
+tr: Trafiğe/3 ; yakalanmamak için/2 ; erken/1 ; çıkalım/0
+= 291 The traffic is terrible.
+pt: O trânsito/1 ; está/- ; horrível/0
+fa: ترافیک{terāfik}/1 ; خیلی{kheyli}/0 ; سنگینه{sangine}/1
+fw: ترافیک خیلی سنگین است. || terāfik kheyli sangin ast.
+la: العجقة{il-ʿaj'a}/1 ; كتير{ktīr}/0 ; قوية{ʾawiyye}/0
+eg: الزحمة فظيعة. || iz-zaḥma faẓīʿa.
+ms: الزحام فظيع. || az-ziḥām faẓīʿ.
+he: הפקקים{ha-pkakim}/1 ; נוראיים{nora'iyim}/0
+tr: Trafik/1 ; berbat/0
+= 292 There's an accident ahead.
+pt: Tem/1 ; um acidente/2 ; lá na frente/0
+fa: جلوتر{jelotar}/0 ; تصادف شده{tasādof shode}/1,2
+fw: جلوتر تصادف شده است. || jelotar tasādof shode ast.
+la: في{fī}/1 ; حادث{ḥādis}/2 ; قدام{ʾiddām}/0
+eg: فيه حادثة قدام. || fīh ḥadsa ʾuddām.
+ms: هناك حادث في الأمام. || hunāka ḥādith fī al-amām.
+he: יש{yesh}/1 ; תאונה{te'una}/2 ; קדימה{kadima}/0
+tr: İleride/0 ; kaza/2 ; var/1
+= 293 We need to get gas.
+pt: A gente/0 ; precisa/1 ; abastecer/2,3
+fa: باید{bāyad}/1 ; بنزین{benzin}/3 ; بزنیم{bezanim}/0,2
+fw: باید بنزین بزنیم. || bāyad benzin bezanim.
+la: لازم{lāzim}/1 ; نعبّي{niʿabbi}/0,2 ; بنزين{banzīn}/3
+eg: لازم نموّن بنزين. || lāzim nimawwin banzīn.
+ms: نحتاج إلى تعبئة الوقود. || naḥtāj ilā taʿbi'at al-waqūd.
+he: אנחנו{anachnu}/0 ; צריכים{tsrikhim}/1 ; לתדלק{letadlek}/2,3
+tr: Benzin/3 ; almamız/0,2 ; lazım/1
+= 294 Can you give me directions?
+pt: Pode/0 ; me mostrar/1 ; o caminho/2
+fa: می‌شه{mishe}/0 ; راهو{rāh-o}/2 ; نشونم بدی{neshunam bedi}/1
+fw: ممکن است راه را به من نشان بدهی؟ || momken ast rāh rā be man neshān bedahi?
+la: فيك{fīk}/0 ; تدلني{tdillni}/1 ; عالطريق{ʿaṭ-ṭarī'}/2
+eg: ممكن توصفلي الطريق؟ || mumkin tiwṣifli iṭ-ṭarīʾ?
+ms: هل يمكنك أن تدلني على الطريق؟ || hal yumkinuka an tadullanī ʿalā aṭ-ṭarīq?
+he: אתה יכול{ata yakhol}/0 ; להסביר לי{lehasbir li}/1 ; את הדרך{et ha-derekh}/2
+tr: Bana/1 ; yolu/2 ; tarif eder misin/0,1
+= 295 Go straight, then turn right.
+pt: Siga reto/0 ; depois/1 ; vire/2 ; à direita/3
+fa: مستقیم برو{mostaqim boro}/0 ; بعد{ba'd}/1 ; بپیچ{bepich}/2 ; راست{rāst}/3
+fw: مستقیم برو، بعد به راست بپیچ. || mostaqim boro, ba'd be rāst bepich.
+la: دغري{dughri}/0 ; بعدين{baʿdēn}/1 ; لف{liff}/2 ; يمين{yamīn}/3
+eg: امشي على طول، وبعدين لف يمين. || imshi ʿala ṭūl, w baʿdēn liff yimīn.
+ms: اذهب مباشرة، ثم انعطف يمينًا. || idhhab mubāsharatan, thumma inʿaṭif yamīnan.
+he: סע ישר{sa yashar}/0 ; ואז{ve-az}/1 ; תפנה{tifne}/2 ; ימינה{yamina}/3
+tr: Düz git/0 ; sonra/1 ; sağa/3 ; dön/2
+= 296 It's across the street.
+pt: Fica/0 ; do outro lado da rua/1
+fa: اون طرف{un taraf-e}/1 ; خیابونه{khiyābune}/1
+fw: آن طرف خیابان است. || ān taraf-e khiyābān ast.
+la: مقابيل{mʾābīl}/0,1 ; الشارع{ish-shāriʿ}/1
+eg: الناحية التانية من الشارع. || in-naḥya t-tanya min ish-shāriʿ.
+ms: إنه على الجانب الآخر من الشارع. || innahu ʿalā al-jānib al-ākhar min ash-shāriʿ.
+he: זה{ze}/- ; בצד השני{ba-tsad ha-sheni}/0,1 ; של הרחוב{shel ha-rechov}/1
+tr: Caddenin/1 ; karşısında/0,1
+= 297 It's just around the corner.
+pt: Fica/- ; logo/0 ; ali na esquina/1
+fa: همین{hamin}/0 ; سر کوچه‌ست{sar-e kuche-st}/1
+fw: همین سر نبش است. || hamin sar-e nabsh ast.
+la: هون{hōn}/0 ; عالزاوية{ʿaz-zāwye}/1
+eg: على الناصية على طول. || ʿan-naṣya ʿala ṭūl.
+ms: إنه قريب جدًا، عند الزاوية. || innahu qarīb jiddan, ʿinda az-zāwiya.
+he: זה{ze}/- ; ממש{mamash}/0 ; מעבר לפינה{me'ever la-pina}/1
+tr: Hemen/0 ; köşede/1
+= 298 I'm lost.
+pt: Eu/0 ; estou perdido/1
+fa: من{man}/0 ; گم شدم{gom shodam}/1
+fw: من گم شده‌ام. || man gom shode-am.
+la: أنا{ana}/0 ; ضايع{ḍāyiʿ}/1
+eg: أنا تايه. || ana tāyih.
+ms: أنا تائه. || anā tā'ih.
+he: הלכתי לאיבוד{halakhti le-ibud}/0,1
+tr: Kayboldum/0,1
+= 299 Can you send me the address?
+pt: Pode/0 ; me/3 ; mandar/1 ; o endereço/2
+fa: می‌شه{mishe}/0 ; آدرسو{ādres-o}/2 ; برام{barām}/3 ; بفرستی{beferesti}/1
+fw: ممکن است آدرس را برایم بفرستی؟ || momken ast ādres rā barāyam beferesti?
+la: فيك{fīk}/0 ; تبعتلي{tibʿatli}/1,3 ; العنوان{il-ʿinwān}/2
+eg: ممكن تبعتلي العنوان؟ || mumkin tibʿatli il-ʿinwān?
+ms: هل يمكنك أن ترسل لي العنوان؟ || hal yumkinuka an tursil lī al-ʿunwān?
+he: אתה יכול{ata yakhol}/0 ; לשלוח לי{lishlo'ach li}/1,3 ; את הכתובת{et ha-ktovet}/2
+tr: Adresi/2 ; bana/3 ; gönderir misin/0,1
+= 300 Let's take the subway.
+pt: Vamos/3 ; de/1 ; metrô/2
+fa: بیا{biyā}/3 ; با مترو{bā metro}/1,2 ; بریم{berim}/0
+fw: بیا با مترو برویم. || biyā bā metro beravim.
+la: يلا{yalla}/3 ; ناخد{nākhud}/0,1 ; المترو{il-metro}/2
+eg: يلا ناخد المترو. || yalla nākhud il-metro.
+ms: لنركب المترو. || li-narkab al-mitrū.
+he: בואו{bo'u}/3 ; ניסע{nisa}/0,1 ; ברכבת התחתית{ba-rakevet ha-tachtit}/2
+tr: Metroya/2 ; binelim/0,1,3
+= 301 Where is the bus stop?
+pt: Onde/2 ; fica/1 ; o ponto de ônibus/0
+fa: ایستگاه اتوبوس{istgāh-e otobus}/0 ; کجاست{kojāst}/1,2
+fw: ایستگاه اتوبوس کجاست؟ || istgāh-e otobus kojāst?
+la: وين{wēn}/1,2 ; موقف الباص{mōʾaf il-bāṣ}/0
+eg: محطة الأتوبيس فين؟ || maḥaṭṭit il-utubīs fēn?
+ms: أين موقف الحافلات؟ || ayna mawqif al-ḥāfilāt?
+he: איפה{eyfo}/1,2 ; תחנת האוטובוס{tachanat ha-otobus}/0
+tr: Otobüs durağı/0 ; nerede/1,2
+= 302 I'll get a taxi.
+pt: Eu/0 ; vou pegar/1 ; um táxi/2
+fa: من{man}/0 ; تاکسی{tāksi}/2 ; می‌گیرم{migiram}/1
+fw: من تاکسی می‌گیرم. || man tāksi migiram.
+la: أنا{ana}/0 ; باخد{bākhud}/1 ; تكسي{taksi}/2
+eg: أنا هاخد تاكسي. || ana hākhud taksi.
+ms: سآخذ سيارة أجرة. || sa-ākhudhu sayyārat ujra.
+he: אני{ani}/0 ; אקח{ekach}/1 ; מונית{monit}/2
+tr: Taksi/2 ; çağırırım/0,1
+= 303 Traffic was terrible today.
+pt: O trânsito/1 ; estava/- ; horrível/2,3 ; hoje/0
+fa: امروز{emruz}/0 ; ترافیک{terāfik}/1 ; خیلی{kheyli}/2 ; بد بود{bad bud}/3
+fw: امروز ترافیک خیلی بد بود. || emruz terāfik kheyli bad bud.
+la: العجقة{il-ʿaj'a}/1 ; كانت{kānet}/- ; كتير{ktīr}/2 ; عاطلة{ʿāṭle}/3 ; اليوم{il-yōm}/0
+eg: الزحمة كانت وحشة أوي النهارده. || iz-zaḥma kānit wiḥsha awi in-naharda.
+ms: كان الزحام فظيعًا اليوم. || kāna az-ziḥām faẓīʿan al-yawm.
+he: הפקקים{ha-pkakim}/1 ; היו{hayu}/- ; נוראיים{nora'iyim}/2,3 ; היום{hayom}/0
+tr: Bugün/0 ; trafik/1 ; çok/2 ; kötüydü/3
+= 304 We are going on a cruise.
+pt: Nós/0 ; vamos/1 ; fazer/2 ; um cruzeiro/3
+fa: ما{mā}/0 ; داریم میریم{dārim mirim}/1 ; سفر دریایی{safar-e daryāyi}/2,3
+fw: ما به یک سفر دریایی می‌رویم. || mā be yek safar-e daryāyi miravim.
+la: نحنا{niḥna}/0 ; رايحين{rāyḥīn}/1 ; برحلة بحرية{b-riḥle baḥriyye}/2,3
+eg: إحنا رايحين رحلة بحرية. || iḥna rayḥīn riḥla baḥriyya.
+ms: سنذهب في رحلة بحرية. || sa-nadhhab fī riḥla baḥriyya.
+he: אנחנו{anachnu}/0 ; יוצאים{yots'im}/1,2 ; לשייט{le-shayit}/3
+tr: Gemi turuna/2,3 ; çıkıyoruz/0,1
+= 305 Have you ever been on a cruise?
+pt: Você/0 ; já/1 ; fez/2 ; um cruzeiro/3
+fa: تا حالا{tā hālā}/1 ; سفر دریایی{safar-e daryāyi}/3 ; رفتی{rafti}/0,2
+fw: تا به حال به سفر دریایی رفته‌ای؟ || tā be hāl be safar-e daryāyi rafte-i?
+la: عمرك{ʿumrak}/0,1 ; رحت{riḥt}/2 ; رحلة بحرية{riḥle baḥriyye}/3
+eg: عمرك رحت رحلة بحرية؟ || ʿumrak ruḥt riḥla baḥriyya?
+ms: هل سبق أن ذهبتَ في رحلة بحرية؟ || hal sabaqa an dhahabta fī riḥla baḥriyya?
+he: היית{hayita}/0,2 ; פעם{pa'am}/1 ; בשייט{be-shayit}/3
+tr: Hiç/1 ; gemi turuna/3 ; çıktın mı/0,2
+= 306 I get seasick.
+pt: Eu/0 ; fico/1 ; enjoado/2
+fa: من{man}/0 ; دریازده می‌شم{daryāzade misham}/1,2
+fw: من دچار دریازدگی می‌شوم. || man dochār-e daryāzadegi mishavam.
+la: أنا{ana}/0 ; بيصير معي{biṣīr maʿi}/1 ; دوار بحر{dawār baḥr}/2
+eg: أنا بيجيلي دوار البحر. || ana biyigīli dūwār il-baḥr.
+ms: أصاب بدوار البحر. || uṣābu bi-duwār al-baḥr.
+he: אני{ani}/0 ; סובל{sovel}/1 ; ממחלת ים{mi-machalat yam}/2
+tr: Beni/0 ; deniz/2 ; tutar/1,2
+= 307 The ship is huge.
+pt: O navio/0,1 ; é/- ; enorme/2,3
+fa: کشتی{keshti}/0,1 ; خیلی{kheyli}/2 ; بزرگه{bozorge}/3
+fw: کشتی خیلی بزرگ است. || keshti kheyli bozorg ast.
+la: السفينة{is-safīne}/0,1 ; كتير{ktīr}/2 ; كبيرة{kbīre}/3
+eg: المركب ضخمة. || il-markib ḍakhma.
+ms: السفينة ضخمة. || as-safīna ḍakhma.
+he: הספינה{ha-sfina}/0,1 ; ענקית{anakit}/2,3
+tr: Gemi/0,1 ; kocaman/2,3
+= 308 What time do we board?
+pt: A que horas/1 ; a gente/0 ; embarca/2
+fa: ساعت چند{sā'at-e chand}/1 ; سوار می‌شیم{savār mishim}/0,2
+fw: ساعت چند سوار می‌شویم؟ || sā'at-e chand savār mishavim?
+la: أيمتى{aymta}/1 ; منطلع{minṭlaʿ}/0,2 ; عالسفينة{ʿas-safīne}/2
+eg: هنركب الساعة كام؟ || hanirkab is-sāʿa kām?
+ms: متى نصعد إلى السفينة؟ || matā naṣʿad ilā as-safīna?
+he: מתי{matay}/1 ; עולים{olim}/0,2 ; לספינה{la-sfina}/2
+tr: Gemiye/2 ; saat kaçta/1 ; biniyoruz/0,2
+= 309 Let's watch the sunset from the deck.
+pt: Vamos/4 ; ver/2 ; o pôr do sol/3 ; do convés/1
+fa: بیا{biyā}/4 ; از روی عرشه{az ru-ye arshe}/1 ; غروب رو{ghorub ro}/3 ; ببینیم{bebinim}/2
+fw: بیا از روی عرشه غروب را تماشا کنیم. || biyā az ru-ye arshe ghorub rā tamāshā konim.
+la: يلا{yalla}/4 ; نتفرج{nitfarraj}/2 ; عالغروب{ʿal-ghurūb}/3 ; من السطح{min is-saṭḥ}/1
+eg: يلا نتفرج على الغروب من على السطح. || yalla nitfarrag ʿal-ghurūb min ʿala s-saṭḥ.
+ms: لنشاهد الغروب من سطح السفينة. || li-nushāhid al-ghurūb min saṭḥ as-safīna.
+he: בואו{bo'u}/4 ; נראה{nir'e}/2 ; את השקיעה{et ha-shki'a}/3 ; מהסיפון{me-ha-sipun}/1
+tr: Güvertede/1 ; gün batımını/3 ; izleyelim/2,4
+= 310 Where are you going on vacation?
+pt: Para onde/2 ; você/0 ; vai/1 ; nas férias/3
+fa: برای تعطیلات{barāye ta'tilāt}/3 ; کجا{kojā}/2 ; میری{miri}/0,1
+fw: برای تعطیلات کجا می‌روی؟ || barāye ta'tilāt kojā miravi?
+la: لوين{lawēn}/2 ; رايح{rāyiḥ}/0,1 ; بالعطلة{bil-ʿuṭle}/3
+eg: رايح فين في الأجازة؟ || rāyiḥ fēn fil-agāza?
+ms: إلى أين ستذهب في العطلة؟ || ilā ayna sa-tadhhab fī al-ʿuṭla?
+he: לאן{le'an}/2 ; אתה נוסע{ata nose'a}/0,1 ; בחופשה{ba-chufsha}/3
+tr: Tatilde/3 ; nereye/2 ; gidiyorsun/0,1
+= 311 We're going to Hong Kong.
+pt: Nós/0 ; vamos/1 ; para Hong Kong/2
+fa: ما{mā}/0 ; میریم{mirim}/1 ; هنگ کنگ{hong kong}/2
+fw: ما به هنگ کنگ می‌رویم. || mā be hong kong miravim.
+la: نحنا{niḥna}/0 ; رايحين{rāyḥīn}/1 ; عهونغ كونغ{ʿa-hong kong}/2
+eg: إحنا رايحين هونج كونج. || iḥna rayḥīn hong kong.
+ms: سنذهب إلى هونغ كونغ. || sa-nadhhab ilā hūng kūng.
+he: אנחנו{anachnu}/0 ; נוסעים{nos'im}/1 ; להונג קונג{le-hong kong}/2
+tr: Hong Kong'a/2 ; gidiyoruz/0,1

@@ -1,0 +1,432 @@
+= 312 Have you been to China?
+pt: Você/0 ; já/1 ; foi/2 ; à China/3
+fa: تا حالا{tā hālā}/1 ; چین{chin}/3 ; رفتی{rafti}/0,2
+fw: تا به حال به چین رفته‌ای؟ || tā be hāl be chin rafte-i?
+la: عمرك{ʿumrak}/0,1 ; رحت{riḥt}/2 ; عالصين{ʿaṣ-ṣīn}/3
+eg: عمرك رحت الصين؟ || ʿumrak ruḥt iṣ-ṣīn?
+ms: هل سبق أن زرتَ الصين؟ || hal sabaqa an zurta aṣ-ṣīn?
+he: היית{hayita}/0,2 ; פעם{pa'am}/1 ; בסין{be-sin}/3
+tr: Hiç/1 ; Çin'e/3 ; gittin mi/0,2
+= 313 I want to visit Taishan someday.
+pt: Eu/0 ; quero/2 ; visitar/3 ; Taishan/4 ; um dia/1
+fa: من{man}/0 ; یه روزی{ye ruzi}/1 ; می‌خوام{mikhām}/2 ; برم{beram}/3 ; تایشان{tāyshān}/4
+fw: من می‌خواهم روزی به تایشان بروم. || man mikhāham ruzi be tāyshān beravam.
+la: أنا{ana}/0 ; بدي{baddi}/2 ; زور{zūr}/3 ; تايشان{tayshān}/4 ; يومًا ما{yōman ma}/1
+eg: نفسي أزور تايشان في يوم من الأيام. || nifsi azūr tayshān fi yōm min il-ayyām.
+ms: أريد أن أزور تايشان يومًا ما. || urīdu an azūr tāyshān yawman mā.
+he: אני{ani}/0 ; רוצה{rotse}/2 ; לבקר{levaker}/3 ; בטאישאן{be-taishan}/4 ; מתישהו{matishehu}/1
+tr: Bir gün/1 ; Taishan'a/4 ; gitmek/3 ; istiyorum/0,2
+= 314 How long is the flight?
+pt: Quanto tempo/2 ; dura/1 ; o voo/0
+fa: پرواز{parvāz}/0 ; چقدر{cheqadr}/2 ; طول می‌کشه{tul mikeshe}/1
+fw: پرواز چقدر طول می‌کشد؟ || parvāz cheqadr tul mikeshad?
+la: قديش{ʾaddēsh}/2 ; بتاخد{btākhud}/1 ; الرحلة{ir-riḥle}/0
+eg: الطيارة بتاخد قد إيه؟ || iṭ-ṭayyāra btākhud ʾadd ēh?
+ms: كم تستغرق الرحلة؟ || kam tastaghriq ar-riḥla?
+he: כמה זמן{kama zman}/2 ; לוקחת{lokachat}/1 ; הטיסה{ha-tisa}/0
+tr: Uçuş/0 ; ne kadar/2 ; sürüyor/1
+= 315 I need to pack my suitcase.
+pt: Eu/0 ; preciso/1 ; fazer/2 ; a mala/3
+fa: من{man}/0 ; باید{bāyad}/1 ; چمدونمو{chamedunam-o}/3 ; ببندم{bebandam}/2
+fw: من باید چمدانم را ببندم. || man bāyad chamedānam rā bebandam.
+la: لازم{lāzim}/1 ; ضب{ḍibb}/2 ; شنطتي{shanṭti}/0,3
+eg: لازم أحضّر الشنطة. || lāzim aḥaḍḍar ish-shanṭa.
+ms: يجب أن أحزم حقيبتي. || yajib an aḥzim ḥaqībatī.
+he: אני{ani}/0 ; צריך{tsarikh}/1 ; לארוז{le'eroz}/2 ; את המזוודה{et ha-mizvada}/3
+tr: Bavulumu/3 ; hazırlamam/0,2 ; lazım/1
+= 316 Did you bring your passport?
+pt: Você/0 ; trouxe/1 ; o passaporte/2
+fa: پاسپورتتو{pāsporteto}/2 ; آوردی{āvordi}/0,1
+fw: گذرنامه‌ات را آوردی؟ || gozarnāme-at rā āvordi?
+la: جبت{jibt}/0,1 ; الباسبور{il-bāsbōr}/2
+eg: جبت الباسبور؟ || gibt il-basbōr?
+ms: هل أحضرتَ جواز سفرك؟ || hal aḥḍarta jawāz safarik?
+he: הבאת{heveta}/0,1 ; את הדרכון{et ha-darkon}/2
+tr: Pasaportunu/2 ; getirdin mi/0,1,3
+= 317 Our flight is delayed.
+pt: Nosso/0 ; voo/1 ; atrasou/2
+fa: پروازمون{parvāzemun}/0,1 ; تأخیر داره{ta'khir dāre}/2
+fw: پرواز ما تأخیر دارد. || parvāz-e mā ta'khir dārad.
+la: رحلتنا{riḥlitna}/0,1 ; متأخرة{mitʾakhkhra}/2
+eg: الطيارة بتاعتنا متأخرة. || iṭ-ṭayyāra bitaʿitna mitʾakhkhara.
+ms: رحلتنا متأخرة. || riḥlatunā muta'akhkhira.
+he: הטיסה שלנו{ha-tisa shelanu}/0,1 ; מתעכבת{mit'akevet}/2
+tr: Uçuşumuz/0,1 ; rötarlı/2
+= 318 The hotel is very nice.
+pt: O hotel/0,1 ; é/- ; muito/2 ; bom/3
+fa: هتل{hotel}/0,1 ; خیلی{kheyli}/2 ; خوبه{khube}/3
+fw: هتل خیلی خوب است. || hotel kheyli khub ast.
+la: الأوتيل{il-ōtēl}/0,1 ; كتير{ktīr}/2 ; حلو{ḥilu}/3
+eg: الفندق حلو أوي. || il-funduʾ ḥilw awi.
+ms: الفندق جميل جدًا. || al-funduq jamīl jiddan.
+he: המלון{ha-malon}/0,1 ; מאוד{me'od}/2 ; נחמד{nechmad}/3
+tr: Otel/0,1 ; çok/2 ; güzel/3
+= 319 Let's take a lot of photos.
+pt: Vamos/4 ; tirar/1 ; muitas/2 ; fotos/3
+fa: بیا{biyā}/4 ; کلی{kolli}/2 ; عکس{aks}/3 ; بگیریم{begirim}/1
+fw: بیا عکس‌های زیادی بگیریم. || biyā aks-hā-ye ziyādi begirim.
+la: يلا{yalla}/4 ; نتصور{nitṣawwar}/1,3 ; كتير{ktīr}/2
+eg: يلا نتصور كتير. || yalla nitṣawwar kitīr.
+ms: لنلتقط الكثير من الصور. || li-naltaqiṭ al-kathīr min aṣ-ṣuwar.
+he: בואו{bo'u}/4 ; נצלם{netsalem}/1 ; הרבה{harbe}/2 ; תמונות{tmunot}/3
+tr: Bol bol/2 ; fotoğraf/3 ; çekelim/1,4
+= 320 I'll send you the pictures.
+pt: Eu/0 ; te/3 ; mando/1 ; as fotos/2
+fa: عکسا رو{aksā ro}/2 ; برات{barāt}/3 ; می‌فرستم{miferestam}/0,1
+fw: عکس‌ها را برایت می‌فرستم. || aks-hā rā barāyat miferestam.
+la: ببعتلك{bibʿatlak}/0,1,3 ; الصور{iṣ-ṣuwar}/2
+eg: هبعتلك الصور. || habʿatlak iṣ-ṣuwar.
+ms: سأرسل لك الصور. || sa-ursil laka aṣ-ṣuwar.
+he: אני{ani}/0 ; אשלח לך{eshlach lekha}/1,3 ; את התמונות{et ha-tmunot}/2
+tr: Fotoğrafları/2 ; sana/3 ; gönderirim/0,1
+= 321 How was your trip?
+pt: Como/2 ; foi/2 ; a sua/0 ; viagem/1
+fa: سفرت{safaret}/0,1 ; چطور بود{chetor bud}/2
+fw: سفرت چطور بود؟ || safarat chetor bud?
+la: كيف{kīf}/2 ; كانت{kānet}/2 ; رحلتك{riḥltak}/0,1
+eg: الرحلة كانت عاملة إيه؟ || ir-riḥla kānit ʿamla ēh?
+ms: كيف كانت رحلتك؟ || kayfa kānat riḥlatuk?
+he: איך{eykh}/2 ; היה{haya}/2 ; הטיול{ha-tiyul}/1
+tr: Yolculuğun/0,1 ; nasıl geçti/2
+= 322 I had a great time.
+pt: Eu/0 ; me diverti/1 ; muito/2
+fa: خیلی{kheyli}/2 ; بهم خوش گذشت{behem khosh gozasht}/0,1,2
+fw: خیلی به من خوش گذشت. || kheyli be man khosh gozasht.
+la: انبسطت{inbasaṭt}/0,1 ; كتير{ktīr}/2
+eg: انبسطت أوي. || inbasaṭt awi.
+ms: قضيتُ وقتًا رائعًا. || qaḍaytu waqtan rā'iʿan.
+he: היה לי{haya li}/0,1 ; ממש כיף{mamash kef}/2
+tr: Çok/2 ; eğlendim/0,1
+= 323 I can't wait to come back.
+pt: Eu/0 ; mal posso esperar/1 ; para voltar/2
+fa: بی‌صبرانه{bisabrāne}/1 ; منتظرم{montazeram}/0,1 ; برگردم{bargardam}/2
+fw: بی‌صبرانه منتظرم که برگردم. || bisabrāne montazeram ke bargardam.
+la: مش{mish}/1 ; قادر{ʾādir}/1 ; استنى{istanna}/1 ; إرجع{irjaʿ}/2
+eg: مستني أرجع على نار. || mistanni argaʿ ʿala nār.
+ms: لا أطيق الانتظار للعودة. || lā uṭīq al-intiẓār lil-ʿawda.
+he: אני{ani}/0 ; מחכה{mechake}/1 ; לחזור{lachazor}/2
+tr: Geri dönmek için/2 ; sabırsızlanıyorum/0,1
+= 324 It's so hot today.
+pt: Está/- ; tão/0 ; quente/1 ; hoje/2
+fa: امروز{emruz}/2 ; خیلی{kheyli}/0 ; گرمه{garme}/1
+fw: امروز خیلی گرم است. || emruz kheyli garm ast.
+la: اليوم{il-yōm}/2 ; كتير{ktīr}/0 ; شوب{shōb}/1
+eg: الجو حر أوي النهارده. || ig-gaww ḥarr awi in-naharda.
+ms: الجو حار جدًا اليوم. || al-jaww ḥārr jiddan al-yawm.
+he: כל כך{kol kakh}/0 ; חם{cham}/1 ; היום{hayom}/2
+tr: Bugün/2 ; çok/0 ; sıcak/1
+= 325 Is it going to rain tomorrow?
+pt: Vai/0 ; chover/1 ; amanhã/2
+fa: فردا{fardā}/2 ; بارون میاد{bārun miyād}/0,1
+fw: فردا باران می‌آید؟ || fardā bārān mi'āyad?
+la: رح{raḥ}/0 ; تشتي{tishti}/1 ; بكرا{bukra}/2
+eg: هتمطر بكرة؟ || hatmaṭṭar bukra?
+ms: هل ستمطر غدًا؟ || hal sa-tumṭir ghadan?
+he: ירד{yered}/0 ; גשם{geshem}/1 ; מחר{machar}/2
+tr: Yarın/2 ; yağmur/1 ; yağacak mı/0,3
+= 326 It's very cold outside.
+pt: Está/- ; muito/0 ; frio/1 ; lá fora/2
+fa: بیرون{birun}/2 ; خیلی{kheyli}/0 ; سرده{sarde}/1
+fw: بیرون خیلی سرد است. || birun kheyli sard ast.
+la: برّا{barra}/2 ; كتير{ktīr}/0 ; برد{bard}/1
+eg: الجو برّه ساقعة أوي. || ig-gaww barra sāʾʿa awi.
+ms: الجو بارد جدًا في الخارج. || al-jaww bārid jiddan fī al-khārij.
+he: קר{kar}/1 ; מאוד{me'od}/0 ; בחוץ{ba-chuts}/2
+tr: Dışarısı/2 ; çok/0 ; soğuk/1
+= 327 Remember to bring a jacket.
+pt: Lembra de/0 ; levar/1 ; um/2 ; casaco/3
+fa: یادت باشه{yādet bāshe}/0 ; یه{ye}/2 ; ژاکت{zhāket}/3 ; بیاری{biyāri}/1
+fw: یادت باشد یک ژاکت بیاوری. || yādat bāshad yek zhāket biyāvari.
+la: تذكر{tzakkar}/0 ; تجيب{tjīb}/1 ; جاكيت{jākēt}/2,3
+eg: افتكر تاخد جاكيت. || iftikir tākhud jakēt.
+ms: تذكر أن تحضر سترة. || tadhakkar an tuḥḍir sutra.
+he: תזכור{tizkor}/0 ; להביא{lehavi}/1 ; מעיל{me'il}/2,3
+tr: Ceket/3 ; almayı/1 ; unutma/0
+= 328 The weather is really nice today.
+pt: O tempo/0 ; está/- ; muito/1 ; bom/2 ; hoje/3
+fa: امروز{emruz}/3 ; هوا{havā}/0 ; خیلی{kheyli}/1 ; خوبه{khube}/2
+fw: امروز هوا خیلی خوب است. || emruz havā kheyli khub ast.
+la: الطقس{iṭ-ṭaʾs}/0 ; كتير{ktīr}/1 ; حلو{ḥilu}/2 ; اليوم{il-yōm}/3
+eg: الجو حلو أوي النهارده. || ig-gaww ḥilw awi in-naharda.
+ms: الطقس جميل حقًا اليوم. || aṭ-ṭaqs jamīl ḥaqqan al-yawm.
+he: מזג האוויר{mezeg ha-avir}/0 ; ממש{mamash}/1 ; נעים{na'im}/2 ; היום{hayom}/3
+tr: Bugün/3 ; hava/0 ; gerçekten/1 ; çok güzel/2
+= 329 It's windy today.
+pt: Está/- ; ventando/1,2 ; hoje/0
+fa: امروز{emruz}/0 ; خیلی{kheyli}/1 ; باد میاد{bād miyād}/2
+fw: امروز باد می‌وزد. || emruz bād mivazad.
+la: اليوم{il-yōm}/0 ; في هوا{fī hawa}/2 ; كتير{ktīr}/1
+eg: الدنيا هوا النهارده. || id-dunya hawa in-naharda.
+ms: الجو عاصف اليوم. || al-jaww ʿāṣif al-yawm.
+he: יש רוח{yesh ru'ach}/2 ; היום{hayom}/0
+tr: Bugün/0 ; çok/1 ; rüzgârlı/2
+= 330 It's going to be sunny tomorrow.
+pt: Amanhã/0 ; vai/1 ; fazer sol/2
+fa: فردا{fardā}/0 ; هوا{havā}/- ; آفتابیه{āftābiye}/1,2
+fw: فردا هوا آفتابی خواهد بود. || fardā havā āftābi khāhad bud.
+la: بكرا{bukra}/0 ; رح{raḥ}/1 ; تكون{tkūn}/1 ; مشمسة{mshamse}/2
+eg: بكرة الجو هيبقى مشمس. || bukra ig-gaww hayibʾa mishmis.
+ms: سيكون الجو مشمسًا غدًا. || sa-yakūn al-jaww mushmisan ghadan.
+he: מחר{machar}/0 ; יהיה{yihye}/1 ; שמשי{shimshi}/2
+tr: Yarın/0 ; güneşli/2 ; olacak/1
+= 331 Bring an umbrella.
+pt: Leva/0 ; um/1 ; guarda-chuva/2
+fa: چتر{chatr}/2 ; بیار{biyār}/0
+fw: چتر بیاور. || chatr biyāvar.
+la: جيب{jīb}/0 ; شمسية{shamsiyye}/1,2
+eg: خد شمسية. || khud shamsiyya.
+ms: أحضر مظلة. || aḥḍir miẓalla.
+he: תביא{tavi}/0 ; מטרייה{mitriya}/1,2
+tr: Şemsiye/2 ; al/0
+= 332 Are you cold?
+pt: Você/0 ; está com frio/1
+fa: سردته{sardete}/0,1
+fw: سردت است؟ || sardat ast?
+la: بردان{bardān}/0,1
+eg: إنت بردان؟ || inta bardān?
+ms: هل تشعر بالبرد؟ || hal tashʿur bil-bard?
+he: קר לך{kar lekha}/0,1
+tr: Üşüyor musun/0,1
+= 333 Turn on the air conditioning.
+pt: Liga/0 ; o ar-condicionado/1 ; por favor/2
+fa: کولر رو{kuler ro}/1 ; روشن کن{rowshan kon}/0
+fw: کولر را روشن کن. || kuler rā rowshan kon.
+la: شغّل{shaghghil}/0 ; المكيف{il-mkayyif}/1
+eg: شغّل التكييف. || shaghghal it-takyīf.
+ms: شغّل المكيف. || shaghghil al-mukayyif.
+he: תדליק{tadlik}/0 ; את המזגן{et ha-mazgan}/1
+tr: Klimayı/1 ; aç/0
+= 334 How's work been lately?
+pt: Como/0 ; está/- ; o trabalho/1 ; ultimamente/2
+fa: این روزا{in ruzā}/2 ; کار{kār}/1 ; چطوره{chetore}/0
+fw: این روزها کار چطور است؟ || in ruzhā kār chetor ast?
+la: كيف{kīf}/0 ; الشغل{ish-shoghl}/1 ; هالفترة{hal-fatra}/2
+eg: الشغل عامل إيه اليومين دول؟ || ish-shughl ʿāmil ēh il-yomēn dōl?
+ms: كيف حال العمل مؤخرًا؟ || kayfa ḥāl al-ʿamal mu'akhkharan?
+he: איך{eykh}/0 ; בעבודה{ba-avoda}/1 ; לאחרונה{le-acharona}/2
+tr: Son zamanlarda/2 ; işler/1 ; nasıl/0
+= 335 Are you busy at work?
+pt: Você/0 ; está ocupado/1 ; no trabalho/2
+fa: سر کار{sar-e kār}/2 ; سرت شلوغه{saret sholughe}/0,1
+fw: سر کار سرت شلوغ است؟ || sar-e kār sarat sholugh ast?
+la: إنت{inta}/0 ; مشغول{mashghūl}/1 ; بالشغل{bish-shoghl}/2
+eg: إنت مشغول في الشغل؟ || inta mashghūl fish-shughl?
+ms: هل أنت مشغول في العمل؟ || hal anta mashghūl fī al-ʿamal?
+he: אתה{ata}/0 ; עסוק{asuk}/1 ; בעבודה{ba-avoda}/2
+tr: İşte/2 ; yoğun musun/0,1
+= 336 What do you do for work?
+pt: O que/0 ; você/1 ; faz/2 ; da vida/3
+fa: شغلت{shoghlet}/1,3 ; چیه{chiye}/0,2
+fw: شغل شما چیست؟ || shoghl-e shomā chist?
+la: شو{shu}/0 ; بتشتغل{btishtighil}/1,2,3
+eg: بتشتغل إيه؟ || btishtaghal ēh?
+ms: ماذا تعمل؟ || mādhā taʿmal?
+he: במה{be-ma}/0 ; אתה עובד{ata oved}/1,2,3
+tr: Ne/0 ; iş/3 ; yapıyorsun/1,2
+= 337 I work with computers.
+pt: Eu/0 ; trabalho/2 ; com computadores/3
+fa: من{man}/0 ; با کامپیوتر{bā kāmpyuter}/3 ; کار می‌کنم{kār mikonam}/2
+fw: من با کامپیوتر کار می‌کنم. || man bā kāmpyuter kār mikonam.
+la: أنا{ana}/0 ; بشتغل{bishtighil}/2 ; بالكمبيوتر{bil-kombyūtar}/3
+eg: أنا بشتغل في الكمبيوتر. || ana bashtaghal fil-kombyūtar.
+ms: أعمل في مجال الحاسوب. || aʿmalu fī majāl al-ḥāsūb.
+he: אני{ani}/0 ; עובד{oved}/2 ; עם מחשבים{im machshevim}/3
+tr: Bilgisayarlarla/3 ; çalışıyorum/0,2
+= 338 Don't work yourself too hard!
+pt: Não/0 ; se mate/2 ; de trabalhar/2 ; tanto/1
+fa: زیاد{ziyād}/1 ; خودتو{khodet-o}/- ; خسته نکن{khaste nakon}/0,2
+fw: زیاد به خودت فشار نیاور! || ziyād be khodat feshār nayāvar!
+la: لا{la}/0 ; تتعب{titʿab}/2 ; حالك{ḥālak}/- ; كتير{ktīr}/1
+eg: ما تتعبش نفسك أوي! || ma tetʿibsh nafsak awi!
+ms: لا تُرهق نفسك بالعمل! || lā turhiq nafsak bil-ʿamal!
+he: אל{al}/0 ; תתאמץ{tit'amets}/2 ; יותר מדי{yoter miday}/1
+tr: Kendini/- ; çok/1 ; yorma/0,2
+= 339 How was your day?
+pt: Como/2 ; foi/2 ; o seu dia/0,1
+fa: امروزت{emruzet}/0,1 ; چطور بود{chetor bud}/2
+fw: روزت چطور بود؟ || ruzat chetor bud?
+la: كيف{kīf}/2 ; كان{kān}/2 ; نهارك{nhārak}/0,1
+eg: يومك كان عامل إيه؟ || yōmak kān ʿāmil ēh?
+ms: كيف كان يومك؟ || kayfa kāna yawmuk?
+he: איך{eykh}/2 ; היה{haya}/2 ; היום שלך{ha-yom shelkha}/0,1
+tr: Günün/0,1 ; nasıl geçti/2
+= 340 When do you finish work?
+pt: Quando/1 ; você/0 ; sai do trabalho/2
+fa: کی{key}/1 ; کارت تموم می‌شه{kāret tamum mishe}/0,2
+fw: کارت کی تمام می‌شود؟ || kārat key tamām mishavad?
+la: أيمتى{aymta}/1 ; بتخلص{btikhlaṣ}/0,2 ; شغل{shoghl}/2
+eg: بتخلص شغل إمتى؟ || btikhallaṣ shughl imta?
+ms: متى تنهي عملك؟ || matā tunhī ʿamalak?
+he: מתי{matay}/1 ; אתה מסיים{ata mesayem}/0,2 ; לעבוד{laavod}/2
+tr: İşten/2 ; ne zaman/1 ; çıkıyorsun/0,2
+= 341 Do you work tomorrow?
+pt: Você/0 ; trabalha/2,3 ; amanhã/1
+fa: فردا{fardā}/1 ; سر کار میری{sar-e kār miri}/0,2,3
+fw: فردا سر کار می‌روی؟ || fardā sar-e kār miravi?
+la: بتشتغل{btishtighil}/0,2,3 ; بكرا{bukra}/1
+eg: عندك شغل بكرة؟ || ʿandak shughl bukra?
+ms: هل تعمل غدًا؟ || hal taʿmal ghadan?
+he: אתה עובד{ata oved}/0,2,3 ; מחר{machar}/1
+tr: Yarın/1 ; çalışıyor musun/0,2,3
+= 342 I'm on vacation this week.
+pt: Estou/0 ; de férias/2 ; esta semana/1
+fa: من{man}/0 ; این هفته{in hafte}/1 ; مرخصی‌ام{morakhasi-am}/2
+fw: من این هفته در مرخصی هستم. || man in hafte dar morakhasi hastam.
+la: أنا{ana}/0 ; بعطلة{b-ʿuṭle}/2 ; هالجمعة{hal-jumʿa}/1
+eg: أنا أجازة الأسبوع ده. || ana agāza il-usbūʿ da.
+ms: أنا في إجازة هذا الأسبوع. || anā fī ijāza hādhā al-usbūʿ.
+he: אני{ani}/0 ; בחופש{ba-chofesh}/2 ; השבוע{ha-shavua}/1
+tr: Bu hafta/1 ; tatildeyim/0,2
+= 343 My work is very busy.
+pt: Meu/0 ; trabalho/1 ; está/- ; muito/2 ; corrido/3
+fa: سر کارم{sar-e kāram}/0,1 ; خیلی{kheyli}/2 ; شلوغه{sholughe}/3
+fw: کارم خیلی شلوغ است. || kāram kheyli sholugh ast.
+la: شغلي{shoghli}/0,1 ; كتير{ktīr}/2 ; ضاغط{ḍāghiṭ}/3
+eg: شغلي زحمة أوي. || shughli zaḥma awi.
+ms: عملي مزدحم جدًا. || ʿamalī muzdaḥim jiddan.
+he: העבודה שלי{ha-avoda sheli}/0,1 ; מאוד{me'od}/2 ; עמוסה{amusa}/3
+tr: İşim/0,1 ; çok/2 ; yoğun/3
+= 344 How's your job going?
+pt: Como/2 ; vai/2 ; o seu/0 ; trabalho/1
+fa: کارت{kāret}/0,1 ; چطوره{chetore}/2
+fw: کارت چطور پیش می‌رود؟ || kārat chetor pish miravad?
+la: كيف{kīf}/2 ; شغلك{shoghlak}/0,1
+eg: شغلك ماشي إزاي؟ || shughlak māshi izzāy?
+ms: كيف يسير عملك؟ || kayfa yasīr ʿamaluk?
+he: איך{eykh}/2 ; העבודה שלך{ha-avoda shelkha}/0,1
+tr: İşin/0,1 ; nasıl gidiyor/2
+= 345 I have a meeting tomorrow.
+pt: Eu/0 ; tenho/2 ; uma reunião/3 ; amanhã/1
+fa: من{man}/0 ; فردا{fardā}/1 ; جلسه{jalase}/3 ; دارم{dāram}/2
+fw: من فردا جلسه دارم. || man fardā jalase dāram.
+la: عندي{ʿandi}/0,2 ; اجتماع{ijtimāʿ}/3 ; بكرا{bukra}/1
+eg: عندي اجتماع بكرة. || ʿandi igtimāʿ bukra.
+ms: لديّ اجتماع غدًا. || ladayya ijtimāʿ ghadan.
+he: יש לי{yesh li}/0,2 ; פגישה{pgisha}/3 ; מחר{machar}/1
+tr: Yarın/1 ; toplantım/0,3 ; var/2
+= 346 I have to work late tonight.
+pt: Eu/0 ; tenho que/2 ; trabalhar até tarde/3 ; hoje/1
+fa: من{man}/0 ; امشب{emshab}/1 ; باید{bāyad}/2 ; اضافه‌کاری کنم{ezāfe-kāri konam}/3
+fw: من امشب باید اضافه‌کاری کنم. || man emshab bāyad ezāfe-kāri konam.
+la: لازم{lāzim}/2 ; ضل{ḍall}/3 ; بالشغل{bish-shoghl}/3 ; لمتأخر{la-mitʾakhkhir}/3 ; الليلة{il-lēle}/1
+eg: لازم أفضل في الشغل لحد متأخر النهارده. || lāzim afḍal fish-shughl li-ḥadd mitʾakhkhar in-naharda.
+ms: عليّ أن أعمل حتى وقت متأخر الليلة. || ʿalayya an aʿmal ḥattā waqt muta'akhkhir al-layla.
+he: אני{ani}/0 ; צריך{tsarikh}/2 ; לעבוד עד מאוחר{laavod ad me'uchar}/3 ; הערב{ha-erev}/1
+tr: Bu akşam/1 ; geç saate kadar/3 ; çalışmam/0,3 ; lazım/2
+= 347 I work from home.
+pt: Eu/0 ; trabalho/2 ; de casa/1
+fa: من{man}/0 ; از خونه{az khune}/1 ; کار می‌کنم{kār mikonam}/2
+fw: من از خانه کار می‌کنم. || man az khāne kār mikonam.
+la: أنا{ana}/0 ; بشتغل{bishtighil}/2 ; من البيت{min il-bēt}/1
+eg: أنا بشتغل من البيت. || ana bashtaghal min il-bēt.
+ms: أعمل من المنزل. || aʿmalu min al-manzil.
+he: אני{ani}/0 ; עובד{oved}/2 ; מהבית{me-ha-bayit}/1
+tr: Evden/1 ; çalışıyorum/0,2
+= 348 My boss is very nice.
+pt: Meu/0 ; chefe/1 ; é/- ; muito/2 ; legal/3
+fa: رئیسم{ra'isam}/0,1 ; خیلی{kheyli}/2 ; خوبه{khube}/3
+fw: رئیسم خیلی خوب است. || ra'isam kheyli khub ast.
+la: مديري{mudīri}/0,1 ; كتير{ktīr}/2 ; منيح{mnīḥ}/3
+eg: مديري لطيف أوي. || mudīri laṭīf awi.
+ms: مديري لطيف جدًا. || mudīrī laṭīf jiddan.
+he: הבוס שלי{ha-bos sheli}/0,1 ; מאוד{me'od}/2 ; נחמד{nechmad}/3
+tr: Patronum/0,1 ; çok/2 ; iyi/3
+= 349 I got a new job.
+pt: Eu/0 ; arrumei/1 ; um emprego novo/2
+fa: من{man}/0 ; یه کار جدید{ye kār-e jadid}/2 ; پیدا کردم{peydā kardam}/1
+fw: من یک کار جدید پیدا کردم. || man yek kār-e jadid peydā kardam.
+la: لقيت{laʾēt}/0,1 ; شغل جديد{shoghl jdīd}/2
+eg: لقيت شغل جديد. || laʾēt shughl gidīd.
+ms: حصلتُ على وظيفة جديدة. || ḥaṣaltu ʿalā waẓīfa jadīda.
+he: מצאתי{matsati}/0,1 ; עבודה חדשה{avoda chadasha}/2
+tr: Yeni bir iş/2 ; buldum/0,1
+= 350 I'm off tomorrow.
+pt: Eu/0 ; estou de folga/2 ; amanhã/1
+fa: من{man}/0 ; فردا{fardā}/1 ; تعطیلم{ta'tilam}/2
+fw: من فردا تعطیل هستم. || man fardā ta'til hastam.
+la: أنا{ana}/0 ; بكرا{bukra}/1 ; عطلة{ʿuṭle}/2
+eg: أنا أجازة بكرة. || ana agāza bukra.
+ms: أنا في إجازة غدًا. || anā fī ijāza ghadan.
+he: אני{ani}/0 ; לא עובד{lo oved}/2 ; מחר{machar}/1
+tr: Yarın/1 ; izinliyim/0,2
+= 351 I'm so tired after work.
+pt: Fico/- ; tão/1 ; cansado/2 ; depois do trabalho/0
+fa: بعد از کار{ba'd az kār}/0 ; خیلی{kheyli}/1 ; خسته‌ام{khaste-am}/2
+fw: بعد از کار خیلی خسته هستم. || ba'd az kār kheyli khaste hastam.
+la: بعد الشغل{baʿd ish-shoghl}/0 ; بكون{bkūn}/- ; كتير{ktīr}/1 ; تعبان{taʿbān}/2
+eg: بكون تعبان أوي بعد الشغل. || bakūn taʿbān awi baʿd ish-shughl.
+ms: أكون متعبًا جدًا بعد العمل. || akūnu mutʿaban jiddan baʿd al-ʿamal.
+he: אני{ani}/- ; כל כך{kol kakh}/1 ; עייף{ayef}/2 ; אחרי העבודה{acharey ha-avoda}/0
+tr: İşten sonra/0 ; çok/1 ; yorgun oluyorum/2
+= 352 I'm so tired, work was crazy.
+pt: Estou/0 ; tão/1 ; cansado/2 ; o trabalho/3 ; foi uma loucura/4
+fa: خیلی{kheyli}/1 ; خسته‌ام{khaste-am}/0,2 ; کار{kār}/3 ; دیوونه‌کننده بود{divune-konande bud}/4
+fw: خیلی خسته‌ام، کار خیلی شلوغ بود. || kheyli khaste-am, kār kheyli sholugh bud.
+la: أنا{ana}/0 ; كتير{ktīr}/1 ; تعبان{taʿbān}/2 ; الشغل{ish-shoghl}/3 ; كان مجنون{kān majnūn}/4
+eg: أنا تعبان جدًا، الشغل كان مجنون. || ana taʿbān giddan, ish-shughl kān magnūn.
+ms: أنا متعب جدًا، كان العمل جنونيًا. || anā mutʿab jiddan, kāna al-ʿamal junūniyyan.
+he: אני{ani}/0 ; כל כך{kol kakh}/1 ; עייף{ayef}/2 ; העבודה{ha-avoda}/3 ; הייתה מטורפת{hayta metorefet}/4
+tr: Çok/1 ; yorgunum/0,2 ; iş/3 ; çılgındı/4
+= 353 My boss gave me a lot of work.
+pt: Meu chefe/0 ; me/2 ; deu/1 ; muito/3 ; trabalho/4
+fa: رئیسم{ra'isam}/0 ; بهم{behem}/2 ; کلی{kolli}/3 ; کار{kār}/4 ; داد{dād}/1
+fw: رئیسم کار زیادی به من داد. || ra'isam kār-e ziyādi be man dād.
+la: مديري{mudīri}/0 ; عطاني{ʿaṭāni}/1,2 ; شغل{shoghl}/4 ; كتير{ktīr}/3
+eg: مديري اداني شغل كتير. || mudīri iddāni shughl kitīr.
+ms: أعطاني مديري الكثير من العمل. || aʿṭānī mudīrī al-kathīr min al-ʿamal.
+he: הבוס שלי{ha-bos sheli}/0 ; נתן לי{natan li}/1,2 ; הרבה{harbe}/3 ; עבודה{avoda}/4
+tr: Patronum/0 ; bana/2 ; çok/3 ; iş/4 ; verdi/1
+= 354 I finally finished my project.
+pt: Eu/0 ; finalmente/1 ; terminei/2 ; meu projeto/3
+fa: بالاخره{belākhare}/1 ; پروژه‌مو{porozhe-mo}/3 ; تموم کردم{tamum kardam}/0,2
+fw: بالاخره پروژه‌ام را تمام کردم. || belākhare porozhe-am rā tamām kardam.
+la: أخيرًا{akhīran}/1 ; خلّصت{khallaṣt}/0,2 ; مشروعي{mashrūʿi}/3
+eg: أخيرًا خلّصت المشروع بتاعي. || akhīran khallaṣt il-mashrūʿ bitāʿi.
+ms: أنهيتُ مشروعي أخيرًا. || anhaytu mashrūʿī akhīran.
+he: סוף סוף{sof sof}/1 ; סיימתי{siyamti}/0,2 ; את הפרויקט שלי{et ha-proyekt sheli}/3
+tr: Sonunda/1 ; projemi/3 ; bitirdim/0,2
+= 355 What grade are you in?
+pt: Em que/2 ; ano/2 ; você/0 ; está/1
+fa: کلاس چندمی{kelās-e chandomi}/0,1,2
+fw: کلاس چندم هستی؟ || kelās-e chandom hasti?
+la: بأي{b-ayy}/2 ; صف{ṣaff}/2 ; إنت{inta}/0
+eg: إنت في سنة كام؟ || inta fi sana kām?
+ms: في أي صف أنت؟ || fī ayy ṣaff anta?
+he: באיזו כיתה{be-eyzo kita}/2 ; אתה{ata}/0
+tr: Kaçıncı sınıftasın/0,1,2
+= 356 How was school today?
+pt: Como/2 ; foi/2 ; a escola/1 ; hoje/0
+fa: امروز{emruz}/0 ; مدرسه{madrese}/1 ; چطور بود{chetor bud}/2
+fw: امروز مدرسه چطور بود؟ || emruz madrese chetor bud?
+la: كيف{kīf}/2 ; كانت{kānet}/2 ; المدرسة{il-madrase}/1 ; اليوم{il-yōm}/0
+eg: المدرسة كانت عاملة إيه النهارده؟ || il-madrasa kānit ʿamla ēh in-naharda?
+ms: كيف كانت المدرسة اليوم؟ || kayfa kānat al-madrasa al-yawm?
+he: איך{eykh}/2 ; היה{haya}/2 ; בבית הספר{be-beyt ha-sefer}/1 ; היום{hayom}/0
+tr: Bugün/0 ; okul/1 ; nasıldı/2
+= 357 Do you have homework?
+pt: Você/0 ; tem/1 ; dever de casa/2
+fa: مشق{mashq}/2 ; داری{dāri}/0,1
+fw: تکلیف داری؟ || taklif dāri?
+la: عندك{ʿandak}/0,1 ; وظيفة{waẓīfe}/2
+eg: عندك واجب؟ || ʿandak wāgib?
+ms: هل لديك واجب منزلي؟ || hal ladayka wājib manzilī?
+he: יש לך{yesh lekha}/0,1 ; שיעורי בית{shi'urey bayit}/2
+tr: Ödevin/0,2 ; var mı/1
+= 358 Did you finish your homework?
+pt: Você/0 ; terminou/1 ; o dever de casa/2
+fa: مشقاتو{mashqāto}/2 ; تموم کردی{tamum kardi}/0,1
+fw: تکالیفت را تمام کردی؟ || takālifat rā tamām kardi?
+la: خلّصت{khallaṣt}/0,1 ; وظيفتك{waẓīftak}/2 ; لهلق{la-halla'}/3
+eg: خلّصت الواجب؟ || khallaṣt il-wāgib?
+ms: هل أنهيتَ واجبك؟ || hal anhayta wājibak?
+he: סיימת{siyamta}/0,1 ; את שיעורי הבית{et shi'urey ha-bayit}/2
+tr: Ödevini/2 ; bitirdin mi/0,1,3
+= 359 What's your favorite subject?
+pt: Qual/2 ; é/- ; a sua/0 ; matéria/3 ; favorita/1
+fa: درس مورد علاقه‌ت{dars-e mored-e alāqat}/0,1,3 ; چیه{chiye}/2
+fw: درس مورد علاقه‌ات چیست؟ || dars-e mored-e alāqe-at chist?
+la: شو{shu}/2 ; المادة{il-mādde}/3 ; اللي بتحبها أكتر{illi bitḥibbha aktar}/0,1
+eg: إيه المادة اللي بتحبها أكتر؟ || ēh il-mādda illi bitḥibbaha aktar?
+ms: ما مادتك المفضلة؟ || mā māddatuka al-mufaḍḍala?
+he: מה{ma}/2 ; המקצוע{ha-miktso'a}/3 ; האהוב עליך{ha-ahuv alekha}/0,1
+tr: En sevdiğin/0,1 ; ders/3 ; hangisi/2

@@ -1,0 +1,405 @@
+= 40 I'm going out now.
+pt: Eu/0 ; vou sair/1 ; agora/2
+fa: من{man}/0 ; الان{alān}/2 ; میرم بیرون{miram birun}/1
+fw: من الان بیرون می‌روم. || man al'ān birun miravam.
+la: أنا{ana}/0 ; طالع{ṭāliʿ}/1 ; هلق{halla'}/2
+eg: أنا خارج دلوقتي. || ana khārig dilwaʾti.
+ms: سأخرج الآن. || sa-akhruju al-ān.
+he: אני{ani}/0 ; יוצא{yotse}/1 ; עכשיו{akhshav}/2
+tr: Şimdi/2 ; çıkıyorum/0,1
+= 41 Let's go out tonight.
+pt: Vamos/0 ; sair/1 ; hoje à noite/2
+fa: بیا{biyā}/0 ; امشب{emshab}/2 ; بریم بیرون{berim birun}/1
+fw: بیا امشب بیرون برویم. || biyā emshab birun beravim.
+la: يلا{yalla}/0 ; نطلع{niṭlaʿ}/1 ; الليلة{il-lēle}/2
+eg: يلا نخرج النهارده بالليل. || yalla nukhrug in-naharda bil-lēl.
+ms: لنخرج الليلة. || li-nakhruj al-layla.
+he: בואו{bo'u}/0 ; נצא{netse}/1 ; הערב{ha-erev}/2
+tr: Bu akşam/2 ; dışarı çıkalım/0,1
+= 42 I want to sleep.
+pt: Eu/0 ; quero/1 ; dormir/2
+fa: من{man}/0 ; می‌خوام{mikhām}/1 ; بخوابم{bekhābam}/2
+fw: من می‌خواهم بخوابم. || man mikhāham bekhābam.
+la: أنا{ana}/0 ; بدي{baddi}/1 ; نام{nām}/2
+eg: أنا عايز أنام. || ana ʿāyiz anām.
+ms: أريد أن أنام. || urīdu an anām.
+he: אני{ani}/0 ; רוצה{rotse}/1 ; לישון{lishon}/2
+tr: Uyumak/2 ; istiyorum/0,1
+= 43 Did you sleep well?
+pt: Você/0 ; dormiu/1 ; bem/2
+fa: خوب{khub}/2 ; خوابیدی{khābidi}/0,1
+fw: خوب خوابیدی؟ || khub khābidi?
+la: نمت{nimt}/0,1 ; منيح{mnīḥ}/2
+eg: نمت كويس؟ || nimt kwayyis?
+ms: هل نمتَ جيدًا؟ || hal nimta jayyidan?
+he: ישנת{yashanta}/0,1 ; טוב{tov}/2
+tr: İyi/2 ; uyudun mu/0,1
+= 44 I didn't sleep well.
+pt: Eu/0 ; não/1 ; dormi/2 ; bem/-
+fa: من{man}/0 ; خوب{khub}/- ; نخوابیدم{nakhābidam}/1,2
+fw: من خوب نخوابیدم. || man khub nakhābidam.
+la: أنا{ana}/0 ; ما نمت{ma nimt}/1,2 ; منيح{mnīḥ}/-
+eg: أنا ما نمتش كويس. || ana ma nimtish kwayyis.
+ms: لم أنم جيدًا. || lam anam jayyidan.
+he: לא{lo}/1 ; ישנתי{yashanti}/0,2 ; טוב{tov}/-
+tr: İyi/- ; uyuyamadım/0,1,2
+= 45 I'm going to sleep now.
+pt: Eu/0 ; vou/1 ; dormir/2 ; agora/3
+fa: من{man}/0 ; الان{alān}/3 ; میرم بخوابم{miram bekhābam}/1,2
+fw: من الان می‌روم بخوابم. || man al'ān miravam bekhābam.
+la: أنا{ana}/0 ; رايح{rāyiḥ}/1 ; نام{nām}/2 ; هلق{halla'}/3
+eg: أنا هنام دلوقتي. || ana hanām dilwaʾti.
+ms: سأنام الآن. || sa-anāmu al-ān.
+he: אני{ani}/0 ; הולך{holekh}/1 ; לישון{lishon}/2 ; עכשיו{akhshav}/3
+tr: Şimdi/3 ; uyuyacağım/0,1,2
+= 46 I can cook.
+pt: Eu/0 ; sei/1 ; cozinhar/2
+fa: من{man}/0 ; بلدم{baladam}/1 ; آشپزی کنم{āshpazi konam}/2
+fw: من می‌توانم آشپزی کنم. || man mitavānam āshpazi konam.
+la: أنا{ana}/0 ; بعرف{baʿrif}/1 ; أطبخ{uṭbukh}/2
+eg: أنا أعرف أطبخ. || ana aʿraf aṭbukh.
+ms: أستطيع الطبخ. || astaṭīʿu aṭ-ṭabkh.
+he: אני{ani}/0 ; יודע{yode'a}/1 ; לבשל{levashel}/2
+tr: Yemek/- ; yapabilirim/0,1,2
+= 47 Can you cook?
+pt: Você/0 ; sabe/1 ; cozinhar/2
+fa: تو{to}/0 ; آشپزی{āshpazi}/2 ; بلدی{baladi}/1
+fw: آیا می‌توانی آشپزی کنی؟ || āyā mitavāni āshpazi koni?
+la: بتعرف{btaʿrif}/0,1 ; تطبخ{tuṭbukh}/2
+eg: تعرف تطبخ؟ || tiʿraf tuṭbukh?
+ms: هل تستطيع الطبخ؟ || hal tastaṭīʿ aṭ-ṭabkh?
+he: אתה{ata}/0 ; יודע{yode'a}/1 ; לבשל{levashel}/2
+tr: Yemek/- ; yapabilir misin/0,1,2,3
+= 48 I can't cook.
+pt: Eu/0 ; não/1 ; sei/2 ; cozinhar/3
+fa: من{man}/0 ; آشپزی{āshpazi}/3 ; بلد نیستم{balad nistam}/1,2
+fw: من نمی‌توانم آشپزی کنم. || man nemitavānam āshpazi konam.
+la: أنا{ana}/0 ; ما بعرف{ma baʿrif}/1,2 ; أطبخ{uṭbukh}/3
+eg: أنا ما أعرفش أطبخ. || ana ma aʿrafsh aṭbukh.
+ms: لا أستطيع الطبخ. || lā astaṭīʿu aṭ-ṭabkh.
+he: אני{ani}/0 ; לא{lo}/1 ; יודע{yode'a}/2 ; לבשל{levashel}/3
+tr: Yemek/- ; yapamam/0,1,2,3
+= 49 Who cooked this?
+pt: Quem/0 ; fez/1 ; isso/2
+fa: اینو{ino}/2 ; کی{ki}/0 ; پخته{pokhte}/1
+fw: این را چه کسی پخته است؟ || in rā che kasi pokhte ast?
+la: مين{mīn}/0 ; طبخ{ṭabakh}/1 ; هاد{hād}/2
+eg: مين اللي طبخ ده؟ || mīn illi ṭabakh da?
+ms: من طبخ هذا؟ || man ṭabakha hādhā?
+he: מי{mi}/0 ; בישל{bishel}/1 ; את זה{et ze}/2
+tr: Bunu/2 ; kim/0 ; pişirdi/1
+= 50 I'm cooking dinner.
+pt: Eu/0 ; estou fazendo/1 ; o jantar/2
+fa: من{man}/0 ; دارم{dāram}/1 ; شام{shām}/2 ; درست می‌کنم{dorost mikonam}/1
+fw: من دارم شام درست می‌کنم. || man dāram shām dorost mikonam.
+la: أنا{ana}/0 ; عم أطبخ{ʿam uṭbukh}/1 ; العشا{il-ʿasha}/2
+eg: أنا بطبخ العشا. || ana baṭbukh il-ʿasha.
+ms: أنا أُعِدّ العشاء. || anā uʿiddu al-ʿashā'.
+he: אני{ani}/0 ; מבשל{mevashel}/1 ; ארוחת ערב{aruchat erev}/2
+tr: Akşam yemeği/2 ; yapıyorum/0,1
+= 51 Let's cook together.
+pt: Vamos/0 ; cozinhar/1 ; juntos/2
+fa: بیا{biyā}/0 ; با هم{bā ham}/2 ; آشپزی کنیم{āshpazi konim}/1
+fw: بیا با هم آشپزی کنیم. || biyā bā ham āshpazi konim.
+la: يلا{yalla}/0 ; نطبخ{nuṭbukh}/1 ; سوا{sawa}/2
+eg: يلا نطبخ سوا. || yalla nuṭbukh sawa.
+ms: لنطبخ معًا. || li-naṭbukh maʿan.
+he: בואו{bo'u}/0 ; נבשל{nevashel}/1 ; ביחד{beyachad}/2
+tr: Birlikte/2 ; yemek yapalım/0,1
+= 52 I like it.
+pt: Eu/0 ; gosto/1 ; disso/2
+fa: من{man}/0 ; اینو{ino}/2 ; دوست دارم{dust dāram}/1
+fw: من آن را دوست دارم. || man ān rā dust dāram.
+la: أنا{ana}/0 ; بحبه{bḥibbo}/1,2
+eg: أنا بحبه. || ana baḥibbu.
+ms: أحبه. || uḥibbuhu.
+he: זה{ze}/2 ; מוצא חן בעיניי{motse chen be'enay}/0,1
+tr: Bunu/2 ; seviyorum/0,1
+= 53 Do you like it?
+pt: Você/0 ; gosta/1 ; disso/2
+fa: اینو{ino}/2 ; دوست داری{dust dāri}/0,1
+fw: آن را دوست داری؟ || ān rā dust dāri?
+la: بتحبه{bitḥibbo}/0,1,2
+eg: بتحبه؟ || bitḥibbu?
+ms: هل تحبه؟ || hal tuḥibbuhu?
+he: זה{ze}/2 ; מוצא חן בעיניך{motse chen be'eynekha}/0,1
+tr: Bunu/2 ; sevdin mi/0,1,3
+= 54 I don't like it.
+pt: Eu/0 ; não/1 ; gosto/2 ; disso/3
+fa: من{man}/0 ; اینو{ino}/3 ; دوست ندارم{dust nadāram}/1,2
+fw: من آن را دوست ندارم. || man ān rā dust nadāram.
+la: أنا{ana}/0 ; ما بحبه{ma bḥibbo}/1,2,3
+eg: أنا مش بحبه. || ana mish baḥibbu.
+ms: لا أحبه. || lā uḥibbuhu.
+he: זה{ze}/3 ; לא{lo}/1 ; מוצא חן בעיניי{motse chen be'enay}/0,2
+tr: Bunu/3 ; sevmiyorum/0,1,2
+= 55 I really like this.
+pt: Eu/0 ; gosto/1 ; muito/3 ; disso/2
+fa: من{man}/0 ; اینو{ino}/2 ; خیلی{kheyli}/3 ; دوست دارم{dust dāram}/1
+fw: من این را خیلی دوست دارم. || man in rā kheyli dust dāram.
+la: أنا{ana}/0 ; كتير{ktīr}/3 ; بحب{bḥibb}/1 ; هاد{hād}/2
+eg: أنا بحب ده أوي. || ana baḥibb da awi.
+ms: أحب هذا كثيرًا. || uḥibbu hādhā kathīran.
+he: אני{ani}/0 ; ממש{mamash}/3 ; אוהב{ohev}/1 ; את זה{et ze}/2
+tr: Bunu/2 ; gerçekten/3 ; seviyorum/0,1
+= 56 I need help.
+pt: Eu/0 ; preciso de/1 ; ajuda/2
+fa: من{man}/0 ; کمک{komak}/2 ; لازم دارم{lāzem dāram}/1
+fw: من به کمک نیاز دارم. || man be komak niyāz dāram.
+la: أنا{ana}/0 ; بدي{baddi}/1 ; مساعدة{msāʿade}/2
+eg: أنا محتاج مساعدة. || ana miḥtāg musāʿda.
+ms: أحتاج إلى مساعدة. || aḥtāju ilā musāʿada.
+he: אני{ani}/0 ; צריך{tsarikh}/1 ; עזרה{ezra}/2
+tr: Yardıma/2 ; ihtiyacım var/0,1
+= 57 Do you need help?
+pt: Você/0 ; precisa de/1 ; ajuda/2
+fa: کمک{komak}/2 ; لازم داری{lāzem dāri}/0,1
+fw: به کمک نیاز داری؟ || be komak niyāz dāri?
+la: بدك{baddak}/0,1 ; مساعدة{msāʿade}/2
+eg: محتاج مساعدة؟ || miḥtāg musāʿda?
+ms: هل تحتاج إلى مساعدة؟ || hal taḥtāju ilā musāʿada?
+he: אתה{ata}/0 ; צריך{tsarikh}/1 ; עזרה{ezra}/2
+tr: Yardıma/2 ; ihtiyacın var mı/0,1,3
+= 58 I don't need anything.
+pt: Eu/0 ; não/1 ; preciso de/2 ; nada/3
+fa: من{man}/0 ; چیزی{chizi}/3 ; لازم ندارم{lāzem nadāram}/1,2
+fw: من به چیزی نیاز ندارم. || man be chizi niyāz nadāram.
+la: أنا{ana}/0 ; ما بدي{ma baddi}/1,2 ; شي{shi}/3
+eg: أنا مش محتاج حاجة. || ana mish miḥtāg ḥāga.
+ms: لا أحتاج إلى شيء. || lā aḥtāju ilā shay'.
+he: אני{ani}/0 ; לא{lo}/1 ; צריך{tsarikh}/2 ; כלום{klum}/3
+tr: Hiçbir şeye/3 ; ihtiyacım yok/0,1,2
+= 59 I know.
+pt: Eu/0 ; sei/1
+fa: می‌دونم{midunam}/0,1
+fw: می‌دانم. || midānam.
+la: بعرف{baʿrif}/0,1
+eg: أنا عارف. || ana ʿārif.
+ms: أعرف. || aʿrif.
+he: אני{ani}/0 ; יודע{yode'a}/1
+tr: Biliyorum/0,1
+= 60 I don't know.
+pt: Eu/0 ; não/1 ; sei/2
+fa: نمی‌دونم{nemidunam}/0,1,2
+fw: نمی‌دانم. || nemidānam.
+la: ما بعرف{ma baʿrif}/0,1,2
+eg: مش عارف. || mish ʿārif.
+ms: لا أعرف. || lā aʿrif.
+he: אני{ani}/0 ; לא{lo}/1 ; יודע{yode'a}/2
+tr: Bilmiyorum/0,1,2
+= 61 Do you know?
+pt: Você/0 ; sabe/1
+fa: می‌دونی{miduni}/0,1
+fw: می‌دانی؟ || midāni?
+la: بتعرف{btaʿrif}/0,1
+eg: إنت عارف؟ || inta ʿārif?
+ms: هل تعرف؟ || hal taʿrif?
+he: אתה{ata}/0 ; יודע{yode'a}/1
+tr: Biliyor musun/0,1,2
+= 62 I understand.
+pt: Eu/0 ; entendo/1
+fa: می‌فهمم{mifahmam}/0,1
+fw: می‌فهمم. || mifahmam.
+la: فهمت{fhimt}/0,1
+eg: فاهم. || fāhim.
+ms: أفهم. || afham.
+he: אני{ani}/0 ; מבין{mevin}/1
+tr: Anlıyorum/0,1
+= 63 Do you understand?
+pt: Você/0 ; entende/1
+fa: می‌فهمی{mifahmi}/0,1
+fw: می‌فهمی؟ || mifahmi?
+la: فهمت{fhimt}/0,1
+eg: فاهم؟ || fāhim?
+ms: هل تفهم؟ || hal tafham?
+he: אתה{ata}/0 ; מבין{mevin}/1
+tr: Anlıyor musun/0,1,2
+= 64 I don't understand.
+pt: Eu/0 ; não/1 ; entendo/2
+fa: نمی‌فهمم{nemifahmam}/0,1,2
+fw: نمی‌فهمم. || nemifahmam.
+la: ما فهمت{ma fhimt}/0,1,2
+eg: مش فاهم. || mish fāhim.
+ms: لا أفهم. || lā afham.
+he: אני{ani}/0 ; לא{lo}/1 ; מבין{mevin}/2
+tr: Anlamıyorum/0,1,2
+= 65 I forgot.
+pt: Eu/0 ; esqueci/1
+fa: یادم رفت{yādam raft}/0,1
+fw: فراموش کردم. || farāmush kardam.
+la: نسيت{nsīt}/0,1
+eg: نسيت. || nisīt.
+ms: نسيتُ. || nasītu.
+he: שכחתי{shakhachti}/0,1
+tr: Unuttum/0,1
+= 66 Don't forget.
+pt: Não/0 ; esqueça/1
+fa: یادت نره{yādet nare}/0,1
+fw: فراموش نکن. || farāmush nakon.
+la: لا{la}/0 ; تنسى{tinsa}/1
+eg: ما تنساش. || ma tinsāsh.
+ms: لا تنسَ. || lā tansa.
+he: אל{al}/0 ; תשכח{tishkach}/1
+tr: Unutma/0,1
+= 67 I remember.
+pt: Eu/0 ; lembro/1
+fa: یادمه{yādame}/0,1
+fw: به یاد دارم. || be yād dāram.
+la: متذكر{mitzakkir}/0,1
+eg: فاكر. || fākir.
+ms: أتذكر. || atadhakkar.
+he: אני{ani}/0 ; זוכר{zokher}/1
+tr: Hatırlıyorum/0,1
+= 68 Do you remember?
+pt: Você/0 ; lembra/1
+fa: یادته{yādete}/0,1
+fw: به یاد داری؟ || be yād dāri?
+la: متذكر{mitzakkir}/0,1
+eg: فاكر؟ || fākir?
+ms: هل تتذكر؟ || hal tatadhakkar?
+he: אתה{ata}/0 ; זוכר{zokher}/1
+tr: Hatırlıyor musun/0,1,2
+= 69 I'm busy.
+pt: Eu/0 ; estou ocupado/1
+fa: من{man}/0 ; سرم شلوغه{saram sholughe}/1
+fw: من سرم شلوغ است. || man saram sholugh ast.
+la: أنا{ana}/0 ; مشغول{mashghūl}/1
+eg: أنا مشغول. || ana mashghūl.
+ms: أنا مشغول. || anā mashghūl.
+he: אני{ani}/0 ; עסוק{asuk}/1
+tr: Meşgulüm/0,1
+= 70 Are you busy?
+pt: Você/0 ; está ocupado/1
+fa: سرت شلوغه{saret sholughe}/0,1
+fw: سرت شلوغ است؟ || sarat sholugh ast?
+la: إنت{inta}/0 ; مشغول{mashghūl}/1
+eg: إنت مشغول؟ || inta mashghūl?
+ms: هل أنت مشغول؟ || hal anta mashghūl?
+he: אתה{ata}/0 ; עסוק{asuk}/1
+tr: Meşgul musun/0,1,2
+= 71 I'm not busy.
+pt: Eu/0 ; não/1 ; estou ocupado/2
+fa: من{man}/0 ; سرم شلوغ نیست{saram sholugh nist}/1,2
+fw: من سرم شلوغ نیست. || man saram sholugh nist.
+la: أنا{ana}/0 ; مش{mish}/1 ; مشغول{mashghūl}/2
+eg: أنا مش مشغول. || ana mish mashghūl.
+ms: لستُ مشغولًا. || lastu mashghūlan.
+he: אני{ani}/0 ; לא{lo}/1 ; עסוק{asuk}/2
+tr: Meşgul/2 ; değilim/0,1
+= 72 I'm tired.
+pt: Eu/0 ; estou cansado/1
+fa: من{man}/0 ; خسته‌ام{khaste-am}/1
+fw: من خسته هستم. || man khaste hastam.
+la: أنا{ana}/0 ; تعبان{taʿbān}/1
+eg: أنا تعبان. || ana taʿbān.
+ms: أنا متعب. || anā mutʿab.
+he: אני{ani}/0 ; עייף{ayef}/1
+tr: Yorgunum/0,1
+= 73 Are you tired?
+pt: Você/0 ; está cansado/1
+fa: خسته‌ای{khaste-i}/0,1
+fw: خسته هستی؟ || khaste hasti?
+la: إنت{inta}/0 ; تعبان{taʿbān}/1
+eg: إنت تعبان؟ || inta taʿbān?
+ms: هل أنت متعب؟ || hal anta mutʿab?
+he: אתה{ata}/0 ; עייף{ayef}/1
+tr: Yorgun musun/0,1,2
+= 74 I'm not tired.
+pt: Eu/0 ; não/1 ; estou cansado/2
+fa: من{man}/0 ; خسته نیستم{khaste nistam}/1,2
+fw: من خسته نیستم. || man khaste nistam.
+la: أنا{ana}/0 ; مش{mish}/1 ; تعبان{taʿbān}/2
+eg: أنا مش تعبان. || ana mish taʿbān.
+ms: لستُ متعبًا. || lastu mutʿaban.
+he: אני{ani}/0 ; לא{lo}/1 ; עייף{ayef}/2
+tr: Yorgun/2 ; değilim/0,1
+= 75 It's good.
+pt: Está/0 ; bom/1
+fa: خوبه{khube}/0,1
+fw: خوب است. || khub ast.
+la: منيح{mnīḥ}/0,1
+eg: كويس. || kwayyis.
+ms: إنه جيد. || innahu jayyid.
+he: זה{ze}/0 ; טוב{tov}/1
+tr: İyi/1 ; o/0
+= 76 Is it good?
+pt: Está/0 ; bom/1
+fa: خوبه{khube}/0,1
+fw: خوب است؟ || khub ast?
+la: منيح{mnīḥ}/0,1
+eg: كويس؟ || kwayyis?
+ms: هل هو جيد؟ || hal huwa jayyid?
+he: זה{ze}/0 ; טוב{tov}/1
+tr: İyi mi/0,1,2
+= 77 It's not good.
+pt: Não/1 ; está/0 ; bom/2
+fa: خوب نیست{khub nist}/0,1,2
+fw: خوب نیست. || khub nist.
+la: مش{mish}/1 ; منيح{mnīḥ}/2
+eg: مش كويس. || mish kwayyis.
+ms: ليس جيدًا. || laysa jayyidan.
+he: זה{ze}/0 ; לא{lo}/1 ; טוב{tov}/2
+tr: İyi/2 ; değil/0,1
+= 78 It's ready.
+pt: Está/0 ; pronto/1
+fa: آماده‌ست{āmāde-st}/0,1
+fw: آماده است. || āmāde ast.
+la: جاهز{jāhiz}/0,1
+eg: جاهز. || gāhiz.
+ms: إنه جاهز. || innahu jāhiz.
+he: זה{ze}/0 ; מוכן{mukhan}/1
+tr: Hazır/0,1
+= 79 Is it ready?
+pt: Está/0 ; pronto/1
+fa: آماده‌ست{āmāde-st}/0,1
+fw: آماده است؟ || āmāde ast?
+la: جاهز{jāhiz}/0,1
+eg: جاهز؟ || gāhiz?
+ms: هل هو جاهز؟ || hal huwa jāhiz?
+he: זה{ze}/0 ; מוכן{mukhan}/1
+tr: Hazır mı/0,1,2
+= 80 It's not ready yet.
+pt: Ainda/3 ; não/1 ; está/0 ; pronto/2
+fa: هنوز{hanuz}/3 ; آماده نیست{āmāde nist}/0,1,2
+fw: هنوز آماده نیست. || hanuz āmāde nist.
+la: لسا{lissa}/3 ; مش{mish}/1 ; جاهز{jāhiz}/2
+eg: لسه مش جاهز. || lissa mish gāhiz.
+ms: ليس جاهزًا بعد. || laysa jāhizan baʿd.
+he: זה{ze}/0 ; עוד{od}/3 ; לא{lo}/1 ; מוכן{mukhan}/2
+tr: Henüz/3 ; hazır/2 ; değil/0,1
+= 81 I'm coming.
+pt: Já/- ; vou/0,1
+fa: اومدم{umadam}/0,1
+fw: دارم می‌آیم. || dāram mi'āyam.
+la: جاي{jāy}/0,1
+eg: جاي. || gāy.
+ms: أنا قادم. || anā qādim.
+he: אני{ani}/0 ; בא{ba}/1
+tr: Geliyorum/0,1
+= 82 Are you coming?
+pt: Você/0 ; vem/1
+fa: میای{miyāy}/0,1
+fw: می‌آیی؟ || mi'āyi?
+la: جاي{jāy}/0,1
+eg: إنت جاي؟ || inta gāy?
+ms: هل أنت قادم؟ || hal anta qādim?
+he: אתה{ata}/0 ; בא{ba}/1
+tr: Geliyor musun/0,1,2
+= 83 I'm not coming.
+pt: Eu/0 ; não/1 ; vou/2
+fa: من{man}/0 ; نمیام{nemiyām}/1,2
+fw: من نمی‌آیم. || man nemi'āyam.
+la: أنا{ana}/0 ; مش{mish}/1 ; جاي{jāy}/2
+eg: أنا مش جاي. || ana mish gāy.
+ms: لن آتي. || lan ātī.
+he: אני{ani}/0 ; לא{lo}/1 ; בא{ba}/2
+tr: Gelmiyorum/0,1,2
+= 84 Who is coming?
+pt: Quem/0 ; vem/1
+fa: کی{ki}/0 ; میاد{miyād}/1
+fw: چه کسی می‌آید؟ || che kasi mi'āyad?
+la: مين{mīn}/0 ; جاي{jāy}/1
+eg: مين جاي؟ || mīn gāy?
+ms: من سيأتي؟ || man sa-ya'tī?
+he: מי{mi}/0 ; בא{ba}/1
+tr: Kim/0 ; geliyor/1

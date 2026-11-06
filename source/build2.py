@@ -91,6 +91,41 @@ for p in data:
         for tok in p[lang]:
             assert all(0 <= r < n for r in tok["refs"]), (p["en"], lang, tok)
 
+import glob, re as _re
+
+def me_tokens(line):
+    out = []
+    for part in line.split(" ; "):
+        w, refs = part.rsplit("/", 1)
+        m = _re.match(r"^(.*?)\{(.*)\}$", w.strip())
+        hz, rom = (m.group(1).strip(), m.group(2).strip()) if m else (w.strip(), "")
+        refs = refs.strip()
+        out.append({"hz": hz, "rom": rom, "refs": [] if refs == "-" else [int(r) for r in refs.split(",")]})
+    return out
+
+ME_TOK = {"fa": "fa", "la": "apc", "he": "he", "tr": "tr", "pt": "pt"}
+ME_FULL = {"fw": "fa_w", "eg": "arz", "ms": "ar"}
+by_en = {p["en"]: p for p in data}
+miss = []
+for f in sorted(glob.glob("me/*.txt")):
+    cur = None
+    for line in open(f, encoding = "utf-8"):
+        line = line.rstrip("\n")
+        if line.startswith("= "):
+            k, _, en = line[2:].partition(" ")
+            cur = data[int(k)] if k.isdigit() and int(k) < len(data) and data[int(k)]["en"] == en.strip() else None
+            if cur is None: miss.append(line[2:])
+        elif cur is not None and line[:4].rstrip(": ") in ME_TOK and line[2:4] == ": ":
+            toks = me_tokens(line[4:])
+            n = len(cur["gloss"])
+            toks = [dict(t, refs = [r for r in t["refs"] if 0 <= r < n]) for t in toks]
+            cur[ME_TOK[line[:2]]] = toks
+        elif cur is not None and line[:2] in ME_FULL and line[2:4] == ": ":
+            t, _, r = line[4:].partition(" || ")
+            cur[ME_FULL[line[:2]]] = {"t": t.strip(), "r": r.strip()}
+if miss: print("me: unmatched", len(miss), miss[:3])
+print("me coverage:", {k: sum(1 for p in data if p.get(k)) for k in ["pt", "fa", "fa_w", "apc", "arz", "ar", "he", "tr"]})
+
 from romanize import annotate, sentence_rom
 
 for p in data:
