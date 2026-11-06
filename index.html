@@ -2121,6 +2121,7 @@
   let toastTimer = null;
 
   function toastRarely(key, msg, ms = 600000) {
+    return;
     const k = "phrasebook-toast-" + key;
     const last = Number(store.get(k) || 0);
     if (Date.now() - last < ms) return;
@@ -2776,7 +2777,7 @@
       stop();
       player.src = render(list);
       const pr = player.play();
-      if (pr && pr.catch) pr.catch(() => toast(tr("t_blocked")));
+      if (pr && pr.catch) pr.catch(() => {});
       return true;
     }
 
@@ -2786,7 +2787,7 @@
       stop();
       player.src = uri;
       const pr = player.play();
-      if (pr && pr.catch) pr.catch(() => toast(tr("t_blocked")));
+      if (pr && pr.catch) pr.catch(() => {});
     }
 
     return { play, playUri, stop, render, syllables };
@@ -2803,7 +2804,6 @@
     Tones.stop();
     const r = Voice.speak(text, lang);
     if (r === "ok") return;
-    toast(r === "missing" ? tr("t_missing", { lang: NAMES[lang] }) : tr("t_nospeech"));
   }
 
   function sayTones(lang, rom) {
