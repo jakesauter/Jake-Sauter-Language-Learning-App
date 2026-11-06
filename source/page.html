@@ -112,6 +112,25 @@
   .bar { border-bottom: 1px solid var(--line); box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
   .bar > * { min-width: 0; }
 
+  .top-row { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--s-2); }
+  .top-row h1 { min-width: 0; }
+
+  .uilang {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+    padding: 4px 6px 4px 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+  }
+
+  .uilang svg { width: 16px; height: 16px; flex: none; }
+  .uilang select { border: 0; background: transparent; color: inherit; font: inherit; font-size: var(--t-sm); padding: 0 2px; max-width: 7.5rem; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
   .langs {
     display: flex;
     flex-wrap: wrap;
@@ -606,63 +625,70 @@
 <div class="wrap">
 
   <header class="top">
-    <h1>Language Learning Guide</h1>
-    <p class="sub"><span id="count"></span> everyday sentences, word by word, in up to seven languages.</p>
+    <div class="top-row">
+      <h1 data-i18n="app_title">Language Learning Guide</h1>
+      <label class="uilang" for="ui-lang">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="vh" data-i18n="ui_lang">App language</span>
+        <select id="ui-lang"></select>
+      </label>
+    </div>
+    <p class="sub" id="sub"></p>
   </header>
 
   <div class="bar">
     <form class="search" id="search-form" autocomplete="off" role="search">
-      <input id="q" type="search" placeholder="Type any sentence or search" aria-label="Type any English sentence, or search the phrasebook" maxlength="200">
-      <button class="btn" id="go" type="submit">Translate</button>
-      <button class="btn quiet" id="view-btn" type="button" aria-expanded="false" aria-controls="view">View</button>
+      <input id="q" type="search" placeholder="Type any sentence or search" data-i18n-ph="search_ph" aria-label="Type any English sentence, or search the guide" data-i18n-aria="search_aria" maxlength="200">
+      <button class="btn" id="go" type="submit" data-i18n="translate">Translate</button>
+      <button class="btn quiet" id="view-btn" type="button" aria-expanded="false" aria-controls="view" data-i18n="view">View</button>
     </form>
 
-    <div class="langs" id="langs" role="group" aria-label="Languages to show"></div>
+    <div class="langs" id="langs" role="group" aria-label="Languages to show" data-i18n-aria="langs_aria"></div>
 
     <div class="view" id="view" hidden>
       <div class="row">
-        <span class="label">Show</span>
-        <label for="col-tsn"><input type="checkbox" id="col-tsn" checked> Taishanese</label>
-        <label for="col-yue"><input type="checkbox" id="col-yue" checked> Cantonese</label>
-        <label for="col-cmn"><input type="checkbox" id="col-cmn" checked> Mandarin</label>
-        <label for="col-es"><input type="checkbox" id="col-es" checked> Spanish</label>
-        <label for="col-fr"><input type="checkbox" id="col-fr" checked> French</label>
-        <label for="col-de"><input type="checkbox" id="col-de" checked> German</label>
+        <span class="label" data-i18n="show">Show</span>
+        <label for="col-tsn"><input type="checkbox" id="col-tsn" checked> <span data-i18n="tsn">Taishanese</span></label>
+        <label for="col-yue"><input type="checkbox" id="col-yue" checked> <span data-i18n="yue">Cantonese</span></label>
+        <label for="col-cmn"><input type="checkbox" id="col-cmn" checked> <span data-i18n="cmn">Mandarin</span></label>
+        <label for="col-es"><input type="checkbox" id="col-es" checked> <span data-i18n="es">Spanish</span></label>
+        <label for="col-fr"><input type="checkbox" id="col-fr" checked> <span data-i18n="fr">French</span></label>
+        <label for="col-de"><input type="checkbox" id="col-de" checked> <span data-i18n="de">German</span></label>
       </div>
       <div class="row">
-        <label for="show-nums"><input type="checkbox" id="show-nums"> Tone numbers</label>
-        <button class="link" id="guide-btn" type="button">Tone and reading guide</button>
+        <label for="show-nums"><input type="checkbox" id="show-nums"> <span data-i18n="tone_numbers">Tone numbers</span></label>
+        <button class="link" id="guide-btn" type="button" data-i18n="guide_btn">Tone and reading guide</button>
       </div>
       <div class="row">
-        <span class="label">Sound</span>
-        <label for="tap-speak"><input type="checkbox" id="tap-speak" checked> Speak words when tapped</label>
+        <span class="label" data-i18n="sound">Sound</span>
+        <label for="tap-speak"><input type="checkbox" id="tap-speak" checked> <span data-i18n="speak_tap">Speak words when tapped</span></label>
       </div>
       <div class="row">
-        <span class="label">Theme</span>
+        <span class="label" data-i18n="theme">Theme</span>
         <label for="skin">
           <select id="skin">
-            <option value="paper">Paper (white)</option>
-            <option value="cream">Cream</option>
-            <option value="mist">Mist (soft gray)</option>
-            <option value="dusk">Dusk (dim)</option>
-            <option value="charcoal">Charcoal (dark)</option>
-            <option value="night">Night (black)</option>
+            <option value="paper" data-i18n="skin_paper">Paper (white)</option>
+            <option value="cream" data-i18n="skin_cream">Cream</option>
+            <option value="mist" data-i18n="skin_mist">Mist (soft gray)</option>
+            <option value="dusk" data-i18n="skin_dusk">Dusk (dim)</option>
+            <option value="charcoal" data-i18n="skin_charcoal">Charcoal (dark)</option>
+            <option value="night" data-i18n="skin_night">Night (black)</option>
           </select>
         </label>
       </div>
       <div class="row">
-        <span class="label">Notes spelling</span>
+        <span class="label" data-i18n="notes_spelling">Notes spelling</span>
         <label for="spelling">
           <select id="spelling">
-            <option value="easy">Easy English</option>
-            <option value="std">Standard (Jyutping, pinyin, Stephen Li)</option>
+            <option value="easy" data-i18n="sp_easy">Easy English</option>
+            <option value="std" data-i18n="sp_std">Standard (Jyutping, pinyin, Stephen Li)</option>
           </select>
         </label>
-        <label for="speed">Speed
+        <label for="speed"><span data-i18n="speed">Speed</span>
           <select id="speed">
-            <option value="1">Normal</option>
-            <option value="0.75">Slower</option>
-            <option value="0.5">Slow</option>
+            <option value="1" data-i18n="sp_normal">Normal</option>
+            <option value="0.75" data-i18n="sp_slower">Slower</option>
+            <option value="0.5" data-i18n="sp_slow">Slow</option>
           </select>
         </label>
       </div>
@@ -681,48 +707,48 @@
 <dialog class="guide" id="guide" aria-labelledby="guide-title">
   <div class="guide-in">
     <div class="guide-head">
-      <h2 id="guide-title">Reading guide</h2>
-      <button class="btn quiet" id="guide-close" type="button">Close</button>
+      <h2 id="guide-title" data-i18n="g_title">Reading guide</h2>
+      <button class="btn quiet" id="guide-close" type="button" data-i18n="g_close">Close</button>
     </div>
 
     <section>
-      <h3>Word rows</h3>
-      <p>Each language is a row, read left to right in its own word order. Lines link each word to its English meaning and to the matching word in the next row: Taishanese, Cantonese, English, Mandarin, then Spanish, French and German. Tap a word to trace it.</p>
-      <p>A dashed box is a particle with no English equivalent. A <b>?</b> marks a word that couldn't be confirmed. English in <i>(parentheses)</i> is implied or describes a tone.</p>
-      <p>The round button at the start of each row plays the whole line in that language. Each word box shows two spellings: the standard romanization on top (Jyutping, pinyin or Stephen Li's Taishanese, with tone numbers), and an easy English sound-alike below in italics. Notes use easy English by default; switch them to the standard systems under View.</p>
-      <p>Translations of new sentences are word-by-word builds: they keep English word order and skip most particles, so treat them as a starting point.</p>
-      <p><b>Listen</b> uses your device's own Cantonese, Mandarin, Spanish, French and German voices. No phone ships a Taishanese voice, so this app has its own Taishanese speech engine. It builds every consonant, vowel and tone from the romanization, including the hissy ɬ and the rising changed tones. It sounds robotic, but it works even with the phone on silent. Tapping a word also speaks it.</p>
-      <p>Spanish follows Latin American usage (ustedes, manejar, la alberca). Lines use the friendly tú, tu and du forms you would use with family.</p>
+      <h3 data-i18n="g_rows">Word rows</h3>
+      <p data-i18n-html="g_p1"></p>
+      <p data-i18n-html="g_p2"></p>
+      <p data-i18n-html="g_p3"></p>
+      <p data-i18n-html="g_p4"></p>
+      <p data-i18n-html="g_p5"></p>
+      <p data-i18n-html="g_p6"></p>
     </section>
 
     <section>
-      <h3>Cantonese tones</h3>
+      <h3 data-i18n="g_yue_h">Cantonese tones</h3>
       <div class="tones six" id="tones-yue"></div>
-      <p>Each line is your voice's pitch, low at the bottom and high at the top, ending at the dot. Same sound <b>si</b>, six meanings. Tone 1 sounds like Mandarin's 1st tone (ā), tone 2 like Mandarin's 2nd (á).</p>
+      <p data-i18n-html="g_yue_p">Each line is your voice's pitch, low at the bottom and high at the top, ending at the dot. Same sound <b>si</b>, six meanings. Tone 1 sounds like Mandarin's 1st tone (ā), tone 2 like Mandarin's 2nd (á).</p>
     </section>
 
     <section>
-      <h3>Taishanese tones</h3>
+      <h3 data-i18n="g_tsn_h">Taishanese tones</h3>
       <div class="tones five" id="tones-tsn"></div>
-      <p>Five main tones, shown on <b>hau</b>. The digits are pitch levels from 1 (low) to 5 (high).</p>
+      <p data-i18n-html="g_tsn_p">Five main tones, shown on <b>hau</b>. The digits are pitch levels from 1 (low) to 5 (high).</p>
       <div class="changed" id="tones-changed"></div>
       <div class="sounds">
-        <b>ɬ</b><span>a hissy "thl", like Welsh "ll"; replaces Cantonese s</span>
-        <b>ŋ</b><span>"ng" as in sing, even at the start of a word</span>
-        <b>ɔ</b><span>"aw" as in law</span>
-        <b>ə</b><span>"uh" as in sofa</span>
-        <b>ɛ</b><span>"e" as in bet</span>
+        <b>ɬ</b><span data-i18n="snd1">a hissy "thl", like Welsh "ll"; replaces Cantonese s</span>
+        <b>ŋ</b><span data-i18n="snd2">"ng" as in sing, even at the start of a word</span>
+        <b>ɔ</b><span data-i18n="snd3">"aw" as in law</span>
+        <b>ə</b><span data-i18n="snd4">"uh" as in sofa</span>
+        <b>ɛ</b><span data-i18n="snd5">"e" as in bet</span>
       </div>
     </section>
 
     <section>
-      <h3>Mandarin tones</h3>
-      <p>Pinyin marks the tone: ā high flat, á rising, ǎ dip, à falling, a light.</p>
+      <h3 data-i18n="g_cmn_h">Mandarin tones</h3>
+      <p data-i18n-html="g_cmn_p">Pinyin marks the tone: ā high flat, á rising, ǎ dip, à falling, a light.</p>
     </section>
 
     <section>
-      <h3>Sources</h3>
-      <p>Taishanese from Stephen Li's Taishanese dictionary. Spanish, French and German written for this guide, word by word. Word builds also use CC-CEDICT, Rime Cantonese Jyutping data, OpenCC and Jieba word frequencies. Google Translate output is shown for comparison on saved sentences.</p>
+      <h3 data-i18n="g_src_h">Sources</h3>
+      <p data-i18n-html="g_src_p">Taishanese from Stephen Li's Taishanese dictionary. Spanish, French and German written for this guide, word by word. Word builds also use CC-CEDICT, Rime Cantonese Jyutping data, OpenCC and Jieba word frequencies. Google Translate output is shown for comparison on saved sentences.</p>
     </section>
   </div>
 </dialog>
@@ -732,6 +758,286 @@
   const LEX = __WORDS__;
 
   const NS = "http://www.w3.org/2000/svg";
+  /* interface language: every label, message and the guide, in the seven languages the app teaches */
+
+  const UI = {
+    en: {
+      _name: "English", _lang: "en",
+      app_title: "Language Learning Guide", wbw: "Word by word",
+      sub: "{n} everyday sentences, word by word, in up to seven languages.",
+      search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
+      translate: "Translate", view: "View", ui_lang: "App language", langs_aria: "Languages to show",
+      show: "Show", tone_numbers: "Tone numbers", guide_btn: "Tone and reading guide", sound: "Sound", speak_tap: "Speak words when tapped",
+      theme: "Theme", skin_paper: "Paper (white)", skin_cream: "Cream", skin_mist: "Mist (soft gray)", skin_dusk: "Dusk (dim)", skin_charcoal: "Charcoal (dark)", skin_night: "Night (black)",
+      notes_spelling: "Notes spelling", sp_easy: "Easy English", sp_std: "Standard (Jyutping, pinyin, Stephen Li)",
+      speed: "Speed", sp_normal: "Normal", sp_slower: "Slower", sp_slow: "Slow",
+      contents: "Contents", topics: "{n} topics", no_match: "No saved sentences match. Press Translate to build it word by word.", no_topic: "No sentences in this topic.",
+      tsn: "Taishanese", yue: "Cantonese", en: "English", cmn: "Mandarin", es: "Spanish", fr: "French", de: "German",
+      listen: "Listen", listen_whole: "Listen to the whole sentence in {lang}", listen_in: "Listen in {lang}",
+      means: "Means:", grammar_word: "grammar word",
+      grammar_eu: "A grammar word English leaves out here. It holds the sentence together.",
+      grammar_zh: "A grammar word with no direct English equivalent. It shapes the tone or structure of the sentence.",
+      not_confirmed: "Not confirmed in this use, so check it with a native speaker.", not_confirmed_short: "not confirmed",
+      hint: "Tap a word to trace it and see what it means. Swipe sideways on long sentences.",
+      note: "Note", google_cmp: "Google Translate, for comparison",
+      t_nothing: "There's nothing to say here.", t_blocked: "Sound was blocked. Tap the button again.",
+      t_missing: "No {lang} voice on this device. On iPhone, add one in Settings › Accessibility › Spoken Content › Voices.",
+      t_nospeech: "This browser can't speak text. Try Safari or Chrome.",
+      t_voice_err: "The voice couldn't play here. On iPhone, check the side switch isn't on silent.",
+      t_silent: "No sound? On iPhone, turn off silent mode and check the volume. Taishanese plays either way.",
+      b_note: "A word-by-word build in English word order. Chinese, Spanish, French and German often order words differently and add small grammar words, so compare it with the closest saved sentences.",
+      b_dict: "Cantonese words marked ? come from a general dictionary and may sound formal or Mandarin-style.",
+      b_missing: "English words marked ? weren't found.",
+      b_saved: "Saved sentence · {cat}", b_none: "None of these words were found.", b_head: "Word-by-word build · {f} of {c} words found", b_closest: "Closest saved sentences",
+      g_title: "Reading guide", g_close: "Close", g_rows: "Word rows",
+      g_p1: "Each language is a row, read left to right in its own word order. Lines link each word to its English meaning and to the matching word in the next row. Tap a word to trace it.",
+      g_p2: "A dashed box is a grammar word with no English equivalent. A <b>?</b> marks a word that couldn't be confirmed. English in <i>(parentheses)</i> is implied or describes a tone.",
+      g_p3: "The round button at the start of each row plays the whole line in that language. Each word box shows two spellings: the standard romanization on top, with tone numbers, and an easy English sound-alike below in italics.",
+      g_p4: "Translations of new sentences are word-by-word builds. They keep English word order and skip most grammar words, so treat them as a starting point.",
+      g_p5: "<b>Listen</b> uses your device's own Cantonese, Mandarin, Spanish, French and German voices. No phone ships a Taishanese voice, so this app has its own Taishanese speech engine. It builds every consonant, vowel and tone from the romanization. It sounds robotic, but it works even with the phone on silent.",
+      g_p6: "Spanish follows Latin American usage. Lines use the friendly tú, tu and du forms you would use with family.",
+      g_yue_h: "Cantonese tones", g_yue_p: "Each line is your voice's pitch, low at the bottom and high at the top, ending at the dot. Same sound <b>si</b>, six meanings.",
+      g_tsn_h: "Taishanese tones", g_tsn_p: "Five main tones, shown on <b>hau</b>. The digits are pitch levels from 1 (low) to 5 (high).",
+      g_cmn_h: "Mandarin tones", g_cmn_p: "Pinyin marks the tone: ā high flat, á rising, ǎ dip, à falling, a light.",
+      g_src_h: "Sources", g_src_p: "Taishanese from Stephen Li's Taishanese dictionary. Spanish, French and German written for this guide. Word builds also use CC-CEDICT, Rime Cantonese, OpenCC and Jieba. Google Translate output is shown for comparison.",
+      snd1: "a hissy \"thl\", like Welsh \"ll\"; replaces Cantonese s", snd2: "\"ng\" as in sing, even at the start of a word", snd3: "\"aw\" as in law", snd4: "\"uh\" as in sofa", snd5: "\"e\" as in bet",
+      cats: {},
+    },
+
+    es: {
+      _name: "Español", _lang: "es",
+      app_title: "Guía para aprender idiomas", wbw: "Palabra por palabra",
+      sub: "{n} frases cotidianas, palabra por palabra, en hasta siete idiomas.",
+      search_ph: "Escribe una frase o busca", search_aria: "Escribe una frase en inglés o busca en la guía",
+      translate: "Traducir", view: "Ver", ui_lang: "Idioma de la app", langs_aria: "Idiomas visibles",
+      show: "Mostrar", tone_numbers: "Números de tono", guide_btn: "Guía de tonos y lectura", sound: "Sonido", speak_tap: "Decir las palabras al tocarlas",
+      theme: "Tema", skin_paper: "Papel (blanco)", skin_cream: "Crema", skin_mist: "Niebla (gris suave)", skin_dusk: "Atardecer (tenue)", skin_charcoal: "Carbón (oscuro)", skin_night: "Noche (negro)",
+      notes_spelling: "Ortografía de las notas", sp_easy: "Inglés fácil", sp_std: "Estándar (Jyutping, pinyin, Stephen Li)",
+      speed: "Velocidad", sp_normal: "Normal", sp_slower: "Más lento", sp_slow: "Lento",
+      contents: "Contenido", topics: "{n} temas", no_match: "Ninguna frase guardada coincide. Toca Traducir para armarla palabra por palabra.", no_topic: "No hay frases en este tema.",
+      tsn: "Taishanés", yue: "Cantonés", en: "Inglés", cmn: "Mandarín", es: "Español", fr: "Francés", de: "Alemán",
+      listen: "Escuchar", listen_whole: "Escuchar la frase completa en {lang}", listen_in: "Escuchar en {lang}",
+      means: "Significa:", grammar_word: "palabra gramatical",
+      grammar_eu: "Una palabra gramatical que el inglés omite aquí. Mantiene unida la frase.",
+      grammar_zh: "Una palabra gramatical sin equivalente directo en inglés. Da tono o estructura a la frase.",
+      not_confirmed: "No está confirmada en este uso; compruébala con un hablante nativo.", not_confirmed_short: "sin confirmar",
+      hint: "Toca una palabra para seguirla y ver qué significa. Desliza de lado en las frases largas.",
+      note: "Nota", google_cmp: "Google Translate, para comparar",
+      t_nothing: "Aquí no hay nada que decir.", t_blocked: "Se bloqueó el sonido. Toca el botón otra vez.",
+      t_missing: "No hay voz en {lang} en este dispositivo. En iPhone, agrégala en Ajustes › Accesibilidad › Contenido leído › Voces.",
+      t_nospeech: "Este navegador no puede leer en voz alta. Prueba Safari o Chrome.",
+      t_voice_err: "La voz no pudo sonar aquí. En iPhone, revisa que el interruptor lateral no esté en silencio.",
+      t_silent: "¿No hay sonido? En iPhone, quita el modo silencio y revisa el volumen. El taishanés suena de todos modos.",
+      b_note: "Una versión palabra por palabra en el orden del inglés. El chino, el español, el francés y el alemán suelen ordenar distinto y añadir palabras gramaticales, así que compárala con las frases guardadas más parecidas.",
+      b_dict: "Las palabras en cantonés con ? vienen de un diccionario general y pueden sonar formales o como mandarín.",
+      b_missing: "No se encontraron las palabras en inglés marcadas con ?.",
+      b_saved: "Frase guardada · {cat}", b_none: "No se encontró ninguna de estas palabras.", b_head: "Palabra por palabra · {f} de {c} palabras encontradas", b_closest: "Frases guardadas más parecidas",
+      g_title: "Guía de lectura", g_close: "Cerrar", g_rows: "Filas de palabras",
+      g_p1: "Cada idioma es una fila, que se lee de izquierda a derecha en su propio orden. Las líneas unen cada palabra con su significado en inglés y con la palabra correspondiente de la fila siguiente. Toca una palabra para seguirla.",
+      g_p2: "Un recuadro punteado es una palabra gramatical sin equivalente en inglés. Un <b>?</b> marca una palabra sin confirmar. El inglés entre <i>(paréntesis)</i> está implícito o describe un tono.",
+      g_p3: "El botón redondo al inicio de cada fila reproduce la línea completa en ese idioma. Cada recuadro muestra dos escrituras: la romanización estándar arriba, con números de tono, y una pronunciación fácil en inglés abajo, en cursiva.",
+      g_p4: "Las traducciones de frases nuevas se arman palabra por palabra. Conservan el orden del inglés y omiten casi todas las palabras gramaticales, así que tómalas como punto de partida.",
+      g_p5: "<b>Escuchar</b> usa las voces de tu dispositivo para cantonés, mandarín, español, francés y alemán. Ningún teléfono trae voz en taishanés, así que esta app tiene su propio motor de voz taishanés. Construye cada consonante, vocal y tono a partir de la romanización. Suena robótico, pero funciona aunque el teléfono esté en silencio.",
+      g_p6: "El español sigue el uso latinoamericano. Las frases usan el tú, tu y du de confianza que usarías en familia.",
+      g_yue_h: "Tonos del cantonés", g_yue_p: "Cada línea es el tono de tu voz, grave abajo y agudo arriba, y termina en el punto. El mismo sonido <b>si</b> tiene seis significados.",
+      g_tsn_h: "Tonos del taishanés", g_tsn_p: "Cinco tonos principales, mostrados con <b>hau</b>. Los números son niveles de tono del 1 (grave) al 5 (agudo).",
+      g_cmn_h: "Tonos del mandarín", g_cmn_p: "El pinyin marca el tono: ā alto y plano, á que sube, ǎ que baja y sube, à que baja, a ligero.",
+      g_src_h: "Fuentes", g_src_p: "Taishanés del diccionario de Stephen Li. Español, francés y alemán escritos para esta guía. Las traducciones nuevas usan CC-CEDICT, Rime Cantonese, OpenCC y Jieba. Se muestra Google Translate para comparar.",
+      snd1: "una \"thl\" soplada, como la \"ll\" galesa; reemplaza la s del cantonés", snd2: "\"ng\" como en inglés sing, incluso al inicio", snd3: "\"o\" abierta, como en inglés law", snd4: "una \"e\" neutra, como en inglés sofa", snd5: "\"e\" como en \"pez\"",
+      cats: { "Start Here": "Empieza aquí", "Talking About the Day": "Hablar del día", "Greetings": "Saludos", "Getting to know you": "Conocerse", "Family": "Familia", "Visiting": "De visita", "Meals": "Comidas", "Small Talk": "Charla", "Plans": "Planes", "Around the House": "En casa", "Cooking Together": "Cocinar juntos", "Family Events": "Eventos familiares", "Road Trip": "Viaje en carro", "Travel": "Viajes", "Weather": "Clima", "Work": "Trabajo", "School": "Escuela", "Hobbies": "Pasatiempos", "Swimming": "Natación", "Running & Biking": "Correr y bici", "Shopping": "Compras", "Pets": "Mascotas", "Health": "Salud", "Helping Out": "Echar una mano", "Learning": "Aprender", "Holidays": "Fiestas", "Feelings": "Sentimientos", "Joking Around": "Bromas", "Goodbyes": "Despedidas" },
+    },
+
+    fr: {
+      _name: "Français", _lang: "fr",
+      app_title: "Guide d'apprentissage des langues", wbw: "Mot à mot",
+      sub: "{n} phrases du quotidien, mot à mot, dans jusqu'à sept langues.",
+      search_ph: "Tape une phrase ou cherche", search_aria: "Tape une phrase en anglais, ou cherche dans le guide",
+      translate: "Traduire", view: "Affichage", ui_lang: "Langue de l'app", langs_aria: "Langues affichées",
+      show: "Afficher", tone_numbers: "Chiffres des tons", guide_btn: "Guide des tons et de la lecture", sound: "Son", speak_tap: "Prononcer les mots touchés",
+      theme: "Thème", skin_paper: "Papier (blanc)", skin_cream: "Crème", skin_mist: "Brume (gris doux)", skin_dusk: "Crépuscule (tamisé)", skin_charcoal: "Charbon (sombre)", skin_night: "Nuit (noir)",
+      notes_spelling: "Orthographe des notes", sp_easy: "Anglais facile", sp_std: "Standard (Jyutping, pinyin, Stephen Li)",
+      speed: "Vitesse", sp_normal: "Normale", sp_slower: "Plus lente", sp_slow: "Lente",
+      contents: "Sommaire", topics: "{n} thèmes", no_match: "Aucune phrase enregistrée ne correspond. Appuie sur Traduire pour la construire mot à mot.", no_topic: "Aucune phrase dans ce thème.",
+      tsn: "Taïshanais", yue: "Cantonais", en: "Anglais", cmn: "Mandarin", es: "Espagnol", fr: "Français", de: "Allemand",
+      listen: "Écouter", listen_whole: "Écouter toute la phrase en {lang}", listen_in: "Écouter en {lang}",
+      means: "Sens :", grammar_word: "mot grammatical",
+      grammar_eu: "Un mot grammatical que l'anglais omet ici. Il tient la phrase ensemble.",
+      grammar_zh: "Un mot grammatical sans équivalent direct en anglais. Il donne le ton ou la structure de la phrase.",
+      not_confirmed: "Non confirmé dans cet emploi : vérifie avec un locuteur natif.", not_confirmed_short: "non confirmé",
+      hint: "Touche un mot pour le suivre et voir son sens. Fais glisser sur les longues phrases.",
+      note: "Note", google_cmp: "Google Traduction, pour comparer",
+      t_nothing: "Il n'y a rien à dire ici.", t_blocked: "Le son a été bloqué. Touche le bouton à nouveau.",
+      t_missing: "Pas de voix en {lang} sur cet appareil. Sur iPhone, ajoutes-en une dans Réglages › Accessibilité › Contenu énoncé › Voix.",
+      t_nospeech: "Ce navigateur ne peut pas lire à voix haute. Essaie Safari ou Chrome.",
+      t_voice_err: "La voix n'a pas pu jouer ici. Sur iPhone, vérifie que le bouton latéral n'est pas en mode silencieux.",
+      t_silent: "Pas de son ? Sur iPhone, désactive le mode silencieux et vérifie le volume. Le taïshanais joue quand même.",
+      b_note: "Une version mot à mot dans l'ordre anglais. Le chinois, l'espagnol, le français et l'allemand ordonnent souvent les mots autrement et ajoutent de petits mots grammaticaux : compare avec les phrases enregistrées les plus proches.",
+      b_dict: "Les mots cantonais marqués ? viennent d'un dictionnaire général et peuvent sonner soutenus ou mandarins.",
+      b_missing: "Les mots anglais marqués ? sont introuvables.",
+      b_saved: "Phrase enregistrée · {cat}", b_none: "Aucun de ces mots n'a été trouvé.", b_head: "Mot à mot · {f} mots trouvés sur {c}", b_closest: "Phrases enregistrées les plus proches",
+      g_title: "Guide de lecture", g_close: "Fermer", g_rows: "Lignes de mots",
+      g_p1: "Chaque langue est une ligne, lue de gauche à droite dans son propre ordre. Des traits relient chaque mot à son sens anglais et au mot correspondant de la ligne suivante. Touche un mot pour le suivre.",
+      g_p2: "Une case en pointillés est un mot grammatical sans équivalent anglais. Un <b>?</b> marque un mot non confirmé. L'anglais entre <i>(parenthèses)</i> est sous-entendu ou décrit un ton.",
+      g_p3: "Le bouton rond au début de chaque ligne joue toute la phrase dans cette langue. Chaque case montre deux graphies : la romanisation standard en haut, avec les chiffres des tons, et une prononciation facile à l'anglaise en dessous, en italique.",
+      g_p4: "Les traductions de nouvelles phrases sont construites mot à mot. Elles gardent l'ordre anglais et sautent la plupart des mots grammaticaux : prends-les comme point de départ.",
+      g_p5: "<b>Écouter</b> utilise les voix cantonaise, mandarine, espagnole, française et allemande de ton appareil. Aucun téléphone n'a de voix taïshanaise, alors cette app a son propre moteur vocal taïshanais. Il construit chaque consonne, voyelle et ton à partir de la romanisation. Il sonne robotique, mais fonctionne même en mode silencieux.",
+      g_p6: "L'espagnol suit l'usage latino-américain. Les phrases utilisent le tú, tu et du familiers qu'on emploie en famille.",
+      g_yue_h: "Tons du cantonais", g_yue_p: "Chaque trait est la hauteur de ta voix, grave en bas et aigu en haut, et finit au point. Le même son <b>si</b> a six sens.",
+      g_tsn_h: "Tons du taïshanais", g_tsn_p: "Cinq tons principaux, montrés sur <b>hau</b>. Les chiffres sont des hauteurs de 1 (grave) à 5 (aigu).",
+      g_cmn_h: "Tons du mandarin", g_cmn_p: "Le pinyin marque le ton : ā haut et plat, á montant, ǎ creusé, à descendant, a léger.",
+      g_src_h: "Sources", g_src_p: "Taïshanais tiré du dictionnaire de Stephen Li. Espagnol, français et allemand écrits pour ce guide. Les traductions utilisent aussi CC-CEDICT, Rime Cantonese, OpenCC et Jieba. Google Traduction est montré pour comparer.",
+      snd1: "un « thl » soufflé, comme le « ll » gallois ; remplace le s cantonais", snd2: "« ng » comme dans l'anglais sing, même en début de mot", snd3: "« o » ouvert, comme dans « porte »", snd4: "« e » comme dans « le »", snd5: "« è » comme dans « mère »",
+      cats: { "Start Here": "Pour commencer", "Talking About the Day": "Parler de la journée", "Greetings": "Salutations", "Getting to know you": "Faire connaissance", "Family": "Famille", "Visiting": "En visite", "Meals": "Repas", "Small Talk": "Bavardage", "Plans": "Projets", "Around the House": "À la maison", "Cooking Together": "Cuisiner ensemble", "Family Events": "Fêtes de famille", "Road Trip": "En voiture", "Travel": "Voyages", "Weather": "Météo", "Work": "Travail", "School": "École", "Hobbies": "Loisirs", "Swimming": "Natation", "Running & Biking": "Course et vélo", "Shopping": "Courses", "Pets": "Animaux", "Health": "Santé", "Helping Out": "Donner un coup de main", "Learning": "Apprendre", "Holidays": "Fêtes", "Feelings": "Émotions", "Joking Around": "Pour rigoler", "Goodbyes": "Au revoir" },
+    },
+
+    de: {
+      _name: "Deutsch", _lang: "de",
+      app_title: "Sprachlern-Guide", wbw: "Wort für Wort",
+      sub: "{n} Alltagssätze, Wort für Wort, in bis zu sieben Sprachen.",
+      search_ph: "Satz eingeben oder suchen", search_aria: "Englischen Satz eingeben oder im Guide suchen",
+      translate: "Übersetzen", view: "Ansicht", ui_lang: "App-Sprache", langs_aria: "Angezeigte Sprachen",
+      show: "Anzeigen", tone_numbers: "Tonzahlen", guide_btn: "Ton- und Leseführer", sound: "Ton", speak_tap: "Wörter beim Antippen sprechen",
+      theme: "Design", skin_paper: "Papier (weiß)", skin_cream: "Creme", skin_mist: "Nebel (hellgrau)", skin_dusk: "Dämmerung (gedämpft)", skin_charcoal: "Anthrazit (dunkel)", skin_night: "Nacht (schwarz)",
+      notes_spelling: "Schreibweise in Notizen", sp_easy: "Einfaches Englisch", sp_std: "Standard (Jyutping, Pinyin, Stephen Li)",
+      speed: "Tempo", sp_normal: "Normal", sp_slower: "Langsamer", sp_slow: "Langsam",
+      contents: "Inhalt", topics: "{n} Themen", no_match: "Kein gespeicherter Satz passt. Tippe auf Übersetzen, um ihn Wort für Wort zu bauen.", no_topic: "Keine Sätze in diesem Thema.",
+      tsn: "Taishanesisch", yue: "Kantonesisch", en: "Englisch", cmn: "Mandarin", es: "Spanisch", fr: "Französisch", de: "Deutsch",
+      listen: "Anhören", listen_whole: "Den ganzen Satz auf {lang} anhören", listen_in: "Auf {lang} anhören",
+      means: "Bedeutet:", grammar_word: "Grammatikwort",
+      grammar_eu: "Ein Grammatikwort, das das Englische hier weglässt. Es hält den Satz zusammen.",
+      grammar_zh: "Ein Grammatikwort ohne direkte englische Entsprechung. Es prägt Ton oder Aufbau des Satzes.",
+      not_confirmed: "In dieser Verwendung nicht bestätigt. Frag am besten einen Muttersprachler.", not_confirmed_short: "nicht bestätigt",
+      hint: "Tippe ein Wort an, um es zu verfolgen und seine Bedeutung zu sehen. Bei langen Sätzen seitlich wischen.",
+      note: "Notiz", google_cmp: "Google Übersetzer, zum Vergleich",
+      t_nothing: "Hier gibt es nichts zu sagen.", t_blocked: "Der Ton wurde blockiert. Tippe noch einmal.",
+      t_missing: "Keine {lang}-Stimme auf diesem Gerät. Auf dem iPhone: Einstellungen › Bedienungshilfen › Gesprochene Inhalte › Stimmen.",
+      t_nospeech: "Dieser Browser kann keinen Text vorlesen. Versuche Safari oder Chrome.",
+      t_voice_err: "Die Stimme konnte hier nicht abspielen. Prüfe auf dem iPhone, dass der Seitenschalter nicht auf Stumm steht.",
+      t_silent: "Kein Ton? Schalte auf dem iPhone den Stummmodus aus und prüfe die Lautstärke. Taishanesisch spielt trotzdem.",
+      b_note: "Eine Wort-für-Wort-Version in englischer Wortstellung. Chinesisch, Spanisch, Französisch und Deutsch ordnen Wörter oft anders und fügen kleine Grammatikwörter hinzu, also vergleiche sie mit den ähnlichsten gespeicherten Sätzen.",
+      b_dict: "Kantonesische Wörter mit ? stammen aus einem allgemeinen Wörterbuch und klingen vielleicht förmlich oder nach Mandarin.",
+      b_missing: "Englische Wörter mit ? wurden nicht gefunden.",
+      b_saved: "Gespeicherter Satz · {cat}", b_none: "Keines dieser Wörter wurde gefunden.", b_head: "Wort für Wort · {f} von {c} Wörtern gefunden", b_closest: "Ähnlichste gespeicherte Sätze",
+      g_title: "Leseführer", g_close: "Schließen", g_rows: "Wortzeilen",
+      g_p1: "Jede Sprache ist eine Zeile, von links nach rechts in ihrer eigenen Wortstellung. Linien verbinden jedes Wort mit seiner englischen Bedeutung und dem passenden Wort in der nächsten Zeile. Tippe ein Wort an, um es zu verfolgen.",
+      g_p2: "Ein gestrichelter Kasten ist ein Grammatikwort ohne englische Entsprechung. Ein <b>?</b> markiert ein unbestätigtes Wort. Englisch in <i>(Klammern)</i> ist mitgemeint oder beschreibt einen Ton.",
+      g_p3: "Der runde Knopf am Anfang jeder Zeile spielt die ganze Zeile in dieser Sprache. Jeder Wortkasten zeigt zwei Schreibweisen: oben die Standard-Umschrift mit Tonzahlen, darunter kursiv eine einfache englische Aussprachehilfe.",
+      g_p4: "Übersetzungen neuer Sätze werden Wort für Wort gebaut. Sie behalten die englische Wortstellung und lassen die meisten Grammatikwörter weg, also sieh sie als Ausgangspunkt.",
+      g_p5: "<b>Anhören</b> nutzt die kantonesischen, Mandarin-, spanischen, französischen und deutschen Stimmen deines Geräts. Kein Handy hat eine taishanesische Stimme, deshalb hat diese App ihre eigene taishanesische Sprachsynthese. Sie baut jeden Konsonanten, Vokal und Ton aus der Umschrift. Sie klingt robotisch, funktioniert aber auch im Stummmodus.",
+      g_p6: "Das Spanisch folgt dem lateinamerikanischen Gebrauch. Die Sätze nutzen das vertraute tú, tu und du, wie in der Familie.",
+      g_yue_h: "Kantonesische Töne", g_yue_p: "Jede Linie ist die Tonhöhe deiner Stimme, tief unten und hoch oben, endend am Punkt. Derselbe Laut <b>si</b> hat sechs Bedeutungen.",
+      g_tsn_h: "Taishanesische Töne", g_tsn_p: "Fünf Haupttöne, gezeigt an <b>hau</b>. Die Ziffern sind Tonhöhen von 1 (tief) bis 5 (hoch).",
+      g_cmn_h: "Mandarin-Töne", g_cmn_p: "Pinyin markiert den Ton: ā hoch und flach, á steigend, ǎ fallend-steigend, à fallend, a leicht.",
+      g_src_h: "Quellen", g_src_p: "Taishanesisch aus Stephen Lis taishanesischem Wörterbuch. Spanisch, Französisch und Deutsch für diesen Guide geschrieben. Übersetzungen nutzen außerdem CC-CEDICT, Rime Cantonese, OpenCC und Jieba. Google Übersetzer wird zum Vergleich gezeigt.",
+      snd1: "ein zischendes „thl“, wie das walisische „ll“; ersetzt kantonesisches s", snd2: "„ng“ wie in „singen“, auch am Wortanfang", snd3: "offenes „o“ wie in „Sonne“", snd4: "„e“ wie in „bitte“", snd5: "„ä“ wie in „Bär“",
+      cats: { "Start Here": "Hier anfangen", "Talking About the Day": "Über den Tag reden", "Greetings": "Begrüßung", "Getting to know you": "Kennenlernen", "Family": "Familie", "Visiting": "Zu Besuch", "Meals": "Essen", "Small Talk": "Smalltalk", "Plans": "Pläne", "Around the House": "Zu Hause", "Cooking Together": "Zusammen kochen", "Family Events": "Familienfeste", "Road Trip": "Autofahrt", "Travel": "Reisen", "Weather": "Wetter", "Work": "Arbeit", "School": "Schule", "Hobbies": "Hobbys", "Swimming": "Schwimmen", "Running & Biking": "Laufen und Radfahren", "Shopping": "Einkaufen", "Pets": "Haustiere", "Health": "Gesundheit", "Helping Out": "Mithelfen", "Learning": "Lernen", "Holidays": "Feiertage", "Feelings": "Gefühle", "Joking Around": "Zum Spaß", "Goodbyes": "Abschied" },
+    },
+
+    yue: {
+      _name: "廣東話", _lang: "zh-HK",
+      app_title: "語言學習指南", wbw: "逐個字",
+      sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
+      search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
+      translate: "翻譯", view: "顯示", ui_lang: "介面語言", langs_aria: "顯示嘅語言",
+      show: "顯示", tone_numbers: "聲調數字", guide_btn: "聲調同讀音指南", sound: "聲音", speak_tap: "撳字嘅時候讀出嚟",
+      theme: "主題", skin_paper: "紙（白）", skin_cream: "米色", skin_mist: "霧（淺灰）", skin_dusk: "黃昏（暗啲）", skin_charcoal: "炭（深色）", skin_night: "夜（黑）",
+      notes_spelling: "註解拼音", sp_easy: "簡易英文", sp_std: "標準（粵拼、拼音、Stephen Li）",
+      speed: "速度", sp_normal: "正常", sp_slower: "慢啲", sp_slow: "慢",
+      contents: "目錄", topics: "{n} 個主題", no_match: "冇儲存咗嘅句子啱。撳「翻譯」逐個字砌出嚟。", no_topic: "呢個主題未有句子。",
+      tsn: "台山話", yue: "廣東話", en: "英文", cmn: "普通話", es: "西班牙文", fr: "法文", de: "德文",
+      listen: "聽", listen_whole: "用{lang}聽成句", listen_in: "用{lang}聽",
+      means: "意思：", grammar_word: "語法字",
+      grammar_eu: "英文喺度唔使講嘅語法字，用嚟連住成句。",
+      grammar_zh: "英文冇直接對應嘅語法字，影響句子嘅語氣或者結構。",
+      not_confirmed: "呢個用法未確認，最好問吓母語人士。", not_confirmed_short: "未確認",
+      hint: "撳一個字睇佢點連、咩意思。長句可以左右掃。",
+      note: "註解", google_cmp: "Google 翻譯，比較用",
+      t_nothing: "呢度冇嘢讀。", t_blocked: "聲音被擋咗，再撳一次。",
+      t_missing: "呢部機冇{lang}語音。iPhone 可以喺 設定 › 輔助使用 › 語音內容 › 聲音 度加。",
+      t_nospeech: "呢個瀏覽器唔識讀字，試吓 Safari 或者 Chrome。",
+      t_voice_err: "語音喺度播唔到。iPhone 請檢查側邊掣唔係靜音。",
+      t_silent: "冇聲？iPhone 請熄咗靜音同埋檢查音量。台山話點都播到。",
+      b_note: "逐個字砌出嚟，用英文字序。中文、西班牙文、法文同德文成日字序唔同，仲會加細細嘅語法字，所以同最相似嘅儲存句子比較吓。",
+      b_dict: "有 ? 嘅廣東話字嚟自一般字典，可能聽落比較書面或者似普通話。",
+      b_missing: "有 ? 嘅英文字搵唔到。",
+      b_saved: "儲存咗嘅句子 · {cat}", b_none: "呢啲字一個都搵唔到。", b_head: "逐個字 · {c} 個字搵到 {f} 個", b_closest: "最相似嘅儲存句子",
+      g_title: "閱讀指南", g_close: "閂", g_rows: "字行",
+      g_p1: "每種語言係一行，由左到右用自己嘅字序讀。線將每個字連去英文意思，同下一行對應嘅字。撳一個字就睇到佢點連。",
+      g_p2: "虛線框係英文冇對應嘅語法字。<b>?</b> 代表未確認嘅字。<i>（括號）</i>入面嘅英文係隱含嘅意思或者語氣。",
+      g_p3: "每行開頭嘅圓掣會用嗰種語言讀成行。每個字框有兩種拼法：上面係標準拼音，有聲調數字；下面斜體係簡易英文讀音。",
+      g_p4: "新句子嘅翻譯係逐個字砌出嚟，保留英文字序，冇咗大部分語法字，所以當佢係起點就好。",
+      g_p5: "<b>聽</b> 用你部機自帶嘅廣東話、普通話、西班牙文、法文同德文語音。冇手機有台山話語音，所以呢個 app 有自己嘅台山話發音引擎，由拼音砌出每個聲母、韻母同聲調。聽落似機械人，但係靜音模式都播到。",
+      g_p6: "西班牙文跟拉丁美洲用法。句子用屋企人之間嘅親切講法 tú、tu 同 du。",
+      g_yue_h: "廣東話聲調", g_yue_p: "每條線係你把聲嘅音高，下面低、上面高，喺點度完。同一個音 <b>si</b>，六個意思。",
+      g_tsn_h: "台山話聲調", g_tsn_p: "五個主要聲調，用 <b>hau</b> 示範。數字係音高，1 最低，5 最高。",
+      g_cmn_h: "普通話聲調", g_cmn_p: "拼音標住聲調：ā 高平、á 上升、ǎ 降升、à 下降、a 輕聲。",
+      g_src_h: "資料來源", g_src_p: "台山話來自 Stephen Li 嘅台山話字典。西班牙文、法文同德文係為呢個指南寫嘅。翻譯亦用咗 CC-CEDICT、Rime 粵拼、OpenCC 同結巴。儲存句子會顯示 Google 翻譯作比較。",
+      snd1: "吹氣嘅「thl」，好似威爾斯文嘅「ll」；代替廣東話嘅 s", snd2: "「ng」，好似「我」嘅開頭", snd3: "好似「柯」嘅「o」", snd4: "輕輕嘅「e」，好似英文 sofa 尾", snd5: "好似「些」嘅「e」",
+      cats: { "Start Here": "由呢度開始", "Talking About the Day": "傾吓今日", "Greetings": "打招呼", "Getting to know you": "互相認識", "Family": "屋企人", "Visiting": "探人", "Meals": "食飯", "Small Talk": "閒聊", "Plans": "計劃", "Around the House": "屋企", "Cooking Together": "一齊煮飯", "Family Events": "家庭聚會", "Road Trip": "揸車去玩", "Travel": "旅行", "Weather": "天氣", "Work": "返工", "School": "返學", "Hobbies": "興趣", "Swimming": "游水", "Running & Biking": "跑步同踩單車", "Shopping": "買嘢", "Pets": "寵物", "Health": "健康", "Helping Out": "幫手", "Learning": "學嘢", "Holidays": "節日", "Feelings": "感受", "Joking Around": "講笑", "Goodbyes": "講再見" },
+    },
+
+    cmn: {
+      _name: "普通话", _lang: "zh-CN",
+      app_title: "语言学习指南", wbw: "逐词",
+      sub: "{n} 个日常句子，逐词拆解，最多七种语言。",
+      search_ph: "输入任意句子或搜索", search_aria: "输入一句英文，或在指南中搜索",
+      translate: "翻译", view: "显示", ui_lang: "界面语言", langs_aria: "显示的语言",
+      show: "显示", tone_numbers: "声调数字", guide_btn: "声调和读音指南", sound: "声音", speak_tap: "点字时读出来",
+      theme: "主题", skin_paper: "纸（白）", skin_cream: "米色", skin_mist: "雾（浅灰）", skin_dusk: "黄昏（暗）", skin_charcoal: "炭（深色）", skin_night: "夜（黑）",
+      notes_spelling: "注释拼写", sp_easy: "简易英文", sp_std: "标准（粤拼、拼音、Stephen Li）",
+      speed: "语速", sp_normal: "正常", sp_slower: "慢一点", sp_slow: "慢",
+      contents: "目录", topics: "{n} 个主题", no_match: "没有匹配的已存句子。点“翻译”逐词拼出来。", no_topic: "这个主题还没有句子。",
+      tsn: "台山话", yue: "粤语", en: "英语", cmn: "普通话", es: "西班牙语", fr: "法语", de: "德语",
+      listen: "听", listen_whole: "用{lang}听整句", listen_in: "用{lang}听",
+      means: "意思：", grammar_word: "语法词",
+      grammar_eu: "英语在这里省略的语法词，用来连接整个句子。",
+      grammar_zh: "英语里没有直接对应的语法词，影响句子的语气或结构。",
+      not_confirmed: "这个用法未经确认，最好问一下母语者。", not_confirmed_short: "未确认",
+      hint: "点一个词，看它怎么连接、什么意思。长句可以左右滑动。",
+      note: "注释", google_cmp: "Google 翻译，供比较",
+      t_nothing: "这里没有可读的内容。", t_blocked: "声音被拦截了，请再点一次。",
+      t_missing: "这台设备没有{lang}语音。iPhone 可在 设置 › 辅助功能 › 朗读内容 › 声音 中添加。",
+      t_nospeech: "这个浏览器无法朗读文字，试试 Safari 或 Chrome。",
+      t_voice_err: "语音在这里无法播放。iPhone 请检查侧边开关不是静音。",
+      t_silent: "没有声音？iPhone 请关闭静音并检查音量。台山话照样能播放。",
+      b_note: "按英语词序逐词拼出。中文、西班牙语、法语和德语的词序常常不同，还会加小的语法词，所以请和最相近的已存句子比较。",
+      b_dict: "带 ? 的粤语词来自通用词典，听起来可能偏书面或像普通话。",
+      b_missing: "带 ? 的英文词没有找到。",
+      b_saved: "已存句子 · {cat}", b_none: "这些词一个都没找到。", b_head: "逐词拼出 · {c} 个词找到 {f} 个", b_closest: "最相近的已存句子",
+      g_title: "阅读指南", g_close: "关闭", g_rows: "词行",
+      g_p1: "每种语言是一行，从左到右按自己的词序读。连线把每个词连到英文意思，以及下一行对应的词。点一个词就能看它怎么连接。",
+      g_p2: "虚线框是英语没有对应的语法词。<b>?</b> 表示未确认的词。<i>（括号）</i>里的英文是隐含的意思或语气。",
+      g_p3: "每行开头的圆形按钮会用该语言读出整行。每个词框有两种拼写：上面是带声调数字的标准拼音，下面斜体是简易英文读音。",
+      g_p4: "新句子的翻译是逐词拼出的，保留英语词序，省略大部分语法词，所以把它当作起点。",
+      g_p5: "<b>听</b> 使用你设备自带的粤语、普通话、西班牙语、法语和德语语音。没有手机自带台山话语音，所以这个应用有自己的台山话发音引擎，根据拼音合成每个声母、韵母和声调。听起来像机器人，但静音模式下也能播放。",
+      g_p6: "西班牙语采用拉丁美洲用法。句子使用家人之间亲切的 tú、tu 和 du。",
+      g_yue_h: "粤语声调", g_yue_p: "每条线是你声音的音高，下低上高，在圆点结束。同一个音 <b>si</b>，六个意思。",
+      g_tsn_h: "台山话声调", g_tsn_p: "五个主要声调，用 <b>hau</b> 示范。数字是音高，1 最低，5 最高。",
+      g_cmn_h: "普通话声调", g_cmn_p: "拼音标出声调：ā 高平、á 上升、ǎ 降升、à 下降、a 轻声。",
+      g_src_h: "资料来源", g_src_p: "台山话来自 Stephen Li 的台山话词典。西班牙语、法语和德语为本指南编写。翻译还用到 CC-CEDICT、Rime 粤拼、OpenCC 和结巴分词。已存句子显示 Google 翻译供比较。",
+      snd1: "送气的“thl”，像威尔士语的“ll”；取代粤语的 s", snd2: "“ng”，像英语 sing 的结尾，也可以在开头", snd3: "像“哦”的“o”", snd4: "轻轻的“e”，像“的”", snd5: "像“耶”的“e”",
+      cats: { "Start Here": "从这里开始", "Talking About the Day": "聊聊今天", "Greetings": "打招呼", "Getting to know you": "互相认识", "Family": "家人", "Visiting": "做客", "Meals": "吃饭", "Small Talk": "闲聊", "Plans": "计划", "Around the House": "在家", "Cooking Together": "一起做饭", "Family Events": "家庭聚会", "Road Trip": "自驾游", "Travel": "旅行", "Weather": "天气", "Work": "工作", "School": "学校", "Hobbies": "爱好", "Swimming": "游泳", "Running & Biking": "跑步和骑车", "Shopping": "购物", "Pets": "宠物", "Health": "健康", "Helping Out": "帮忙", "Learning": "学习", "Holidays": "节日", "Feelings": "感受", "Joking Around": "开玩笑", "Goodbyes": "道别" },
+    },
+  };
+
+  UI.tsn = Object.assign({}, UI.yue, {
+    _name: "台山話", _lang: "zh-HK",
+    sub: "{n} 句日常句子，逐個字拆開，最多七種話。",
+    cats: Object.assign({}, UI.yue.cats, { "Meals": "吃飯", "Cooking Together": "一齊煮飯", "Swimming": "游水", "Talking About the Day": "講下今日" }),
+  });
+
+  let uiLang = "en";
+
+  function tr(key, vars) {
+    const pack = UI[uiLang] || UI.en;
+    let s = pack[key] ?? UI.en[key] ?? key;
+    if (vars) Object.keys(vars).forEach(k => { s = s.split("{" + k + "}").join(vars[k]); });
+    return s;
+  }
+
+  const catName = c => (UI[uiLang] && UI[uiLang].cats && UI[uiLang].cats[c]) || c;
+
+
   const LANES = ["tsn", "yue", "en", "cmn", "es", "fr", "de"];
   const NAMES = { tsn: "Taishanese", yue: "Cantonese", en: "English", cmn: "Mandarin", es: "Spanish", fr: "French", de: "German" };
   const EU = new Set(["es", "fr", "de"]);
@@ -922,7 +1228,7 @@
     if (isEU(lang)) {
       const b = el("button", "lp", speaker);
       b.type = "button";
-      b.setAttribute("aria-label", `Listen to the whole sentence in ${NAMES[lang]}`);
+      b.setAttribute("aria-label", tr("listen_whole", { lang: NAMES[lang] }));
       b.addEventListener("click", e => { e.stopPropagation(); sayVoice(euText(p, lang), lang); });
       slot.appendChild(b);
       return slot;
@@ -930,7 +1236,7 @@
 
     const b = el("button", "lp", speaker);
     b.type = "button";
-    b.setAttribute("aria-label", `Listen to the whole sentence in ${NAMES[lang]}`);
+    b.setAttribute("aria-label", tr("listen_whole", { lang: NAMES[lang] }));
     b.addEventListener("click", e => { e.stopPropagation(); if (lang === "tsn") sayTsn(rom); else sayVoice(text, lang); });
     slot.appendChild(b);
 
@@ -1063,12 +1369,12 @@
         u.onstart = () => { started = true; };
         u.onerror = e => {
           if (e && (e.error === "canceled" || e.error === "interrupted")) return;
-          toastRarely("voice-error", "The voice couldn't play here. On iPhone, check the side switch isn't on silent, or try the downloaded file in Safari.");
+          toastRarely("voice-error", tr("t_voice_err"));
         };
         synth.speak(u);
         if (synth.paused) synth.resume();
         setTimeout(() => {
-          if (!started && !synth.speaking) toastRarely("silent", "No sound? On iPhone, turn off silent mode and check the volume. Taishanese plays either way.");
+          if (!started && !synth.speaking) toastRarely("silent", tr("t_silent"));
         }, 2500);
         return "ok";
       } catch (e) {
@@ -1634,7 +1940,7 @@
       stop();
       player.src = render(list);
       const pr = player.play();
-      if (pr && pr.catch) pr.catch(() => toast("Sound was blocked. Tap the button again."));
+      if (pr && pr.catch) pr.catch(() => toast(tr("t_blocked")));
       return true;
     }
 
@@ -1644,7 +1950,7 @@
       stop();
       player.src = uri;
       const pr = player.play();
-      if (pr && pr.catch) pr.catch(() => toast("Sound was blocked. Tap the button again."));
+      if (pr && pr.catch) pr.catch(() => toast(tr("t_blocked")));
     }
 
     return { play, playUri, stop, render, syllables };
@@ -1652,7 +1958,7 @@
 
   function sayTsn(rom) {
     const clean = String(rom || "").split(/\s+/).filter(s => /\d$/.test(s)).join(" ");
-    if (!clean) { toast("There's nothing to say here."); return; }
+    if (!clean) { toast(tr("t_nothing")); return; }
     const uri = TsnVoice.dataUri(clean, settings.rate);
     if (uri) Tones.playUri(uri);
   }
@@ -1661,10 +1967,7 @@
     Tones.stop();
     const r = Voice.speak(text, lang);
     if (r === "ok") return;
-    const name = { yue: "Cantonese (Hong Kong)", cmn: "Chinese (China mainland)", es: "Spanish", fr: "French", de: "German" }[lang];
-    toast(r === "missing"
-      ? `No ${NAMES[lang]} voice on this device. On iPhone, add one in Settings › Accessibility › Spoken Content › Voices › ${name}.`
-      : "This browser can't speak text. Try Safari or Chrome.");
+    toast(r === "missing" ? tr("t_missing", { lang: NAMES[lang] }) : tr("t_nospeech"));
   }
 
   function sayTones(lang, rom) {
@@ -1814,14 +2117,14 @@
     const gnote = grammarNote(lang, t.hz);
 
     const parts = [];
-    if (means.length) parts.push(`<p><b>Means:</b> ${esc(means.join(" + "))}</p>`);
+    if (means.length) parts.push(`<p><b>${tr("means")}</b> ${esc(means.join(" + "))}</p>`);
     if (gnote) parts.push(`<p>${noteHtml(gnote)}</p>`);
     if (!means.length && !gnote) parts.push(isEU(lang)
-      ? "<p>A grammar word English leaves out here. It holds the sentence together.</p>"
-      : "<p>A grammar word with no direct English equivalent. It shapes the tone or structure of the sentence.</p>");
-    if (t.sure === false) parts.push("<p>Not confirmed in this use, so check it with a native speaker.</p>");
+      ? `<p>${tr("grammar_eu")}</p>`
+      : `<p>${tr("grammar_zh")}</p>`);
+    if (t.sure === false) parts.push(`<p>${tr("not_confirmed")}</p>`);
 
-    const kind = means.length ? NAMES[lang] : `${NAMES[lang]} · grammar word`;
+    const kind = means.length ? NAMES[lang] : `${NAMES[lang]} · ${tr("grammar_word")}`;
 
     box.innerHTML = isEU(lang)
       ? `<div class="wi-head"><span class="wi-w">${esc(t.hz)}</span><span class="wi-kind">${esc(kind)}</span></div>${parts.join("")}<div class="plays"></div>`
@@ -1829,12 +2132,12 @@
 
     const plays = box.querySelector(".plays");
     if (isEU(lang)) {
-      const b = el("button", "pbtn", `${speaker}Listen`);
+      const b = el("button", "pbtn", `${speaker}${tr("listen")}`);
       b.type = "button";
       b.addEventListener("click", () => sayVoice(t.hz, lang));
       plays.appendChild(b);
     } else if (/[㐀-鿿]/.test(t.hz)) {
-      const b = el("button", "pbtn", `${speaker}Listen`);
+      const b = el("button", "pbtn", `${speaker}${tr("listen")}`);
       b.type = "button";
       b.addEventListener("click", () => lang === "tsn" ? sayTsn(t.rom) : sayVoice(t.hz, lang));
       plays.appendChild(b);
@@ -1860,7 +2163,7 @@
     const rom = toks.map(t => t.rom).join(" ");
 
     if (lang !== "tsn") {
-      const b = el("button", "pbtn", `${speaker}Listen`);
+      const b = el("button", "pbtn", `${speaker}${tr("listen")}`);
       b.type = "button";
       b.setAttribute("aria-label", `Listen in ${NAMES[lang]}`);
       b.addEventListener("click", () => sayVoice(text, lang));
@@ -1885,7 +2188,7 @@
 
 
     const wrap = el("div", "");
-    wrap.appendChild(el("div", "label", "Word by word"));
+    wrap.appendChild(el("div", "label", tr("wbw")));
     const scroll = el("div", "lanes-scroll");
     const lanes = el("div", "lanes");
     const rows = {}, toks = { tsn: [], yue: [], en: [], cmn: [], es: [], fr: [], de: [] };
@@ -1919,7 +2222,7 @@
           b._refs = refs;
           b._lang = lang;
           b._tok = t;
-          b.setAttribute("aria-label", `${t.hz} ${t.rom || ""}${sure ? "" : ", not confirmed"}`);
+          b.setAttribute("aria-label", `${t.hz} ${t.rom || ""}${sure ? "" : ", " + tr("not_confirmed_short")}`);
           lane.appendChild(b);
           toks[lang].push(b);
         });
@@ -1937,19 +2240,19 @@
     const info = el("div", "wordinfo");
     info.hidden = true;
     wrap.appendChild(info);
-    wrap.appendChild(el("p", "hint", "Tap a word to trace it and see what it means. Swipe sideways on long sentences."));
+    wrap.appendChild(el("p", "hint", tr("hint")));
     box.appendChild(wrap);
 
     const notes = [];
-    if (p.tip) notes.push(`<p><b>Note</b>${noteHtml(p.tip)}</p>`);
-    if (p.tsn_tip) notes.push(`<p><b>Taishanese</b>${noteHtml(p.tsn_tip)}</p>`);
+    if (p.tip) notes.push(`<p><b>${tr("note")}</b>${noteHtml(p.tip)}</p>`);
+    if (p.tsn_tip) notes.push(`<p><b>${NAMES.tsn}</b>${noteHtml(p.tsn_tip)}</p>`);
     if (notes.length) box.appendChild(el("div", "notes", notes.join("")));
 
     if (p.g_yue || p.g_cmn) {
       const g = el("div", "google");
-      g.appendChild(el("span", "label", "Google Translate, for comparison"));
-      if (p.g_yue) g.appendChild(el("div", "", `<span>Cantonese</span><span class="g hz-yue">${esc(p.g_yue)}</span>${p.g_yue_rom ? `<span class="nr">${esc(romText("yue", p.g_yue_rom))}</span>` : ""}`));
-      if (p.g_cmn) g.appendChild(el("div", "", `<span>Mandarin</span><span class="g hz-cmn">${esc(p.g_cmn)}</span>${p.g_cmn_rom ? `<span class="nr">${esc(romText("cmn", p.g_cmn_rom))}</span>` : ""}`));
+      g.appendChild(el("span", "label", tr("google_cmp")));
+      if (p.g_yue) g.appendChild(el("div", "", `<span>${NAMES.yue}</span><span class="g hz-yue">${esc(p.g_yue)}</span>${p.g_yue_rom ? `<span class="nr">${esc(romText("yue", p.g_yue_rom))}</span>` : ""}`));
+      if (p.g_cmn) g.appendChild(el("div", "", `<span>${NAMES.cmn}</span><span class="g hz-cmn">${esc(p.g_cmn)}</span>${p.g_cmn_rom ? `<span class="nr">${esc(romText("cmn", p.g_cmn_rom))}</span>` : ""}`));
       box.appendChild(g);
     }
 
@@ -2054,12 +2357,13 @@
   let topic = "All";
   let filter = "";
 
-  $("count").textContent = PHRASES.length;
+  const chips = {};
 
   const chevron = '<svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   function rowItem(p) {
     const li = el("li", "item");
+    li.dataset.en = p.en;
     const btn = el("button", "row-btn");
     btn.type = "button";
     btn.setAttribute("aria-expanded", "false");
@@ -2100,12 +2404,12 @@
     nav.innerHTML = "";
     const det = el("details", "toc-d");
     det.id = "toc-d";
-    det.appendChild(el("summary", "", `<span id="toc-title">Contents</span><span class="n">${CATS.length} topics</span>${chevron}`));
+    det.appendChild(el("summary", "", `<span id="toc-title">${tr("contents")}</span><span class="n">${tr("topics", { n: CATS.length })}</span>${chevron}`));
     const ol = el("ol", "");
     CATS.forEach(c => {
       const n = PHRASES.filter(p => p.cat === c).length;
       const li = el("li", "");
-      const b = el("button", "", `<span>${esc(c)}</span><span class="n">${n}</span>`);
+      const b = el("button", "", `<span>${esc(catName(c))}</span><span class="n">${n}</span>`);
       b.type = "button";
       b.addEventListener("click", () => {
         const h = document.getElementById(topicId(c));
@@ -2126,7 +2430,7 @@
     const items = PHRASES.filter(matches);
     $("toc").hidden = !!filter;
     if (!items.length) {
-      main.appendChild(el("p", "empty", filter ? "No saved sentences match. Press Translate to build it word by word." : "No sentences in this topic."));
+      main.appendChild(el("p", "empty", filter ? tr("no_match") : tr("no_topic")));
       return;
     }
 
@@ -2136,8 +2440,8 @@
       if (!group.length) return;
       const head = el("div", "group-title");
       head.id = topicId(c);
-      head.innerHTML = `<h3>${esc(c)}<span class="n">${group.length}</span></h3>`;
-      const up = el("button", "link", "Contents");
+      head.innerHTML = `<h3>${esc(catName(c))}<span class="n">${group.length}</span></h3>`;
+      const up = el("button", "link", tr("contents"));
       up.type = "button";
       up.addEventListener("click", () => { $("toc-d").open = true; $("toc").scrollIntoView({ behavior: "smooth", block: "start" }); });
       head.appendChild(up);
@@ -2313,10 +2617,10 @@
       });
     });
 
-    const notes = ["A word-by-word build in English word order. Chinese, Spanish, French and German often order words differently and add small grammar words, so compare it with the closest saved sentences."];
-    if (dict) notes.push("Cantonese words marked ? come from a general dictionary and may sound formal or Mandarin-style.");
+    const notes = [tr("b_note")];
+    if (dict) notes.push(tr("b_dict"));
     if (noTsn) notes.push(`${noTsn} word${noTsn === 1 ? " has" : "s have"} no Taishanese entry, so that row has gaps.`);
-    if (out.missing.length) notes.push("English words marked ? weren't found.");
+    if (out.missing.length) notes.push(tr("b_missing"));
     out.tip = notes.join(" ");
 
     return { p: out, found, counted };
@@ -2359,7 +2663,7 @@
     close.addEventListener("click", () => { $("q").value = ""; filter = ""; clearResult(); renderList(); });
 
     if (exact) {
-      head.appendChild(el("span", "what", `Saved sentence · ${esc(exact.cat)}`));
+      head.appendChild(el("span", "what", tr("b_saved", { cat: esc(catName(exact.cat)) })));
       head.appendChild(close);
       result.appendChild(head);
       result.appendChild(renderDetail(exact));
@@ -2368,13 +2672,13 @@
 
     const g = buildGuess(text);
     if (!g || !g.found) {
-      head.appendChild(el("span", "what", "None of these words were found."));
+      head.appendChild(el("span", "what", tr("b_none")));
       head.appendChild(close);
       result.appendChild(head);
       return;
     }
 
-    head.appendChild(el("span", "what", `Word-by-word build · ${g.found} of ${g.counted} words found`));
+    head.appendChild(el("span", "what", tr("b_head", { f: g.found, c: g.counted })));
     head.appendChild(close);
     result.appendChild(head);
     result.appendChild(renderDetail(g.p));
@@ -2382,7 +2686,7 @@
     const near = closest(text, 3).filter(p => p !== exact);
     if (near.length) {
       const box = el("div", "near");
-      box.appendChild(el("div", "label", "Closest saved sentences"));
+      box.appendChild(el("div", "label", tr("b_closest")));
       const ul = el("ul", "list");
       near.forEach(p => ul.appendChild(rowItem(p)));
       box.appendChild(ul);
@@ -2420,7 +2724,6 @@
     drawAll();
   }
 
-  const SHORT = { tsn: "Taishanese", yue: "Cantonese", cmn: "Mandarin", es: "Spanish", fr: "French", de: "German" };
 
   ["tsn", "yue", "cmn", "es", "fr", "de"].forEach(l => {
     const box = $("col-" + l);
@@ -2428,7 +2731,8 @@
     if (saved !== null) box.checked = saved === "1";
     show[l] = box.checked;
 
-    const chip = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span>${SHORT[l]}`);
+    const chip = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span><span class="nm">${NAMES[l]}</span>`);
+    chips[l] = chip;
     chip.type = "button";
     chip.setAttribute("aria-pressed", box.checked ? "true" : "false");
     chip.addEventListener("click", () => { box.checked = !box.checked; box.dispatchEvent(new Event("change")); });
@@ -2503,6 +2807,45 @@
   if (savedSpeed && [...speed.options].some(o => o.value === savedSpeed)) speed.value = savedSpeed;
   settings.rate = Number(speed.value);
   speed.addEventListener("change", () => { settings.rate = Number(speed.value); store.set("phrasebook-speed", speed.value); });
+
+  const uiSel = $("ui-lang");
+  Object.keys(UI).filter(k => k !== "tsn").concat("tsn").forEach(k => {
+    const o = document.createElement("option");
+    o.value = k;
+    o.textContent = UI[k]._name;
+    uiSel.appendChild(o);
+  });
+
+  function applyUI(lang) {
+    uiLang = UI[lang] ? lang : "en";
+    uiSel.value = uiLang;
+    document.documentElement.lang = UI[uiLang]._lang;
+    document.title = tr("app_title");
+    LANES.forEach(l => { NAMES[l] = tr(l); });
+    document.querySelectorAll("[data-i18n]").forEach(e => { e.textContent = tr(e.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-html]").forEach(e => { e.innerHTML = tr(e.dataset.i18nHtml); });
+    document.querySelectorAll("[data-i18n-ph]").forEach(e => { e.placeholder = tr(e.dataset.i18nPh); });
+    document.querySelectorAll("[data-i18n-aria]").forEach(e => { e.setAttribute("aria-label", tr(e.dataset.i18nAria)); });
+    $("sub").textContent = tr("sub", { n: PHRASES.length });
+    Object.keys(chips).forEach(l => { chips[l].querySelector(".nm").textContent = NAMES[l]; });
+  }
+
+  applyUI(store.get("phrasebook-ui") || "en");
+
+  uiSel.addEventListener("change", () => {
+    store.set("phrasebook-ui", uiSel.value);
+    applyUI(uiSel.value);
+    const open = [...document.querySelectorAll("#list .row-btn[aria-expanded=true]")].map(b => b.closest("li") && b.closest("li").dataset.en);
+    renderChips();
+    renderList();
+    open.forEach(en => {
+      const li = [...document.querySelectorAll("#list li")].find(x => x.dataset.en === en);
+      const b = li && li.querySelector(".row-btn");
+      if (b) b.click();
+    });
+    const q = $("q").value.trim();
+    if (result.children.length && q) showResult(q);
+  });
 
   renderChips();
   renderList();

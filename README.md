@@ -11,6 +11,7 @@ A phone-friendly guide to everyday family conversation, broken down word by word
 - Tap any word to hear it and see what it means, including grammar words like 得, 呀, 咗, ne … pas and lass uns
 - Play a whole sentence from the button at the start of each row: device voices for Cantonese, Mandarin, Spanish, French and German, and a built-in Taishanese speech synthesizer
 - Six themes, from Paper (white) to Night (black)
+- The interface itself can be switched to English, Español, Français, Deutsch, 廣東話, 普通话 or 台山話
 - Easy English spelling by default, with Jyutping, pinyin and Stephen Li's Taishanese romanization available under View
 - Type any English sentence for a word-by-word build from the built-in dictionary
 
