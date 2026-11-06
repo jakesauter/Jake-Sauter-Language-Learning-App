@@ -2,7 +2,7 @@
 
   const UI = {
     en: {
-      _name: "English", _lang: "en", tagline: "Grok a language, word by word.",
+      _name: "English", _lang: "en", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Grok a language, word by word.",
       app_title: "Polygrok", wbw: "Word by word",
       sub: "{n} everyday sentences, word by word, in up to seven languages.",
       search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
@@ -45,7 +45,7 @@
     },
 
     es: {
-      _name: "Español", _lang: "es", tagline: "Entiende un idioma a fondo, palabra por palabra.",
+      _name: "Español", _lang: "es", full_title: "Frase completa", show_big: "Mostrar en grande", c_head: "Versión natural", c_note: "Armada a partir de la estructura de la frase y reordenada según la gramática de cada idioma. Compruébala con un hablante nativo y compárala con las frases guardadas más parecidas.", tagline: "Entiende un idioma a fondo, palabra por palabra.",
       app_title: "Polygrok", wbw: "Palabra por palabra",
       sub: "{n} frases cotidianas, palabra por palabra, en hasta siete idiomas.",
       search_ph: "Escribe una frase o busca", search_aria: "Escribe una frase en inglés o busca en la guía",
@@ -88,7 +88,7 @@
     },
 
     fr: {
-      _name: "Français", _lang: "fr", tagline: "Comprends une langue à fond, mot à mot.",
+      _name: "Français", _lang: "fr", full_title: "Phrase complète", show_big: "Afficher en grand", c_head: "Version naturelle", c_note: "Construite à partir de la structure de la phrase, puis remise dans l'ordre et la grammaire de chaque langue. Vérifie avec un locuteur natif et compare avec les phrases enregistrées.", tagline: "Comprends une langue à fond, mot à mot.",
       app_title: "Polygrok", wbw: "Mot à mot",
       sub: "{n} phrases du quotidien, mot à mot, dans jusqu'à sept langues.",
       search_ph: "Tape une phrase ou cherche", search_aria: "Tape une phrase en anglais, ou cherche dans le guide",
@@ -131,7 +131,7 @@
     },
 
     de: {
-      _name: "Deutsch", _lang: "de", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
+      _name: "Deutsch", _lang: "de", full_title: "Ganzer Satz", show_big: "Groß anzeigen", c_head: "Natürliche Version", c_note: "Aus dem Satzbau erstellt und in Wortstellung und Grammatik jeder Sprache gebracht. Prüfe sie mit einem Muttersprachler und vergleiche mit den gespeicherten Sätzen.", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
       app_title: "Polygrok", wbw: "Wort für Wort",
       sub: "{n} Alltagssätze, Wort für Wort, in bis zu sieben Sprachen.",
       search_ph: "Satz eingeben oder suchen", search_aria: "Englischen Satz eingeben oder im Guide suchen",
@@ -174,7 +174,7 @@
     },
 
     yue: {
-      _name: "廣東話", _lang: "zh-HK", tagline: "逐個字，真正識一種語言。",
+      _name: "廣東話", _lang: "zh-HK", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
       app_title: "Polygrok", wbw: "逐個字",
       sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
       search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
@@ -217,7 +217,7 @@
     },
 
     cmn: {
-      _name: "普通话", _lang: "zh-CN", tagline: "逐词逐句，真正懂一门语言。",
+      _name: "普通话", _lang: "zh-CN", full_title: "整句", show_big: "放大显示", c_head: "自然句子", c_note: "根据句子结构（谁、做什么、什么时候、在哪里）生成，再按每种语言的语法排列。请向母语者确认，并与最相近的已存句子比较。", tagline: "逐词逐句，真正懂一门语言。",
       app_title: "Polygrok", wbw: "逐词",
       sub: "{n} 个日常句子，逐词拆解，最多七种语言。",
       search_ph: "输入任意句子或搜索", search_aria: "输入一句英文，或在指南中搜索",

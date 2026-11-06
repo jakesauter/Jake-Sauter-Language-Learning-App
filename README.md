@@ -17,7 +17,8 @@ A phone-friendly guide to everyday family conversation, broken down word by word
 - Six themes, from Paper (white) to Night (black)
 - The interface itself can be switched to English, Español, Français, Deutsch, 廣東話, 普通话 or 台山話
 - Easy English spelling by default, with Jyutping, pinyin and Stephen Li's Taishanese romanization available under View
-- Type any English sentence for a word-by-word build from the built-in dictionary
+- Type any English sentence and a built-in sentence composer rebuilds it in each language's own grammar: Chinese word order, aspect and question particles, and Spanish, French and German conjugation, articles and word order
+- A full-sentence section under every card, with a full-screen view to show someone who speaks only that language
 
 The whole app is one self-contained `index.html`.
 
