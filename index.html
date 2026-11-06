@@ -576,6 +576,136 @@
   .tok .w { font-size: var(--t-md, 1rem); line-height: 1.25; white-space: nowrap; padding: 0.15rem 0; }
   .wi-w { font-size: 1.35rem; font-weight: 600; }
 
+  .ico { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
+  .toc-name { display: inline-flex; align-items: center; gap: 10px; }
+  .toc-name .ico { width: 20px; height: 20px; color: var(--ink-2); }
+  .group-title h3 { display: flex; align-items: center; gap: 10px; }
+  .group-title h3 .ico { width: 24px; height: 24px; }
+
+  .learn-bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); margin-top: var(--s-1); }
+
+  .practice-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 8px 12px;
+    border: 1.5px solid var(--ink);
+    border-radius: 14px;
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .practice-cta .ico { width: 26px; height: 26px; }
+  .practice-cta span { display: grid; line-height: 1.2; }
+  .practice-cta b { font-size: var(--t-md); }
+  .practice-cta small { font-size: var(--t-xs); color: var(--muted); }
+  .book-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; min-height: 52px; }
+  .book-cta .ico { width: 20px; height: 20px; }
+  .book-cta .n { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .now-tip { display: flex; align-items: flex-start; gap: 8px; margin-top: var(--s-2); padding: 0; background: none; border: 0; font: inherit; font-size: var(--t-sm); color: var(--ink-2); text-align: left; cursor: pointer; }
+  .now-tip .ico { width: 18px; height: 18px; margin-top: 2px; }
+  .book-acts { display: flex; flex-wrap: wrap; gap: 6px; }
+  .book-acts .pbtn.on, .add-practice.on { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+  .book-acts .ico { width: 15px; height: 15px; }
+  dialog.book .list { margin: 0; }
+  .lp-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: var(--s-3) 0; }
+  .lp-tabs .chip { display: inline-flex; align-items: center; gap: 6px; }
+  .lp-tabs .ico { width: 16px; height: 16px; }
+  dialog.learn .lp-day { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-4); }
+  dialog.learn .lp-day li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; }
+  dialog.learn .lp-day .ico { width: 26px; height: 26px; margin-top: 2px; }
+  dialog.learn .lp-day h3, dialog.learn .lp-day p { margin: 0 0 4px; }
+  dialog.learn .lp-rule h3 { display: flex; align-items: center; gap: 10px; }
+  dialog.learn .lp-rule h3 .ico { width: 24px; height: 24px; }
+  dialog.learn .lp-rule ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; line-height: 1.5; }
+  dialog.learn .lp-rule li, dialog.learn .lp-day p { font-size: 0.95rem; }
+  .learn-link { display: inline-flex; align-items: center; gap: 6px; background: none; border: 0; padding: 4px 0; font: inherit; font-size: var(--t-sm); color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .learn-link svg { width: 18px; height: 18px; }
+
+  .learn-row { display: grid; gap: var(--s-3); }
+  .add-practice { justify-self: start; }
+  .add-practice.on { border-color: var(--ink); }
+  .add-practice .ico { width: 15px; height: 15px; }
+  .hooks, .pr-hooks, .wi-hooks { display: grid; gap: 6px; }
+  .hooks p, .pr-hooks p, .wi-hooks p { margin: 0; display: flex; gap: 8px; align-items: flex-start; font-size: 0.95rem; line-height: 1.45; }
+  .hooks .ico, .pr-hooks .ico, .wi-hooks .ico { width: 18px; height: 18px; margin-top: 2px; color: var(--ink-2); }
+  .hooks b, .pr-hooks b { margin-right: 4px; }
+  .my-hook-l { display: grid; gap: 4px; font-size: var(--t-xs); font-weight: 700; color: var(--muted); }
+  .my-hook { font: inherit; font-size: 0.95rem; font-weight: 400; color: var(--ink); background: var(--wash); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; resize: vertical; }
+
+  dialog.practice {
+    width: min(640px, calc(100vw - 16px));
+    height: min(860px, calc(100dvh - 24px));
+    max-height: calc(100dvh - 24px);
+    border: 1px solid var(--ink);
+    border-radius: 18px;
+    padding: 0;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  dialog.practice::backdrop { background: rgba(17, 17, 17, 0.5); }
+  .pr-top { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--paper); border-bottom: 1px solid var(--line); }
+  .pr-title { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: var(--t-lg); }
+  .pr-title .ico { width: 24px; height: 24px; }
+  .pr-body { display: grid; gap: var(--s-4); padding: var(--s-4); align-content: start; }
+  .pr-lead { margin: 0; color: var(--ink-2); }
+  .pr-langs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pr-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .pr-stat { display: grid; justify-items: center; padding: 10px 4px; border: 1px solid var(--line); border-radius: 12px; text-align: center; }
+  .pr-stat b { font-size: 1.5rem; line-height: 1.1; }
+  .pr-stat span { font-size: 0.7rem; color: var(--muted); line-height: 1.2; }
+  .pr-acts { display: grid; gap: 8px; }
+  .pr-big { display: flex; align-items: center; gap: 12px; padding: 12px 14px; text-align: left; min-height: 64px; }
+  .pr-big .ico { width: 28px; height: 28px; }
+  .pr-big span { display: grid; gap: 2px; }
+  .pr-big small { font-weight: 400; font-size: var(--t-xs); opacity: 0.8; }
+  .pr-opt { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; font-size: var(--t-sm); }
+  .pr-opt select { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
+  .pr-head { display: flex; align-items: center; gap: 10px; font-size: var(--t-sm); color: var(--muted); }
+  .pr-cat { display: inline-flex; align-items: center; gap: 6px; }
+  .pr-new { margin-left: auto; font-size: var(--t-xs); font-weight: 700; border: 1px solid var(--ink); color: var(--ink); border-radius: 999px; padding: 1px 8px; }
+  .pr-prompt { font-size: clamp(1.4rem, 6vw, 2rem); font-weight: 700; line-height: 1.25; }
+  .pr-hint { margin: 0; color: var(--muted); font-size: var(--t-sm); }
+  .pr-show { justify-self: start; display: inline-flex; align-items: center; gap: 6px; }
+  .pr-show svg { width: 16px; height: 16px; }
+  .pr-answer { display: grid; gap: 10px; padding: var(--s-3) var(--s-4); background: var(--wash); border-radius: 14px; }
+  .pr-target { font-size: clamp(1.5rem, 7vw, 2.2rem); line-height: 1.3; font-weight: 600; overflow-wrap: anywhere; }
+  .pr-rom { display: grid; gap: 2px; color: var(--ink-2); }
+  .pr-rom .easy { font-style: italic; color: var(--muted); }
+  .pr-rom .std .syl sup { display: inline; }
+  .pr-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pr-tools .ico { width: 14px; height: 14px; }
+  .pr-rate { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .pr-rate .btn { display: grid; justify-items: center; padding: 8px 4px; min-height: 56px; }
+  .pr-rate small { font-weight: 400; font-size: 0.7rem; opacity: 0.8; }
+  .pr-opts { display: grid; gap: 8px; }
+  .pr-opt.btn { text-align: left; font-weight: 600; padding: 12px 14px; min-height: 48px; }
+  .btn.right { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn.wrong { text-decoration: line-through; opacity: 0.6; }
+  .pr-verdict { margin: 0; font-weight: 700; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .pr-char { font-size: 1.8rem; }
+  .pr-verdict .syl sup { display: inline; }
+  .pr-tones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .pr-tone { display: grid; justify-items: center; gap: 2px; padding: 10px 4px; min-height: 76px; }
+  .pr-tone svg { width: 40px; height: 40px; overflow: visible; }
+  .pr-tone.right svg .pitch { stroke: var(--paper); }
+  .pr-tone.right svg .head { fill: var(--paper); }
+  .pr-done { display: grid; justify-items: center; gap: 6px; padding: var(--s-5) 0; text-align: center; }
+  .pr-done .ico { width: 40px; height: 40px; }
+  .pr-done b { font-size: 1.5rem; }
+
+  dialog.learn .lp-item { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; }
+  dialog.learn .lp-item .ico { width: 28px; height: 28px; margin-top: 2px; }
+  dialog.learn .lp-item h3 { margin: 0 0 4px; }
+  dialog.learn .lp-item p { margin: 0 0 6px; }
+  dialog.learn .lp-how { color: var(--ink-2); }
+  dialog.learn .lp-routine, dialog.learn .lp-src { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; font-size: 0.95rem; }
+  dialog.learn a { color: var(--ink); }
+
   .full { display: grid; gap: 2px; }
   .full .label { margin-bottom: var(--s-1); }
   .full-row { display: grid; grid-template-columns: 5.2em minmax(0, 1fr) auto; gap: var(--s-2); align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
@@ -730,6 +860,12 @@
       </label>
     </div>
     <p class="sub" id="sub"></p>
+    <div class="learn-bar">
+      <button class="practice-cta" id="practice-btn" type="button"></button>
+      <button class="book-cta" id="book-btn" type="button"></button>
+      <button class="learn-link" id="learn-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="learn_btn">How to learn with Polygrok</span></button>
+    </div>
+    <button class="now-tip" id="now-tip" type="button"></button>
   </header>
 
   <div class="bar">
@@ -858,7 +994,7 @@
 
   const UI = {
     en: {
-      _name: "English", _lang: "en", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Grok a language, word by word.",
+      _name: "English", _lang: "en", b_btn: "My phrasebook", b_save: "Save to my phrasebook", bk_saved: "In my phrasebook", b_know: "I know this", b_known: "Known", b_title: "My phrasebook", b_lead: "The sentences you actually need, in one place. Saved sentences go into Practice first. Sentences you mark as known are skipped as new cards.", b_tab_saved: "Saved", b_tab_known: "Known", b_empty: "Nothing saved yet. Open any sentence, or translate your own, and tap Save to my phrasebook.", b_empty_known: "Nothing marked as known yet. Open a sentence you already know and tap I know this.", b_copy: "Copy as text", b_copied: "Copied", b_practice: "Practice these", l_tab_why: "Why it works", l_tab_day: "Your day", l_tab_rules: "Rules and roots", l_tab_read: "Reading list", l_day_lead: "When each kind of practice helps most, from morning coffee to bed.", l_rules_tip: "Open any word to see its parts and sound family, worked out from these rules.", l_read_lead: "Key books in language teaching, learning science and linguistic anthropology, plus research papers on arXiv.", now_morning: "Morning: review what's due. Sleep just locked in yesterday's words.", now_day: "Daytime: shadow a few sentences, or use one with the family.", now_evening: "Evening: a good time to learn new sentences.", now_night: "Before bed: a quick look at today's sentences, then sleep on it.", p_title: "Practice", p_lead: "Practicing {lang}. A few minutes a day, spaced out, beats long sessions.", p_due: "due today", p_new: "new today", p_learned: "learned", p_streak: "day streak", p_start: "Start today's session", p_start_d: "Recall, say it aloud, and listen, mixed together", p_listen: "Listening quiz", p_listen_d: "Hear a sentence and pick its meaning", p_tones: "Tone trainer", p_tones_d: "Hear a syllable and pick its pitch", p_newper: "New sentences per day", p_why: "How this works", p_nothing: "Nothing is due right now. Come back later, or raise new sentences per day.", p_back: "Back", p_newtag: "New", p_say: "Say it out loud in {lang}, then tap Show. Guess if you're not sure.", p_reveal: "Show", p_again: "Again", p_hard: "Hard", p_good: "Good", p_easy: "Easy", p_rate: "How well did you remember it?", p_listen_q: "Listen to the {lang} and pick what it means.", p_play: "Play", p_right: "Right!", p_wrong: "Not quite.", p_next: "Next", p_shadow: "Shadow 3×", p_your_turn: "Your turn ({n}/3)", p_done: "{n} cards reviewed", p_done_pct: "{p}% remembered", p_sleep: "Come back tomorrow: sleep helps new words settle into long-term memory.", p_after: "{d} still due · {s}-day streak", p_tone_q: "Listen to one syllable. Which pitch shape is it?", p_tone_done: "Keep going: ears learn tones from many different examples.", p_cta: "{d} due · {n} new · {s}-day streak", p_add: "Add to practice", p_added: "In practice ✓", hooks_h: "Memory hooks", myhook: "Your own hook", myhook_ph: "Write a sound-alike, image or story that helps you. Hooks you make yourself stick best.", l_title: "How Polygrok helps you learn", l_lead: "What memory research says works for adults learning a new language, and how this app uses it.", l_inapp: "In Polygrok:", l_routine_h: "A good daily routine", learn_btn: "How to learn with Polygrok", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Grok a language, word by word.",
       app_title: "Polygrok", wbw: "Word by word",
       sub: "{n} everyday sentences, word by word, in up to seven languages.",
       search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
@@ -901,7 +1037,7 @@
     },
 
     es: {
-      _name: "Español", _lang: "es", full_title: "Frase completa", show_big: "Mostrar en grande", c_head: "Versión natural", c_note: "Armada a partir de la estructura de la frase y reordenada según la gramática de cada idioma. Compruébala con un hablante nativo y compárala con las frases guardadas más parecidas.", tagline: "Entiende un idioma a fondo, palabra por palabra.",
+      _name: "Español", _lang: "es", b_btn: "Mi libro de frases", b_save: "Guardar en mi libro", bk_saved: "En mi libro", b_know: "Ya la sé", b_known: "Sabida", b_title: "Mi libro de frases", b_lead: "Las frases que de verdad necesitas, en un solo lugar. Las guardadas salen primero en Practicar. Las que marcas como sabidas no aparecen como nuevas.", b_tab_saved: "Guardadas", b_tab_known: "Sabidas", b_empty: "Aún no hay nada guardado. Abre una frase, o traduce la tuya, y toca Guardar en mi libro.", b_empty_known: "Aún no marcaste ninguna como sabida. Abre una frase que ya conoces y toca Ya la sé.", b_copy: "Copiar como texto", b_copied: "Copiado", b_practice: "Practicar estas", l_tab_why: "Por qué funciona", l_tab_day: "Tu día", l_tab_rules: "Reglas y raíces", l_tab_read: "Lecturas", l_day_lead: "Cuándo ayuda más cada tipo de práctica, del café de la mañana a la cama.", l_rules_tip: "Abre cualquier palabra para ver sus partes y su familia de sonido, según estas reglas.", l_read_lead: "Libros clave sobre enseñanza de idiomas, ciencia del aprendizaje y antropología lingüística, y artículos de investigación en arXiv.", now_morning: "Mañana: repasa lo pendiente. El sueño acaba de fijar las palabras de ayer.", now_day: "Durante el día: repite unas frases o usa una con la familia.", now_evening: "Tarde: buen momento para aprender frases nuevas.", now_night: "Antes de dormir: un vistazo a las frases de hoy y a dormir.", p_title: "Practicar", p_lead: "Practicando {lang}. Unos minutos al día, espaciados, rinden más que sesiones largas.", p_due: "para hoy", p_new: "nuevas hoy", p_learned: "aprendidas", p_streak: "días seguidos", p_start: "Empezar la sesión de hoy", p_start_d: "Recordar, decirlo en voz alta y escuchar, mezclado", p_listen: "Prueba de escucha", p_listen_d: "Escucha una frase y elige su significado", p_tones: "Entrenador de tonos", p_tones_d: "Escucha una sílaba y elige su tono", p_newper: "Frases nuevas por día", p_why: "Cómo funciona", p_nothing: "No hay nada pendiente. Vuelve más tarde o sube las frases nuevas por día.", p_back: "Volver", p_newtag: "Nueva", p_say: "Dilo en voz alta en {lang} y luego toca Mostrar. Adivina si no estás seguro.", p_reveal: "Mostrar", p_again: "Otra vez", p_hard: "Difícil", p_good: "Bien", p_easy: "Fácil", p_rate: "¿Qué tan bien lo recordaste?", p_listen_q: "Escucha el {lang} y elige qué significa.", p_play: "Reproducir", p_right: "¡Correcto!", p_wrong: "No exactamente.", p_next: "Siguiente", p_shadow: "Repetir 3×", p_your_turn: "Tu turno ({n}/3)", p_done: "{n} tarjetas repasadas", p_done_pct: "{p}% recordado", p_sleep: "Vuelve mañana: el sueño ayuda a fijar las palabras nuevas.", p_after: "{d} pendientes · racha de {s} días", p_tone_q: "Escucha una sílaba. ¿Qué forma de tono tiene?", p_tone_done: "Sigue así: el oído aprende tonos con muchos ejemplos distintos.", p_cta: "{d} pendientes · {n} nuevas · racha de {s} días", p_add: "Añadir a práctica", p_added: "En práctica ✓", hooks_h: "Trucos para recordar", myhook: "Tu propio truco", myhook_ph: "Escribe un parecido, imagen o historia que te ayude. Los trucos propios se recuerdan mejor.", l_title: "Cómo te ayuda Polygrok a aprender", l_lead: "Lo que la investigación sobre la memoria dice que funciona para adultos que aprenden otro idioma, y cómo lo usa esta app.", l_inapp: "En Polygrok:", l_routine_h: "Una buena rutina diaria", learn_btn: "Cómo aprender con Polygrok", full_title: "Frase completa", show_big: "Mostrar en grande", c_head: "Versión natural", c_note: "Armada a partir de la estructura de la frase y reordenada según la gramática de cada idioma. Compruébala con un hablante nativo y compárala con las frases guardadas más parecidas.", tagline: "Entiende un idioma a fondo, palabra por palabra.",
       app_title: "Polygrok", wbw: "Palabra por palabra",
       sub: "{n} frases cotidianas, palabra por palabra, en hasta siete idiomas.",
       search_ph: "Escribe una frase o busca", search_aria: "Escribe una frase en inglés o busca en la guía",
@@ -944,7 +1080,7 @@
     },
 
     fr: {
-      _name: "Français", _lang: "fr", full_title: "Phrase complète", show_big: "Afficher en grand", c_head: "Version naturelle", c_note: "Construite à partir de la structure de la phrase, puis remise dans l'ordre et la grammaire de chaque langue. Vérifie avec un locuteur natif et compare avec les phrases enregistrées.", tagline: "Comprends une langue à fond, mot à mot.",
+      _name: "Français", _lang: "fr", b_btn: "Mon carnet", b_save: "Ajouter à mon carnet", bk_saved: "Dans mon carnet", b_know: "Je la connais", b_known: "Connue", b_title: "Mon carnet de phrases", b_lead: "Les phrases dont tu as vraiment besoin, au même endroit. Les phrases enregistrées passent en premier à l'entraînement. Celles marquées comme connues ne reviennent pas comme nouvelles.", b_tab_saved: "Enregistrées", b_tab_known: "Connues", b_empty: "Rien d'enregistré pour l'instant. Ouvre une phrase, ou traduis la tienne, et touche Ajouter à mon carnet.", b_empty_known: "Aucune phrase connue pour l'instant. Ouvre une phrase que tu connais et touche Je la connais.", b_copy: "Copier en texte", b_copied: "Copié", b_practice: "M'entraîner sur celles-ci", l_tab_why: "Pourquoi ça marche", l_tab_day: "Ta journée", l_tab_rules: "Règles et racines", l_tab_read: "À lire", l_day_lead: "Quand chaque type d'entraînement aide le plus, du café du matin au coucher.", l_rules_tip: "Ouvre n'importe quel mot pour voir ses parties et sa famille de sons, d'après ces règles.", l_read_lead: "Les livres clés sur l'enseignement des langues, les sciences de l'apprentissage et l'anthropologie linguistique, et des articles sur arXiv.", now_morning: "Matin : révise ce qui est dû. Le sommeil vient de fixer les mots d'hier.", now_day: "Journée : répète quelques phrases ou utilise-en une en famille.", now_evening: "Soir : bon moment pour apprendre de nouvelles phrases.", now_night: "Avant de dormir : un coup d'œil aux phrases du jour, puis dors dessus.", p_title: "S'entraîner", p_lead: "Tu pratiques le {lang}. Quelques minutes par jour, espacées, valent mieux que de longues séances.", p_due: "à revoir", p_new: "nouvelles", p_learned: "apprises", p_streak: "jours d'affilée", p_start: "Commencer la séance du jour", p_start_d: "Se rappeler, dire à voix haute et écouter, en mélange", p_listen: "Quiz d'écoute", p_listen_d: "Écoute une phrase et choisis son sens", p_tones: "Entraîneur de tons", p_tones_d: "Écoute une syllabe et choisis son ton", p_newper: "Nouvelles phrases par jour", p_why: "Comment ça marche", p_nothing: "Rien à revoir pour l'instant. Reviens plus tard ou augmente les nouvelles phrases.", p_back: "Retour", p_newtag: "Nouveau", p_say: "Dis-le à voix haute en {lang}, puis touche Afficher. Devine si tu hésites.", p_reveal: "Afficher", p_again: "Encore", p_hard: "Difficile", p_good: "Bien", p_easy: "Facile", p_rate: "Tu t'en es souvenu comment ?", p_listen_q: "Écoute le {lang} et choisis ce que ça veut dire.", p_play: "Écouter", p_right: "Bravo !", p_wrong: "Pas tout à fait.", p_next: "Suivant", p_shadow: "Répéter 3×", p_your_turn: "À toi ({n}/3)", p_done: "{n} cartes revues", p_done_pct: "{p} % retenu", p_sleep: "Reviens demain : le sommeil aide à fixer les mots nouveaux.", p_after: "{d} à revoir · {s} jours d'affilée", p_tone_q: "Écoute une syllabe. Quelle forme de ton ?", p_tone_done: "Continue : l'oreille apprend les tons avec beaucoup d'exemples variés.", p_cta: "{d} à revoir · {n} nouvelles · {s} jours", p_add: "Ajouter à l'entraînement", p_added: "Dans l'entraînement ✓", hooks_h: "Astuces de mémoire", myhook: "Ton astuce", myhook_ph: "Écris un son proche, une image ou une histoire. Les astuces qu'on invente soi-même tiennent mieux.", l_title: "Comment Polygrok t'aide à apprendre", l_lead: "Ce que la recherche sur la mémoire montre pour les adultes qui apprennent une langue, et comment l'app l'utilise.", l_inapp: "Dans Polygrok :", l_routine_h: "Une bonne routine quotidienne", learn_btn: "Apprendre avec Polygrok", full_title: "Phrase complète", show_big: "Afficher en grand", c_head: "Version naturelle", c_note: "Construite à partir de la structure de la phrase, puis remise dans l'ordre et la grammaire de chaque langue. Vérifie avec un locuteur natif et compare avec les phrases enregistrées.", tagline: "Comprends une langue à fond, mot à mot.",
       app_title: "Polygrok", wbw: "Mot à mot",
       sub: "{n} phrases du quotidien, mot à mot, dans jusqu'à sept langues.",
       search_ph: "Tape une phrase ou cherche", search_aria: "Tape une phrase en anglais, ou cherche dans le guide",
@@ -987,7 +1123,7 @@
     },
 
     de: {
-      _name: "Deutsch", _lang: "de", full_title: "Ganzer Satz", show_big: "Groß anzeigen", c_head: "Natürliche Version", c_note: "Aus dem Satzbau erstellt und in Wortstellung und Grammatik jeder Sprache gebracht. Prüfe sie mit einem Muttersprachler und vergleiche mit den gespeicherten Sätzen.", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
+      _name: "Deutsch", _lang: "de", b_btn: "Mein Sprachführer", b_save: "In meinem Sprachführer speichern", bk_saved: "Im Sprachführer", b_know: "Kann ich schon", b_known: "Gekonnt", b_title: "Mein Sprachführer", b_lead: "Die Sätze, die du wirklich brauchst, an einem Ort. Gespeicherte Sätze kommen beim Üben zuerst. Als gekonnt markierte Sätze werden nicht als neu abgefragt.", b_tab_saved: "Gespeichert", b_tab_known: "Gekonnt", b_empty: "Noch nichts gespeichert. Öffne einen Satz oder übersetze deinen eigenen und tippe auf Speichern.", b_empty_known: "Noch nichts als gekonnt markiert. Öffne einen Satz, den du kennst, und tippe auf Kann ich schon.", b_copy: "Als Text kopieren", b_copied: "Kopiert", b_practice: "Diese üben", l_tab_why: "Warum es wirkt", l_tab_day: "Dein Tag", l_tab_rules: "Regeln und Wurzeln", l_tab_read: "Leseliste", l_day_lead: "Wann welche Übung am meisten bringt, vom Morgenkaffee bis zum Schlafengehen.", l_rules_tip: "Öffne ein Wort, um seine Teile und seine Lautfamilie nach diesen Regeln zu sehen.", l_read_lead: "Wichtige Bücher zu Sprachunterricht, Lernforschung und linguistischer Anthropologie, dazu Forschungsartikel auf arXiv.", now_morning: "Morgens: Fälliges wiederholen. Der Schlaf hat die Wörter von gestern gerade gefestigt.", now_day: "Tagsüber: ein paar Sätze nachsprechen oder einen mit der Familie benutzen.", now_evening: "Abends: eine gute Zeit für neue Sätze.", now_night: "Vor dem Schlafen: ein kurzer Blick auf die Sätze von heute, dann drüber schlafen.", p_title: "Üben", p_lead: "Du übst {lang}. Ein paar Minuten täglich, verteilt, wirken besser als lange Sitzungen.", p_due: "heute fällig", p_new: "neu heute", p_learned: "gelernt", p_streak: "Tage in Folge", p_start: "Heutige Übung starten", p_start_d: "Erinnern, laut sprechen und hören, gemischt", p_listen: "Hörquiz", p_listen_d: "Hör einen Satz und wähle die Bedeutung", p_tones: "Tontrainer", p_tones_d: "Hör eine Silbe und wähle ihren Ton", p_newper: "Neue Sätze pro Tag", p_why: "So funktioniert's", p_nothing: "Gerade ist nichts fällig. Komm später wieder oder erhöhe die neuen Sätze pro Tag.", p_back: "Zurück", p_newtag: "Neu", p_say: "Sag es laut auf {lang}, dann tippe auf Zeigen. Rate, wenn du unsicher bist.", p_reveal: "Zeigen", p_again: "Nochmal", p_hard: "Schwer", p_good: "Gut", p_easy: "Leicht", p_rate: "Wie gut hast du es gewusst?", p_listen_q: "Hör das {lang} und wähle die Bedeutung.", p_play: "Abspielen", p_right: "Richtig!", p_wrong: "Nicht ganz.", p_next: "Weiter", p_shadow: "Nachsprechen 3×", p_your_turn: "Du bist dran ({n}/3)", p_done: "{n} Karten wiederholt", p_done_pct: "{p} % gewusst", p_sleep: "Komm morgen wieder: Schlaf hilft, neue Wörter zu festigen.", p_after: "{d} noch fällig · {s} Tage in Folge", p_tone_q: "Hör eine Silbe. Welche Tonform hat sie?", p_tone_done: "Weiter so: Das Ohr lernt Töne an vielen verschiedenen Beispielen.", p_cta: "{d} fällig · {n} neu · {s} Tage", p_add: "Zum Üben hinzufügen", p_added: "Wird geübt ✓", hooks_h: "Merkhilfen", myhook: "Deine eigene Merkhilfe", myhook_ph: "Schreib einen Gleichklang, ein Bild oder eine Geschichte. Selbst erfundene Merkhilfen halten am besten.", l_title: "Wie Polygrok dir beim Lernen hilft", l_lead: "Was die Gedächtnisforschung für Erwachsene empfiehlt, die eine neue Sprache lernen, und wie die App es nutzt.", l_inapp: "In Polygrok:", l_routine_h: "Eine gute tägliche Routine", learn_btn: "Lernen mit Polygrok", full_title: "Ganzer Satz", show_big: "Groß anzeigen", c_head: "Natürliche Version", c_note: "Aus dem Satzbau erstellt und in Wortstellung und Grammatik jeder Sprache gebracht. Prüfe sie mit einem Muttersprachler und vergleiche mit den gespeicherten Sätzen.", tagline: "Eine Sprache wirklich verstehen, Wort für Wort.",
       app_title: "Polygrok", wbw: "Wort für Wort",
       sub: "{n} Alltagssätze, Wort für Wort, in bis zu sieben Sprachen.",
       search_ph: "Satz eingeben oder suchen", search_aria: "Englischen Satz eingeben oder im Guide suchen",
@@ -1030,7 +1166,7 @@
     },
 
     yue: {
-      _name: "廣東話", _lang: "zh-HK", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
+      _name: "廣東話", _lang: "zh-HK", b_btn: "我嘅短語簿", b_save: "加入我嘅短語簿", bk_saved: "喺短語簿", b_know: "我識呢句", b_known: "識咗", b_title: "我嘅短語簿", b_lead: "你真係用得著嘅句子，全部放埋一齊。儲咗嘅句子練習時會先出。標咗識嘅句子唔會當新句再出。", b_tab_saved: "已儲", b_tab_known: "識咗", b_empty: "仲未儲任何句子。打開一句，或者翻譯你自己嘅句子，撳「加入我嘅短語簿」。", b_empty_known: "仲未標任何句子做識咗。打開一句你已經識嘅，撳「我識呢句」。", b_copy: "複製成文字", b_copied: "複製咗", b_practice: "練習呢啲", l_tab_why: "點解有效", l_tab_day: "你嘅一日", l_tab_rules: "規則同字源", l_tab_read: "閱讀清單", l_day_lead: "由朝早飲咖啡到瞓覺，每種練習幾時最有用。", l_rules_tip: "打開任何一個字，就會睇到佢嘅部件同聲音家族。", l_read_lead: "語言教學、學習科學同語言人類學嘅重要書籍，仲有 arXiv 上嘅研究論文。", now_morning: "朝早：溫返要溫嘅。瞓完覺，琴日啲字啱啱記牢咗。", now_day: "日頭：跟讀幾句，或者同屋企人用一句。", now_evening: "夜晚：學新句嘅好時間。", now_night: "瞓覺前：睇一睇今日啲句子，然後瞓覺。", p_title: "練習", p_lead: "練緊{lang}。每日幾分鐘、分開幾次，好過一次過練好耐。", p_due: "今日要溫", p_new: "今日新句", p_learned: "學咗", p_streak: "連續日數", p_start: "開始今日練習", p_start_d: "諗、讀出聲、聽，混埋一齊", p_listen: "聽力測驗", p_listen_d: "聽一句，揀返意思", p_tones: "聲調訓練", p_tones_d: "聽一個音，揀佢嘅聲調", p_newper: "每日新句數量", p_why: "點解有效", p_nothing: "而家冇嘢要溫。遲啲再嚟，或者加多啲每日新句。", p_back: "返回", p_newtag: "新", p_say: "用{lang}讀出聲，然後撳「顯示」。唔肯定都估吓。", p_reveal: "顯示", p_again: "再嚟", p_hard: "難", p_good: "好", p_easy: "易", p_rate: "你記得幾清楚？", p_listen_q: "聽{lang}，揀返意思。", p_play: "播放", p_right: "啱！", p_wrong: "唔係咁啱。", p_next: "下一個", p_shadow: "跟讀 3 次", p_your_turn: "到你（{n}/3）", p_done: "溫咗 {n} 張卡", p_done_pct: "記得 {p}%", p_sleep: "聽日再嚟：瞓覺幫新字記得牢。", p_after: "仲有 {d} 個要溫 · 連續 {s} 日", p_tone_q: "聽一個音。佢係邊個聲調？", p_tone_done: "繼續：耳仔要聽好多唔同例子先學得識聲調。", p_cta: "{d} 要溫 · {n} 新 · 連續 {s} 日", p_add: "加入練習", p_added: "練習中 ✓", hooks_h: "記憶小貼士", myhook: "你自己嘅記法", myhook_ph: "寫低諧音、畫面或者小故事。自己諗嘅記法最記得。", l_title: "Polygrok 點樣幫你學", l_lead: "記憶研究話成人學新語言咩方法有效，同埋呢個 app 點用。", l_inapp: "喺 Polygrok：", l_routine_h: "每日好習慣", learn_btn: "點樣用 Polygrok 學", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
       app_title: "Polygrok", wbw: "逐個字",
       sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
       search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
@@ -1073,7 +1209,7 @@
     },
 
     cmn: {
-      _name: "普通话", _lang: "zh-CN", full_title: "整句", show_big: "放大显示", c_head: "自然句子", c_note: "根据句子结构（谁、做什么、什么时候、在哪里）生成，再按每种语言的语法排列。请向母语者确认，并与最相近的已存句子比较。", tagline: "逐词逐句，真正懂一门语言。",
+      _name: "普通话", _lang: "zh-CN", b_btn: "我的短语本", b_save: "加入我的短语本", bk_saved: "在短语本中", b_know: "我会这句", b_known: "已会", b_title: "我的短语本", b_lead: "你真正用得上的句子，都放在一起。收藏的句子练习时先出现。标为已会的句子不再作为新句出现。", b_tab_saved: "已收藏", b_tab_known: "已会", b_empty: "还没有收藏。打开任意一句，或翻译你自己的句子，点“加入我的短语本”。", b_empty_known: "还没有标为已会的句子。打开一句你已经会的，点“我会这句”。", b_copy: "复制为文字", b_copied: "已复制", b_practice: "练习这些", l_tab_why: "为什么有效", l_tab_day: "你的一天", l_tab_rules: "规则与字源", l_tab_read: "阅读书单", l_day_lead: "从早上喝咖啡到睡前，每种练习什么时候最有用。", l_rules_tip: "打开任意一个字，就能看到它的部件和声音家族。", l_read_lead: "语言教学、学习科学和语言人类学的重要书籍，以及 arXiv 上的研究论文。", now_morning: "早上：复习到期的内容。睡眠刚把昨天的词记牢。", now_day: "白天：跟读几句，或者和家人用一句。", now_evening: "晚上：学新句子的好时间。", now_night: "睡前：看一眼今天的句子，然后睡觉。", p_title: "练习", p_lead: "正在练习{lang}。每天几分钟、分散进行，比一次练很久更有效。", p_due: "今天待复习", p_new: "今天新句", p_learned: "已学", p_streak: "连续天数", p_start: "开始今天的练习", p_start_d: "回忆、说出声、听，混合进行", p_listen: "听力测验", p_listen_d: "听一句，选出意思", p_tones: "声调训练", p_tones_d: "听一个音节，选出声调", p_newper: "每天新句数量", p_why: "为什么有效", p_nothing: "现在没有要复习的。稍后再来，或增加每天新句数量。", p_back: "返回", p_newtag: "新", p_say: "用{lang}说出声，然后点“显示”。不确定也猜一猜。", p_reveal: "显示", p_again: "再来", p_hard: "难", p_good: "好", p_easy: "容易", p_rate: "你记得怎么样？", p_listen_q: "听{lang}，选出意思。", p_play: "播放", p_right: "对了！", p_wrong: "不太对。", p_next: "下一个", p_shadow: "跟读 3 次", p_your_turn: "轮到你（{n}/3）", p_done: "复习了 {n} 张卡", p_done_pct: "记住 {p}%", p_sleep: "明天再来：睡眠帮助新词进入长期记忆。", p_after: "还有 {d} 个待复习 · 连续 {s} 天", p_tone_q: "听一个音节。它是哪个声调？", p_tone_done: "继续：耳朵通过大量不同的例子学会声调。", p_cta: "{d} 待复习 · {n} 新 · 连续 {s} 天", p_add: "加入练习", p_added: "练习中 ✓", hooks_h: "记忆提示", myhook: "你自己的记法", myhook_ph: "写下谐音、画面或小故事。自己想的记法最牢。", l_title: "Polygrok 如何帮你学习", l_lead: "记忆研究表明哪些方法对成人学新语言有效，以及本应用如何运用。", l_inapp: "在 Polygrok 中：", l_routine_h: "每日好习惯", learn_btn: "如何用 Polygrok 学习", full_title: "整句", show_big: "放大显示", c_head: "自然句子", c_note: "根据句子结构（谁、做什么、什么时候、在哪里）生成，再按每种语言的语法排列。请向母语者确认，并与最相近的已存句子比较。", tagline: "逐词逐句，真正懂一门语言。",
       app_title: "Polygrok", wbw: "逐词",
       sub: "{n} 个日常句子，逐词拆解，最多七种语言。",
       search_ph: "输入任意句子或搜索", search_aria: "输入一句英文，或在指南中搜索",
@@ -1132,6 +1268,433 @@
   }
 
   const catName = c => (UI[uiLang] && UI[uiLang].cats && UI[uiLang].cats[c]) || c;
+
+
+  /* topic icons: one-color line drawings, so every section has a picture to anchor it (dual coding) */
+
+  const ICON_PATHS = {
+    flag: "M5 21V4M5 4h11l-2.5 4L16 12H5",
+    chat: "M4 5h16v10H10l-5 4v-4H4z",
+    bolt: "M13 2 5 13h6l-1 9 8-11h-6z",
+    smile: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8.5 14.5c1.8 2.2 5.2 2.2 7 0M9 9.5h.01M15 9.5h.01",
+    pair: "M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2.5 20c.6-3.4 2.8-5.5 5.5-5.5s4.9 2.1 5.5 5.5M10.5 20c.6-3.4 2.8-5.5 5.5-5.5s4.9 2.1 5.5 5.5",
+    family: "M7 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM17 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2.5 19c.4-3.3 2.2-5.5 4.5-5.5 1.3 0 2.3.6 3 1.6M21.5 19c-.4-3.3-2.2-5.5-4.5-5.5-1.3 0-2.3.6-3 1.6M8.5 21c.4-2.5 1.8-4 3.5-4s3.1 1.5 3.5 4",
+    door: "M6 21V3h12v18M3 21h18M14 12h.01",
+    bowl: "M3 11h18c0 5-4 8.5-9 8.5S3 16 3 11zM9 19.5 8 21h8l-1-1.5M14 3l5 6M17 3l3 5",
+    bubbles: "M3 4h11v7H7l-4 3V4zM10 14v2h7l4 3v-9h-4",
+    calendar: "M4 6h16v14H4zM4 10h16M8 3v5M16 3v5",
+    house: "M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5",
+    pot: "M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM2 10h20M9 7c0-2 2-2 2-4M14 7c0-2 2-2 2-4",
+    gift: "M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-4-6-1.5S9 7 12 7zM12 7c2-4 6-4 6-1.5S15 7 12 7z",
+    car: "M3 16v-4l2-5h14l2 5v4zM3 16v2h3v-2M18 16v2h3v-2M7 13h.01M17 13h.01",
+    plane: "M2 13l7-1 4-8h2l-2 8 6 .5 2-2.5h1.5l-1 4 1 4H21l-2-2.5L13 15l2 8h-2l-4-8-7-1z",
+    weather: "M7 18h10a4 4 0 0 0 .5-8A5.5 5.5 0 0 0 7 9.5 4.3 4.3 0 0 0 7 18zM16 3v2M20.5 5l-1.5 1.5M22 10h-2",
+    case: "M3 8h18v12H3zM8 8V5h8v3M3 13h18",
+    book: "M4 4h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v15h-6a2 2 0 0 0-2 2 2 2 0 0 0-2-2H4zM12 5v16",
+    star: "M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z",
+    waves: "M2 9c2.5-2 5-2 7.5 0s5 2 7.5 0 3.5-1.5 5 0M2 15c2.5-2 5-2 7.5 0s5 2 7.5 0 3.5-1.5 5 0",
+    bike: "M6 18a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM18 18a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM6 14.5l4-7h5l3 7M10 7.5h-2M12 14.5l3-7",
+    bag: "M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2",
+    paw: "M12 20c-3 0-5-1.5-5-3.5S9.5 12 12 12s5 2.5 5 4.5-2 3.5-5 3.5zM6 11a1.8 2.2 0 1 0 0-.1zM9.5 7a1.8 2.2 0 1 0 0-.1zM14.5 7a1.8 2.2 0 1 0 0-.1zM18 11a1.8 2.2 0 1 0 0-.1z",
+    health: "M12 20s-7.5-4.5-7.5-10A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7.5 3c0 5.5-7.5 10-7.5 10zM8 12h2.5l1-2 2 4 1-2H16",
+    hands: "M3 12l4-4 4 3 3-3 7 6-5 5-4-3-3 2zM11 11l-3 3",
+    bulb: "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z",
+    sparkle: "M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18",
+    heart: "M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.2 12 20 12 20z",
+    laugh: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM7.5 13h9a4.5 4.5 0 0 1-9 0zM8 9l2 1-2 1M16 9l-2 1 2 1",
+    wave: "M8 13V6a1.5 1.5 0 0 1 3 0v5M11 11V4.5a1.5 1.5 0 0 1 3 0V11M14 11V6a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-6 6h-.5a6 6 0 0 1-4.8-2.4L3.5 14a1.5 1.5 0 0 1 2.3-1.9L8 14.5M19.5 3.5c1 1 1.5 2 1.5 3.5",
+    brain: "M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2.5 2.5 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1",
+    cards: "M7 4h11a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM3 7v11a2 2 0 0 0 2 2",
+    ear: "M7 9a5 5 0 0 1 10 0c0 3-3 4-3 7a3 3 0 0 1-5.5 1.5M10 9a2 2 0 0 1 4 0c0 1.5-2 2-2 3.5",
+    mic: "M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3",
+    tones: "M3 6h4M3 12l4-4M3 17l4 1M10 7c2 0 2 9 4 9s2-6 4-6 2 3 3 3",
+  };
+
+  const CAT_ICON = {
+    "Start Here": "flag", "Talking About the Day": "chat", "Quick Patterns": "bolt", "Greetings": "smile", "Getting to know you": "pair", "Family": "family",
+    "Visiting": "door", "Meals": "bowl", "Small Talk": "bubbles", "Plans": "calendar", "Around the House": "house", "Cooking Together": "pot",
+    "Family Events": "gift", "Road Trip": "car", "Travel": "plane", "Weather": "weather", "Work": "case", "School": "book", "Hobbies": "star",
+    "Swimming": "waves", "Running & Biking": "bike", "Shopping": "bag", "Pets": "paw", "Health": "health", "Helping Out": "hands", "Learning": "bulb",
+    "Holidays": "sparkle", "Feelings": "heart", "Joking Around": "laugh", "Goodbyes": "wave",
+  };
+
+  function icon(name, cls = "ico") {
+    const d = ICON_PATHS[name] || ICON_PATHS.chat;
+    return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  }
+
+  const catIcon = c => icon(CAT_ICON[c] || "chat");
+
+
+  /* memory hooks: character stories (dual coding), sound bridges to languages you know (keyword method), and cognate families */
+
+  const HOOKS = {
+    "雨": [["bridge", "下雨 xià yǔ and 落雨 lok6 jyu5 both end in a \"yu\" that sounds like Spanish lluvia, so rain sounds like rain."], ["story", "雨 is drops of water (the four dots) falling from a cloud under the sky."]],
+    "下雨": [["bridge", "xià yǔ sounds like the \"yu\" in Spanish lluvia. Rain is rain."]],
+    "落雨": [["bridge", "lok6 jyu5: rain \"lands\" (落 falls) as \"yu\", like Spanish lluvia."]],
+    "咖啡": [["bridge", "gaa3 fe1 / kā fēi is borrowed from café, Kaffee and coffee."]],
+    "巴士": [["bridge", "baa1 si2 is just \"bus\" said in Cantonese."]],
+    "的士": [["bridge", "dik1 si2 is \"taxi\", borrowed from English."]],
+    "士多": [["bridge", "si6 do1 is \"store\". Many Cantonese words for modern things are borrowed from English."]],
+    "士多舖": [["bridge", "Taishanese si21 dɔ55 pu335: \"store\" plus 舖 \"shop\"."]],
+    "朱古力": [["bridge", "zyu1 gu1 lik1 is \"chocolate\": choc-o-late."]],
+    "沙律": [["bridge", "saa1 leot2 is \"salad\"."]],
+    "芝士": [["bridge", "zi1 si2 is \"cheese\"."]],
+    "多士": [["bridge", "do1 si2 is \"toast\"."]],
+    "啤酒": [["bridge", "be1 zau2 / pí jiǔ: 啤 is \"beer\" (Bier), 酒 is alcohol."]],
+    "沙發": [["bridge", "saa1 faat3 / shā fā is \"sofa\"."]],
+    "檸檬": [["bridge", "ning4 mung1 / níng méng is \"lemon\" (limón)."]],
+    "咖喱": [["bridge", "gaa3 lei1 is \"curry\"."]],
+    "茶": [["bridge", "cha is the root of \"chai\", Portuguese chá and Russian chai. Spanish té and English tea came from another Chinese dialect, Hokkien \"te\"."], ["story", "茶 is grass (艹) on top, a person (人) and a tree (木): someone among the plants picking leaves."]],
+    "媽媽": [["bridge", "maa1 / mā ma is mamá, maman and Mama. Babies everywhere start with \"ma\"."]],
+    "媽咪": [["bridge", "maa1 mi4 is English \"mommy\"."]],
+    "爸爸": [["bridge", "baa4 baa1 / bà ba is papá, papa and Papa."]],
+    "爹哋": [["bridge", "de1 di4 is English \"daddy\"."]],
+    "你": [["keyword", "nei5 / nǐ sounds like \"knee\". Point at someone's knee: you!"], ["story", "你 is 亻 (person) plus 尔 (you): the person you're talking to."]],
+    "我": [["keyword", "ngo5 / wǒ: \"woah, me?\""], ["story", "我 started as a picture of a pronged weapon. It was later borrowed to mean I or me."]],
+    "好": [["story", "好 is 女 (woman) plus 子 (child). A mother with her child: good."], ["keyword", "hou2 / hǎo sounds like \"how\": how good!"]],
+    "冇": [["story", "冇 is 有 (have) with its insides removed: having nothing. Don't have."]],
+    "有": [["story", "有 is a hand (𠂇) holding meat (月): to have."]],
+    "唔": [["keyword", "m4 is the \"mm-mm\" you hum when you shake your head. Not."]],
+    "係": [["keyword", "hai6 sounds like \"hi\". Hi, yes, it is!"]],
+    "嘢": [["keyword", "je5 sounds like \"yeah\": yeah, stuff."]],
+    "食": [["keyword", "sik6 sounds like \"sick\": don't eat so much you get sick."], ["story", "食 is a lid over a full bowl of food."]],
+    "飲": [["keyword", "jam2 sounds like \"yum\": something yummy to drink."]],
+    "人": [["story", "人 is a person walking, two legs in a stride."]],
+    "大": [["story", "大 is a person (人) with arms spread wide: big."]],
+    "小": [["story", "小 is three tiny dots or grains: small."]],
+    "口": [["story", "口 is an open mouth."]],
+    "日": [["story", "日 is the sun with a spot in the middle. It also means day."]],
+    "月": [["story", "月 is a crescent moon. It also means month."]],
+    "明": [["story", "明 is 日 (sun) plus 月 (moon): the brightest things together. It means bright, clear or understand. Think 明白."]],
+    "明白": [["story", "明 bright plus 白 white: it's all clear now. Understand."]],
+    "木": [["story", "木 is a tree with branches above and roots below."]],
+    "休": [["story", "休 is a person (亻) leaning against a tree (木): rest."]],
+    "山": [["story", "山 is three mountain peaks."]],
+    "火": [["story", "火 is flames leaping up."]],
+    "水": [["story", "水 is a stream flowing, with splashes on each side."]],
+    "女": [["story", "女 is a woman kneeling with her arms crossed."]],
+    "子": [["story", "子 is a baby wrapped up, arms reaching out."]],
+    "家": [["story", "家 is a roof (宀) over a pig (豕). In old villages the pig lived with the family: home."]],
+    "安": [["story", "安 is a woman (女) safe under a roof (宀): peace, calm."]],
+    "門": [["story", "門 is two swinging saloon doors."]],
+    "閂": [["story", "閂 is 門 (door) with a bar (一) across it: shut it. The Cantonese word for close."]],
+    "開": [["story", "開 is 門 (door) with hands lifting the bar: open."]],
+    "早": [["story", "早 is the sun (日) just over the horizon: early."]],
+    "早晨": [["story", "早 sun just rising plus 晨 morning: good morning."]],
+    "看": [["story", "看 is a hand (手) shading an eye (目): look."]],
+    "睇": [["story", "睇 has 目 (eye) on the left: the Cantonese word for look or watch."]],
+    "瞓": [["story", "瞓 has 目 (eye) on the left: eyes closed, sleeping."]],
+    "心": [["story", "心 is a heart, with its chambers drawn."]],
+    "想": [["story", "想 is 相 (look at) over 心 (heart): picturing something in your heart. Think or want."]],
+    "忙": [["story", "忙 is 忄 (heart) plus 亡 (lost): so busy you've lost your heart."]],
+    "忘": [["story", "忘 is 亡 (gone) over 心 (heart): it's gone from your mind. Forget."]],
+    "飯": [["story", "飯 is 食 (food) plus 反: cooked rice, which also means a meal."]],
+    "米": [["story", "米 is grains of rice scattered around a stalk."]],
+    "魚": [["story", "魚 is a fish: head on top, scales, and a tail of four dots."]],
+    "田": [["story", "田 is a rice field divided into plots."]],
+    "男": [["story", "男 is 田 (field) over 力 (strength): working the fields. Man."]],
+    "中": [["story", "中 is an arrow through the center of a target: middle. 中國 is the Middle Kingdom."]],
+    "上": [["story", "上 is a mark above a line: up, or on."]],
+    "下": [["story", "下 is a mark below a line: down, or under."]],
+    "出": [["story", "出 is feet stepping out of an opening: out."]],
+    "坐": [["story", "坐 is two people (人人) sitting on the ground (土): sit."]],
+    "電": [["story", "電 is 雨 (rain, storm) over a lightning bolt: electricity."]],
+    "電話": [["story", "電 electric plus 話 speech: the telephone."]],
+    "話": [["story", "話 is 言 (words) plus 舌 (tongue): speech, language. 廣東話 is Guangdong speech."]],
+    "愛": [["story", "愛 has 心 (heart) right in the middle: love."]],
+    "熱": [["story", "熱 has 灬 (fire dots) at the bottom: hot."]],
+    "凍": [["story", "凍 has 冫 (ice) on the left: cold. Cantonese uses it for cold weather and cold food."]],
+    "掛住": [["story", "掛 is to hang: someone is hanging on your mind. Miss."]],
+    "錫": [["bridge", "錫 sek3 means tin, but in Cantonese it also means to dote on or kiss. Say it to grandma."]],
+    "攰": [["keyword", "gui6 sounds like \"gooey\": so tired you feel like a gooey puddle."]],
+    "靚": [["keyword", "leng3 sounds like the \"leng\" in \"length\": long and lean, good-looking."]],
+    "正": [["keyword", "zeng3 sounds like \"jeng\": jeng! Awesome. It literally means straight or correct."]],
+    "多謝": [["keyword", "do1 ze6 sounds like \"daw-jeh\". Use 多謝 for gifts and 唔該 for small favors."]],
+    "唔該": [["keyword", "m4 goi1 sounds like \"mm-goy\". The all-purpose please, thanks and excuse me."]],
+  };
+
+  const EU_HOOKS = {
+    night: "Spanish noche, French nuit and German Nacht share one Indo-European root with English night.",
+    mother: "madre, mère and Mutter all come from the same root as mother.",
+    mom: "mamá, maman and Mama: the same \"ma\" baby sound as Chinese 媽.",
+    father: "padre, père and Vater: the f/p/v swap is a regular sound change (Grimm's law).",
+    dad: "papá, papa and Papa match Chinese 爸爸 bà ba.",
+    name: "nombre, nom and Name: all the same word as English name.",
+    new: "nuevo, nouveau and neu: all related to English new.",
+    water: "German Wasser is a sibling of English water. Spanish agua and French eau come from Latin aqua.",
+    milk: "German Milch is milk. Spanish leche and French lait come from Latin lac (think lactose).",
+    house: "German Haus is house. Spanish and French use casa and maison.",
+    coffee: "café, café and Kaffee, the same word as Chinese 咖啡 gaa3 fe1.",
+    tea: "Spanish té, French thé and German Tee came from Hokkien \"te\". Cantonese and Mandarin say cha.",
+    wine: "vino, vin and Wein all come from Latin vinum.",
+    sun: "sol, soleil and Sonne: Latin sol, the root of solar.",
+    good: "German gut is English good. Spanish bueno and French bon come from Latin bonus.",
+    three: "tres, trois and drei are all three.",
+    eat: "German essen is related to English eat. Spanish comer and French manger have different roots.",
+    drink: "German trinken is drink. French boire and Spanish beber come from Latin bibere (think beverage).",
+    come: "German kommen is come. Spanish venir and French venir come from Latin venire (think convene).",
+    want: "Spanish querer also means to love: te quiero is \"I love you\" to family.",
+    rain: "Spanish lluvia sounds like Mandarin 雨 yǔ and Cantonese 雨 jyu5. A free bridge.",
+    family: "familia, famille and Familie all come from Latin familia.",
+    friend: "German Freund is friend. Spanish amigo and French ami come from Latin amicus, to love.",
+    hello: "German hallo is hello. Spanish hola and French allô (on the phone) sound alike too.",
+    tomorrow: "Spanish mañana also means morning. Context tells you which.",
+    tired: "French fatigué is English fatigue. For Spanish cansado, picture yourself \"cancel-ado\": canceling plans because you're too tired.",
+  };
+
+  function hooksFor(hz) {
+    if (!hz) return [];
+    let out = [];
+    if (HOOKS[hz]) out = HOOKS[hz].slice();
+    else if ([...hz].length > 1) [...hz].forEach(c => { if (HOOKS[c]) HOOKS[c].filter(h => h[0] === "story").forEach(h => out.push(h)); });
+    out = out.slice(0, 2);
+    return out.concat(rulesFor(hz));
+  }
+
+  function myHookKey(lang, hz) { return "polygrok-hook-" + lang + "-" + hz; }
+
+
+  /* rules and roots: character parts, sound families, sound shifts between languages, and each language's "axioms" */
+
+  const RAD = {
+    "亻": ["person", "你他們住休做使信借估位份低便傾伴伯何"],
+    "氵": ["water", "洗游海湯河酒沖淋清溫滾漂沙汁油泳渴湖汽浸洋淨滑漏江浪"],
+    "冫": ["ice", "冷凍冰"],
+    "忄": ["heart, feeling", "忙快慢怕情性惜懂"],
+    "心": ["heart, mind", "想念忘愛感意思急怒您悶"],
+    "口": ["mouth, a spoken word", "吃喝叫唱吹咩嘅嘢咗唔嚟啦呀嗎吧呢哋喺噉咁啲嗰咪吓"],
+    "扌": ["hand", "打搵揸推拉抱把摸找接提掃拎擺換掛揀撳搬抄拍指"],
+    "目": ["eye", "睇瞓眼睛睡看眉盲瞌"],
+    "艹": ["plant", "茶菜花草葉蘋藥蔥薑菇"],
+    "宀": ["roof", "家安室客宿寫富寶寒定"],
+    "飠": ["food", "飯飲餓飽餅館餸餃"],
+    "訁": ["speech", "話說講語請謝讀認識記試誰課該詞譯談"],
+    "木": ["tree, wood", "林森樹椅枱桌板校橋杯枕檸樓機根"],
+    "日": ["sun, time", "早晚時明星昨晨晴暖曬暗春"],
+    "辶": ["walking, movement", "這返過進遠近送道邊還逛迎追遊達通"],
+    "女": ["woman", "媽姐妹奶婆姑嫂好她妻婚姓娘嫲"],
+    "足": ["foot", "跑跳路踢跟跌"],
+    "火": ["fire, cooking", "炒燒煮煲爐熱燈煙炸炮焗熟煎"],
+    "釒": ["metal", "錢鐘錶鎖鑰銀鐵針鍋銅"],
+    "月": ["body (this 月 was 肉, flesh)", "肚腳腦胸肩背臉胖肥腿膊"],
+    "糸": ["thread, silk", "紅綠紙線細結紹給"],
+    "疒": ["sickness", "病痛瘦疲"],
+    "雨": ["weather", "雪雲電雷霧露"],
+    "衤": ["clothing", "衫褲襪被裙"],
+    "犭": ["animal", "狗狼獅猴狐"],
+    "貝": ["shell, money (shells were money)", "買賣貴貨費財賺"],
+    "石": ["stone", "碗碟破硬碰"],
+    "子": ["child", "孩孫學字"],
+    "門": ["door", "開閂間閒關"],
+  };
+
+  const PHON = {
+    "馬": ["maa5", "mǎ", "媽嗎罵碼"],
+    "羊": ["joeng4", "yáng", "洋樣養氧"],
+    "青": ["cing1", "qīng", "請清情晴睛精靜"],
+    "包": ["baau1", "bāo", "飽抱跑泡炮胞"],
+    "方": ["fong1", "fāng", "房放訪芳防"],
+    "工": ["gung1", "gōng", "紅空江功攻"],
+    "巴": ["baa1", "bā", "爸吧把爬"],
+    "主": ["zyu2", "zhǔ", "住注柱"],
+    "古": ["gu2", "gǔ", "姑苦故估固"],
+    "交": ["gaau1", "jiāo", "校較餃咬郊膠"],
+    "化": ["faa3", "huà", "花貨"],
+    "反": ["faan2", "fǎn", "飯返板版"],
+    "生": ["saang1", "shēng", "星姓性"],
+    "果": ["gwo2", "guǒ", "課顆"],
+    "門": ["mun4", "mén", "們問聞悶"],
+    "可": ["ho2", "kě", "哥河歌何"],
+    "白": ["baak6", "bái", "伯拍怕百"],
+    "長": ["coeng4", "cháng", "張帳"],
+    "尚": ["soeng6", "shàng", "常堂嘗"],
+    "弟": ["dai6", "dì", "第梯"],
+    "曷": ["hot3", "hé", "喝渴"],
+    "艮": ["gan3", "gèn", "很跟根銀眼"],
+    "中": ["zung1", "zhōng", "種仲"],
+    "分": ["fan1", "fēn", "份粉"],
+    "半": ["bun3", "bàn", "伴拌胖"],
+    "加": ["gaa1", "jiā", "架咖"],
+    "胡": ["wu4", "hú", "湖糊蝴"],
+    "令": ["ling6", "lìng", "冷鈴零領"],
+    "良": ["loeng4", "liáng", "娘浪狼"],
+    "同": ["tung4", "tóng", "銅筒洞"],
+    "里": ["lei5", "lǐ", "理裡"],
+    "甬": ["jung2", "yǒng", "通痛桶"],
+    "既": ["gei3", "jì", "嘅"],
+    "左": ["zo2", "zuǒ", "咗"],
+    "黎": ["lai4", "lí", "嚟"],
+    "係": ["hai6", "xì", "喺"],
+    "野": ["je5", "yě", "嘢"],
+    "地": ["dei6", "dì", "哋"],
+    "甘": ["gam1", "gān", "咁"],
+    "個": ["go3", "gè", "嗰"],
+    "的": ["dik1", "de", "啲"],
+    "吾": ["ng4", "wú", "唔"],
+  };
+
+  const RAD_OF = {};
+  Object.entries(RAD).forEach(([r, [m, chars]]) => [...chars].forEach(c => { RAD_OF[c] = r; }));
+  const PHON_OF = {};
+  Object.entries(PHON).forEach(([k, v]) => [...v[2]].forEach(c => { PHON_OF[c] = k; }));
+
+  function charRule(c) {
+    const r = RAD_OF[c], ph = PHON_OF[c];
+    if (c === "咩") return "咩 = 口 (a spoken word) + 羊 (sheep): sheep say \"meh\". 咩 me1 means what?";
+    if (r && ph) return `${c} = ${r} (${RAD[r][0]}, the meaning) + ${ph} (${PHON[ph][0]} / ${PHON[ph][1]}, a sound hint). About 80% of characters are built this way.`;
+    if (ph) return `${c} gets a sound hint from ${ph} (${PHON[ph][0]} / ${PHON[ph][1]}). Others in the family: ${[...PHON[ph][2]].filter(x => x !== c).slice(0, 4).join(" ")}.`;
+    if (r) return `${c} has ${r} (${RAD[r][0]}). Others with it: ${[...RAD[r][1]].filter(x => x !== c).slice(0, 5).join(" ")}.`;
+    return "";
+  }
+
+  function rulesFor(hz) {
+    if (!hz) return [];
+    const out = [];
+    [...new Set(hz)].forEach(c => { const x = charRule(c); if (x) out.push(["root", x]); });
+    return out.slice(0, 2);
+  }
+
+  const hookIcon = k => icon(k === "story" ? "book" : k === "bridge" ? "bubbles" : k === "root" ? "parts" : "bulb");
+
+  ICON_PATHS.parts = "M4 4h9v9H4zM11 11h9v9h-9z";
+  ICON_PATHS.sun = "M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4";
+  ICON_PATHS.moon = "M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z";
+  ICON_PATHS.sunrise = "M3 18h18M6 18a6 6 0 0 1 12 0M12 4v4M4.9 9.9l1.4 1.4M19.1 9.9l-1.4 1.4M9 6l3-3 3 3";
+  ICON_PATHS.sunset = "M3 18h18M6 18a6 6 0 0 1 12 0M12 3v5M9 5l3 3 3-3M4.9 9.9l1.4 1.4M19.1 9.9l-1.4 1.4";
+  ICON_PATHS.walk = "M13 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM10 22l2-7 3 3v4M7 12l3-5h4l3 4M12 15l-1-4";
+  ICON_PATHS.bookmark = "M6 3h12v18l-6-4-6 4z";
+  ICON_PATHS.check = "M4 12.5l5 5L20 6.5";
+  ICON_PATHS.globe = "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z";
+  ICON_PATHS.compass = "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM15.5 8.5l-2 5-5 2 2-5z";
+  ICON_PATHS.copy = "M8 8h12v12H8zM4 16V4h12";
+
+
+  /* the day plan: when each kind of practice helps most */
+
+  const DAY_PLAN = [
+    ["sunrise", "Morning, with coffee (5 to 10 minutes)", "Review what's due in Practice.", "Sleep has just consolidated yesterday's words. Pulling them back out now is retrieval practice at the moment it pays off most."],
+    ["walk", "Commute, walks, chores (a few minutes)", "Shadow three sentences or do a round of the tone trainer.", "Short sessions spread through the day are spacing in action, and listening while you move uses time you'd lose anyway."],
+    ["sun", "Through the day", "Notice one thing and name it in your head in the new language. Try to build a sentence with the translate box.", "Making your own sentences (generation) and relating them to your own life (self-reference) both deepen memory."],
+    ["bowl", "Meals with family", "Use one sentence for real. Ask them to correct you, then save it to your phrasebook.", "Real use, real feedback and real emotion make the strongest memories, and it's how children learn: through people they care about."],
+    ["sunset", "Evening (10 minutes)", "Learn today's new sentences. Write a hook for any word that won't stick, and check Rules and roots for why the sentence is built that way.", "Understanding the pattern means you remember one rule instead of a hundred words."],
+    ["moon", "Before bed (2 minutes)", "Take one last look at today's new sentences, then sleep.", "Words learned before sleep get folded into long-term memory overnight."],
+    ["calendar", "Once a week", "Browse a new topic. Save what you'd actually say, and mark what you already know.", "Your phrasebook becomes your own curriculum, and Practice skips sentences you've marked as known."],
+  ];
+
+  function nowTip() {
+    const h = new Date().getHours();
+    if (h >= 5 && h < 11) return ["sunrise", "now_morning"];
+    if (h >= 11 && h < 17) return ["sun", "now_day"];
+    if (h >= 17 && h < 21) return ["sunset", "now_evening"];
+    return ["moon", "now_night"];
+  }
+
+
+  /* rules and roots guide */
+
+  const RULES = [
+    {
+      ico: "brain", h: "Why rules beat memorizing",
+      intro: "Once you see a pattern, a hundred words become one rule plus a few exceptions. That is what it feels like to grok a language. Each language below has a short list of axioms: the rules everything else is built on.",
+      items: [
+        "Cognates are a free route to new words, but only when the languages are related. A 2026 study of learners of English found that Spanish and German speakers recalled cognates more easily, while Chinese speakers got no such boost. For Chinese, character parts and sound families do the same job.",
+      ],
+    },
+    {
+      ico: "parts", h: "Chinese: Taishanese, Cantonese and Mandarin",
+      intro: "All three share one grammar and one writing system. Learn the rules once and they carry over.",
+      items: [
+        "<b>Verbs never change.</b> 我食, 你食, 佢食: I eat, you eat, she eats. There are no conjugation tables at all.",
+        "<b>Time comes from words, not endings.</b> 尋日 yesterday, 聽日 tomorrow. Small markers say whether something is done or ongoing: 咗 zo2 / 了 le (done), 緊 gan2 / 在 zài (in progress), 過 gwo3 / guò (have ever done).",
+        "<b>Order: who, when, where, then the action.</b> 我 聽日 喺屋企 食飯 is \"I tomorrow at home eat\".",
+        "<b>Questions keep the statement's word order.</b> Add a particle (嗎 ma, 呀 aa, 未 mei6 \"yet?\") or say the verb both ways: 去唔去 \"go not go?\", 係唔係 \"is or isn't?\".",
+        "<b>Nouns need a counter.</b> Not \"one book\" but \"one 本 book\": 一本書, 一隻狗, 一個人. 個 go3 / gè is the safe default.",
+        "<b>Tone is part of the word.</b> 媽 maa1 is mother, 馬 maa5 is horse. Treat tone like a vowel, not like an accent.",
+        "<b>Compounds explain themselves.</b> 電 electric + 話 speech = telephone. 電 + 腦 brain = computer. 飛 fly + 機 machine = plane. 火 fire + 車 cart = train. In Cantonese, 雪 snow + 櫃 cabinet = fridge.",
+        "<b>About 80% of characters are a meaning part plus a sound part.</b> 媽 = 女 woman + 馬 maa. 嗎 = 口 mouth + 馬 maa: a spoken \"ma\". The meaning part tells you the category: 氵 water, 忄 heart, 口 mouth, 扌 hand, 目 eye, 飠 food, 訁 speech, 辶 movement. 月 on the left usually means body, because it was once 肉 flesh: 肚 belly, 腳 foot, 腦 brain.",
+        "<b>Cantonese spoken words are 口 plus a sound.</b> 嘅 = 口 + 既 gei. 咗 = 口 + 左 zo. 嚟 = 口 + 黎 lai. 喺 = 口 + 係 hai. 咩 = 口 + 羊 sheep, because sheep say \"meh\".",
+        "<b>Taishanese to Cantonese is a regular sound shift.</b> Cantonese s often becomes Taishanese ɬ (the Welsh \"ll\"): 三 saam1 becomes ɬam33. Cantonese t often becomes h: 頭 tau4 becomes həu22. Learn the shift and you can guess many Taishanese words from the Cantonese.",
+        "<b>Cantonese kept old endings that Mandarin lost.</b> 十 sap6 / shí, 六 luk6 / liù, 三 saam1 / sān. The -p, -t, -k and -m endings are older, and they also show up in Korean and Japanese readings of the same characters.",
+        "<b>Chinese numbers are perfectly regular.</b> 十一 is ten-one (11) and 二十 is two-ten (20). Compare French quatre-vingt-douze, four-twenty-twelve (92), or German einundzwanzig, one-and-twenty (21).",
+      ],
+    },
+    {
+      ico: "book", h: "Spanish and French: Latin's children",
+      intro: "Close to 60% of English vocabulary came in through Latin and French (counts vary), so you already know thousands of Spanish and French words in disguise.",
+      items: [
+        "<b>Swap the ending.</b> -tion becomes -ción / -tion (nation, nación). -ty becomes -dad / -té (city, ciudad, cité). -ly becomes -mente / -ment (rapidly, rápidamente, rapidement). -ous becomes -oso / -eux (famous, famoso, fameux).",
+        "<b>Spanish puts e- before s plus a consonant.</b> school, escuela. student, estudiante. special, especial. French did the same, then dropped the s: école, étudiant.",
+        "<b>A French circumflex often marks a lost s.</b> forêt forest, hôpital hospital, fête feast, île isle. Put the s back and the English appears.",
+        "<b>The verb ending carries the person.</b> In Spanish, como is I eat and comes is you eat, so the pronoun can drop. One set of endings (-o, -as, -a, -amos, -an) works for thousands of verbs.",
+        "<b>Every noun has a gender.</b> Learn the article with the noun: la leche, le lait.",
+        "<b>Grimm's law links them back to English.</b> Latin p corresponds to English f: padre, father. pie, foot. pez, fish. Latin hard c corresponds to h: corazón, heart. cien, hundred. Latin d corresponds to t: dos, two. diente, tooth.",
+      ],
+    },
+    {
+      ico: "house", h: "German: English's sibling",
+      intro: "German and English split only about 1,500 years ago. Most German sounds map to English by a handful of regular rules.",
+      items: [
+        "<b>English t is German z, ss or s:</b> ten zehn, tongue Zunge, water Wasser, eat essen, what was, that das.",
+        "<b>English p is German pf or f:</b> apple Apfel, pepper Pfeffer, ship Schiff, help helfen.",
+        "<b>English d is German t:</b> day Tag, drink trinken, door Tür, daughter Tochter.",
+        "<b>English th is German d:</b> three drei, thank danken, thing Ding, the der.",
+        "<b>English k and gh are German ch:</b> make machen, book Buch, night Nacht, light Licht, eight acht.",
+        "<b>English v is German b:</b> have haben, give geben, over über.",
+        "<b>The verb comes second.</b> Heute gehe ich: \"today go I\". In yes/no questions and commands it goes first. After weil (because) and dass (that) it goes to the end.",
+        "<b>Nouns stack like Chinese compounds.</b> Kühlschrank (cool-cabinet) is a fridge, like Cantonese 雪櫃 (snow-cabinet). Flugzeug (fly-thing) is a plane, like 飛機 (fly-machine). Krankenhaus (sick-house) is a hospital.",
+        "<b>Nouns are capitalized and have three genders:</b> der, die, das. Learn the article with the word.",
+      ],
+    },
+    {
+      ico: "compass", h: "Every language has its own axioms",
+      intro: "The linguist Roman Jakobson put it this way: languages differ in what they must say, not in what they can say. Each one makes you notice different things.",
+      items: [
+        "<b>No left or right.</b> In Guugu Yimithirr, an Aboriginal Australian language, you don't have a left hand. You have a north or south hand, depending on which way you're facing. Speakers keep track of compass directions all day long, without thinking.",
+        "<b>Chinese makes you name the relative exactly.</b> 嫲嫲 is your father's mother and 婆婆 is your mother's mother. 哥哥 is your older brother and 弟弟 your younger. English \"grandma\" and \"brother\" don't say which. In Chinese you have to.",
+        "<b>Spanish, French and German make you pick a tense and a gender in every sentence.</b> Chinese doesn't, but it makes you pick a counter and a tone.",
+        "<b>Time has a direction.</b> Chinese says 上個月 (up month) for last month and 下個月 (down month) for next month. 前日 (the front day) is the day before yesterday, so the past is in front of you, the opposite of English \"looking forward\".",
+        "<b>Being polite is built into some grammars.</b> Spanish usted, French vous and German Sie are a formal \"you\". Mandarin has 您. Cantonese mostly uses titles instead: 阿姨, 姨丈.",
+      ],
+    },
+  ];
+
+  const READING = [
+    ["Learning a second language", [
+      ["Lightbown & Spada, How Languages Are Learned (Oxford)", "https://openlibrary.org/search?q=How+Languages+Are+Learned+Lightbown"],
+      ["Paul Nation, Learning Vocabulary in Another Language (Cambridge)", "https://cambridge.org/core/books/learning-vocabulary-in-another-language/491314AA1B451AD04F3536000F1C9F0D"],
+      ["Stephen Krashen, Principles and Practice in Second Language Acquisition (1982): comprehensible input, influential but debated", "https://openlibrary.org/search?q=Principles+and+Practice+in+Second+Language+Acquisition"],
+      ["Rod Ellis, The Study of Second Language Acquisition (Oxford)", "https://openlibrary.org/search?q=The+Study+of+Second+Language+Acquisition+Ellis"],
+      ["Michael Lewis, The Lexical Approach (1993): learning language in chunks", "https://openlibrary.org/search?q=The+Lexical+Approach+Michael+Lewis"],
+    ]],
+    ["How memory and learning work", [
+      ["Brown, Roediger & McDaniel, Make It Stick (2014)", "https://openlibrary.org/search?q=Make+It+Stick+Brown+Roediger"],
+      ["Stanislas Dehaene, How We Learn (2020)", "https://openlibrary.org/search?q=How+We+Learn+Dehaene"],
+      ["Lev Vygotsky, Mind in Society (1978): learning with someone just ahead of you", "https://openlibrary.org/search?q=Mind+in+Society+Vygotsky"],
+      ["Jerome Bruner, Child's Talk: Learning to Use Language (1983): scaffolding", "https://openlibrary.org/search?q=Child%27s+Talk+Bruner"],
+    ]],
+    ["Language, mind and culture", [
+      ["Guy Deutscher, Through the Language Glass (2010)", "https://www.bookshare.org/browse/book/390041"],
+      ["Guy Deutscher, The Unfolding of Language (2005): where grammar comes from", "https://openlibrary.org/search?q=The+Unfolding+of+Language+Deutscher"],
+      ["Stephen Levinson, Space in Language and Cognition (Cambridge, 2003)", "https://openlibrary.org/search?q=Space+in+Language+and+Cognition+Levinson"],
+      ["Edward Sapir, Language (1921)", "https://openlibrary.org/search?q=Sapir+Language+1921"],
+      ["Steven Pinker, The Language Instinct (1994): the case for what all languages share", "https://openlibrary.org/search?q=The+Language+Instinct+Pinker"],
+      ["Lera Boroditsky, How language shapes thought (Scientific American, 2011)", "https://www.cs.bu.edu/courses/cs111/old/18spring/files/ps0/language_shapes.pdf"],
+      ["Levinson (1997), Spatial description in Guugu Yimithirr", "https://pure.mpg.de/pubman/item/item_66622_3/component/file_66623/1997_Spatial_description_in_Guugu_Yimithirr.pdf"],
+    ]],
+    ["Chinese in particular", [
+      ["Matthews & Yip, Cantonese: A Comprehensive Grammar (Routledge)", "https://openlibrary.org/search?q=Cantonese+A+Comprehensive+Grammar"],
+      ["Phonetic components: the key to 80% of Chinese characters (Hacking Chinese)", "https://www.hackingchinese.com/phonetic-components-part-1-the-key-to-80-of-all-chinese-characters/"],
+    ]],
+    ["Research papers on arXiv", [
+      ["Tabibian et al., Optimizing Human Learning (2017): review when recall is about to slip", "https://arxiv.org/abs/1712.01856"],
+      ["Reddy et al., Unbounded Human Learning (2016): adding new items too fast swamps learning", "https://arxiv.org/abs/1602.07032"],
+      ["Beinborn et al., What Makes a Word Hard to Learn? (2026): cognates help Spanish and German speakers, not Chinese", "https://arxiv.org/abs/2605.12281"],
+      ["Wang, Perceptual training of Mandarin tones for English speakers (2023)", "https://arxiv.org/abs/2309.13513"],
+      ["Georgiou, Nonnative speech perception and production with an app (2025)", "https://arxiv.org/abs/2503.22705"],
+      ["Anderson, Vocabulary and the Brain: evidence from neuroimaging", "https://arxiv.org/abs/1611.10003"],
+    ]],
+  ];
 
 
   const LANES = ["tsn", "yue", "en", "cmn", "es", "fr", "de"];
@@ -2280,6 +2843,22 @@
       plays.appendChild(b);
     }
 
+    const hk = isEU(lang) ? means.map(m => EU_HOOKS[String(m).toLowerCase()]).filter(Boolean).map(x => ["bridge", x]) : hooksFor(t.hz);
+    const hb = el("div", "wi-hooks");
+    hk.forEach(h => hb.appendChild(el("p", "", `${hookIcon(h[0])}<span>${noteHtml(h[1])}</span>`)));
+    const key = myHookKey(lang, t.hz);
+    const ta = document.createElement("textarea");
+    ta.className = "my-hook";
+    ta.rows = 2;
+    ta.placeholder = tr("myhook_ph");
+    ta.value = store.get(key) || "";
+    ta.addEventListener("input", () => store.set(key, ta.value));
+    ta.addEventListener("click", e => e.stopPropagation());
+    const lab = el("label", "my-hook-l", `<span>${esc(tr("myhook"))}</span>`);
+    lab.appendChild(ta);
+    hb.appendChild(lab);
+    box.appendChild(hb);
+
     box.hidden = false;
   }
 
@@ -2406,6 +2985,28 @@
       full.appendChild(row);
     });
     box.appendChild(full);
+
+    const lr = el("div", "learn-row");
+    lr.appendChild(Book.controls(p));
+    if (!p.guess) {
+      const add = el("button", "pbtn add-practice", "");
+      add.type = "button";
+      const paint = () => { const on = Practice.inDeck(p.en); add.innerHTML = `${icon(on ? "star" : "cards")}${esc(tr(on ? "p_added" : "p_add"))}`; add.classList.toggle("on", on); };
+      paint();
+      add.addEventListener("click", e => { e.stopPropagation(); Practice.toggleDeck(p.en); paint(); Practice.updateCta(); });
+      lr.appendChild(add);
+    }
+    const seenH = new Set();
+    const hk = [];
+    ["tsn", "yue", "cmn"].forEach(l => (p[l] || []).forEach(t => hooksFor(t.hz).slice(0, 1).forEach(h => { const k = t.hz + h[1]; if (!seenH.has(k)) { seenH.add(k); hk.push([l, t.hz, h]); } })));
+    (p.gloss || []).forEach(g => { const k = g.toLowerCase().replace(/[^a-z ]/g, "").trim(); if (EU_HOOKS[k] && !seenH.has(k)) { seenH.add(k); hk.push(["en", g, ["bridge", EU_HOOKS[k]]]); } });
+    if (hk.length) {
+      const hb = el("div", "hooks");
+      hb.appendChild(el("div", "label", esc(tr("hooks_h"))));
+      hk.slice(0, 5).forEach(([l, w, h]) => hb.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${l === "cmn" ? "hz-cmn" : l === "en" ? "" : "hz-yue"}">${esc(w)}</b> ${noteHtml(h[1])}</span>`)));
+      lr.appendChild(hb);
+    }
+    if (lr.children.length) box.appendChild(lr);
 
     const notes = [];
     if (p.tip) notes.push(`<p><b>${tr("note")}</b>${noteHtml(p.tip)}</p>`);
@@ -2573,7 +3174,7 @@
     CATS.forEach(c => {
       const n = PHRASES.filter(p => p.cat === c).length;
       const li = el("li", "");
-      const b = el("button", "", `<span>${esc(catName(c))}</span><span class="n">${n}</span>`);
+      const b = el("button", "", `<span class="toc-name">${catIcon(c)}${esc(catName(c))}</span><span class="n">${n}</span>`);
       b.type = "button";
       b.addEventListener("click", () => {
         const h = document.getElementById(topicId(c));
@@ -2604,7 +3205,7 @@
       if (!group.length) return;
       const head = el("div", "group-title");
       head.id = topicId(c);
-      head.innerHTML = `<h3>${esc(catName(c))}<span class="n">${group.length}</span></h3>`;
+      head.innerHTML = `<h3>${catIcon(c)}${esc(catName(c))}<span class="n">${group.length}</span></h3>`;
       const up = el("button", "link", tr("contents"));
       up.type = "button";
       up.addEventListener("click", () => { $("toc-d").open = true; $("toc").scrollIntoView({ behavior: "smooth", block: "start" }); });
@@ -4303,6 +4904,601 @@
   })();
 
 
+  /* practice: spaced retrieval, saying it aloud, listening, shadowing and tone training, all stored on this device */
+
+  const Practice = (() => {
+    const DAY = 86400000;
+    const LANGS_P = ["yue", "tsn", "cmn", "es", "fr", "de"];
+    const ZH = new Set(["yue", "tsn", "cmn"]);
+
+    const load = (k, d) => { try { const v = JSON.parse(store.get(k) || "null"); return v ?? d; } catch (e) { return d; } };
+    const save = (k, v) => store.set(k, JSON.stringify(v));
+
+    let srs = load("polygrok-srs", {});
+    let deck = load("polygrok-deck", []);
+    let days = load("polygrok-days", { last: "", streak: 0, total: 0 });
+    let newDay = load("polygrok-newday", { date: "", n: {} });
+    let plang = store.get("polygrok-plang") || "yue";
+    let newPer = Number(store.get("polygrok-newper") || 8);
+
+    const today = () => new Date().toISOString().slice(0, 10);
+    const st = (lang, en) => (srs[lang] || {})[en];
+    const setSt = (lang, en, v) => { (srs[lang] = srs[lang] || {})[en] = v; save("polygrok-srs", srs); };
+    const has = (p, lang) => p[lang] && p[lang].length;
+
+    function inDeck(en) { return deck.includes(en); }
+    function toggleDeck(en) {
+      deck = inDeck(en) ? deck.filter(x => x !== en) : [en, ...deck];
+      save("polygrok-deck", deck);
+      return inDeck(en);
+    }
+
+    function counts(lang = plang) {
+      const now = Date.now();
+      let due = 0, learned = 0;
+      PHRASES.forEach(p => { const s = st(lang, p.en); if (s) { learned++; if (s.due <= now) due++; } });
+      if (newDay.date !== today()) newDay = { date: today(), n: {} };
+      const newLeft = Math.max(0, newPer - (newDay.n[lang] || 0));
+      return { due, learned, newLeft };
+    }
+
+    function queue(lang, size = 20) {
+      const now = Date.now();
+      const due = PHRASES.filter(p => has(p, lang) && st(lang, p.en) && st(lang, p.en).due <= now).sort((a, b) => st(lang, a.en).due - st(lang, b.en).due);
+      const { newLeft } = counts(lang);
+      const fresh = [];
+      const seen = new Set();
+      [...deck.map(en => PHRASES.find(p => p.en === en)).filter(Boolean), ...PHRASES].forEach(p => {
+        if (fresh.length >= newLeft || seen.has(p.en) || !has(p, lang) || st(lang, p.en) || Book.isKnown(p.en)) return;
+        seen.add(p.en);
+        fresh.push(p);
+      });
+      const q = [];
+      let i = 0, j = 0;
+      while (q.length < size && (i < due.length || j < fresh.length)) {
+        if (i < due.length) q.push({ p: due[i++], isNew: false });
+        if (q.length % 3 === 0 && j < fresh.length) q.push({ p: fresh[j++], isNew: true });
+        if (i >= due.length && j < fresh.length) q.push({ p: fresh[j++], isNew: true });
+      }
+      for (let k = q.length - 1; k > 0; k--) {
+        if (Math.random() < 0.35) { const m = Math.floor(Math.random() * (k + 1)); [q[k], q[m]] = [q[m], q[k]]; }
+      }
+      return q.slice(0, size);
+    }
+
+    function schedule(lang, en, grade) {
+      const s = st(lang, en) || { i: 0, e: 2.5, n: 0, l: 0, due: 0 };
+      const now = Date.now();
+      if (grade === 0) { s.l++; s.n = 0; s.i = 0; s.e = Math.max(1.3, s.e - 0.2); s.due = now + 60000; }
+      else {
+        if (grade === 1) { s.i = s.n === 0 ? 1 : Math.max(1, Math.round(s.i * 1.2)); s.e = Math.max(1.3, s.e - 0.15); }
+        if (grade === 2) s.i = s.n === 0 ? 1 : s.n === 1 ? 3 : Math.round(s.i * s.e);
+        if (grade === 3) { s.i = s.n === 0 ? 3 : Math.round(Math.max(s.i, 1) * s.e * 1.3); s.e += 0.15; }
+        s.n++;
+        s.due = now + s.i * DAY * (0.95 + Math.random() * 0.1);
+      }
+      setSt(lang, en, s);
+    }
+
+    function preview(lang, en, grade) {
+      const s = st(lang, en) || { i: 0, e: 2.5, n: 0 };
+      if (grade === 0) return "1m";
+      let i;
+      if (grade === 1) i = s.n === 0 ? 1 : Math.max(1, Math.round(s.i * 1.2));
+      if (grade === 2) i = s.n === 0 ? 1 : s.n === 1 ? 3 : Math.round(s.i * s.e);
+      if (grade === 3) i = s.n === 0 ? 3 : Math.round(Math.max(s.i, 1) * s.e * 1.3);
+      return i >= 30 ? Math.round(i / 30) + "mo" : i + "d";
+    }
+
+    function markDay() {
+      const t = today();
+      if (days.last === t) return;
+      const y = new Date(Date.now() - DAY).toISOString().slice(0, 10);
+      days.streak = days.last === y ? days.streak + 1 : 1;
+      days.last = t;
+      days.total = (days.total || 0) + 1;
+      save("polygrok-days", days);
+    }
+
+    /* ---------- dialog ---------- */
+
+    let D, body, session = null;
+
+    function ensure() {
+      if (D) return;
+      D = document.createElement("dialog");
+      D.className = "practice";
+      D.id = "practice";
+      D.innerHTML = `<div class="pr-top"><span class="pr-title">${icon("brain")}<span id="pr-title"></span></span><button class="btn quiet" id="pr-close" type="button"></button></div><div class="pr-body" id="pr-body"></div>`;
+      document.body.appendChild(D);
+      body = D.querySelector("#pr-body");
+      D.querySelector("#pr-close").addEventListener("click", () => { D.close(); Tones.stop(); Voice.stop(); updateCta(); });
+      D.addEventListener("cancel", () => updateCta());
+    }
+
+    function open() {
+      ensure();
+      D.querySelector("#pr-title").textContent = tr("p_title");
+      D.querySelector("#pr-close").textContent = tr("g_close");
+      home();
+      D.showModal();
+    }
+
+    function home() {
+      session = null;
+      const c = counts();
+      body.innerHTML = "";
+      const langs = el("div", "pr-langs");
+      LANGS_P.forEach(l => {
+        const b = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span>${esc(NAMES[l])}`);
+        b.type = "button";
+        b.setAttribute("aria-pressed", l === plang ? "true" : "false");
+        b.addEventListener("click", () => { plang = l; store.set("polygrok-plang", l); home(); });
+        langs.appendChild(b);
+      });
+      body.appendChild(el("p", "pr-lead", esc(tr("p_lead", { lang: NAMES[plang] }))));
+      body.appendChild(langs);
+
+      const stats = el("div", "pr-stats");
+      [[c.due, tr("p_due")], [c.newLeft, tr("p_new")], [c.learned, tr("p_learned")], [days.streak || 0, tr("p_streak")]].forEach(([n, l]) => {
+        stats.appendChild(el("div", "pr-stat", `<b>${n}</b><span>${esc(l)}</span>`));
+      });
+      body.appendChild(stats);
+
+      const acts = el("div", "pr-acts");
+      const go = el("button", "btn pr-big", `${icon("cards")}<span><b>${esc(tr("p_start"))}</b><small>${esc(tr("p_start_d"))}</small></span>`);
+      go.type = "button";
+      go.addEventListener("click", () => startSession("mix"));
+      acts.appendChild(go);
+      const li = el("button", "btn quiet pr-big", `${icon("ear")}<span><b>${esc(tr("p_listen"))}</b><small>${esc(tr("p_listen_d"))}</small></span>`);
+      li.type = "button";
+      li.addEventListener("click", () => startSession("listen"));
+      acts.appendChild(li);
+      if (ZH.has(plang)) {
+        const to = el("button", "btn quiet pr-big", `${icon("tones")}<span><b>${esc(tr("p_tones"))}</b><small>${esc(tr("p_tones_d"))}</small></span>`);
+        to.type = "button";
+        to.addEventListener("click", () => toneTrainer());
+        acts.appendChild(to);
+      }
+      body.appendChild(acts);
+
+      const opt = el("div", "pr-opt");
+      opt.innerHTML = `<label for="pr-newper">${esc(tr("p_newper"))} <select id="pr-newper">${[3, 5, 8, 12, 20].map(n => `<option value="${n}"${n === newPer ? " selected" : ""}>${n}</option>`).join("")}</select></label>`;
+      opt.querySelector("select").addEventListener("change", e => { newPer = Number(e.target.value); store.set("polygrok-newper", String(newPer)); home(); });
+      const why = el("button", "link", esc(tr("p_why")));
+      why.type = "button";
+      why.addEventListener("click", () => { D.close(); openLearn(); });
+      opt.appendChild(why);
+      body.appendChild(opt);
+    }
+
+    function startSession(mode) {
+      let q = queue(plang, mode === "listen" ? 12 : 15);
+      if (mode === "listen") {
+        const seen = PHRASES.filter(p => has(p, plang) && st(plang, p.en));
+        const pool = seen.length >= 4 ? seen : PHRASES.filter(p => has(p, plang)).slice(0, 40);
+        q = pool.sort(() => Math.random() - 0.5).slice(0, 10).map(p => ({ p, isNew: false, listen: true }));
+      } else {
+        q.forEach(x => { if (!x.isNew && Math.random() < 0.34) x.listen = true; });
+      }
+      if (!q.length) { body.innerHTML = ""; body.appendChild(el("p", "pr-lead", esc(tr("p_nothing")))); const b = el("button", "btn", esc(tr("p_back"))); b.addEventListener("click", home); body.appendChild(b); return; }
+      session = { q, i: 0, right: 0, done: 0, again: [] };
+      markDay();
+      next();
+    }
+
+    function header(item) {
+      const p = item.p;
+      const h = el("div", "pr-head");
+      h.innerHTML = `<span class="pr-count">${session.i + 1} / ${session.q.length}</span><span class="pr-cat">${catIcon(p.cat)}${esc(catName(p.cat))}</span>${item.isNew ? `<span class="pr-new">${esc(tr("p_newtag"))}</span>` : ""}`;
+      return h;
+    }
+
+    function next() {
+      if (session.i >= session.q.length) return finish();
+      const item = session.q[session.i];
+      if (item.listen) listenItem(item); else recallItem(item);
+    }
+
+    function answerBlock(p, lang) {
+      const a = el("div", "pr-answer");
+      const cls = lang === "cmn" ? "hz-cmn" : ZH.has(lang) ? "hz-yue" : "";
+      a.appendChild(el("div", "pr-target " + cls, esc(fullText(p, lang))));
+      if (ZH.has(lang)) {
+        const rom = (p[lang] || []).map(t => t.rom).filter(Boolean).join(" ");
+        a.appendChild(el("div", "pr-rom", `<span class="std">${romAs("std", () => romHtml(lang, rom))}</span><span class="easy">${esc(romAs("easy", () => romText(lang, rom)))}</span>`));
+      }
+      const hooks = [];
+      (p[lang] || []).forEach(t => hooksFor(t.hz).slice(0, 1).forEach(h => hooks.push([t.hz, h])));
+      if (!ZH.has(lang)) (p.gloss || []).forEach(g => { const k = g.toLowerCase().replace(/[^a-z ]/g, "").trim(); if (EU_HOOKS[k]) hooks.push([g, ["bridge", EU_HOOKS[k]]]); });
+      if (hooks.length) {
+        const hk = el("div", "pr-hooks");
+        hooks.slice(0, 3).forEach(([w, h]) => hk.appendChild(el("p", "", `${hookIcon(h[0])}<span><b class="${ZH.has(lang) ? cls : ""}">${esc(w)}</b> ${esc(h[1])}</span>`)));
+        a.appendChild(hk);
+      }
+      const tools = el("div", "pr-tools");
+      const pl = el("button", "pbtn", `${speaker}${esc(tr("listen"))}`);
+      pl.type = "button";
+      pl.addEventListener("click", () => sayFull(p, lang));
+      const sh = el("button", "pbtn", `${icon("mic")}${esc(tr("p_shadow"))}`);
+      sh.type = "button";
+      sh.addEventListener("click", () => shadow(p, lang, sh));
+      tools.appendChild(pl);
+      tools.appendChild(sh);
+      a.appendChild(tools);
+      return a;
+    }
+
+    function recallItem(item) {
+      const p = item.p;
+      body.innerHTML = "";
+      body.appendChild(header(item));
+      body.appendChild(el("div", "pr-prompt", esc(p.en)));
+      body.appendChild(el("p", "pr-hint", esc(tr("p_say", { lang: NAMES[plang] }))));
+      const show = el("button", "btn pr-show", esc(tr("p_reveal")));
+      show.type = "button";
+      body.appendChild(show);
+      show.addEventListener("click", () => {
+        show.remove();
+        body.appendChild(answerBlock(p, plang));
+        sayFull(p, plang);
+        const rate = el("div", "pr-rate");
+        [[0, "p_again"], [1, "p_hard"], [2, "p_good"], [3, "p_easy"]].forEach(([g, k]) => {
+          const b = el("button", "btn " + (g === 2 ? "" : "quiet"), `<b>${esc(tr(k))}</b><small>${preview(plang, p.en, g)}</small>`);
+          b.type = "button";
+          b.addEventListener("click", () => grade(item, g));
+          rate.appendChild(b);
+        });
+        body.appendChild(el("p", "pr-hint", esc(tr("p_rate"))));
+        body.appendChild(rate);
+      });
+    }
+
+    function grade(item, g) {
+      if (item.isNew) { newDay.n[plang] = (newDay.n[plang] || 0) + 1; save("polygrok-newday", newDay); }
+      schedule(plang, item.p.en, g);
+      session.done++;
+      if (g > 0) session.right++;
+      if (g === 0 && session.again.filter(x => x === item.p.en).length < 2) { session.again.push(item.p.en); session.q.push({ p: item.p, isNew: false }); }
+      session.i++;
+      next();
+    }
+
+    function listenItem(item) {
+      const p = item.p;
+      body.innerHTML = "";
+      body.appendChild(header(item));
+      body.appendChild(el("p", "pr-hint", esc(tr("p_listen_q", { lang: NAMES[plang] }))));
+      const again = el("button", "btn pr-show", `${speaker}${esc(tr("p_play"))}`);
+      again.type = "button";
+      again.addEventListener("click", () => sayFull(p, plang));
+      body.appendChild(again);
+      setTimeout(() => sayFull(p, plang), 250);
+      const pool = PHRASES.filter(x => x.en !== p.en && has(x, plang));
+      const same = pool.filter(x => x.cat === p.cat).sort(() => Math.random() - 0.5).slice(0, 2);
+      const other = pool.filter(x => !same.includes(x)).sort(() => Math.random() - 0.5).slice(0, 3 - same.length);
+      const opts = [p, ...same, ...other].sort(() => Math.random() - 0.5);
+      const box = el("div", "pr-opts");
+      opts.forEach(o => {
+        const b = el("button", "btn quiet pr-opt", esc(o.en));
+        b.type = "button";
+        b.addEventListener("click", () => {
+          const ok = o === p;
+          box.querySelectorAll("button").forEach(x => { x.disabled = true; });
+          b.classList.add(ok ? "right" : "wrong");
+          [...box.children][opts.indexOf(p)].classList.add("right");
+          if (!item.isNew) schedule(plang, p.en, ok ? 2 : 0);
+          session.done++;
+          if (ok) session.right++;
+          body.appendChild(el("p", "pr-verdict", esc(tr(ok ? "p_right" : "p_wrong"))));
+          body.appendChild(answerBlock(p, plang));
+          const nx = el("button", "btn pr-show", esc(tr("p_next")));
+          nx.type = "button";
+          nx.addEventListener("click", () => { session.i++; next(); });
+          body.appendChild(nx);
+        });
+        box.appendChild(b);
+      });
+      body.appendChild(box);
+    }
+
+    function shadow(p, lang, btn) {
+      const len = ZH.has(lang) ? [...fullText(p, lang)].length * 0.33 : fullText(p, lang).split(" ").length * 0.42;
+      const gap = Math.max(1800, (len + 1.4) * 1000);
+      const keep = settings.rate;
+      let k = 0;
+      btn.disabled = true;
+      const steps = [0.75, 1, 1];
+      const run = () => {
+        if (k >= steps.length) { settings.rate = keep; btn.disabled = false; btn.innerHTML = `${icon("mic")}${esc(tr("p_shadow"))}`; return; }
+        settings.rate = steps[k];
+        sayFull(p, lang);
+        btn.innerHTML = `${icon("mic")}${esc(tr("p_your_turn", { n: k + 1 }))}`;
+        k++;
+        setTimeout(run, gap / steps[k - 1] + len * 1000);
+      };
+      run();
+    }
+
+    function finish() {
+      body.innerHTML = "";
+      const pct = session.done ? Math.round(100 * session.right / session.done) : 0;
+      body.appendChild(el("div", "pr-done", `${icon("sparkle")}<b>${esc(tr("p_done", { n: session.done }))}</b><span>${esc(tr("p_done_pct", { p: pct }))}</span>`));
+      body.appendChild(el("p", "pr-hint", esc(tr("p_sleep"))));
+      const c = counts();
+      body.appendChild(el("p", "pr-hint", esc(tr("p_after", { d: c.due, s: days.streak || 1 }))));
+      const b = el("button", "btn", esc(tr("p_back")));
+      b.type = "button";
+      b.addEventListener("click", home);
+      body.appendChild(b);
+      updateCta();
+    }
+
+    /* tone trainer: hear one syllable, pick its pitch shape (high-variability phonetic training) */
+
+    function toneTrainer() {
+      const lang = plang;
+      const pool = [];
+      PHRASES.forEach(p => (p[lang] || []).forEach(t => {
+        const hz = [...(t.hz || "")].filter(c => /[㐀-鿿]/.test(c));
+        const rs = String(t.rom || "").split(" ").filter(Boolean);
+        if (hz.length === 1 && rs.length === 1) pool.push({ hz: hz[0], rom: rs[0] });
+      }));
+      const uniq = [...new Map(pool.map(x => [x.hz + x.rom, x])).values()];
+      if (uniq.length < 6) return;
+      const tone = r => {
+        if (lang === "cmn") { const m = r.normalize("NFD").match(/[̄́̌̀]/); return m ? { "̄": "1", "́": "2", "̌": "3", "̀": "4" }[m[0]] : "5"; }
+        const x = splitSyl(lang, r);
+        return x.num;
+      };
+      const SETS = { yue: ["1", "2", "3", "4", "5", "6"], cmn: ["1", "2", "3", "4"], tsn: ["55", "33", "22", "32", "21"] };
+      const LV = { yue: n => YUE_TONE[n], cmn: n => ({ 1: [5, 5], 2: [3, 5], 3: [2, 1, 4], 4: [5, 1] })[n], tsn: n => [...n].map(Number) };
+      const items = uniq.filter(x => SETS[lang].includes(tone(x.rom))).sort(() => Math.random() - 0.5).slice(0, 12);
+      let i = 0, right = 0;
+      markDay();
+      const play = it => lang === "tsn" ? sayTsn(it.rom) : sayVoice(it.hz, lang);
+      const round = () => {
+        body.innerHTML = "";
+        if (i >= items.length) {
+          body.appendChild(el("div", "pr-done", `${icon("tones")}<b>${right} / ${items.length}</b><span>${esc(tr("p_tone_done"))}</span>`));
+          const b = el("button", "btn", esc(tr("p_back")));
+          b.addEventListener("click", home);
+          body.appendChild(b);
+          return;
+        }
+        const it = items[i];
+        const ans = tone(it.rom);
+        body.appendChild(el("div", "pr-head", `<span class="pr-count">${i + 1} / ${items.length}</span>`));
+        body.appendChild(el("p", "pr-hint", esc(tr("p_tone_q"))));
+        const pb = el("button", "btn pr-show", `${speaker}${esc(tr("p_play"))}`);
+        pb.addEventListener("click", () => play(it));
+        body.appendChild(pb);
+        setTimeout(() => play(it), 250);
+        const grid = el("div", "pr-tones");
+        SETS[lang].forEach(n => {
+          const b = el("button", "btn quiet pr-tone", `${contourSvg(LV[lang](n), "big")}<b>${n}</b>`);
+          b.addEventListener("click", () => {
+            grid.querySelectorAll("button").forEach(x => { x.disabled = true; });
+            const ok = n === ans;
+            if (ok) right++;
+            b.classList.add(ok ? "right" : "wrong");
+            [...grid.children][SETS[lang].indexOf(ans)].classList.add("right");
+            const cls = lang === "cmn" ? "hz-cmn" : "hz-yue";
+            body.appendChild(el("p", "pr-verdict", `${esc(tr(ok ? "p_right" : "p_wrong"))} <span class="${cls} pr-char">${esc(it.hz)}</span> ${romAs("std", () => romHtml(lang, it.rom))}`));
+            const nx = el("button", "btn pr-show", esc(tr("p_next")));
+            nx.addEventListener("click", () => { i++; round(); });
+            body.appendChild(nx);
+          });
+          grid.appendChild(b);
+        });
+        body.appendChild(grid);
+      };
+      round();
+    }
+
+    /* call-to-action on the main page */
+
+    function updateCta() {
+      const b = $("practice-btn");
+      if (!b) return;
+      const c = counts();
+      b.innerHTML = `${icon("brain")}<span><b>${esc(tr("p_title"))}</b><small>${esc(tr("p_cta", { d: c.due, n: c.newLeft, s: days.streak || 0 }))}</small></span>`;
+    }
+
+    return { open, updateCta, inDeck, toggleDeck };
+  })();
+
+
+  /* research-backed guide to learning with Polygrok */
+
+  let learnTab = "why";
+
+  function openLearn(which) {
+    let d = $("learn");
+    if (!d) {
+      d = document.createElement("dialog");
+      d.id = "learn";
+      d.className = "guide learn";
+      document.body.appendChild(d);
+    }
+    if (which) learnTab = which;
+    const tabs = [["why", "l_tab_why", "brain"], ["day", "l_tab_day", "sun"], ["rules", "l_tab_rules", "parts"], ["read", "l_tab_read", "book"]];
+    const seg = `<div class="lp-tabs" role="tablist">${tabs.map(([k, l, ic]) => `<button type="button" class="chip" role="tab" data-tab="${k}" aria-pressed="${learnTab === k}">${icon(ic)}${esc(tr(l))}</button>`).join("")}</div>`;
+    let body = "";
+    if (learnTab === "why") {
+      const P = LEARN_POINTS.map(x => `<section class="lp-item">${icon(x[0])}<div><h3>${esc(x[1])}</h3><p>${x[2]}</p><p class="lp-how"><b>${esc(tr("l_inapp"))}</b> ${x[3]}</p></div></section>`).join("");
+      const S = LEARN_SOURCES.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("");
+      body = `<p>${esc(tr("l_lead"))}</p>${P}<section><h3>${esc(tr("g_src_h"))}</h3><ul class="lp-src">${S}</ul></section>`;
+    } else if (learnTab === "day") {
+      body = `<p>${esc(tr("l_day_lead"))}</p><ol class="lp-day">${DAY_PLAN.map(([ic, h, what, why]) => `<li>${icon(ic)}<div><h3>${esc(h)}</h3><p><b>${esc(what)}</b></p><p class="lp-how">${esc(why)}</p></div></li>`).join("")}</ol>`;
+    } else if (learnTab === "rules") {
+      body = RULES.map(r => `<section class="lp-rule"><h3>${icon(r.ico)}${esc(r.h)}</h3><p class="lp-how">${esc(r.intro)}</p><ul>${r.items.map(x => `<li>${x}</li>`).join("")}</ul></section>`).join("") + `<p class="lp-how">${esc(tr("l_rules_tip"))}</p>`;
+    } else {
+      body = `<p>${esc(tr("l_read_lead"))}</p>` + READING.map(([h, xs]) => `<section><h3>${esc(h)}</h3><ul class="lp-src">${xs.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("")}</ul></section>`).join("");
+    }
+    d.innerHTML = `<div class="guide-in"><div class="guide-head"><h2>${esc(tr("l_title"))}</h2><button class="btn quiet" type="button" id="learn-close">${esc(tr("g_close"))}</button></div>${seg}${body}</div>`;
+    d.querySelector("#learn-close").addEventListener("click", () => d.close());
+    d.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => { learnTab = b.dataset.tab; openLearn(); d.scrollTop = 0; }));
+    if (!d.open) d.showModal();
+  }
+
+  const LEARN_POINTS = [
+    ["brain", "Pull it out of memory, don't just reread", "Trying to recall an answer strengthens memory far more than looking at it again. In one well-known study, students who kept testing themselves on foreign words remembered about 80% a week later; students who only restudied remembered about 35%.", "Practice shows the English first and asks you to come up with the sentence before you see it."],
+    ["calendar", "Space it out", "Reviews spread over days beat the same amount of study crammed into one sitting, and the best gap grows as you get better. Forgetting a little between reviews is part of what makes memories last.", "Each card comes back after 1 day, then 3, then about a week, then longer. Tap Again and it returns in a minute."],
+    ["mic", "Say it out loud", "Words you produce aloud are remembered better than words you read silently: the production effect. Speaking also trains the mouth and ear together.", "Every practice card asks you to say the sentence aloud first. Shadow plays it slow, then at normal speed, with pauses for you to repeat."],
+    ["bubbles", "Use what you already know", "Adults learn new words faster when they hook them onto known sounds: the keyword method roughly doubled recall in classic studies. Your 下雨 xià yǔ to lluvia link is exactly this.", "Memory hooks link Chinese sounds to English, Spanish, French and German, and show cognates across the European languages. Write your own hook in any word card: hooks you make yourself stick best."],
+    ["book", "Pair words with pictures", "Information stored as both words and images has two routes back into memory (dual coding). Many Chinese characters began as pictures, and those stories make them easier to recall.", "Character stories (好 = woman + child, 休 = person resting on a tree) and a picture for every topic."],
+    ["cards", "Mix it up", "Mixing topics and skills (interleaving) feels harder than doing one block at a time, but it leads to better long-term learning. That kind of helpful struggle is called a desirable difficulty.", "Sessions shuffle topics and switch between saying, listening and choosing."],
+    ["ear", "Train your ear on many examples", "Adults can learn to hear tones they didn't grow up with. Training works best with lots of different words and quick feedback, and the gains carry over to new words.", "The tone trainer plays single syllables from across the guide. You pick the pitch shape and see right away if you were right."],
+    ["chat", "Learn whole chunks", "Fluent speech is built from ready-made phrases, not words assembled one at a time. Learning sentences you'll actually say gives you useful chunks and their grammar for free.", "Cards are real family sentences. The word rows show how each chunk is built, and the full sentence shows how it's said."],
+    ["heart", "Make it personal and emotional", "We remember what relates to ourselves and what we care about (the self-reference effect), and a bit of fun or emotion helps too.", "Add the sentences you really need to your practice deck, and use the Joking Around section on your family."],
+    ["sparkle", "Sleep on it", "Sleep helps new words settle into long-term memory and connect with the words you already know. In one study, new words learned in the evening were integrated after a night's sleep; words learned in the morning weren't, until after sleep.", "A short session in the evening, then a quick review the next day, is ideal."],
+  ];
+
+  const LEARN_SOURCES = [
+    ["Karpicke & Roediger (2008), The critical importance of retrieval for learning, Science", "https://www.brucehayes.org/Teaching/papers/2008_Roediger_Karpicke_Science.pdf"],
+    ["Cepeda et al. (2006), Distributed practice in verbal recall tasks, Psychological Bulletin", "https://pubmed.ncbi.nlm.nih.gov/16719566/"],
+    ["Raugh & Atkinson, the keyword method for foreign-language vocabulary", "https://suppescorpus.stanford.edu/sites/g/files/sbiybj32751/files/media/file/imsss_224.pdf"],
+    ["Ozubko & MacLeod (2010), The production effect in memory", "https://uwaterloo.ca/memory-attention-cognition-lab/sites/default/files/uploads/files/jeplmc10-2.pdf"],
+    ["Bjork & Bjork, Desirable difficulties (Association for Psychological Science)", "https://www.psychologicalscience.org/observer/desirable-difficulties"],
+    ["Paivio, dual-coding theory", "https://en.wikipedia.org/wiki/Dual-coding_theory"],
+    ["Dumay & Gaskell (2007), Sleep and the integration of new spoken words, Psychological Science", "https://kar.kent.ac.uk/14941"],
+    ["Giannakopoulou et al. (2017), High or low? Comparing high- and low-variability phonetic training, PeerJ", "https://peerj.com/articles/3209"],
+  ];
+
+
+  /* my phrasebook: sentences you save, and ones you already know */
+
+  const Book = (() => {
+    const KEY = "polygrok-book";
+    let data = store.get(KEY) || {};
+    let tab = "saved";
+
+    const save = () => store.set(KEY, data);
+    const rec = en => data[en] || (data[en] = {});
+    const tidy = en => { if (data[en] && !data[en].s && !data[en].k) delete data[en]; };
+
+    const isSaved = en => !!(data[en] && data[en].s);
+    const isKnown = en => !!(data[en] && data[en].k);
+    const count = () => Object.values(data).filter(x => x.s).length;
+
+    function toggleSave(p) {
+      const r = rec(p.en);
+      r.s = r.s ? 0 : Date.now();
+      if (r.s && p.guess) r.p = p;
+      if (r.s && !Practice.inDeck(p.en) && !p.guess) Practice.toggleDeck(p.en);
+      tidy(p.en);
+      save();
+      updateBtn();
+    }
+
+    function toggleKnown(p) {
+      const r = rec(p.en);
+      r.k = r.k ? 0 : Date.now();
+      if (r.k && p.guess) r.p = p;
+      tidy(p.en);
+      save();
+      updateBtn();
+    }
+
+    const find = en => PHRASES.find(p => p.en === en) || (data[en] && data[en].p);
+
+    function list(which) {
+      return Object.entries(data)
+        .filter(([, r]) => which === "known" ? r.k : r.s)
+        .sort((a, b) => (which === "known" ? b[1].k - a[1].k : b[1].s - a[1].s))
+        .map(([en]) => find(en))
+        .filter(Boolean);
+    }
+
+    function asText(ps) {
+      const langs = LANES.filter(l => l !== "en" && show[l]);
+      return ps.map(p => [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
+    }
+
+    function updateBtn() {
+      const b = $("book-btn");
+      if (b) b.innerHTML = `${icon("bookmark")}<span>${esc(tr("b_btn"))}</span><span class="n">${count()}</span>`;
+    }
+
+    function controls(p) {
+      const wrap = el("div", "book-acts");
+      const sv = el("button", "pbtn", "");
+      sv.type = "button";
+      const kn = el("button", "pbtn", "");
+      kn.type = "button";
+      const paint = () => {
+        const s = isSaved(p.en), k = isKnown(p.en);
+        sv.innerHTML = `${icon("bookmark")}${esc(tr(s ? "bk_saved" : "b_save"))}`;
+        sv.classList.toggle("on", s);
+        kn.innerHTML = `${icon("check")}${esc(tr(k ? "b_known" : "b_know"))}`;
+        kn.classList.toggle("on", k);
+      };
+      paint();
+      sv.addEventListener("click", e => { e.stopPropagation(); toggleSave(p); paint(); Practice.updateCta(); });
+      kn.addEventListener("click", e => { e.stopPropagation(); toggleKnown(p); paint(); Practice.updateCta(); });
+      wrap.append(sv, kn);
+      return wrap;
+    }
+
+    function open() {
+      let d = $("book");
+      if (!d) {
+        d = document.createElement("dialog");
+        d.id = "book";
+        d.className = "practice book";
+        document.body.appendChild(d);
+        d.addEventListener("click", e => { if (e.target === d) d.close(); });
+      }
+      paintDialog(d);
+      if (!d.open) d.showModal();
+    }
+
+    function paintDialog(d) {
+      const ps = list(tab);
+      d.innerHTML = `<div class="pr-top"><span class="pr-title">${icon("bookmark")}${esc(tr("b_title"))}</span><button class="btn quiet" type="button" data-x>${esc(tr("g_close"))}</button></div>`;
+      const body = el("div", "pr-body");
+      body.appendChild(el("p", "pr-lead", esc(tr("b_lead"))));
+      const seg = el("div", "pr-langs");
+      [["saved", "b_tab_saved", count()], ["known", "b_tab_known", Object.values(data).filter(x => x.k).length]].forEach(([k, label, n]) => {
+        const b = el("button", "chip" + (tab === k ? " on" : ""), `${esc(tr(label))} <span class="n">${n}</span>`);
+        b.type = "button";
+        b.setAttribute("aria-pressed", tab === k ? "true" : "false");
+        b.addEventListener("click", () => { tab = k; paintDialog(d); });
+        seg.appendChild(b);
+      });
+      body.appendChild(seg);
+      if (!ps.length) {
+        body.appendChild(el("p", "pr-hint", esc(tr(tab === "known" ? "b_empty_known" : "b_empty"))));
+      } else {
+        const tools = el("div", "pr-tools");
+        const cp = el("button", "pbtn", `${icon("copy")}${esc(tr("b_copy"))}`);
+        cp.type = "button";
+        cp.addEventListener("click", () => {
+          const txt = asText(ps);
+          const done = () => { cp.innerHTML = `${icon("check")}${esc(tr("b_copied"))}`; };
+          try { navigator.clipboard.writeText(txt).then(done, () => {}); } catch (e) {}
+        });
+        tools.appendChild(cp);
+        if (tab === "saved") {
+          const pr = el("button", "pbtn", `${icon("brain")}${esc(tr("b_practice"))}`);
+          pr.type = "button";
+          pr.addEventListener("click", () => { d.close(); Practice.open(); });
+          tools.appendChild(pr);
+        }
+        body.appendChild(tools);
+        const ul = el("ul", "list");
+        ps.forEach(p => ul.appendChild(rowItem(p)));
+        body.appendChild(ul);
+      }
+      d.appendChild(body);
+      d.querySelector("[data-x]").addEventListener("click", () => d.close());
+    }
+
+    return { isSaved, isKnown, count, toggleSave, toggleKnown, controls, open, updateBtn };
+  })();
+
+
   /* search + translate */
 
   const result = $("result");
@@ -4492,6 +5688,15 @@
   }
 
   applyUI(store.get("phrasebook-ui") || "en");
+  Practice.updateCta();
+  Book.updateBtn();
+  const paintNow = () => { const [ic, k] = nowTip(); $("now-tip").innerHTML = `${icon(ic)}<span>${esc(tr(k))}</span>`; };
+  paintNow();
+  $("now-tip").addEventListener("click", () => openLearn("day"));
+  $("book-btn").addEventListener("click", () => Book.open());
+  window.__paintNow = paintNow;
+  $("practice-btn").addEventListener("click", () => Practice.open());
+  $("learn-btn").addEventListener("click", () => openLearn());
 
   uiSel.addEventListener("change", () => {
     store.set("phrasebook-ui", uiSel.value);
@@ -4506,6 +5711,9 @@
     });
     const q = $("q").value.trim();
     if (result.children.length && q) showResult(q);
+    Practice.updateCta();
+    Book.updateBtn();
+    if (window.__paintNow) window.__paintNow();
   });
 
   renderChips();
