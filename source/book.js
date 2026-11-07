@@ -194,7 +194,7 @@
         document.body.appendChild(box);
       }
       const date = new Date().toLocaleDateString([], { dateStyle: "long" });
-      box.innerHTML = `<header class="pb-head"><h1>${esc(tr("b_title"))}</h1><p>Polygrok · ${esc(tr(which === "known" ? "b_tab_known" : "b_tab_saved"))} · ${ps.length} · ${esc(date)}</p></header>${ps.map(pdfItem).join("")}`;
+      box.innerHTML = `<header class="pb-head"><h1>${esc(tr("b_title"))}</h1><p>Polyling · ${esc(tr(which === "known" ? "b_tab_known" : "b_tab_saved"))} · ${ps.length} · ${esc(date)}</p></header>${ps.map(pdfItem).join("")}`;
       const title = document.title;
       document.title = `${tr("b_title")} ${new Date().toISOString().slice(0, 10)}`;
       const done = () => { document.title = title; box.innerHTML = ""; window.removeEventListener("afterprint", done); };

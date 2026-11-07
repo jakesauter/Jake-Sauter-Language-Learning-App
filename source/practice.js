@@ -403,7 +403,7 @@
   })();
 
 
-  /* research-backed guide to learning with Polygrok */
+  /* research-backed guide to learning with Polyling */
 
   let learnTab = "why";
 

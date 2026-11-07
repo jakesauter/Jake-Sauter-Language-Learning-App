@@ -61,9 +61,9 @@ def wordmark():
     pen = SVGPathPen(gs)
     x = 0
     hexo = None
-    for i, ch in enumerate("polygrok"):
+    for i, ch in enumerate("polyling"):
         g = cmap[ord(ch)]
-        if i == 6:
+        if i == 1:
             w = gs[g].width
             hexo = (x + w / 2, xh / 2, xh * 0.53, w)
             x += w - 20
@@ -110,7 +110,7 @@ def banner(W, H, title_h, path):
 <g opacity="0.08" stroke="{fg}" stroke-width="2" fill="none">{"".join(f'<path d="{hexpath(W - 120 - i * 150, 60 + (i % 2) * 90, 70)}"/>' for i in range(5))}{"".join(f'<path d="{hexpath(W - 45 - i * 150, H - 60 - (i % 2) * 80, 70)}"/>' for i in range(5))}</g>
 {mark(fg, bg, mx, my, ms)}
 {wsvg}
-<text x="{tx + title_h * 0.04:.1f}" y="{sub_y:.1f}" fill="{fg}" font-family="Inter, sans-serif" font-weight="600" font-size="{title_h * 0.22:.1f}">Grok a language, word by word.</text>
+<text x="{tx + title_h * 0.04:.1f}" y="{sub_y:.1f}" fill="{fg}" font-family="Inter, sans-serif" font-weight="600" font-size="{title_h * 0.22:.1f}">Learn any language, word by word.</text>
 <text x="{tx + title_h * 0.04:.1f}" y="{sub_y + title_h * 0.34:.1f}" fill="{fg}" fill-opacity="0.6" font-family="Inter, 'Noto Sans CJK TC', sans-serif" font-size="{title_h * 0.17:.1f}">{langs}</text>
 </svg>'''
     open(path, "w").write(svg)
@@ -127,4 +127,4 @@ m = m.replace('fill="#BGC"', 'class="bgf"').replace('stroke="#BGC"', 'class="bgs
 m = re.sub(r'class="bgf" stroke="currentColor"', 'class="bgf" stroke="currentColor"', m)
 open("mark-inline.svg", "w").write(f'<svg class="b-mark" viewBox="0 0 512 512" aria-hidden="true">{m}</svg>')
 wsvg, ww = word_svg("currentColor", 100, 0, 78)
-open("word-inline.svg", "w").write(f'<svg class="b-word" viewBox="0 -2 {ww:.0f} 104" role="img" aria-label="Polygrok">{wsvg}</svg>')
+open("word-inline.svg", "w").write(f'<svg class="b-word" viewBox="0 -2 {ww:.0f} 104" role="img" aria-label="Polyling">{wsvg}</svg>')

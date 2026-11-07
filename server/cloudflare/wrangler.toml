@@ -1,3 +1,3 @@
-name = "polygrok-translate"
+name = "polyling-translate"
 main = "worker.js"
 compatibility_date = "2025-01-01"

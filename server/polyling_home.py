@@ -1,4 +1,4 @@
-"""Polygrok home transcriber.
+"""Polyling home transcriber.
 
 Runs on your own computer, so there is no cloud bill. Phones reach it privately over Tailscale.
 
@@ -20,17 +20,17 @@ from email.policy import default as email_policy
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 
-MODEL = os.environ.get("POLYGROK_MODEL", "large-v3")
-DEVICE = os.environ.get("POLYGROK_DEVICE", "cuda")
-COMPUTE = os.environ.get("POLYGROK_COMPUTE", "int8_float16")
-PORT = int(os.environ.get("POLYGROK_PORT", "8000"))
-DATA_DIR = os.environ.get("POLYGROK_DATA", os.path.expanduser("~/polygrok-data"))
-OLLAMA = os.environ.get("POLYGROK_OLLAMA", "http://127.0.0.1:11434")
-LLM = os.environ.get("POLYGROK_LLM", "qwen2.5:7b")
-MAX_MB = int(os.environ.get("POLYGROK_MAX_MB", "200"))
+MODEL = os.environ.get("POLYLING_MODEL", "large-v3")
+DEVICE = os.environ.get("POLYLING_DEVICE", "cuda")
+COMPUTE = os.environ.get("POLYLING_COMPUTE", "int8_float16")
+PORT = int(os.environ.get("POLYLING_PORT", "8000"))
+DATA_DIR = os.environ.get("POLYLING_DATA", os.path.expanduser("~/polyling-data"))
+OLLAMA = os.environ.get("POLYLING_OLLAMA", "http://127.0.0.1:11434")
+LLM = os.environ.get("POLYLING_LLM", "qwen2.5:7b")
+MAX_MB = int(os.environ.get("POLYLING_MAX_MB", "200"))
 
 ORIGINS = [o.strip() for o in os.environ.get(
-    "POLYGROK_ORIGINS",
+    "POLYLING_ORIGINS",
     "https://jakesauter.github.io",
 ).split(",") if o.strip()]
 
@@ -172,5 +172,5 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"Polygrok home transcriber on :{PORT}  model={MODEL} device={DEVICE}  data={DATA_DIR}")
+    print(f"Polyling home transcriber on :{PORT}  model={MODEL} device={DEVICE}  data={DATA_DIR}")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

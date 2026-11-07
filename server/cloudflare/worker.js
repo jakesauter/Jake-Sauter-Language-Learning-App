@@ -1,4 +1,4 @@
-/* Polygrok translate proxy: holds the Google key so the website never has to. */
+/* Polyling translate proxy: holds the Google key so the website never has to. */
 
 const TARGETS = new Set(["yue", "zh-CN", "zh-TW", "es", "pt", "fr", "de", "fa", "ar", "he", "tr"]);
 
@@ -52,7 +52,7 @@ export default {
     const h = cors(origin);
 
     if (request.method === "OPTIONS") return new Response(null, { status: h ? 204 : 403, headers: h || {} });
-    if (!h) return reply(403, { error: "This translator only works from Polygrok." });
+    if (!h) return reply(403, { error: "This translator only works from Polyling." });
 
     const url = new URL(request.url);
     if (request.method === "GET" && url.pathname === "/health") return reply(200, { ok: true }, h);
@@ -67,7 +67,7 @@ export default {
     if (!TARGETS.has(target)) return reply(400, { error: "Unsupported language" }, h);
 
     const cache = typeof caches !== "undefined" ? caches.default : null;
-    const ckey = new Request("https://polygrok-cache/" + target + "/" + encodeURIComponent(q.toLowerCase()));
+    const ckey = new Request("https://polyling-cache/" + target + "/" + encodeURIComponent(q.toLowerCase()));
     if (cache) {
       const hit = await cache.match(ckey);
       if (hit) return reply(200, { text: (await hit.json()).text, cached: true }, h);
