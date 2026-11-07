@@ -4007,6 +4007,38 @@
       return null;
     }
 
+    const NUMW = { a: 1, an: 1, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, "a few": 0, few: 0, several: 0 };
+    const NUMZ = {
+      1: [["一", "jat1"], ["一", "yī"], ["一", "yit55"]], 2: [["兩", "loeng5"], ["两", "liǎng"], ["兩", "liaŋ55"]], 3: [["三", "saam1"], ["三", "sān"], ["三", "ɬam33", false]],
+      4: [["四", "sei3"], ["四", "sì"], ["四", "ɬi33", false]], 5: [["五", "ng5"], ["五", "wǔ"], ["五", "ŋ21", false]], 6: [["六", "luk6"], ["六", "liù"], ["六", "lək32"]],
+      7: [["七", "cat1"], ["七", "qī"], ["七", "tsit55", false]], 8: [["八", "baat3"], ["八", "bā"], ["八", "bat33", false]], 9: [["九", "gau2"], ["九", "jiǔ"], ["九", "giu55", false]],
+      10: [["十", "sap6"], ["十", "shí"], ["十", "sip32", false]], 0: [["幾", "gei2"], ["几", "jǐ"], ["幾", "gi55"]],
+    };
+    const UNITZ = {
+      minute: [["分鐘", "fan1 zung1"], ["分钟", "fēn zhōng"], ["分鐘", "fun33 tsuŋ33", false]], hour: [["個鐘", "go3 zung1"], ["个小时", "ge xiǎo shí"], ["個鐘", "gɔi33 tsuŋ33", false]],
+      day: [["日", "jat6"], ["天", "tiān"], ["日", "ŋit32"]], week: [["個禮拜", "go3 lai5 baai3"], ["个星期", "ge xīng qī"], ["個禮拜", "gɔi33 lai21 bai33", false]],
+      month: [["個月", "go3 jyut6"], ["个月", "ge yuè"], ["個月", "gɔi33 ŋut32", false]], year: [["年", "nin4"], ["年", "nián"], ["年", "nein22"]],
+    };
+    const UNIT_ES = { minute: ["minuto", "minutos", 0], hour: ["hora", "horas", 1], day: ["día", "días", 0], week: ["semana", "semanas", 1], month: ["mes", "meses", 0], year: ["año", "años", 0] };
+    const UNIT_FR = { minute: ["minute", "minutes", 1], hour: ["heure", "heures", 1], day: ["jour", "jours", 0], week: ["semaine", "semaines", 1], month: ["mois", "mois", 0], year: ["an", "ans", 0] };
+    const UNIT_DE = { minute: ["Minute", "Minuten", "eine"], hour: ["Stunde", "Stunden", "eine"], day: ["Tag", "Tage", "einen"], week: ["Woche", "Wochen", "eine"], month: ["Monat", "Monate", "einen"], year: ["Jahr", "Jahre", "ein"] };
+    const NUM_ES = ["", "", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez"];
+    const NUM_FR = ["", "", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
+    const NUM_DE = ["", "", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"];
+
+    function durX(n, u) {
+      const zh = k => {
+        const num = NUMZ[n] ? NUMZ[n][k] : [String(n), String(n)];
+        const un = UNITZ[u][k];
+        return [num[0] + un[0], num[1] + " " + un[1], num[2] !== false && un[2] !== false];
+      };
+      const es = UNIT_ES[u], fr = UNIT_FR[u], de = UNIT_DE[u];
+      const esN = n === 1 ? (es[2] ? "una" : "un") : n === 0 ? (es[2] ? "unas" : "unos") : (NUM_ES[n] || String(n));
+      const frN = n === 1 ? (fr[2] ? "une" : "un") : n === 0 ? "quelques" : (NUM_FR[n] || String(n));
+      const deN = n === 1 ? de[2] : n === 0 ? "ein paar" : (NUM_DE[n] || String(n));
+      return [zh(0), zh(1), zh(2), `durante ${esN} ${n === 1 ? es[0] : es[1]}`, `pendant ${frN} ${n === 1 ? fr[0] : fr[1]}`, `${deN} ${n === 1 ? de[0] : de[1]} lang`];
+    }
+
     function parse(text) {
       const raw = expand(text);
       if (!raw.length) return null;
@@ -4017,6 +4049,15 @@
       if (w[w.length - 1] === "please") { P.please = true; w = w.slice(0, -1); }
 
       let s = " " + w.join(" ") + " ";
+      const dm = s.match(/ for (a few|an|a|one|two|three|four|five|six|seven|eight|nine|ten|several|\d+) (minute|hour|day|week|month|year)s? /);
+      if (dm) {
+        const n = /^\d+$/.test(dm[1]) ? +dm[1] : NUMW[dm[1]];
+        const text = dm[0].trim();
+        P.dur = { n, unit: dm[2], text };
+        TIME_X[text] = durX(n, dm[2]);
+        P.time.push(text);
+        s = s.replace(dm[0], " ");
+      }
       for (const t of TIME) {
         if (s.includes(" " + t + " ")) { P.time.push(t); s = s.replace(" " + t + " ", " "); }
       }
@@ -4062,6 +4103,7 @@
       if (aux === "did" || aux === "was" || aux === "were" || aux === "had") P.tense = "past";
       if (aux === "will") P.tense = "fut";
       if (aux === "can" || aux === "could") P.modal = "can";
+      if (aux === "could" && !P.q && !P.wh) { P.could = true; P.tense = "past"; }
       if (aux === "should") P.modal = "should";
       if (aux === "would" && (w[0] === "like" || w[0] === "love")) { P.modal = "want"; w = w.slice(1); if (w[0] === "to") w = w.slice(1); }
       if ((aux === "have" || aux === "has") && w[0] && (PAST_EN[w[0]] || /ed$|en$/.test(w[0]))) P.tense = "past";
@@ -4245,8 +4287,8 @@
       if (P.please) ix.please = gl("please");
       if (P.subj && P.subj !== "who") ix.subj = gl(P.subj === "i" ? "I" : P.subj);
       if (P.subj === "who") ix.subj = gl("who");
-      if (P.neg) ix.neg = gl(P.tense === "past" ? "didn't" : P.imperative ? "don't" : "not");
-      if (P.modal) ix.modal = gl({ want: "want to", can: "can", need: "need to", should: "should", like: "like to", try: "try to" }[P.modal]);
+      if (P.neg) ix.neg = gl(P.tense === "past" && !P.modal ? "didn't" : P.imperative ? "don't" : "not");
+      if (P.modal) ix.modal = gl({ want: "want to", can: P.could ? "could" : "can", need: "need to", should: "should", like: "like to", try: "try to" }[P.modal]);
       if (P.tense === "fut" && !P.modal) ix.fut = gl("will");
       const pastOf = v => { const k = Object.keys(PAST_EN).find(x => PAST_EN[x] === v && !/ed$/.test(x)); return k || (v.endsWith("e") ? v + "d" : v + "ed"); };
       if (P.verb) ix.verb = gl(P.tense === "past" && !P.modal && !P.neg && !(P.q && !P.wh) ? (P.verb.includes(" ") ? pastOf(P.verb.split(" ")[0]) + " " + P.verb.split(" ").slice(1).join(" ") : pastOf(P.verb)) : P.verb.replace(/ n$/, ""));
@@ -4307,7 +4349,15 @@
         (n.adj || []).forEach(a => { word(a, ref); if (L === "cmn") put(FN.of, ref); });
         word(n.word, ref);
       };
-      const timeAll = () => P.time.forEach((t, k) => { const x = TIME_X[t]; put({ yue: x[0], cmn: x[1], tsn: x[2] }, ix["time" + k]); });
+      const durTok = () => { const k = P.time.indexOf(P.dur.text); const x = TIME_X[P.dur.text]; put({ yue: x[0], cmn: x[1], tsn: x[2] }, ix["time" + k]); };
+      const timeAll = () => P.time.forEach((t, k) => {
+        if (P.dur && t === P.dur.text) {
+          if (P.neg) { durTok(); put({ yue: ["都", "dou1"], cmn: ["都", "dōu"], tsn: ["都", "u33"] }, ix["time" + k]); }
+          return;
+        }
+        const x = TIME_X[t];
+        put({ yue: x[0], cmn: x[1], tsn: x[2] }, ix["time" + k]);
+      });
 
       const yesno = P.q && !P.wh;
       let aNotA = yesno && L !== "cmn";
@@ -4338,7 +4388,7 @@
       };
       if (P.adj || P.there || P.copula) preVerb();
 
-      const neg = P.neg ? (P.tense === "past" ? FN.notPast : P.tense === "fut" ? FN.notWill : FN.not) : null;
+      const neg = P.neg ? (P.tense === "past" && !P.modal ? FN.notPast : P.tense === "fut" ? FN.notWill : FN.not) : null;
       if (P.imperative && P.neg) {
         put({ yue: ["唔好", "m4 hou2"], cmn: ["别", "bié"], tsn: ["唔好", "mɔu55"] }, ix.neg);
       }
@@ -4401,18 +4451,20 @@
       const pastYesNo = yesno && P.tense === "past" && !P.modal;
       if (pastYesNo && !P.yet && !P.well) put(FN.haveNot, ix.q);
 
-      if (neg && !(P.imperative) && !(P.modal === "can" && ["find", "see", "hear", "sleep"].includes(P.verb))) {
+      const RES = { find: { yue: ["搵", "wan2"], cmn: ["找", "zhǎo"], tsn: ["搵", "vun55"] }, see: { yue: ["睇", "tai2"], cmn: ["看", "kàn"], tsn: ["睇", "hai55"] }, hear: { yue: ["聽", "teng1"], cmn: ["听", "tīng"], tsn: ["聽", "hiaŋ33"] }, sleep: { yue: ["瞓", "fan3"], cmn: ["睡", "shuì"], tsn: ["瞓", "fun33"] }, eat: { yue: ["食", "sik6"], cmn: ["吃", "chī"], tsn: ["吃", "hiak33"] }, drink: { yue: ["飲", "jam2"], cmn: ["喝", "hē"], tsn: ["飲", "ŋim55"] }, come: { yue: ["嚟", "lai4"], cmn: ["来", "lái"], tsn: ["來", "lɔi22"] }, go: { yue: ["去", "heoi3"], cmn: ["去", "qù"], tsn: ["去", "hui33"] } };
+      const downV = P.verb === "eat" || P.verb === "drink";
+      const ableOnlyNeg = downV || P.verb === "come" || P.verb === "go";
+      const resV = P.modal === "can" && (P.neg || !ableOnlyNeg) && !(downV && P.obj) && !(ableOnlyNeg && !downV && P.place) ? RES[P.verb] || null : null;
+      if (neg && !(P.imperative) && !resV) {
         if (P.motionProg && L !== "cmn") {}
         else if (P.modal || P.tense !== "past") put(neg, ix.neg); else put(FN.notPast, ix.neg);
       }
 
-      const RES = { find: { yue: ["搵", "wan2"], cmn: ["找", "zhǎo"], tsn: ["搵", "vun55"] }, see: { yue: ["睇", "tai2"], cmn: ["看", "kàn"], tsn: ["睇", "hai55"] }, hear: { yue: ["聽", "teng1"], cmn: ["听", "tīng"], tsn: ["聽", "hiaŋ33"] }, sleep: { yue: ["瞓", "fan3"], cmn: ["睡", "shuì"], tsn: ["瞓", "fun33"] } };
-      const resV = P.modal === "can" && RES[P.verb];
       if (resV) {
         preVerb();
         const st = resV[L];
         const mid = P.neg ? (L === "cmn" ? ["不", "bu"] : L === "tsn" ? ["唔", "m22"] : ["唔", "m4"]) : (L === "cmn" ? ["得", "de"] : L === "tsn" ? ["得", "ak33"] : ["得", "dak1"]);
-        const endc = L === "cmn" ? (P.verb === "see" ? ["见", "jiàn"] : ["到", "dào"]) : L === "tsn" ? ["到", "ɔu55"] : ["到", "dou2"];
+        const endc = downV ? (L === "cmn" ? ["下", "xià"] : L === "tsn" ? ["落", "lɔk32"] : ["落", "lok6"]) : L === "cmn" ? (P.verb === "see" ? ["见", "jiàn"] : P.verb === "sleep" ? ["着", "zháo"] : (P.verb === "come" || P.verb === "go") ? ["了", "liǎo"] : ["到", "dào"]) : L === "tsn" ? ["到", "ɔu55"] : ["到", "dou2"];
         if (yesno && !P.neg && L !== "cmn") toks.push({ hz: st[0] + "唔" + st[0] + "得到", rom: st[1] + (L === "tsn" ? " m22 " : " m4 ") + st[1] + " " + (L === "tsn" ? "ak33 ɔu55" : "dak1 dou2"), refs: [ix.modal, ix.verb], sure: L !== "tsn" });
         else toks.push({ hz: st[0] + mid[0] + endc[0], rom: st[1] + " " + mid[1] + " " + endc[1], refs: [ix.modal, ix.neg, ix.verb].filter(x => x !== undefined), sure: L !== "tsn" });
         npZh(P.obj, ix.obj);
@@ -4473,8 +4525,9 @@
         const isGoCome = P.verb === "go" || P.verb === "come";
         if (aNotA && !P.neg && !pastYesNo && vw && !P.yet && !P.prog) { aNotAWord(vw, ix.verb); aNotA = false; }
         else if (vw) put(vw, ix.verb); else word(P.verb, ix.verb);
-        if (P.tense === "past" && !P.neg && !P.modal && !pastYesNo && !(L === "cmn" && !P.obj && !P.objDem && !P.wh) || (P.tense === "past" && !P.neg && !P.modal && P.yet && L !== "cmn")) put(FN.past, ix.verb);
+        if (P.tense === "past" && !P.neg && !P.modal && !pastYesNo && !(L === "cmn" && !P.obj && !P.objDem && !P.wh && !P.dur) || (P.tense === "past" && !P.neg && !P.modal && P.yet && L !== "cmn")) put(FN.past, ix.verb);
         if (P.prog && L !== "cmn" && !P.neg) put({ yue: ["緊", "gan2"], tsn: ["緊", "gin55", false] }, ix.verb);
+        if (P.dur && !P.neg) durTok();
         if (P.objDem) put({ it: (P.verb === "like" && !yesno) ? CORE.it : null, this: FN.this, that: FN.that }[P.objDem] || { yue: null, cmn: null, tsn: null }, ix.objDem);
         if (!P.obj && !P.objDem && !P.wh && !P.place && !P.objPron && ["eat"].includes(P.verb) && !P.neg && !P.prog === false) put({ yue: ["嘢", "je5"], cmn: ["东西", "dōng xi"], tsn: ["嘢", "yia33"] }, ix.verb);
         else if (!P.obj && !P.objDem && !P.wh && !P.place && P.verb === "eat" && (P.modal === "want") && !P.neg) put({ yue: ["嘢", "je5"], cmn: ["东西", "dōng xi"], tsn: ["嘢", "yia33"] }, ix.verb);
@@ -4488,7 +4541,7 @@
         npZh(P.obj, ix.obj);
         if (P.forNP) { }
         if (P.alot) put(CORE["a lot"], ix.alot);
-        if (P.tense === "past" && !P.neg && !P.modal && L === "cmn" && !pastYesNo && !P.obj && !P.objDem && !P.wh) put(FN.past, ix.verb);
+        if (P.tense === "past" && !P.neg && !P.modal && L === "cmn" && !pastYesNo && !P.obj && !P.objDem && !P.wh && !P.dur) put(FN.past, ix.verb);
       }
 
       if (P.wh === "howmuch") put(FN.howMuch, ix.wh);
@@ -5079,7 +5132,7 @@
       if (!P) return null;
       if (P.whBe) return whBe(text, P);
       let B;
-      try { B = build(P); } catch (e) { return null; }
+      try { B = build(P); } catch (e) { if (typeof window !== "undefined") window.__composeErr = String(e && e.stack || e); return null; }
       if (!B.yue.length || !B.es.length) return null;
       const out = { en: text, gloss: B.gloss, yue: B.yue, cmn: B.cmn.filter(t => t.hz), tsn: B.tsn, es: B.es, fr: B.fr, de: B.de, guess: true, composed: true };
       const notes = [tr("c_note")];
