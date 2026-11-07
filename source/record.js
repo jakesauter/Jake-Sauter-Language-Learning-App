@@ -140,7 +140,7 @@
       if (SR) {
         liveBox = document.createElement("input");
         liveBox.type = "checkbox";
-        liveBox.checked = !!store.get("polygrok-rec-live");
+        liveBox.checked = store.get("polygrok-rec-live") === "1";
         const lab = el("label", "rec-check", "");
         lab.appendChild(liveBox);
         lab.appendChild(el("span", "", esc(tr("r_live"))));
@@ -157,7 +157,7 @@
       go.addEventListener("click", () => {
         store.set("polygrok-rec-who", who.value.trim());
         store.set("polygrok-rec-lang", lang.value);
-        if (liveBox) store.set("polygrok-rec-live", liveBox.checked);
+        if (liveBox) store.set("polygrok-rec-live", liveBox.checked ? "1" : "");
         startRec({ who: who.value.trim(), lang: lang.value, captions: !!(liveBox && liveBox.checked) });
       });
       form.appendChild(go);

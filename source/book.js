@@ -2,10 +2,10 @@
 
   const Book = (() => {
     const KEY = "polygrok-book";
-    let data = store.get(KEY) || {};
+    let data = (() => { try { const v = JSON.parse(store.get(KEY) || "{}"); return v && typeof v === "object" ? v : {}; } catch (e) { return {}; } })();
     let tab = "saved";
 
-    const save = () => store.set(KEY, data);
+    const save = () => store.set(KEY, JSON.stringify(data));
     const rec = en => data[en] || (data[en] = {});
     const tidy = en => { if (data[en] && !data[en].s && !data[en].k && !data[en].n) delete data[en]; };
     const noteOf = key => (data[key] && data[key].n) || "";
