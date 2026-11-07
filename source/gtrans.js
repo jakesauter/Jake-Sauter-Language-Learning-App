@@ -1,9 +1,9 @@
-  /* Google Translate (optional): uses your own key, which is stored only on this phone */
+  /* Google Translate, through the Polygrok server (a Cloudflare Worker holds the key) */
+
+  const GT_PROXY = "";
 
   const GT = (() => {
-    const KEY = "polygrok-gkey";
     const CODES = { yue: "yue", cmn: "zh-CN", es: "es", pt: "pt", fr: "fr", de: "de", fa: "fa", apc: "ar", he: "he", tr: "tr" };
-    const key = () => String(store.get(KEY) || "").trim();
     const cacheKey = (text, l) => "polygrok-gt-" + l + "-" + text.trim().toLowerCase();
 
     let PY = null;
@@ -34,26 +34,25 @@
       const ck = cacheKey(text, l);
       const hit = store.get(ck);
       if (hit && hit !== "null") return hit;
-      const r = await fetch("https://translation.googleapis.com/language/translate/v2?key=" + encodeURIComponent(key()), {
+      const r = await fetch(GT_PROXY.replace(/\/+$/, "") + "/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ q: text, source: "en", target: CODES[l], format: "text" }),
+        body: JSON.stringify({ q: text, target: CODES[l] }),
       });
       let j = {};
       try { j = await r.json(); } catch (e) {}
       if (!r.ok) {
-        const msg = (j.error && j.error.message) || String(r.status);
-        const err = new Error(msg);
-        err.quota = r.status === 403 && /limit|quota/i.test(msg);
+        const err = new Error(j.error || String(r.status));
+        err.quota = j.error === "daily-limit";
         throw err;
       }
-      const out = j.data.translations[0].translatedText;
+      const out = j.text;
       store.set(ck, out);
       return out;
     }
 
     function section(text) {
-      if (!key() || !text) return null;
+      if (!GT_PROXY || !text) return null;
       const langs = LEARN_LANGS.filter(l => CODES[l] && show[l]);
       if (!langs.length) return null;
       const box = el("section", "full gt");
@@ -86,32 +85,5 @@
       return box;
     }
 
-    function settings() {
-      const box = el("details", "rec-home gt-set");
-      box.appendChild(el("summary", "", esc(tr("gt_set"))));
-      const row = el("div", "rec-home-row");
-      const inp = document.createElement("input");
-      inp.className = "rec-in";
-      inp.type = "password";
-      inp.autocomplete = "off";
-      inp.placeholder = tr("gt_ph");
-      inp.value = key();
-      inp.addEventListener("change", () => store.set(KEY, inp.value.trim()));
-      const test = el("button", "pbtn", esc(tr("r_home_test")));
-      test.type = "button";
-      const msg = el("p", "pr-hint", esc(tr("gt_help")));
-      test.addEventListener("click", async () => {
-        store.set(KEY, inp.value.trim());
-        msg.textContent = "…";
-        try {
-          const out = await translate("good morning", "yue");
-          msg.textContent = `${tr("gt_ok")}: good morning → ${out}`;
-        } catch (e) { msg.textContent = e.quota ? tr("gt_quota") : tr("gt_fail", { msg: e.message }); }
-      });
-      row.append(inp, test);
-      box.append(row, msg);
-      return box;
-    }
-
-    return { section, settings, has: () => !!key() };
+    return { section, on: () => !!GT_PROXY };
   })();

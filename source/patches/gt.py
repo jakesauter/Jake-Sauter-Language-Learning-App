@@ -8,18 +8,9 @@ def rep(a, b):
 
 g = "  const PINYIN_RAW = " + json.dumps(open("pinyin.txt", encoding="utf-8").read(), ensure_ascii=False) + ";\n\n" + open("gtrans.js", encoding="utf-8").read()
 rep("  /* search + translate */", g + "\n\n  /* search + translate */")
-rep('''        <button class="link" id="guide-btn" type="button" data-i18n="guide_btn">Tone and reading guide</button>''',
-    '''        <button class="link" id="guide-btn" type="button" data-i18n="guide_btn">Tone and reading guide</button>
-        <div id="gt-settings"></div>''')
 rep('''    result.appendChild(renderDetail(g.p));''', '''    result.appendChild(renderDetail(g.p));
     const gts = GT.section(text);
     if (gts) result.appendChild(gts);''')
-rep('''  $("rec-btn").addEventListener("click", () => Rec.open());''', '''  $("rec-btn").addEventListener("click", () => Rec.open());
-  const paintGt = () => { const b = $("gt-settings"); if (b) { b.innerHTML = ""; b.appendChild(GT.settings()); } };
-  paintGt();
-  window.__paintGt = paintGt;''')
-rep('''    if (window.__paintNow) window.__paintNow();''', '''    if (window.__paintNow) window.__paintNow();
-    if (window.__paintGt) window.__paintGt();''')
 rep('''  .now-tip { ''', '''  .gt-set { margin-top: var(--s-3); }
   .gt .label { margin-bottom: 4px; }
   .gt .lp:disabled { opacity: 0.3; }
