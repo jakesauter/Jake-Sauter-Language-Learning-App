@@ -7,7 +7,21 @@
 
     const save = () => store.set(KEY, data);
     const rec = en => data[en] || (data[en] = {});
-    const tidy = en => { if (data[en] && !data[en].s && !data[en].k) delete data[en]; };
+    const tidy = en => { if (data[en] && !data[en].s && !data[en].k && !data[en].n) delete data[en]; };
+    const noteOf = key => (data[key] && data[key].n) || "";
+
+    function noteBox(key) {
+      const l = el("label", "my-hook-l anchor-note", `<span>${esc(tr("bk_anchor"))}</span>`);
+      const t = document.createElement("textarea");
+      t.className = "my-hook";
+      t.rows = 2;
+      t.placeholder = tr("bk_anchor_ph");
+      t.value = noteOf(key);
+      t.addEventListener("input", () => { rec(key).n = t.value.trim() ? t.value : ""; tidy(key); save(); });
+      t.addEventListener("click", e => e.stopPropagation());
+      l.appendChild(t);
+      return l;
+    }
 
     const isSaved = en => !!(data[en] && data[en].s);
     const isKnown = en => !!(data[en] && data[en].k);
@@ -52,7 +66,8 @@
 
     function asText(ps) {
       const langs = LANES.filter(l => l !== "en" && show[l]);
-      return ps.map(p => p.clip ? [p.clip.mean, p.clip.said, p.clip.who].filter(Boolean).join("\n") : [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }).filter(Boolean)].join("\n")).join("\n\n");
+      const anchor = k => noteOf(k) ? `${tr("bk_anchor")}: ${noteOf(k)}` : "";
+      return ps.map(p => p.clip ? [p.clip.mean, p.clip.said, p.clip.who, anchor(p.key)].filter(Boolean).join("\n") : [p.en, ...langs.map(l => { const t = fullText(p, l); return t ? `${NAMES[l]}: ${t}` : ""; }), anchor(p.en)].filter(Boolean).join("\n")).join("\n\n");
     }
 
     function updateBtn() {
@@ -66,8 +81,10 @@
       sv.type = "button";
       const kn = el("button", "pbtn", "");
       kn.type = "button";
+      const nb = noteBox(p.en);
       const paint = () => {
         const s = isSaved(p.en), k = isKnown(p.en);
+        nb.hidden = !(s || k || noteOf(p.en));
         sv.innerHTML = `${icon("bookmark")}${esc(tr(s ? "bk_saved" : "b_save"))}`;
         sv.classList.toggle("on", s);
         kn.innerHTML = `${icon("check")}${esc(tr(k ? "b_known" : "b_know"))}`;
@@ -76,7 +93,7 @@
       paint();
       sv.addEventListener("click", e => { e.stopPropagation(); toggleSave(p); paint(); Practice.updateCta(); });
       kn.addEventListener("click", e => { e.stopPropagation(); toggleKnown(p); paint(); Practice.updateCta(); });
-      wrap.append(sv, kn);
+      wrap.append(sv, kn, nb);
       return wrap;
     }
 
@@ -131,7 +148,11 @@
         }
         body.appendChild(tools);
         const ul = el("ul", "list");
-        ps.forEach(p => ul.appendChild(p.clip ? clipItem(p, d) : rowItem(p)));
+        ps.forEach(p => {
+          const li = p.clip ? clipItem(p, d) : rowItem(p);
+          li.appendChild(noteBox(p.clip ? p.key : p.en));
+          ul.appendChild(li);
+        });
         body.appendChild(ul);
       }
       d.appendChild(body);
@@ -153,14 +174,16 @@
       return `<div class="pb-row"><div class="pb-lang">${esc(NAMES[l])}</div><div><div class="pb-text"${dir}>${esc(text)}</div>${rom ? `<div class="pb-rom">${esc(rom)}</div>` : ""}${words ? `<div class="pb-words">${words}</div>` : ""}</div></div>`;
     }
 
+    const pdfNote = key => noteOf(key) ? `<div class="pb-note"><b>${esc(tr("bk_anchor"))}:</b> ${esc(noteOf(key))}</div>` : "";
+
     function pdfItem(p) {
       if (p.clip) {
         const c = p.clip;
         const zh = c.said && /[㐀-鿿]/.test(c.said);
-        return `<section class="pb-item"><h2>${esc(c.mean || "…")}</h2>${c.said ? `<div class="pb-text">${esc(c.said)}</div>` : ""}${zh ? `<div class="rec-gloss">${Rec.gloss(c.said)}</div>` : ""}<div class="pb-meta">${esc(tr("r_title"))}${c.who ? " · " + esc(c.who) : ""} · ${esc(c.lang === "mix" ? tr("r_mixed") : NAMES[c.lang])}</div></section>`;
+        return `<section class="pb-item"><h2>${esc(c.mean || "…")}</h2>${c.said ? `<div class="pb-text">${esc(c.said)}</div>` : ""}${zh ? `<div class="rec-gloss">${Rec.gloss(c.said)}</div>` : ""}<div class="pb-meta">${esc(tr("r_title"))}${c.who ? " · " + esc(c.who) : ""} · ${esc(c.lang === "mix" ? tr("r_mixed") : NAMES[c.lang])}</div>${pdfNote(p.key)}</section>`;
       }
       const langs = FULL_LANGS.filter(l => l !== "en" && show[parentLang(l)]);
-      return `<section class="pb-item"><h2>${esc(p.en)}</h2>${langs.map(l => pdfRow(p, l)).join("")}</section>`;
+      return `<section class="pb-item"><h2>${esc(p.en)}</h2>${pdfNote(p.en)}${langs.map(l => pdfRow(p, l)).join("")}</section>`;
     }
 
     function exportPdf(ps, which) {

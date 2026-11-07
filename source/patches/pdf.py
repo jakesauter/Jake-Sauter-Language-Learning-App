@@ -26,14 +26,19 @@ rep('''  .now-tip { ''', '''  #print-book { display: none; }
     .pb-w, #print-book .gl { display: inline-grid; justify-items: center; line-height: 1.2; }
     .pb-w b, #print-book .gl b { font-size: 12pt; font-weight: 600; }
     .pb-w small, #print-book .gl small { font-size: 7pt; color: #444; }
+    .pb-note { font-size: 10pt; margin: 0 0 3mm; padding: 2mm 3mm; border-left: 2pt solid #000; background: #f3f3f3; }
     .pb-meta { font-size: 8.5pt; color: #444; margin-top: 2mm; }
   }
 
+  .anchor-note { margin-top: 6px; }
+  .list li .anchor-note { padding: 0 0 12px; }
+  .book-acts .anchor-note { flex-basis: 100%; }
   .now-tip { ''')
 
+N = {"en": ["My memory anchor", "What does it sound like to you? e.g. happy → hoh hoy, like a jolly \"ho ho\""], "es": ["Mi ancla de memoria", "¿A qué te suena? p. ej. feliz → hoh hoy, como un alegre \"jo jo\""], "fr": ["Mon ancre mémoire", "À quoi ça te fait penser ? ex. heureux → hoh hoy, comme un joyeux « ho ho »"], "de": ["Meine Eselsbrücke", "Woran erinnert es dich? z. B. glücklich → hoh hoy, wie ein fröhliches „ho ho“"], "yue": ["我嘅記憶錨", "你覺得似乜嘢？例如：開心 → hoh hoy，好似開心咁「呵呵」"], "cmn": ["我的记忆锚点", "它听起来像什么？例如：开心 → hoh hoy，像开心的“呵呵”"]}
 T = {"en": "Save as PDF", "es": "Guardar como PDF", "fr": "Enregistrer en PDF", "de": "Als PDF speichern", "yue": "儲存做 PDF", "cmn": "保存为 PDF"}
 anchors = {"en": '_name: "English", _lang: "en",', "es": '_name: "Español", _lang: "es",', "fr": '_name: "Français", _lang: "fr",', "de": '_name: "Deutsch", _lang: "de",', "yue": '_name: "廣東話", _lang: "zh-HK",', "cmn": '_name: "普通话", _lang: "zh-CN",'}
 for k, v in T.items():
-    rep(anchors[k], anchors[k] + f" b_pdf: {json.dumps(v, ensure_ascii=False)},")
+    rep(anchors[k], anchors[k] + f" b_pdf: {json.dumps(v, ensure_ascii=False)}, bk_anchor: {json.dumps(N[k][0], ensure_ascii=False)}, bk_anchor_ph: {json.dumps(N[k][1], ensure_ascii=False)},")
 open(p, "w", encoding="utf-8").write(s)
 print("pdf ok")
