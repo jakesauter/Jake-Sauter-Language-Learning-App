@@ -25,8 +25,8 @@
     }
 
     function romFor(l, text) {
-      if (l === "yue") { const m = zhSounds(); return romText("yue", [...text].map(c => m.get(c)).filter(Boolean).join(" ")); }
-      if (l === "cmn") { const m = pySounds(); return romText("cmn", [...text].map(c => m.get(c)).filter(Boolean).join(" ")); }
+      if (l === "yue") { const m = zhSounds(); return romBoth("yue", [...text].map(c => m.get(c)).filter(Boolean).join(" ")); }
+      if (l === "cmn") { const m = pySounds(); return romBoth("cmn", [...text].map(c => m.get(c)).filter(Boolean).join(" ")); }
       return "";
     }
 
@@ -73,7 +73,7 @@
         box.appendChild(row);
         translate(text, l).then(out => {
           const rom = romFor(l, out);
-          tx.innerHTML = esc(out) + (rom ? `<span class="fr-rom" dir="ltr">${esc(rom)}</span>` : "");
+          tx.innerHTML = esc(out) + (rom ? `<span class="fr-rom" dir="ltr">${rom}</span>` : "");
           play.disabled = false;
           play.addEventListener("click", () => sayVoice(out, l));
         }).catch(e => {

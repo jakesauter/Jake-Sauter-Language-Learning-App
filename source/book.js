@@ -165,13 +165,13 @@
       const text = fullText(p, l);
       if (!text) return "";
       const zh = ZH_LANGS.includes(l);
-      const rom = zh ? romText(l, (p[l] || []).map(t => t.rom).filter(Boolean).join(" ")) : (romLine(p, l) ? easyMe(l, romLine(p, l)) : "");
+      const rom = romFullHtml(p, l);
       const words = zh ? (p[l] || []).filter(t => t.hz).map(t => {
         const g = (t.refs || []).map(r => p.gloss[r]).filter(Boolean).join(" ");
         return `<span class="pb-w"><small>${esc(romText(l, t.rom || ""))}</small><b>${esc(t.hz)}</b><small>${esc(g || "·")}</small></span>`;
       }).join("") : "";
       const dir = RTL.has(l) ? ` dir="rtl" lang="${HTML_LANG[l]}"` : "";
-      return `<div class="pb-row"><div class="pb-lang">${esc(NAMES[l])}</div><div><div class="pb-text"${dir}>${esc(text)}</div>${rom ? `<div class="pb-rom">${esc(rom)}</div>` : ""}${words ? `<div class="pb-words">${words}</div>` : ""}</div></div>`;
+      return `<div class="pb-row"><div class="pb-lang">${esc(NAMES[l])}</div><div><div class="pb-text"${dir}>${esc(text)}</div>${rom ? `<div class="pb-rom">${rom}</div>` : ""}${words ? `<div class="pb-words">${words}</div>` : ""}</div></div>`;
     }
 
     const pdfNote = key => noteOf(key) ? `<div class="pb-note"><b>${esc(tr("bk_anchor"))}:</b> ${esc(noteOf(key))}</div>` : "";
