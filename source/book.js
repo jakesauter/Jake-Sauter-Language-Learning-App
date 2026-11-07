@@ -119,6 +119,10 @@
           try { navigator.clipboard.writeText(txt).then(done, () => {}); } catch (e) {}
         });
         tools.appendChild(cp);
+        const pdf = el("button", "pbtn", `${icon("book")}${esc(tr("b_pdf"))}`);
+        pdf.type = "button";
+        pdf.addEventListener("click", () => { d.close(); exportPdf(ps, tab); });
+        tools.appendChild(pdf);
         if (tab === "saved") {
           const pr = el("button", "pbtn", `${icon("brain")}${esc(tr("b_practice"))}`);
           pr.type = "button";
@@ -132,6 +136,47 @@
       }
       d.appendChild(body);
       d.querySelector("[data-x]").addEventListener("click", () => d.close());
+    }
+
+    const ZH_LANGS = ["tsn", "yue", "cmn"];
+
+    function pdfRow(p, l) {
+      const text = fullText(p, l);
+      if (!text) return "";
+      const zh = ZH_LANGS.includes(l);
+      const rom = zh ? romText(l, (p[l] || []).map(t => t.rom).filter(Boolean).join(" ")) : (romLine(p, l) ? easyMe(l, romLine(p, l)) : "");
+      const words = zh ? (p[l] || []).filter(t => t.hz).map(t => {
+        const g = (t.refs || []).map(r => p.gloss[r]).filter(Boolean).join(" ");
+        return `<span class="pb-w"><small>${esc(romText(l, t.rom || ""))}</small><b>${esc(t.hz)}</b><small>${esc(g || "·")}</small></span>`;
+      }).join("") : "";
+      const dir = RTL.has(l) ? ` dir="rtl" lang="${HTML_LANG[l]}"` : "";
+      return `<div class="pb-row"><div class="pb-lang">${esc(NAMES[l])}</div><div><div class="pb-text"${dir}>${esc(text)}</div>${rom ? `<div class="pb-rom">${esc(rom)}</div>` : ""}${words ? `<div class="pb-words">${words}</div>` : ""}</div></div>`;
+    }
+
+    function pdfItem(p) {
+      if (p.clip) {
+        const c = p.clip;
+        const zh = c.said && /[㐀-鿿]/.test(c.said);
+        return `<section class="pb-item"><h2>${esc(c.mean || "…")}</h2>${c.said ? `<div class="pb-text">${esc(c.said)}</div>` : ""}${zh ? `<div class="rec-gloss">${Rec.gloss(c.said)}</div>` : ""}<div class="pb-meta">${esc(tr("r_title"))}${c.who ? " · " + esc(c.who) : ""} · ${esc(c.lang === "mix" ? tr("r_mixed") : NAMES[c.lang])}</div></section>`;
+      }
+      const langs = FULL_LANGS.filter(l => l !== "en" && show[parentLang(l)]);
+      return `<section class="pb-item"><h2>${esc(p.en)}</h2>${langs.map(l => pdfRow(p, l)).join("")}</section>`;
+    }
+
+    function exportPdf(ps, which) {
+      let box = $("print-book");
+      if (!box) {
+        box = document.createElement("div");
+        box.id = "print-book";
+        document.body.appendChild(box);
+      }
+      const date = new Date().toLocaleDateString([], { dateStyle: "long" });
+      box.innerHTML = `<header class="pb-head"><h1>${esc(tr("b_title"))}</h1><p>Polygrok · ${esc(tr(which === "known" ? "b_tab_known" : "b_tab_saved"))} · ${ps.length} · ${esc(date)}</p></header>${ps.map(pdfItem).join("")}`;
+      const title = document.title;
+      document.title = `${tr("b_title")} ${new Date().toISOString().slice(0, 10)}`;
+      const done = () => { document.title = title; box.innerHTML = ""; window.removeEventListener("afterprint", done); };
+      window.addEventListener("afterprint", done);
+      setTimeout(() => { try { window.print(); } catch (e) { done(); } }, 80);
     }
 
     function clipItem(p, d) {
