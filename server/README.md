@@ -1,10 +1,10 @@
-# Polyling home transcriber
+# Polylang home transcriber
 
 This runs speech-to-text and translation on your own computer, so there's no cloud bill. Your phone reaches it privately over Tailscale.
 
 - **Speech to text:** [faster-whisper](https://github.com/SYSTRAN/faster-whisper) running Whisper large-v3. It handles Cantonese (`yue`), Mandarin, Spanish, French, German and English.
 - **Translation (optional):** a local LLM through [Ollama](https://ollama.com). The default is `qwen2.5:7b`, which is strong at Chinese.
-- **Your data:** every upload and its transcript is saved to `POLYLING_DATA`, so put that on the 2 TB drive. No model knows Taishanese yet, and these files are the start of a dataset to fine-tune one.
+- **Your data:** every upload and its transcript is saved to `POLYLANG_DATA`, so put that on the 2 TB drive. No model knows Taishanese yet, and these files are the start of a dataset to fine-tune one.
 
 Sized for an RTX 2070 (8 GB): Whisper large-v3 in `int8_float16` uses about 3 GB, and a 7B model at Q4 uses about 5 GB. Jobs run one at a time.
 
@@ -24,8 +24,8 @@ Optional translation:
 
 ## 2. Run
 
-    export POLYLING_DATA=/mnt/d/polyling-data      # the 2 TB drive
-    python3 polyling_home.py
+    export POLYLANG_DATA=/mnt/d/polylang-data      # the 2 TB drive
+    python3 polylang_home.py
 
 The first run downloads the Whisper model, about 3 GB. Check that it's up at `http://localhost:8000/health`.
 
@@ -33,11 +33,11 @@ Settings, all optional:
 
 | Variable | Default | |
 |---|---|---|
-| `POLYLING_MODEL` | `large-v3` | `medium` is faster with less VRAM |
-| `POLYLING_COMPUTE` | `int8_float16` | `float16` is slightly more accurate |
-| `POLYLING_LLM` | `qwen2.5:7b` | any Ollama model |
-| `POLYLING_ORIGINS` | `https://jakesauter.github.io` | add the new address after a repo rename |
-| `POLYLING_MAX_MB` | `200` | largest upload accepted |
+| `POLYLANG_MODEL` | `large-v3` | `medium` is faster with less VRAM |
+| `POLYLANG_COMPUTE` | `int8_float16` | `float16` is slightly more accurate |
+| `POLYLANG_LLM` | `qwen2.5:7b` | any Ollama model |
+| `POLYLANG_ORIGINS` | `https://jakesauter.github.io` | add the new address after a repo rename |
+| `POLYLANG_MAX_MB` | `200` | largest upload accepted |
 
 The server listens on 127.0.0.1 only. Nothing on your home network or the internet can reach it directly.
 
@@ -46,7 +46,7 @@ The server listens on 127.0.0.1 only. Nothing on your home network or the intern
 1. Install Tailscale on the PC (Windows) and on your iPhone, and sign in to both with the same account.
 2. In the Tailscale admin console, under DNS, turn on MagicDNS and HTTPS certificates.
 3. On the PC, run: `tailscale serve --bg 8000`
-4. It prints an address like `https://legion.your-tailnet.ts.net`. In Polyling, open Record › Home computer, paste that address, and tap Test.
+4. It prints an address like `https://legion.your-tailnet.ts.net`. In Polylang, open Record › Home computer, paste that address, and tap Test.
 
 Tailscale Serve provides a real HTTPS certificate. That matters because the app is served over HTTPS, and browsers block it from calling a plain `http://` address. Only devices signed in to your tailnet can connect.
 

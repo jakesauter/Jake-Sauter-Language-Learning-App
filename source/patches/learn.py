@@ -21,7 +21,7 @@ rep('''    <p class="sub" id="sub"></p>''', '''    <p class="sub" id="sub"></p>
     <div class="learn-bar">
       <button class="practice-cta" id="practice-btn" type="button"></button>
       <button class="book-cta" id="book-btn" type="button"></button>
-      <button class="learn-link" id="learn-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="learn_btn">How to learn with Polyling</span></button>
+      <button class="learn-link" id="learn-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="learn_btn">How to learn with Polylang</span></button>
     </div>
     <button class="now-tip" id="now-tip" type="button"></button>''')
 

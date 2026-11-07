@@ -6,7 +6,7 @@ src, out = sys.argv[1], sys.argv[2]
 mode = sys.argv[3] if len(sys.argv) > 3 else "file"
 
 SITE = "https://jakesauter.github.io/Jake-Sauter-Language-Learning-App/"
-DESC = "Polyling: everyday family sentences word by word in Taishanese, Cantonese, English, Mandarin, Spanish, French and German, with audio."
+DESC = "Polylang: everyday family sentences word by word in Taishanese, Cantonese, English, Mandarin, Spanish, French and German, with audio."
 
 body = open(src, encoding = "utf-8").read()
 
@@ -22,7 +22,7 @@ if mode == "site":
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Polyling">
+<meta property="og:title" content="Polylang">
 <meta property="og:description" content="{DESC}">
 <meta property="og:url" content="{SITE}">
 <meta property="og:image" content="{SITE}og.png">
@@ -44,7 +44,7 @@ head = f"""<!doctype html>
 <meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Polyling">
+<meta name="apple-mobile-web-app-title" content="Polylang">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 {icons}
 <style>

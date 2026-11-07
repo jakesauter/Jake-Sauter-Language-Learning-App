@@ -1,6 +1,6 @@
-![Polyling](banner.png)
+![Polylang](banner.png)
 
-# Polyling
+# Polylang
 
 *Polyglot + grok: understand a language deeply, word by word.*
 
@@ -25,7 +25,7 @@ A phone-friendly guide to everyday family conversation, broken down word by word
 
 ## Built on learning science
 
-Polyling is designed for adults who already speak one language and are learning another.
+Polylang is designed for adults who already speak one language and are learning another.
 
 - **Practice** uses retrieval (say it before you see it), spaced repetition, the production effect (say it aloud), interleaving, and a sleep-aware schedule
 - **Tone trainer**: high-variability phonetic training with pitch-shape pictures

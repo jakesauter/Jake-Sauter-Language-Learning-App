@@ -1,4 +1,4 @@
-  /* Google Translate, through the Polyling server (a Cloudflare Worker holds the key) */
+  /* Google Translate, through the Polylang server (a Cloudflare Worker holds the key) */
 
   const GT_PROXY = "";
 

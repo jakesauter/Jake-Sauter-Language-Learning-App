@@ -1,4 +1,4 @@
-# Polyling roadmap
+# Polylang roadmap
 
 ## Focus now
 Taishanese, Cantonese, Mandarin and English: deepen the sentences, fix Taishanese words marked `?`, and grow the recorder into a family-voice corpus.

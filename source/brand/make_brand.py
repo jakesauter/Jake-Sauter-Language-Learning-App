@@ -61,7 +61,7 @@ def wordmark():
     pen = SVGPathPen(gs)
     x = 0
     hexo = None
-    for i, ch in enumerate("polyling"):
+    for i, ch in enumerate("polylang"):
         g = cmap[ord(ch)]
         if i == 1:
             w = gs[g].width
@@ -127,4 +127,4 @@ m = m.replace('fill="#BGC"', 'class="bgf"').replace('stroke="#BGC"', 'class="bgs
 m = re.sub(r'class="bgf" stroke="currentColor"', 'class="bgf" stroke="currentColor"', m)
 open("mark-inline.svg", "w").write(f'<svg class="b-mark" viewBox="0 0 512 512" aria-hidden="true">{m}</svg>')
 wsvg, ww = word_svg("currentColor", 100, 0, 78)
-open("word-inline.svg", "w").write(f'<svg class="b-word" viewBox="0 -2 {ww:.0f} 104" role="img" aria-label="Polyling">{wsvg}</svg>')
+open("word-inline.svg", "w").write(f'<svg class="b-word" viewBox="0 -2 {ww:.0f} 104" role="img" aria-label="Polylang">{wsvg}</svg>')
