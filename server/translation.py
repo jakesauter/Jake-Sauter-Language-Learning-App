@@ -73,7 +73,7 @@ async def stream_translation(text, source, target, provider=None):
         return
     model_name = provider.split(":", 1)[1] if provider.startswith("ollama:") else provider
     request_body = {
-        "model": model_name, "stream": True, "think": False, "keep_alive": "30m",
+        "model": model_name, "stream": True, "think": False, "keep_alive": "4h",
         "options": {"temperature": 0.1, "num_ctx": 2048},
         "messages": [{"role": "user", "content": build_prompt(text, source, target)}],
     }
@@ -144,7 +144,7 @@ async def suggest_replies(conversation_lines, language, creativity=0.4):
         '{"suggestions": [{"say": "<written in Chinese characters>", "en": "<English meaning>", '
         '"why": "<one short phrase on when to use it>"}]}')
     request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
-                    "format": "json", "keep_alive": "30m",
+                    "format": "json", "keep_alive": "4h",
                     # Same context size as translations: Ollama reloads the model whenever it changes.
                     "options": {"temperature": round(0.2 + 0.7 * creativity, 2), "num_ctx": 2048},
                     "messages": [{"role": "user", "content": prompt}]}
@@ -173,7 +173,7 @@ async def recap_conversation(conversation_lines, language):
         "\"phrases\": [{\"say\": \"<a short useful phrase that was said, in Chinese characters>\", "
         "\"en\": \"<its English meaning>\"}]} with the 5 phrases most worth learning.")
     request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
-                    "format": "json", "keep_alive": "30m", "options": {"temperature": 0.3, "num_ctx": 2048},
+                    "format": "json", "keep_alive": "4h", "options": {"temperature": 0.3, "num_ctx": 2048},
                     "messages": [{"role": "user", "content": prompt}]}
     if request_body["model"] == "google":
         request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
