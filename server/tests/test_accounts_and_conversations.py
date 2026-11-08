@@ -14,7 +14,8 @@ def client(tmp_path, monkeypatch):
     monkeypatch.setenv("POLYLANG_DATA", str(tmp_path))
     monkeypatch.setenv("POLYLANG_PRELOAD", "")
     monkeypatch.setenv("POLYLANG_SITE", str(tmp_path / "no-site"))
-    for module in ("accounts", "conversations", "inference_server"):
+    monkeypatch.setenv("POLYLANG_EMAIL_OUTBOX", str(tmp_path / "outbox"))
+    for module in ("accounts", "conversations", "email_sender", "inference_server"):
         sys.modules.pop(module, None)
     server = importlib.import_module("inference_server")
     with TestClient(server.app) as test_client:
@@ -92,3 +93,56 @@ def test_live_ticket_is_single_use(client):
     ticket = client.post("/live/ticket", headers=auth(token)).json()["ticket"]
     assert accounts.redeem_live_ticket(ticket).startswith("account:")
     assert accounts.redeem_live_ticket(ticket) is None
+
+
+def last_email(client_tmp_outbox):
+    import glob, json
+    files = sorted(glob.glob(os.path.join(client_tmp_outbox, "*.json")))
+    return json.load(open(files[-1])) if files else None
+
+
+def outbox_folder():
+    return os.environ["POLYLANG_EMAIL_OUTBOX"]
+
+
+def test_forgot_password_full_flow(client):
+    old_token = client.post("/account/create", json={"username": "forgetful", "password": "old password 1", "email": "Me@Example.com"}).json()["token"]
+    reply = client.post("/account/forgot-password", json={"email": "me@example.com"})
+    assert reply.status_code == 200
+    email = last_email(outbox_folder())
+    assert email["to"] == "me@example.com"
+    code = email["subject"].split()[-1]
+    assert len(code) == 6 and code.isdigit()
+    reset = client.post("/account/reset-password", json={"email": "me@example.com", "code": code, "password": "brand new password"})
+    assert reset.status_code == 200 and reset.json()["username"] == "forgetful"
+    assert client.get("/account", headers=auth(old_token)).json()["signed_in"] is False  # other devices signed out
+    assert client.post("/account/sign-in", json={"username": "forgetful", "password": "brand new password"}).status_code == 200
+    reused = client.post("/account/reset-password", json={"email": "me@example.com", "code": code, "password": "another new one"})
+    assert reused.status_code == 400  # codes are single-use
+
+
+def test_forgot_password_does_not_reveal_accounts(client):
+    unknown = client.post("/account/forgot-password", json={"email": "nobody@example.com"})
+    client.post("/account/create", json={"username": "someone", "password": "password one", "email": "someone@example.com"})
+    known = client.post("/account/forgot-password", json={"email": "someone@example.com"})
+    assert unknown.status_code == known.status_code == 200
+    assert unknown.json() == known.json()
+
+
+def test_reset_code_locks_after_five_wrong_tries(client):
+    client.post("/account/create", json={"username": "guessme", "password": "password one", "email": "guess@example.com"})
+    client.post("/account/forgot-password", json={"email": "guess@example.com"})
+    real_code = last_email(outbox_folder())["subject"].split()[-1]
+    wrong_code = f"{(int(real_code) + 1) % 1000000:06d}"
+    for _ in range(5):
+        client.post("/account/reset-password", json={"email": "guess@example.com", "code": wrong_code, "password": "new password!"})
+    locked = client.post("/account/reset-password", json={"email": "guess@example.com", "code": real_code, "password": "new password!"})
+    assert locked.status_code == 400
+
+
+def test_bad_email_rejected_and_email_can_be_added_later(client):
+    assert create(client, "bademail").status_code == 200
+    assert client.post("/account/create", json={"username": "x_bad", "password": "password one", "email": "not-an-email"}).status_code == 400
+    token = create(client, "addlater").json()["token"]
+    assert client.post("/account/email", json={"email": "later@example.com"}, headers=auth(token)).json()["email"] == "later@example.com"
+    assert client.get("/account", headers=auth(token)).json()["email"] == "later@example.com"

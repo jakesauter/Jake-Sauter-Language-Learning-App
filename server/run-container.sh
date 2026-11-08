@@ -15,6 +15,8 @@ mounts=(
     --bind /mnt/storage/polylang-site:/site:ro
 )
 [ -f "$google_key_file" ] && mounts+=(--bind "$google_key_file":/run/secrets/google_translate_key:ro)
+email_settings_file=/home/coderx/.config/polylang/email.json
+[ -f "$email_settings_file" ] && mounts+=(--bind "$email_settings_file":/run/secrets/email.json:ro)
 [ "${POLYLANG_DEV:-0}" = 1 ] && mounts+=(--bind "$PWD":/app:ro)   # run the working copy without rebuilding
 exec apptainer run --nv --containall --no-home --cleanenv --writable-tmpfs "${mounts[@]}" \
     --env POLYLANG_ORIGINS="${POLYLANG_ORIGINS:-https://jakesauter.github.io,https://coderx-legion-t730-28ico.tailf42501.ts.net}" \

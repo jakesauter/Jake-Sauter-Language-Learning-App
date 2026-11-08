@@ -65,3 +65,11 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Chose: from ~3 PM, no new server features — only bug fixes and small, low-risk app text/layout changes — plus a final health check (~5:30 PM) that the server is up, models are loaded and the GPU is free.
     Why: every server change means a restart and a little risk; tonight the app working matters more than one more feature. I also stopped spending your usage on large changes you can't review.
     Alternative: keep adding features (tap-to-save phrases, speaker labels) until 6 PM.
+
+16. **Accounts with email + forgot password (your request).**
+    Built: optional email at sign-up (or added later on the Account page); "Forgot password?" emails a 6-digit code (15 minutes, single-use, 5 wrong tries, max 5 requests per hour per email and per device). Resetting signs out every other device. The reply is identical whether or not an account uses that email, so the form can't be used to discover accounts.
+    A test caught a real bug while building this: a wrong code's "try used up" was being rolled back, which would have allowed unlimited guessing. Fixed and covered by a test.
+    **Needs you:** email can't be sent until a mail account is connected. Easiest: a Gmail app password (Google Account → Security → 2-Step Verification → App passwords), saved as `~/.config/polylang/email.json`:
+    `{"host": "smtp.gmail.com", "port": 587, "username": "you@gmail.com", "password": "<16-char app password>", "from": "Polylang <you@gmail.com>"}`
+    then restart the server (`systemctl --user restart polylang-home`). Alternative: a transactional service (Resend/Postmark) — better deliverability, needs an API key and a domain.
+    Decision: I didn't use your Gmail through my own email tools, because the server must send codes by itself at any hour, without me.

@@ -24,6 +24,7 @@ from pydantic import BaseModel, Field
 
 import accounts
 import conversations
+import email_sender
 import ensemble
 import live_session
 import speech_engines
@@ -161,6 +162,7 @@ class Credentials(BaseModel):
     username: str = Field(min_length=3, max_length=32)
     password: str = Field(min_length=1, max_length=200)
     device_id: str = Field(default="", max_length=64)
+    email: str = Field(default="", max_length=320)
 
 
 def client_key(request):
@@ -171,7 +173,7 @@ async def finish_sign_in(request, credentials, create):
     loop = asyncio.get_running_loop()
     try:
         if create:
-            signed_in = await loop.run_in_executor(None, accounts.create_account, credentials.username, credentials.password)
+            signed_in = await loop.run_in_executor(None, accounts.create_account, credentials.username, credentials.password, credentials.email)
         else:
             signed_in = await loop.run_in_executor(None, accounts.sign_in, credentials.username, credentials.password, client_key(request))
     except accounts.AccountError as error:
@@ -202,7 +204,61 @@ async def sign_out(request: Request):
 async def current_account(request: Request):
     account = accounts.account_for_token(accounts.bearer_token(request.headers))
     return {"signed_in": bool(account), "username": account["username"] if account else None,
+            "email": account["email"] if account else None, "email_ready": email_sender.can_send(),
             "tailscale_login": request.headers.get("tailscale-user-login")}
+
+
+class EmailChange(BaseModel):
+    email: str = Field(default="", max_length=320)
+
+
+@app.post("/account/email")
+async def change_email(request: Request, body: EmailChange):
+    account = accounts.account_for_token(accounts.bearer_token(request.headers))
+    if not account:
+        return JSONResponse({"error": "Sign in first."}, 401)
+    try:
+        return {"email": accounts.set_email(account["id"], body.email)}
+    except accounts.AccountError as error:
+        return JSONResponse({"error": str(error)}, 400)
+
+
+class ResetRequest(BaseModel):
+    email: str = Field(min_length=3, max_length=320)
+
+
+class ResetFinish(BaseModel):
+    email: str = Field(min_length=3, max_length=320)
+    code: str = Field(min_length=6, max_length=6, pattern=r"^\d{6}$")
+    password: str = Field(min_length=1, max_length=200)
+
+
+RESET_SENT = "If an account uses that email, a 6-digit code is on its way. It works for 15 minutes."
+
+
+@app.post("/account/forgot-password")
+async def forgot_password(request: Request, body: ResetRequest):
+    if not email_sender.can_send():
+        return JSONResponse({"error": "Password reset by email isn't set up yet."}, 503)
+    found = accounts.start_password_reset(body.email, client_key(request))
+    if found:
+        address, code = found
+        body_text = (f"Your Polylang password reset code is {code}\n\nIt works for 15 minutes. "
+                     "If you didn't ask for this, you can ignore this email; your password hasn't changed.")
+        try:
+            await asyncio.get_running_loop().run_in_executor(None, email_sender.send, address, f"Polylang code: {code}", body_text)
+        except Exception as error:
+            print("reset email failed:", error)
+    return {"message": RESET_SENT}
+
+
+@app.post("/account/reset-password")
+async def reset_password(body: ResetFinish):
+    try:
+        return await asyncio.get_running_loop().run_in_executor(
+            None, accounts.finish_password_reset, body.email, body.code, body.password)
+    except accounts.AccountError as error:
+        return JSONResponse({"error": str(error)}, 400)
 
 
 @app.post("/live/ticket")
