@@ -85,5 +85,5 @@
       return box;
     }
 
-    return { section, on: () => !!GT_PROXY };
+    return { section, on: () => !!GT_PROXY, py: pySounds };
   })();

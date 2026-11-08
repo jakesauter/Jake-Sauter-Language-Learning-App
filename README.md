@@ -53,3 +53,5 @@ No phone ships a Taishanese voice, so `source/tsn_voice.js` is a source-filter (
 - CC-CEDICT, Rime Cantonese (Jyutping), OpenCC, pinyin-data and Jieba word frequencies
 - Spanish, French and German written for this guide
 - Google Translate output is shown on saved sentences for comparison
+- Word origins are fetched live from [Wiktionary](https://en.wiktionary.org) (CC BY-SA 4.0) when you tap **Word origin** on a word
+- Real example sentences are fetched live from [Tatoeba](https://tatoeba.org) (CC BY 2.0 FR) when you tap **Real examples**, each linked to its source and contributor

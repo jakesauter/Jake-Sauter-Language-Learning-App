@@ -1,4 +1,4 @@
-/* Polylang translate proxy: holds the Google key so the website never has to. */
+/* Polylang server: holds the Google key so the website never has to, and relays Tatoeba if the browser can't reach it directly. */
 
 const TARGETS = new Set(["yue", "zh-CN", "zh-TW", "es", "pt", "fr", "de", "fa", "ar", "he", "tr"]);
 
@@ -15,7 +15,7 @@ function cors(origin) {
   const ok = ALLOWED.some(r => r.test(origin || ""));
   return ok ? {
     "Access-Control-Allow-Origin": origin,
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
@@ -46,6 +46,35 @@ async function google(q, target, key) {
 }
 
 
+const TB_LANGS = new Set(["eng", "yue", "cmn", "spa", "por", "fra", "deu", "pes", "apc", "heb", "tur"]);
+
+
+async function tatoeba(url, h, ctx) {
+  const lang = url.searchParams.get("lang") || "";
+  const q = (url.searchParams.get("q") || "").trim();
+  if (!TB_LANGS.has(lang) || !q || q.length > 60) return reply(400, { error: "Bad request" }, h);
+
+  const qs = new URLSearchParams({ lang, q, "trans:lang": "eng", sort: "words" });
+  const upstream = new Request("https://api.tatoeba.org/v1/sentences?" + qs, { headers: { "User-Agent": "Polylang/1.0 (language learning app)" } });
+
+  const cache = typeof caches !== "undefined" ? caches.default : null;
+  if (cache) {
+    const hit = await cache.match(upstream.url);
+    if (hit) return new Response(hit.body, { headers: { "Content-Type": "application/json; charset=utf-8", ...h } });
+  }
+
+  const r = await fetch(upstream);
+  if (!r.ok) return reply(502, { error: "Tatoeba error " + r.status }, h);
+  const body = await r.text();
+
+  if (cache) {
+    const stored = new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=604800" } });
+    ctx && ctx.waitUntil ? ctx.waitUntil(cache.put(upstream.url, stored)) : await cache.put(upstream.url, stored);
+  }
+  return new Response(body, { headers: { "Content-Type": "application/json; charset=utf-8", ...h } });
+}
+
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
@@ -56,6 +85,7 @@ export default {
 
     const url = new URL(request.url);
     if (request.method === "GET" && url.pathname === "/health") return reply(200, { ok: true }, h);
+    if (request.method === "GET" && url.pathname === "/tatoeba") return tatoeba(url, h, ctx);
     if (request.method !== "POST" || url.pathname !== "/translate") return reply(404, { error: "Not found" }, h);
     if (!env.GOOGLE_KEY) return reply(500, { error: "The server has no Google key yet." }, h);
 

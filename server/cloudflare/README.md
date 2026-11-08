@@ -5,6 +5,7 @@ The Google Translate key lives here as a secret, never in the website. The site 
 - Only requests from `jakesauter.github.io` (and the Claude preview) are accepted.
 - Text is limited to 300 characters per request, and only Polylang's languages are allowed.
 - Repeat translations are cached for 30 days, so they don't use Google quota again.
+- `GET /tatoeba?lang=spa&q=hola` relays Tatoeba example sentences (cached 7 days). The app only uses it if the phone can't reach Tatoeba directly.
 - Cost: Cloudflare Workers' free plan covers 100,000 requests a day. Google stays at $0 because of the daily character quota you set in Google Cloud.
 
 ## Deploy from the Cloudflare dashboard (no installs)
