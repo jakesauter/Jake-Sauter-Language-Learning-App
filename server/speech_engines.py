@@ -184,6 +184,13 @@ def detect_language(audio, candidate_languages):
         # Whisper often hears Cantonese as Mandarin; when Mandarin isn't an option, count it as Cantonese.
         probability_by_code["yue"] = probability_by_code.get("yue", 0) + probability_by_code.get("zh", 0)
     family_scores = {family: probability_by_code.get(family, 0.0) for family in families}
+    if "yue" in families and "zh" in families:
+        # Whisper labels Cantonese as Mandarin far too often; it decides "Chinese or not",
+        # and SenseVoice (trained on both) decides which Chinese.
+        chinese_score = family_scores["yue"] + family_scores["zh"]
+        sensevoice = get_engine("sensevoice")
+        heard_as = run_sensevoice(sensevoice, audio, "")[2] if sensevoice is not None else "yue"
+        family_scores["yue"], family_scores["zh"] = (chinese_score, 0.0) if heard_as != "zh" else (0.0, chinese_score)
     total = sum(family_scores.values()) or 1.0
     best_family = max(family_scores, key=family_scores.get)
     members = families[best_family]
