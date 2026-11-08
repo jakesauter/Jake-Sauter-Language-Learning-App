@@ -1,0 +1,12 @@
+[Unit]
+Description=Polylang inference server (Apptainer container)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/Documents/Projects/language-learning-app/server
+ExecStart=%h/Documents/Projects/language-learning-app/server/run-container.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

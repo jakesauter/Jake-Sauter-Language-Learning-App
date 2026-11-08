@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: nvidia/cuda:12.8.1-cudnn-runtime-ubuntu24.04
+
+# Heavy, slow-changing dependencies. Build once:
+#   apptainer build --fakeroot container/base.sif container/base.def
+
+%files
+    container/requirements.txt /opt/requirements.txt
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update -q
+    apt-get install -y -q --no-install-recommends python3 python3-venv python3-pip ffmpeg ca-certificates
+    rm -rf /var/lib/apt/lists/*
+    python3 -m venv /opt/venv
+    /opt/venv/bin/pip install --no-cache-dir -q --upgrade pip
+    /opt/venv/bin/pip install --no-cache-dir -q torch==2.11.0 torchaudio==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+    /opt/venv/bin/pip install --no-cache-dir -q -r /opt/requirements.txt
+    /opt/venv/bin/pip freeze > /opt/requirements.lock
+    chmod -R a+rX /opt/venv

@@ -1,0 +1,36 @@
+Bootstrap: localimage
+From: container/base.sif
+
+# Polylang inference server = base image (dependencies) + this code. Rebuilds in seconds:
+#   apptainer build --fakeroot container/polylang.sif container/polylang.def   (run from server/)
+
+%files
+    inference_server.py /app/inference_server.py
+    live_session.py /app/live_session.py
+    conversations.py /app/conversations.py
+    accounts.py /app/accounts.py
+    ensemble.py /app/ensemble.py
+    speech_engines.py /app/speech_engines.py
+    translation.py /app/translation.py
+    router.json /app/router.json
+
+%post
+    chmod -R a+rX /app
+
+%environment
+    export PATH=/opt/venv/bin:$PATH
+    export PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+    export HOME=/tmp HF_HOME=/hf HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 MODELSCOPE_CACHE=/tmp/modelscope
+    export POLYLANG_DATA=/data POLYLANG_SITE=/site POLYLANG_BUZZ=/models/buzzasr-cantonese-ct2 POLYLANG_ROUTER=/app/router.json
+    export CUDA_CACHE_PATH=/tmp/nv
+
+%runscript
+    cd /app
+    if [ -n "${POLYLANG_SOCKET:-}" ]; then
+        exec uvicorn inference_server:app --uds "$POLYLANG_SOCKET" --ws-max-size 65536 --limit-concurrency 32 --no-server-header
+    fi
+    exec uvicorn inference_server:app --host 127.0.0.1 --port "${POLYLANG_PORT:-8000}" \
+        --ws-max-size 65536 --limit-concurrency 32 --timeout-keep-alive 5 --no-server-header
+
+%test
+    cd /app && /opt/venv/bin/python -c "import inference_server, live_session, ensemble, translation; print('imports ok')"

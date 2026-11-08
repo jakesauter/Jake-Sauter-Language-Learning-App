@@ -2,7 +2,9 @@
 
 Runs on your own computer, so there is no cloud bill. Phones reach it privately over Tailscale.
 
-    POST /transcribe   multipart: file, language (yue, zh, es, fr, de, en or blank), translate (1/0)
+    POST /transcribe   multipart: file, language (yue, zh, es, fr, de, en or blank), translate (1/0),
+                       lang (app tag, e.g. tsn), engines (optional comma list to override routing)
+                       -> segments[] with merged text, per-engine hyps, disagreement spans, agreement
     GET  /health
 
 Every upload and its transcript is saved under DATA_DIR. Those files are the start
@@ -10,6 +12,7 @@ of a Taishanese speech dataset that you can correct and fine-tune on later.
 """
 
 import json
+import re
 import os
 import tempfile
 import threading
@@ -34,31 +37,19 @@ ORIGINS = [o.strip() for o in os.environ.get(
     "https://jakesauter.github.io",
 ).split(",") if o.strip()]
 
-ORIGIN_SUFFIXES = (".claudeusercontent.com", ".claude.ai")
+# Only these websites may call the server from a browser. Wildcard hosting domains (claude.ai
+# artifacts, github.io in general) are deliberately excluded: anyone can publish a page there.
+ORIGIN_SUFFIXES = ()
 
 
-_model = None
+def origin_ok(origin):
+    return origin in ORIGINS or origin.endswith(ORIGIN_SUFFIXES) if ORIGIN_SUFFIXES else (
+        origin in ORIGINS or re.fullmatch(r"http://(localhost|127\.0\.0\.1)(:\d+)?", origin or "") is not None)
+
+
 _gpu = threading.Lock()
 
-
-def model():
-    global _model
-    if _model is None:
-        from faster_whisper import WhisperModel
-        _model = WhisperModel(MODEL, device=DEVICE, compute_type=COMPUTE)
-    return _model
-
-
-def transcribe(path, language):
-    segs, info = model().transcribe(
-        path,
-        language=language or None,
-        vad_filter=True,
-        beam_size=5,
-        condition_on_previous_text=False,
-    )
-    out = [{"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()} for s in segs]
-    return out, info.language
+import ensemble  # noqa: E402  (multi-engine ASR + consensus merge)
 
 
 def translate(segments, language):
@@ -83,9 +74,13 @@ def translate(segments, language):
     return segments
 
 
-def save(raw, name, result):
+def save(raw, name, result, language=""):
     day = time.strftime("%Y-%m-%d")
-    d = os.path.join(DATA_DIR, day)
+    if not re.fullmatch(r"[a-z]{2,3}(-[A-Za-z]{2,4})?", language or ""):
+        language = "unknown"
+    d = os.path.join(DATA_DIR, language, day)
+    if not os.path.realpath(d).startswith(os.path.realpath(DATA_DIR) + os.sep):
+        raise ValueError("refusing to write outside the data folder")
     os.makedirs(d, exist_ok=True)
     stem = time.strftime("%H%M%S") + "-" + os.path.basename(name or "clip")
     with open(os.path.join(d, stem), "wb") as f:
@@ -112,8 +107,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def cors(self):
         origin = self.headers.get("Origin", "")
-        ok = origin in ORIGINS or origin.endswith(ORIGIN_SUFFIXES) or origin.startswith("http://localhost")
-        if ok:
+        if origin_ok(origin):
             self.send_header("Access-Control-Allow-Origin", origin)
             self.send_header("Vary", "Origin")
             self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
@@ -136,10 +130,17 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path.startswith("/health"):
-            return self.reply(200, {"ok": True, "model": MODEL, "device": DEVICE, "llm": LLM})
+            return self.reply(200, {"ok": True, "model": MODEL, "device": DEVICE, "llm": LLM,
+                                   "routes": ensemble.ROUTES, "loaded": sorted(ensemble._cache),
+                                   "unavailable": ensemble._broken})
         self.reply(404, {"error": "not found"})
 
     def do_POST(self):
+        # Browsers always send Origin on cross-site POSTs. A page from any other website could
+        # otherwise make the phone upload junk here (CORS only hides the reply), so refuse it.
+        origin = self.headers.get("Origin")
+        if origin is not None and not origin_ok(origin):
+            return self.reply(403, {"error": "origin not allowed"})
         if not self.path.startswith("/transcribe"):
             return self.reply(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length", "0"))
@@ -151,7 +152,12 @@ class Handler(BaseHTTPRequestHandler):
         except Exception as e:
             return self.reply(400, {"error": f"bad upload: {e}"})
 
-        language = fields.get("language", "")
+        # "lang" is the app's own tag (tsn, yue, cmn...); "language" the ASR hint. tsn wins so
+        # Taishanese clips are labelled as such in the dataset even though they decode as yue.
+        language = fields.get("lang") if fields.get("lang") == "tsn" else fields.get("language", "")
+        if not re.fullmatch(r"[a-z]{2,3}(-[A-Za-z]{2,4})?|", language or ""):
+            return self.reply(400, {"error": "bad language code"})
+        engines = [e for e in dict.fromkeys(fields.get("engines", "").split(",")) if e in ("whisper", "buzzasr", "sensevoice")] or None
         suffix = os.path.splitext(name)[1] or ".m4a"
         with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
             tmp.write(raw)
@@ -159,11 +165,11 @@ class Handler(BaseHTTPRequestHandler):
         try:
             t0 = time.time()
             with _gpu:
-                segments, detected = transcribe(path, language)
+                result = ensemble.run(path, language, engines)
                 if fields.get("translate") == "1":
-                    segments = translate(segments, detected)
-            result = {"language": detected, "segments": segments, "seconds": round(time.time() - t0, 1), "model": MODEL}
-            save(raw, name, result)
+                    result["segments"] = translate(result["segments"], result["language"])
+            result.update(seconds=round(time.time() - t0, 1), model=MODEL)
+            save(raw, name, result, result["language"])
             self.reply(200, result)
         except Exception as e:
             self.reply(500, {"error": str(e)})
@@ -173,4 +179,7 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print(f"Polylang home transcriber on :{PORT}  model={MODEL} device={DEVICE}  data={DATA_DIR}")
+    # Load the engines in the background so the first real request isn't a 2-minute cold start.
+    pre = [e for e in os.environ.get("POLYLANG_PRELOAD", "buzzasr,sensevoice,whisper").split(",") if e]
+    threading.Thread(target=lambda: [ensemble.engine(e) for e in pre], daemon=True).start()
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
