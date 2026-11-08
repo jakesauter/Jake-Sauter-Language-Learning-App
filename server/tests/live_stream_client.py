@@ -51,7 +51,7 @@ def report(events):
     for final in finals:
         done = translations.get(final["id"], {})
         stats = final["stats"]
-        print(f"\n[{final['start']:6.2f}-{final['end']:6.2f}s] {final['text']}   (agree {final['agree']})")
+        print(f"\n[{final['start']:6.2f}-{final['end']:6.2f}s] [{final.get('language')} {final.get('language_confidence')}] {final['text']}   (agree {final['agree']})")
         print(f"   EN: {done.get('text') or done.get('error')}")
         print(f"   final shown {stats['since_speech_end_ms']} ms after speech ended (ASR {stats['asr_ms']} ms {stats['engine_ms']});"
               f" translation first word {done.get('first_ms')} ms, done {done.get('ms')} ms via {done.get('provider')}")

@@ -57,3 +57,11 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Note: desktop Chrome now asks "Allow access to devices on your local network?" the first time jakesauter.github.io contacts the T730 — click Allow. iPhone Safari doesn't have this prompt. Verified in Chromium with the permission granted: the home computer is found and the language chips + live option appear.
 
 13. **Wording (your instruction).** No hardware names in the app: "Live translate", "Saved conversations", "Connecting…", "Transcribe this recording". The only technical word left is "Tailscale" in the connection-error message, because that is the one thing you would need to check.
+
+14. **Stability test result (9.5 minutes of continuous mixed Cantonese/English, real time).**
+    105 lines, 0 errors, no slowdown: a line appears ~1.65 s after the speaker stops (same in the first and last minutes), translation starts ~0.27 s later. Language detection: English 1.0, Cantonese 0.98–0.999. Server memory grew ~0.4 GB over the run (the machine has 30 GB), GPU memory stayed flat at ~7 GB.
+
+15. **Feature freeze before dinner?**
+    Chose: from ~3 PM, no new server features — only bug fixes and small, low-risk app text/layout changes — plus a final health check (~5:30 PM) that the server is up, models are loaded and the GPU is free.
+    Why: every server change means a restart and a little risk; tonight the app working matters more than one more feature. I also stopped spending your usage on large changes you can't review.
+    Alternative: keep adding features (tap-to-save phrases, speaker labels) until 6 PM.
