@@ -6051,6 +6051,17 @@
     const blobOf = r => new Blob([r.buf], { type: r.type || "audio/mp4" });
     const homeUrl = () => (store.get("polygrok-home") || (location.hostname.endsWith(".ts.net") ? location.origin : "")).replace(/\/+$/, "");
 
+    // Jake's home computer: reachable only from devices signed in to his Tailscale network.
+    // If it answers, remember it, so live translation appears without typing any address.
+    const KNOWN_HOME_COMPUTER = "https://coderx-legion-t730-28ico.tailf42501.ts.net";
+    (async function find_home_computer() {
+      if (homeUrl()) return;
+      try {
+        const reply = await fetch(KNOWN_HOME_COMPUTER + "/health", { cache: "no-store", signal: AbortSignal.timeout(2500) });
+        if (reply.ok && (await reply.json()).ok) store.set("polygrok-home", KNOWN_HOME_COMPUTER);
+      } catch (error) {}
+    })();
+
     function pickMime() {
       if (!window.MediaRecorder || !MediaRecorder.isTypeSupported) return "";
       return ["audio/mp4", "audio/webm;codecs=opus", "audio/webm"].find(t => MediaRecorder.isTypeSupported(t)) || "";

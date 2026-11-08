@@ -49,3 +49,8 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Alternative: wrap long sentences onto several lines — but the connecting lines between languages can't cross a line break when word order differs (e.g. Mandarin vs English).
 
 11. **Memory hooks:** now a collapsible section, closed by default (your instruction).
+
+12. **How does jakesauter.github.io find your T730?**
+    Chose: the public page checks the T730's Tailscale address once on load (2.5 s timeout); if it answers (only on your Tailscale devices) the app remembers it and live mode appears.
+    Trade-off: the T730's Tailscale hostname is visible in the public page's code. It's already public in certificate-transparency logs and unreachable without your Tailscale login.
+    Alternative: keep the hostname out of the code and type the address once in Record → Advanced on each device.
