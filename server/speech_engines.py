@@ -172,6 +172,21 @@ def detect_language(audio, candidate_languages):
     candidates = [code for code in dict.fromkeys(candidate_languages) if code]
     if len(candidates) <= 1:
         return (candidates[0] if candidates else ""), 1.0
+    # SenseVoice first: trained on Cantonese, Mandarin and English (and mixes of them). Whisper's detector
+    # calls noisy Cantonese "English" too often, so it is only used for languages SenseVoice doesn't know.
+    families = {}
+    for code in candidates:
+        families.setdefault(SPEECH_FAMILY.get(code, code), []).append(code)
+    sensevoice = get_engine("sensevoice")
+    if sensevoice is not None and set(families) & {"yue", "zh", "en", "ja", "ko"}:
+        heard_as = run_sensevoice(sensevoice, audio, "")[2]
+        if heard_as == "zh" and "zh" not in families and "yue" in families:
+            heard_as = "yue"
+        if heard_as == "yue" and "yue" not in families and "zh" in families:
+            heard_as = "zh"
+        if heard_as in families:
+            members = families[heard_as]
+            return ("yue" if heard_as == "yue" and len(members) > 1 else members[0]), 0.9
     model = get_engine("whisper")
     if model is None:
         return candidates[0], 0.0

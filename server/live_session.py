@@ -19,6 +19,7 @@ import numpy as np
 
 import conversations
 import ensemble
+import speakers
 import speech_engines
 import translation
 from speech_engines import SAMPLE_RATE
@@ -40,7 +41,7 @@ def run_on_gpu(function, *arguments):
     return asyncio.get_running_loop().run_in_executor(None, with_gpu_lock)
 
 
-SHORTEST_DETECTION_PIECE_SECONDS = 2.5
+SHORTEST_DETECTION_PIECE_SECONDS = 1.5
 
 
 def pieces_for_language_detection(audio):
@@ -90,6 +91,7 @@ class LiveSession:
         self.line_count = 0
         self.is_closing = False
         self.ending_silence = SILENCE_THAT_ENDS_UTTERANCE
+        self.speaker_tracker = speakers.SpeakerTracker()
 
     def apply_settings(self, settings):
         """Tune the session while it runs, e.g. {"pause_ms": 900}."""
@@ -175,6 +177,11 @@ class LiveSession:
             piece = audio[piece_start:piece_end]
             language, confidence = speech_engines.detect_language(piece, self.candidate_languages)
             result = ensemble.transcribe_audio(piece, language, self.engine_names, starts_at + piece_start / SAMPLE_RATE, False)
+            try:
+                result["speaker"], result["speaker_similarity"] = self.speaker_tracker.identify(piece)
+            except Exception as error:
+                result["speaker"], result["speaker_similarity"] = None, 0.0
+                print("speaker identification failed:", error)
             transcribed_pieces.append((language, confidence, result))
         return transcribed_pieces
 
@@ -197,7 +204,7 @@ class LiveSession:
         line_id = self.line_count
         line = {
             "type": "final", "id": line_id, **segment, "engines": result["engines"],
-            "language": language, "language_confidence": confidence,
+            "language": language, "language_confidence": confidence, "speaker": result.get("speaker"),
             "could_be": [code for code in self.candidate_languages if speech_engines.SPEECH_FAMILY.get(code, code) == speech_engines.SPEECH_FAMILY.get(language, language)],
             "stats": {
                 "asr_ms": round((time.time() - started_at) * 1000),
@@ -210,7 +217,7 @@ class LiveSession:
             line["en"] = await self.stream_translation_of(line_id, segment["text"], self.translation_source_for(language))
         self.finished_lines.append(line)
         if self.conversation_id:
-            saved_line = {key: line[key] for key in ("text", "en", "language", "could_be", "spans", "hyps", "agree", "start", "end") if key in line}
+            saved_line = {key: line[key] for key in ("text", "en", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
             saved_line["at"] = self.started_at + line["start"]
             await asyncio.get_running_loop().run_in_executor(
                 None, conversations.append_line, self.person, self.conversation_id, saved_line)
