@@ -159,3 +159,30 @@ async def suggest_replies(conversation_lines, language, creativity=0.4):
     cleaned = [{"say": speech_engines.to_common_script(str(item.get("say", ""))[:80], language), "en": str(item.get("en", ""))[:160], "why": str(item.get("why", ""))[:120]}
                for item in suggestions if isinstance(item, dict) and item.get("say")]
     return {"suggestions": cleaned, "ms": round((time.time() - started_at) * 1000)}
+
+
+async def recap_conversation(conversation_lines, language):
+    """A short English summary plus the most useful phrases to learn from what was said."""
+    transcript = "\n".join(
+        f"- {line['text']}" + (f"  (English: {line['en']})" if line.get("en") else "") for line in conversation_lines[-60:])
+    prompt = (
+        "Below is a family dinner conversation transcribed by speech recognition (it may contain mistakes). "
+        "The listener is an English speaker learning Cantonese.\n"
+        f"{transcript}\n\n"
+        "Reply only with JSON: {\"summary\": \"<3 to 5 short English sentences on what people talked about>\", "
+        "\"phrases\": [{\"say\": \"<a short useful phrase that was said, in Chinese characters>\", "
+        "\"en\": \"<its English meaning>\"}]} with the 5 phrases most worth learning.")
+    request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
+                    "format": "json", "keep_alive": "30m", "options": {"temperature": 0.3, "num_ctx": 2048},
+                    "messages": [{"role": "user", "content": prompt}]}
+    if request_body["model"] == "google":
+        request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
+    started_at = time.time()
+    async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
+        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+    response.raise_for_status()
+    result = json.loads(response.json()["message"]["content"])
+    import speech_engines
+    phrases = [{"say": speech_engines.to_common_script(str(item.get("say", ""))[:80], language), "en": str(item.get("en", ""))[:160]}
+               for item in result.get("phrases", [])[:6] if isinstance(item, dict) and item.get("say")]
+    return {"summary": str(result.get("summary", ""))[:1200], "phrases": phrases, "ms": round((time.time() - started_at) * 1000)}

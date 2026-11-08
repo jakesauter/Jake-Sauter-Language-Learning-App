@@ -1,7 +1,10 @@
 import json
+import os
 import re
 
-DL = "/tmp/claude-0/-home-claude/d0a8b9a3-91fd-50e7-97d5-399d63c71b81/scratchpad/dl"
+# Dictionary datasets (OpenCC, rime-cantonese, cc-cedict, pinyin-data, jieba,
+# stephen-dictionary-data). Defaults to dl/ at the repo root.
+DL = os.environ.get("POLYLANG_DL", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dl"))
 
 HAN = re.compile(r"[㐀-鿿豈-﫿\U00020000-\U0002ffff]+")
 

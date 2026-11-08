@@ -265,6 +265,19 @@ async def suggest(request: SuggestionRequest):
         return JSONResponse({"error": f"suggestions failed: {error}"}, 502)
 
 
+class RecapRequest(BaseModel):
+    lines: list[ConversationLine] = Field(min_length=1, max_length=200)
+    language: str = Field(default="yue", pattern=r"^[a-z]{2,3}$")
+
+
+@app.post("/recap")
+async def recap(request: RecapRequest):
+    try:
+        return await translation.recap_conversation([line.model_dump() for line in request.lines], request.language)
+    except Exception as error:
+        return JSONResponse({"error": f"recap failed: {error}"}, 502)
+
+
 @app.websocket("/live")
 async def live(websocket: WebSocket):
     origin = websocket.headers.get("origin")
