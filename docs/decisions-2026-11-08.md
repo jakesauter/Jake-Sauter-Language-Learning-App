@@ -55,3 +55,5 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Trade-off: the T730's Tailscale hostname is visible in the public page's code. It's already public in certificate-transparency logs and unreachable without your Tailscale login.
     Alternative: keep the hostname out of the code and type the address once in Record → Advanced on each device.
     Note: desktop Chrome now asks "Allow access to devices on your local network?" the first time jakesauter.github.io contacts the T730 — click Allow. iPhone Safari doesn't have this prompt. Verified in Chromium with the permission granted: the home computer is found and the language chips + live option appear.
+
+13. **Wording (your instruction).** No hardware names in the app: "Live translate", "Saved conversations", "Connecting…", "Transcribe this recording". The only technical word left is "Tailscale" in the connection-error message, because that is the one thing you would need to check.
