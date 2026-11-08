@@ -192,7 +192,8 @@ class LiveSession:
         first_piece_ms, pieces = None, []
         provider = translation.choose_provider(source_language, self.target_language)
         try:
-            async for piece in translation.stream_translation(text, source_language, self.target_language, provider):
+            earlier_lines = [line["text"] + (f" (meaning: {line['en']})" if line.get("en") else "") for line in self.finished_lines[-4:]]
+            async for piece in translation.stream_translation(text, source_language, self.target_language, provider, earlier_lines):
                 if first_piece_ms is None:
                     first_piece_ms = round((time.time() - started_at) * 1000)
                 pieces.append(piece)

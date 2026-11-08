@@ -788,6 +788,22 @@
   .pr-title { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: var(--t-lg); }
   .pr-title .ico { width: 24px; height: 24px; }
   .pr-body { display: grid; gap: var(--s-4); padding: var(--s-4); align-content: start; }
+  /* Recordings: a full-screen view, tight spacing, conversation log fills the screen */
+  dialog.practice.rec { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; padding: 0; inset: 0; }
+  dialog.practice.rec .pr-top { padding: calc(6px + env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) 6px max(12px, env(safe-area-inset-left, 0px)); }
+  dialog.practice.rec .pr-body { gap: 10px; padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+  dialog.practice.rec .pr-lead { font-size: 0.9rem; margin: 0; }
+  dialog.practice.rec .convo-log { max-height: calc(100dvh - 210px); gap: 10px; padding: 0; }
+  dialog.practice.rec .convo-log-full { max-height: none; }
+  dialog.practice.rec .convo-line { gap: 6px; }
+  dialog.practice.rec .convo-said { font-size: 0.92rem; letter-spacing: 0.01em; line-height: 1.35; }
+  dialog.practice.rec .convo-en { font-size: 0.82rem; line-height: 1.3; }
+  dialog.practice.rec .convo-time { font-size: 0.65rem; padding: 1px 6px; }
+  dialog.practice.rec .convo-language { font-size: 0.62rem; padding: 0 6px; margin-right: 6px; }
+  dialog.practice.rec .convo-partial { font-size: 0.9rem; }
+  dialog.practice.rec .ws b { font-size: 0.95rem; }
+  dialog.practice.rec .ws-sound { font-size: 10px; }
+  dialog.practice.rec .ws-mean { font-size: 9px; }
   .pr-lead { margin: 0; color: var(--ink-2); }
   .pr-langs { display: flex; flex-wrap: wrap; gap: 6px; }
   .pr-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
@@ -6947,7 +6963,7 @@
           <p class="convo-said" lang="${line.language === "en" ? "en" : "zh-Hant"}"><span class="convo-language">${esc(language_badge(line))}</span>${esc(line.text)}</p>
           ${isZh(line.text) ? compact_word_strip(line.text, line.language || (live ? live.lang : "yue")) : ""}
           ${line.language === "en" ? "" : `<p class="convo-en">${esc(line.en || "…")}</p>`}
-          ${line.agree != null && line.agree < 0.75 ? `<p class="convo-unsure">${esc(tr("r_unsure"))}</p>` : ""}
+          ${line.language !== "en" && line.agree != null && line.agree < 0.75 ? `<p class="convo-unsure">${esc(tr("r_unsure"))}</p>` : ""}
         </div>`);
       entry.dataset.line = line_key;
       entry.querySelector(".convo-time").addEventListener("click", () => {

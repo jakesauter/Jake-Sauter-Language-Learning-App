@@ -52,20 +52,25 @@ def choose_provider(source, target):
     return FALLBACK_PROVIDER
 
 
-def build_prompt(text, source, target):
+def build_prompt(text, source, target, earlier_lines=()):
     source_name = LANGUAGE_NAMES.get(normalise_code(source), "the source language")
     target_name = LANGUAGE_NAMES.get(normalise_code(target), target)
     taishanese_note = ""
     if normalise_code(source) == "tsn":
         taishanese_note = (" The speaker may be using Taishanese (Toisanese), a Yue language related to Cantonese;"
                            " the text was transcribed with Cantonese characters.")
-    return (f"You are a professional {source_name} to {target_name} translator. Convey the meaning and nuance"
+    context = ""
+    if earlier_lines:
+        context = ("This is a live family dinner conversation transcribed by speech recognition, so expect small "
+                   "mistakes. What was said just before, for context only (do not translate it):\n"
+                   + "\n".join(f"- {line}" for line in earlier_lines[-4:]) + "\n\n")
+    return (context + f"You are a professional {source_name} to {target_name} translator. Convey the meaning and nuance"
             f" of the original while using natural {target_name}.{taishanese_note} Produce only the {target_name}"
             f" translation, with no explanations, notes or quotation marks. Translate the following"
             f" {source_name} text into {target_name}:\n\n{text}")
 
 
-async def stream_translation(text, source, target, provider=None):
+async def stream_translation(text, source, target, provider=None, earlier_lines=()):
     """Yield pieces of the translation as the model produces them."""
     provider = provider or choose_provider(source, target)
     if provider == "google":
@@ -75,7 +80,7 @@ async def stream_translation(text, source, target, provider=None):
     request_body = {
         "model": model_name, "stream": True, "think": False, "keep_alive": "4h",
         "options": {"temperature": 0.1, "num_ctx": 2048},
-        "messages": [{"role": "user", "content": build_prompt(text, source, target)}],
+        "messages": [{"role": "user", "content": build_prompt(text, source, target, earlier_lines)}],
     }
     async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
         async with client.stream("POST", OLLAMA_URL + "/api/chat", json=request_body) as response:
