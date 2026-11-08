@@ -40,6 +40,26 @@ def run_on_gpu(function, *arguments):
     return asyncio.get_running_loop().run_in_executor(None, with_gpu_lock)
 
 
+SHORTEST_DETECTION_PIECE_SECONDS = 2.5
+
+
+def pieces_for_language_detection(audio):
+    """Cut at pauses of a quarter second, then join neighbours until each piece is long enough to judge its language."""
+    regions = speech_engines.speech_regions(audio, min_silence_ms=250, max_speech_seconds=12, padding_ms=80, min_speech_ms=200)
+    if not regions:
+        return [(0, len(audio))]
+    pieces = []
+    for region_start, region_end in regions:
+        if pieces and (pieces[-1][1] - pieces[-1][0]) / SAMPLE_RATE < SHORTEST_DETECTION_PIECE_SECONDS:
+            pieces[-1] = (pieces[-1][0], region_end)
+        else:
+            pieces.append((region_start, region_end))
+    if len(pieces) > 1 and (pieces[-1][1] - pieces[-1][0]) / SAMPLE_RATE < 1.0:
+        last_start, last_end = pieces.pop()
+        pieces[-1] = (pieces[-1][0], last_end)
+    return pieces
+
+
 def find_speech(audio, ending_silence=SILENCE_THAT_ENDS_UTTERANCE):
     return speech_engines.speech_regions(
         audio, min_silence_ms=int(ending_silence * 800), max_speech_seconds=30,
@@ -149,9 +169,14 @@ class LiveSession:
                 await self.send({"type": "error", "error": f"final: {error}"})
 
     def detect_and_transcribe(self, audio, starts_at):
-        language, confidence = speech_engines.detect_language(audio, self.candidate_languages)
-        result = ensemble.transcribe_audio(audio, language, self.engine_names, starts_at, False)
-        return language, confidence, result
+        """Split at short pauses first, so a Cantonese stretch followed by English isn't judged as one language."""
+        transcribed_pieces = []
+        for piece_start, piece_end in pieces_for_language_detection(audio):
+            piece = audio[piece_start:piece_end]
+            language, confidence = speech_engines.detect_language(piece, self.candidate_languages)
+            result = ensemble.transcribe_audio(piece, language, self.engine_names, starts_at + piece_start / SAMPLE_RATE, False)
+            transcribed_pieces.append((language, confidence, result))
+        return transcribed_pieces
 
     def translation_source_for(self, language):
         # Cantonese and Taishanese sound alike to every model; tell the translator it may be Taishanese.
@@ -161,9 +186,12 @@ class LiveSession:
 
     async def finish_utterance(self, audio, starts_at, closed_at):
         started_at = time.time()
-        language, confidence, result = await run_on_gpu(self.detect_and_transcribe, audio, starts_at)
-        if not result["segments"] or not result["segments"][0]["text"]:
-            return
+        transcribed_pieces = await run_on_gpu(self.detect_and_transcribe, audio, starts_at)
+        for language, confidence, result in transcribed_pieces:
+            if result["segments"] and result["segments"][0]["text"]:
+                await self.finish_piece(language, confidence, result, started_at, closed_at)
+
+    async def finish_piece(self, language, confidence, result, started_at, closed_at):
         segment = result["segments"][0]
         self.line_count += 1
         line_id = self.line_count
