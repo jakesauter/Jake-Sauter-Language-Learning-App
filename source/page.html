@@ -6130,21 +6130,41 @@
       try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
     }
 
-    const TEXT_SCALES = [0.7, 0.85, 1, 1.15, 1.3, 1.45, 1.6];
+    const SMALLEST_TEXT_SCALE = 0.5, LARGEST_TEXT_SCALE = 3, TEXT_SCALE_STEP = 1.1;
 
-    function apply_text_scale(step) {
-      const index = Math.max(0, Math.min(TEXT_SCALES.length - 1, step));
-      store.set("polygrok-convo-text-step", String(index));
-      dlg.style.setProperty("--convo-text-scale", TEXT_SCALES[index]);
-      return index;
+    function current_text_scale() {
+      const saved = Number(store.get("polygrok-convo-text-scale"));
+      return Number.isFinite(saved) && saved > 0 ? saved : 1;
+    }
+
+    function apply_text_scale(scale) {
+      const clamped = Math.max(SMALLEST_TEXT_SCALE, Math.min(LARGEST_TEXT_SCALE, scale));
+      store.set("polygrok-convo-text-scale", clamped.toFixed(3));
+      dlg.style.setProperty("--convo-text-scale", clamped);
+      return clamped;
+    }
+
+    // Two-finger pinch on the conversation resizes its text (not the page).
+    function enable_pinch_text_size(area) {
+      let start_distance = 0, start_scale = 1;
+      const finger_distance = touches => Math.hypot(touches[0].clientX - touches[1].clientX, touches[0].clientY - touches[1].clientY);
+      area.addEventListener("touchstart", event => {
+        if (event.touches.length === 2) { start_distance = finger_distance(event.touches); start_scale = current_text_scale(); }
+      }, { passive: true });
+      area.addEventListener("touchmove", event => {
+        if (event.touches.length !== 2 || !start_distance) return;
+        event.preventDefault();
+        apply_text_scale(start_scale * finger_distance(event.touches) / start_distance);
+      }, { passive: false });
+      area.addEventListener("touchend", () => { start_distance = 0; });
     }
 
     function shell(title) {
       dlg.innerHTML = `<div class="pr-top"><span class="pr-title">${icon("mic")}${esc(title)}</span><span class="text-size"><button type="button" data-smaller aria-label="${esc(tr("r_text_smaller"))}">A−</button><button type="button" data-larger aria-label="${esc(tr("r_text_larger"))}">A+</button></span><button class="btn quiet" type="button" data-x>${esc(tr("g_close"))}</button></div>`;
       dlg.querySelector("[data-x]").addEventListener("click", () => dlg.close());
-      let text_step = apply_text_scale(Number(store.get("polygrok-convo-text-step") ?? 2));
-      dlg.querySelector("[data-smaller]").addEventListener("click", () => { text_step = apply_text_scale(text_step - 1); });
-      dlg.querySelector("[data-larger]").addEventListener("click", () => { text_step = apply_text_scale(text_step + 1); });
+      apply_text_scale(current_text_scale());
+      dlg.querySelector("[data-smaller]").addEventListener("click", () => apply_text_scale(current_text_scale() / TEXT_SCALE_STEP));
+      dlg.querySelector("[data-larger]").addEventListener("click", () => apply_text_scale(current_text_scale() * TEXT_SCALE_STEP));
       const body = el("div", "pr-body");
       dlg.appendChild(body);
       return body;
@@ -6610,6 +6630,7 @@
       body.append(recap_button(() => conversation.lines || [], recap_box), recap_box);
       const log = el("div", "convo-log convo-log-full", "");
       log.id = "rec-convo";
+      enable_pinch_text_size(log);
       body.appendChild(log);
       const reader = { follow_latest: false };
       (conversation.lines || []).forEach((line, index) => append_conversation_line(reader, { ...line, language: app_language_code(line.language), could_be: (line.could_be || []).map(app_language_code) }, "saved:" + index));
@@ -6943,6 +6964,7 @@
       status.id = "rec-home-status";
       const log = el("div", "convo-log");
       log.id = "rec-convo";
+      enable_pinch_text_size(log);
       log.addEventListener("scroll", () => {
         home.follow_latest = log.scrollHeight - log.scrollTop - log.clientHeight < 80;
         const jump = $("rec-jump");
