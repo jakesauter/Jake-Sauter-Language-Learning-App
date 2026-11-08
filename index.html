@@ -2403,7 +2403,10 @@
       push(0, { av: 0, ah: 0, af: 0, f: fmt("ə"), nas: 0, fric: null });
       t = 0.06;
 
+      const starts = [];
+
       list.forEach((sy, si) => {
+        starts.push(t);
         const last = si === list.length - 1;
         const checked = /[ptk]/.test(sy.coda);
         const rising = sy.levels.length === 3;
@@ -2552,42 +2555,82 @@
         });
       }
 
-      const smooth = (get, set, a) => {
+      const zeroPhase = (get, set, a) => {
         let y = get(frames[0]);
         frames.forEach(fr => { y += (get(fr) - y) * a; set(fr, y); });
+        y = get(frames[frames.length - 1]);
+        for (let i = frames.length - 1; i >= 0; i--) { y += (get(frames[i]) - y) * a; set(frames[i], y); }
       };
-      for (let q = 0; q < 3; q++) smooth(fr => fr.f[q], (fr, y) => { fr.f[q] = y; }, 0.45);
+      for (let q = 0; q < 3; q++) zeroPhase(fr => fr.f[q], (fr, y) => { fr.f[q] = y; }, 0.32);
+      zeroPhase(fr => fr.av, (fr, y) => { fr.av = y; }, 0.7);
 
-      const f0 = new Float32Array(nf);
-      const dec = lvHz(1) * 0;
-      pitchKeys.forEach((pk, pi) => {
-        const a = Math.floor(pk.a * FR), b = Math.ceil(pk.b * FR);
-        const L = pk.levels;
-        for (let i = a; i <= b && i < nf; i++) {
-          const x = Math.max(0, Math.min(1, (i - a) / Math.max(1, b - a)));
-          const u = Math.min(1, Math.max(0, (x - 0.08) / 0.84)) * (L.length - 1);
-          const q = Math.min(L.length - 2, Math.floor(u));
-          const w = u - q;
-          const ease = w * w * (3 - 2 * w);
-          const lv = L.length === 1 ? L[0] : L[q] + (L[q + 1] - L[q]) * ease;
-          const decl = 1 - 0.035 * (pi / Math.max(1, pitchKeys.length));
-          f0[i] = lvHz(lv) * decl + dec;
-        }
-      });
-
-      let prev = lvHz(3);
-      for (let i = 0; i < nf; i++) {
-        if (f0[i] > 0) prev = f0[i];
-        else {
-          let nx = i;
-          while (nx < nf && !(f0[nx] > 0)) nx++;
-          f0[i] = nx < nf ? f0[nx] : prev;
-        }
-      }
-      let y = f0[0];
-      for (let i = 0; i < nf; i++) { y += (f0[i] - y) * 0.55; frames[i].f0 = y; }
+      const f0 = qta(list, starts, total, nf);
+      for (let i = 0; i < nf; i++) frames[i].f0 = f0[i];
 
       return { frames, total };
+    }
+
+    /* pitch: target approximation (qTA, Prom-on, Xu & Thipakorn 2009)
+       each syllable pulls F0 toward a pitch target through a critically damped
+       third-order system, so pitch, its slope and its curvature stay continuous
+       from one syllable to the next */
+
+    const REF = 168;
+    const stOf = lv => (lv - 1) * 2.45;
+
+    function targets(sy, a, b) {
+      const L = sy.levels;
+      const d = Math.max(0.05, b - a);
+      const checked = /[ptk]/.test(sy.coda);
+      const lam = checked ? 95 : 80;
+      if (L.length === 3) {
+        const mid = a + d * 0.42;
+        return [
+          { a, b: mid, h: stOf(L[1]) - 0.4, m: 0, lam },
+          { a: mid, b, h: stOf(L[1]), m: (stOf(L[2]) + 1.2 - stOf(L[1])) / (b - mid), lam },
+        ];
+      }
+      if (L[0] !== L[L.length - 1]) {
+        const h0 = stOf(L[0]) + 0.3, h1 = stOf(L[L.length - 1]) - 0.6;
+        return [{ a, b, h: h0, m: (h1 - h0) / d, lam }];
+      }
+      const lv = L[0];
+      const over = lv >= 5 ? 0.5 : lv <= 1 ? -0.5 : 0;
+      return [{ a, b, h: stOf(lv) + over, m: 0, lam }];
+    }
+
+    function qta(list, starts, total, nf) {
+      const segs = [];
+      list.forEach((sy, i) => segs.push(...targets(sy, starts[i], i + 1 < list.length ? starts[i + 1] : total)));
+
+      const out = new Float32Array(nf);
+      const dt = 1 / 1000;
+      let x = segs[0].h, v = 0, acc = 0;
+      let si = 0, seed = 777, drift = 0, dv = 0;
+      const rnd = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x3fffffff - 1; };
+
+      for (let i = 0; i < nf; i++) {
+        const tf = i / FR;
+        while (true) {
+          const tNow = Math.min(tf, total);
+          let t = (i ? (i - 1) / FR : 0);
+          for (; t < tNow - 1e-9; t += dt) {
+            while (si < segs.length - 1 && t >= segs[si + 1].a) si++;
+            const s = segs[si];
+            const T = s.h + s.m * (t - s.a);
+            const L = s.lam;
+            const e = x - T, ev = v - s.m, ea = acc;
+            const jerk = -(L * L * L) * e - 3 * L * L * ev - 3 * L * ea;
+            acc += jerk * dt; v += acc * dt; x += v * dt;
+          }
+          break;
+        }
+        dv += (rnd() * 0.9 - dv) * 0.04;
+        drift += (dv - drift) * 0.08;
+        const decl = -0.55 * tf;
+        out[i] = REF * Math.pow(2, (x + decl + drift * 0.35) / 12);
+      }
+      return out;
     }
 
     /* two-pole resonator and antiresonator (Klatt 1980) */
@@ -2660,7 +2703,9 @@
 
       let phase = 0, seed = 22222;
       const noise = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x3fffffff - 1; };
-      let jit = 1, lastPrev = 0, hp = 0;
+      let jit = 1, shim = 1, lastPrev = 0, hp = 0;
+      let sAv = 0, sAh = 0, sAf = 0;
+      const ka = 1 - Math.exp(-1 / (0.004 * SR));
       let open = 0.62;
 
       for (let i = 0; i < n; i++) {
@@ -2671,7 +2716,7 @@
         const A = frames[a], B = frames[b];
         const L = (p, q) => p + (q - p) * x;
 
-        if (i % 32 === 0) {
+        if (i % 16 === 0) {
           const F = [L(A.f[0], B.f[0]), L(A.f[1], B.f[1]), L(A.f[2], B.f[2])];
           const nas = L(A.nas, B.nas);
           const lat = L(A.lat, B.lat);
@@ -2689,16 +2734,17 @@
         const f0 = L(A.f0, B.f0) * jit;
         phase += f0 / SR;
         let pulse = 0;
-        if (phase >= 1) { phase -= 1; jit = 1 + noise() * 0.006; }
+        if (phase >= 1) { phase -= 1; jit = 1 + noise() * 0.005; shim = 1 + noise() * 0.04; }
         if (phase < open) {
           const u = phase / open;
           pulse = 2 * u - 3 * u * u;
         }
         const g = pulse - 0.5 * tilt.run(pulse);
 
-        const av = L(A.av, B.av);
-        const ah = L(A.ah, B.ah);
-        const af = L(A.af, B.af);
+        sAv += (L(A.av, B.av) - sAv) * ka;
+        sAh += (L(A.ah, B.ah) - sAh) * ka;
+        sAf += (L(A.af, B.af) - sAf) * ka * 1.6;
+        const av = sAv * shim, ah = sAh, af = sAf;
         const nz = noise();
         const breath = nz * (phase < open ? 1 : 0.4);
 
