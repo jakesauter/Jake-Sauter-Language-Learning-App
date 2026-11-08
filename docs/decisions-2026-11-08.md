@@ -54,3 +54,4 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Chose: the public page checks the T730's Tailscale address once on load (2.5 s timeout); if it answers (only on your Tailscale devices) the app remembers it and live mode appears.
     Trade-off: the T730's Tailscale hostname is visible in the public page's code. It's already public in certificate-transparency logs and unreachable without your Tailscale login.
     Alternative: keep the hostname out of the code and type the address once in Record → Advanced on each device.
+    Note: desktop Chrome now asks "Allow access to devices on your local network?" the first time jakesauter.github.io contacts the T730 — click Allow. iPhone Safari doesn't have this prompt. Verified in Chromium with the permission granted: the home computer is found and the language chips + live option appear.
