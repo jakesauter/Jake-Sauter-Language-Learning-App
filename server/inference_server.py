@@ -205,6 +205,7 @@ async def current_account(request: Request):
     account = accounts.account_for_token(accounts.bearer_token(request.headers))
     return {"signed_in": bool(account), "username": account["username"] if account else None,
             "email": account["email"] if account else None, "email_ready": email_sender.can_send(),
+            "reset_mode": "trusted" if accounts.TRUSTED_RESET else ("email" if email_sender.can_send() else "none"),
             "tailscale_login": request.headers.get("tailscale-user-login")}
 
 
@@ -250,6 +251,20 @@ async def forgot_password(request: Request, body: ResetRequest):
         except Exception as error:
             print("reset email failed:", error)
     return {"message": RESET_SENT}
+
+
+class TrustedReset(BaseModel):
+    username: str = Field(min_length=3, max_length=32)
+    password: str = Field(min_length=1, max_length=200)
+
+
+@app.post("/account/reset-password-trusted")
+async def reset_password_trusted(request: Request, body: TrustedReset):
+    try:
+        return await asyncio.get_running_loop().run_in_executor(
+            None, accounts.trusted_password_reset, body.username, body.password, client_key(request))
+    except accounts.AccountError as error:
+        return JSONResponse({"error": str(error)}, 400)
 
 
 @app.post("/account/reset-password")

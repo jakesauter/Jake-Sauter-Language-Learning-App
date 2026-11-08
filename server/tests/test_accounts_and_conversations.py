@@ -146,3 +146,13 @@ def test_bad_email_rejected_and_email_can_be_added_later(client):
     token = create(client, "addlater").json()["token"]
     assert client.post("/account/email", json={"email": "later@example.com"}, headers=auth(token)).json()["email"] == "later@example.com"
     assert client.get("/account", headers=auth(token)).json()["email"] == "later@example.com"
+
+
+def test_trusted_reset_sets_new_password_and_signs_out_other_devices(client):
+    old_token = create(client, "trusting").json()["token"]
+    reset = client.post("/account/reset-password-trusted", json={"username": "Trusting", "password": "a new password"})
+    assert reset.status_code == 200 and reset.json()["username"] == "trusting"
+    assert client.get("/account", headers=auth(old_token)).json()["signed_in"] is False
+    assert client.post("/account/sign-in", json={"username": "trusting", "password": "a new password"}).status_code == 200
+    assert client.post("/account/reset-password-trusted", json={"username": "nobody_here", "password": "whatever123"}).status_code == 400
+    assert client.post("/account/reset-password-trusted", json={"username": "trusting", "password": "short"}).status_code == 400

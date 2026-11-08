@@ -73,3 +73,8 @@ Each entry: the question, what I chose, why, and what the alternative would have
     `{"host": "smtp.gmail.com", "port": 587, "username": "you@gmail.com", "password": "<16-char app password>", "from": "Polylang <you@gmail.com>"}`
     then restart the server (`systemctl --user restart polylang-home`). Alternative: a transactional service (Resend/Postmark) — better deliverability, needs an API key and a domain.
     Decision: I didn't use your Gmail through my own email tools, because the server must send codes by itself at any hour, without me.
+
+17. **Forgot password without email (your instruction: "just trust the user").**
+    Built: "Forgot password?" asks for the username and a new password, resets it, signs out the account's other devices, and signs you in. Limited to 10 resets per hour per username and per device.
+    Risk you accepted: anyone who can reach the server can reset any account by knowing its username. Today only devices on your Tailscale network can reach it, so that means you and people you invite.
+    It's one switch (`POLYLANG_TRUSTED_RESET`, on by default). When email (Gmail app password) or recovery codes are set up, turn it off and the email-code flow (already built and tested) takes over.

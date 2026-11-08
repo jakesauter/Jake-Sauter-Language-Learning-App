@@ -30,6 +30,7 @@ RESET_REQUESTS_ALLOWED_PER_HOUR = 5
 _database_lock = threading.Lock()
 _failed_logins = {}
 _live_tickets = {}
+_reset_requests = {}
 
 
 class AccountError(Exception):
@@ -139,9 +140,38 @@ def set_email(account_id, email):
     return email
 
 
+# ---------- forgot password, trusted mode: no proof needed (only Tailscale devices can reach the server) ----------
+
+TRUSTED_RESET = os.environ.get("POLYLANG_TRUSTED_RESET", "1") == "1"
+TRUSTED_RESETS_ALLOWED_PER_HOUR = 10
+
+
+def trusted_password_reset(username, new_password, client_key):
+    if not TRUSTED_RESET:
+        raise AccountError("Password reset isn't available this way.")
+    if len(new_password) < SHORTEST_PASSWORD:
+        raise AccountError(f"Use a password of at least {SHORTEST_PASSWORD} characters.")
+    username = (username or "").strip().lower()
+    now = time.time()
+    for key in ("trusted-reset-user:" + username, "trusted-reset-client:" + client_key):
+        recent = [moment for moment in _reset_requests.get(key, []) if now - moment < 3600]
+        _reset_requests[key] = recent + [now]
+        if len(recent) >= TRUSTED_RESETS_ALLOWED_PER_HOUR:
+            raise AccountError("Too many resets. Wait an hour and try again.")
+    with _database_lock, _database() as connection:
+        account = connection.execute("SELECT id FROM accounts WHERE username = ?", (username,)).fetchone()
+        if not account:
+            raise AccountError("There's no account with that username.")
+        salt = secrets.token_bytes(16)
+        connection.execute("UPDATE accounts SET password_hash = ?, salt = ? WHERE id = ?",
+                           (_hash_password(new_password, salt), salt, account[0]))
+        connection.execute("DELETE FROM sign_ins WHERE account_id = ?", (account[0],))
+        _failed_logins.pop("user:" + username, None)
+        return {"username": username, "token": _issue_token(connection, account[0])}
+
+
 # ---------- forgot password: a 6-digit code sent by email ----------
 
-_reset_requests = {}
 
 
 def start_password_reset(email, client_key):
