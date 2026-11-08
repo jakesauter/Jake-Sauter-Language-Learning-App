@@ -25,7 +25,8 @@ from speech_engines import SAMPLE_RATE
 
 SECONDS_BETWEEN_VAD_CHECKS = 0.3
 SECONDS_BETWEEN_PARTIALS = 0.7
-SILENCE_THAT_ENDS_UTTERANCE = 0.6
+SILENCE_THAT_ENDS_UTTERANCE = 0.6   # default; each session can tune it between the two limits below
+SHORTEST_ENDING_SILENCE, LONGEST_ENDING_SILENCE = 0.3, 1.5
 LONGEST_UTTERANCE_SECONDS = 20.0
 LONGEST_SESSION_SECONDS = 2 * 3600
 LARGEST_FRAME_BYTES = 64 * 1024
@@ -39,9 +40,9 @@ def run_on_gpu(function, *arguments):
     return asyncio.get_running_loop().run_in_executor(None, with_gpu_lock)
 
 
-def find_speech(audio):
+def find_speech(audio, ending_silence=SILENCE_THAT_ENDS_UTTERANCE):
     return speech_engines.speech_regions(
-        audio, min_silence_ms=int(SILENCE_THAT_ENDS_UTTERANCE * 800), max_speech_seconds=30,
+        audio, min_silence_ms=int(ending_silence * 800), max_speech_seconds=30,
         padding_ms=100, min_speech_ms=150)
 
 
@@ -68,6 +69,13 @@ class LiveSession:
         self.finished_lines = []
         self.line_count = 0
         self.is_closing = False
+        self.ending_silence = SILENCE_THAT_ENDS_UTTERANCE
+
+    def apply_settings(self, settings):
+        """Tune the session while it runs, e.g. {"pause_ms": 900}."""
+        pause_ms = settings.get("pause_ms")
+        if isinstance(pause_ms, (int, float)):
+            self.ending_silence = min(LONGEST_ENDING_SILENCE, max(SHORTEST_ENDING_SILENCE, pause_ms / 1000))
 
     async def send(self, message):
         try:
@@ -93,7 +101,7 @@ class LiveSession:
 
     async def check_for_speech(self, end_of_stream=False):
         audio = self.open_utterance
-        speech = await asyncio.get_running_loop().run_in_executor(None, find_speech, audio)
+        speech = await asyncio.get_running_loop().run_in_executor(None, find_speech, audio, self.ending_silence)
         if not speech:
             if len(audio) > 3 * SAMPLE_RATE:
                 self._drop_audio_before(len(audio) - SAMPLE_RATE)
@@ -101,7 +109,7 @@ class LiveSession:
         speech_start, speech_end = speech[0][0], speech[-1][1]
         trailing_silence = (len(audio) - speech_end) / SAMPLE_RATE
         utterance_length = (len(audio) - speech_start) / SAMPLE_RATE
-        if end_of_stream or trailing_silence >= SILENCE_THAT_ENDS_UTTERANCE or utterance_length >= LONGEST_UTTERANCE_SECONDS:
+        if end_of_stream or trailing_silence >= self.ending_silence or utterance_length >= LONGEST_UTTERANCE_SECONDS:
             padding = int(0.15 * SAMPLE_RATE)
             clip_from, clip_to = max(0, speech_start - padding), min(len(audio), speech_end + padding)
             await self.closed_utterances.put(
@@ -166,7 +174,7 @@ class LiveSession:
             "stats": {
                 "asr_ms": round((time.time() - started_at) * 1000),
                 "engine_ms": {name: round(seconds * 1000) for name, seconds in result["engine_seconds"].items()},
-                "since_speech_end_ms": round((time.time() - closed_at + SILENCE_THAT_ENDS_UTTERANCE) * 1000),
+                "since_speech_end_ms": round((time.time() - closed_at + self.ending_silence) * 1000),
             },
         }
         await self.send(line)

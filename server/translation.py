@@ -15,7 +15,7 @@ import httpx
 OLLAMA_URL = os.environ.get("POLYLANG_OLLAMA", "http://127.0.0.1:11434")
 ROUTER_FILE = os.environ.get("POLYLANG_ROUTER", os.path.join(os.path.dirname(__file__), "router.json"))
 GOOGLE_KEY_FILE = os.environ.get("POLYLANG_GOOGLE_KEY_FILE", "/run/secrets/google_translate_key")
-FALLBACK_PROVIDER = os.environ.get("POLYLANG_LLM", "ollama:qwen2.5:7b")
+FALLBACK_PROVIDER = os.environ.get("POLYLANG_LLM", "ollama:qwen3.5:4b")
 
 LANGUAGE_NAMES = {
     "en": "English", "yue": "Cantonese", "tsn": "Taishanese", "zh": "Mandarin Chinese", "es": "Spanish",
@@ -119,7 +119,16 @@ async def translate_with_google(text, source, target):
 SUGGESTION_LANGUAGE_NAMES = {"yue": "Cantonese", "tsn": "Cantonese", "zh": "Mandarin Chinese"}
 
 
-async def suggest_replies(conversation_lines, language):
+def suggestion_style(creativity):
+    if creativity < 0.34:
+        return "Keep them safe and polite: standard, well-known phrases a guest would use."
+    if creativity < 0.67:
+        return "Make them friendly and natural, mixing polite phrases with simple follow-up questions."
+    return ("Make them warm and personal: curious follow-up questions about what was just said, compliments with "
+            "specifics, or gentle light humor, while staying respectful to elders.")
+
+
+async def suggest_replies(conversation_lines, language, creativity=0.4):
     """Short, natural things the learner could say next, with English meanings."""
     reply_language = SUGGESTION_LANGUAGE_NAMES.get(language, LANGUAGE_NAMES.get(language, "the same language"))
     transcript = "\n".join(
@@ -131,11 +140,13 @@ async def suggest_replies(conversation_lines, language):
         f"{transcript}\n\n"
         f"Suggest 3 short, polite, natural things the learner could say next in {reply_language}, each under 12 words, "
         "easy for a beginner to pronounce, relevant to what was just said (questions, compliments about the food, "
-        "thanks, or showing interest). Reply only with JSON: "
+        f"thanks, or showing interest). {suggestion_style(creativity)} Reply only with JSON: "
         '{"suggestions": [{"say": "<written in Chinese characters>", "en": "<English meaning>", '
         '"why": "<one short phrase on when to use it>"}]}')
     request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
-                    "format": "json", "keep_alive": "30m", "options": {"temperature": 0.6, "num_ctx": 4096},
+                    "format": "json", "keep_alive": "30m",
+                    # Same context size as translations: Ollama reloads the model whenever it changes.
+                    "options": {"temperature": round(0.2 + 0.7 * creativity, 2), "num_ctx": 2048},
                     "messages": [{"role": "user", "content": prompt}]}
     if request_body["model"] == "google":
         request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
@@ -144,6 +155,7 @@ async def suggest_replies(conversation_lines, language):
         response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
     response.raise_for_status()
     suggestions = json.loads(response.json()["message"]["content"]).get("suggestions", [])[:4]
-    cleaned = [{"say": str(item.get("say", ""))[:80], "en": str(item.get("en", ""))[:160], "why": str(item.get("why", ""))[:120]}
+    import speech_engines  # same script as the transcripts (traditional characters for Cantonese)
+    cleaned = [{"say": speech_engines.to_common_script(str(item.get("say", ""))[:80], language), "en": str(item.get("en", ""))[:160], "why": str(item.get("why", ""))[:120]}
                for item in suggestions if isinstance(item, dict) and item.get("say")]
     return {"suggestions": cleaned, "ms": round((time.time() - started_at) * 1000)}

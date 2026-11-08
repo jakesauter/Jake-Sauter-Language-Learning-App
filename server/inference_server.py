@@ -254,12 +254,13 @@ class ConversationLine(BaseModel):
 class SuggestionRequest(BaseModel):
     lines: list[ConversationLine] = Field(min_length=1, max_length=30)
     language: str = Field(default="yue", pattern=r"^[a-z]{2,3}$")
+    creativity: float = Field(default=0.4, ge=0.0, le=1.0)
 
 
 @app.post("/suggest")
 async def suggest(request: SuggestionRequest):
     try:
-        return await translation.suggest_replies([line.model_dump() for line in request.lines], request.language)
+        return await translation.suggest_replies([line.model_dump() for line in request.lines], request.language, request.creativity)
     except Exception as error:
         return JSONResponse({"error": f"suggestions failed: {error}"}, 502)
 
@@ -306,8 +307,12 @@ async def live(websocket: WebSocket):
                     break
                 if message.get("bytes") is not None:
                     await session.receive_audio(message["bytes"])
-                elif message.get("text") and json.loads(message["text"]).get("type") == "stop":
-                    break
+                elif message.get("text"):
+                    control = json.loads(message["text"])
+                    if control.get("type") == "stop":
+                        break
+                    if control.get("type") == "settings":
+                        session.apply_settings(control)
         except (WebSocketDisconnect, asyncio.TimeoutError, TimeoutError, ValueError):
             pass
         finally:
