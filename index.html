@@ -944,6 +944,16 @@
 
   .sounds { display: grid; grid-template-columns: auto 1fr; gap: 2px var(--s-3); font-size: 0.95rem; }
 
+  @media (max-height: 540px) and (orientation: landscape) {
+    .bar { position: relative; top: auto; padding-block: var(--s-2); }
+    .langs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    header.top { padding-block: var(--s-2); }
+    .banner { padding: 8px 12px 8px 10px; gap: 12px; border-radius: 14px; }
+    .banner .b-mark { width: 40px; height: 40px; }
+    .banner .b-word { height: 26px; }
+    .banner .tag { display: none; }
+  }
+
   @media (max-width: 400px) {
 
     .tone .big { width: 34px; height: 34px; }
