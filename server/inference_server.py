@@ -205,7 +205,7 @@ async def current_account(request: Request):
     account = accounts.account_for_token(accounts.bearer_token(request.headers))
     return {"signed_in": bool(account), "username": account["username"] if account else None,
             "email": account["email"] if account else None, "email_ready": email_sender.can_send(),
-            "reset_mode": "trusted" if accounts.TRUSTED_RESET else ("email" if email_sender.can_send() else "none"),
+            "reset_mode": "trusted" if accounts.TRUSTED_RESET else "recovery_code", "email_reset": email_sender.can_send(),
             "tailscale_login": request.headers.get("tailscale-user-login")}
 
 
@@ -251,6 +251,29 @@ async def forgot_password(request: Request, body: ResetRequest):
         except Exception as error:
             print("reset email failed:", error)
     return {"message": RESET_SENT}
+
+
+class RecoveryReset(BaseModel):
+    username: str = Field(min_length=3, max_length=32)
+    recovery_code: str = Field(min_length=12, max_length=20)
+    password: str = Field(min_length=1, max_length=200)
+
+
+@app.post("/account/reset-with-recovery-code")
+async def reset_with_recovery_code(request: Request, body: RecoveryReset):
+    try:
+        return await asyncio.get_running_loop().run_in_executor(
+            None, accounts.reset_with_recovery_code, body.username, body.recovery_code, body.password, client_key(request))
+    except accounts.AccountError as error:
+        return JSONResponse({"error": str(error)}, 400)
+
+
+@app.post("/account/new-recovery-code")
+async def new_recovery_code(request: Request):
+    account = accounts.account_for_token(accounts.bearer_token(request.headers))
+    if not account:
+        return JSONResponse({"error": "Sign in first."}, 401)
+    return {"recovery_code": accounts.new_recovery_code(account["id"])}
 
 
 class TrustedReset(BaseModel):

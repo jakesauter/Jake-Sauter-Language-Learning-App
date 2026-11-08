@@ -78,3 +78,8 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Built: "Forgot password?" asks for the username and a new password, resets it, signs out the account's other devices, and signs you in. Limited to 10 resets per hour per username and per device.
     Risk you accepted: anyone who can reach the server can reset any account by knowing its username. Today only devices on your Tailscale network can reach it, so that means you and people you invite.
     It's one switch (`POLYLANG_TRUSTED_RESET`, on by default). When email (Gmail app password) or recovery codes are set up, turn it off and the email-code flow (already built and tested) takes over.
+
+18. **Recovery codes replace trusted reset (your instruction: keep it secure).**
+    Built: a one-time recovery code (e.g. K7QF-2M9X-HT4P, ~60 bits) shown once at sign-up, or at the next sign-in for accounts made earlier. "Forgot password?" = username + recovery code + new password. Each code works once and is replaced after a reset; "Get a new recovery code" on the Account page. 5 wrong tries per hour per username and per device. Trusted reset is now OFF.
+    Codes avoid 0/O and 1/I so they can be copied by hand; spaces, dashes and lower case are accepted when typed back.
+    Email reset stays built but off until you add the Gmail app password (reminder set for 9 PM).

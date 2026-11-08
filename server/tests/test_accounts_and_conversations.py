@@ -148,11 +148,28 @@ def test_bad_email_rejected_and_email_can_be_added_later(client):
     assert client.get("/account", headers=auth(token)).json()["email"] == "later@example.com"
 
 
-def test_trusted_reset_sets_new_password_and_signs_out_other_devices(client):
-    old_token = create(client, "trusting").json()["token"]
-    reset = client.post("/account/reset-password-trusted", json={"username": "Trusting", "password": "a new password"})
-    assert reset.status_code == 200 and reset.json()["username"] == "trusting"
-    assert client.get("/account", headers=auth(old_token)).json()["signed_in"] is False
-    assert client.post("/account/sign-in", json={"username": "trusting", "password": "a new password"}).status_code == 200
-    assert client.post("/account/reset-password-trusted", json={"username": "nobody_here", "password": "whatever123"}).status_code == 400
-    assert client.post("/account/reset-password-trusted", json={"username": "trusting", "password": "short"}).status_code == 400
+def test_trusted_reset_is_off(client):
+    create(client, "trusting")
+    assert client.post("/account/reset-password-trusted", json={"username": "trusting", "password": "a new password"}).status_code == 400
+
+
+def test_recovery_code_reset_full_flow(client):
+    created = create(client, "careful").json()
+    code = created["recovery_code"]
+    assert len(code) == 14 and code.count("-") == 2
+    reset = client.post("/account/reset-with-recovery-code",
+                        json={"username": "careful", "recovery_code": code.lower().replace("-", " "), "password": "new password here"})
+    assert reset.status_code == 200
+    assert reset.json()["recovery_code"] != code  # a fresh code replaces the used one
+    assert client.get("/account", headers=auth(created["token"])).json()["signed_in"] is False
+    again = client.post("/account/reset-with-recovery-code", json={"username": "careful", "recovery_code": code, "password": "another password"})
+    assert again.status_code == 400  # used codes stop working
+    assert client.post("/account/sign-in", json={"username": "careful", "password": "new password here"}).status_code == 200
+
+
+def test_recovery_code_guessing_is_limited(client):
+    real_code = create(client, "guarded").json()["recovery_code"]
+    for _ in range(5):
+        client.post("/account/reset-with-recovery-code", json={"username": "guarded", "recovery_code": "AAAA-BBBB-CCCC", "password": "new password!"})
+    blocked = client.post("/account/reset-with-recovery-code", json={"username": "guarded", "recovery_code": real_code, "password": "new password!"})
+    assert blocked.status_code == 400 and "Too many tries" in blocked.json()["error"]

@@ -49,7 +49,27 @@ def _database():
     columns = {row[1] for row in connection.execute("PRAGMA table_info(accounts)")}
     if "email" not in columns:
         connection.execute("ALTER TABLE accounts ADD COLUMN email TEXT")
+    if "recovery_hash" not in columns:
+        connection.execute("ALTER TABLE accounts ADD COLUMN recovery_hash TEXT")
     return connection
+
+
+# ---------- recovery codes: shown once, used once, replaced after each reset ----------
+
+RECOVERY_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"  # no 0/O or 1/I, so it can be copied by hand
+RECOVERY_TRIES_ALLOWED_PER_HOUR = 5
+
+
+def _new_recovery_code(connection, account_id):
+    characters = "".join(secrets.choice(RECOVERY_ALPHABET) for _ in range(12))
+    code = "-".join(characters[start:start + 4] for start in range(0, 12, 4))
+    connection.execute("UPDATE accounts SET recovery_hash = ? WHERE id = ?", (_recovery_hash(account_id, code), account_id))
+    return code
+
+
+def _recovery_hash(account_id, code):
+    normalised = "".join(character for character in (code or "").upper() if character in RECOVERY_ALPHABET)
+    return _hash_token(f"recovery:{account_id}:{normalised}")
 
 
 def _hash_password(password, salt):
@@ -104,20 +124,54 @@ def create_account(username, password, email=""):
                 (username, password_hash, salt, time.time(), email))
         except sqlite3.IntegrityError:
             raise AccountError("That username is taken.")
-        return {"username": username, "token": _issue_token(connection, cursor.lastrowid)}
+        return {"username": username, "token": _issue_token(connection, cursor.lastrowid),
+                "recovery_code": _new_recovery_code(connection, cursor.lastrowid)}
 
 
 def sign_in(username, password, client_key):
     username = username.strip().lower()
     _check_not_locked_out("user:" + username, "client:" + client_key)
     with _database_lock, _database() as connection:
-        row = connection.execute("SELECT id, password_hash, salt FROM accounts WHERE username = ?", (username,)).fetchone()
+        row = connection.execute("SELECT id, password_hash, salt, recovery_hash FROM accounts WHERE username = ?", (username,)).fetchone()
         # Hash even for unknown usernames, so response time doesn't reveal which usernames exist.
         candidate = _hash_password(password, row[2] if row else b"no-such-account!")
         if not row or not hmac.compare_digest(candidate, row[1]):
             _record_failure("user:" + username, "client:" + client_key)
             raise AccountError("Wrong username or password.")
-        return {"username": username, "token": _issue_token(connection, row[0])}
+        signed_in = {"username": username, "token": _issue_token(connection, row[0])}
+        if not row[3]:
+            signed_in["recovery_code"] = _new_recovery_code(connection, row[0])  # accounts made before recovery codes
+        return signed_in
+
+
+def new_recovery_code(account_id):
+    with _database_lock, _database() as connection:
+        return _new_recovery_code(connection, account_id)
+
+
+def reset_with_recovery_code(username, recovery_code, new_password, client_key):
+    if len(new_password) < SHORTEST_PASSWORD:
+        raise AccountError(f"Use a password of at least {SHORTEST_PASSWORD} characters.")
+    username = (username or "").strip().lower()
+    now = time.time()
+    keys = ("recovery-user:" + username, "recovery-client:" + client_key)
+    for key in keys:
+        if len([moment for moment in _reset_requests.get(key, []) if now - moment < 3600]) >= RECOVERY_TRIES_ALLOWED_PER_HOUR:
+            raise AccountError("Too many tries. Wait an hour and try again.")
+    wrong = AccountError("That username and recovery code don't match.")
+    with _database_lock, _database() as connection:
+        account = connection.execute("SELECT id, recovery_hash FROM accounts WHERE username = ?", (username,)).fetchone()
+        if not account or not account[1] or not hmac.compare_digest(account[1], _recovery_hash(account[0], recovery_code)):
+            for key in keys:
+                _reset_requests.setdefault(key, []).append(now)
+            raise wrong
+        salt = secrets.token_bytes(16)
+        connection.execute("UPDATE accounts SET password_hash = ?, salt = ? WHERE id = ?",
+                           (_hash_password(new_password, salt), salt, account[0]))
+        connection.execute("DELETE FROM sign_ins WHERE account_id = ?", (account[0],))
+        _failed_logins.pop("user:" + username, None)
+        return {"username": username, "token": _issue_token(connection, account[0]),
+                "recovery_code": _new_recovery_code(connection, account[0])}
 
 
 def account_for_token(token):
@@ -142,7 +196,7 @@ def set_email(account_id, email):
 
 # ---------- forgot password, trusted mode: no proof needed (only Tailscale devices can reach the server) ----------
 
-TRUSTED_RESET = os.environ.get("POLYLANG_TRUSTED_RESET", "1") == "1"
+TRUSTED_RESET = os.environ.get("POLYLANG_TRUSTED_RESET", "0") == "1"  # off: recovery codes replaced it
 TRUSTED_RESETS_ALLOWED_PER_HOUR = 10
 
 
