@@ -10,6 +10,8 @@ s = s.replace(a, '''  @media (max-height: 540px) and (orientation: landscape) {
     .banner .b-mark { width: 40px; height: 40px; }
     .banner .b-word { height: 26px; }
     .banner .tag { display: none; }
+    .wrap { max-width: none; padding-left: max(12px, env(safe-area-inset-left, 0px)); padding-right: max(12px, env(safe-area-inset-right, 0px)); }
+    .result .detail { padding: var(--s-3); }
   }
 
 ''' + a, 1)
