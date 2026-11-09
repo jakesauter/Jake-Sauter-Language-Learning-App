@@ -21,5 +21,6 @@ email_settings_file=/home/coderx/.config/polylang/email.json
 exec apptainer run --nv --containall --no-home --cleanenv --writable-tmpfs "${mounts[@]}" \
     --env POLYLANG_ORIGINS="${POLYLANG_ORIGINS:-https://jakesauter.github.io,https://coderx-legion-t730-28ico.tailf42501.ts.net}" \
     --env POLYLANG_PORT="${POLYLANG_PORT:-8000}" \
+    --env POLYLANG_PRELOAD="${POLYLANG_PRELOAD:-sensevoice,whisper}" \
     --env POLYLANG_MODEL="${POLYLANG_MODEL:-mobiuslabsgmbh/faster-whisper-large-v3-turbo}" \
     container/polylang.sif
