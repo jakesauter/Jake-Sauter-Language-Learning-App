@@ -142,6 +142,8 @@ async def digest(person, conversation_id):
     lines = []
     for index, piece in enumerate(pieces):
         versions = list(piece["hyps"].values())
+        if piece["language"] != "en" and translation.mostly_latin(piece["hyps"].get("whisper", "")):
+            piece["language"] = "en"
         if piece["language"] == "en":
             text = piece["hyps"].get("whisper") or versions[0]
         else:
@@ -150,9 +152,10 @@ async def digest(person, conversation_id):
                 "at": piece["at"], "start": 0, "end": piece["seconds"], "en": "",
                 "could_be": ["yue", "tsn"] if piece["language"] == "yue" else [piece["language"]]}
         if piece["language"] != "en":
-            earlier = [entry["text"] + (f" (meaning: {entry['en']})" if entry["en"] else "") for entry in lines[-4:]]
+            earlier = [entry["text"] + (f" (meaning: {entry['en']})" if entry["en"] and entry["en"] != "(unclear)" else "") for entry in lines[-4:]]
             source = "tsn" if piece["language"] == "yue" else piece["language"]
-            line["en"] = "".join([chunk async for chunk in translation.stream_translation(text, source, "en", None, earlier)]).strip()
+            translated = await translation.translate_with_clarity(text, source, "en", earlier)
+            line["en"], line["clarity"] = translated["english"], translated["clarity"]
         lines.append(line)
         if index % 20 == 0:
             set_status(person, conversation_id, "understanding", done=index, total=len(pieces))

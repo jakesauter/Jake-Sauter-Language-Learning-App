@@ -7,6 +7,7 @@ speed. Google is used only when its key file exists; the key never leaves this m
 
 import html
 import json
+import re
 import os
 import time
 
@@ -70,8 +71,10 @@ def build_prompt(text, source, target, earlier_lines=(), heard_versions=()):
                 + ". Use all versions together to work out the most likely meaning, and translate that.)")
     return (context + f"You are a professional {source_name} to {target_name} translator. Convey the meaning and nuance"
             f" of the original while using natural {target_name}.{taishanese_note} Produce only the {target_name}"
-            f" translation, with no explanations, notes or quotation marks. Translate the following"
-            f" {source_name} text into {target_name}:\n\n{text}")
+            f" translation, with no explanations, notes or quotation marks. The text comes from speech recognition"
+            f" and may be garbled. If it does not form a meaningful sentence, do not invent one: reply exactly"
+            f" \"(unclear)\", or \"(unclear: <the few words you can make out>)\" if a few words are clear."
+            f" Translate the following {source_name} text into {target_name}:\n\n{text}")
 
 
 async def stream_translation(text, source, target, provider=None, earlier_lines=(), heard_versions=()):
@@ -216,3 +219,35 @@ async def recap_conversation(conversation_lines, language):
     phrases = [{"say": speech_engines.to_common_script(str(item.get("say", ""))[:80], language), "en": str(item.get("en", ""))[:160]}
                for item in result.get("phrases", [])[:6] if isinstance(item, dict) and item.get("say")]
     return {"summary": str(result.get("summary", ""))[:1200], "phrases": phrases, "ms": round((time.time() - started_at) * 1000)}
+
+
+CJK_CHARACTER = re.compile(r"[㐀-鿿]")
+CLEAR_ENOUGH = 3  # clarity 1-5; below this the line is shown as "(unclear)"; exactly 3 is shown as rough
+
+
+def mostly_latin(text):
+    """A "Chinese" line that is mostly English words was really English (mixed pieces get mislabeled)."""
+    letters = [character for character in text if character.isalpha()]
+    return bool(letters) and sum(character.isascii() for character in letters) / len(letters) > 0.6
+
+
+async def translate_with_clarity(text, source, target="en", earlier_lines=(), heard_versions=()):
+    """One call: how clear the transcript is (1-5) and its translation. Garbled lines become "(unclear)"."""
+    base = build_prompt(text, source, target, earlier_lines, heard_versions)
+    prompt = (base + "\n\nAlso rate how clearly the speech-recognition text forms meaningful speech, from 1 (gibberish) "
+              "to 5 (clear sentence). Reply only with JSON: {\"clarity\": <1-5>, \"english\": \"<translation>\"}")
+    provider = choose_provider(source, target)
+    model = FALLBACK_PROVIDER.split(":", 1)[-1] if provider == "google" else provider.split(":", 1)[-1]
+    request_body = {"model": model, "stream": False, "think": False, "format": "json", "keep_alive": "4h",
+                    "options": {"temperature": 0.1, "num_ctx": 2048}, "messages": [{"role": "user", "content": prompt}]}
+    async with httpx.AsyncClient(timeout=httpx.Timeout(60, connect=5)) as client:
+        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+    response.raise_for_status()
+    try:
+        answer = json.loads(response.json()["message"]["content"])
+        clarity = int(answer.get("clarity", 1))
+        english = str(answer.get("english", "")).strip()
+    except (ValueError, TypeError):
+        return {"english": "(unclear)", "clarity": 1, "unclear": True}
+    unclear = clarity < CLEAR_ENOUGH or not english or bool(CJK_CHARACTER.search(english)) or english.lower().startswith("(unclear")
+    return {"english": "(unclear)" if unclear else english, "clarity": clarity, "unclear": unclear}

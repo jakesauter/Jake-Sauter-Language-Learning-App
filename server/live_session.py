@@ -201,6 +201,8 @@ class LiveSession:
     async def finish_piece(self, language, confidence, result, started_at, closed_at):
         segment = result["segments"][0]
         engine_versions = [text for text in segment.get("hyps", {}).values() if text]
+        if language != "en" and translation.mostly_latin(segment["text"]):
+            language = "en"
         if language != "en" and len(set(engine_versions)) > 1:
             try:
                 fused = await translation.fuse_transcripts(engine_versions, language)
@@ -223,14 +225,26 @@ class LiveSession:
         }
         await self.send(line)
         if self.target_language and language != self.target_language:
-            unsure_versions = list(segment.get("hyps", {}).values()) if segment.get("agree", 1) < 0.6 else []
-            line["en"] = await self.stream_translation_of(line_id, segment["text"], self.translation_source_for(language), unsure_versions)
+            line["en"], line["clarity"] = await self.translate_with_clarity(line_id, segment["text"], self.translation_source_for(language))
         self.finished_lines.append(line)
         if self.conversation_id:
-            saved_line = {key: line[key] for key in ("text", "en", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
+            saved_line = {key: line[key] for key in ("text", "en", "clarity", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
             saved_line["at"] = self.started_at + line["start"]
             await asyncio.get_running_loop().run_in_executor(
                 None, conversations.append_line, self.person, self.conversation_id, saved_line)
+
+    async def translate_with_clarity(self, line_id, text, source_language):
+        started_at = time.time()
+        earlier_lines = [line["text"] + (f" (meaning: {line['en']})" if line.get("en") and line["en"] != "(unclear)" else "")
+                         for line in self.finished_lines[-4:]]
+        try:
+            result = await translation.translate_with_clarity(text, source_language, self.target_language, earlier_lines)
+        except Exception as error:
+            await self.send({"type": "translation", "id": line_id, "done": True, "error": str(error)})
+            return "", None
+        await self.send({"type": "translation", "id": line_id, "done": True, "text": result["english"], "clarity": result["clarity"],
+                         "unclear": result["unclear"], "ms": round((time.time() - started_at) * 1000)})
+        return result["english"], result["clarity"]
 
     async def stream_translation_of(self, line_id, text, source_language, heard_versions=()):
         started_at = time.time()
