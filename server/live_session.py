@@ -174,7 +174,7 @@ class LiveSession:
         """Split at short pauses first, so a Cantonese stretch followed by English isn't judged as one language."""
         transcribed_pieces = []
         for piece_start, piece_end in pieces_for_language_detection(audio):
-            piece = audio[piece_start:piece_end]
+            piece = speech_engines.clean_audio(audio[piece_start:piece_end])
             language, confidence = speech_engines.detect_language(piece, self.candidate_languages)
             result = ensemble.transcribe_audio(piece, language, self.engine_names, starts_at + piece_start / SAMPLE_RATE, False)
             try:
