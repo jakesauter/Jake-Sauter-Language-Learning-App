@@ -144,18 +144,19 @@ async def digest(person, conversation_id):
         versions = list(piece["hyps"].values())
         if piece["language"] != "en" and translation.mostly_latin(piece["hyps"].get("whisper", "")):
             piece["language"] = "en"
+        understood = None
         if piece["language"] == "en":
             text = piece["hyps"].get("whisper") or versions[0]
         else:
-            text = speech_engines.to_common_script(await translation.fuse_transcripts(versions, piece["language"]), piece["language"])
+            earlier = [entry["text"] + (f" (meaning: {entry['en']})" if entry["en"] and entry["en"] != "(unclear)" else "") for entry in lines[-4:]]
+            source = "tsn" if piece["language"] == "yue" else piece["language"]
+            understood = await translation.understand_line(versions, source, "en", earlier)
+            text = speech_engines.fix_cantonese_variants(speech_engines.to_common_script(understood["said"], piece["language"]))
         line = {"text": text, "language": piece["language"], "speaker": piece.get("speaker"), "hyps": piece["hyps"],
                 "at": piece["at"], "start": 0, "end": piece["seconds"], "en": "",
                 "could_be": ["yue", "tsn"] if piece["language"] == "yue" else [piece["language"]]}
-        if piece["language"] != "en":
-            earlier = [entry["text"] + (f" (meaning: {entry['en']})" if entry["en"] and entry["en"] != "(unclear)" else "") for entry in lines[-4:]]
-            source = "tsn" if piece["language"] == "yue" else piece["language"]
-            translated = await translation.translate_with_clarity(text, source, "en", earlier)
-            line["en"], line["clarity"] = translated["english"], translated["clarity"]
+        if understood:
+            line["en"], line["clarity"] = understood["english"], understood["clarity"]
         lines.append(line)
         if index % 20 == 0:
             set_status(person, conversation_id, "understanding", done=index, total=len(pieces))

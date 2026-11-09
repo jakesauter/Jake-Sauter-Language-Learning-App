@@ -155,6 +155,16 @@ def _converter(configuration):
     return _script_converters[configuration]
 
 
+# Common Cantonese typing variants that change the meaning a translator sees (哂 "smile" vs 晒 "all/completely").
+CANTONESE_VARIANT_FIXES = {"多謝哂": "多謝晒", "唔該哂": "唔該晒", "食哂": "食晒", "做哂": "做晒", "冇哂": "冇晒", "曬": "晒"}
+
+
+def fix_cantonese_variants(text):
+    for variant, standard in CANTONESE_VARIANT_FIXES.items():
+        text = text.replace(variant, standard)
+    return text
+
+
 def to_common_script(text, language):
     """Put every engine's output in the same script so alignment compares like with like."""
     if not text:

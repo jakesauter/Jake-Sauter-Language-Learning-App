@@ -42,6 +42,7 @@ def run_on_gpu(function, *arguments):
 
 
 SHORTEST_DETECTION_PIECE_SECONDS = 1.5
+LINES_BETWEEN_GISTS = 4
 
 
 def pieces_for_language_detection(audio):
@@ -92,6 +93,7 @@ class LiveSession:
         self.is_closing = False
         self.ending_silence = SILENCE_THAT_ENDS_UTTERANCE
         self.speaker_tracker = speakers.SpeakerTracker()
+        self.lines_since_gist = 0
 
     def apply_settings(self, settings):
         """Tune the session while it runs, e.g. {"pause_ms": 900}."""
@@ -203,14 +205,6 @@ class LiveSession:
         engine_versions = [text for text in segment.get("hyps", {}).values() if text]
         if language != "en" and translation.mostly_latin(segment["text"]):
             language = "en"
-        if language != "en" and len(set(engine_versions)) > 1:
-            try:
-                fused = await translation.fuse_transcripts(engine_versions, language)
-                import speech_engines as engines_for_script
-                segment = {**segment, "text": engines_for_script.to_common_script(fused, language), "fused": True,
-                           "spans": [{"text": engines_for_script.to_common_script(fused, language)}]}
-            except Exception as error:
-                print("fusion failed:", error)
         self.line_count += 1
         line_id = self.line_count
         line = {
@@ -225,13 +219,44 @@ class LiveSession:
         }
         await self.send(line)
         if self.target_language and language != self.target_language:
-            line["en"], line["clarity"] = await self.translate_with_clarity(line_id, segment["text"], self.translation_source_for(language))
+            # Shown at once as heard; then replaced by what the model judges was actually said.
+            said, line["en"], line["clarity"] = await self.understand(line_id, engine_versions or [segment["text"]],
+                                                                       self.translation_source_for(language))
+            if said:
+                line["text"] = said
+                line["spans"] = [{"text": said}]
         self.finished_lines.append(line)
+        self.lines_since_gist += 1
+        if self.lines_since_gist >= LINES_BETWEEN_GISTS:
+            self.lines_since_gist = 0
+            asyncio.create_task(self.send_gist())
         if self.conversation_id:
             saved_line = {key: line[key] for key in ("text", "en", "clarity", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
             saved_line["at"] = self.started_at + line["start"]
             await asyncio.get_running_loop().run_in_executor(
                 None, conversations.append_line, self.person, self.conversation_id, saved_line)
+
+    async def understand(self, line_id, engine_versions, source_language):
+        started_at = time.time()
+        earlier_lines = [line["text"] + (f" (meaning: {line['en']})" if line.get("en") and line["en"] != "(unclear)" else "")
+                         for line in self.finished_lines[-4:]]
+        try:
+            result = await translation.understand_line(engine_versions, source_language, self.target_language, earlier_lines)
+        except Exception as error:
+            await self.send({"type": "translation", "id": line_id, "done": True, "error": str(error)})
+            return "", "", None
+        said = speech_engines.fix_cantonese_variants(speech_engines.to_common_script(result["said"], source_language))
+        await self.send({"type": "translation", "id": line_id, "done": True, "text": result["english"], "said": said,
+                         "clarity": result["clarity"], "unclear": result["unclear"], "ms": round((time.time() - started_at) * 1000)})
+        return said, result["english"], result["clarity"]
+
+    async def send_gist(self):
+        try:
+            gist = await translation.conversation_gist(self.finished_lines[-20:])
+            if gist:
+                await self.send({"type": "gist", "text": gist})
+        except Exception as error:
+            print("gist failed:", error)
 
     async def translate_with_clarity(self, line_id, text, source_language):
         started_at = time.time()
