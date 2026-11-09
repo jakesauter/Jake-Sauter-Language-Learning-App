@@ -118,3 +118,9 @@ Each entry: the question, what I chose, why, and what the alternative would have
     Update: you asked for more aggressive cooling twice; curve is now 30°C→50%, 45→70, 55→90, 60+→100%. First test with the earlier curve already held a 177 W burst at 56–68 °C (was 87–89 °C).
 
 35. **More pseudo-labels for run 2 (your instruction).** After run 1, the GPU pseudo-labels the ~430 unlabeled videos. To cover more speakers in less time: greedy Whisper (beam 1) for labeling (the two-model agreement filter is what guards label quality) and at most 150 evenly spaced speech pieces per video. Run 2 then trains on gold-train + all pseudo-labels; it replaces live only if it beats the 20.8% live-settings baseline.
+
+36. **Run 1 stopped at step ~225: end-of-text bug.** Whisper pads with its own end-of-text token, and the training script masked labels by token id, so the real end token was masked too. The model was learning never to stop, which explains the 139% greedy CER (runaway repeats). Fixed with the standard attention-mask masking. Run 1 is discarded rather than finished, because every extra step made it worse.
+
+37. **Faster pseudo-labeling.** SenseVoice runs once per piece (its auto-language output gives both the Cantonese check and the text). Only Cantonese candidates go to Whisper, greedy, in batches of 8, with Whisper reference silence/loop rules and the repetition filter. Two workers run in parallel on separate halves of the ~420 remaining videos (~2.7 GB GPU each). Measured ~25 s per video per worker.
+
+38. **Run 2 = fixed recipe, gold-train + all pseudo-labels, 1000 steps.** Then it is converted to CTranslate2 and scored with live settings on the same 600 test clips as the 20.8% baseline. Live only switches if it wins.

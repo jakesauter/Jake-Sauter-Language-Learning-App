@@ -15,11 +15,14 @@ import json
 import os
 import random
 import time
+import warnings
 
 import numpy as np
 import scipy.signal
 import soundfile
 import torch
+
+warnings.filterwarnings("ignore", message="MatMul8bitLt")  # printed on every forward pass otherwise
 
 DATASET_FOLDER = "/mnt/storage/datasets/youtube_cc_cantonese"
 NOISE_BANK_FILE = os.path.join(DATASET_FOLDER, "dinner_noise_bank.npy")
@@ -169,8 +172,9 @@ def train(arguments):
             batch = random.sample(train_segments, min(arguments.batch, len(train_segments)))
             clips = [condition(far_field(read_clip(s), noise_bank) if random.random() < 0.6 else read_clip(s)) for s in batch]
             features = processor.feature_extractor(clips, sampling_rate=SAMPLE_RATE, return_tensors="pt").input_features
-            labels = tokenizer([s["text"] for s in batch], return_tensors="pt", padding=True).input_ids
-            labels = labels.masked_fill(labels == tokenizer.pad_token_id, -100)
+            tokens = tokenizer([s["text"] for s in batch], return_tensors="pt", padding=True)
+            # Whisper pads with its end-of-text token, so mask by attention, not by token id, or the model never learns to stop.
+            labels = tokens.input_ids.masked_fill(tokens.attention_mask.ne(1), -100)
             if (labels[:, 0] == model.config.decoder_start_token_id).all():
                 labels = labels[:, 1:]
             with torch.autocast("cuda", dtype=torch.float16):
