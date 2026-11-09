@@ -49,9 +49,9 @@ def colloquial_share(texts):
 
 
 def split_for(video_id):
-    # Human subtitles are scarce and pseudo-labels are plentiful, so every gold video is held out for testing:
-    # testing on pseudo-labels would favour the base model, whose own output those labels are.
-    return "test"
+    """About 30% of human-subtitled videos are held out for testing, chosen by a stable hash of the video id,
+    so a video is never split between training and testing."""
+    return "test" if int(hashlib.sha1(video_id.encode()).hexdigest(), 16) % 10 < 3 else "train"
 
 
 def main():
