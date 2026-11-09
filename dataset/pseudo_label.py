@@ -4,13 +4,15 @@ Each speech piece is transcribed by SenseVoice and Whisper large-v3, two very di
 training data only when it is Cantonese and both models produce nearly the same text (character agreement >= 0.85),
 because independent models rarely make the same mistake. Resumable: videos already labeled are skipped.
 
-    .venv/bin/python dataset/pseudo_label.py            (one worker, keeps going as videos arrive)
-    .venv/bin/python dataset/pseudo_label.py 0 2 --once (worker 1 of 2, stops when done)
+    .venv/bin/python dataset/pseudo_label.py          (keeps going as the crawlers add videos)
+    .venv/bin/python dataset/pseudo_label.py --once   (stops when every video is labeled)
 """
 
 import json
 import os
+import queue
 import sys
+import threading
 import time
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "server"))
@@ -77,9 +79,10 @@ def whisper_greedy_batch(whisper, pieces):
     return texts
 
 
-def label_video(record):
+def cantonese_candidates(record):
+    """Speech pieces of a video that SenseVoice hears as Cantonese, with SenseVoice's text."""
     audio = speech_engines.decode_audio_file(os.path.join(DATASET_FOLDER, "audio", f"{record['id']}.wav"))
-    sensevoice, whisper = speech_engines.get_engine("sensevoice"), speech_engines.get_engine("whisper")
+    sensevoice = speech_engines.get_engine("sensevoice")
     pieces = live_session.pieces_for_language_detection(audio)
     if len(pieces) > MOST_PIECES_PER_VIDEO:
         pieces = pieces[:: len(pieces) // MOST_PIECES_PER_VIDEO][:MOST_PIECES_PER_VIDEO]
@@ -91,6 +94,12 @@ def label_video(record):
         sensevoice_text = sensevoice_cantonese(sensevoice, piece)
         if sensevoice_text:
             candidates.append((piece_start, piece_end, piece, sensevoice_text))
+    return candidates, len(pieces)
+
+
+def agreed_segments(record, candidates):
+    """Candidates where greedy Whisper writes nearly the same text as SenseVoice."""
+    whisper = speech_engines.get_engine("whisper")
     kept = []
     for batch_start in range(0, len(candidates), WHISPER_BATCH):
         batch = candidates[batch_start: batch_start + WHISPER_BATCH]
@@ -101,44 +110,63 @@ def label_video(record):
             if not whisper_text or speech_engines.is_repetition_loop(whisper_text):
                 continue
             text, _, agreement = ensemble.merge({"sensevoice": sensevoice_text, "whisper": whisper_text}, ["whisper", "sensevoice"], True)
-            chinese = [character for character in text if "一" <= character <= "鿿"]
+            chinese = [character for character in text if "\u4e00" <= character <= "\u9fff"]
             varied_enough = len(set(chinese)) >= 0.5 * len(chinese)  # drops 媽媽媽 媽, 嚟嚟嚟嚟 and similar loops
             if agreement >= SMALLEST_AGREEMENT and len(chinese) >= FEWEST_CHARACTERS and varied_enough:
                 kept.append({"audio": os.path.join(DATASET_FOLDER, "audio", f"{record['id']}.wav"),
                              "start": round(piece_start / 16000, 2), "end": round(piece_end / 16000, 2),
                              "text": whisper_text, "video": record["id"], "split": "train", "agreement": agreement,
                              "license": record.get("license"), "source": "pseudo"})
-    return kept, len(pieces)
+    return kept
 
 
-def main(shard=0, shards=1):
-    """Label every video not yet labeled; with shards > 1, only every shards-th video (parallel workers)."""
+def label_video(record):
+    candidates, total = cantonese_candidates(record)
+    return agreed_segments(record, candidates), total
+
+
+def save_video(record, kept, total, started):
+    with open(OUTPUT_FILE, "a") as output:
+        output.write("".join(json.dumps(segment, ensure_ascii=False) + "\n" for segment in kept))
+    with open(DONE_FILE, "a") as done_file:
+        done_file.write(record["id"] + "\n")
+    seconds_kept = sum(segment["end"] - segment["start"] for segment in kept)
+    print(f"[{time.strftime('%H:%M')}] {record['id']}: kept {len(kept)}/{total} pieces ({seconds_kept / 60:.1f} min) "
+          f"in {time.time() - started:.0f}s — {record.get('title', '')[:50]}", flush=True)
+
+
+def main():
+    """Label every video not labeled yet. SenseVoice works one video ahead of Whisper, so both models stay busy,
+    sharing one copy of each model on the GPU."""
     done, gold = labeled_videos(), videos_with_gold_subtitles()
     records = [json.loads(line) for line in open(os.path.join(DATASET_FOLDER, "index.jsonl")) if line.strip()]
-    for position, record in enumerate(records):
-        if position % shards != shard or record["id"] in done or record["id"] in gold:
-            continue
-        started = time.time()
+    records = [record for record in records if record["id"] not in done and record["id"] not in gold]
+    speech_engines.get_engine("sensevoice"), speech_engines.get_engine("whisper")
+    handoff = queue.Queue(maxsize=2)
+
+    def find_candidates():
+        for record in records:
+            started = time.time()
+            try:
+                handoff.put((record, *cantonese_candidates(record), started))
+            except Exception as error:
+                print("failed (SenseVoice)", record["id"], error, flush=True)
+        handoff.put(None)
+
+    threading.Thread(target=find_candidates, daemon=True).start()
+    while (item := handoff.get()) is not None:
+        record, candidates, total, started = item
         try:
-            kept, total = label_video(record)
+            save_video(record, agreed_segments(record, candidates), total, started)
         except Exception as error:
-            print("failed", record["id"], error, flush=True)
-            continue
-        with open(OUTPUT_FILE, "a") as output:  # one write per video, so parallel workers never interleave lines
-            output.write("".join(json.dumps(segment, ensure_ascii=False) + "\n" for segment in kept))
-        with open(DONE_FILE, "a") as done_file:
-            done_file.write(record["id"] + "\n")
-        seconds_kept = sum(segment["end"] - segment["start"] for segment in kept)
-        print(f"[{time.strftime('%H:%M')}] {record['id']}: kept {len(kept)}/{total} pieces ({seconds_kept / 60:.1f} min) "
-              f"in {time.time() - started:.0f}s — {record.get('title', '')[:50]}", flush=True)
+            print("failed (Whisper)", record["id"], error, flush=True)
+    return len(records)
 
 
 if __name__ == "__main__":
-    # pseudo_label.py [shard shards] [--once]   (without --once it keeps labeling as the crawlers add videos)
-    numbers = [int(argument) for argument in sys.argv[1:] if argument.isdigit()]
-    shard, shards = numbers if len(numbers) == 2 else (0, 1)
+    # pseudo_label.py [--once]   (without --once it keeps labeling as the crawlers add videos)
     while True:
-        main(shard, shards)
+        main()
         if "--once" in sys.argv:
             break
         time.sleep(300)
