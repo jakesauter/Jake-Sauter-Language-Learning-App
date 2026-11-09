@@ -109,10 +109,19 @@ def transcribe_with(engine_name, audio, language):
     if model is None:
         return None
     started_at = time.time()
-    if engine_name == "sensevoice":
-        text, words, detected_language = run_sensevoice(model, audio, language)
-    else:
-        text, words, detected_language = run_whisper(model, audio, language)
+    try:
+        if engine_name == "sensevoice":
+            text, words, detected_language = run_sensevoice(model, audio, language)
+        else:
+            text, words, detected_language = run_whisper(model, audio, language)
+    except RuntimeError as error:
+        if "CUDA" in str(error) or "cuda" in str(error):
+            # A GPU error can leave the model unusable; drop it so the next request reloads it fresh.
+            with _loading_lock:
+                _loaded_engines.pop(engine_name, None)
+            import gc
+            gc.collect()
+        raise
     return {"text": text, "words": words, "detected_language": detected_language,
             "seconds": round(time.time() - started_at, 2)}
 

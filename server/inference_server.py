@@ -24,6 +24,7 @@ from pydantic import BaseModel, Field
 
 import accounts
 import conversations
+import digest
 import email_sender
 import ensemble
 import live_session
@@ -329,7 +330,8 @@ async def get_conversation(request: Request, conversation_id: str):
     person = conversations.person_from(request.headers)
     if not conversations.exists(person, conversation_id):
         return JSONResponse({"error": "conversation not found"}, 404)
-    return {**conversations.details(person, conversation_id), "lines": conversations.lines(person, conversation_id)}
+    return {**conversations.details(person, conversation_id), "lines": conversations.lines(person, conversation_id),
+            "digest_lines": digest.digested_lines(person, conversation_id)}
 
 
 @app.post("/conversations/{conversation_id}/title")
@@ -426,6 +428,8 @@ async def live(websocket: WebSocket):
             await session.close()
             await utterance_worker
             await asyncio.get_running_loop().run_in_executor(None, session.save_recording)
+            if session.keep_recording and session.received_frames:
+                digest.request_digest(person, conversation_id)  # runs once nobody is recording live
             try:
                 await websocket.send_json({"type": "end", "lines": len(session.finished_lines)})
                 await websocket.close()
@@ -440,6 +444,20 @@ async def to_app():
 
 if os.path.isdir(SITE_FOLDER):
     app.mount("/app", StaticFiles(directory=SITE_FOLDER, html=True), name="app")
+
+
+@app.on_event("startup")
+async def start_digest_worker():
+    asyncio.create_task(digest.digest_worker(live_session_lock))
+
+
+@app.post("/conversations/{conversation_id}/digest")
+async def digest_again(request: Request, conversation_id: str):
+    person = conversations.person_from(request.headers)
+    if not conversations.exists(person, conversation_id):
+        return JSONResponse({"error": "conversation not found"}, 404)
+    digest.request_digest(person, conversation_id)
+    return {"ok": True}
 
 
 @app.on_event("startup")

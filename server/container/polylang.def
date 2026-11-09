@@ -11,6 +11,7 @@ From: container/base.sif
     accounts.py /app/accounts.py
     email_sender.py /app/email_sender.py
     speakers.py /app/speakers.py
+    digest.py /app/digest.py
     ensemble.py /app/ensemble.py
     speech_engines.py /app/speech_engines.py
     translation.py /app/translation.py
