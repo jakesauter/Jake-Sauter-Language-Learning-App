@@ -1,8 +1,8 @@
 """Send account emails (password-reset codes) through any SMTP server.
 
 Settings come from a JSON file mounted read-only into the container:
-    {"host": "smtp.gmail.com", "port": 587, "username": "...", "password": "<app password>",
-     "from": "Polylang <you@example.com>"}
+    keys: host (e.g. smtp.gmail.com), port (587), username, password (a Gmail app password), from
+
 For tests, POLYLANG_EMAIL_OUTBOX names a folder where emails are written as files instead of sent.
 """
 

@@ -19,6 +19,7 @@ import numpy as np
 
 import conversations
 import ensemble
+import speaker_clustering
 import speakers
 import speech_engines
 import translation
@@ -43,6 +44,8 @@ def run_on_gpu(function, *arguments):
 
 SHORTEST_DETECTION_PIECE_SECONDS = 1.5
 LINES_BETWEEN_GISTS = 4
+LINES_BETWEEN_RECLUSTERING = 5
+MOST_WINDOWS_FOR_RECLUSTERING = 700  # about 9 minutes of speech; keeps re-clustering under a couple of seconds
 
 
 def pieces_for_language_detection(audio):
@@ -94,6 +97,10 @@ class LiveSession:
         self.ending_silence = SILENCE_THAT_ENDS_UTTERANCE
         self.speaker_tracker = speakers.SpeakerTracker()
         self.lines_since_gist = 0
+        self.window_owners = []       # line id of every 1.5 s window
+        self.window_fingerprints = []
+        self.lines_since_reclustering = 0
+        self.reclustering = False
 
     def apply_settings(self, settings):
         """Tune the session while it runs, e.g. {"pause_ms": 900}."""
@@ -181,8 +188,12 @@ class LiveSession:
             result = ensemble.transcribe_audio(piece, language, self.engine_names, starts_at + piece_start / SAMPLE_RATE, False)
             try:
                 result["speaker"], result["speaker_similarity"] = self.speaker_tracker.identify(piece)
+                raw_piece = audio[piece_start:piece_end]
+                result["window_fingerprints"] = [speakers.voice_fingerprint(raw_piece[start:end])
+                                                 for start, end in speaker_clustering.sliding_windows(0, len(raw_piece))] \
+                    if len(raw_piece) >= SAMPLE_RATE // 2 else []
             except Exception as error:
-                result["speaker"], result["speaker_similarity"] = None, 0.0
+                result["speaker"], result["speaker_similarity"], result["window_fingerprints"] = None, 0.0, []
                 print("speaker identification failed:", error)
             transcribed_pieces.append((language, confidence, result))
         return transcribed_pieces
@@ -202,7 +213,11 @@ class LiveSession:
 
     async def finish_piece(self, language, confidence, result, started_at, closed_at):
         segment = result["segments"][0]
-        engine_versions = [text for text in segment.get("hyps", {}).values() if text]
+        engine_versions = [text for text in segment.get("hyps", {}).values() if text and not speech_engines.is_repetition_loop(text)]
+        if not engine_versions:
+            return  # every engine looped (laughter, clatter): nothing was said worth showing
+        if speech_engines.is_repetition_loop(segment["text"]):
+            segment = {**segment, "text": engine_versions[0], "spans": [{"text": engine_versions[0]}]}
         if language != "en" and translation.mostly_latin(segment["text"]):
             language = "en"
         self.line_count += 1
@@ -226,6 +241,13 @@ class LiveSession:
                 line["text"] = said
                 line["spans"] = [{"text": said}]
         self.finished_lines.append(line)
+        for fingerprint in result.get("window_fingerprints", []):
+            self.window_owners.append(line_id)
+            self.window_fingerprints.append(fingerprint)
+        self.lines_since_reclustering += 1
+        if self.lines_since_reclustering >= LINES_BETWEEN_RECLUSTERING and not self.reclustering:
+            self.lines_since_reclustering = 0
+            asyncio.create_task(self.recluster_speakers())
         self.lines_since_gist += 1
         if self.lines_since_gist >= LINES_BETWEEN_GISTS:
             self.lines_since_gist = 0
@@ -249,6 +271,57 @@ class LiveSession:
         await self.send({"type": "translation", "id": line_id, "done": True, "text": result["english"], "said": said,
                          "clarity": result["clarity"], "unclear": result["unclear"], "ms": round((time.time() - started_at) * 1000)})
         return said, result["english"], result["clarity"]
+
+    def _cluster_lines(self):
+        owners = self.window_owners[-MOST_WINDOWS_FOR_RECLUSTERING:]
+        fingerprints = np.array(self.window_fingerprints[-MOST_WINDOWS_FOR_RECLUSTERING:])
+        if len(fingerprints) < 6:
+            return {}
+        labels = speaker_clustering.nme_spectral_clustering(fingerprints, most_speakers=8)
+        labels = speaker_clustering.fold_small_clusters(labels, fingerprints)
+        votes = {}
+        for owner, label in zip(owners, labels):
+            votes.setdefault(owner, []).append(int(label))
+        return {line_id: int(np.bincount(line_votes).argmax()) for line_id, line_votes in votes.items()}
+
+    async def recluster_speakers(self):
+        """Re-cluster every window of the session so far (field-standard NME-SC) and send corrected speaker labels,
+        keeping speaker numbers stable by matching the new groups to the labels already on screen."""
+        self.reclustering = True
+        try:
+            cluster_of_line = await asyncio.get_running_loop().run_in_executor(None, self._cluster_lines)
+            if not cluster_of_line:
+                return
+            from scipy.optimize import linear_sum_assignment
+            shown = {line["id"]: line.get("speaker") for line in self.finished_lines}
+            overlap = {}
+            for line_id, cluster in cluster_of_line.items():
+                if shown.get(line_id):
+                    overlap[(cluster, shown[line_id])] = overlap.get((cluster, shown[line_id]), 0) + 1
+            clusters = sorted(set(cluster_of_line.values()))
+            numbers = sorted({number for number in shown.values() if number}) or [1]
+            gains = np.array([[overlap.get((cluster, number), 0) for number in numbers] for cluster in clusters])
+            number_for_cluster = {}
+            for row, column in zip(*linear_sum_assignment(-gains)):
+                if gains[row, column] > 0:
+                    number_for_cluster[clusters[row]] = numbers[column]
+            next_number = max(numbers) + 1
+            for cluster in clusters:
+                if cluster not in number_for_cluster:
+                    number_for_cluster[cluster], next_number = next_number, next_number + 1
+            changes = {}
+            for line in self.finished_lines:
+                if line["id"] in cluster_of_line:
+                    number = number_for_cluster[cluster_of_line[line["id"]]]
+                    if number != line.get("speaker"):
+                        line["speaker"] = number
+                        changes[str(line["id"])] = number
+            if changes:
+                await self.send({"type": "speakers", "speakers": changes})
+        except Exception as error:
+            print("re-clustering failed:", error)
+        finally:
+            self.reclustering = False
 
     async def send_gist(self):
         try:

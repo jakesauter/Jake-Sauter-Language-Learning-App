@@ -279,7 +279,7 @@ async def conversation_gist(recent_lines):
 
 async def google_hints(versions, source, target):
     """Google's translation of each heard version, as hints for the model (strong on standard Cantonese)."""
-    if not google_key() or os.environ.get("POLYLANG_GOOGLE_HINTS", "1") != "1":
+    if not google_key() or os.environ.get("POLYLANG_GOOGLE_HINTS", "0") != "1":
         return []
     import asyncio
     results = await asyncio.gather(*(translate_with_google(version, source, target) for version in versions), return_exceptions=True)

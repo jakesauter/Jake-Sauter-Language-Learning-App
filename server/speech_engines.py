@@ -155,6 +155,22 @@ def _converter(configuration):
     return _script_converters[configuration]
 
 
+REPEATED_UNIT = re.compile(r"(.{1,3}?)(?:[\s,，、。.!！?？]*\1){4,}")
+REPEATED_WORD = re.compile(r"\b(\w+)\b(?:[\s,.!?]+\1\b){3,}", re.IGNORECASE)
+
+
+def is_repetition_loop(text):
+    """Whisper's well-known failure on laughter and noise: 唔唔唔唔唔, 啱啱啱啱, 啵 啵 啵 啵, just just just just.
+    Short genuine repeats like 多謝多謝多謝 or 好呀好呀 are kept."""
+    letters = [character for character in text if character.isalnum()]
+    if len(letters) >= 9 and len(set(letters)) / len(letters) < 0.3:
+        return True
+    looped = sum(len(match.group(0)) for match in REPEATED_UNIT.finditer(text))
+    if len(letters) >= 8 and looped / max(1, len(text)) > 0.5:
+        return True
+    return bool(REPEATED_WORD.search(text))
+
+
 # Common Cantonese typing variants that change the meaning a translator sees (哂 "smile" vs 晒 "all/completely").
 CANTONESE_VARIANT_FIXES = {"多謝哂": "多謝晒", "唔該哂": "唔該晒", "食哂": "食晒", "做哂": "做晒", "冇哂": "冇晒", "曬": "晒"}
 
