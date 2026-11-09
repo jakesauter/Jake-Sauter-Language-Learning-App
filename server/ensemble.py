@@ -16,8 +16,10 @@ from speech_engines import CHINESE_LANGUAGES, SAMPLE_RATE
 
 # Engine order is the tie-break priority.
 ENGINES_BY_LANGUAGE = {
-    "yue": ["buzzasr", "sensevoice", "whisper"],
-    "tsn": ["buzzasr", "sensevoice", "whisper"],
+    # Whisper's Cantonese at a noisy table was mostly invented romanization/English, so it isn't asked;
+    # SenseVoice leads because it can't get stuck repeating like the Whisper-based BuzzASR.
+    "yue": ["sensevoice", "buzzasr"],
+    "tsn": ["sensevoice", "buzzasr"],
     "zh": ["whisper", "sensevoice"],
     "en": ["whisper", "sensevoice"],
     "ja": ["whisper", "sensevoice"],

@@ -52,7 +52,7 @@ def choose_provider(source, target):
     return FALLBACK_PROVIDER
 
 
-def build_prompt(text, source, target, earlier_lines=()):
+def build_prompt(text, source, target, earlier_lines=(), heard_versions=()):
     source_name = LANGUAGE_NAMES.get(normalise_code(source), "the source language")
     target_name = LANGUAGE_NAMES.get(normalise_code(target), target)
     taishanese_note = ""
@@ -64,13 +64,17 @@ def build_prompt(text, source, target, earlier_lines=()):
         context = ("This is a live family dinner conversation transcribed by speech recognition, so expect small "
                    "mistakes. What was said just before, for context only (do not translate it):\n"
                    + "\n".join(f"- {line}" for line in earlier_lines[-4:]) + "\n\n")
+    versions = [version for version in dict.fromkeys(heard_versions) if version and version != text]
+    if versions:
+        text = (text + "\n\n(Speech recognition was unsure. It also heard: " + " / ".join(versions[:3])
+                + ". Use all versions together to work out the most likely meaning, and translate that.)")
     return (context + f"You are a professional {source_name} to {target_name} translator. Convey the meaning and nuance"
             f" of the original while using natural {target_name}.{taishanese_note} Produce only the {target_name}"
             f" translation, with no explanations, notes or quotation marks. Translate the following"
             f" {source_name} text into {target_name}:\n\n{text}")
 
 
-async def stream_translation(text, source, target, provider=None, earlier_lines=()):
+async def stream_translation(text, source, target, provider=None, earlier_lines=(), heard_versions=()):
     """Yield pieces of the translation as the model produces them."""
     provider = provider or choose_provider(source, target)
     if provider == "google":
@@ -80,7 +84,7 @@ async def stream_translation(text, source, target, provider=None, earlier_lines=
     request_body = {
         "model": model_name, "stream": True, "think": False, "keep_alive": "4h",
         "options": {"temperature": 0.1, "num_ctx": 2048},
-        "messages": [{"role": "user", "content": build_prompt(text, source, target, earlier_lines)}],
+        "messages": [{"role": "user", "content": build_prompt(text, source, target, earlier_lines, heard_versions)}],
     }
     async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
         async with client.stream("POST", OLLAMA_URL + "/api/chat", json=request_body) as response:

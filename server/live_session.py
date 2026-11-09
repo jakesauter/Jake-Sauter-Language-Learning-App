@@ -214,7 +214,8 @@ class LiveSession:
         }
         await self.send(line)
         if self.target_language and language != self.target_language:
-            line["en"] = await self.stream_translation_of(line_id, segment["text"], self.translation_source_for(language))
+            unsure_versions = list(segment.get("hyps", {}).values()) if segment.get("agree", 1) < 0.6 else []
+            line["en"] = await self.stream_translation_of(line_id, segment["text"], self.translation_source_for(language), unsure_versions)
         self.finished_lines.append(line)
         if self.conversation_id:
             saved_line = {key: line[key] for key in ("text", "en", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
@@ -222,13 +223,13 @@ class LiveSession:
             await asyncio.get_running_loop().run_in_executor(
                 None, conversations.append_line, self.person, self.conversation_id, saved_line)
 
-    async def stream_translation_of(self, line_id, text, source_language):
+    async def stream_translation_of(self, line_id, text, source_language, heard_versions=()):
         started_at = time.time()
         first_piece_ms, pieces = None, []
         provider = translation.choose_provider(source_language, self.target_language)
         try:
             earlier_lines = [line["text"] + (f" (meaning: {line['en']})" if line.get("en") else "") for line in self.finished_lines[-4:]]
-            async for piece in translation.stream_translation(text, source_language, self.target_language, provider, earlier_lines):
+            async for piece in translation.stream_translation(text, source_language, self.target_language, provider, earlier_lines, heard_versions):
                 if first_piece_ms is None:
                     first_piece_ms = round((time.time() - started_at) * 1000)
                 pieces.append(piece)
