@@ -122,8 +122,20 @@ def _group_speakers(pieces):
             piece["speaker"] = number[closest]
 
 
+async def free_gpu_from_translator():
+    """Nobody is recording live during a digest, so the translator can leave the GPU while Whisper listens."""
+    import httpx
+    model = translation.choose_provider("yue", "en").split(":", 1)[-1]
+    try:
+        async with httpx.AsyncClient(timeout=30) as client:
+            await client.post(translation.OLLAMA_URL + "/api/generate", json={"model": model, "keep_alive": 0})
+    except Exception as error:
+        print("could not unload translator:", error)
+
+
 async def digest(person, conversation_id):
     set_status(person, conversation_id, "listening")
+    await free_gpu_from_translator()
     pieces = await asyncio.get_running_loop().run_in_executor(None, _listen, person, conversation_id)
     _group_speakers(pieces)
     set_status(person, conversation_id, "understanding", total=len(pieces))
