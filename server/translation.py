@@ -277,6 +277,15 @@ async def conversation_gist(recent_lines):
     return response.json()["message"]["content"].strip()[:400]
 
 
+async def google_hints(versions, source, target):
+    """Google's translation of each heard version, as hints for the model (strong on standard Cantonese)."""
+    if not google_key() or os.environ.get("POLYLANG_GOOGLE_HINTS", "1") != "1":
+        return []
+    import asyncio
+    results = await asyncio.gather(*(translate_with_google(version, source, target) for version in versions), return_exceptions=True)
+    return [result if isinstance(result, str) else "" for result in results]
+
+
 async def understand_line(heard_versions, source, target="en", earlier_lines=()):
     """One call per line: which version was really said, its translation, and how clear it is.
 
@@ -293,7 +302,9 @@ async def understand_line(heard_versions, source, target="en", earlier_lines=())
     context = ""
     if earlier_lines:
         context = ("What was said just before, for context only:\n" + "\n".join(f"- {line}" for line in earlier_lines[-4:]) + "\n\n")
-    listed = "\n".join(f"{index + 1}. {version}" for index, version in enumerate(versions))
+    hints = await google_hints(versions, source, target)
+    listed = "\n".join(f"{index + 1}. {version}" + (f"   [Google Translate: {hints[index]}]" if hints and hints[index] else "")
+                       for index, version in enumerate(versions))
     prompt = (context + f"At a family dinner, someone said one short thing in {source_name}.{taishanese_note} "
               f"Speech recognizers heard these versions (they often confuse words that sound alike):\n{listed}\n\n"
               "Decide what was most likely actually said: pick the version that forms a natural, meaningful sentence, "
