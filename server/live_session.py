@@ -200,6 +200,15 @@ class LiveSession:
 
     async def finish_piece(self, language, confidence, result, started_at, closed_at):
         segment = result["segments"][0]
+        engine_versions = [text for text in segment.get("hyps", {}).values() if text]
+        if language != "en" and len(set(engine_versions)) > 1:
+            try:
+                fused = await translation.fuse_transcripts(engine_versions, language)
+                import speech_engines as engines_for_script
+                segment = {**segment, "text": engines_for_script.to_common_script(fused, language), "fused": True,
+                           "spans": [{"text": engines_for_script.to_common_script(fused, language)}]}
+            except Exception as error:
+                print("fusion failed:", error)
         self.line_count += 1
         line_id = self.line_count
         line = {

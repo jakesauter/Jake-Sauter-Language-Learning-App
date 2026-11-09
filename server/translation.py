@@ -125,6 +125,27 @@ async def translate_with_google(text, source, target):
     return html.unescape(payload["data"]["translations"][0]["translatedText"])
 
 
+async def fuse_transcripts(versions, language):
+    """Several recognizers' versions of one clip -> the single most likely sentence (best on real dinner audio)."""
+    versions = [version for version in dict.fromkeys(versions) if version]
+    if len(versions) < 2:
+        return versions[0] if versions else ""
+    language_name = LANGUAGE_NAMES.get(normalise_code(language), "the spoken language")
+    prompt = (f"Several speech recognizers transcribed the same short clip of spoken {language_name} at a noisy family dinner. "
+              "Write the single most likely thing that was actually said, in the same language and script. "
+              "Keep any English words that were mixed in. Reply with only that sentence.\n\n"
+              + "\n".join(f"{index + 1}. {text}" for index, text in enumerate(versions)))
+    request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False, "keep_alive": "4h",
+                    "options": {"temperature": 0.0, "num_ctx": 2048}, "messages": [{"role": "user", "content": prompt}]}
+    if request_body["model"] == "google":
+        request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
+    async with httpx.AsyncClient(timeout=httpx.Timeout(60, connect=5)) as client:
+        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+    response.raise_for_status()
+    fused = response.json()["message"]["content"].strip().strip('"“”')
+    return fused if 0 < len(fused) <= 3 * max(len(version) for version in versions) else versions[0]
+
+
 SUGGESTION_LANGUAGE_NAMES = {"yue": "Cantonese", "tsn": "Cantonese", "zh": "Mandarin Chinese"}
 
 

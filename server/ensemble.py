@@ -16,10 +16,10 @@ from speech_engines import CHINESE_LANGUAGES, SAMPLE_RATE
 
 # Engine order is the tie-break priority.
 ENGINES_BY_LANGUAGE = {
-    # Whisper's Cantonese at a noisy table was mostly invented romanization/English, so it isn't asked;
-    # SenseVoice leads because it can't get stuck repeating like the Whisper-based BuzzASR.
-    "yue": ["sensevoice", "buzzasr"],
-    "tsn": ["sensevoice", "buzzasr"],
+    # Scored on 100 real dinner pieces (tests/experiment_engines.py): SenseVoice 4.21, Whisper 4.13,
+    # BuzzASR 3.76 with 10 gibberish lines, so BuzzASR is left out; an LLM fuses the two (4.45).
+    "yue": ["sensevoice", "whisper"],
+    "tsn": ["sensevoice", "whisper"],
     "zh": ["whisper", "sensevoice"],
     "en": ["whisper", "sensevoice"],
     "ja": ["whisper", "sensevoice"],
