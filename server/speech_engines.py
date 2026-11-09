@@ -75,7 +75,10 @@ def run_whisper(model, audio, language, beam_size=5, with_words=True):
     segments, info = model.transcribe(
         audio, language=whisper_language_code(language), beam_size=beam_size, vad_filter=False,
         condition_on_previous_text=False, word_timestamps=with_words)
-    segments = list(segments)
+    # Whisper's own reference rules for non-speech and loops (OpenAI decoding heuristics): a segment that is
+    # probably silence/noise (no_speech_prob > 0.6 with low confidence) or compresses too well (> 2.4) is dropped.
+    segments = [segment for segment in segments
+                if not (segment.no_speech_prob > 0.6 and segment.avg_logprob < -1.0) and segment.compression_ratio <= 2.4]
     words = [
         {"word": word.word, "start": round(word.start, 2), "end": round(word.end, 2),
          "probability": round(word.probability, 3)}

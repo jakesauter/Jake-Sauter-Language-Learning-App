@@ -35,7 +35,11 @@ def load_segments(split):
         path = os.path.join(DATASET_FOLDER, name)
         if os.path.exists(path):
             segments += [json.loads(line) for line in open(path) if line.strip()]
-    return [segment for segment in segments if segment["split"] == split and 0.5 < segment["end"] - segment["start"] <= 28]
+    test_videos = {segment["video"] for segment in segments if segment["split"] == "test"}
+    chosen = [segment for segment in segments if segment["split"] == split and 0.5 < segment["end"] - segment["start"] <= 28]
+    if split == "train":
+        chosen = [segment for segment in chosen if segment["video"] not in test_videos]  # never train on a test video
+    return chosen
 
 
 def read_clip(segment):

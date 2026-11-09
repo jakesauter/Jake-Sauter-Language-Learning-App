@@ -153,7 +153,36 @@ def main():
             print(f"  + {video_id} {duration // 60:3d} min subs={subtitle_codes or '-'} {info.get('title', '')[:60]}", flush=True)
 
 
+SUBTITLED_FILTER = "EgIoAQ%3D%3D"  # YouTube search filter: videos with subtitles/CC
+SUBTITLED_TOPICS = ["廣東話 字幕", "粵語 字幕", "廣東話 中文字幕", "香港 訪問 字幕", "粵語 對白", "廣東話 vlog 字幕",
+                    "Cantonese with Chinese subtitles", "Cantonese subtitles Jyutping", "粵語 煮食 字幕", "廣東話 講故事 字幕",
+                    "香港 街訪", "廣東話 podcast 字幕", "粵語 新聞 字幕", "台山話 字幕"]
+
+
+def crawl_subtitled(videos_per_query):
+    """Any license, but only videos that come with human-written Chinese subtitles (gold test data)."""
+    seen = already_indexed()
+    for topic in SUBTITLED_TOPICS:
+        url = "https://www.youtube.com/results?search_query=" + urllib.parse.quote(topic) + "&sp=" + SUBTITLED_FILTER
+        output = run_yt_dlp(["--flat-playlist", "--playlist-end", str(videos_per_query), "--print", "%(id)s", url])
+        found = [line.strip() for line in output.splitlines() if len(line.strip()) == 11]
+        print(f"[{time.strftime('%H:%M')}] subtitled '{topic}': {len(found)} results", flush=True)
+        for video_id in found:
+            if video_id in seen:
+                continue
+            seen.add(video_id)
+            try:
+                info = metadata(video_id)
+                if info and human_chinese_subtitles(info):
+                    process_video(video_id, "subtitled:" + topic, creative_commons_only=False)
+            except Exception as error:
+                print("  failed:", video_id, error, flush=True)
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "subtitled":
+        crawl_subtitled(int(sys.argv[2]) if len(sys.argv) > 2 else 80)
+        sys.exit()
     if len(sys.argv) > 2 and sys.argv[1] == "sources":
         os.makedirs(os.path.join(DATASET_FOLDER, "audio"), exist_ok=True)
         os.makedirs(os.path.join(DATASET_FOLDER, "subtitles"), exist_ok=True)
