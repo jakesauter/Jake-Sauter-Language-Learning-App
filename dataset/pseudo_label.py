@@ -23,6 +23,7 @@ DATASET_FOLDER = "/mnt/storage/datasets/youtube_cc_cantonese"
 OUTPUT_FILE = os.path.join(DATASET_FOLDER, "pseudo_segments.jsonl")
 DONE_FILE = os.path.join(DATASET_FOLDER, "pseudo_done.txt")
 SMALLEST_AGREEMENT = 0.85
+MOST_PIECES_PER_VIDEO = 150   # spread labels across many speakers instead of a few long videos
 FEWEST_CHARACTERS = 4
 
 
@@ -39,6 +40,8 @@ def label_video(record):
     audio = speech_engines.decode_audio_file(os.path.join(DATASET_FOLDER, "audio", f"{record['id']}.wav"))
     sensevoice, whisper = speech_engines.get_engine("sensevoice"), speech_engines.get_engine("whisper")
     kept, pieces = [], live_session.pieces_for_language_detection(audio)
+    if len(pieces) > MOST_PIECES_PER_VIDEO:
+        pieces = pieces[:: len(pieces) // MOST_PIECES_PER_VIDEO][:MOST_PIECES_PER_VIDEO]
     for piece_start, piece_end in pieces:
         if (piece_end - piece_start) / 16000 > 28:
             continue
@@ -48,7 +51,8 @@ def label_video(record):
         if "yue" not in tags or "BGM" in tags:
             continue  # Cantonese speech only: not Mandarin, not singing over music
         sensevoice_text = speech_engines.to_common_script(speech_engines.run_sensevoice(sensevoice, piece, "yue")[0], "yue")
-        whisper_text = speech_engines.to_common_script(speech_engines.run_whisper(whisper, piece, "yue", with_words=False)[0], "yue")
+        # Greedy decoding is ~3x faster; the two-model agreement filter, not beam search, protects label quality.
+        whisper_text = speech_engines.to_common_script(speech_engines.run_whisper(whisper, piece, "yue", beam_size=1, with_words=False)[0], "yue")
         text, _, agreement = ensemble.merge({"sensevoice": sensevoice_text, "whisper": whisper_text}, ["whisper", "sensevoice"], True)
         chinese = [character for character in text if "一" <= character <= "鿿"]
         varied_enough = len(set(chinese)) >= 0.5 * len(chinese)  # drops 媽媽媽 媽, 嚟嚟嚟嚟 and similar loops
