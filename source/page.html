@@ -6755,22 +6755,46 @@
 
     /* live translation on the T730: raw 16 kHz PCM over a WebSocket */
 
+    // Downsample the microphone to 16 kHz with a proper anti-aliasing filter: a windowed-sinc low-pass at
+    // ~7.2 kHz before resampling, so sound above 8 kHz (dishes, sibilants) can't fold back into the speech band.
     const PCM_WORKLET = `
       class PcmDownsampler extends AudioWorkletProcessor {
-        constructor(options) {
+        constructor() {
           super();
-          this.step = sampleRate / 16000;
-          this.position = 0;
+          this.ratio = sampleRate / 16000;
+          const cutoff = 7200 / sampleRate, taps = 63, half = (taps - 1) / 2;
+          this.filter = new Float32Array(taps);
+          let total = 0;
+          for (let index = 0; index < taps; index++) {
+            const offset = index - half;
+            const sinc = offset === 0 ? 2 * cutoff : Math.sin(2 * Math.PI * cutoff * offset) / (Math.PI * offset);
+            const blackman = 0.42 - 0.5 * Math.cos(2 * Math.PI * index / (taps - 1)) + 0.08 * Math.cos(4 * Math.PI * index / (taps - 1));
+            this.filter[index] = sinc * blackman;
+            total += this.filter[index];
+          }
+          for (let index = 0; index < taps; index++) this.filter[index] /= total;
+          this.history = new Float32Array(taps);
+          this.history_position = 0;
+          this.next_output = 0;
+          this.input_count = 0;
           this.pending = [];
         }
         process(inputs) {
           const channel = inputs[0] && inputs[0][0];
           if (!channel) return true;
-          for (; this.position < channel.length; this.position += this.step) {
-            const sample = Math.max(-1, Math.min(1, channel[Math.floor(this.position)]));
-            this.pending.push(sample < 0 ? sample * 32768 : sample * 32767);
+          const taps = this.filter.length;
+          for (let index = 0; index < channel.length; index++) {
+            this.history[this.history_position] = channel[index];
+            this.history_position = (this.history_position + 1) % taps;
+            this.input_count++;
+            if (this.input_count >= this.next_output) {
+              this.next_output += this.ratio;
+              let filtered = 0;
+              for (let tap = 0; tap < taps; tap++) filtered += this.filter[tap] * this.history[(this.history_position + tap) % taps];
+              const sample = Math.max(-1, Math.min(1, filtered));
+              this.pending.push(sample < 0 ? sample * 32768 : sample * 32767);
+            }
           }
-          this.position -= channel.length;
           if (this.pending.length >= 1600) {
             this.port.postMessage(Int16Array.from(this.pending).buffer, []);
             this.pending = [];
