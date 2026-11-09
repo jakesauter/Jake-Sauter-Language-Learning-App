@@ -24,10 +24,12 @@ def comparable(text):
     return "".join(character for character in to_hong_kong.convert(text) if character.isalnum()).lower()
 
 
-def main(model_path):
+def main(model_path, device="cuda", most_clips=None):
     segments = [json.loads(line) for line in open(os.path.join(DATASET_FOLDER, "gold_segments.jsonl"))]
     segments = [segment for segment in segments if segment["split"] == "test" and 0.5 < segment["end"] - segment["start"] <= 28]
-    model = WhisperModel(model_path, device="cuda", compute_type="int8_float16")
+    if most_clips:
+        segments = segments[::max(1, len(segments) // most_clips)][:most_clips]  # spread across all test videos
+    model = WhisperModel(model_path, device=device, compute_type="int8_float16" if device == "cuda" else "int8", cpu_threads=8)
     references, hypotheses, started = [], [], time.time()
     for segment in segments:
         audio, _ = soundfile.read(segment["audio"], start=int(segment["start"] * 16000), stop=int(segment["end"] * 16000), dtype="float32")
@@ -42,4 +44,4 @@ def main(model_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "cuda", int(sys.argv[3]) if len(sys.argv) > 3 else None)
