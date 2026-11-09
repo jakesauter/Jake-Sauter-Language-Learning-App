@@ -16,7 +16,7 @@ import sys
 import time
 import urllib.parse
 
-DATASET_FOLDER = "/mnt/storage/datasets/youtube_cc_cantonese"
+DATASET_FOLDER = os.environ.get("POLYLANG_DATASET", "/mnt/storage/datasets/youtube_cc_cantonese")
 INDEX_FILE = os.path.join(DATASET_FOLDER, "index.jsonl")
 YT_DLP = os.path.expanduser("~/venvs/tools/bin/yt-dlp")
 CREATIVE_COMMONS_FILTER = "EgIwAQ%3D%3D"
