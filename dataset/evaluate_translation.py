@@ -70,6 +70,7 @@ async def run(translator, pairs):
 
 def main(translators):
     pairs = [json.loads(line) for line in open(PAIRS_FILE) if line.strip()]
+    pairs = [pair for pair in pairs if pair.get("chinese_is_spoken", True)]  # Cantonese text, not written-Chinese subtitles
     for translator in translators:
         asyncio.run(run(translator, pairs))
 
