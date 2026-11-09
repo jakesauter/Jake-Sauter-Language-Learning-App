@@ -71,10 +71,10 @@ def whisper_language_code(language):
     return "yue" if language in ("yue", "tsn") else (language or None)
 
 
-def run_whisper(model, audio, language, beam_size=5, with_words=True):
+def run_whisper(model, audio, language, beam_size=5, with_words=True, prompt=None):
     segments, info = model.transcribe(
         audio, language=whisper_language_code(language), beam_size=beam_size, vad_filter=False,
-        condition_on_previous_text=False, word_timestamps=with_words)
+        condition_on_previous_text=False, word_timestamps=with_words, initial_prompt=prompt)
     # Whisper's own reference rules for non-speech and loops (OpenAI decoding heuristics): a segment that is
     # probably silence/noise (no_speech_prob > 0.6 with low confidence) or compresses too well (> 2.4) is dropped.
     segments = [segment for segment in segments

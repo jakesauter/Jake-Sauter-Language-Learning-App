@@ -32,12 +32,30 @@ SAMPLE_RATE = 16000
 
 # ---------- data ----------
 
+COLLOQUIAL_PARTICLES = set("嘅咗唔係哋佢嚟啲冇嘢喺噉嗰咩乜嘛囉㗎吖啱咁睇")  # same rule as build_gold_segments.py
+SHORTEST_COLLOQUIAL_SHARE = 0.03
+
+
+def spoken_cantonese_videos(segments):
+    """Videos whose labels read like spoken Cantonese, not written Chinese read aloud (novels, sutras)."""
+    characters_by_video = {}
+    for segment in segments:
+        characters_by_video.setdefault(segment["video"], []).extend(
+            character for character in segment["text"] if "\u4e00" <= character <= "\u9fff")
+    return {video for video, characters in characters_by_video.items()
+            if len(characters) < 50 or sum(c in COLLOQUIAL_PARTICLES for c in characters) / len(characters) >= SHORTEST_COLLOQUIAL_SHARE}
+
+
 def load_segments(split):
     segments = []
     for name in ("gold_segments.jsonl", "pseudo_segments.jsonl"):
         path = os.path.join(DATASET_FOLDER, name)
         if os.path.exists(path):
-            segments += [json.loads(line) for line in open(path) if line.strip()]
+            loaded = [json.loads(line) for line in open(path) if line.strip()]
+            if name.startswith("pseudo"):
+                spoken = spoken_cantonese_videos(loaded)
+                loaded = [segment for segment in loaded if segment["video"] in spoken]
+            segments += loaded
     test_videos = {segment["video"] for segment in segments if segment["split"] == "test"}
     chosen = [segment for segment in segments if segment["split"] == split and 0.5 < segment["end"] - segment["start"] <= 28]
     if split == "train":

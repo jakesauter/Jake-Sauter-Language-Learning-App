@@ -124,3 +124,7 @@ Each entry: the question, what I chose, why, and what the alternative would have
 37. **Faster pseudo-labeling.** SenseVoice runs once per piece (its auto-language output gives both the Cantonese check and the text). Only Cantonese candidates go to Whisper, greedy, in batches of 8, with Whisper reference silence/loop rules and the repetition filter. Two workers run in parallel on separate halves of the ~420 remaining videos (~2.7 GB GPU each). Measured ~25 s per video per worker.
 
 38. **Run 2 = fixed recipe, gold-train + all pseudo-labels, 1000 steps.** Then it is converted to CTranslate2 and scored with live settings on the same 600 test clips as the 20.8% baseline. Live only switches if it wins.
+
+39. **Spoken-style filter for pseudo-labels.** A spot check showed some pseudo-labels are written Chinese read aloud (Dream of the Red Chamber readings, sutra chanting). They are correct transcripts, but they pull the model toward written style, which is wrong for dinner talk. Training now drops pseudo-labeled videos below 3% colloquial particles (same rule as the gold set; videos with under 50 characters are kept). This removed ~7% of pseudo minutes in the sample.
+
+40. **Prompt experiment (CPU, 100 test clips).** Testing whether a short colloquial Cantonese prompt (initial_prompt) shifts Whisper to spoken characters. If it helps under live settings, it goes into live mode.

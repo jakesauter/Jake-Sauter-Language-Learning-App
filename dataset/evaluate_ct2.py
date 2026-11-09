@@ -33,12 +33,13 @@ def main(model_path, device="cuda", most_clips=None):
     references, hypotheses, started = [], [], time.time()
     for segment in segments:
         audio, _ = soundfile.read(segment["audio"], start=int(segment["start"] * 16000), stop=int(segment["end"] * 16000), dtype="float32")
-        text, _, _ = speech_engines.run_whisper(model, speech_engines.clean_audio(audio), "yue", with_words=False)
+        text, _, _ = speech_engines.run_whisper(model, speech_engines.clean_audio(audio), "yue", with_words=False,
+                                                prompt=os.environ.get("POLYLANG_EVAL_PROMPT") or None)
         if comparable(segment["text"]):
             references.append(comparable(segment["text"]))
             hypotheses.append(comparable(text))
     score = jiwer.cer(references, hypotheses)
-    print(f"{model_path}: CER {score:.1%} on {len(references)} gold clips ({time.time() - started:.0f}s)")
+    print(f"{model_path} prompt={os.environ.get('POLYLANG_EVAL_PROMPT')!r}: CER {score:.1%} on {len(references)} gold clips ({time.time() - started:.0f}s)")
     for reference, hypothesis in list(zip(references, hypotheses))[:4]:
         print(f"   ref {reference[:36]}\n   got {hypothesis[:36]}")
 
