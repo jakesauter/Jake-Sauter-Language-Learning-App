@@ -6912,7 +6912,20 @@
     }
 
     function handle_home_message(home, message) {
-      if (message.type === "gist") {
+      if (message.type === "speakers") {
+        // Corrected speaker labels after the server re-clusters the whole session.
+        Object.entries(message.speakers || {}).forEach(([line_id, speaker]) => {
+          const line_key = home.session_offset + ":" + line_id;
+          const line = home.lines_by_id.get(line_key);
+          if (!line) return;
+          line.speaker = speaker;
+          const said_node = document.querySelector(`[data-line="${CSS.escape(line_key)}"] .convo-said`);
+          if (!said_node) return;
+          const chip = said_node.querySelector(".convo-speaker");
+          if (chip) chip.outerHTML = speaker_chip_html(speaker);
+          else said_node.insertAdjacentHTML("afterbegin", speaker_chip_html(speaker));
+        });
+      } else if (message.type === "gist") {
         home.gist = message.text;
         const banner = $("rec-gist");
         if (banner) { banner.textContent = home.gist; banner.hidden = false; }
@@ -7131,13 +7144,17 @@
       return trust_level(line) === "rough" ? "≈ " + line.en : line.en;
     }
 
+    function speaker_chip_html(speaker) {
+      return `<span class="convo-speaker" style="--speaker-hue:${(speaker * 137) % 360}">${esc(tr("r_speaker", { n: speaker }))}</span>`;
+    }
+
     function append_conversation_line(home, line, line_key) {
       const log = $("rec-convo");
       if (!log) return;
       const entry = el("div", "convo-line" + (line.earlier ? " earlier" : ""), `
         <button class="convo-time" type="button">${esc(line.at ? clock_time(line.at) : fmt(line.t))}</button>
         <div class="convo-body">
-          <p class="convo-said" lang="${line.language === "en" ? "en" : "zh-Hant"}">${line.speaker ? `<span class="convo-speaker" style="--speaker-hue:${(line.speaker * 137) % 360}">${esc(tr("r_speaker", { n: line.speaker }))}</span>` : ""}<span class="convo-language">${esc(language_badge(line))}</span>${esc(line.text)}</p>
+          <p class="convo-said" lang="${line.language === "en" ? "en" : "zh-Hant"}">${line.speaker ? speaker_chip_html(line.speaker) : ""}<span class="convo-language">${esc(language_badge(line))}</span>${esc(line.text)}</p>
           ${isZh(line.text) ? compact_word_strip(line.text, line.language || (live ? live.lang : "yue")) : ""}
           ${line.language === "en" ? "" : `<p class="convo-en" data-trust="${trust_level(line)}">${esc(english_with_trust(line) || "…")}</p>`}
           ${line.language !== "en" && line.agree != null && line.agree < 0.75 ? `<p class="convo-unsure">${esc(tr("r_unsure"))}</p>` : ""}

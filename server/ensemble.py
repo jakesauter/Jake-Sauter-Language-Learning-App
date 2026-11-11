@@ -16,12 +16,14 @@ from speech_engines import CHINESE_LANGUAGES, SAMPLE_RATE
 
 # Engine order is the tie-break priority.
 ENGINES_BY_LANGUAGE = {
-    # Scored on 100 real dinner pieces (tests/experiment_engines.py): SenseVoice 4.21, Whisper 4.13,
-    # BuzzASR 3.76 with 10 gibberish lines, so BuzzASR is left out; an LLM fuses the two (4.45).
-    "yue": ["sensevoice", "whisper"],
-    "tsn": ["sensevoice", "whisper"],
-    "zh": ["whisper", "sensevoice"],
-    "en": ["whisper", "sensevoice"],
+    # Measured under dinner-table conditions (docs/decisions-2026-11-08.md, 49 and 53). FireRed gives the text;
+    # the second engine is a fast check whose agreement tells how sure the line is.
+    # Cantonese errors: FireRed 11.2%, SenseVoice-small-Yue 14.7%, SenseVoice 19.2%, Whisper 31.7%.
+    # English word errors: Whisper 5.6%, FireRed 6.7%, SenseVoice 9.6% (SenseVoice-small-Yue 26.3%: Cantonese only).
+    "yue": ["firered", "sensevoice_yue"],
+    "tsn": ["firered", "sensevoice_yue"],
+    "zh": ["firered", "sensevoice"],
+    "en": ["firered", "sensevoice"],
     "ja": ["whisper", "sensevoice"],
     "ko": ["whisper", "sensevoice"],
 }

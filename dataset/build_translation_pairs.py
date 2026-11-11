@@ -14,11 +14,11 @@ import re
 import webvtt
 
 from build_gold_segments import DATASET_FOLDER, best_subtitle_file, clean_text, colloquial_share, seconds
+from known_bad_videos import LEAVE_OUT
 
 ENGLISH_FOLDER = os.path.join(DATASET_FOLDER, "subtitles_en")
 OUTPUT_FILE = os.path.join(DATASET_FOLDER, "translation_pairs.jsonl")
 SMALLEST_OVERLAP = 0.5  # an English line belongs to a clip when at least half of it falls inside the clip
-SONGS = {"wFvPC9eaeLE"}  # lyrics, not conversation
 CHUNK_SECONDS = (3.0, 10.0)
 
 
@@ -69,8 +69,9 @@ def main():
     gold_videos = {segment["video"] for segment in segments}
     for path in sorted(glob.glob(os.path.join(ENGLISH_FOLDER, "*.vtt"))):
         video_id = os.path.basename(path).split(".")[0]
-        if video_id not in gold_videos and video_id not in SONGS:
+        if video_id not in gold_videos and video_id not in LEAVE_OUT:
             segments += subtitle_chunks(video_id)
+    segments = [segment for segment in segments if segment["video"] not in LEAVE_OUT]
     cues_by_video, pairs = {}, []
     for segment in segments:
         if segment["video"] not in cues_by_video:

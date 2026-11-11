@@ -1,7 +1,7 @@
 """Digest a conversation after it ends: the full offline pipeline over all of its recordings.
 
-    clean audio -> pieces -> language -> SenseVoice + Whisper -> LLM fusion
-    -> speakers grouped over the whole conversation (Ward) -> translation with surrounding context
+    clean audio -> pieces -> language -> the same recognizers as live mode (FireRed with punctuation, checked by
+    SenseVoice) -> speakers grouped over the whole conversation -> translation
 
 Runs automatically when a live session ends, one conversation at a time, and waits while anyone is
 recording live so it never slows the live translation. Results go to digest.jsonl next to lines.jsonl.
@@ -18,6 +18,7 @@ import wave
 import numpy as np
 
 import conversations
+import ensemble
 import live_session
 import speaker_clustering
 import speakers
@@ -93,7 +94,7 @@ def _listen(person, conversation_id):
             with speech_engines.gpu_lock:
                 language, _ = speech_engines.detect_language(piece, candidates)
                 versions = {}
-                for engine_name in ("sensevoice", "whisper"):
+                for engine_name in ensemble.ENGINES_BY_LANGUAGE.get(language, ensemble.DEFAULT_ENGINES):
                     result = speech_engines.transcribe_with(engine_name, piece, language)
                     if result and result["text"]:
                         versions[engine_name] = speech_engines.to_common_script(result["text"], language)
@@ -130,7 +131,8 @@ def _group_speakers(pieces):
 
 
 async def free_gpu_from_translator():
-    """Nobody is recording live during a digest, so the translator can leave the GPU while Whisper listens."""
+    """Only when the digest needs a recognizer live mode has not loaded (Whisper, for Japanese or Korean): nobody is
+    recording live during a digest, so the translator can leave the card while it listens."""
     import httpx
     model = translation.choose_provider("yue", "en").split(":", 1)[-1]
     try:
@@ -142,7 +144,10 @@ async def free_gpu_from_translator():
 
 async def digest(person, conversation_id):
     set_status(person, conversation_id, "listening")
-    await free_gpu_from_translator()
+    candidates = conversations.details(person, conversation_id).get("languages") or CANDIDATE_LANGUAGES
+    needed = {name for language in candidates for name in ensemble.ENGINES_BY_LANGUAGE.get(language, ensemble.DEFAULT_ENGINES)}
+    if not needed <= set(speech_engines.loaded_engine_names()):
+        await free_gpu_from_translator()
     pieces = await asyncio.get_running_loop().run_in_executor(None, _listen, person, conversation_id)
     _group_speakers(pieces)
     set_status(person, conversation_id, "understanding", total=len(pieces))
@@ -151,11 +156,12 @@ async def digest(person, conversation_id):
         versions = [text for text in piece["hyps"].values() if not speech_engines.is_repetition_loop(text)]
         if not versions:
             continue  # laughter or noise that every engine heard as a loop
-        if piece["language"] != "en" and translation.mostly_latin(piece["hyps"].get("whisper", "")):
+        main_text = next(iter(piece["hyps"].values()), "")  # the first recognizer for the language (FireRed)
+        if piece["language"] != "en" and translation.mostly_latin(main_text):
             piece["language"] = "en"
         understood = None
         if piece["language"] == "en":
-            text = piece["hyps"].get("whisper") or versions[0]
+            text = main_text or versions[0]
         else:
             earlier = [entry["text"] + (f" (meaning: {entry['en']})" if entry["en"] and entry["en"] != "(unclear)" else "") for entry in lines[-4:]]
             source = "tsn" if piece["language"] == "yue" else piece["language"]

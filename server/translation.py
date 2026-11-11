@@ -5,6 +5,7 @@ A provider is "ollama:<model>" or "google". router.json maps "source>target" (or
 speed. Google is used only when its key file exists; the key never leaves this machine.
 """
 
+import difflib
 import html
 import json
 import re
@@ -17,6 +18,10 @@ OLLAMA_URL = os.environ.get("POLYLANG_OLLAMA", "http://127.0.0.1:11434")
 ROUTER_FILE = os.environ.get("POLYLANG_ROUTER", os.path.join(os.path.dirname(__file__), "router.json"))
 GOOGLE_KEY_FILE = os.environ.get("POLYLANG_GOOGLE_KEY_FILE", "/run/secrets/google_translate_key")
 FALLBACK_PROVIDER = os.environ.get("POLYLANG_LLM", "ollama:qwen3.5:4b")
+# Writing jobs (the running gist, reply suggestions, the recap) need a general chat model, even when lines are
+# translated by a dedicated translation model. router.json's "chat" entry names it, and POLYLANG_CHAT_OLLAMA can
+# send it to a second Ollama (one on the processor keeps it from pushing the translator off the card).
+CHAT_OLLAMA_URL = os.environ.get("POLYLANG_CHAT_OLLAMA", OLLAMA_URL)
 
 LANGUAGE_NAMES = {
     "en": "English", "yue": "Cantonese", "tsn": "Taishanese", "zh": "Mandarin Chinese", "es": "Spanish",
@@ -51,6 +56,18 @@ def choose_provider(source, target):
         if provider and (provider != "google" or google_key()):
             return provider
     return FALLBACK_PROVIDER
+
+
+def chat_model():
+    try:
+        with open(ROUTER_FILE) as router_file:
+            provider = json.load(router_file).get("chat")
+    except (OSError, ValueError):
+        provider = None
+    provider = provider or choose_provider("yue", "en")
+    if provider == "google" or is_translation_model(provider):
+        provider = FALLBACK_PROVIDER
+    return provider.split(":", 1)[-1]
 
 
 def build_prompt(text, source, target, earlier_lines=(), heard_versions=()):
@@ -128,6 +145,40 @@ async def translate_with_google(text, source, target):
     return html.unescape(payload["data"]["translations"][0]["translatedText"])
 
 
+# Dedicated translation models (Tencent HY-MT) are trained on one fixed instruction, written in Chinese when either
+# side is Chinese, with no system prompt. These are the templates and sampling settings from the model card.
+TRANSLATION_MODEL_MARK = "hy-mt"
+CHINESE_NAMES_OF_LANGUAGES = {
+    "en": "英语", "zh": "中文", "yue": "粤语", "tsn": "粤语", "es": "西班牙语", "fr": "法语", "de": "德语", "pt": "葡萄牙语",
+    "fa": "波斯语", "ar": "阿拉伯语", "he": "希伯来语", "tr": "土耳其语", "ja": "日语", "ko": "韩语",
+}
+TRANSLATION_MODEL_OPTIONS = {"top_k": 20, "top_p": 0.6, "repeat_penalty": 1.05, "temperature": 0.7, "num_ctx": 2048}
+
+
+def is_translation_model(provider):
+    return TRANSLATION_MODEL_MARK in (provider or "").lower()
+
+
+def translation_model_prompt(text, source, target, earlier_lines=()):
+    source, target = normalise_code(source), normalise_code(target)
+    if source in CHINESE_NAMES_OF_LANGUAGES and (source in ("zh", "yue", "tsn") or target in ("zh", "yue", "tsn")):
+        target_name = CHINESE_NAMES_OF_LANGUAGES.get(target, target)
+        if earlier_lines:
+            return ("\n".join(earlier_lines[-4:]) + f"\n参考上面的信息，把下面的文本翻译成{target_name}，注意不需要翻译上文，也不要额外解释：\n{text}")
+        return f"将以下文本翻译为{target_name}，注意只需要输出翻译后的结果，不要额外解释：\n\n{text}"
+    return f"Translate the following segment into {LANGUAGE_NAMES.get(target, target)}, without additional explanation.\n\n{text}"
+
+
+async def translate_with_translation_model(text, source, target, provider, earlier_lines=(), options=None):
+    request_body = {"model": provider.split(":", 1)[1] if provider.startswith("ollama:") else provider, "stream": False,
+                    "keep_alive": "4h", "options": {**TRANSLATION_MODEL_OPTIONS, **(options or {})},
+                    "messages": [{"role": "user", "content": translation_model_prompt(text, source, target, earlier_lines)}]}
+    async with httpx.AsyncClient(timeout=httpx.Timeout(60, connect=5)) as client:
+        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+    response.raise_for_status()
+    return response.json()["message"]["content"].strip()
+
+
 async def fuse_transcripts(versions, language):
     """Several recognizers' versions of one clip -> the single most likely sentence (best on real dinner audio)."""
     versions = [version for version in dict.fromkeys(versions) if version]
@@ -138,12 +189,10 @@ async def fuse_transcripts(versions, language):
               "Write the single most likely thing that was actually said, in the same language and script. "
               "Keep any English words that were mixed in. Reply with only that sentence.\n\n"
               + "\n".join(f"{index + 1}. {text}" for index, text in enumerate(versions)))
-    request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False, "keep_alive": "4h",
+    request_body = {"model": chat_model(), "stream": False, "think": False, "keep_alive": "4h",
                     "options": {"temperature": 0.0, "num_ctx": 2048}, "messages": [{"role": "user", "content": prompt}]}
-    if request_body["model"] == "google":
-        request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
     async with httpx.AsyncClient(timeout=httpx.Timeout(60, connect=5)) as client:
-        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+        response = await client.post(CHAT_OLLAMA_URL + "/api/chat", json=request_body)
     response.raise_for_status()
     fused = response.json()["message"]["content"].strip().strip('"“”')
     return fused if 0 < len(fused) <= 3 * max(len(version) for version in versions) else versions[0]
@@ -176,16 +225,14 @@ async def suggest_replies(conversation_lines, language, creativity=0.4):
         f"thanks, or showing interest). {suggestion_style(creativity)} Reply only with JSON: "
         '{"suggestions": [{"say": "<written in Chinese characters>", "en": "<English meaning>", '
         '"why": "<one short phrase on when to use it>"}]}')
-    request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
+    request_body = {"model": chat_model(), "stream": False, "think": False,
                     "format": "json", "keep_alive": "4h",
                     # Same context size as translations: Ollama reloads the model whenever it changes.
                     "options": {"temperature": round(0.2 + 0.7 * creativity, 2), "num_ctx": 2048},
                     "messages": [{"role": "user", "content": prompt}]}
-    if request_body["model"] == "google":
-        request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
     started_at = time.time()
     async with httpx.AsyncClient(timeout=httpx.Timeout(90, connect=5)) as client:
-        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+        response = await client.post(CHAT_OLLAMA_URL + "/api/chat", json=request_body)
     response.raise_for_status()
     suggestions = json.loads(response.json()["message"]["content"]).get("suggestions", [])[:4]
     import speech_engines  # same script as the transcripts (traditional characters for Cantonese)
@@ -205,14 +252,12 @@ async def recap_conversation(conversation_lines, language):
         "Reply only with JSON: {\"summary\": \"<3 to 5 short English sentences on what people talked about>\", "
         "\"phrases\": [{\"say\": \"<a short useful phrase that was said, in Chinese characters>\", "
         "\"en\": \"<its English meaning>\"}]} with the 5 phrases most worth learning.")
-    request_body = {"model": choose_provider(language, "en").split(":", 1)[-1], "stream": False, "think": False,
+    request_body = {"model": chat_model(), "stream": False, "think": False,
                     "format": "json", "keep_alive": "4h", "options": {"temperature": 0.3, "num_ctx": 2048},
                     "messages": [{"role": "user", "content": prompt}]}
-    if request_body["model"] == "google":
-        request_body["model"] = FALLBACK_PROVIDER.split(":", 1)[-1]
     started_at = time.time()
     async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
-        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+        response = await client.post(CHAT_OLLAMA_URL + "/api/chat", json=request_body)
     response.raise_for_status()
     result = json.loads(response.json()["message"]["content"])
     import speech_engines
@@ -268,11 +313,10 @@ async def conversation_gist(recent_lines):
               "transcribed by speech recognition (some mistakes). In one or two short, plain English sentences, say what "
               "people are talking about right now, for someone at the table who doesn't speak Cantonese. Only state what "
               "the lines support; don't guess. Reply with only those sentences.\n\n" + transcript)
-    model = FALLBACK_PROVIDER.split(":", 1)[-1] if choose_provider("yue", "en") == "google" else choose_provider("yue", "en").split(":", 1)[-1]
-    request_body = {"model": model, "stream": False, "think": False, "keep_alive": "4h",
+    request_body = {"model": chat_model(), "stream": False, "think": False, "keep_alive": "4h",
                     "options": {"temperature": 0.2, "num_ctx": 2048}, "messages": [{"role": "user", "content": prompt}]}
     async with httpx.AsyncClient(timeout=httpx.Timeout(60, connect=5)) as client:
-        response = await client.post(OLLAMA_URL + "/api/chat", json=request_body)
+        response = await client.post(CHAT_OLLAMA_URL + "/api/chat", json=request_body)
     response.raise_for_status()
     return response.json()["message"]["content"].strip()[:400]
 
@@ -286,12 +330,77 @@ async def google_hints(versions, source, target):
     return [result if isinstance(result, str) else "" for result in results]
 
 
+def comparable_characters(text):
+    return "".join(character for character in text if character.isalnum()).lower()
+
+
+def most_agreed_version(versions):
+    """The version that differs least from the others, and how far it is from the nearest other version
+    (0 = another recognizer wrote exactly the same)."""
+    def distance(left, right):
+        left, right = comparable_characters(left), comparable_characters(right)
+        if not left and not right:
+            return 0.0
+        return 1.0 - difflib.SequenceMatcher(None, left, right, autojunk=False).ratio()
+    if len(versions) == 1:
+        return versions[0], None
+    average_distance = {version: sum(distance(version, other) for other in versions) / (len(versions) - 1)
+                        for version in versions}
+    best_index = min(range(len(versions)), key=lambda index: average_distance[versions[index]])  # ties: first engine wins
+    return versions[best_index], min(distance(versions[best_index], other)
+                                     for index, other in enumerate(versions) if index != best_index)
+
+
+def clarity_from_agreement(distance):
+    """5 when the recognizers wrote the same thing, 4 when they differ a little, 3 (shown as rough) otherwise.
+
+    On 600 hand-transcribed Cantonese clips, when two good recognizers agreed exactly the text was 98% right;
+    when they differed by more than a fifth it was 79% right. Never "unclear" on agreement alone: a rough
+    translation of a real sentence is more useful at the table than nothing.
+    """
+    if distance is None:
+        return 4  # only one recognizer: no evidence either way
+    if distance <= 0.05:
+        return 5
+    return 4 if distance < 0.25 else 3
+
+
+# Earlier lines given to the translation model. On 222 YouTube lines 4 lines of context scored the same as none
+# (chrF++ 35.4 both), and on our dinner recording a garbled line sometimes came back as a translation of the lines
+# before it, so it gets none.
+TRANSLATION_MODEL_CONTEXT_LINES = 0
+
+
+async def translate_heard_line(heard_versions, source, target, provider, earlier_lines=()):
+    """Live path for a dedicated translation model: translate the version the recognizers agree on most, and take
+    clarity from the recognizers' agreement rather than asking the model.
+
+    Measured on 163 spoken YouTube lines: the "understand" prompt with a 7B chat model hid 57 clear lines as
+    "(unclear)" and scored chrF++ 25.7; a 1.8B translation model on the same text scored 35.8.
+    """
+    versions = [version for version in heard_versions if version]
+    if not versions:
+        return {"said": "", "english": "", "clarity": 1, "unclear": True}
+    said, distance = most_agreed_version(versions)
+    recent = earlier_lines[-TRANSLATION_MODEL_CONTEXT_LINES:] if TRANSLATION_MODEL_CONTEXT_LINES else []
+    context = [line.split(" (meaning: ")[0] for line in recent]  # it takes the earlier lines as plain text
+    english = await translate_with_translation_model(said, source, target, provider, context, {"temperature": 0.0})
+    clarity = clarity_from_agreement(distance)
+    # A translation that is mostly Chinese failed; one that quotes a character ("the 夏 in 夏天") is fine.
+    unclear = not english or (normalise_code(target) not in ("zh", "yue", "tsn", "ja") and not mostly_latin(english))
+    return {"said": said, "english": "(unclear)" if unclear else english, "clarity": 1 if unclear else clarity, "unclear": unclear}
+
+
 async def understand_line(heard_versions, source, target="en", earlier_lines=()):
     """One call per line: which version was really said, its translation, and how clear it is.
 
     Speech engines often split on sound-alikes (你好嗎 vs 你號碼); seeing every version side by side lets the
-    model choose the one that makes sense instead of judging a single wrong guess.
+    model choose the one that makes sense instead of judging a single wrong guess. When the router names a
+    dedicated translation model, translate_heard_line does this job instead.
     """
+    provider = choose_provider(source, target)
+    if is_translation_model(provider):
+        return await translate_heard_line(heard_versions, source, target, provider, earlier_lines)
     versions = [version for version in dict.fromkeys(heard_versions) if version]
     if not versions:
         return {"said": "", "english": "", "clarity": 1, "unclear": True}
@@ -313,7 +422,6 @@ async def understand_line(heard_versions, source, target="en", earlier_lines=())
               "4 = understandable with small errors, 3 = partly understandable, 2 = mostly garbled, 1 = gibberish. "
               "Short everyday phrases that make sense are 4 or 5.\n"
               f'Reply only with JSON: {{"said": "<what was said, in Chinese characters>", "english": "<{target_name} translation>", "clarity": <1-5>}}')
-    provider = choose_provider(source, target)
     model = FALLBACK_PROVIDER.split(":", 1)[-1] if provider == "google" else provider.split(":", 1)[-1]
     request_body = {"model": model, "stream": False, "think": False, "format": "json", "keep_alive": "4h",
                     "options": {"temperature": 0.1, "num_ctx": 2048}, "messages": [{"role": "user", "content": prompt}]}

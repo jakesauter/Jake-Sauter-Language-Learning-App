@@ -464,3 +464,13 @@ async def digest_again(request: Request, conversation_id: str):
 async def preload_engines():
     engine_names = [name for name in os.environ.get("POLYLANG_PRELOAD", "buzzasr,sensevoice,whisper").split(",") if name]
     threading.Thread(target=lambda: [speech_engines.get_engine(name) for name in engine_names], daemon=True).start()
+    asyncio.create_task(warm_up_translator())
+
+
+async def warm_up_translator():
+    """Load the translator now, so the first line of the first dinner is not kept waiting while it loads."""
+    try:
+        await translation.translate_text("食咗飯未呀", "yue", "en")
+        print("translator ready:", translation.choose_provider("yue", "en"))
+    except Exception as error:
+        print("translator warm-up failed:", error)

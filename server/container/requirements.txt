@@ -9,3 +9,4 @@ python-multipart==0.0.20
 httpx==0.28.1
 numpy<2.4
 soundfile
+kaldi_native_fbank==1.23.0

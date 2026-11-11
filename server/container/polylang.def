@@ -12,6 +12,7 @@ From: container/base.sif
     email_sender.py /app/email_sender.py
     speakers.py /app/speakers.py
     digest.py /app/digest.py
+    speaker_clustering.py /app/speaker_clustering.py
     ensemble.py /app/ensemble.py
     speech_engines.py /app/speech_engines.py
     translation.py /app/translation.py
@@ -24,8 +25,9 @@ From: container/base.sif
     export PATH=/opt/venv/bin:$PATH
     export PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
     export HOME=/tmp HF_HOME=/hf HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 MODELSCOPE_CACHE=/tmp/modelscope
-    export POLYLANG_DATA=/data POLYLANG_SITE=/site POLYLANG_BUZZ=/models/buzzasr-cantonese-ct2 POLYLANG_ROUTER=/app/router.json
+    export POLYLANG_DATA=/data POLYLANG_SITE=/site POLYLANG_BUZZ=/models/buzzasr-cantonese-ct2 POLYLANG_SENSEVOICE_YUE=/models/sensevoice-small-yue POLYLANG_ROUTER=/app/router.json
     export CUDA_CACHE_PATH=/tmp/nv
+    export PYTHONPATH=/opt/firered POLYLANG_FIRERED=/models/firered-asr2-aed POLYLANG_PUNC=/models/firered-punc
 
 %runscript
     cd /app

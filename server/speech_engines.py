@@ -10,10 +10,19 @@ SAMPLE_RATE = 16000
 WHISPER_MODEL = os.environ.get("POLYLANG_MODEL", "large-v3")
 BUZZASR_MODEL_PATH = os.environ.get("POLYLANG_BUZZ", os.path.expanduser("~/models/buzzasr-cantonese-ct2"))
 SENSEVOICE_MODEL = os.environ.get("POLYLANG_SENSEVOICE", "FunAudioLLM/SenseVoiceSmall")
+# SenseVoice fine-tuned on 21,800 hours of Cantonese (WenetSpeech-Yue, arXiv 2509.03959). Training state stripped:
+# only the weights are kept (0.9 GB instead of 2.8 GB).
+SENSEVOICE_YUE_MODEL = os.environ.get("POLYLANG_SENSEVOICE_YUE", os.path.expanduser("~/models/sensevoice-small-yue"))
+# Xiaohongshu's FireRedASR2-AED (arXiv 2603.10420): the fewest errors on Cantonese under dinner-table noise.
+FIRERED_MODEL = os.environ.get("POLYLANG_FIRERED", os.path.expanduser("~/models/firered-asr2-aed"))
+# FireRedPunc (same release) puts punctuation back into FireRed's text. Punctuated Cantonese translates better
+# (end-to-end chrF++ 34.8 -> 35.4 on 222 YouTube lines). It is small, so it runs on the processor.
+PUNCTUATION_MODEL = os.environ.get("POLYLANG_PUNC", os.path.expanduser("~/models/firered-punc"))
+PUNCTUATED_LANGUAGES = {"yue", "tsn", "zh", "en"}
 DEVICE = os.environ.get("POLYLANG_DEVICE", "cuda")
 COMPUTE_TYPE = os.environ.get("POLYLANG_COMPUTE", "int8_float16")
 
-KNOWN_ENGINES = ("whisper", "buzzasr", "sensevoice")
+KNOWN_ENGINES = ("whisper", "buzzasr", "sensevoice", "sensevoice_yue", "firered")
 SENSEVOICE_LANGUAGES = {"yue", "tsn", "zh", "en", "ja", "ko"}
 CHINESE_LANGUAGES = {"yue", "tsn", "zh"}
 
@@ -30,10 +39,55 @@ def _load_whisper(model_name_or_path):
     return WhisperModel(model_name_or_path, device=DEVICE, compute_type=COMPUTE_TYPE)
 
 
-def _load_sensevoice():
+def _load_sensevoice(model_name_or_folder):
     from funasr import AutoModel
     device = "cuda:0" if DEVICE == "cuda" else "cpu"
-    return AutoModel(model=SENSEVOICE_MODEL, hub="hf", device=device, disable_update=True)
+    from_hub = {} if os.path.isdir(model_name_or_folder) else {"hub": "hf"}
+    return AutoModel(model=model_name_or_folder, device=device, disable_update=True, **from_hub)
+
+
+def _load_firered(model_folder):
+    import torch
+    from fireredasr2 import FireRedAsr2, FireRedAsr2Config  # the container puts its code in /opt/firered
+    # FireRed picks bfloat16 whenever torch says it can, but cards older than 2020 only emulate it (slowly).
+    if DEVICE == "cuda" and torch.cuda.get_device_capability()[0] < 8:
+        torch.cuda.is_bf16_supported = lambda *args, **kwargs: False
+    config = FireRedAsr2Config(use_gpu=DEVICE == "cuda", use_half=DEVICE == "cuda", beam_size=3, nbest=1,
+                               decode_max_len=0, softmax_smoothing=1.25, aed_length_penalty=0.6, eos_penalty=1.0,
+                               return_timestamp=False)
+    return FireRedAsr2.from_pretrained("aed", model_folder, config)
+
+
+def _load_punctuation(model_folder):
+    from fireredpunc.punc import FireRedPunc, FireRedPuncConfig  # the container puts its code in /opt/firered
+    return FireRedPunc.from_pretrained(model_folder, FireRedPuncConfig(use_gpu=False))
+
+
+CJK_THEN_LATIN = re.compile(r"(?<=[\u3400-\u9fff])(?=[A-Za-z0-9])|(?<=[A-Za-z0-9])(?=[\u3400-\u9fff])")
+
+
+def add_punctuation(text):
+    """Text with punctuation added; unchanged if the punctuation model is missing."""
+    model = get_engine("punctuation") if text else None
+    if model is None:
+        return text
+    punctuated = model.process([text])[0]["punc_text"]
+    return CJK_THEN_LATIN.sub(" ", punctuated)  # it drops the spaces around English words in Chinese; put them back
+
+
+ENGLISH_I = re.compile(r"\bi\b(?=$|[\s'])")
+
+
+def tidy_english(text):
+    """FireRed writes English all in lower case: capitalise the start and the word "I"."""
+    text = ENGLISH_I.sub("I", text)
+    return text[:1].upper() + text[1:]
+
+
+def run_firered(model, audio):
+    """FireRed reads 16-bit sample values; it writes no punctuation and does not say which language it heard."""
+    results = model.transcribe(["piece"], [(SAMPLE_RATE, audio * 32768.0)])
+    return (results[0]["text"] if results else "").strip(), [], None
 
 
 def get_engine(engine_name):
@@ -45,7 +99,10 @@ def get_engine(engine_name):
             loaders = {
                 "whisper": lambda: _load_whisper(WHISPER_MODEL),
                 "buzzasr": lambda: _load_whisper(BUZZASR_MODEL_PATH),
-                "sensevoice": _load_sensevoice,
+                "sensevoice": lambda: _load_sensevoice(SENSEVOICE_MODEL),
+                "sensevoice_yue": lambda: _load_sensevoice(SENSEVOICE_YUE_MODEL),
+                "firered": lambda: _load_firered(FIRERED_MODEL),
+                "punctuation": lambda: _load_punctuation(PUNCTUATION_MODEL),
             }
             started_at = time.time()
             try:
@@ -113,8 +170,14 @@ def transcribe_with(engine_name, audio, language):
         return None
     started_at = time.time()
     try:
-        if engine_name == "sensevoice":
+        if engine_name.startswith("sensevoice"):
             text, words, detected_language = run_sensevoice(model, audio, language)
+        elif engine_name == "firered":
+            text, words, detected_language = run_firered(model, audio)
+            if language in PUNCTUATED_LANGUAGES:
+                text = add_punctuation(text)
+            if language == "en":
+                text = tidy_english(text)
         else:
             text, words, detected_language = run_whisper(model, audio, language)
     except RuntimeError as error:
@@ -178,10 +241,15 @@ def is_repetition_loop(text):
 CANTONESE_VARIANT_FIXES = {"多謝哂": "多謝晒", "唔該哂": "唔該晒", "食哂": "食晒", "做哂": "做晒", "冇哂": "冇晒", "曬": "晒"}
 
 
+# Models trained on simplified text write the Cantonese "is" (係) as 系, which converters leave alone because 系 is
+# also a real word part (系統, 體系, 中文系).
+COPULA_WRITTEN_AS_SYSTEM = re.compile(r"(?<![體學星語派科水根直旁支世母父院])系(?![統列數主任])")
+
+
 def fix_cantonese_variants(text):
     for variant, standard in CANTONESE_VARIANT_FIXES.items():
         text = text.replace(variant, standard)
-    return text
+    return COPULA_WRITTEN_AS_SYSTEM.sub("係", text)
 
 
 def to_common_script(text, language):
@@ -190,10 +258,8 @@ def to_common_script(text, language):
         return text
     if language in ("yue", "tsn"):
         converter = _converter("s2hk")
-    elif language == "zh":
-        converter = _converter("t2s")
-    else:
-        converter = None
+        return fix_cantonese_variants(converter.convert(text) if converter else text)
+    converter = _converter("t2s") if language == "zh" else None
     return converter.convert(text) if converter else text
 
 
@@ -225,6 +291,12 @@ def detect_language(audio, candidate_languages):
         if heard_as in families:
             members = families[heard_as]
             return ("yue" if heard_as == "yue" and len(members) > 1 else members[0]), 0.9
+        if set(families) <= SENSEVOICE_LANGUAGES and "whisper" not in _loaded_engines:
+            # SenseVoice could not tell (noise, a laugh, a cough). Loading Whisper just to ask it would take 1.5 GB
+            # of the card and push the translator off it, so take the first language; FireRed writes English
+            # words as English whichever language it is told.
+            members = families[next(iter(families))]
+            return ("yue" if members[0] in ("yue", "tsn") and len(members) > 1 else members[0]), 0.5
     model = get_engine("whisper")
     if model is None:
         return candidates[0], 0.0

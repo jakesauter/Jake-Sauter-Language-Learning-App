@@ -1,0 +1,15 @@
+[Unit]
+Description=Second Ollama on the processor only, for Polylang's writing jobs (gist, reply suggestions, recap)
+After=network-online.target
+
+[Service]
+# Every one of these is needed: CUDA_VISIBLE_DEVICES alone does not hide the card from Ollama's Vulkan backend.
+Environment=CUDA_VISIBLE_DEVICES=-1 GGML_VK_VISIBLE_DEVICES=-1 OLLAMA_VULKAN=0
+Environment=OLLAMA_HOST=127.0.0.1:11435 OLLAMA_MODELS=/usr/share/ollama/.ollama/models
+Environment=OLLAMA_MAX_LOADED_MODELS=1 OLLAMA_NUM_PARALLEL=1 OLLAMA_KEEP_ALIVE=4h
+ExecStart=/usr/local/bin/ollama serve
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
