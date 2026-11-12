@@ -1040,6 +1040,69 @@
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; scroll-behavior: auto !important; }
   }
+
+  /* ---- 2026-11 redesign: tabs, Today card, topic pages, focus view ---- */
+  @font-face { font-family: "PolyZero"; src: local("Helvetica Neue"), local("Arial"), local("Roboto"), local("Liberation Sans"), local("DejaVu Sans"); unicode-range: U+0030; }
+  body, button, input, select { font-family: "PolyZero", var(--f-latin); }
+  .wrap { padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  html { scroll-padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  .tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: grid; grid-template-columns: repeat(4, 1fr); background: var(--paper); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .tabbar button { display: grid; justify-items: center; gap: 2px; min-height: 56px; padding: 8px 2px 6px; border: 0; background: none; color: var(--muted); font: inherit; font-size: 0.7rem; cursor: pointer; }
+  .tabbar button .ico { width: 22px; height: 22px; }
+  .tabbar button[aria-current="page"] { color: var(--ink); font-weight: 700; box-shadow: inset 0 2px 0 var(--ink); }
+  .tabbar button:focus-visible { outline: 2px solid var(--ink); outline-offset: -3px; }
+  dialog.practice > .tabbar { position: sticky; margin-top: auto; }
+  dialog.practice.setup > .tabbar, dialog.rec:has(.rec-dot) > .tabbar { display: none; }
+  dialog.practice.setup { max-height: calc(100dvh - 24px); overflow-y: auto; }
+  dialog.practice.setup .pr-body { gap: var(--s-4); padding: var(--s-4); }
+  dialog.practice.setup .lang-chip { min-height: 40px; padding: 6px 12px 6px 9px; }
+  .su-h { margin: 0; font-size: var(--t-lg); } .su-q { margin: 0 0 8px; font-weight: 700; }
+  .su-go { justify-content: center; } .su-go:disabled { opacity: 0.4; cursor: default; }
+  @media (max-width: 700px) {
+    dialog.practice:not(.setup) { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; inset: 0; }
+    dialog.practice:not(.setup)[open] { display: flex; flex-direction: column; }
+    dialog.practice:not(.setup) > .pr-body { flex: 1 1 auto; }
+    dialog.practice:not(.rec) { overflow-y: auto; }
+  }
+  @media (min-width: 701px) { dialog.practice > .tabbar { display: none; } }
+
+  .learn-bar .book-cta { display: none; }
+  .learn-bar { display: grid; }
+  .practice-cta { display: grid; gap: 2px; width: 100%; padding: 16px; border: 0; border-radius: 16px; background: var(--ink); color: var(--paper); }
+  .practice-cta .today-k { font-size: var(--t-xs); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; }
+  .practice-cta .today-h { font-size: 1.35rem; line-height: 1.2; }
+  .practice-cta .today-go { margin-top: 10px; padding: 11px; border-radius: 12px; background: var(--paper); color: var(--ink); font-weight: 700; text-align: center; }
+  .lang-chip { min-height: 44px; padding: 8px 14px 8px 10px; font-size: 0.9rem; }
+  .view .langs { margin: 4px 0 10px; }
+  .cols-row { display: none !important; }
+  .pr-pick { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: var(--t-sm); color: var(--ink-2); }
+  .pr-pick select { font: inherit; font-weight: 700; color: var(--ink); background: var(--wash); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-height: 44px; max-width: 60%; }
+  .pr-today { margin: 0; font-size: 1.35rem; font-weight: 700; line-height: 1.25; }
+  .rec-langs summary { cursor: pointer; font-size: var(--t-sm); color: var(--ink-2); padding: 8px 0; }
+  .back-topics { font-weight: 700 !important; color: var(--ink) !important; min-height: 44px; }
+  .toc button[aria-current="true"] { font-weight: 700; }
+  .pick-topic { display: none; }
+  .cmp-btn { margin-top: 10px; width: 100%; min-height: 44px; }
+  .lanes.solo { row-gap: 40px; }
+  .lanes.solo .tok { min-height: 52px; padding: 6px 8px; }
+  .lanes.solo .tok .hz { font-size: 1.75rem; }
+  .lanes.solo .tok .rom { font-size: 0.8rem; }
+  .lanes.solo .tok .en, .lanes.solo .tok .w { font-size: 1rem; }
+  @media (max-width: 559px) {
+    .banner .tag { display: none; }
+    .banner .b-mark { width: 40px; height: 40px; }
+    .banner .b-word { height: 26px; }
+    .banner { align-items: center; }
+  }
+  @media (min-width: 1100px) {
+    .wrap { max-width: 1160px; display: grid; grid-template-columns: 300px minmax(0, 1fr); column-gap: 44px; align-items: start; }
+    .wrap > header, .wrap > .bar, .wrap > .result { grid-column: 1 / -1; }
+    .wrap > .toc { grid-column: 1; position: sticky; top: 12px; max-height: calc(100vh - 90px); overflow: auto; display: block !important; padding-block: var(--s-3); }
+    .wrap > main { grid-column: 2; min-width: 0; }
+    .back-topics { display: none; }
+    .pick-topic { display: block; }
+    .practice-cta { max-width: 520px; }
+  }
 </style>
 <script>try { var k = localStorage.getItem("phrasebook-skin"); if (k && k !== "paper") document.documentElement.setAttribute("data-skin", k); } catch (e) {}</script>
 
@@ -1076,11 +1139,10 @@
       <button class="btn quiet" id="view-btn" type="button" aria-expanded="false" aria-controls="view" data-i18n="view">View</button>
     </form>
 
-    <div class="langs" id="langs" role="group" aria-label="Languages to show" data-i18n-aria="langs_aria"></div>
-
     <div class="view" id="view" hidden>
-      <div class="row">
-        <span class="label" data-i18n="show">Show</span>
+      <div class="row"><span class="label" data-i18n="show">Show</span></div>
+      <div class="langs" id="langs" role="group" aria-label="Languages to show" data-i18n-aria="langs_aria"></div>
+      <div class="row cols-row">
         <label for="col-tsn"><input type="checkbox" id="col-tsn" checked> <span data-i18n="tsn">Taishanese</span></label>
         <label for="col-yue"><input type="checkbox" id="col-yue" checked> <span data-i18n="yue">Cantonese</span></label>
         <label for="col-cmn"><input type="checkbox" id="col-cmn" checked> <span data-i18n="cmn">Mandarin</span></label>
@@ -1196,11 +1258,11 @@
 
   const UI = {
     en: {
-      _name: "English", _lang: "en", r_gist_title: "Right now", r_unclear: "(unclear — too garbled to translate)", r_digest_working: "Digesting this conversation for a cleaner version…", r_digest_show_live: "Show as heard live", r_digest_show_digest: "Show digested version", r_digest_note: "Digested: re-listened carefully after the conversation, with speakers grouped and translations using the whole conversation.", r_digest_live_note: "As heard live, during the conversation.", r_speaker: "Speaker {n}", r_recap_short: "Recap", r_mark_short: "Mark", r_text_smaller: "Smaller text", r_text_larger: "Larger text", r_live_searching: "Connecting for live translation… (Tailscale needs to be on)", r_recovery_title: "Your recovery code", r_recovery_lead: "Save this code somewhere safe, like your notes or password manager. If you forget your password, it lets you set a new one. It's shown only once, and each code works once.", r_recovery_saved: "I saved it", r_recovery_new: "Get a new recovery code", r_recovery_reset_lead: "Enter your username, your recovery code and a new password. You'll get a fresh recovery code afterwards.", r_reset_trusted_lead: "Enter your username and a new password. Your other devices will be signed out.", r_acct_email: "Email", r_acct_email_ph: "you@example.com", r_acct_email_new: "Email (to reset your password if you forget it)", r_acct_email_why: "Add an email so you can reset your password if you forget it.", r_acct_save: "Save", r_acct_saved: "Saved.", r_acct_forgot: "Forgot password?", r_acct_new_here: "New here?", r_reset_lead: "Enter the email on your account. We'll send a 6-digit code.", r_reset_send: "Send code", r_reset_code: "6-digit code", r_reset_finish: "Set new password and sign in", r_keep_awake: "Keep this screen on and the phone plugged in. Locking the phone stops the recording.", r_recap: "Recap: what's being talked about", r_recap_busy: "Summarizing the conversation…", r_tune: "Tuning", r_tune_creative: "Suggestion style", r_tune_safe: "Safe & polite", r_tune_playful: "Warm & playful", r_tune_pause: "When a line ends", r_tune_fast: "Faster lines", r_tune_full: "Fuller sentences", r_tune_auto: "Suggest automatically", r_tune_auto_off: "Only when I tap", r_tune_auto_each: "After every line", r_tune_auto_three: "Every 3 lines", r_convo: "Conversation", r_convo_new: "New conversation", r_convo_saved: "Saved conversations", r_convo_lines: "{n} lines", r_convo_continue: "Keep recording this conversation", r_convo_empty: "Nothing has been said yet.", r_advanced: "Advanced", r_store_home: "Live conversations are saved automatically.", r_acct_title: "Your account", r_acct_guest: "Saving as a guest on this phone.", r_acct_as: "Signed in as {name}.", r_acct_sign_in: "Sign in", r_acct_manage: "Account", r_acct_sign_out: "Sign out", r_acct_create: "Create account", r_acct_user: "Username", r_acct_pass: "Password (8+ characters)", r_acct_why: "An account keeps your conversations if you change phones or clear this browser. Conversations you've already recorded here move into it.", r_convo_langs: "Languages people might speak (pick all that apply)", r_home_live: "Live translate", r_home_live_fail: "Couldn't start live translation. The recording is still going.", r_home_connecting: "Connecting…", r_home_reconnect: "Reconnecting… nothing said is lost.", r_home_busy_live: "Live translation is already running for another recording.", r_jump: "Jump to latest", r_suggest: "What could I say?", r_suggest_busy: "Thinking of things you could say…", r_suggest_wait: "Suggestions appear once a few lines have been heard.", r_unsure: "Speech engines weren't sure about this line.", r_alts: "Engines disagreed on the underlined parts. Tap one to switch.", r_engines: "Each engine", r_agree: "{n}% agreement", wk_btn: "Word origin", wk_h: "Origin · Wiktionary", wk_none: "Wiktionary has no origin notes for this word yet.", wk_fail: "Couldn't reach Wiktionary. Check your connection.", wk_more: "Open on Wiktionary", wk_lic: "Text: Wiktionary, CC BY-SA 4.0", tb_btn: "Real examples", tb_h: "Examples · Tatoeba", tb_none: "Tatoeba has no examples with this word yet.", tb_fail: "Couldn't reach Tatoeba. Check your connection.", tb_more: "More on Tatoeba", tb_lic: "Sentences: Tatoeba, CC BY 2.0 FR", rom_label: "Pronunciation lines", gt_h: "Google Translate", gt_set: "Google Translate key (optional)", gt_ph: "Paste your API key", gt_ok: "Working", gt_fail: "Google Translate didn't work: {msg}", gt_quota: "Today's Google Translate limit is used up. It resets at midnight Pacific time.", gt_help: "Typed sentences also get a Google Translate version. The key is saved only on this phone.", b_pdf: "Save as PDF", bk_anchor: "My memory anchor", bk_anchor_ph: "What does it sound like to you? e.g. happy → hoh hoy, like a jolly \"ho ho\"", fa: "Persian", apc: "Arabic", he: "Hebrew", tr: "Turkish", pt: "Portuguese", r_btn: "Record", r_title: "Recordings", r_lead: "Record family and friends talking, then go back through it slowly: mark moments, loop them, write down what you hear, and save clips to your phrasebook. Recordings stay on this phone.", r_consent: "Ask people before you record them.", r_who: "Who's talking?", r_who_ph: "Grandma, Uncle Wing…", r_lang: "Language", r_mixed: "Mixed", r_live: "Live captions (your phone's speech recognition, where available)", r_start: "Start recording", r_stop: "Stop", r_mark: "Mark this moment", r_marks: "{n} marks", r_none: "No recordings yet.", r_back: "All recordings", r_said: "What they said", r_said_ph: "Characters, romanization or just the sounds", r_mean: "What it means", r_mean_ph: "Your best guess, or ask them later", r_loop: "Loop", r_clip_save: "Save clip to my phrasebook", r_clip_saved: "In my phrasebook", r_lines: "Transcript", r_gloss_note: "Rough word-by-word meaning from Polylang's dictionary.", r_share: "Save or share the file", r_delete: "Delete", r_delete_sure: "Tap again to delete", r_home: "Transcribe this recording", r_home_set: "Connection (optional)", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "Test", r_home_ok: "Connected", r_home_fail: "Couldn't connect. Check that Tailscale is on, then try again.", r_home_busy: "Transcribing…", r_mic_fail: "Couldn't use the microphone here. Open Polylang from its website or Home Screen icon and allow the microphone.", r_live_fail: "Live captions aren't available here. The recording is still going.", r_store: "Recordings are saved in this browser. Add Polylang to your Home Screen so the iPhone keeps them, and save important ones to Files.", r_rec: "Recording", r_tsn_note: "No speech engine knows Taishanese yet, so captions use Cantonese, the closest. Your notes on these recordings could become the training data for one.", b_btn: "My phrasebook", b_save: "Save to my phrasebook", bk_saved: "In my phrasebook", b_know: "I know this", b_known: "Known", b_title: "My phrasebook", b_lead: "The sentences you actually need, in one place. Saved sentences go into Practice first. Sentences you mark as known are skipped as new cards.", b_tab_saved: "Saved", b_tab_known: "Known", b_empty: "Nothing saved yet. Open any sentence, or translate your own, and tap Save to my phrasebook.", b_empty_known: "Nothing marked as known yet. Open a sentence you already know and tap I know this.", b_copy: "Copy as text", b_copied: "Copied", b_practice: "Practice these", l_tab_why: "Why it works", l_tab_day: "Your day", l_tab_rules: "Rules and roots", l_tab_read: "Reading list", l_day_lead: "When each kind of practice helps most, from morning coffee to bed.", l_rules_tip: "Open any word to see its parts and sound family, worked out from these rules.", l_read_lead: "Key books in language teaching, learning science and linguistic anthropology, plus research papers on arXiv.", now_morning: "Morning: review what's due. Sleep just locked in yesterday's words.", now_day: "Daytime: shadow a few sentences, or use one with the family.", now_evening: "Evening: a good time to learn new sentences.", now_night: "Before bed: a quick look at today's sentences, then sleep on it.", p_title: "Practice", p_lead: "Practicing {lang}. A few minutes a day, spaced out, beats long sessions.", p_due: "due today", p_new: "new today", p_learned: "learned", p_streak: "day streak", p_start: "Start today's session", p_start_d: "Recall, say it aloud, and listen, mixed together", p_listen: "Listening quiz", p_listen_d: "Hear a sentence and pick its meaning", p_tones: "Tone trainer", p_tones_d: "Hear a syllable and pick its pitch", p_newper: "New sentences per day", p_why: "How this works", p_nothing: "Nothing is due right now. Come back later, or raise new sentences per day.", p_back: "Back", p_newtag: "New", p_say: "Say it out loud in {lang}, then tap Show. Guess if you're not sure.", p_reveal: "Show", p_again: "Again", p_hard: "Hard", p_good: "Good", p_easy: "Easy", p_rate: "How well did you remember it?", p_listen_q: "Listen to the {lang} and pick what it means.", p_play: "Play", p_right: "Right!", p_wrong: "Not quite.", p_next: "Next", p_shadow: "Shadow 3×", p_your_turn: "Your turn ({n}/3)", p_done: "{n} cards reviewed", p_done_pct: "{p}% remembered", p_sleep: "Come back tomorrow: sleep helps new words settle into long-term memory.", p_after: "{d} still due · {s}-day streak", p_tone_q: "Listen to one syllable. Which pitch shape is it?", p_tone_done: "Keep going: ears learn tones from many different examples.", p_cta: "{d} due · {n} new · {s}-day streak", p_add: "Add to practice", p_added: "In practice ✓", hooks_h: "Memory hooks", myhook: "Your own hook", myhook_ph: "Write a sound-alike, image or story that helps you. Hooks you make yourself stick best.", l_title: "How Polylang helps you learn", l_lead: "What memory research says works for adults learning a new language, and how this app uses it.", l_inapp: "In Polylang:", l_routine_h: "A good daily routine", learn_btn: "How to learn with Polylang", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Learn any language, word by word.",
+      _name: "English", _lang: "en", all_topics: "All topics", pick_topic: "Pick a topic to begin.", tab_learn: "Learn", tab_book: "Phrasebook", tab_rec: "Record", tab_nav: "Main sections", today: "Today", today_start: "Start", today_continue: "Continue", p_learning: "Practicing", p_sum_new: "{n} new sentences", p_sum_due: "{n} to review", p_sum_done: "All done for today", p_sum_progress: "{l} sentences learned \u00b7 {s}-day streak", cmp_all: "Compare all languages", cmp_one: "Show only {lang}", su_title: "Welcome to Polylang", su_q1: "What do you want to learn?", su_q1_hint: "Pick one or more. You can change this later under Display.", su_q3: "App language", su_go: "Start learning", su_skip: "Skip", su_again: "Run setup again", r_langs_sum: "Languages people might speak", r_gist_title: "Right now", r_unclear: "(unclear — too garbled to translate)", r_digest_working: "Digesting this conversation for a cleaner version…", r_digest_show_live: "Show as heard live", r_digest_show_digest: "Show digested version", r_digest_note: "Digested: re-listened carefully after the conversation, with speakers grouped and translations using the whole conversation.", r_digest_live_note: "As heard live, during the conversation.", r_speaker: "Speaker {n}", r_recap_short: "Recap", r_mark_short: "Mark", r_text_smaller: "Smaller text", r_text_larger: "Larger text", r_live_searching: "Connecting for live translation… (Tailscale needs to be on)", r_recovery_title: "Your recovery code", r_recovery_lead: "Save this code somewhere safe, like your notes or password manager. If you forget your password, it lets you set a new one. It's shown only once, and each code works once.", r_recovery_saved: "I saved it", r_recovery_new: "Get a new recovery code", r_recovery_reset_lead: "Enter your username, your recovery code and a new password. You'll get a fresh recovery code afterwards.", r_reset_trusted_lead: "Enter your username and a new password. Your other devices will be signed out.", r_acct_email: "Email", r_acct_email_ph: "you@example.com", r_acct_email_new: "Email (to reset your password if you forget it)", r_acct_email_why: "Add an email so you can reset your password if you forget it.", r_acct_save: "Save", r_acct_saved: "Saved.", r_acct_forgot: "Forgot password?", r_acct_new_here: "New here?", r_reset_lead: "Enter the email on your account. We'll send a 6-digit code.", r_reset_send: "Send code", r_reset_code: "6-digit code", r_reset_finish: "Set new password and sign in", r_keep_awake: "Keep this screen on and the phone plugged in. Locking the phone stops the recording.", r_recap: "Recap: what's being talked about", r_recap_busy: "Summarizing the conversation…", r_tune: "Tuning", r_tune_creative: "Suggestion style", r_tune_safe: "Safe & polite", r_tune_playful: "Warm & playful", r_tune_pause: "When a line ends", r_tune_fast: "Faster lines", r_tune_full: "Fuller sentences", r_tune_auto: "Suggest automatically", r_tune_auto_off: "Only when I tap", r_tune_auto_each: "After every line", r_tune_auto_three: "Every 3 lines", r_convo: "Conversation", r_convo_new: "New conversation", r_convo_saved: "Saved conversations", r_convo_lines: "{n} lines", r_convo_continue: "Keep recording this conversation", r_convo_empty: "Nothing has been said yet.", r_advanced: "Advanced", r_store_home: "Live conversations are saved automatically.", r_acct_title: "Your account", r_acct_guest: "Saving as a guest on this phone.", r_acct_as: "Signed in as {name}.", r_acct_sign_in: "Sign in", r_acct_manage: "Account", r_acct_sign_out: "Sign out", r_acct_create: "Create account", r_acct_user: "Username", r_acct_pass: "Password (8+ characters)", r_acct_why: "An account keeps your conversations if you change phones or clear this browser. Conversations you've already recorded here move into it.", r_convo_langs: "Languages people might speak (pick all that apply)", r_home_live: "Live translate", r_home_live_fail: "Couldn't start live translation. The recording is still going.", r_home_connecting: "Connecting…", r_home_reconnect: "Reconnecting… nothing said is lost.", r_home_busy_live: "Live translation is already running for another recording.", r_jump: "Jump to latest", r_suggest: "What could I say?", r_suggest_busy: "Thinking of things you could say…", r_suggest_wait: "Suggestions appear once a few lines have been heard.", r_unsure: "Speech engines weren't sure about this line.", r_alts: "Engines disagreed on the underlined parts. Tap one to switch.", r_engines: "Each engine", r_agree: "{n}% agreement", wk_btn: "Word origin", wk_h: "Origin · Wiktionary", wk_none: "Wiktionary has no origin notes for this word yet.", wk_fail: "Couldn't reach Wiktionary. Check your connection.", wk_more: "Open on Wiktionary", wk_lic: "Text: Wiktionary, CC BY-SA 4.0", tb_btn: "Real examples", tb_h: "Examples · Tatoeba", tb_none: "Tatoeba has no examples with this word yet.", tb_fail: "Couldn't reach Tatoeba. Check your connection.", tb_more: "More on Tatoeba", tb_lic: "Sentences: Tatoeba, CC BY 2.0 FR", rom_label: "Pronunciation lines", gt_h: "Google Translate", gt_set: "Google Translate key (optional)", gt_ph: "Paste your API key", gt_ok: "Working", gt_fail: "Google Translate didn't work: {msg}", gt_quota: "Today's Google Translate limit is used up. It resets at midnight Pacific time.", gt_help: "Typed sentences also get a Google Translate version. The key is saved only on this phone.", b_pdf: "Save as PDF", bk_anchor: "My memory anchor", bk_anchor_ph: "What does it sound like to you? e.g. happy → hoh hoy, like a jolly \"ho ho\"", fa: "Persian", apc: "Arabic", he: "Hebrew", tr: "Turkish", pt: "Portuguese", r_btn: "Record", r_title: "Recordings", r_lead: "Record family and friends talking, then go back through it slowly: mark moments, loop them, write down what you hear, and save clips to your phrasebook. Recordings stay on this phone.", r_consent: "Ask people before you record them.", r_who: "Who's talking?", r_who_ph: "Grandma, Uncle Wing…", r_lang: "Language", r_mixed: "Mixed", r_live: "Live captions (your phone's speech recognition, where available)", r_start: "Start recording", r_stop: "Stop", r_mark: "Mark this moment", r_marks: "{n} marks", r_none: "No recordings yet.", r_back: "All recordings", r_said: "What they said", r_said_ph: "Characters, romanization or just the sounds", r_mean: "What it means", r_mean_ph: "Your best guess, or ask them later", r_loop: "Loop", r_clip_save: "Save clip to my phrasebook", r_clip_saved: "In my phrasebook", r_lines: "Transcript", r_gloss_note: "Rough word-by-word meaning from Polylang's dictionary.", r_share: "Save or share the file", r_delete: "Delete", r_delete_sure: "Tap again to delete", r_home: "Transcribe this recording", r_home_set: "Connection (optional)", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "Test", r_home_ok: "Connected", r_home_fail: "Couldn't connect. Check that Tailscale is on, then try again.", r_home_busy: "Transcribing…", r_mic_fail: "Couldn't use the microphone here. Open Polylang from its website or Home Screen icon and allow the microphone.", r_live_fail: "Live captions aren't available here. The recording is still going.", r_store: "Recordings are saved in this browser. Add Polylang to your Home Screen so the iPhone keeps them, and save important ones to Files.", r_rec: "Recording", r_tsn_note: "No speech engine knows Taishanese yet, so captions use Cantonese, the closest. Your notes on these recordings could become the training data for one.", b_btn: "My phrasebook", b_save: "Save to my phrasebook", bk_saved: "In my phrasebook", b_know: "I know this", b_known: "Known", b_title: "My phrasebook", b_lead: "The sentences you actually need, in one place. Saved sentences go into Practice first. Sentences you mark as known are skipped as new cards.", b_tab_saved: "Saved", b_tab_known: "Known", b_empty: "Nothing saved yet. Open any sentence, or translate your own, and tap Save to my phrasebook.", b_empty_known: "Nothing marked as known yet. Open a sentence you already know and tap I know this.", b_copy: "Copy as text", b_copied: "Copied", b_practice: "Practice these", l_tab_why: "Why it works", l_tab_day: "Your day", l_tab_rules: "Rules and roots", l_tab_read: "Reading list", l_day_lead: "When each kind of practice helps most, from morning coffee to bed.", l_rules_tip: "Open any word to see its parts and sound family, worked out from these rules.", l_read_lead: "Key books in language teaching, learning science and linguistic anthropology, plus research papers on arXiv.", now_morning: "Morning: review what's due. Sleep just locked in yesterday's words.", now_day: "Daytime: shadow a few sentences, or use one with the family.", now_evening: "Evening: a good time to learn new sentences.", now_night: "Before bed: a quick look at today's sentences, then sleep on it.", p_title: "Practice", p_lead: "Practicing {lang}. A few minutes a day, spaced out, beats long sessions.", p_due: "due today", p_new: "new today", p_learned: "learned", p_streak: "day streak", p_start: "Start today's session", p_start_d: "Recall, say it aloud, and listen, mixed together", p_listen: "Listening quiz", p_listen_d: "Hear a sentence and pick its meaning", p_tones: "Tone trainer", p_tones_d: "Hear a syllable and pick its pitch", p_newper: "New sentences per day", p_why: "How this works", p_nothing: "Nothing is due right now. Come back later, or raise new sentences per day.", p_back: "Back", p_newtag: "New", p_say: "Say it out loud in {lang}, then tap Show. Guess if you're not sure.", p_reveal: "Show", p_again: "Again", p_hard: "Hard", p_good: "Good", p_easy: "Easy", p_rate: "How well did you remember it?", p_listen_q: "Listen to the {lang} and pick what it means.", p_play: "Play", p_right: "Right!", p_wrong: "Not quite.", p_next: "Next", p_shadow: "Shadow 3×", p_your_turn: "Your turn ({n}/3)", p_done: "{n} cards reviewed", p_done_pct: "{p}% remembered", p_sleep: "Come back tomorrow: sleep helps new words settle into long-term memory.", p_after: "{d} still due · {s}-day streak", p_tone_q: "Listen to one syllable. Which pitch shape is it?", p_tone_done: "Keep going: ears learn tones from many different examples.", p_cta: "{d} due · {n} new · {s}-day streak", p_add: "Add to practice", p_added: "In practice ✓", hooks_h: "Memory hooks", myhook: "Your own hook", myhook_ph: "Write a sound-alike, image or story that helps you. Hooks you make yourself stick best.", l_title: "How Polylang helps you learn", l_lead: "What memory research says works for adults learning a new language, and how this app uses it.", l_inapp: "In Polylang:", l_routine_h: "A good daily routine", learn_btn: "How to learn with Polylang", full_title: "Full sentence", show_big: "Show it big", c_head: "Natural build", c_note: "Built from the sentence's structure (who, does what, when, where), then put in each language's own word order with its grammar words. Check it with a native speaker, and compare with the closest saved sentences.", tagline: "Learn any language, word by word.",
       app_title: "Polylang", wbw: "Word by word",
       sub: "{n} everyday sentences, word by word, in up to seven languages.",
       search_ph: "Type any sentence or search", search_aria: "Type any English sentence, or search the guide",
-      translate: "Translate", view: "View", ui_lang: "App language", langs_aria: "Languages to show",
+      translate: "Translate", view: "Display", ui_lang: "App language", langs_aria: "Languages to show",
       show: "Show", tone_numbers: "Tone numbers", guide_btn: "Tone and reading guide", sound: "Sound", speak_tap: "Speak words when tapped",
       theme: "Theme", skin_paper: "Paper (white)", skin_cream: "Cream", skin_mist: "Mist (soft gray)", skin_dusk: "Dusk (dim)", skin_charcoal: "Charcoal (dark)", skin_night: "Night (black)",
       notes_spelling: "Notes spelling", sp_easy: "Easy English", sp_std: "Standard (Jyutping, pinyin, Stephen Li)",
@@ -1368,7 +1430,7 @@
     },
 
     yue: {
-      _name: "廣東話", _lang: "zh-HK", r_gist_title: "而家傾緊", r_unclear: "（聽唔清楚）", r_digest_working: "整理緊呢段對話，等陣會有更清楚嘅版本…", r_digest_show_live: "睇即時版本", r_digest_show_digest: "睇整理好嘅版本", r_digest_note: "整理版：對話之後再仔細聽過，分好講者，翻譯參考成段對話。", r_digest_live_note: "即時版：對話期間聽到嘅。", r_speaker: "講者 {n}", r_recap_short: "重溫", r_mark_short: "標記", r_text_smaller: "細啲字", r_text_larger: "大啲字", r_live_searching: "連接緊即時翻譯…（要開住 Tailscale）", r_recovery_title: "你嘅救援碼", r_recovery_lead: "將呢個碼存喺安全地方，例如備忘錄或者密碼管理器。唔記得密碼時可以用佢設定新密碼。只會顯示一次，每個碼用一次。", r_recovery_saved: "我存好咗", r_recovery_new: "攞個新救援碼", r_recovery_reset_lead: "輸入用戶名、救援碼同新密碼。之後會俾你一個新嘅救援碼。", r_reset_trusted_lead: "輸入你嘅用戶名同新密碼。其他裝置會登出。", r_acct_email: "電郵", r_acct_email_ph: "you@example.com", r_acct_email_new: "電郵（唔記得密碼時用嚟重設）", r_acct_email_why: "加個電郵，唔記得密碼都可以重設。", r_acct_save: "儲存", r_acct_saved: "已儲存。", r_acct_forgot: "唔記得密碼？", r_acct_new_here: "第一次用？", r_reset_lead: "輸入帳戶嘅電郵，我哋會寄個6位數字碼俾你。", r_reset_send: "寄密碼碼", r_reset_code: "6位數字碼", r_reset_finish: "設定新密碼並登入", r_keep_awake: "保持螢幕亮住，電話插住電。鎖機會令錄音停。", r_recap: "重溫：大家講緊乜", r_recap_busy: "整理緊對話…", r_tune: "調整", r_tune_creative: "建議風格", r_tune_safe: "穩陣有禮", r_tune_playful: "親切活潑", r_tune_pause: "幾時當一句講完", r_tune_fast: "快啲出", r_tune_full: "等句子完整", r_tune_auto: "自動建議", r_tune_auto_off: "我撳先出", r_tune_auto_each: "每句之後", r_tune_auto_three: "每三句", r_convo: "對話", r_convo_new: "新對話", r_convo_saved: "已儲存嘅對話", r_convo_lines: "{n} 句", r_convo_continue: "繼續錄呢段對話", r_convo_empty: "暫時未有人講嘢。", r_advanced: "進階", r_store_home: "即時對話會自動儲存。", r_acct_title: "你嘅帳戶", r_acct_guest: "以訪客身份存喺呢部電話。", r_acct_as: "已登入：{name}。", r_acct_sign_in: "登入", r_acct_manage: "帳戶", r_acct_sign_out: "登出", r_acct_create: "開帳戶", r_acct_user: "用戶名", r_acct_pass: "密碼（最少8個字）", r_acct_why: "有帳戶就算換電話或者清咗瀏覽器，對話都唔會冇。之前喺呢度錄嘅對話會搬入帳戶。", r_convo_langs: "可能講嘅語言（可以揀幾種）", r_home_live: "即時翻譯", r_home_live_fail: "開唔到即時翻譯，錄音照繼續。", r_home_connecting: "連接緊…", r_home_reconnect: "重新連接緊…講過嘅嘢唔會漏。", r_home_busy_live: "另一段錄音而家用緊即時翻譯。", r_jump: "跳去最新", r_suggest: "我可以講乜？", r_suggest_busy: "諗緊你可以講啲乜…", r_suggest_wait: "聽多幾句之後就會有建議。", r_unsure: "語音引擎對呢句唔太肯定。", r_alts: "有底線嘅地方各個引擎唔一致，撳一下可以轉。", r_engines: "每個引擎", r_agree: "{n}% 一致", wk_btn: "字源", wk_h: "字源 · Wiktionary", wk_none: "Wiktionary 暫時未有呢個字嘅來源。", wk_fail: "連唔到 Wiktionary，睇下網絡。", wk_more: "喺 Wiktionary 打開", wk_lic: "內容：Wiktionary，CC BY-SA 4.0", tb_btn: "真實例句", tb_h: "例句 · Tatoeba", tb_none: "Tatoeba 暫時未有用呢個字嘅例句。", tb_fail: "連唔到 Tatoeba，睇下網絡。", tb_more: "喺 Tatoeba 睇多啲", tb_lic: "例句：Tatoeba，CC BY 2.0 FR", rom_label: "讀音行", gt_h: "Google 翻譯", gt_set: "Google 翻譯金鑰（可選）", gt_ph: "貼上你嘅 API 金鑰", gt_ok: "用得", gt_fail: "Google 翻譯用唔到：{msg}", gt_quota: "今日嘅 Google 翻譯限額用晒，太平洋時間半夜重設。", gt_help: "你打嘅句子都會有 Google 翻譯版本。金鑰只會儲喺呢部手機。", b_pdf: "儲存做 PDF", bk_anchor: "我嘅記憶錨", bk_anchor_ph: "你覺得似乜嘢？例如：開心 → hoh hoy，好似開心咁「呵呵」", fa: "波斯文", apc: "阿拉伯文", he: "希伯來文", tr: "土耳其文", pt: "葡萄牙文", r_btn: "錄音", r_title: "錄音", r_lead: "錄低屋企人同朋友傾偈，之後慢慢再聽：標記重點、重複播放、寫低聽到嘅嘢，再將片段儲落短語簿。錄音只會留喺呢部手機。", r_consent: "錄之前問吓人哋先。", r_who: "邊個講緊？", r_who_ph: "婆婆、榮叔…", r_lang: "語言", r_mixed: "混合", r_live: "即時字幕（用手機嘅語音辨識，如果有）", r_start: "開始錄音", r_stop: "停", r_mark: "標記呢一刻", r_marks: "{n} 個標記", r_none: "仲未有錄音。", r_back: "全部錄音", r_said: "佢哋講咗咩", r_said_ph: "漢字、拼音或者淨係啲音", r_mean: "係咩意思", r_mean_ph: "估吓，或者遲啲問佢哋", r_loop: "重複", r_clip_save: "將片段儲落短語簿", r_clip_saved: "喺短語簿", r_lines: "文字稿", r_gloss_note: "用 Polylang 字典逐個字大概翻譯。", r_share: "儲存或分享檔案", r_delete: "刪除", r_delete_sure: "再撳一次就刪除", r_home: "將呢段錄音轉做文字", r_home_set: "連接（可選）", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "測試", r_home_ok: "已連線", r_home_fail: "連唔到。睇下 Tailscale 有冇開，再試一次。", r_home_busy: "轉緊文字…", r_mic_fail: "呢度用唔到咪。由網站或者主畫面圖示打開 Polylang，再允許使用咪。", r_live_fail: "呢度用唔到即時字幕，錄音照錄緊。", r_store: "錄音儲喺呢個瀏覽器。將 Polylang 加到主畫面，iPhone 先會一直保留，重要嘅記得儲去「檔案」。", r_rec: "錄緊音", r_tsn_note: "暫時冇語音引擎識台山話，所以字幕用最接近嘅廣東話。你對呢啲錄音嘅筆記，將來可以用嚟訓練一個。", b_btn: "我嘅短語簿", b_save: "加入我嘅短語簿", bk_saved: "喺短語簿", b_know: "我識呢句", b_known: "識咗", b_title: "我嘅短語簿", b_lead: "你真係用得著嘅句子，全部放埋一齊。儲咗嘅句子練習時會先出。標咗識嘅句子唔會當新句再出。", b_tab_saved: "已儲", b_tab_known: "識咗", b_empty: "仲未儲任何句子。打開一句，或者翻譯你自己嘅句子，撳「加入我嘅短語簿」。", b_empty_known: "仲未標任何句子做識咗。打開一句你已經識嘅，撳「我識呢句」。", b_copy: "複製成文字", b_copied: "複製咗", b_practice: "練習呢啲", l_tab_why: "點解有效", l_tab_day: "你嘅一日", l_tab_rules: "規則同字源", l_tab_read: "閱讀清單", l_day_lead: "由朝早飲咖啡到瞓覺，每種練習幾時最有用。", l_rules_tip: "打開任何一個字，就會睇到佢嘅部件同聲音家族。", l_read_lead: "語言教學、學習科學同語言人類學嘅重要書籍，仲有 arXiv 上嘅研究論文。", now_morning: "朝早：溫返要溫嘅。瞓完覺，琴日啲字啱啱記牢咗。", now_day: "日頭：跟讀幾句，或者同屋企人用一句。", now_evening: "夜晚：學新句嘅好時間。", now_night: "瞓覺前：睇一睇今日啲句子，然後瞓覺。", p_title: "練習", p_lead: "練緊{lang}。每日幾分鐘、分開幾次，好過一次過練好耐。", p_due: "今日要溫", p_new: "今日新句", p_learned: "學咗", p_streak: "連續日數", p_start: "開始今日練習", p_start_d: "諗、讀出聲、聽，混埋一齊", p_listen: "聽力測驗", p_listen_d: "聽一句，揀返意思", p_tones: "聲調訓練", p_tones_d: "聽一個音，揀佢嘅聲調", p_newper: "每日新句數量", p_why: "點解有效", p_nothing: "而家冇嘢要溫。遲啲再嚟，或者加多啲每日新句。", p_back: "返回", p_newtag: "新", p_say: "用{lang}讀出聲，然後撳「顯示」。唔肯定都估吓。", p_reveal: "顯示", p_again: "再嚟", p_hard: "難", p_good: "好", p_easy: "易", p_rate: "你記得幾清楚？", p_listen_q: "聽{lang}，揀返意思。", p_play: "播放", p_right: "啱！", p_wrong: "唔係咁啱。", p_next: "下一個", p_shadow: "跟讀 3 次", p_your_turn: "到你（{n}/3）", p_done: "溫咗 {n} 張卡", p_done_pct: "記得 {p}%", p_sleep: "聽日再嚟：瞓覺幫新字記得牢。", p_after: "仲有 {d} 個要溫 · 連續 {s} 日", p_tone_q: "聽一個音。佢係邊個聲調？", p_tone_done: "繼續：耳仔要聽好多唔同例子先學得識聲調。", p_cta: "{d} 要溫 · {n} 新 · 連續 {s} 日", p_add: "加入練習", p_added: "練習中 ✓", hooks_h: "記憶小貼士", myhook: "你自己嘅記法", myhook_ph: "寫低諧音、畫面或者小故事。自己諗嘅記法最記得。", l_title: "Polylang 點樣幫你學", l_lead: "記憶研究話成人學新語言咩方法有效，同埋呢個 app 點用。", l_inapp: "喺 Polylang：", l_routine_h: "每日好習慣", learn_btn: "點樣用 Polylang 學", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
+      _name: "廣東話", _lang: "zh-HK", all_topics: "全部主題", pick_topic: "揀個主題開始。", tab_learn: "學習", tab_book: "短語簿", tab_rec: "錄音", tab_nav: "主要部分", today: "今日", today_start: "開始", today_continue: "繼續", p_learning: "練習緊", p_sum_new: "{n} 句新句子", p_sum_due: "{n} 句要溫習", p_sum_done: "今日做晒喇", p_sum_progress: "學咗 {l} 句 \u00b7 連續 {s} 日", cmp_all: "比較所有語言", cmp_one: "淨係睇{lang}", su_title: "歡迎嚟到 Polylang", su_q1: "你想學邊種話？", su_q1_hint: "揀一種或者多種，之後可以喺「顯示」度改。", su_q3: "介面語言", su_go: "開始學習", su_skip: "略過", su_again: "再設定一次", r_langs_sum: "大家可能講嘅語言", r_gist_title: "而家傾緊", r_unclear: "（聽唔清楚）", r_digest_working: "整理緊呢段對話，等陣會有更清楚嘅版本…", r_digest_show_live: "睇即時版本", r_digest_show_digest: "睇整理好嘅版本", r_digest_note: "整理版：對話之後再仔細聽過，分好講者，翻譯參考成段對話。", r_digest_live_note: "即時版：對話期間聽到嘅。", r_speaker: "講者 {n}", r_recap_short: "重溫", r_mark_short: "標記", r_text_smaller: "細啲字", r_text_larger: "大啲字", r_live_searching: "連接緊即時翻譯…（要開住 Tailscale）", r_recovery_title: "你嘅救援碼", r_recovery_lead: "將呢個碼存喺安全地方，例如備忘錄或者密碼管理器。唔記得密碼時可以用佢設定新密碼。只會顯示一次，每個碼用一次。", r_recovery_saved: "我存好咗", r_recovery_new: "攞個新救援碼", r_recovery_reset_lead: "輸入用戶名、救援碼同新密碼。之後會俾你一個新嘅救援碼。", r_reset_trusted_lead: "輸入你嘅用戶名同新密碼。其他裝置會登出。", r_acct_email: "電郵", r_acct_email_ph: "you@example.com", r_acct_email_new: "電郵（唔記得密碼時用嚟重設）", r_acct_email_why: "加個電郵，唔記得密碼都可以重設。", r_acct_save: "儲存", r_acct_saved: "已儲存。", r_acct_forgot: "唔記得密碼？", r_acct_new_here: "第一次用？", r_reset_lead: "輸入帳戶嘅電郵，我哋會寄個6位數字碼俾你。", r_reset_send: "寄密碼碼", r_reset_code: "6位數字碼", r_reset_finish: "設定新密碼並登入", r_keep_awake: "保持螢幕亮住，電話插住電。鎖機會令錄音停。", r_recap: "重溫：大家講緊乜", r_recap_busy: "整理緊對話…", r_tune: "調整", r_tune_creative: "建議風格", r_tune_safe: "穩陣有禮", r_tune_playful: "親切活潑", r_tune_pause: "幾時當一句講完", r_tune_fast: "快啲出", r_tune_full: "等句子完整", r_tune_auto: "自動建議", r_tune_auto_off: "我撳先出", r_tune_auto_each: "每句之後", r_tune_auto_three: "每三句", r_convo: "對話", r_convo_new: "新對話", r_convo_saved: "已儲存嘅對話", r_convo_lines: "{n} 句", r_convo_continue: "繼續錄呢段對話", r_convo_empty: "暫時未有人講嘢。", r_advanced: "進階", r_store_home: "即時對話會自動儲存。", r_acct_title: "你嘅帳戶", r_acct_guest: "以訪客身份存喺呢部電話。", r_acct_as: "已登入：{name}。", r_acct_sign_in: "登入", r_acct_manage: "帳戶", r_acct_sign_out: "登出", r_acct_create: "開帳戶", r_acct_user: "用戶名", r_acct_pass: "密碼（最少8個字）", r_acct_why: "有帳戶就算換電話或者清咗瀏覽器，對話都唔會冇。之前喺呢度錄嘅對話會搬入帳戶。", r_convo_langs: "可能講嘅語言（可以揀幾種）", r_home_live: "即時翻譯", r_home_live_fail: "開唔到即時翻譯，錄音照繼續。", r_home_connecting: "連接緊…", r_home_reconnect: "重新連接緊…講過嘅嘢唔會漏。", r_home_busy_live: "另一段錄音而家用緊即時翻譯。", r_jump: "跳去最新", r_suggest: "我可以講乜？", r_suggest_busy: "諗緊你可以講啲乜…", r_suggest_wait: "聽多幾句之後就會有建議。", r_unsure: "語音引擎對呢句唔太肯定。", r_alts: "有底線嘅地方各個引擎唔一致，撳一下可以轉。", r_engines: "每個引擎", r_agree: "{n}% 一致", wk_btn: "字源", wk_h: "字源 · Wiktionary", wk_none: "Wiktionary 暫時未有呢個字嘅來源。", wk_fail: "連唔到 Wiktionary，睇下網絡。", wk_more: "喺 Wiktionary 打開", wk_lic: "內容：Wiktionary，CC BY-SA 4.0", tb_btn: "真實例句", tb_h: "例句 · Tatoeba", tb_none: "Tatoeba 暫時未有用呢個字嘅例句。", tb_fail: "連唔到 Tatoeba，睇下網絡。", tb_more: "喺 Tatoeba 睇多啲", tb_lic: "例句：Tatoeba，CC BY 2.0 FR", rom_label: "讀音行", gt_h: "Google 翻譯", gt_set: "Google 翻譯金鑰（可選）", gt_ph: "貼上你嘅 API 金鑰", gt_ok: "用得", gt_fail: "Google 翻譯用唔到：{msg}", gt_quota: "今日嘅 Google 翻譯限額用晒，太平洋時間半夜重設。", gt_help: "你打嘅句子都會有 Google 翻譯版本。金鑰只會儲喺呢部手機。", b_pdf: "儲存做 PDF", bk_anchor: "我嘅記憶錨", bk_anchor_ph: "你覺得似乜嘢？例如：開心 → hoh hoy，好似開心咁「呵呵」", fa: "波斯文", apc: "阿拉伯文", he: "希伯來文", tr: "土耳其文", pt: "葡萄牙文", r_btn: "錄音", r_title: "錄音", r_lead: "錄低屋企人同朋友傾偈，之後慢慢再聽：標記重點、重複播放、寫低聽到嘅嘢，再將片段儲落短語簿。錄音只會留喺呢部手機。", r_consent: "錄之前問吓人哋先。", r_who: "邊個講緊？", r_who_ph: "婆婆、榮叔…", r_lang: "語言", r_mixed: "混合", r_live: "即時字幕（用手機嘅語音辨識，如果有）", r_start: "開始錄音", r_stop: "停", r_mark: "標記呢一刻", r_marks: "{n} 個標記", r_none: "仲未有錄音。", r_back: "全部錄音", r_said: "佢哋講咗咩", r_said_ph: "漢字、拼音或者淨係啲音", r_mean: "係咩意思", r_mean_ph: "估吓，或者遲啲問佢哋", r_loop: "重複", r_clip_save: "將片段儲落短語簿", r_clip_saved: "喺短語簿", r_lines: "文字稿", r_gloss_note: "用 Polylang 字典逐個字大概翻譯。", r_share: "儲存或分享檔案", r_delete: "刪除", r_delete_sure: "再撳一次就刪除", r_home: "將呢段錄音轉做文字", r_home_set: "連接（可選）", r_home_ph: "https://your-pc.your-tailnet.ts.net", r_home_test: "測試", r_home_ok: "已連線", r_home_fail: "連唔到。睇下 Tailscale 有冇開，再試一次。", r_home_busy: "轉緊文字…", r_mic_fail: "呢度用唔到咪。由網站或者主畫面圖示打開 Polylang，再允許使用咪。", r_live_fail: "呢度用唔到即時字幕，錄音照錄緊。", r_store: "錄音儲喺呢個瀏覽器。將 Polylang 加到主畫面，iPhone 先會一直保留，重要嘅記得儲去「檔案」。", r_rec: "錄緊音", r_tsn_note: "暫時冇語音引擎識台山話，所以字幕用最接近嘅廣東話。你對呢啲錄音嘅筆記，將來可以用嚟訓練一個。", b_btn: "我嘅短語簿", b_save: "加入我嘅短語簿", bk_saved: "喺短語簿", b_know: "我識呢句", b_known: "識咗", b_title: "我嘅短語簿", b_lead: "你真係用得著嘅句子，全部放埋一齊。儲咗嘅句子練習時會先出。標咗識嘅句子唔會當新句再出。", b_tab_saved: "已儲", b_tab_known: "識咗", b_empty: "仲未儲任何句子。打開一句，或者翻譯你自己嘅句子，撳「加入我嘅短語簿」。", b_empty_known: "仲未標任何句子做識咗。打開一句你已經識嘅，撳「我識呢句」。", b_copy: "複製成文字", b_copied: "複製咗", b_practice: "練習呢啲", l_tab_why: "點解有效", l_tab_day: "你嘅一日", l_tab_rules: "規則同字源", l_tab_read: "閱讀清單", l_day_lead: "由朝早飲咖啡到瞓覺，每種練習幾時最有用。", l_rules_tip: "打開任何一個字，就會睇到佢嘅部件同聲音家族。", l_read_lead: "語言教學、學習科學同語言人類學嘅重要書籍，仲有 arXiv 上嘅研究論文。", now_morning: "朝早：溫返要溫嘅。瞓完覺，琴日啲字啱啱記牢咗。", now_day: "日頭：跟讀幾句，或者同屋企人用一句。", now_evening: "夜晚：學新句嘅好時間。", now_night: "瞓覺前：睇一睇今日啲句子，然後瞓覺。", p_title: "練習", p_lead: "練緊{lang}。每日幾分鐘、分開幾次，好過一次過練好耐。", p_due: "今日要溫", p_new: "今日新句", p_learned: "學咗", p_streak: "連續日數", p_start: "開始今日練習", p_start_d: "諗、讀出聲、聽，混埋一齊", p_listen: "聽力測驗", p_listen_d: "聽一句，揀返意思", p_tones: "聲調訓練", p_tones_d: "聽一個音，揀佢嘅聲調", p_newper: "每日新句數量", p_why: "點解有效", p_nothing: "而家冇嘢要溫。遲啲再嚟，或者加多啲每日新句。", p_back: "返回", p_newtag: "新", p_say: "用{lang}讀出聲，然後撳「顯示」。唔肯定都估吓。", p_reveal: "顯示", p_again: "再嚟", p_hard: "難", p_good: "好", p_easy: "易", p_rate: "你記得幾清楚？", p_listen_q: "聽{lang}，揀返意思。", p_play: "播放", p_right: "啱！", p_wrong: "唔係咁啱。", p_next: "下一個", p_shadow: "跟讀 3 次", p_your_turn: "到你（{n}/3）", p_done: "溫咗 {n} 張卡", p_done_pct: "記得 {p}%", p_sleep: "聽日再嚟：瞓覺幫新字記得牢。", p_after: "仲有 {d} 個要溫 · 連續 {s} 日", p_tone_q: "聽一個音。佢係邊個聲調？", p_tone_done: "繼續：耳仔要聽好多唔同例子先學得識聲調。", p_cta: "{d} 要溫 · {n} 新 · 連續 {s} 日", p_add: "加入練習", p_added: "練習中 ✓", hooks_h: "記憶小貼士", myhook: "你自己嘅記法", myhook_ph: "寫低諧音、畫面或者小故事。自己諗嘅記法最記得。", l_title: "Polylang 點樣幫你學", l_lead: "記憶研究話成人學新語言咩方法有效，同埋呢個 app 點用。", l_inapp: "喺 Polylang：", l_routine_h: "每日好習慣", learn_btn: "點樣用 Polylang 學", full_title: "成句", show_big: "放大顯示", c_head: "自然句子", c_note: "按句子結構（邊個、做乜、幾時、喺邊）砌，再跟每種語言嘅語法排好。最好問吓母語人士，同埋比較最相似嘅儲存句子。", tagline: "逐個字，真正識一種語言。",
       app_title: "Polylang", wbw: "逐個字",
       sub: "{n} 句日常句子，逐個字拆開，最多七種語言。",
       search_ph: "打任何一句或者搜尋", search_aria: "打一句英文，或者喺指南入面搜尋",
@@ -1455,7 +1517,7 @@
   };
 
   UI.tsn = Object.assign({}, UI.yue, {
-    _name: "台山話", _lang: "zh-HK", r_gist_title: "而家傾緊", r_unclear: "（聽唔清楚）", r_digest_working: "整理緊呢段對話，等陣會有更清楚嘅版本…", r_digest_show_live: "睇即時版本", r_digest_show_digest: "睇整理好嘅版本", r_digest_note: "整理版：對話之後再仔細聽過，分好講者，翻譯參考成段對話。", r_digest_live_note: "即時版：對話期間聽到嘅。", r_speaker: "講者 {n}", r_recap_short: "重溫", r_mark_short: "標記", r_text_smaller: "細啲字", r_text_larger: "大啲字", r_live_searching: "連接緊即時翻譯…（要開住 Tailscale）", r_recovery_title: "你嘅救援碼", r_recovery_lead: "將呢個碼存喺安全地方，例如備忘錄或者密碼管理器。唔記得密碼時可以用佢設定新密碼。只會顯示一次，每個碼用一次。", r_recovery_saved: "我存好咗", r_recovery_new: "攞個新救援碼", r_recovery_reset_lead: "輸入用戶名、救援碼同新密碼。之後會俾你一個新嘅救援碼。", r_reset_trusted_lead: "輸入你嘅用戶名同新密碼。其他裝置會登出。", r_acct_email: "電郵", r_acct_email_ph: "you@example.com", r_acct_email_new: "電郵（唔記得密碼時用嚟重設）", r_acct_email_why: "加個電郵，唔記得密碼都可以重設。", r_acct_save: "儲存", r_acct_saved: "已儲存。", r_acct_forgot: "唔記得密碼？", r_acct_new_here: "第一次用？", r_reset_lead: "輸入帳戶嘅電郵，我哋會寄個6位數字碼俾你。", r_reset_send: "寄密碼碼", r_reset_code: "6位數字碼", r_reset_finish: "設定新密碼並登入", r_keep_awake: "保持螢幕亮住，電話插住電。鎖機會令錄音停。", r_recap: "重溫：大家講緊乜", r_recap_busy: "整理緊對話…", r_tune: "調整", r_tune_creative: "建議風格", r_tune_safe: "穩陣有禮", r_tune_playful: "親切活潑", r_tune_pause: "幾時當一句講完", r_tune_fast: "快啲出", r_tune_full: "等句子完整", r_tune_auto: "自動建議", r_tune_auto_off: "我撳先出", r_tune_auto_each: "每句之後", r_tune_auto_three: "每三句", r_convo: "對話", r_convo_new: "新對話", r_convo_saved: "已儲存嘅對話", r_convo_lines: "{n} 句", r_convo_continue: "繼續錄呢段對話", r_convo_empty: "暫時未有人講嘢。", r_advanced: "進階", r_store_home: "即時對話會自動儲存。", r_acct_title: "你嘅帳戶", r_acct_guest: "以訪客身份存喺呢部電話。", r_acct_as: "已登入：{name}。", r_acct_sign_in: "登入", r_acct_manage: "帳戶", r_acct_sign_out: "登出", r_acct_create: "開帳戶", r_acct_user: "用戶名", r_acct_pass: "密碼（最少8個字）", r_acct_why: "有帳戶就算換電話或者清咗瀏覽器，對話都唔會冇。之前喺呢度錄嘅對話會搬入帳戶。", r_convo_langs: "可能講嘅語言（可以揀幾種）", r_home_live: "即時翻譯", r_home_live_fail: "開唔到即時翻譯，錄音照繼續。", r_home_connecting: "連接緊…", r_home_reconnect: "重新連接緊…講過嘅嘢唔會漏。", r_home_busy_live: "另一段錄音而家用緊即時翻譯。", r_jump: "跳去最新", r_suggest: "我可以講乜？", r_suggest_busy: "諗緊你可以講啲乜…", r_suggest_wait: "聽多幾句之後就會有建議。", r_unsure: "語音引擎對呢句唔太肯定。", r_alts: "有底線嘅地方各個引擎唔一致，撳一下可以轉。", r_engines: "每個引擎", r_agree: "{n}% 一致",
+    _name: "台山話", _lang: "zh-HK", all_topics: "全部主題", pick_topic: "揀個主題開始。", tab_learn: "學習", tab_book: "短語簿", tab_rec: "錄音", tab_nav: "主要部分", today: "今日", today_start: "開始", today_continue: "繼續", p_learning: "練習緊", p_sum_new: "{n} 句新句子", p_sum_due: "{n} 句要溫習", p_sum_done: "今日做晒喇", p_sum_progress: "學咗 {l} 句 \u00b7 連續 {s} 日", cmp_all: "比較所有語言", cmp_one: "淨係睇{lang}", su_title: "歡迎嚟到 Polylang", su_q1: "你想學邊種話？", su_q1_hint: "揀一種或者多種，之後可以喺「顯示」度改。", su_q3: "介面語言", su_go: "開始學習", su_skip: "略過", su_again: "再設定一次", r_langs_sum: "大家可能講嘅語言", r_gist_title: "而家傾緊", r_unclear: "（聽唔清楚）", r_digest_working: "整理緊呢段對話，等陣會有更清楚嘅版本…", r_digest_show_live: "睇即時版本", r_digest_show_digest: "睇整理好嘅版本", r_digest_note: "整理版：對話之後再仔細聽過，分好講者，翻譯參考成段對話。", r_digest_live_note: "即時版：對話期間聽到嘅。", r_speaker: "講者 {n}", r_recap_short: "重溫", r_mark_short: "標記", r_text_smaller: "細啲字", r_text_larger: "大啲字", r_live_searching: "連接緊即時翻譯…（要開住 Tailscale）", r_recovery_title: "你嘅救援碼", r_recovery_lead: "將呢個碼存喺安全地方，例如備忘錄或者密碼管理器。唔記得密碼時可以用佢設定新密碼。只會顯示一次，每個碼用一次。", r_recovery_saved: "我存好咗", r_recovery_new: "攞個新救援碼", r_recovery_reset_lead: "輸入用戶名、救援碼同新密碼。之後會俾你一個新嘅救援碼。", r_reset_trusted_lead: "輸入你嘅用戶名同新密碼。其他裝置會登出。", r_acct_email: "電郵", r_acct_email_ph: "you@example.com", r_acct_email_new: "電郵（唔記得密碼時用嚟重設）", r_acct_email_why: "加個電郵，唔記得密碼都可以重設。", r_acct_save: "儲存", r_acct_saved: "已儲存。", r_acct_forgot: "唔記得密碼？", r_acct_new_here: "第一次用？", r_reset_lead: "輸入帳戶嘅電郵，我哋會寄個6位數字碼俾你。", r_reset_send: "寄密碼碼", r_reset_code: "6位數字碼", r_reset_finish: "設定新密碼並登入", r_keep_awake: "保持螢幕亮住，電話插住電。鎖機會令錄音停。", r_recap: "重溫：大家講緊乜", r_recap_busy: "整理緊對話…", r_tune: "調整", r_tune_creative: "建議風格", r_tune_safe: "穩陣有禮", r_tune_playful: "親切活潑", r_tune_pause: "幾時當一句講完", r_tune_fast: "快啲出", r_tune_full: "等句子完整", r_tune_auto: "自動建議", r_tune_auto_off: "我撳先出", r_tune_auto_each: "每句之後", r_tune_auto_three: "每三句", r_convo: "對話", r_convo_new: "新對話", r_convo_saved: "已儲存嘅對話", r_convo_lines: "{n} 句", r_convo_continue: "繼續錄呢段對話", r_convo_empty: "暫時未有人講嘢。", r_advanced: "進階", r_store_home: "即時對話會自動儲存。", r_acct_title: "你嘅帳戶", r_acct_guest: "以訪客身份存喺呢部電話。", r_acct_as: "已登入：{name}。", r_acct_sign_in: "登入", r_acct_manage: "帳戶", r_acct_sign_out: "登出", r_acct_create: "開帳戶", r_acct_user: "用戶名", r_acct_pass: "密碼（最少8個字）", r_acct_why: "有帳戶就算換電話或者清咗瀏覽器，對話都唔會冇。之前喺呢度錄嘅對話會搬入帳戶。", r_convo_langs: "可能講嘅語言（可以揀幾種）", r_home_live: "即時翻譯", r_home_live_fail: "開唔到即時翻譯，錄音照繼續。", r_home_connecting: "連接緊…", r_home_reconnect: "重新連接緊…講過嘅嘢唔會漏。", r_home_busy_live: "另一段錄音而家用緊即時翻譯。", r_jump: "跳去最新", r_suggest: "我可以講乜？", r_suggest_busy: "諗緊你可以講啲乜…", r_suggest_wait: "聽多幾句之後就會有建議。", r_unsure: "語音引擎對呢句唔太肯定。", r_alts: "有底線嘅地方各個引擎唔一致，撳一下可以轉。", r_engines: "每個引擎", r_agree: "{n}% 一致",
     sub: "{n} 句日常句子，逐個字拆開，最多七種話。",
     cats: Object.assign({}, UI.yue.cats, { "Meals": "吃飯", "Cooking Together": "一齊煮飯", "Swimming": "游水", "Talking About the Day": "講下今日" }),
   });
@@ -3318,6 +3380,12 @@
     info.hidden = true;
     wrap.appendChild(info);
     wrap.appendChild(el("p", "hint", tr("hint")));
+    const cmp = el("button", "btn quiet cmp-btn", "");
+    cmp.type = "button";
+    cmp._paint = () => { cmp.textContent = isFocus() ? tr("cmp_all") : tr("cmp_one", { lang: NAMES[focusLang()] }); };
+    cmp._paint();
+    cmp.addEventListener("click", e => { e.stopPropagation(); focusOn = !isFocus(); store.set("polylang-focus", focusOn ? "1" : "0"); applyShow(); });
+    wrap.appendChild(cmp);
     box.appendChild(wrap);
 
     const full = el("div", "full");
@@ -3327,7 +3395,7 @@
       if (!text) return;
       const row = el("div", "full-row");
       row.dataset.lang = parentLang(lang);
-      if (lang !== "en") row.hidden = !show[parentLang(lang)];
+      if (lang !== "en") row.hidden = !shown(parentLang(lang));
       const cls = lang === "cmn" ? "hz-cmn" : (lang === "yue" || lang === "tsn") ? "hz-yue" : "";
       row.appendChild(el("span", "fr-lang", esc(NATIVE[lang])));
       const fr = romFullHtml(p, lang);
@@ -3435,7 +3503,7 @@
     scroller.style.height = "";
     const natural_width = lanes.scrollWidth;
     const available_width = scroller.clientWidth;
-    const scale = Math.max(SMALLEST_FIT_SCALE, Math.min(1, available_width / natural_width));
+    const scale = Math.max(lanes.classList.contains("solo") ? 0.9 : SMALLEST_FIT_SCALE, Math.min(1, available_width / natural_width));
     if (scale < 1) {
       lanes.style.transformOrigin = "0 0";
       lanes.style.transform = `scale(${scale})`;
@@ -3446,11 +3514,23 @@
     }
   }
 
+  let focusOn = null;
+  function isFocus() {
+    if (focusOn === null) focusOn = (store.get("polylang-focus") || (window.matchMedia("(max-width: 700px)").matches ? "1" : "0")) === "1";
+    return focusOn;
+  }
+  function focusLang() {
+    const pl = Practice.lang();
+    return show[pl] ? pl : (LEARN_LANGS.find(l => show[l]) || pl);
+  }
+  const shown = l => l === "en" ? show.en : (show[l] && (!isFocus() || l === focusLang()));
+
   function draw(entry) {
     const { lanes, svg, rows, toks } = entry;
     if (!lanes.isConnected || !lanes.offsetParent) return;
 
-    const vis = LANES.filter(l => show[l] && toks[l].length);
+    lanes.classList.toggle("solo", isFocus());
+    const vis = LANES.filter(l => shown(l) && toks[l].length);
     LANES.forEach(l => { rows[l].hidden = !vis.includes(l); });
     fit_lanes_to_width(lanes);
 
@@ -3506,7 +3586,7 @@
   const CATS = [];
   PHRASES.forEach(p => { if (!CATS.includes(p.cat)) CATS.push(p.cat); });
 
-  let topic = "All";
+  let topic = "";
   let filter = "";
 
   const chips = {};
@@ -3542,8 +3622,7 @@
   }
 
   function matches(p) {
-    if (topic !== "All" && p.cat !== topic) return false;
-    if (!filter) return true;
+    if (!filter) return !!topic && (topic === "All" || p.cat === topic);
     const q = filter.toLowerCase();
     const hay = [p.en, ...p.gloss, ...["yue", "cmn", "tsn"].flatMap(l => p[l].map(t => t.hz + " " + t.rom))].join(" ").toLowerCase();
     return hay.includes(q);
@@ -3556,16 +3635,23 @@
     nav.innerHTML = "";
     const det = el("details", "toc-d");
     det.id = "toc-d";
+    det.open = true;
     det.appendChild(el("summary", "", `<span id="toc-title">${tr("contents")}</span><span class="n">${tr("topics", { n: CATS.length })}</span>${chevron}`));
     const ol = el("ol", "");
     CATS.forEach(c => {
       const n = PHRASES.filter(p => p.cat === c).length;
+      const done = Practice.progress(c);
       const li = el("li", "");
-      const b = el("button", "", `<span class="toc-name">${catIcon(c)}${esc(catName(c))}</span><span class="n">${n}</span>`);
+      const b = el("button", "", `<span class="toc-name">${catIcon(c)}${esc(catName(c))}</span><span class="n">${done ? done + " / " + n : n}</span>`);
+      if (c === topic) b.setAttribute("aria-current", "true");
       b.type = "button";
       b.addEventListener("click", () => {
+        topic = c;
+        ol.querySelectorAll("[aria-current]").forEach(x => x.removeAttribute("aria-current"));
+        b.setAttribute("aria-current", "true");
+        renderList();
         const h = document.getElementById(topicId(c));
-        if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (h) h.scrollIntoView({ block: "start" });
       });
       li.appendChild(b);
       ol.appendChild(li);
@@ -3580,22 +3666,24 @@
     main.innerHTML = "";
 
     const items = PHRASES.filter(matches);
-    $("toc").hidden = !!filter;
+    $("toc").hidden = !!filter || !!topic;
+    document.body.classList.toggle("in-topic", !!topic && !filter);
+    if (!filter && !topic) { main.appendChild(el("p", "empty pick-topic", esc(tr("pick_topic")))); return; }
     if (!items.length) {
       main.appendChild(el("p", "empty", filter ? tr("no_match") : tr("no_topic")));
       return;
     }
 
-    const cats = topic === "All" ? CATS : [topic];
+    const cats = (filter || topic === "All") ? CATS : [topic];
     cats.forEach(c => {
       const group = items.filter(p => p.cat === c);
       if (!group.length) return;
       const head = el("div", "group-title");
       head.id = topicId(c);
       head.innerHTML = `<h3>${catIcon(c)}${esc(catName(c))}<span class="n">${group.length}</span></h3>`;
-      const up = el("button", "link", tr("contents"));
+      const up = el("button", "link back-topics", "\u2039 " + esc(tr("all_topics")));
       up.type = "button";
-      up.addEventListener("click", () => { $("toc-d").open = true; $("toc").scrollIntoView({ behavior: "smooth", block: "start" }); });
+      up.addEventListener("click", () => { topic = ""; if (filter) { $("q").value = ""; filter = ""; clearResult(); } renderList(); renderChips(); window.scrollTo({ top: 0 }); });
       head.appendChild(up);
       main.appendChild(head);
       const ul = el("ul", "list");
@@ -5468,22 +5556,18 @@
       session = null;
       const c = counts();
       body.innerHTML = "";
-      const langs = el("div", "pr-langs");
-      LANGS_P.forEach(l => {
-        const b = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span>${esc(NAMES[l])}`);
-        b.type = "button";
-        b.setAttribute("aria-pressed", l === plang ? "true" : "false");
-        b.addEventListener("click", () => { plang = l; store.set("polygrok-plang", l); home(); });
-        langs.appendChild(b);
-      });
-      body.appendChild(el("p", "pr-lead", esc(tr("p_lead", { lang: NAMES[plang] }))));
-      body.appendChild(langs);
-
-      const stats = el("div", "pr-stats");
-      [[c.due, tr("p_due")], [c.newLeft, tr("p_new")], [c.learned, tr("p_learned")], [days.streak || 0, tr("p_streak")]].forEach(([n, l]) => {
-        stats.appendChild(el("div", "pr-stat", `<b>${n}</b><span>${esc(l)}</span>`));
-      });
-      body.appendChild(stats);
+      const pick = el("label", "pr-pick", `<span>${esc(tr("p_learning"))}</span>`);
+      const sel = document.createElement("select");
+      LANGS_P.forEach(l => sel.appendChild(new Option(NAMES[l], l)));
+      sel.value = plang;
+      sel.addEventListener("change", () => { plang = sel.value; store.set("polygrok-plang", plang); home(); updateCta(); if (window.__focusChanged) window.__focusChanged(); });
+      pick.appendChild(sel);
+      body.appendChild(pick);
+      const sum = [];
+      if (c.newLeft) sum.push(tr("p_sum_new", { n: c.newLeft }));
+      if (c.due) sum.push(tr("p_sum_due", { n: c.due }));
+      body.appendChild(el("p", "pr-today", esc(sum.length ? sum.join(" \u00b7 ") : tr("p_sum_done"))));
+      const progressLine = (c.learned || days.streak) ? el("p", "pr-hint", esc(tr("p_sum_progress", { l: c.learned, s: days.streak || 0 }))) : null;
 
       const acts = el("div", "pr-acts");
       const go = el("button", "btn pr-big", `${icon("cards")}<span><b>${esc(tr("p_start"))}</b><small>${esc(tr("p_start_d"))}</small></span>`);
@@ -5501,6 +5585,7 @@
         acts.appendChild(to);
       }
       body.appendChild(acts);
+      if (progressLine) body.appendChild(progressLine);
 
       const opt = el("div", "pr-opt");
       opt.innerHTML = `<label for="pr-newper">${esc(tr("p_newper"))} <select id="pr-newper">${[3, 5, 8, 12, 20].map(n => `<option value="${n}"${n === newPer ? " selected" : ""}>${n}</option>`).join("")}</select></label>`;
@@ -5745,10 +5830,19 @@
       const b = $("practice-btn");
       if (!b) return;
       const c = counts();
-      b.innerHTML = `${icon("brain")}<span><b>${esc(tr("p_title"))}</b><small>${esc(tr("p_cta", { d: c.due, n: c.newLeft, s: days.streak || 0 }))}</small></span>`;
+      const parts = [];
+      if (c.newLeft) parts.push(tr("p_sum_new", { n: c.newLeft }));
+      if (c.due) parts.push(tr("p_sum_due", { n: c.due }));
+      b.innerHTML = `<span class="today-k">${esc(tr("today"))} \u00b7 ${esc(NAMES[plang])}</span><b class="today-h">${esc(parts.length ? parts.join(" \u00b7 ") : tr("p_sum_done"))}</b><span class="today-go">${esc(tr(c.learned ? "today_continue" : "today_start"))}</span>`;
+      b.dataset.ready = parts.length ? "1" : "";
     }
 
-    return { open, updateCta, inDeck, toggleDeck };
+    const progress = c => PHRASES.filter(p => p.cat === c && st(plang, p.en)).length;
+    const start = () => { Practice.open(); if ($("practice-btn").dataset.ready) startSession("mix"); };
+    const lang = () => plang;
+    const setup = (l, n) => { if (l) { plang = l; store.set("polygrok-plang", l); } if (n) { newPer = n; store.set("polygrok-newper", String(n)); } updateCta(); };
+
+    return { open, updateCta, inDeck, toggleDeck, progress, start, lang, setup };
   })();
 
 
@@ -6219,9 +6313,7 @@
 
     async function paintList() {
       const body = shell(tr("r_title"));
-      body.appendChild(el("p", "pr-lead", esc(tr("r_lead"))));
       if (!homeUrl()) {
-        body.appendChild(el("p", "pr-hint", esc(tr("r_live_searching"))));
         find_home_computer().then(found => { if (found && dlg.open && view.name === "list") paint(); });
       }
       const saved_conversations = homeUrl() ? await load_saved_conversations() : null;
@@ -6251,7 +6343,9 @@
       const ll = el("label", "rec-l", `<span>${esc(tr("r_lang"))}</span>`);
       ll.appendChild(lang);
       ll.style.display = "none";  // the chips choose the languages; the first chosen one becomes the main language
-      form.append(wl, ll, conversation_language_picker(lang));
+      const langBox = el("details", "rec-langs", `<summary>${esc(tr("r_langs_sum"))}</summary>`);
+      langBox.appendChild(conversation_language_picker(lang));
+      form.append(wl, ll, langBox);
 
       let liveBox = null;
       if (SR) {
@@ -6290,8 +6384,9 @@
           conversation_languages: chosen_conversation_languages(lang.value),
           conversation_id: conversation_choice ? conversation_choice.value : "", conversation_title: who.value.trim() });
       });
-      form.appendChild(go);
+      form.prepend(go);
       body.appendChild(form);
+      body.appendChild(el("p", "pr-hint", esc(tr("r_lead"))));
 
       const ul = el("ul", "rec-list");
       body.appendChild(ul);
@@ -7977,7 +8072,8 @@
   });
 
   function applyShow() {
-    document.querySelectorAll(".say-line, .hear-row, .full-row").forEach(r => { if (r.dataset.lang !== "en") r.hidden = !show[r.dataset.lang]; });
+    document.querySelectorAll(".say-line, .hear-row, .full-row").forEach(r => { if (r.dataset.lang !== "en") r.hidden = !shown(r.dataset.lang); });
+    document.querySelectorAll(".cmp-btn").forEach(b => b._paint && b._paint());
     drawAll();
   }
 
@@ -8103,7 +8199,7 @@
   $("book-btn").addEventListener("click", () => Book.open());
   $("rec-btn").addEventListener("click", () => Rec.open());
   window.__paintNow = paintNow;
-  $("practice-btn").addEventListener("click", () => Practice.open());
+  $("practice-btn").addEventListener("click", () => Practice.start());
   $("learn-btn").addEventListener("click", () => openLearn());
 
   uiSel.addEventListener("change", () => {
@@ -8122,10 +8218,96 @@
     Practice.updateCta();
     Book.updateBtn();
     if (window.__paintNow) window.__paintNow();
+    Shell.paint();
   });
+
+  /* app shell: bottom tabs shared by the main page and the Practice, Phrasebook and Record screens */
+  const Shell = (() => {
+    const TABS = [["learn", "book", "tab_learn"], ["practice", "brain", "p_title"], ["book", "star", "tab_book"], ["rec", "mic", "tab_rec"]];
+    const MODS = { practice: Practice, book: Book, rec: Rec };
+    function bar(active) {
+      const n = el("nav", "tabbar");
+      n.setAttribute("aria-label", tr("tab_nav"));
+      TABS.forEach(([id, ic, key]) => {
+        const b = el("button", "", `${icon(ic)}<span>${esc(tr(key))}</span>`);
+        b.type = "button";
+        if (id === active) b.setAttribute("aria-current", "page");
+        b.addEventListener("click", e => { e.stopPropagation(); go(id); });
+        n.appendChild(b);
+      });
+      return n;
+    }
+    function go(id) {
+      const rec = $("rec");
+      if (rec && rec.open && rec.querySelector(".rec-dot")) return;          // a recording is running: stay on it
+      Object.keys(MODS).forEach(k => { const d = $(k); if (d && d.open) { if (k === "practice") $("pr-close").click(); else d.close(); } });
+      if (id === "learn") { window.scrollTo({ top: 0 }); return; }
+      MODS[id].open();
+    }
+    function dress(id) {
+      const d = $(id);
+      if (!d) return;
+      const put = () => { const old = d.querySelector(":scope > .tabbar"); if (old && old === d.lastElementChild) return; if (old) old.remove(); d.appendChild(bar(id)); };
+      put();
+      if (!d._tabs) { d._tabs = new MutationObserver(put); d._tabs.observe(d, { childList: true }); }
+    }
+    Object.keys(MODS).forEach(id => { const M = MODS[id], o = M.open; M.open = function () { const r = o.apply(this, arguments); dress(id); return r; }; });
+    function paint() {
+      const old = document.querySelector("body > .tabbar");
+      if (old) old.remove();
+      document.body.appendChild(bar("learn"));
+      Object.keys(MODS).forEach(id => { const d = $(id); if (d) { const t = d.querySelector(":scope > .tabbar"); if (t) t.remove(); if (d.open) dress(id); } });
+    }
+    return { paint, go };
+  })();
+
+  /* first run: three questions so a new learner sees only what they asked for */
+  function firstRun(force) {
+    let used = false;
+    try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i) || ""; if (k.startsWith("polygrok-") || k.startsWith("phrasebook-")) { used = true; break; } } } catch (e) {}
+    if (!force && (used || store.get("polylang-setup") === "1")) return;
+    const d = document.createElement("dialog");
+    d.className = "practice setup";
+    const chosen = new Set();
+    d.innerHTML = `<div class="pr-body"><h2 class="su-h">${esc(tr("su_title"))}</h2>
+      <div><p class="su-q">${esc(tr("su_q1"))}</p><div class="pr-langs" id="su-langs"></div><p class="pr-hint">${esc(tr("su_q1_hint"))}</p></div>
+      <label class="pr-pick"><span>${esc(tr("su_q3"))}</span><select id="su-ui"></select></label>
+      <button class="btn pr-big su-go" id="su-go" type="button" disabled><span><b>${esc(tr("su_go"))}</b></span></button>
+      <button class="link" id="su-skip" type="button">${esc(tr("su_skip"))}</button></div>`;
+    document.body.appendChild(d);
+    LEARN_LANGS.forEach(l => {
+      const b = el("button", "lang-chip", `<span class="tick" aria-hidden="true"></span>${esc(NAMES[l])}`);
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", () => { chosen.has(l) ? chosen.delete(l) : chosen.add(l); b.setAttribute("aria-pressed", chosen.has(l) ? "true" : "false"); d.querySelector("#su-go").disabled = !chosen.size; });
+      d.querySelector("#su-langs").appendChild(b);
+    });
+    const ui = d.querySelector("#su-ui");
+    [...uiSel.options].forEach(o => ui.appendChild(new Option(o.textContent, o.value)));
+    ui.value = uiSel.value;
+    ui.addEventListener("change", () => { uiSel.value = ui.value; uiSel.dispatchEvent(new Event("change")); d.close(); d.remove(); firstRun(true); });
+    const done = () => { store.set("polylang-setup", "1"); d.close(); d.remove(); };
+    d.querySelector("#su-skip").addEventListener("click", done);
+    d.addEventListener("cancel", () => store.set("polylang-setup", "1"));
+    d.querySelector("#su-go").addEventListener("click", () => {
+      LEARN_LANGS.forEach(l => { const box = $("col-" + l), want = chosen.has(l); if (box && box.checked !== want) { box.checked = want; box.dispatchEvent(new Event("change")); } });
+      Practice.setup(LEARN_LANGS.find(l => chosen.has(l)));
+      done();
+      renderChips();
+      applyShow();
+    });
+    d.showModal();
+  }
+  window.__focusChanged = () => applyShow();
 
   renderChips();
   renderList();
+  Shell.paint();
+  firstRun();
+  const setupLink = el("button", "link", esc(tr("su_again")));
+  setupLink.type = "button";
+  setupLink.addEventListener("click", () => firstRun(true));
+  $("view").appendChild(setupLink);
 
   const firstRow = document.querySelector("#list .row-btn");
   if (firstRow && store.get("phrasebook-intro-closed") !== "1") firstRow.click();
