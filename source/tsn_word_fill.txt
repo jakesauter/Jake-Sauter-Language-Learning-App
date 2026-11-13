@@ -1,0 +1,60 @@
+# Taishanese for everyday words the translator's word list had no Taishanese for.
+# Used only where words.json has none (build2.py). Format: english|characters|romanization|source
+#   card  = the same word and reading already used in this app's Taishanese phrase cards
+#   dict  = Stephen Li's Taishanese dictionary (dl/stephen-dictionary-data), same sense as the Cantonese
+#   built = put together from syllables that appear in the cards or the dictionary; mirrors the Cantonese word
+# Added 2026-11-13; please have a Taishanese speaker check the "built" ones.
+we|我|ŋɔi21|card, dict (plural by tone)
+us|我|ŋɔi21|card, dict
+they|㑢|kiak21|card, dict
+them|㑢|kiak21|card, dict
+you all|偌|niak21|dict
+mom|阿媽|a33 ma55|card
+mother|阿媽|a33 ma55|card
+dad|阿爸|a33 ba55|built (阿 a33 as in 阿媽; 爸 ba55 dict)
+father|阿爸|a33 ba55|built
+grandma|阿人|a33 ŋin22|card, dict (father's mother, like Cantonese 嫲嫲)
+grandmother|阿人|a33 ŋin22|card, dict
+uncle|叔|sək55|dict (father's younger brother, like Cantonese 叔叔)
+rain|落水|lɔk32 sui55|card, dict
+milk|牛奶|ŋəu22 nai21|card, dict
+food|嘢吃|yia33 hiak33|built (Taishanese eats with 吃 hiak33)
+something|啲嘢|nit55 yia33|built
+someone|有人|yiu33 ŋin22|built
+later|遲啲|tsi22 nit55|card
+late|遲|tsi22|card
+first|第一|ai32 yit55|dict (第一次)
+left|左|dɔ55|dict (左手)
+how much|幾多錢|gi55 ɔ33 tein225|dict
+less|少啲|siau55 nit55|built
+too|太|hai33|card
+try|試|si33|card, dict
+tell|話畀|va325 i55|built (話 and 畀 as in the cards)
+call|打畀|a55 i55|card
+love|錫|ɬɛk33|card
+visit|探|ham33|card
+listen|聽|hiaŋ33|dict
+hear|聽|hiaŋ33|dict
+no|唔係|mai32|dict (唔係 runs together as mai32)
+don't|唔好|mɔu55|card
+do not|唔好|mɔu55|card
+can't|唔可以|m22 hɔ55 yi21|card
+cannot|唔可以|m22 hɔ55 yi21|card
+hello|你好|ni33 hɔu55|built
+hi|你好|ni33 hɔu55|built
+myself|我自己|ŋɔi33 du32 gi55|built (自己 du32 gi55 dict)
+yourself|你自己|ni33 du32 gi55|built
+ready|準備好|dzun55 bi32 hɔu55|card
+boring|冇乜索|mɔu33 mɔt55 ɬɔk21|card, dict
+hospital|醫院|yi33 yɔn325|dict
+new|新|ɬin33|dict
+old|舊|giu32|dict (used, old: things)
+thirsty|頸渴|giaŋ55 hɔt33|dict
+easy|容易|yəŋ22 yi32|dict
+dirty|邋遢|lat32 tat33|dict
+child|細路|ɬai33 lɔu32|dict (細路女)
+kid|細路|ɬai33 lɔu32|dict
+train station|火車站|fɔ55 tsia33 dzam32|built (車站 tsia33 dzam32 dict "train station"; 火 fɔ55 dict)
+bus stop|車站|tsia33 dzam32|dict
+# Lines starting with ! replace a wrong entry in words.json.
+!station|站|dzam32|dict ((車)站); words.json had 徛 ki33, which means "to stand"

@@ -149,6 +149,15 @@ for f in ("eu/core_eu.txt", "eu/topic_eu.txt"):
         en, es, fr, de = line.rstrip("\n").split("|")
         e = lex.setdefault(en.lower(), {})
         e.setdefault("s", es); e.setdefault("f", fr); e.setdefault("d", de)
+# Taishanese for everyday words the word list lacks (sources noted in the file); "!" lines fix a wrong entry.
+for line in open("tsn_word_fill.txt", encoding = "utf-8"):
+    if line.startswith("#") or not line.strip():
+        continue
+    en, hz, rom, _source = line.rstrip("\n").split("|")
+    replace = en.startswith("!")
+    en = en.lstrip("!")
+    if en in lex and (replace or not lex[en].get("t")):
+        lex[en]["t"] = [hz, rom]
 # The word list goes after the app's script, as data the app reads when first needed (see lex_data in page.html).
 words_json = json.dumps(lex, ensure_ascii = False, separators = (",", ":")).replace("</", "<\\/")
 page = page.rstrip("\n") + '\n<script type="application/json" id="polylang-words">' + words_json + '</script>\n'
