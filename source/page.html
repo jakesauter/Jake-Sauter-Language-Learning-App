@@ -1259,7 +1259,16 @@
 
 <script>
   const PHRASES = __PHRASES__;
-  const LEX = __WORDS__;
+  // English word list for the offline translator (about 1 MB). The build puts it at the very end of the page,
+  // so the app starts before it has downloaded; it is parsed the first time a word is looked up.
+  let lex_words = null;
+  function lex_data() {
+    if (lex_words) return lex_words;
+    const block = document.getElementById("polylang-words");
+    if (!block) return {};  // still downloading
+    return (lex_words = JSON.parse(block.textContent));
+  }
+  const LEX = new Proxy({}, { get: (_, key) => lex_data()[key] });
 
   const NS = "http://www.w3.org/2000/svg";
   /* interface language: every label, message and the guide, in the seven languages the app teaches */
