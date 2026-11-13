@@ -5,7 +5,7 @@ PHRASES = [
         en = "How much longer until we get there?",
         gloss = ["How long", "still / more", "until", "arrive", "(question tone)"],
         yue = [("仲有", "zung6 jau5", [1]), ("幾耐", "gei2 noi6", [0]), ("先", "sin1", [2]), ("到", "dou3", [3]), ("呀", "aa3", [4])],
-        cmn = [("还要", "hái yào", [1]), ("多久", "duō jiǔ", [0]), ("才", "cái", [2]), ("到", "dào", [3])],
+        cmn = [("还有", "hái yǒu", [1]), ("多久", "duō jiǔ", [0]), ("才", "cái", [2]), ("到", "dào", [3])],
         tip = "All three put \"still\" before \"how long\", then a word for \"only then\": 先 sin1 in Cantonese, 才 cái in Mandarin. 呀 aa3 softens the question.",
     ),
 
@@ -14,7 +14,7 @@ PHRASES = [
         en = "Do we need to stop for a rest?",
         gloss = ["Need to?", "stop", "for a while", "rest", "a bit"],
         yue = [("使唔使", "sai2 m4 sai2", [0]), ("停", "ting4", [1]), ("一陣", "jat1 zan6", [2]), ("休息", "jau1 sik1", [3]), ("吓", "haa5", [4])],
-        cmn = [("要不要", "yào bu yào", [0]), ("停下来", "tíng xià lái", [1]), ("休息", "xiū xi", [3]), ("一下", "yí xià", [4])],
+        cmn = [("要不要", "yào bu yào", [0]), ("停", "tíng", [1]), ("一会儿", "yí huìr", [2]), ("休息", "xiū xi", [3]), ("一下", "yí xià", [4])],
         tip = "\"X-not-X\" makes a yes/no question: 使唔使 sai2 m4 sai2 = need-not-need. Mandarin does the same with 要不要.",
     ),
 
@@ -41,7 +41,7 @@ PHRASES = [
         en = "Have you eaten yet?",
         gloss = ["You", "have eaten", "(a meal)", "yet?"],
         yue = [("你", "nei5", [0]), ("食咗", "sik6 zo2", [1]), ("飯", "faan6", [2]), ("未呀", "mei6 aa3", [3])],
-        cmn = [("你", "nǐ", [0]), ("吃饭", "chī fàn", [1, 2]), ("了吗", "le ma", [3])],
+        cmn = [("你", "nǐ", [0]), ("吃了", "chī le", [1]), ("饭", "fàn", [2]), ("没有", "méi yǒu", [3])],
         tip = "A classic warm greeting, not just a food question. 咗 zo2 marks a finished action; 未 mei6 = \"not yet?\".",
     ),
 
@@ -50,7 +50,7 @@ PHRASES = [
         en = "This is really delicious!",
         gloss = ["This", "(is) really", "delicious"],
         yue = [("呢個", "ni1 go3", [0]), ("好", "hou2", [1]), ("好食", "hou2 sik6", [2])],
-        cmn = [("这个", "zhè ge", [0]), ("很", "hěn", [1]), ("好吃", "hǎo chī", [2])],
+        cmn = [("这个", "zhè ge", [0]), ("好", "hǎo", [1]), ("好吃", "hǎo chī", [2])],
         tip = "好食 = good-eat. 好好味 hou2 hou2 mei6 (\"really tasty\") works too. Either one wins over the cook.",
     ),
 
@@ -59,7 +59,7 @@ PHRASES = [
         en = "I'm full, thank you.",
         gloss = ["I", "(am) very", "full", "thank you"],
         yue = [("我", "ngo5", [0]), ("好", "hou2", [1]), ("飽", "baau2", [2]), ("多謝", "do1 ze6", [3])],
-        cmn = [("我", "wǒ", [0]), ("很", "hěn", [1]), ("饱", "bǎo", [2]), ("谢谢", "xiè xie", [3])],
+        cmn = [("我", "wǒ", [0]), ("好", "hǎo", [1]), ("饱", "bǎo", [2]), ("谢谢", "xiè xie", [3])],
         tip = "Cantonese has two thank-yous: 多謝 do1 ze6 for gifts and meals, 唔該 m4 goi1 for small favours and service.",
     ),
 
@@ -68,8 +68,8 @@ PHRASES = [
         en = "Please pass me the soy sauce.",
         gloss = ["Please", "pass", "to me", "the soy sauce"],
         yue = [("唔該", "m4 goi1", [0]), ("遞", "dai6", [1]), ("豉油", "si6 jau4", [3]), ("俾我", "bei2 ngo5", [2])],
-        cmn = [("请", "qǐng", [0]), ("把", "bǎ", []), ("酱油", "jiàng yóu", [3]), ("递给", "dì gěi", [1, 2]), ("我", "wǒ", [2])],
-        tip = "Mandarin 把 bǎ moves the object before the verb; it has no English word. Cantonese just says verb, object, then 俾我 \"to me\".",
+        cmn = [("请", "qǐng", [0]), ("递", "dì", [1]), ("酱油", "jiàng yóu", [3]), ("给我", "gěi wǒ", [2])],
+        tip = "All three can say it the same way: verb, object, then \"to me\" (俾我, 畀我, 给我). Mandarin speakers also say 把酱油递给我, where 把 bǎ moves the object before the verb.",
     ),
 
     dict(
@@ -86,7 +86,7 @@ PHRASES = [
         en = "Would you like more tea?",
         gloss = ["Would you like?", "more", "tea"],
         yue = [("要唔要", "jiu3 m4 jiu3", [0]), ("添", "tim1", [1]), ("茶", "caa4", [2])],
-        cmn = [("要不要", "yào bu yào", [0]), ("加", "jiā", [1]), ("茶", "chá", [2])],
+        cmn = [("要不要", "yào bu yào", [0]), ("添", "tiān", [1]), ("茶", "chá", [2])],
         tip = "Pour for others before yourself. When someone refills your cup, tapping two fingers on the table says thanks.",
     ),
 
@@ -113,7 +113,7 @@ PHRASES = [
         en = "It's very cold outside.",
         gloss = ["(It's) very", "cold", "outside"],
         yue = [("出面", "ceot1 min6", [2]), ("好", "hou2", [0]), ("凍", "dung3", [1])],
-        cmn = [("外面", "wài miàn", [2]), ("很", "hěn", [0]), ("冷", "lěng", [1])],
+        cmn = [("外面", "wài miàn", [2]), ("好", "hǎo", [0]), ("冷", "lěng", [1])],
         tip = "Cantonese uses 凍 dung3 for cold weather; Mandarin uses 冷 lěng. 凍 in Mandarin mostly means \"frozen\".",
     ),
 
@@ -212,7 +212,7 @@ PHRASES = [
         en = "Be careful, the water is deep.",
         gloss = ["Be careful", "the water", "(is) very", "deep"],
         yue = [("小心呀", "siu2 sam1 aa3", [0]), ("啲水", "di1 seoi2", [1]), ("好", "hou2", [2]), ("深", "sam1", [3])],
-        cmn = [("小心", "xiǎo xīn", [0]), ("水", "shuǐ", [1]), ("很", "hěn", [2]), ("深", "shēn", [3])],
+        cmn = [("小心", "xiǎo xīn", [0]), ("水", "shuǐ", [1]), ("好", "hǎo", [2]), ("深", "shēn", [3])],
         tip = "小心 = \"small heart\". You'll hear 小心呀 constantly from aunties. It's affection.",
     ),
 
@@ -248,8 +248,8 @@ PHRASES = [
         en = "Let me carry that for you.",
         gloss = ["Let", "me", "carry (it)", "for you"],
         yue = [("等", "dang2", [0]), ("我", "ngo5", [1]), ("幫你", "bong1 nei5", [3]), ("攞", "lo2", [2])],
-        cmn = [("我", "wǒ", [1]), ("来", "lái", [0]), ("帮你", "bāng nǐ", [3]), ("拿", "ná", [2])],
-        tip = "\"For you\" comes before the verb in both: \"let me help-you carry\". Note how Mandarin puts 我 before 来.",
+        cmn = [("让", "ràng", [0]), ("我", "wǒ", [1]), ("帮你", "bāng nǐ", [3]), ("拿", "ná", [2])],
+        tip = "\"For you\" comes before the verb in all three: \"let me help-you carry\". \"Let me\" is 等我 in Cantonese and 让我 in Mandarin.",
     ),
 
     dict(

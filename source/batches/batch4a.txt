@@ -17,7 +17,7 @@ nt: "Long time" is 好久 hɔu55 giu55.
 @ Greetings | You look great.
 g: You / look / so good
 y: 你/nei5/0 ; 睇落/tai2 lok6/1 ; 好精神/hou2 zing1 san4/2
-m: 你/nǐ/0 ; 看起来/kàn qǐ lai/1 ; 气色很好/qì sè hěn hǎo/2
+m: 你/nǐ/0 ; 看起来/kàn qǐ lái/1 ; 好精神/hǎo jīng shen/2
 t: 你/ni33/0 ; 睇落/hai55 lɔk32/1? ; 好精神/hɔu55 dzein33 sin22/2?
 n: 精神 "full of energy" is the compliment for elders. Google's 好正 is for things, not people.
 nt: Built from 睇 hai55 and 落 lɔk32.
@@ -41,7 +41,7 @@ nt: Skinny is 瘦 səu33.
 @ Greetings | I like your haircut.
 g: Your / hair / (is) very / nice
 y: 你/nei5/0 ; 個髮型/go3 faat3 jing4/1 ; 好/hou2/2 ; 靚/leng3/3
-m: 我/wǒ/- ; 很喜欢/hěn xǐ huan/2,3 ; 你的/nǐ de/0 ; 发型/fà xíng/1
+m: 你的/nǐ de/0 ; 发型/fà xíng/1 ; 好/hǎo/2 ; 好看/hǎo kàn/3
 t: 你/ni33/0 ; 頭毛/həu22 mɔu22/1 ; 好/hɔu55/2 ; 靚/liaŋ33/3?
 n: Compliment the thing itself: "your hairstyle is very nice".
 nt: Hair is 頭毛 həu22 mɔu22, "head fur".
@@ -49,7 +49,7 @@ nt: Hair is 頭毛 həu22 mɔu22, "head fur".
 @ Greetings | That shirt looks nice on you.
 g: You / wear / that shirt / looks very nice
 y: 你/nei5/0 ; 着/zoek3/1 ; 呢件衫/ni1 gin6 saam1/2 ; 好靚/hou2 leng3/3
-m: 这件衬衫/zhè jiàn chèn shān/2 ; 很适合你/hěn shì hé nǐ/0,3
+m: 你/nǐ/0 ; 穿/chuān/1 ; 这件衣服/zhè jiàn yī fu/2 ; 好好看/hǎo hǎo kàn/3
 t: 你/ni33/0 ; 着/dziak33/1? ; 該件衫/kɔi21 gein32 sam21/2 ; 好靚/hɔu55 liaŋ33/3?
 n: Clothes are "worn" with 着 zoek3.
 nt: Clothes are 衫 sam21.
@@ -73,7 +73,7 @@ nt: The dictionary's "what time is it?" is 乜表 mɔt55 biau335, "what clock?".
 @ Plans | It's almost dinner time.
 g: Almost / dinner / time
 y: 就快/zau6 faai3/0 ; 食飯/sik6 faan6/1 ; 喇/laa3/2
-m: 快到/kuài dào/0 ; 晚饭/wǎn fàn/1 ; 时间了/shí jiān le/2
+m: 快要/kuài yào/0 ; 吃饭/chī fàn/1 ; 了/le/2
 t: 就來/diu32 lɔi22/0 ; 吃飯/hiak33 fan32/1 ; 啦/la55/2
 n: "Soon eating" is how families say it. 就快 means "soon".
 nt: 就來 diu32 lɔi22 is "about to".
@@ -89,7 +89,7 @@ nt: Late is 遲到 tsi22 ɔu33.
 @ Plans | We have plenty of time.
 g: We / have / lots of / time
 y: 我哋/ngo5 dei6/0 ; 有/jau5/1 ; 好多/hou2 do1/2 ; 時間/si4 gaan3/3
-m: 我们/wǒ men/0 ; 时间/shí jiān/3 ; 很充裕/hěn chōng yù/1,2
+m: 我们/wǒ men/0 ; 有/yǒu/1 ; 好多/hǎo duō/2 ; 时间/shí jiān/3
 t: 我/ŋɔi21/0 ; 有/yiu33/1 ; 好多/hɔu55 ɔ33/2? ; 時間/si22 gan33/3?
 n: Google got this one right. 唔使急 m4 sai2 gap1 "no need to rush" says the same thing.
 nt: 時間 is my guess at the reading.
@@ -97,7 +97,7 @@ nt: 時間 is my guess at the reading.
 @ Road Trip | Let's leave early to avoid traffic.
 g: Leave / early / to avoid / traffic
 y: 早啲/zou2 di1/1 ; 走/zau2/0 ; 避/bei6/2 ; 塞車/sak1 ce1/3
-m: 我们/wǒ men/- ; 早点/zǎo diǎn/1 ; 出发/chū fā/0 ; 避开/bì kāi/2 ; 交通高峰/jiāo tōng gāo fēng/3
+m: 早点/zǎo diǎn/1 ; 走/zǒu/0 ; 避开/bì kāi/2 ; 堵车/dǔ chē/3
 t: 早尼/dɔu55 nai55/1? ; 走/dəu55/0 ; 避/bi32/2? ; 塞車/ɬak55 tsia33/3
 n: Traffic jams are 塞車 "blocked cars". Google's 避開交通 means avoiding traffic altogether.
 nt: Traffic jam is 塞車 ɬak55 tsia33.
@@ -105,7 +105,7 @@ nt: Traffic jam is 塞車 ɬak55 tsia33.
 @ Road Trip | The traffic is terrible.
 g: Very / jammed
 y: 好/hou2/0 ; 塞車/sak1 ce1/1
-m: 交通状况/jiāo tōng zhuàng kuàng/1 ; 很糟糕/hěn zāo gāo/0
+m: 好/hǎo/0 ; 堵/dǔ/1
 t: 好/hɔu55/0 ; 塞車/ɬak55 tsia33/1
 n: Just say 好塞車 "very jammed". Google's 交通好慘 sounds like news.
 nt: The same 塞車.
@@ -113,7 +113,7 @@ nt: The same 塞車.
 @ Road Trip | There's an accident ahead.
 g: Ahead / there is / an accident
 y: 前面/cin4 min6/0 ; 有/jau5/1 ; 交通意外/gaau1 tung1 ji3 ngoi6/2
-m: 前面/qián miàn/0 ; 出车祸了/chū chē huò le/1,2
+m: 前面/qián miàn/0 ; 有/yǒu/1 ; 车祸/chē huò/2
 t: 前面/tein22 mein32/0? ; 有/yiu33/1 ; 意外/yi33 ŋɔi32/2
 n: 交通意外 is a traffic accident; people also say 撞車 zong6 ce1 "crash".
 nt: Accident is 意外 yi33 ŋɔi32.
@@ -121,7 +121,7 @@ nt: Accident is 意外 yi33 ŋɔi32.
 @ Road Trip | We need to get gas.
 g: We / need to / fill up / gas
 y: 我哋/ngo5 dei6/0 ; 要/jiu3/1 ; 入/jap6/2 ; 油/jau2/3
-m: 我们/wǒ men/0 ; 需要/xū yào/1 ; 去加点/qù jiā diǎn/2 ; 油/yóu/3
+m: 我们/wǒ men/0 ; 要/yào/1 ; 加/jiā/2 ; 油/yóu/3
 t: 我/ŋɔi21/0 ; 使/sɔi55/1 ; 入/yip32/2? ; 車油/tsia33 yiu225/3
 n: Getting gas is 入油 "put in oil". Google's 攞氣 makes no sense here.
 nt: Gasoline is 車油 tsia33 yiu225, "car oil".
@@ -129,7 +129,7 @@ nt: Gasoline is 車油 tsia33 yiu225, "car oil".
 @ Road Trip | Can you give me directions?
 g: Can you? / show me / the way
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 話我知/waa6 ngo5 zi1/1 ; 點去/dim2 heoi3/2
-m: 你/nǐ/- ; 能/néng/0 ; 给我/gěi wǒ/1 ; 指指路/zhǐ zhi lù/1,2 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 告诉我/gào su wǒ/1 ; 怎么去/zěn me qù/2
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 話我知/va32 ŋɔi33 di33/1? ; 幾何去/gi55 hɔu215 hui33/2
 n: "Tell me how to get there" is the natural way to ask.
 nt: 話我知 is my guess at the reading.
@@ -145,7 +145,7 @@ nt: Built from 直 dzɛt32 "straight" and 行 haŋ22 "walk".
 @ Road Trip | It's across the street.
 g: (It's) on / the opposite side
 y: 喺/hai2/0 ; 對面/deoi3 min6/1
-m: 就在/jiù zài/0 ; 马路对面/mǎ lù duì miàn/1
+m: 在/zài/0 ; 对面/duì miàn/1
 t: 到/ɔu33/0? ; 對面/ui33 mein32/1
 n: Google got this one right.
 nt: Opposite is 對面 ui33 mein32.
@@ -153,7 +153,7 @@ nt: Opposite is 對面 ui33 mein32.
 @ Road Trip | It's just around the corner.
 g: (It's) just / around the corner
 y: 就喺/zau6 hai2/0 ; 轉角/zyun3 gok3/1
-m: 就在/jiù zài/0 ; 拐角处/guǎi jiǎo chù/1
+m: 就在/jiù zài/0 ; 转角/zhuǎn jiǎo/1
 t: 就到/diu32 ɔu33/0? ; 轉角/dzɔn55 gɔk215/1
 n: Google got this one right.
 nt: 轉角 dzɔn55 gɔk215 is in the dictionary.
@@ -169,7 +169,7 @@ nt: 蕩失路 ɔŋ32 sit55 lu32 is in the dictionary.
 @ Road Trip | Can you send me the address?
 g: Can you? / send / the address / to me
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; send/sen1/1 ; 個地址/go3 dei6 zi2/2 ; 畀我/bei2 ngo5/3
-m: 你/nǐ/- ; 能/néng/0 ; 把地址/bǎ dì zhǐ/2 ; 发给我/fā gěi wǒ/1,3 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 发/fā/1 ; 个地址/ge dì zhǐ/2 ; 给我/gěi wǒ/3
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 發/fat33/1? ; 個地址/gɔi33 i32 dzi55/2 ; 畀我/i55 ŋɔi33/3
 n: Google kept the English "send" too, which is exactly how people talk.
 nt: Address is 地址 i32 dzi55.
@@ -193,7 +193,7 @@ nt: Bus is 巴士 ba55 si215.
 @ Road Trip | I'll get a taxi.
 g: I / call / a taxi
 y: 我/ngo5/0 ; 叫/giu3/1 ; 架的士/gaa3 dik1 si2/2
-m: 我/wǒ/0 ; 去叫/qù jiào/1 ; 辆出租车/liàng chū zū chē/2
+m: 我/wǒ/0 ; 叫/jiào/1 ; 辆出租车/liàng chū zū chē/2
 t: 我/ŋɔi33/0 ; 喊/ham33/1 ; 架的士/ga32 dɛt55 si215/2
 n: Taxi is 的士 from English. Taishanese has the same.
 nt: 喊架的士 "call a taxi" is in the dictionary.
@@ -209,7 +209,7 @@ nt: Mall is 商場 siaŋ33 tsiaŋ22.
 @ Shopping | I need to buy a gift.
 g: I / need to / buy / a gift
 y: 我/ngo5/0 ; 要/jiu3/1 ; 買/maai5/2 ; 份禮物/fan6 lai5 mat6/3
-m: 我/wǒ/0 ; 得/děi/1 ; 买/mǎi/2 ; 份礼物/fèn lǐ wù/3
+m: 我/wǒ/0 ; 要/yào/1 ; 买/mǎi/2 ; 份礼物/fèn lǐ wù/3
 t: 我/ŋɔi33/0 ; 使/sɔi55/1 ; 買/mai33/2 ; 份禮物/fun32 lai21 mɔt32/3?
 n: 份 is the measure word for gifts.
 nt: 禮物 is my guess at the reading.
@@ -217,7 +217,7 @@ nt: 禮物 is my guess at the reading.
 @ Shopping | Do you have this in a bigger size?
 g: (Is there) / a bigger size / of this?
 y: 有冇/jau5 mou5/0 ; 大啲/daai6 di1/1 ; 嘅碼/ge3 maa5/1 ; 呀/aa3/-
-m: 这个/zhè ge/2 ; 有/yǒu/0 ; 大一号的/dà yí hào de/1 ; 吗/ma/0
+m: 有没有/yǒu méi yǒu/0 ; 大一点的码/dà yì diǎn de mǎ/1
 t: 有冇/yiu33 mɔu55/0 ; 大碼/ai32 ma215/1 ; 啊/a33/-
 n: Sizes are 碼 maa5: 大碼 large, 細碼 small.
 nt: 大碼 ai32 ma215 is in the dictionary.
@@ -225,7 +225,7 @@ nt: 大碼 ai32 ma215 is in the dictionary.
 @ Shopping | Can I try it on?
 g: Can I? / try it on
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 試吓/si3 haa5/1 ; 呀/aa3/-
-m: 我/wǒ/- ; 可以/kě yǐ/0 ; 试穿一下/shì chuān yí xià/1 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 试一下/shì yí xià/1
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 試下/si33 ha21/1 ; 啊/a33/-
 n: Google got this one right.
 nt: The same 試下 "have a try".
@@ -233,7 +233,7 @@ nt: The same 試下 "have a try".
 @ Shopping | It doesn't fit.
 g: Not / fitting
 y: 唔/m4/0 ; 啱身/ngaam1 san1/1
-m: 不太/bú tài/0 ; 合身/hé shēn/1
+m: 不/bù/0 ; 合身/hé shēn/1
 t: 唔/m22/0 ; 啱身/ŋam55 sin33/1?
 n: 啱身 "right for the body" means it fits.
 nt: 啱 ŋam55 is "suitable, fit".
@@ -241,7 +241,7 @@ nt: 啱 ŋam55 is "suitable, fit".
 @ Shopping | I'll take this one.
 g: I / want / this one
 y: 我/ngo5/0 ; 要/jiu3/1 ; 呢個/ni1 go3/2
-m: 我/wǒ/0 ; 就要/jiù yào/1 ; 这件了/zhè jiàn le/2
+m: 我/wǒ/0 ; 要/yào/1 ; 这个/zhè ge/2
 t: 我/ŋɔi33/0 ; 要/yiau33/1? ; 該個/kɔi21 gɔi33/2
 n: Google's 攞 is "pick up". At the counter, 要 "want" is what you say.
 nt: "This one" is 該個 kɔi21 gɔi33.
@@ -249,7 +249,7 @@ nt: "This one" is 該個 kɔi21 gɔi33.
 @ Shopping | Can I pay by card?
 g: Can I? / swipe / card
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 碌/luk1/1 ; 卡/kaat1/2 ; 呀/aa3/-
-m: 可以/kě yǐ/0 ; 刷/shuā/1 ; 卡/kǎ/2 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 刷/shuā/1 ; 卡/kǎ/2
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 碌/lək55/1? ; 卡/kat55/2? ; 啊/a33/-
 n: 碌卡 "roll the card" is paying by card in Hong Kong Cantonese.
 nt: Not in the dictionary; readings are my guesses.
@@ -257,7 +257,7 @@ nt: Not in the dictionary; readings are my guesses.
 @ Shopping | Do you need a bag?
 g: Need? / a bag
 y: 使唔使/sai2 m4 sai2/0 ; 袋/doi2/1 ; 呀/aa3/-
-m: 需要/xū yào/0 ; 袋子/dài zi/1 ; 吗/ma/0
+m: 要不要/yào bu yào/0 ; 袋子/dài zi/1
 t: 使唔使/sɔi55 m22 sɔi55/0 ; 袋/ɔi325/1 ; 啊/a33/-
 n: What every cashier asks.
 nt: Bag is 袋 ɔi325.
@@ -265,7 +265,7 @@ nt: Bag is 袋 ɔi325.
 @ Shopping | Keep the change.
 g: No need / to give change
 y: 唔使/m4 sai2/0 ; 找/zaau2/1 ; 喇/laa3/-
-m: 不用/bú yòng/0 ; 找零了/zhǎo líng le/1
+m: 不用/bú yòng/0 ; 找/zhǎo/1 ; 了/le/-
 t: 唔使/m22 sɔi55/0 ; 找錢/dzau55 tein225/1
 n: 唔使找 "no need to give change". Google's 保留個變動 means "preserve the modification".
 nt: Change is 找錢 dzau55 tein225.
@@ -281,7 +281,7 @@ nt: Market is 街市 gai55 si215.
 @ Shopping | These vegetables look fresh.
 g: These / vegetables / look / very fresh
 y: 呢啲/ni1 di1/0 ; 菜/coi3/1 ; 睇落/tai2 lok6/2 ; 好新鮮/hou2 san1 sin1/3
-m: 这些/zhè xiē/0 ; 蔬菜/shū cài/1 ; 看起来/kàn qǐ lai/2 ; 很新鲜/hěn xīn xiān/3
+m: 这些/zhè xiē/0 ; 菜/cài/1 ; 看起来/kàn qǐ lái/2 ; 好新鲜/hǎo xīn xiān/3
 t: 該尼/kɔi21 nai55/0? ; 菜/tɔi33/1 ; 睇落/hai55 lɔk32/2? ; 好生鮮/hɔu55 saŋ33 ɬein33/3
 n: At the market, plain 菜 means vegetables.
 nt: Fresh is 生鮮 saŋ33 ɬein33.
@@ -297,7 +297,7 @@ nt: Pound is 磅 bɔŋ32.
 @ Shopping | Can you give me a discount?
 g: Can? / (make it) cheaper / a bit
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 平/peng4/1 ; 啲/di1/2 ; 呀/aa3/-
-m: 能/néng/0 ; 打个折/dǎ ge zhé/1,2 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 便宜/pián yi/1 ; 点/diǎn/2
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 平/piaŋ22/1 ; 尼/nai55/2 ; 啊/a33/-
 n: 平啲 "a bit cheaper" is how you haggle. Google's 畀個折扣我 is understood but stiff.
 nt: Cheap is 平 piaŋ22.
@@ -305,7 +305,7 @@ nt: Cheap is 平 piaŋ22.
 @ Shopping | I'm just looking.
 g: I / just / looking around
 y: 我/ngo5/0 ; 睇吓/tai2 haa5/2 ; 啫/ze1/1
-m: 我/wǒ/0 ; 只是/zhǐ shì/1 ; 随便看看/suí biàn kàn kan/2
+m: 我/wǒ/0 ; 看看/kàn kan/2 ; 而已/ér yǐ/1
 t: 我/ŋɔi33/0 ; 睇下/hai55 ha21/2 ; 啊/a33/1?
 n: 睇吓啫 "only looking". Google's 搵緊 means searching for something.
 nt: 啫 has no confirmed Taishanese match; 啊 is a stand-in.
@@ -313,7 +313,7 @@ nt: 啫 has no confirmed Taishanese match; 啊 is a stand-in.
 @ Feelings | I'm so excited!
 g: I / (am) so / excited
 y: 我/ngo5/0 ; 好/hou2/1 ; 興奮/hing1 fan5/2
-m: 我/wǒ/0 ; 太/tài/1 ; 兴奋了/xīng fèn le/2
+m: 我/wǒ/0 ; 好/hǎo/1 ; 兴奋/xīng fèn/2
 t: 我/ŋɔi33/0 ; 好/hɔu55/1 ; 興奮/hein33 fun21/2
 n: Google got this one right.
 nt: Excited is 興奮 hein33 fun21.
@@ -337,7 +337,7 @@ nt: 悶 is my guess at the reading.
 @ Feelings | I'm really sorry.
 g: I / (am) really / sorry
 y: 我/ngo5/0 ; 真係/zan1 hai6/1 ; 好對唔住/hou2 deoi3 m4 zyu6/2
-m: 真的/zhēn de/1 ; 很抱歉/hěn bào qiàn/2
+m: 我/wǒ/0 ; 真的/zhēn de/1 ; 很对不起/hěn duì bu qǐ/2
 t: 我/ŋɔi33/0 ; 真係/dzin33 hai32/1? ; 好對唔住/hɔu55 ui33 m22 dzi32/2
 n: For a real apology. 唔好意思 is for small slips.
 nt: 對唔住 ui33 m22 dzi32.
@@ -345,7 +345,7 @@ nt: 對唔住 ui33 m22 dzi32.
 @ Feelings | I'm so proud of you.
 g: I / for you / (am) so / proud
 y: 我/ngo5/0 ; 為你/wai6 nei5/1 ; 好/hou2/2 ; 驕傲/giu1 ngou6/3
-m: 我/wǒ/0 ; 为你/wèi nǐ/1 ; 感到/gǎn dào/- ; 骄傲/jiāo ào/3
+m: 我/wǒ/0 ; 为你/wèi nǐ/1 ; 好/hǎo/2 ; 骄傲/jiāo ào/3
 t: 我/ŋɔi33/0 ; 為你/vi32 ni33/1? ; 好/hɔu55/2 ; 驕傲/giau33 ŋɔu32/3
 n: Google got this one right. Older relatives may express it as 好叻呀 "so clever".
 nt: Proud is 驕傲 giau33 ŋɔu32.
@@ -353,7 +353,7 @@ nt: Proud is 驕傲 giau33 ŋɔu32.
 @ Feelings | Don't be sad.
 g: Don't / (be) sad
 y: 唔好/m4 hou2/0 ; 唔開心/m4 hoi1 sam1/1 ; 啦/laa1/-
-m: 别/bié/0 ; 难过/nán guò/1
+m: 不要/bú yào/0 ; 不开心/bù kāi xīn/1 ; 啦/la/-
 t: 唔好/mɔu55/0 ; 傷心/siaŋ33 ɬim33/1 ; 啦/la55/-
 n: 唔好唔開心 "don't be unhappy" is gentler than Google's 傷心 "heartbroken".
 nt: Sad is 傷心 siaŋ33 ɬim33.
@@ -361,7 +361,7 @@ nt: Sad is 傷心 siaŋ33 ɬim33.
 @ Feelings | Don't be angry.
 g: Don't / (be) angry
 y: 唔好/m4 hou2/0 ; 嬲/nau1/1 ; 啦/laa1/-
-m: 别/bié/0 ; 生气/shēng qì/1
+m: 不要/bú yào/0 ; 生气/shēng qì/1 ; 啦/la/-
 t: 唔好/mɔu55/0 ; 嬲/nəu33/1 ; 啦/la55/-
 n: Google got this one right. 嬲 nau1 is pure Cantonese.
 nt: Angry is 嬲 nəu33.
@@ -377,7 +377,7 @@ nt: Calm is 冷靜 laŋ21 dein32.
 @ Feelings | It's okay, don't cry.
 g: (It's) nothing / don't / cry
 y: 冇事/mou5 si6/0 ; 唔好/m4 hou2/1 ; 喊/haam3/2
-m: 没事的/méi shì de/0 ; 别/bié/1 ; 哭/kū/2
+m: 没事/méi shì/0 ; 不要/bú yào/1 ; 哭/kū/2
 t: 冇事/mɔu33 si32/0? ; 唔好/mɔu55/1 ; 哭/hək33/2
 n: Cantonese "cry" is 喊 haam3, which in Mandarin means "shout".
 nt: Cry is 哭 hək33, like Mandarin.
@@ -385,7 +385,7 @@ nt: Cry is 哭 hək33, like Mandarin.
 @ Feelings | I'm sleepy.
 g: I / (am) so / sleepy
 y: 我/ngo5/0 ; 好/hou2/1 ; 眼瞓/ngaan5 fan3/2
-m: 我/wǒ/0 ; 困了/kùn le/1,2
+m: 我/wǒ/0 ; 好/hǎo/1 ; 困/kùn/2
 t: 我/ŋɔi33/0 ; 好/hɔu55/1 ; 眼瞓/ŋan55 fun33/2
 n: 眼瞓 "eyes sleep" is sleepy. Google got this one right.
 nt: 眼瞓 ŋan55 fun33 is in the dictionary.

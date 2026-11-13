@@ -1,7 +1,7 @@
 @ Joking Around | Don't piss me off.
 g: Don't / make (me) mad / me
 y: 唔好/m4 hou2/0 ; 激嬲/gik1 nau1/1 ; 我/ngo5/2
-m: 别/bié/0 ; 惹/rě/1 ; 我/wǒ/2 ; 生气/shēng qì/1
+m: 不要/bú yào/0 ; 气/qì/1 ; 我/wǒ/2
 t: 唔好/mɔu55/0 ; 激死/gɛt55 ɬi55/1 ; 我/ŋɔi33/2
 s: No/0 ; me/2 ; hagas enojar/1
 f: Ne/0 ; m'/2 ; énerve/1 ; pas/0
@@ -34,7 +34,7 @@ nt: Stephen Li lists the same phrase: 有冇搞錯 yiu33 mɔu33 gɔu55 tɔ33.
 @ Joking Around | Very funny.
 g: Very / funny / (yeah, right)
 y: 好/hou2/0 ; 好笑/hou2 siu3/1 ; 喎/wo3/2
-m: 真/zhēn/0 ; 好笑/hǎo xiào/1 ; 哦/o/2
+m: 好/hǎo/0 ; 好笑/hǎo xiào/1 ; 哦/o/2
 t: 好/hɔu55/0 ; 好笑/hɔu55 ɬiau335/1 ; 喎/vɔ33/2?
 s: Qué/0 ; gracioso/1
 f: Très/0 ; drôle/1
@@ -56,7 +56,7 @@ nt: Annoying is 煩氣 fan22 hi335, "bother-air".
 @ Joking Around | Whatever you say.
 g: You / say / however / then / (that's how it is)
 y: 你/nei5/0 ; 話/waa6/1 ; 點/dim2/2 ; 就/zau6/3 ; 點/dim2/4
-m: 你/nǐ/0 ; 说了算/shuō le suàn/1,4
+m: 你/nǐ/0 ; 说/shuō/1 ; 怎样/zěn yàng/2 ; 就/jiù/3 ; 怎样/zěn yàng/4
 t: 你/ni33/0 ; 話/va325/1 ; 點/iam55/2 ; 就/diu32/3 ; 點/iam55/4
 s: Lo que/2 ; tú/0 ; digas/1
 f: Comme/2 ; tu/0 ; veux/1

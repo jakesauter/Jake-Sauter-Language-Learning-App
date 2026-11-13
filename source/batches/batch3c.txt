@@ -17,7 +17,7 @@ nt: The same 影相 yein55 ɬiaŋ335.
 @ Travel | I'll send you the pictures.
 g: I / send / the pictures / to you
 y: 我/ngo5/0 ; send/sen1/1 ; 啲相/di1 soeng2/2 ; 畀你/bei2 nei5/3
-m: 我/wǒ/0 ; 会/huì/- ; 把照片/bǎ zhào piàn/2 ; 发给你/fā gěi nǐ/1,3
+m: 我/wǒ/0 ; 发/fā/1 ; 照片/zhào piàn/2 ; 给你/gěi nǐ/3
 t: 我/ŋɔi33/0 ; 發/fat33/1? ; 尼相/nai55 ɬiaŋ335/2 ; 畀你/i55 ni33/3
 n: Many Cantonese speakers just say the English word "send" here. 發畀你 faat3 bei2 nei5 also works.
 nt: 發 is my guess for "send".
@@ -33,7 +33,7 @@ nt: Same 幾何 for "how".
 @ Travel | I had a great time.
 g: I / had / a great time
 y: 我/ngo5/0 ; 玩得/waan2 dak1/1 ; 好開心/hou2 hoi1 sam1/2
-m: 我/wǒ/0 ; 玩得/wán de/1 ; 很开心/hěn kāi xīn/2
+m: 我/wǒ/0 ; 玩得/wán de/1 ; 好开心/hǎo kāi xīn/2
 t: 我/ŋɔi33/0 ; 嫽得/lɔu21 ak33/1? ; 好開心/hɔu55 hɔi33 ɬim33/2
 n: 玩得好開心 "played very happily" is the natural way to say it.
 nt: Happy is 開心 hɔi33 ɬim33.
@@ -41,7 +41,7 @@ nt: Happy is 開心 hɔi33 ɬim33.
 @ Travel | I can't wait to come back.
 g: I / can't wait / to come back
 y: 我/ngo5/0 ; 好想/hou2 soeng2/1 ; 快啲返嚟/faai3 di1 faan1 lai4/2
-m: 我/wǒ/0 ; 真希望/zhēn xī wàng/1 ; 能再来一次/néng zài lái yí cì/2
+m: 我/wǒ/0 ; 好想/hǎo xiǎng/1 ; 快点回来/kuài diǎn huí lái/2
 t: 我/ŋɔi33/0 ; 好想/hɔu55 ɬiaŋ55/1 ; 快快返來/fai33 fai335 fan33 lɔi22/2?
 n: "I really want to come back soon." Google's 等唔切 is real Cantonese too.
 nt: 快快 fai33 fai335 is "quickly".
@@ -57,7 +57,7 @@ nt: Work is 做工 du33 gəŋ33.
 @ Work | I have a meeting tomorrow.
 g: I / tomorrow / have / a meeting
 y: 我/ngo5/0 ; 聽日/ting1 jat6/1 ; 要/jiu3/2 ; 開會/hoi1 wui2/3
-m: 我/wǒ/0 ; 明天/míng tiān/1 ; 有个/yǒu ge/2 ; 会议/huì yì/3
+m: 我/wǒ/0 ; 明天/míng tiān/1 ; 要/yào/2 ; 开会/kāi huì/3
 t: 我/ŋɔi33/0 ; 天早/hein32 dɔu55/1 ; 使/sɔi55/2 ; 開會/hɔi33 vɔi325/3
 n: Cantonese says "have to hold a meeting" (要開會).
 nt: 開會 hɔi33 vɔi325 is in the dictionary.
@@ -65,7 +65,7 @@ nt: 開會 hɔi33 vɔi325 is in the dictionary.
 @ Work | I have to work late tonight.
 g: I / tonight / have to / work overtime
 y: 我/ngo5/0 ; 今晚/gam1 maan5/1 ; 要/jiu3/2 ; 開OT/hoi1 ou1 ti1/3
-m: 我/wǒ/0 ; 今晚/jīn wǎn/1 ; 得/děi/2 ; 加班/jiā bān/3
+m: 我/wǒ/0 ; 今晚/jīn wǎn/1 ; 要/yào/2 ; 加班/jiā bān/3
 t: 我/ŋɔi33/0 ; 今晚/gim33 man21/1? ; 使/sɔi55/2 ; 加班/ga33 ban33/3
 n: 開OT "open OT" (overtime) is everyday Hong Kong Cantonese; 加班 gaa1 baan1 is fine too.
 nt: Overtime is 加班 ga33 ban33.
@@ -73,7 +73,7 @@ nt: Overtime is 加班 ga33 ban33.
 @ Work | I work from home.
 g: I / at home / work
 y: 我/ngo5/0 ; 喺屋企/hai2 uk1 kei2/1 ; 做嘢/zou6 je5/2
-m: 我/wǒ/0 ; 在家/zài jiā/1 ; 办公/bàn gōng/2
+m: 我/wǒ/0 ; 在家/zài jiā/1 ; 工作/gōng zuò/2
 t: 我/ŋɔi33/0 ; 到企/ɔu33 ki55/1 ; 做工/du33 gəŋ33/2
 n: Google got this one right.
 nt: 到企 ɔu33 ki55 is "at home".
@@ -97,7 +97,7 @@ nt: "Look for" is 揾 vun55 or bɔi55.
 @ Work | I'm off tomorrow.
 g: I / tomorrow / (have the) day off
 y: 我/ngo5/0 ; 聽日/ting1 jat6/1 ; 放假/fong3 gaa3/2
-m: 我/wǒ/0 ; 明天/míng tiān/1 ; 休息/xiū xi/2
+m: 我/wǒ/0 ; 明天/míng tiān/1 ; 放假/fàng jià/2
 t: 我/ŋɔi33/0 ; 天早/hein32 dɔu55/1 ; 放假/fɔŋ33 ga55/2
 n: Google got this one right.
 nt: Day off is 放假 fɔŋ33 ga55.
@@ -105,7 +105,7 @@ nt: Day off is 放假 fɔŋ33 ga55.
 @ Work | I'm so tired after work.
 g: After work / (I'm) so / tired
 y: 放工/fong3 gung1/0 ; 之後/zi1 hau6/0 ; 好/hou2/1 ; 攰/gui6/2
-m: 下班后/xià bān hòu/0 ; 我/wǒ/- ; 累坏了/lèi huài le/1,2
+m: 下班/xià bān/0 ; 之后/zhī hòu/0 ; 好/hǎo/1 ; 累/lèi/2
 t: 放工/fɔŋ33 gəŋ33/0 ; 後/həu32/0? ; 好/hɔu55/1 ; 夠/gəu33/2
 n: 放工 "release from work" is clocking off.
 nt: 放工 fɔŋ33 gəŋ33 is in the dictionary.
@@ -113,7 +113,7 @@ nt: 放工 fɔŋ33 gəŋ33 is in the dictionary.
 @ Plans | What are you doing this weekend?
 g: You / this weekend / do / what
 y: 你/nei5/0 ; 今個週末/gam1 go3 zau1 mut6/1 ; 做/zou6/2 ; 咩/me1/3 ; 呀/aa3/-
-m: 这个周末/zhè ge zhōu mò/1 ; 你/nǐ/0 ; 打算/dǎ suàn/- ; 做/zuò/2 ; 什么/shén me/3
+m: 你/nǐ/0 ; 这个周末/zhè ge zhōu mò/1 ; 做/zuò/2 ; 什么/shén me/3
 t: 你/ni33/0 ; 今個週末/gim33 gɔi33 dziu33 mut32/1? ; 做/du33/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
 n: Google's 做緊 means "doing right now". Plain 做 covers plans.
 nt: Weekend isn't in the dictionary.
@@ -121,7 +121,7 @@ nt: Weekend isn't in the dictionary.
 @ Plans | Are you free tomorrow?
 g: You / tomorrow / free?
 y: 你/nei5/0 ; 聽日/ting1 jat6/1 ; 得唔得閒/dak1 m4 dak1 haan4/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 明天/míng tiān/1 ; 有空/yǒu kòng/2 ; 吗/ma/2
+m: 你/nǐ/0 ; 明天/míng tiān/1 ; 有没有空/yǒu méi yǒu kòng/2
 t: 你/ni33/0 ; 天早/hein32 dɔu55/1 ; 得唔得閒/ak33 m22 ak33 han22/2? ; 啊/a33/-
 n: 得閒 "have leisure" means free.
 nt: 得閒 ak33 han22 is in the dictionary.
@@ -129,7 +129,7 @@ nt: 得閒 ak33 han22 is in the dictionary.
 @ Plans | Let's meet at six.
 g: We / at six / meet / let's
 y: 我哋/ngo5 dei6/0 ; 六點/luk6 dim2/1 ; 見/gin3/2 ; 啦/laa1/3
-m: 我们/wǒ men/0 ; 六点/liù diǎn/1 ; 见面/jiàn miàn/2 ; 吧/ba/3
+m: 我们/wǒ men/0 ; 六点/liù diǎn/1 ; 见/jiàn/2 ; 吧/ba/3
 t: 我/ŋɔi21/0 ; 六點表/lək32 iam55 biau335/1? ; 見/gein33/2 ; 啦/la55/3
 n: The time goes before the verb.
 nt: "O'clock" is 點表 iam55 biau335.
@@ -137,7 +137,7 @@ nt: "O'clock" is 點表 iam55 biau335.
 @ Plans | I'll pick you up.
 g: I / (will) go / pick up / you
 y: 我/ngo5/0 ; 嚟/lai4/1 ; 接/zip3/2 ; 你/nei5/3
-m: 我/wǒ/0 ; 去/qù/1 ; 接/jiē/2 ; 你/nǐ/3
+m: 我/wǒ/0 ; 来/lái/1 ; 接/jiē/2 ; 你/nǐ/3
 t: 我/ŋɔi33/0 ; 來/lɔi22/1 ; 接/diap33/2 ; 你/ni33/3
 n: Cantonese says "come" (嚟) where English says "go" when heading toward the listener.
 nt: Pick up is 接 diap33.
@@ -145,7 +145,7 @@ nt: Pick up is 接 diap33.
 @ Plans | I'm on my way.
 g: I / (am) coming / now
 y: 我/ngo5/0 ; 嚟緊/lai4 gan2/1 ; 喇/laa3/2
-m: 我/wǒ/0 ; 已经/yǐ jīng/2 ; 在路上了/zài lù shang le/1
+m: 我/wǒ/0 ; 就来/jiù lái/1 ; 了/le/2
 t: 我/ŋɔi33/0 ; 就來/diu32 lɔi22/1 ; 啦/la55/2
 n: 嚟緊 "coming" is the natural reply. Google's 喺我嘅路上 is word-for-word English.
 nt: 就來 diu32 lɔi22 "about to come" is in the dictionary.
@@ -153,7 +153,7 @@ nt: 就來 diu32 lɔi22 "about to come" is in the dictionary.
 @ Plans | I'll be there in ten minutes.
 g: I / ten minutes / (will) arrive
 y: 我/ngo5/0 ; 十分鐘/sap6 fan1 zung1/1 ; 到/dou3/2
-m: 我/wǒ/0 ; 十分钟后/shí fēn zhōng hòu/1 ; 到/dào/2
+m: 我/wǒ/0 ; 十分钟/shí fēn zhōng/1 ; 到/dào/2
 t: 我/ŋɔi33/0 ; 兩個字/liaŋ55 gɔi33 du32/1 ; 到/au33/2
 n: Cantonese often counts minutes in fives: 兩個字 "two characters" is ten minutes.
 nt: 個字 gɔi33 du32 is the dictionary's "unit of five minutes".
@@ -161,7 +161,7 @@ nt: 個字 gɔi33 du32 is the dictionary's "unit of five minutes".
 @ Plans | Sorry to keep you waiting.
 g: Sorry / (to make) you / wait / so long
 y: 唔好意思/m4 hou2 ji3 si1/0 ; 要你/jiu3 nei5/1 ; 等/dang2/2 ; 咁耐/gam3 noi6/3
-m: 抱歉/bào qiàn/0 ; 让你/ràng nǐ/1 ; 久等了/jiǔ děng le/2,3
+m: 不好意思/bù hǎo yì si/0 ; 让你/ràng nǐ/1 ; 等/děng/2 ; 这么久/zhè me jiǔ/3
 t: 唔好意思/m22 hɔu55 yi33 ɬu33/0 ; 要你/yiau33 ni33/1? ; 等/aŋ55/2 ; 咁久/gam33 giu55/3?
 n: 唔好意思 is the light "sorry" for small things.
 nt: 唔好意思 m22 hɔu55 yi33 ɬu33 is in the dictionary.
@@ -177,7 +177,7 @@ nt: The dictionary gives 旅歸 lui21 gi33 for going home, a very Taishanese wor
 @ Around the House | I'm going to bed.
 g: I / (am) going / to sleep
 y: 我/ngo5/0 ; 去/heoi3/1 ; 瞓覺/fan3 gaau3/2 ; 喇/laa3/-
-m: 我/wǒ/0 ; 要去/yào qù/1 ; 睡觉了/shuì jiào le/2
+m: 我/wǒ/0 ; 去/qù/1 ; 睡觉了/shuì jiào le/2
 t: 我/ŋɔi33/0 ; 去/hui33/1 ; 瞓覺/fun33 gɔu33/2 ; 啦/la55/-
 n: 喇 at the end announces a change: "I'm off to bed now".
 nt: Sleep is 瞓覺 fun33 gɔu33.
@@ -185,7 +185,7 @@ nt: Sleep is 瞓覺 fun33 gɔu33.
 @ Around the House | Did you sleep well?
 g: You / sleep / well?
 y: 你/nei5/0 ; 瞓得/fan3 dak1/1 ; 好唔好/hou2 m4 hou2/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 睡得/shuì de/1 ; 好吗/hǎo ma/2
+m: 你/nǐ/0 ; 睡得/shuì de/1 ; 好不好/hǎo bu hǎo/2
 t: 你/ni33/0 ; 瞓得/fun33 ak33/1 ; 好唔好/hɔu55 m22 hɔu55/2 ; 啊/a33/-
 n: 得 after a verb introduces how well it went.
 nt: 得 ak33 again.
@@ -193,7 +193,7 @@ nt: 得 ak33 again.
 @ Around the House | Wake up, it's late.
 g: Get up / (it's) already / late
 y: 起身/hei2 san1/0 ; 喇/laa3/- ; 好晏/hou2 aan3/2 ; 喇/laa3/1
-m: 醒醒/xǐng xing/0 ; 不早了/bù zǎo le/1,2
+m: 起床/qǐ chuáng/0 ; 了/le/- ; 好晚/hǎo wǎn/2 ; 了/le/1
 t: 起身/hi55 sin33/0 ; 啦/la55/- ; 好晏/hɔu55 an33/2
 n: 晏 aan3 is "late in the day"; 遲 is "late for something".
 nt: 起身 hi55 sin33 is "get up".
@@ -209,7 +209,7 @@ nt: 沖涼 tsəŋ33 liaŋ22 is in the dictionary.
 @ Around the House | Can I borrow a towel?
 g: Can I? / borrow / a / towel
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 借/ze3/1 ; 條/tiu4/2 ; 毛巾/mou4 gan1/3 ; 我/ngo5/0
-m: 能/néng/0 ; 借我/jiè wǒ/1 ; 一条/yì tiáo/2 ; 毛巾/máo jīn/3 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 借/jiè/1 ; 条/tiáo/2 ; 毛巾/máo jīn/3 ; 给我/gěi wǒ/0
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 借/dia33/1 ; 條/hiau22/2? ; 毛巾/mɔu22 gin33/3 ; 我/ŋɔi33/0
 n: Cantonese says "can lend a towel to me?": 可唔可以借條毛巾我.
 nt: Bath towel is 毛巾 mɔu22 gin33.
@@ -225,7 +225,7 @@ nt: Cup is 杯 bɔi335.
 @ Around the House | Can I use your charger?
 g: Can I? / use / your / charger
 y: 我/ngo5/0 ; 可唔可以/ho2 m4 ho2 ji5/0 ; 用/jung6/1 ; 你個/nei5 go3/2 ; 叉電器/caa1 din6 hei3/3
-m: 我/wǒ/0 ; 可以/kě yǐ/0 ; 用一下/yòng yí xià/1 ; 你的/nǐ de/2 ; 充电器/chōng diàn qì/3 ; 吗/ma/0
+m: 我/wǒ/0 ; 可不可以/kě bu kě yǐ/0 ; 用/yòng/1 ; 你的/nǐ de/2 ; 充电器/chōng diàn qì/3
 t: 我/ŋɔi33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 用/yəŋ32/1 ; 你個/ni33 gɔi33/2 ; 充電器/tsəŋ33 ein32 hi33/3?
 n: Hong Kong Cantonese charges a phone with 叉電 caa1 din6. Google's 充電器 is fine too.
 nt: Charging is 充電 tsəŋ33 ein32.
@@ -249,7 +249,7 @@ nt: Low volume is 細聲 ɬai33 siaŋ335.
 @ Around the House | I'll take out the trash.
 g: Let / me / take out / the trash
 y: 等/dang2/0 ; 我/ngo5/1 ; 倒/dou2/2 ; 垃圾/laap6 saap3/3
-m: 我/wǒ/1 ; 去/qù/0 ; 倒/dào/2 ; 垃圾/lā jī/3
+m: 让/ràng/0 ; 我/wǒ/1 ; 倒/dào/2 ; 垃圾/lā jī/3
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 倒垃圾/ɔu55 ləp32 ɬəp55/2,3
 n: "Pour out the trash" in both. Google's 拎出垃圾桶 means carry out the bin.
 nt: 倒垃圾 ɔu55 ləp32 ɬəp55 is in the dictionary.
@@ -257,7 +257,7 @@ nt: 倒垃圾 ɔu55 ləp32 ɬəp55 is in the dictionary.
 @ Around the House | Let me help you clean up.
 g: Let / me / help / you / clean up
 y: 等/dang2/0 ; 我/ngo5/1 ; 幫/bong1/2 ; 你/nei5/3 ; 執/zap1/4
-m: 我/wǒ/1 ; 来/lái/0 ; 帮/bāng/2 ; 你/nǐ/3 ; 收拾/shōu shi/4 ; 吧/ba/-
+m: 让/ràng/0 ; 我/wǒ/1 ; 帮/bāng/2 ; 你/nǐ/3 ; 收拾/shōu shi/4
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 幫/bɔŋ33/2 ; 你/ni33/3 ; 執/dzap55/4?
 n: 執 zap1 "tidy" is the everyday word. Google's 清理 sounds like a cleaning crew.
 nt: 執 dzap55, as in 執行李 "pack".
@@ -265,7 +265,7 @@ nt: 執 dzap55, as in 執行李 "pack".
 @ Small Talk | Don't worry about it.
 g: No need / worry / (reassuring)
 y: 唔使/m4 sai2/0 ; 擔心/daam1 sam1/1 ; 啦/laa1/2
-m: 别/bié/0 ; 担心/dān xīn/1
+m: 不用/bú yòng/0 ; 担心/dān xīn/1 ; 啦/la/2
 t: 唔使/m22 sɔi55/0 ; 擔心/am33 ɬim33/1 ; 啦/la55/2
 n: Google got this one right.
 nt: Worry is 擔心 am33 ɬim33.
@@ -305,7 +305,7 @@ nt: 真 is my guess at the reading.
 @ Small Talk | That's so funny.
 g: (That's) so / funny
 y: 好/hou2/0 ; 好笑/hou2 siu3/1
-m: 太/tài/0 ; 好笑了/hǎo xiào le/1
+m: 好/hǎo/0 ; 好笑/hǎo xiào/1
 t: 好/hɔu55/0 ; 好笑/hɔu55 ɬiau335/1
 n: Google got this one right.
 nt: Funny is 好笑 hɔu55 ɬiau335.
@@ -313,7 +313,7 @@ nt: Funny is 好笑 hɔu55 ɬiau335.
 @ Small Talk | I'm so happy for you.
 g: I / for you / (am) so / happy
 y: 我/ngo5/0 ; 為你/wai6 nei5/1 ; 好/hou2/2 ; 開心/hoi1 sam1/3
-m: 我/wǒ/- ; 真/zhēn/2 ; 为你/wèi nǐ/1 ; 高兴/gāo xìng/3
+m: 我/wǒ/0 ; 为你/wèi nǐ/1 ; 好/hǎo/2 ; 开心/kāi xīn/3
 t: 我/ŋɔi33/0 ; 為你/vi32 ni33/1? ; 好/hɔu55/2 ; 開心/hɔi33 ɬim33/3
 n: Google got this one right.
 nt: Happy is 開心 hɔi33 ɬim33.
@@ -345,7 +345,7 @@ nt: Both readings are my guesses.
 @ Health | Are you feeling better?
 g: You / better / yet?
 y: 你/nei5/0 ; 好返啲/hou2 faan1 di1/1 ; 未呀/mei6 aa3/2
-m: 感觉/gǎn jué/- ; 好点了/hǎo diǎn le/1 ; 吗/ma/2
+m: 你/nǐ/0 ; 好点了/hǎo diǎn le/1 ; 没有/méi yǒu/2
 t: 你/ni33/0 ; 好返尼/hɔu55 fan33 nai55/1? ; 唔曾/miaŋ21/2 ; 啊/a33/-
 n: 好返 "get good again" means recovering.
 nt: Built from 好, 返 and 尼.
@@ -353,7 +353,7 @@ nt: Built from 好, 返 and 尼.
 @ Health | I have a headache.
 g: I / (have a) headache
 y: 我/ngo5/0 ; 頭痛/tau4 tung3/1
-m: 我/wǒ/0 ; 头疼/tóu téng/1
+m: 我/wǒ/0 ; 头痛/tóu tòng/1
 t: 我/ŋɔi33/0 ; 頭赤/həu22 tiak33/1
 n: Google got this one right.
 nt: Taishanese says 頭赤 həu22 tiak33, "head aches".
@@ -369,7 +369,7 @@ nt: 傷風 siaŋ33 fəŋ33 is in the dictionary.
 @ Health | Do you need to see a doctor?
 g: You / need to? / see a doctor
 y: 你/nei5/0 ; 使唔使/sai2 m4 sai2/1 ; 睇醫生/tai2 ji1 sang1/2 ; 呀/aa3/-
-m: 需要/xū yào/1 ; 去/qù/- ; 看医生/kàn yī shēng/2 ; 吗/ma/1
+m: 你/nǐ/0 ; 要不要/yào bu yào/1 ; 看医生/kàn yī shēng/2
 t: 你/ni33/0 ; 使唔使/sɔi55 m22 sɔi55/1 ; 睇醫生/hai55 yi33 saŋ335/2 ; 啊/a33/-
 n: Google got this one right. You "look at" a doctor in both.
 nt: 睇醫生 hai55 yi33 saŋ335 is in the dictionary.
@@ -377,7 +377,7 @@ nt: 睇醫生 hai55 yi33 saŋ335 is in the dictionary.
 @ Health | Be careful driving.
 g: Careful / driving
 y: 小心/siu2 sam1/0 ; 揸車/zaa1 ce1/1
-m: 开车/kāi chē/1 ; 小心/xiǎo xīn/0
+m: 小心/xiǎo xīn/0 ; 开车/kāi chē/1
 t: 小心/ɬiau55 ɬim335/0 ; 揸車/dza33 tsia33/1
-n: Cantonese puts "careful" first; Mandarin puts it last.
+n: All three put "careful" first: 小心揸車 in Cantonese, 小心开车 in Mandarin.
 nt: Same 揸車 as "I'll drive".

@@ -1,7 +1,7 @@
 @ Goodbyes | Text me when you get home.
 g: (When you) get home / send a message / to me
 y: 到咗屋企/dou3 zo2 uk1 kei2/0 ; 發個訊息/faat3 go3 seon3 sik1/1 ; 畀我/bei2 ngo5/2
-m: 到家后/dào jiā hòu/0 ; 给我/gěi wǒ/2 ; 发个信息/fā ge xìn xī/1
+m: 到家了/dào jiā le/0 ; 发个信息/fā ge xìn xī/1 ; 给我/gěi wǒ/2
 t: 到企/ɔu33 ki55/0? ; 發個訊息/fat33 gɔi33 ɬun33 ɬɛt55/1? ; 畀我/i55 ŋɔi33/2
 n: The condition comes first with no word for "when": "got home, send me a message".
 nt: Message is my guess at the reading.
@@ -9,7 +9,7 @@ nt: Message is my guess at the reading.
 @ Goodbyes | I'll call you later.
 g: I / later / call / you
 y: 我/ngo5/0 ; 遲啲/ci4 di1/1 ; 打畀/daa2 bei2/2 ; 你/nei5/3
-m: 我/wǒ/0 ; 待会儿/dāi huìr/1 ; 给你/gěi nǐ/3 ; 打电话/dǎ diàn huà/2
+m: 我/wǒ/0 ; 晚点/wǎn diǎn/1 ; 打给/dǎ gěi/2 ; 你/nǐ/3
 t: 我/ŋɔi33/0 ; 遲下/tsi22 ha215/1 ; 打電話畀/a55 ein32 va325 i55/2 ; 你/ni33/3
 n: Google got this one right.
 nt: "Later" is 遲下 tsi22 ha215.
@@ -33,7 +33,7 @@ nt: 下次 is my guess, from 下個禮拜 ha32 gɔi33 "next week".
 @ Goodbyes | Have a safe trip.
 g: (Have a) smooth journey
 y: 一路順風/jat1 lou6 seon6 fung1/0
-m: 一路平安/yí lù píng ān/0
+m: 一路顺风/yí lù shùn fēng/0
 t: 一路順風/yit55 lu32 sun32 fəŋ33/0?
 n: 一路順風 "a tailwind all the way" is the set phrase. Google's 有個安全嘅旅程 is word-for-word English.
 nt: 順風 sun32 fəŋ33 is in the dictionary.
@@ -41,7 +41,7 @@ nt: 順風 sun32 fəŋ33 is in the dictionary.
 @ Goodbyes | We'll miss you.
 g: We / will / (very) much / miss / you
 y: 我哋/ngo5 dei6/0 ; 會/wui5/1 ; 好/hou2/2 ; 掛住/gwaa3 zyu6/3 ; 你/nei5/4
-m: 我们/wǒ men/0 ; 会/huì/1 ; 想/xiǎng/3 ; 你的/nǐ de/4
+m: 我们/wǒ men/0 ; 会/huì/1 ; 好/hǎo/2 ; 想/xiǎng/3 ; 你/nǐ/4
 t: 我/ŋɔi21/0 ; 會/vɔi21/1 ; 好/hɔu55/2 ; 念/niam32/3 ; 你/ni33/4
 n: Google got this one right.
 nt: "Miss" is 念 niam32.
@@ -49,7 +49,7 @@ nt: "Miss" is 念 niam32.
 @ Goodbyes | Come visit us again.
 g: Again / come / visit / us
 y: 得閒/dak1 haan4/- ; 再/zoi3/0 ; 嚟/lai4/1 ; 探/taam3/2 ; 我哋/ngo5 dei6/3
-m: 欢迎/huān yíng/- ; 再来/zài lái/0,1 ; 看/kàn/2 ; 我们/wǒ men/3
+m: 有空/yǒu kòng/- ; 再/zài/0 ; 来/lái/1 ; 看/kàn/2 ; 我们/wǒ men/3
 t: 再/dɔi33/0 ; 來/lɔi22/1 ; 探/ham33/2? ; 我/ŋɔi21/3
 n: 得閒再嚟 "come again when you're free" is the classic send-off.
 nt: 再 dɔi33 means again.
@@ -57,7 +57,7 @@ nt: 再 dɔi33 means again.
 @ Meals | The food is getting cold.
 g: The food / (is getting) cold / (already)
 y: 啲餸/di1 sung3/0 ; 凍/dung3/1 ; 喇/laa3/2
-m: 饭菜/fàn cài/0 ; 快凉了/kuài liáng le/1,2
+m: 菜/cài/0 ; 凉/liáng/1 ; 了/le/2
 t: 尼餸/nai55 ɬəŋ21/0 ; 凍/əŋ33/1 ; 啦/la55/2
 n: 凍喇 "cold now" is the hint to come and eat.
 nt: Dishes are 餸 ɬəŋ21.
@@ -65,7 +65,7 @@ nt: Dishes are 餸 ɬəŋ21.
 @ Meals | Can you heat this up?
 g: Can you? / heat up / this
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 叮/ding1/1 ; 熱/jit6/1 ; 呢個/ni1 go3/2
-m: 能/néng/0 ; 把这个/bǎ zhè ge/2 ; 热一下/rè yí xià/1 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 热一下/rè yí xià/1 ; 这个/zhè ge/2
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 整熱/dzein55 ŋɛt32/1? ; 該個/kɔi21 gɔi33/2
 n: 叮 ding1 is microwaving, named after the bell. 叮熱 is "zap it warm".
 nt: 整熱 "make hot" is my guess.
@@ -73,7 +73,7 @@ nt: 整熱 "make hot" is my guess.
 @ Meals | Be careful, it's hot.
 g: Careful / (it's) very / hot
 y: 小心/siu2 sam1/0 ; 好/hou2/1 ; 熱/jit6/2
-m: 小心/xiǎo xīn/0 ; 很/hěn/1 ; 烫/tàng/2
+m: 小心/xiǎo xīn/0 ; 好/hǎo/1 ; 烫/tàng/2
 t: 小心/ɬiau55 ɬim335/0 ; 好/hɔu55/1 ; 焫手/nat33 siu55/2
 n: For food that burns, Cantonese says 熱 or 辣 laat6 ("hot to touch").
 nt: 焫手 nat33 siu55 is "hot to touch".
@@ -81,7 +81,7 @@ nt: 焫手 nat33 siu55 is "hot to touch".
 @ Meals | Do you want rice or noodles?
 g: You / want / rice / or / noodles
 y: 你/nei5/0 ; 要/jiu3/1 ; 飯/faan6/2 ; 定/ding6/3 ; 麵/min6/4 ; 呀/aa3/-
-m: 你/nǐ/0 ; 想吃/xiǎng chī/1 ; 米饭/mǐ fàn/2 ; 还是/hái shi/3 ; 面条/miàn tiáo/4
+m: 你/nǐ/0 ; 要/yào/1 ; 饭/fàn/2 ; 还是/hái shi/3 ; 面/miàn/4
 t: 你/ni33/0 ; 要/yiau33/1? ; 飯/fan32/2 ; 定/ein32/3? ; 麵/mein32/4
 n: Google got this one right.
 nt: Noodles are 麵 mein32.
@@ -105,7 +105,7 @@ nt: Peanut is 花生 fa33 saŋ335. 敏感 is my guess at the reading.
 @ Meals | I'm full, I can't eat any more.
 g: I'm full / can't eat / any more
 y: 飽喇/baau2 laa3/0 ; 食唔落/sik6 m4 lok6/1 ; 喇/laa3/2
-m: 我饱了/wǒ bǎo le/0 ; 吃不下了/chī bu xià le/1,2
+m: 饱了/bǎo le/0 ; 吃不下/chī bu xià/1 ; 了/le/2
 t: 飽/bɔu55/0 ; 吃唔落/hiak33 m22 lɔk32/1? ; 啦/la55/2
 n: 食唔落 "can't eat down" is the polite final no.
 nt: Built from 吃, 唔 and 落 lɔk32.
@@ -113,7 +113,7 @@ nt: Built from 吃, 唔 and 落 lɔk32.
 @ Meals | Who wants dessert?
 g: Who / wants / dessert
 y: 邊個/bin1 go3/0 ; 要/jiu3/1 ; 甜品/tim4 ban2/2 ; 呀/aa3/-
-m: 谁/shéi/0 ; 想吃/xiǎng chī/1 ; 甜点/tián diǎn/2
+m: 谁/shéi/0 ; 要/yào/1 ; 甜品/tián pǐn/2
 t: 谁/sui55/0 ; 要/yiau33/1? ; 甜品/hiam22 ban55/2? ; 啊/a33/-
 n: Cantonese desserts are often sweet soups, called 糖水 tong4 seoi2.
 nt: Sweet is 甜 hiam22.
@@ -121,7 +121,7 @@ nt: Sweet is 甜 hiam22.
 @ Meals | This fruit is very sweet.
 g: This / fruit / (is) very / sweet
 y: 呢啲/ni1 di1/0 ; 生果/saang1 gwo2/1 ; 好/hou2/2 ; 甜/tim4/3
-m: 这/zhè/0 ; 水果/shuǐ guǒ/1 ; 很/hěn/2 ; 甜/tián/3
+m: 这些/zhè xiē/0 ; 水果/shuǐ guǒ/1 ; 好/hǎo/2 ; 甜/tián/3
 t: 該尼/kɔi21 nai55/0? ; 生果/saŋ33 gɔ55/1? ; 好/hɔu55/2 ; 甜/hiam22/3
 n: Fruit is 生果 "fresh fruit" in Cantonese and 水果 "water fruit" in Mandarin.
 nt: Sweet is 甜 hiam22.
@@ -137,7 +137,7 @@ nt: Dumplings are 餃子 gɔu55 du55.
 @ Meals | How do you make this sauce?
 g: This / sauce / how / make
 y: 呢個/ni1 go3/0 ; 醬/zoeng3/1 ; 點/dim2/2 ; 整/zing2/3 ; 㗎/gaa3/-
-m: 这个/zhè ge/0 ; 酱汁/jiàng zhī/1 ; 是/shì/- ; 怎么/zěn me/2 ; 做的/zuò de/3
+m: 这个/zhè ge/0 ; 酱/jiàng/1 ; 怎么/zěn me/2 ; 做的/zuò de/3
 t: 該個/kɔi21 gɔi33/0 ; 醬/diaŋ33/1? ; 幾何/gi55 hɔu215/2 ; 整/dzein55/3 ; 個/gɔi33/-
 n: The topic goes first: "this sauce, how is it made?".
 nt: 醬 is my guess at the reading.
@@ -145,7 +145,7 @@ nt: 醬 is my guess at the reading.
 @ Meals | Can I have the recipe?
 g: Can you? / teach / me / how to make (it)
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 教/gaau3/1 ; 我/ngo5/2 ; 點整/dim2 zing2/3
-m: 能/néng/0 ; 给我/gěi wǒ/2 ; 食谱/shí pǔ/1,3 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 教/jiāo/1 ; 我/wǒ/2 ; 怎么做/zěn me zuò/3
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 教/gɔu33/1 ; 我/ŋɔi33/2 ; 幾何整/gi55 hɔu215 dzein55/3
 n: Family recipes are rarely written down, so ask to be taught: "teach me how to make it".
 nt: The same 幾何 for "how".
@@ -153,7 +153,7 @@ nt: The same 幾何 for "how".
 @ Meals | It smells so good.
 g: (It) smells / so good
 y: 好/hou2/1 ; 香/hoeng1/0
-m: 闻起来/wén qǐ lai/0 ; 好香/hǎo xiāng/1 ; 啊/a/-
+m: 好/hǎo/1 ; 香/xiāng/0
 t: 好/hɔu55/1 ; 香/hiaŋ33/0
 n: 好香 is all you need. Google got this one right.
 nt: Fragrant is 香 hiaŋ33, and 好聞 hɔu55 mun225 means "smells good".
@@ -177,7 +177,7 @@ nt: 隔籬 is my guess at the reading.
 @ Meals | Is this seat taken?
 g: This / seat / (has) / someone?
 y: 呢個/ni1 go3/0 ; 位/wai2/1 ; 有冇/jau5 mou5/2 ; 人/jan4/3 ; 坐/co5/- ; 呀/aa3/-
-m: 这个/zhè ge/0 ; 座位/zuò wèi/1 ; 有人/yǒu rén/2,3 ; 吗/ma/2
+m: 这个/zhè ge/0 ; 位子/wèi zi/1 ; 有没有/yǒu méi yǒu/2 ; 人/rén/3 ; 坐/zuò/-
 t: 該個/kɔi21 gɔi33/0 ; 位/vi325/1 ; 有冇/yiu33 mɔu55/2 ; 人/ŋin22/3 ; 坐/tɔ33/- ; 啊/a33/-
 n: "This seat, anyone sitting?" Google's 坐咗 is a literal guess.
 nt: Seat is 位 vi325.
@@ -201,7 +201,7 @@ nt: Expensive is 貴 gi33. 好價 hɔu55 ga33 "high price" also works.
 @ Shopping | It's on sale.
 g: (It's) on sale
 y: 減緊價/gaam2 gan2 gaa3/0
-m: 正在/zhèng zài/- ; 打折/dǎ zhé/0
+m: 在减价/zài jiǎn jià/0
 t: 減價/gam55 ga33/0
 n: 減價 "reduce price" is a sale. Google's 開緊賣緊 doesn't make sense.
 nt: 減價 gam55 ga33 is in the dictionary.
@@ -209,7 +209,7 @@ nt: 減價 gam55 ga33 is in the dictionary.
 @ Pets | Do you have a dog?
 g: You / have? / a / dog
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 養/joeng5/1 ; 狗/gau2/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 养/yǎng/1 ; 狗/gǒu/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 养/yǎng/1 ; 狗/gǒu/3
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 養/yaŋ33/1 ; 狗/gəu55/3 ; 啊/a33/-
 n: You "raise" pets: 養狗.
 nt: Dog is 狗 gəu55.
@@ -225,7 +225,7 @@ nt: The same 估乜名 as "What is your name?".
 @ Pets | Can I pet your cat?
 g: Can I? / stroke / your / cat
 y: 我/ngo5/0 ; 可唔可以/ho2 m4 ho2 ji5/0 ; 摸吓/mo2 haa5/1 ; 你/nei5/2 ; 隻貓/zek3 maau1/3
-m: 我/wǒ/0 ; 可以/kě yǐ/0 ; 摸摸/mō mo/1 ; 你的/nǐ de/2 ; 猫/māo/3 ; 吗/ma/0
+m: 我/wǒ/0 ; 可不可以/kě bu kě yǐ/0 ; 摸一下/mō yí xià/1 ; 你的/nǐ de/2 ; 猫/māo/3
 t: 我/ŋɔi33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 摸下/mɔ55 ha21/1? ; 你/ni33/2 ; 隻貓/dziak33 miu55/3?
 n: Google said 養 "raise" your cat. To pet is 摸吓 "stroke a little".
 nt: Cat is 貓 miu55.
@@ -241,7 +241,7 @@ nt: Built from 輪 lun22 and 到 ɔu33.
 @ Small Talk | Hurry up!
 g: Quickly / (come on)
 y: 快啲/faai3 di1/0 ; 啦/laa1/1
-m: 快点/kuài diǎn/0
+m: 快点/kuài diǎn/0 ; 啦/la/1
 t: 快快/fai33 fai335/0 ; 啦/la55/1
 n: Google got this one right.
 nt: 快快 fai33 fai335 is "quickly".
@@ -265,7 +265,7 @@ nt: The same 尼 nai55 "a bit".
 @ Small Talk | What happened?
 g: What / happened
 y: 發生/faat3 sang1/1 ; 咩事/me1 si6/0 ; 呀/aa3/-
-m: 怎么了/zěn me le/0,1
+m: 发生/fā shēng/1 ; 什么事/shén me shì/0 ; 了/le/-
 t: 乜頭路/mɔt55 həu22 lu32/0,1 ; 啊/a33/-
 n: Even shorter: 咩事呀 me1 si6 aa3, "what's the matter?".
 nt: The dictionary's phrase is 乜頭路 mɔt55 həu22 lu32.
@@ -281,7 +281,7 @@ nt: Say is 講 gɔŋ55.
 @ Learning | Can you say that again?
 g: Can you? / say / again / once more
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 再/zoi3/2 ; 講/gong2/1 ; 多次/do1 ci3/3
-m: 能/néng/0 ; 再/zài/2 ; 说/shuō/1 ; 一遍/yí biàn/3 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 再/zài/2 ; 说/shuō/1 ; 一次/yí cì/3
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 再/dɔi33/2 ; 講/gɔŋ55/1 ; 多次/ɔ33 tu33/3?
 n: Google got this one right. 講多次 "say one more time".
 nt: 再 dɔi33 is again.
@@ -297,7 +297,7 @@ nt: Meaning is 意思 yi33 ɬu33.
 @ Learning | How do you write this?
 g: This / how / write
 y: 呢個/ni1 go3/0 ; 字/zi6/0 ; 點/dim2/1 ; 寫/se2/2
-m: 这个/zhè ge/0 ; 怎么/zěn me/1 ; 写/xiě/2
+m: 这个/zhè ge/0 ; 字/zì/0 ; 怎么/zěn me/1 ; 写/xiě/2
 t: 該個/kɔi21 gɔi33/0 ; 字/du32/0 ; 幾何/gi55 hɔu215/1 ; 寫/ɬia55/2
 n: 呢個字點寫 "this character, how to write?" is what people ask.
 nt: Write is 寫 ɬia55.
@@ -305,7 +305,7 @@ nt: Write is 寫 ɬia55.
 @ Learning | Your Cantonese is very good.
 g: Your / Cantonese / (is) very / good
 y: 你/nei5/0 ; 啲廣東話/di1 gwong2 dung1 waa2/1 ; 好/hou2/2 ; 好/hou2/3
-m: 你的/nǐ de/0 ; 粤语/yuè yǔ/1 ; 说得/shuō de/- ; 很/hěn/2 ; 好/hǎo/3
+m: 你的/nǐ de/0 ; 广东话/guǎng dōng huà/1 ; 说得/shuō de/- ; 很/hěn/2 ; 好/hǎo/3
 t: 你/ni33/0 ; 尼廣州話/nai55 gɔŋ55 dziu33 va325/1 ; 好/hɔu55/2 ; 好/hɔu55/3
 n: You'll hear this a lot. The reply is a modest 麻麻哋啦 maa4 maa2 dei2 laa1, "so-so".
 nt: Cantonese is 廣州話 to many Taishanese speakers.
@@ -313,7 +313,7 @@ nt: Cantonese is 廣州話 to many Taishanese speakers.
 @ Learning | I'm learning Cantonese.
 g: I / (am) learning / Cantonese
 y: 我/ngo5/0 ; 學緊/hok6 gan2/1 ; 廣東話/gwong2 dung1 waa2/2
-m: 我/wǒ/0 ; 正在学/zhèng zài xué/1 ; 粤语/yuè yǔ/2
+m: 我/wǒ/0 ; 在学/zài xué/1 ; 广东话/guǎng dōng huà/2
 t: 我/ŋɔi33/0 ; 學緊/hɔk32 gan55/1? ; 廣州話/gɔŋ55 dziu33 va325/2
 n: Google got this one right. 緊 marks "-ing".
 nt: Learn is 學 hɔk32.
@@ -321,7 +321,7 @@ nt: Learn is 學 hɔk32.
 @ Learning | I'm still learning.
 g: I / still / learning
 y: 我/ngo5/0 ; 仲/zung6/1 ; 學緊/hok6 gan2/2
-m: 我/wǒ/0 ; 还在/hái zài/1 ; 学习中/xué xí zhōng/2
+m: 我/wǒ/0 ; 还/hái/1 ; 在学/zài xué/2
 t: 我/ŋɔi33/0 ; 還/van21/1 ; 學緊/hɔk32 gan55/2?
 n: Google got this one right. A good excuse for any mistake.
 nt: Still is 還 van21.
@@ -329,7 +329,7 @@ nt: Still is 還 van21.
 @ Learning | Teach me some Taishanese.
 g: Teach / me / some / Taishanese
 y: 教/gaau3/0 ; 我/ngo5/1 ; 講啲/gong2 di1/2 ; 台山話/toi4 saan1 waa2/3 ; 啦/laa1/-
-m: 教/jiāo/0 ; 我/wǒ/1 ; 一些/yì xiē/2 ; 台山话/tái shān huà/3 ; 吧/ba/-
+m: 教/jiāo/0 ; 我/wǒ/1 ; 说点/shuō diǎn/2 ; 台山话/tái shān huà/3 ; 吧/ba/-
 t: 教/gɔu33/0 ; 我/ŋɔi33/1 ; 講尼/gɔŋ55 nai55/2 ; 台山話/hɔi22 san33 va325/3 ; 啦/la55/-
 n: Google wrote 泰山話, which would be "Mount Tai speech". It's 台山話.
 nt: Taishanese is 台山話 hɔi22 san33 va325.
@@ -337,7 +337,7 @@ nt: Taishanese is 台山話 hɔi22 san33 va325.
 @ Learning | Did I say that right?
 g: I / said / right?
 y: 我/ngo5/0 ; 講得/gong2 dak1/1 ; 啱唔啱/ngaam1 m4 ngaam1/2 ; 呀/aa3/-
-m: 我/wǒ/0 ; 刚才/gāng cái/- ; 说对了/shuō duì le/1,2 ; 吗/ma/2
+m: 我/wǒ/0 ; 说得/shuō de/1 ; 对不对/duì bu duì/2
 t: 我/ŋɔi33/0 ; 講得/gɔŋ55 ak33/1 ; 啱唔啱/ŋam33 m22 ŋam33/2? ; 啊/a33/-
 n: Google got this one right. 啱 ngaam1 is "correct".
 nt: 啱 is my guess at the reading.
@@ -345,7 +345,7 @@ nt: 啱 is my guess at the reading.
 @ Holidays | Happy Lunar New Year!
 g: Wishing you / prosperity
 y: 恭喜/gung1 hei2/0 ; 發財/faat3 coi4/1
-m: 新年/xīn nián/- ; 快乐/kuài lè/0 ; 恭喜发财/gōng xǐ fā cái/0,1
+m: 恭喜/gōng xǐ/0 ; 发财/fā cái/1
 t: 恭喜/gəŋ33 hi55/0 ; 發財/fat33 tɔi22/1
 n: 恭喜發財 is what everyone says at Lunar New Year. Expect the reply 利是逗來 lai6 si6 dau6 loi4, "red envelopes, please!".
 nt: 恭喜發財 gəŋ33 hi55 fat33 tɔi22 is in the dictionary.
@@ -361,7 +361,7 @@ nt: Christmas is 聖誕節 sein33 an33 dɛt55.
 @ Holidays | What are we doing for the holidays?
 g: Holidays / we / do / what
 y: 放假/fong3 gaa3/0 ; 我哋/ngo5 dei6/1 ; 做/zou6/2 ; 咩好/me1 hou2/3 ; 呀/aa3/-
-m: 假期/jià qī/0 ; 我们/wǒ men/1 ; 打算/dǎ suàn/- ; 做/zuò/2 ; 什么/shén me/3
+m: 放假/fàng jià/0 ; 我们/wǒ men/1 ; 做/zuò/2 ; 什么好/shén me hǎo/3
 t: 放假/fɔŋ33 ga55/0 ; 我/ŋɔi21/1 ; 做/du33/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
 n: 做咩好 "what's good to do?" makes it a friendly planning question.
 nt: Holiday is 放假 fɔŋ33 ga55.

@@ -1,7 +1,7 @@
 @ Start Here | I made an app to learn Cantonese and Taishanese.
 g: I / made / an app / to learn / Cantonese / and / Taishanese
 y: 我/ngo5/0 ; 整咗/zing2 zo2/1 ; 個/go3/2 ; 程式/cing4 sik1/2 ; 嚟/lai4/3 ; 學/hok6/3 ; 廣東話/gwong2 dung1 waa2/4 ; 同/tung4/5 ; 台山話/toi4 saan1 waa2/6
-m: 我/wǒ/0 ; 做了/zuò le/1 ; 一个/yí ge/2 ; 应用/yìng yòng/2 ; 来/lái/3 ; 学/xué/3 ; 粤语/yuè yǔ/4 ; 和/hé/5 ; 台山话/tái shān huà/6
+m: 我/wǒ/0 ; 做了/zuò le/1 ; 一个/yí ge/2 ; 应用/yìng yòng/2 ; 来/lái/3 ; 学/xué/3 ; 广东话/guǎng dōng huà/4 ; 和/hé/5 ; 台山话/tái shān huà/6
 t: 我/ŋɔi33/0 ; 整/dzein55/1 ; 個/gɔi33/2 ; 程式/tsiaŋ22 sek55/2? ; 來/lɔi22/3 ; 學/hɔk32/3 ; 廣東話/gɔŋ55 əŋ33 va325/4? ; 同/həŋ22/5 ; 台山話/hɔi22 san33 va325/6
 s: Hice/0,1 ; una app/2 ; para aprender/3 ; cantonés/4 ; y/5 ; taishanés/6
 f: J'ai/0 ; fait/1 ; une appli/2 ; pour apprendre/3 ; le cantonais/4 ; et/5 ; le taïshanais/6
@@ -100,7 +100,7 @@ nt: Tonight is 今晚 gim33 man21.
 @ Talking About the Day | Did you go out today?
 g: You / today / went out? / (or not)
 y: 你/nei5/0 ; 今日/gam1 jat6/1 ; 有冇/jau5 mou5/2,3 ; 出街/ceot1 gaai1/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 出去了/chū qù le/2 ; 吗/ma/3
+m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 有没有/yǒu méi yǒu/2,3 ; 出去/chū qù/2
 t: 你/ni33/0 ; 今日/gim33 ŋit21/1 ; 有冇/yiu33 mɔu55/2,3 ; 出街/tsut55 gai21/2 ; 啊/a33/-
 s: ¿Saliste/0,2 ; hoy/1
 f: Tu/0 ; es sorti/2 ; aujourd'hui/1
@@ -144,7 +144,7 @@ nt: Together is 一齊 yit55 tai225.
 @ Talking About the Day | I'm going to the store. Do you need anything?
 g: I / go / (to the) store / you / need? / anything
 y: 我/ngo5/0 ; 去/heoi3/1 ; 超市/ciu1 si5/2 ; 你/nei5/3 ; 使唔使/sai2 m4 sai2/4 ; 買嘢/maai5 je5/5
-m: 我/wǒ/0 ; 去/qù/1 ; 超市/chāo shì/2 ; 你/nǐ/3 ; 要/yào/4 ; 买什么吗/mǎi shén me ma/5
+m: 我/wǒ/0 ; 去/qù/1 ; 超市/chāo shì/2 ; 你/nǐ/3 ; 要不要/yào bu yào/4 ; 买东西/mǎi dōng xi/5
 t: 我/ŋɔi33/0 ; 去/hui33/1 ; 士多舖/si21 dɔ55 pu335/2 ; 你/ni33/3 ; 使唔使/sɔi55 m22 sɔi55/4? ; 買嘢/mai33 yia33/5
 s: Voy/0,1 ; al súper/2 ; ¿necesitas/3,4 ; algo/5
 f: Je/0 ; vais/1 ; au magasin/2 ; tu/3 ; as besoin/4 ; de quelque chose/5
@@ -155,7 +155,7 @@ nt: 士多舖 si21 dɔ55 pu335 borrows English "store", plus 舖 "shop".
 @ Talking About the Day | Did you call grandma?
 g: You / called? / grandma / (yet)
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 打電話/daa2 din6 waa2/1 ; 畀/bei2/- ; 嫲嫲/maa4 maa4/2 ; 呀/aa3/3
-m: 你/nǐ/0 ; 给/gěi/- ; 奶奶/nǎi nai/2 ; 打电话/dǎ diàn huà/1 ; 了吗/le ma/3
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 打电话/dǎ diàn huà/1 ; 给/gěi/- ; 奶奶/nǎi nai/2
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 打電話/a55 ein32 va325/1 ; 畀/i55/- ; 阿人/a33 ŋin22/2 ; 啊/a33/3
 s: ¿Ya/3 ; llamaste/0,1 ; a la abuela/2
 f: Tu/0 ; as appelé/1 ; mamie/2
@@ -177,7 +177,7 @@ nt: How is 點 iam55.
 @ Talking About the Day | Today was a good day.
 g: Today / (was) very / happy
 y: 今日/gam1 jat6/0 ; 好/hou2/1 ; 開心/hoi1 sam1/2
-m: 今天/jīn tiān/0 ; 很/hěn/1 ; 开心/kāi xīn/2
+m: 今天/jīn tiān/0 ; 好/hǎo/1 ; 开心/kāi xīn/2
 t: 今日/gim33 ŋit21/0 ; 好/hɔu55/1 ; 開心/hɔi33 ɬim33/2
 s: Hoy/0 ; fue/- ; un día/2 ; muy/1 ; bonito/2
 f: Aujourd'hui/0 ; c'était/- ; une très/1 ; bonne journée/2

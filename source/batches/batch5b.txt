@@ -12,7 +12,7 @@ nt: Key is 鎖匙 ɬɔ55 si22.
 @ Around the House | I can't find my phone.
 g: I / can't find / my phone
 y: 我/ngo5/0 ; 搵唔到/wan2 m4 dou2/1 ; 我部電話/ngo5 bou6 din6 waa2/2
-m: 我/wǒ/0 ; 找不到/zhǎo bu dào/1 ; 手机了/shǒu jī le/2
+m: 我/wǒ/0 ; 找不到/zhǎo bu dào/1 ; 我的手机/wǒ de shǒu jī/2
 t: 我/ŋɔi33/0 ; 搵唔到/vun55 m22 ɔu55/1 ; 我手機/ŋɔi33 siu55 gi33/2
 s: No/1 ; encuentro/0,1 ; mi teléfono/2
 f: Je/0 ; ne trouve pas/1 ; mon téléphone/2
@@ -34,7 +34,7 @@ nt: Table is 枱 hɔi215.
 @ Plans | I'm running a little late.
 g: I / (will be) a little / late
 y: 我/ngo5/0 ; 會/wui5/- ; 遲/ci4/2 ; 少少/siu2 siu2/1 ; 呀/aa3/-
-m: 我/wǒ/0 ; 可能要/kě néng yào/- ; 晚/wǎn/2 ; 一点/yì diǎn/1
+m: 我/wǒ/0 ; 会/huì/- ; 晚/wǎn/2 ; 一点/yì diǎn/1
 t: 我/ŋɔi33/0 ; 遲/tsi22/2 ; 啲/nit55/1? ; 啊/a33/-
 s: Voy/0 ; un poco/1 ; tarde/2
 f: Je/0 ; suis/- ; un peu/1 ; en retard/2
@@ -45,7 +45,7 @@ nt: Late is 遲 tsi22.
 @ Road Trip | Traffic was terrible today.
 g: Today / traffic / (was) very / bad
 y: 今日/gam1 jat6/0 ; 好/hou2/2 ; 塞車/sak1 ce1/1,3
-m: 今天/jīn tiān/0 ; 交通/jiāo tōng/1 ; 太/tài/2 ; 糟糕了/zāo gāo le/3
+m: 今天/jīn tiān/0 ; 好/hǎo/2 ; 堵/dǔ/1,3
 t: 今日/gim33 ŋit21/0 ; 好/hɔu55/2 ; 塞車/ɬak55 tsia33/1,3
 s: Hoy/0 ; el tráfico/1 ; estuvo/- ; horrible/2,3
 f: Aujourd'hui/0 ; la circulation/1 ; était/- ; horrible/2,3
@@ -67,7 +67,7 @@ nt: Busy is 忙 mɔŋ22.
 @ Work | My boss gave me a lot of work.
 g: My boss / gave / me / a lot of / work
 y: 我老闆/ngo5 lou5 baan2/0 ; 畀咗/bei2 zo2/1 ; 好多/hou2 do1/3 ; 嘢/je5/4 ; 我做/ngo5 zou6/2
-m: 老板/lǎo bǎn/0 ; 给了/gěi le/1 ; 我/wǒ/2 ; 好多/hǎo duō/3 ; 活儿/huór/4
+m: 我老板/wǒ lǎo bǎn/0 ; 给了/gěi le/1 ; 我/wǒ/2 ; 好多/hǎo duō/3 ; 事/shì/4 ; 做/zuò/-
 t: 我老闆/ŋɔi33 lɔu55 ban55/0 ; 畀啊/i55 ə33/1 ; 好多/hɔu55 ɔ33/3? ; 嘢/yia33/4 ; 我做/ŋɔi33 du33/2
 s: Mi jefe/0 ; me/2 ; dio/1 ; mucho/3 ; trabajo/4
 f: Mon chef/0 ; m'a/2 ; donné/1 ; plein de/3 ; boulot/4
@@ -78,7 +78,7 @@ nt: Boss is 老闆 lɔu55 ban55.
 @ Work | I finally finished my project.
 g: I / finally / finished / my project
 y: 我/ngo5/0 ; 終於/zung1 jyu1/1 ; 搞掂咗/gaau2 dim6 zo2/2 ; 個項目/go3 hong6 muk6/3
-m: 我/wǒ/0 ; 终于/zhōng yú/1 ; 把项目/bǎ xiàng mù/3 ; 做完了/zuò wán le/2
+m: 我/wǒ/0 ; 终于/zhōng yú/1 ; 做完了/zuò wán le/2 ; 这个项目/zhè ge xiàng mù/3
 t: 我/ŋɔi33/0 ; 終於/dzəŋ33 yi22/1? ; 做完/du33 yɔn22/2 ; 項目/hɔŋ32 mək32/3?
 s: Por fin/1 ; terminé/0,2 ; mi proyecto/3
 f: J'ai/0 ; enfin/1 ; fini/2 ; mon projet/3
@@ -100,7 +100,7 @@ nt: Stephen Li gives 信息 ɬin33 ɬɛt55 for news.
 @ Feelings | That's amazing, I'm so happy for you!
 g: (That's) great / I / for you / (am) so / happy
 y: 好正/hou2 zeng3/0 ; 我/ngo5/1 ; 替你/tai3 nei5/2 ; 好/hou2/3 ; 開心/hoi1 sam1/4
-m: 太棒了/tài bàng le/0 ; 真/zhēn/3 ; 为你/wèi nǐ/2 ; 高兴/gāo xìng/4
+m: 太好了/tài hǎo le/0 ; 我/wǒ/1 ; 替你/tì nǐ/2 ; 好/hǎo/3 ; 开心/kāi xīn/4
 t: 好正/hɔu55 dzein33/0 ; 我/ŋɔi33/1 ; 替你/hai33 ni33/2? ; 好/hɔu55/3 ; 開心/hɔi33 ɬim33/4
 s: ¡Qué padre/0 ; me alegro/1,4 ; mucho/3 ; por ti/2
 f: C'est génial/0 ; je suis/1 ; trop/3 ; content/4 ; pour toi/2
@@ -122,7 +122,7 @@ nt: Older speakers may say "this Saturday-Sunday" for the weekend.
 @ Family Events | Let's have a barbecue on Sunday.
 g: Sunday / together / barbecue / let's
 y: 星期日/sing1 kei4 jat6/0 ; 一齊/jat1 cai4/1 ; 燒烤/siu1 haau1/2 ; 啦/laa1/3
-m: 周日/zhōu rì/0 ; 我们/wǒ men/- ; 来搞个/lái gǎo ge/- ; 烧烤/shāo kǎo/2 ; 吧/ba/3
+m: 星期天/xīng qī tiān/0 ; 一起/yì qǐ/1 ; 烧烤/shāo kǎo/2 ; 吧/ba/3
 t: 禮拜日/lai21 bai33 ŋit215/0 ; 一齊/yit55 tai225/1 ; 燒烤/siau33 hau55/2? ; 啦/la55/3
 s: Hagamos/3 ; una carne asada/2 ; el domingo/0
 f: On fait/3 ; un barbecue/2 ; dimanche/0
@@ -144,7 +144,7 @@ nt: Cousin is 老表 lɔu55 biau55, a casual word for cousins.
 @ Family Events | I'll bring dessert.
 g: I / bring / dessert / (okay?)
 y: 我/ngo5/0 ; 帶/daai3/1 ; 甜品/tim4 ban2/2 ; 嚟/lai4/1 ; 啦/laa1/3
-m: 我/wǒ/0 ; 来带/lái dài/1 ; 甜点/tián diǎn/2
+m: 我/wǒ/0 ; 带/dài/1 ; 甜品/tián pǐn/2 ; 来/lái/1 ; 吧/ba/3
 t: 我/ŋɔi33/0 ; 帶/ai215/1 ; 甜品/hiam22 ban55/2? ; 啦/la55/3
 s: Yo/0 ; llevo/1 ; el postre/2
 f: J'apporte/0,1 ; le dessert/2
@@ -155,7 +155,7 @@ nt: Bring is 帶 ai215: Cantonese d is dropped in Taishanese.
 @ Family Events | The wedding is next month.
 g: Next month / (they) get married / (already)
 y: 下個月/haa6 go3 jyut6/0 ; 就/zau6/- ; 擺酒/baai2 zau2/1 ; 喇/laa3/2
-m: 婚礼/hūn lǐ/1 ; 在/zài/- ; 下个月/xià ge yuè/0
+m: 下个月/xià ge yuè/0 ; 就/jiù/- ; 结婚/jié hūn/1 ; 了/le/2
 t: 下個月/ha32 gɔi33 ŋut32/0? ; 飲喜酒/ŋim55 hi55 diu55/1 ; 啦/la55/2
 s: La boda/1 ; es/- ; el próximo mes/0
 f: Le mariage/1 ; c'est/- ; le mois prochain/0
@@ -166,7 +166,7 @@ nt: Stephen Li gives 喜酒 hi55 diu55, the wedding feast.
 @ Family Events | What should I wear to the wedding?
 g: Go / the wedding / I / should / wear / what
 y: 去/heoi3/0 ; 飲/jam2/- ; 喜酒/hei2 zau2/1 ; 我/ngo5/2 ; 應該/jing1 goi1/3 ; 着/zoek3/4 ; 乜嘢/mat1 je5/5
-m: 参加/cān jiā/0 ; 婚礼/hūn lǐ/1 ; 我/wǒ/2 ; 该/gāi/3 ; 穿/chuān/4 ; 什么/shén me/5
+m: 去/qù/0 ; 喝/hē/- ; 喜酒/xǐ jiǔ/1 ; 我/wǒ/2 ; 应该/yīng gāi/3 ; 穿/chuān/4 ; 什么/shén me/5
 t: 去/hui33/0 ; 飲喜酒/ŋim55 hi55 diu55/1 ; 我/ŋɔi33/2 ; 應該/yein33 gɔi33/3? ; 着/dziak33/4 ; 乜嘢衫/mɔt55 yia33 sam21/5
 s: ¿Qué/5 ; me pongo/2,3,4 ; para la boda/0,1
 f: Je mets/2,3,4 ; quoi/5 ; pour le mariage/0,1
@@ -177,7 +177,7 @@ nt: 衫 sam21 is clothes: 乜嘢衫 is "what clothes".
 @ Family Events | Have you bought a gift yet?
 g: You / bought / a gift / yet?
 y: 你/nei5/0 ; 買咗/maai5 zo2/1 ; 禮物/lai5 mat6/2 ; 未呀/mei6 aa3/3
-m: 你/nǐ/0 ; 买好/mǎi hǎo/1 ; 礼物/lǐ wù/2 ; 了吗/le ma/3
+m: 你/nǐ/0 ; 买了/mǎi le/1 ; 礼物/lǐ wù/2 ; 没有/méi yǒu/3
 t: 你/ni33/0 ; 買啊/mai33 ə33/1 ; 禮物/lai21 mut32/2? ; 唔曾/miaŋ21/3
 s: ¿Ya/3 ; compraste/0,1 ; el regalo/2
 f: Tu/0 ; as déjà/3 ; acheté/1 ; le cadeau/2
@@ -188,7 +188,7 @@ nt: 唔曾 miaŋ21 is "yet?".
 @ Family Events | Your cousin is having a baby!
 g: Your cousin / (is) going to / have / a baby
 y: 你表妹/nei5 biu2 mui2/0 ; 就嚟/zau6 lai4/1 ; 生/saang1/2 ; BB/bi4 bi1/3 ; 喇/laa3/-
-m: 你表妹/nǐ biǎo mèi/0 ; 要/yào/1 ; 生/shēng/2 ; 孩子了/hái zi le/3
+m: 你表妹/nǐ biǎo mèi/0 ; 快要/kuài yào/1 ; 生/shēng/2 ; 宝宝/bǎo bao/3 ; 了/le/-
 t: 你老表/ni33 lɔu55 biau55/0 ; 就來/diu32 lɔi22/1? ; 生/saŋ33/2 ; 仔/dɔi55/3 ; 啦/la55/-
 s: ¡Tu prima/0 ; va a/1 ; tener/2 ; un bebé/3
 f: Ta cousine/0 ; va/1 ; avoir/2 ; un bébé/3
@@ -199,7 +199,7 @@ nt: 生仔 saŋ33 dɔi55 is "have a baby".
 @ Family Events | When is the baby due?
 g: The baby / when / (is) due
 y: 個BB/go3 bi4 bi1/0 ; 幾時/gei2 si4/1 ; 出世/ceot1 sai3/2 ; 呀/aa3/-
-m: 预产期/yù chǎn qī/2 ; 是/shì/- ; 什么时候/shén me shí hou/1
+m: 宝宝/bǎo bao/0 ; 什么时候/shén me shí hou/1 ; 出生/chū shēng/2
 t: 個仔/gɔi33 dɔi55/0 ; 幾時/gi55 si215/1 ; 出世/tsut55 sai33/2? ; 啊/a33/-
 s: ¿Para cuándo/1 ; nace/2 ; el bebé/0
 f: Le bébé/0 ; est prévu/2 ; pour quand/1
@@ -210,7 +210,7 @@ nt: When is 幾時 gi55 si215.
 @ Family Events | Let's all go to dim sum on Saturday.
 g: Saturday / everyone / go / yum cha / let's
 y: 星期六/sing1 kei4 luk6/0 ; 大家/daai6 gaa1/1 ; 去/heoi3/2 ; 飲茶/jam2 caa4/3 ; 啦/laa1/4
-m: 周六/zhōu liù/0 ; 我们一起/wǒ men yì qǐ/1 ; 去/qù/2 ; 吃点心/chī diǎn xīn/3 ; 吧/ba/4
+m: 星期六/xīng qī liù/0 ; 大家/dà jiā/1 ; 去/qù/2 ; 吃点心/chī diǎn xīn/3 ; 吧/ba/4
 t: 禮拜六/lai21 bai33 lək32/0? ; 大家/ai32 ga33/1? ; 去/hui33/2 ; 飲茶/ŋim55 tsa22/3 ; 啦/la55/4
 s: Vamos todos/1,2,4 ; a comer dim sum/3 ; el sábado/0
 f: Allons tous/1,2,4 ; manger des dim sum/3 ; samedi/0
@@ -232,7 +232,7 @@ nt: Table is 枱 hɔi215 again.
 @ Family Events | Who's coming to dinner?
 g: Who / is coming / to eat dinner
 y: 邊個/bin1 go3/0 ; 嚟/lai4/1 ; 食飯/sik6 faan6/2 ; 呀/aa3/-
-m: 都有谁/dōu yǒu shéi/0 ; 来/lái/1 ; 吃晚饭/chī wǎn fàn/2
+m: 谁/shéi/0 ; 来/lái/1 ; 吃饭/chī fàn/2
 t: 谁/sui55/0 ; 來/lɔi22/1 ; 吃飯/hiak33 fan32/2 ; 啊/a33/-
 s: ¿Quién/0 ; viene/1 ; a cenar/2
 f: Qui/0 ; vient/1 ; dîner/2
@@ -243,7 +243,7 @@ nt: Come is 來 lɔi22.
 @ Family Events | Your aunt is coming to visit next week.
 g: Your aunt / next week / will come / visit
 y: 你姨媽/nei5 ji4 maa1/0 ; 下個禮拜/haa6 go3 lai5 baai3/1 ; 會嚟/wui5 lai4/2 ; 探我哋/taam3 ngo5 dei6/3
-m: 你阿姨/nǐ ā yí/0 ; 下周/xià zhōu/1 ; 要来/yào lái/2 ; 探访/tàn fǎng/3
+m: 你阿姨/nǐ ā yí/0 ; 下个礼拜/xià ge lǐ bài/1 ; 会来/huì lái/2 ; 看我们/kàn wǒ men/3
 t: 你大姨/ni33 ai32 yi22/0 ; 下個禮拜/ha32 gɔi33 lai21 bai33/1? ; 來/lɔi22/2 ; 探/ham33/3?
 s: Tu tía/0 ; viene/2 ; a visitarnos/3 ; la próxima semana/1
 f: Ta tante/0 ; vient/2 ; nous voir/3 ; la semaine prochaine/1
@@ -254,7 +254,7 @@ nt: Stephen Li has 大姨 ai32 yi22 for mom's eldest sister.
 @ Family Events | She's staying with us for a few days.
 g: She / with us / stay / a few days
 y: 佢/keoi5/0 ; 喺我哋度/hai2 ngo5 dei6 dou6/1 ; 住/zyu6/2 ; 幾日/gei2 jat6/3
-m: 她/tā/0 ; 会住/huì zhù/2 ; 我们这儿/wǒ men zhèr/1 ; 几天/jǐ tiān/3
+m: 她/tā/0 ; 在我们这儿/zài wǒ men zhèr/1 ; 住/zhù/2 ; 几天/jǐ tiān/3
 t: 佢/kui33/0 ; 喺我處/hai55 ŋɔi21 tsi33/1? ; 住/dzi32/2 ; 幾日/gi55 ŋit21/3?
 s: Se queda/0,2 ; con nosotros/1 ; unos días/3
 f: Elle/0 ; reste/2 ; chez nous/1 ; quelques jours/3
@@ -265,7 +265,7 @@ nt: Stay or live is 住 dzi32.
 @ Family Events | Let's clean the house before she comes.
 g: Before she comes / we / clean / the house / let's
 y: 佢嚟之前/keoi5 lai4 zi1 cin4/0 ; 我哋/ngo5 dei6/1 ; 執吓/zap1 haa5/2 ; 間屋/gaan1 uk1/3 ; 先/sin1/4
-m: 在她来之前/zài tā lái zhī qián/0 ; 我们/wǒ men/1 ; 把房子/bǎ fáng zi/3 ; 打扫一下/dǎ sǎo yí xià/2 ; 吧/ba/4
+m: 她来之前/tā lái zhī qián/0 ; 我们/wǒ men/1 ; 先/xiān/4 ; 收拾一下/shōu shi yí xià/2 ; 屋子/wū zi/3
 t: 佢來之前/kui33 lɔi22 dzi33 tein22/0? ; 我/ŋɔi21/1? ; 執/dzap55/2? ; 屋/ək55/3 ; 先/ɬein33/4
 s: Limpiemos/1,2,4 ; la casa/3 ; antes de que venga/0
 f: Rangeons/1,2,4 ; la maison/3 ; avant qu'elle arrive/0
@@ -276,7 +276,7 @@ nt: 先 ɬein33 "first" also goes at the end in Taishanese.
 @ Meals | I miss home cooking.
 g: I / (really) miss / home-cooked / food
 y: 我/ngo5/0 ; 好掛住/hou2 gwaa3 zyu6/1 ; 屋企/uk1 kei2/2 ; 啲餸/di1 sung3/3
-m: 我/wǒ/0 ; 想念/xiǎng niàn/1 ; 家常/jiā cháng/2 ; 菜了/cài le/3
+m: 我/wǒ/0 ; 好想/hǎo xiǎng/1 ; 家里/jiā lǐ/2 ; 的菜/de cài/3
 t: 我/ŋɔi33/0 ; 好掛住/hɔu55 ga33 dzi32/1? ; 屋企/ək55 ki55/2 ; 餸/ɬəŋ21/3
 s: Extraño/0,1 ; la comida/3 ; de casa/2
 f: La cuisine/3 ; de la maison/2 ; me manque/0,1
@@ -287,7 +287,7 @@ nt: Stephen Li gives 餸 ɬəŋ21 for dishes.
 @ Meals | Mom's cooking is the best.
 g: Mom / cooks / food / (is) the most / delicious
 y: 媽咪/maa1 mi4/0 ; 煮/zyu2/1 ; 嘅餸/ge3 sung3/2 ; 最/zeoi3/3 ; 好食/hou2 sik6/4
-m: 妈妈/mā ma/0 ; 做的/zuò de/1 ; 菜/cài/2 ; 最/zuì/3 ; 好吃/hǎo chī/4
+m: 妈妈/mā ma/0 ; 煮/zhǔ/1 ; 的菜/de cài/2 ; 最/zuì/3 ; 好吃/hǎo chī/4
 t: 阿媽/a33 ma55/0? ; 煮/dzi55/1 ; 個餸/gɔi33 ɬəŋ21/2 ; 最/dui33/3 ; 好吃/hɔu55 hiak33/4
 s: La comida/2 ; de mamá/0,1 ; es/- ; la mejor/3,4
 f: La cuisine/1,2 ; de maman/0 ; c'est/- ; la meilleure/3,4
@@ -298,7 +298,7 @@ nt: 最 dui33 is "most".
 @ Cooking Together | Can you teach me grandma's recipe?
 g: Can? / teach me / how to make / grandma's / dish
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 教我/gaau3 ngo5/1 ; 點整/dim2 zing2/2 ; 婆婆/po4 po2/3 ; 嗰味餸/go2 mei6 sung3/4
-m: 你能/nǐ néng/0 ; 教我/jiāo wǒ/1 ; 奶奶的/nǎi nai de/3 ; 食谱/shí pǔ/2,4 ; 吗/ma/0
+m: 可不可以/kě bu kě yǐ/0 ; 教我/jiāo wǒ/1 ; 怎么做/zěn me zuò/2 ; 外婆/wài pó/3 ; 那道菜/nà dào cài/4
 t: 可唔可以/hɔ55 m22 hɔ55 yi21/0? ; 教我/gɔu33 ŋɔi33/1 ; 點整/iam55 dzein55/2 ; 阿婆/a33 pɔ22/3? ; 個餸/gɔi33 ɬəŋ21/4
 s: ¿Me enseñas/0,1 ; la receta/2,4 ; de la abuela/3
 f: Tu peux/0 ; m'apprendre/1 ; la recette/2,4 ; de mamie/3
@@ -309,7 +309,7 @@ nt: Teach is 教 gɔu33.
 @ Feelings | You're always so busy.
 g: You / always / (are) so / busy
 y: 你/nei5/0 ; 成日/seng4 jat6/1 ; 都/dou1/- ; 好/hou2/2 ; 忙/mong4/3
-m: 你/nǐ/0 ; 总是/zǒng shì/1 ; 那么/nà me/2 ; 忙/máng/3
+m: 你/nǐ/0 ; 整天/zhěng tiān/1 ; 都/dōu/- ; 好/hǎo/2 ; 忙/máng/3
 t: 你/ni33/0 ; 成日/siaŋ22 ŋi215/1 ; 好/hɔu55/2 ; 忙/mɔŋ22/3
 s: Siempre/1 ; estás/0 ; tan/2 ; ocupado/3
 f: Tu/0 ; es/- ; toujours/1 ; si/2 ; occupé/3
@@ -342,7 +342,7 @@ nt: Proud is 驕傲 giau33 ŋɔu32.
 @ Goodbyes | Call me anytime.
 g: Anytime / call / me
 y: 隨時/ceoi4 si4/0 ; 打畀/daa2 bei2/1 ; 我/ngo5/2 ; 啦/laa1/-
-m: 随时/suí shí/0 ; 给我/gěi wǒ/2 ; 打电话/dǎ diàn huà/1
+m: 随时/suí shí/0 ; 打给/dǎ gěi/1 ; 我/wǒ/2 ; 吧/ba/-
 t: 隨時/tui22 si225/0 ; 打畀/a55 i55/1 ; 我/ŋɔi33/2 ; 啦/la55/-
 s: Llámame/1,2 ; cuando quieras/0
 f: Appelle-moi/1,2 ; quand tu veux/0

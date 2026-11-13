@@ -1,7 +1,7 @@
 @ School | Do you have homework?
 g: You / have? / homework
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 功課/gung1 fo3/2 ; 呀/aa3/-
-m: 有/yǒu/1 ; 作业/zuò yè/2 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 作业/zuò yè/2
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 功課/gəŋ33 fɔ33/2 ; 啊/a33/-
 n: Google got this one right. Mandarin calls homework 作业, Cantonese 功課.
 nt: Homework is 功課 gəŋ33 fɔ33.
@@ -9,7 +9,7 @@ nt: Homework is 功課 gəŋ33 fɔ33.
 @ School | Did you finish your homework?
 g: You / finished / homework / yet?
 y: 你/nei5/0 ; 做完/zou6 jyun4/1 ; 功課/gung1 fo3/2 ; 未呀/mei6 aa3/3
-m: 作业/zuò yè/2 ; 写完了/xiě wán le/1 ; 吗/ma/3
+m: 你/nǐ/0 ; 做完/zuò wán/1 ; 作业/zuò yè/2 ; 了没有/le méi yǒu/3
 t: 你/ni33/0 ; 做完/du33 yɔn22/1 ; 功課/gəŋ33 fɔ33/2 ; 唔曾/miaŋ21/3 ; 啊/a33/-
 n: The "…yet?" pattern again: 做完…未.
 nt: Finish is 做完 du33 yɔn22.
@@ -17,7 +17,7 @@ nt: Finish is 做完 du33 yɔn22.
 @ School | What's your favorite subject?
 g: You / like most / which / subject
 y: 你/nei5/0 ; 最鍾意/zeoi3 zung1 ji3/1 ; 邊/bin1/2 ; 科/fo1/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 最喜欢的/zuì xǐ huan de/1 ; 科目/kē mù/3 ; 是/shì/- ; 什么/shén me/2
+m: 你/nǐ/0 ; 最喜欢/zuì xǐ huan/1 ; 哪/nǎ/2 ; 科/kē/3
 t: 你/ni33/0 ; 最鍾意/du33 dzəŋ33 yi33/1? ; 哪/nai215/2 ; 科/fɔ33/3? ; 啊/a33/-
 n: Cantonese has no word for "favorite": it says "like most" (最鍾意).
 nt: Built from 最 du33 and 鍾意 dzəŋ33 yi33.
@@ -25,7 +25,7 @@ nt: Built from 最 du33 and 鍾意 dzəŋ33 yi33.
 @ School | Do you like your teacher?
 g: You / like? / your / teacher
 y: 你/nei5/0 ; 鍾唔鍾意/zung1 m4 zung1 ji3/1 ; 你個/nei5 go3/2 ; 老師/lou5 si1/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 喜欢/xǐ huan/1 ; 你的/nǐ de/2 ; 老师/lǎo shī/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 喜不喜欢/xǐ bu xǐ huan/1 ; 你的/nǐ de/2 ; 老师/lǎo shī/3
 t: 你/ni33/0 ; 鍾唔鍾意/dzəŋ33 m22 dzəŋ33 yi33/1 ; 你個/ni33 gɔi33/2 ; 老師/lɔu55 ɬu33/3 ; 啊/a33/-
 n: 你個老師 "your (one) teacher" uses the measure word in place of "of".
 nt: Teacher is 老師 lɔu55 ɬu33.
@@ -41,7 +41,7 @@ nt: 開學 hɔi33 hɔk32 is in the dictionary.
 @ School | I studied computer science in college.
 g: I / in college / studied / computer science
 y: 我/ngo5/0 ; 喺大學/hai2 daai6 hok6/1 ; 讀/duk6/2 ; 電腦/din6 nou5/3 ; 嘅/ge3/-
-m: 我/wǒ/0 ; 大学/dà xué/1 ; 学的是/xué de shì/2 ; 计算机科学/jì suàn jī kē xué/3
+m: 我/wǒ/0 ; 在大学/zài dà xué/1 ; 读/dú/2 ; 计算机/jì suàn jī/3
 t: 我/ŋɔi33/0 ; 到大學/ɔu33 ai32 hɔk32/1? ; 讀/ək32/2? ; 電腦/ein32 nɔu55/3
 n: People just say 讀電腦 "studied computers". Google's 電腦科學 is the formal name.
 nt: College is 大學 ai32 hɔk32.
@@ -49,7 +49,7 @@ nt: College is 大學 ai32 hɔk32.
 @ School | Did you go to university?
 g: You / have? / studied at / university
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 讀過/duk6 gwo3/2 ; 大學/daai6 hok6/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 上过/shàng guo/2 ; 大学/dà xué/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 读过/dú guo/2 ; 大学/dà xué/3
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 讀過/ək32 gɔ33/2? ; 大學/ai32 hɔk32/3 ; 啊/a33/-
 n: 有冇…過 asks "have you ever".
 nt: 大學 is ai32 hɔk32.
@@ -57,7 +57,7 @@ nt: 大學 is ai32 hɔk32.
 @ Hobbies | What do you do for fun?
 g: You / usually / play / what
 y: 你/nei5/0 ; 平時/ping4 si4/1 ; 玩/waan2/2 ; 啲咩/di1 me1/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 平时/píng shí/1 ; 喜欢/xǐ huan/- ; 做什么/zuò shén me/3 ; 消遣/xiāo qiǎn/2
+m: 你/nǐ/0 ; 平时/píng shí/1 ; 玩/wán/2 ; 什么/shén me/3
 t: 你/ni33/0 ; 平時/pein22 si22/1? ; 嫽/lɔu21/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
 n: 玩 waan2 "play" covers having fun of any kind, for adults too.
 nt: "Have fun" is 嫽 lɔu21.
@@ -73,7 +73,7 @@ nt: 興趣 is my guess at the reading.
 @ Hobbies | I like to cook.
 g: I / like / to cook
 y: 我/ngo5/0 ; 鍾意/zung1 ji3/1 ; 煮嘢食/zyu2 je5 sik6/2
-m: 我/wǒ/0 ; 喜欢/xǐ huan/1 ; 做饭/zuò fàn/2
+m: 我/wǒ/0 ; 喜欢/xǐ huan/1 ; 煮饭/zhǔ fàn/2
 t: 我/ŋɔi33/0 ; 鍾意/dzəŋ33 yi33/1 ; 煮飯/dzi55 fan32/2
 n: 煮嘢食 "cook stuff to eat" is how people talk about cooking as a hobby.
 nt: Cooking is 煮飯 dzi55 fan32.
@@ -89,7 +89,7 @@ nt: 睇書 hai55 si33 is in the dictionary.
 @ Hobbies | Do you like to watch movies?
 g: You / like? / watch movies
 y: 你/nei5/0 ; 鍾唔鍾意/zung1 m4 zung1 ji3/1 ; 睇戲/tai2 hei3/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 喜欢/xǐ huan/1 ; 看电影/kàn diàn yǐng/2 ; 吗/ma/1
+m: 你/nǐ/0 ; 喜不喜欢/xǐ bu xǐ huan/1 ; 看电影/kàn diàn yǐng/2
 t: 你/ni33/0 ; 鍾唔鍾意/dzəŋ33 m22 dzəŋ33 yi33/1 ; 睇戲/hai55 hi33/2 ; 啊/a33/-
 n: 睇戲 "watch a show" means going to the movies.
 nt: 睇戲 hai55 hi33 is in the dictionary.
@@ -97,7 +97,7 @@ nt: 睇戲 hai55 hi33 is in the dictionary.
 @ Hobbies | Have you seen this show?
 g: You / have seen / this / show / yet?
 y: 你/nei5/0 ; 睇過/tai2 gwo3/1 ; 呢個/ni1 go3/2 ; 節目/zit3 muk6/3 ; 未/mei6/4
-m: 你/nǐ/0 ; 看过/kàn guo/1 ; 这个/zhè ge/2 ; 节目/jié mù/3 ; 吗/ma/4
+m: 你/nǐ/0 ; 看过/kàn guo/1 ; 这个/zhè ge/2 ; 节目/jié mù/3 ; 没有/méi yǒu/4
 t: 你/ni33/0 ; 睇過/hai55 gɔ33/1? ; 該個/kɔi21 gɔi33/2 ; 節目/dɛt33 mək32/3? ; 唔曾/miaŋ21/4
 n: Google got this one right.
 nt: 節目 is my guess at the reading.
@@ -105,7 +105,7 @@ nt: 節目 is my guess at the reading.
 @ Hobbies | Let's play cards.
 g: We / play cards / let's
 y: 我哋/ngo5 dei6/0 ; 玩啤牌/waan2 pe1 paai2/1 ; 啦/laa1/2
-m: 我们/wǒ men/0 ; 来/lái/- ; 玩牌/wán pái/1 ; 吧/ba/2
+m: 我们/wǒ men/0 ; 玩牌/wán pái/1 ; 吧/ba/2
 t: 我/ŋɔi21/0 ; 打紙牌/a55 dzi55 pai225/1 ; 啦/la55/2
 n: Playing cards are 啤牌 pe1 paai2, from English "pair".
 nt: Playing cards is 打紙牌 a55 dzi55 pai225 "hit paper cards".
@@ -113,7 +113,7 @@ nt: Playing cards is 打紙牌 a55 dzi55 pai225 "hit paper cards".
 @ Hobbies | Do you want to play a game?
 g: You / want? / play / a game
 y: 你/nei5/0 ; 想唔想/soeng2 m4 soeng2/1 ; 玩/waan2/2 ; 遊戲/jau4 hei3/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 想/xiǎng/1 ; 玩/wán/2 ; 个游戏/ge yóu xì/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 想不想/xiǎng bu xiǎng/1 ; 玩/wán/2 ; 游戏/yóu xì/3
 t: 你/ni33/0 ; 想唔想/ɬiaŋ55 m22 ɬiaŋ55/1 ; 嫽/lɔu21/2? ; 遊戲/yiu22 hi33/3? ; 啊/a33/-
 n: Google got this one right.
 nt: Built from 遊 yiu22 and 戲 hi33.
@@ -121,7 +121,7 @@ nt: Built from 遊 yiu22 and 戲 hi33.
 @ Hobbies | I'm not very good at this.
 g: I / not very / good at / this
 y: 我/ngo5/0 ; 唔係好/m4 hai6 hou2/1 ; 識/sik1/2 ; 呢樣/ni1 joeng6/3
-m: 我/wǒ/0 ; 不怎么/bù zěn me/1 ; 擅长/shàn cháng/2 ; 这个/zhè ge/3
+m: 我/wǒ/0 ; 不是很/bú shì hěn/1 ; 会/huì/2 ; 这个/zhè ge/3
 t: 我/ŋɔi33/0 ; 唔係好/m22 hai32 hɔu55/1 ; 曉/hiau55/2 ; 該樣/kɔi21 yiaŋ32/3?
 n: 唔係好 "not really" softens anything. Useful for mahjong night.
 nt: 曉 hiau55 is "know how to".
@@ -129,7 +129,7 @@ nt: 曉 hiau55 is "know how to".
 @ Hobbies | You're really good at that.
 g: You / really / skilled
 y: 你/nei5/0 ; 真係/zan1 hai6/1 ; 好叻/hou2 lek1/2
-m: 你/nǐ/0 ; 真的/zhēn de/1 ; 很厉害/hěn lì hai/2
+m: 你/nǐ/0 ; 真的/zhēn de/1 ; 好厉害/hǎo lì hai/2
 t: 你/ni33/0 ; 真係/dzin33 hai32/1? ; 好叻/hɔu55 liak55/2
 n: 叻 lek1 "clever, skilled" is pure Cantonese and everyone loves hearing it.
 nt: 叻 liak55 is in the dictionary.
@@ -137,7 +137,7 @@ nt: 叻 liak55 is in the dictionary.
 @ Hobbies | Do you play any sports?
 g: You / do? / play / any sports
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 做/zou6/2 ; 運動/wan6 dung6/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 参加/cān jiā/2 ; 什么/shén me/- ; 体育运动/tǐ yù yùn dòng/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 做/zuò/2 ; 运动/yùn dòng/3
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 做/du33/2 ; 運動/vun32 əŋ32/3 ; 啊/a33/-
 n: Cantonese "does" sport: 做運動.
 nt: Sports is 運動 vun32 əŋ32.
@@ -161,7 +161,7 @@ nt: Morning is 朝 dziau21, as in 朝早.
 @ Swimming | The pool is too crowded.
 g: The / pool / (has) too many / people
 y: 個/go3/0 ; 泳池/wing6 ci4/1 ; 太多/taai3 do1/2 ; 人/jan4/3
-m: 游泳池/yóu yǒng chí/1 ; 里/lǐ/- ; 人/rén/3 ; 太多了/tài duō le/2
+m: 这个/zhè ge/0 ; 泳池/yǒng chí/1 ; 太多/tài duō/2 ; 人/rén/3 ; 了/le/-
 t: 個/gɔi33/0 ; 游泳池/yiu22 vein32 tsi22/1 ; 太多/hai33 ɔ33/2? ; 人/ŋin22/3
 n: Say "too many people" rather than "crowded". Google's 擠 is understood too.
 nt: The pool is 游泳池 yiu22 vein32 tsi22.
@@ -201,7 +201,7 @@ nt: Built from 幾 gi55 and 遠 yɔn55.
 @ Running & Biking | I'm training for a marathon.
 g: I / (am) training for / a marathon
 y: 我/ngo5/0 ; 練緊/lin6 gan2/1 ; 馬拉松/maa5 laai1 cung4/2
-m: 我/wǒ/0 ; 正在为/zhèng zài wèi/- ; 马拉松/mǎ lā sōng/2 ; 做训练/zuò xùn liàn/1
+m: 我/wǒ/0 ; 在练/zài liàn/1 ; 马拉松/mǎ lā sōng/2
 t: 我/ŋɔi33/0 ; 練緊/lein32 gan55/1? ; 馬拉松/ma21 lai33 tsəŋ22/2?
 n: 緊 after a verb means "-ing", in the middle of doing it.
 nt: Marathon isn't in the dictionary; the reading is my guess.
@@ -209,7 +209,7 @@ nt: Marathon isn't in the dictionary; the reading is my guess.
 @ Running & Biking | My legs are sore.
 g: My / legs / (are) very / sore
 y: 我/ngo5/0 ; 對腳/deoi3 goek3/1 ; 好/hou2/2 ; 痠/syun1/3
-m: 我的/wǒ de/0 ; 腿/tuǐ/1 ; 很/hěn/2 ; 酸/suān/3
+m: 我的/wǒ de/0 ; 腿/tuǐ/1 ; 好/hǎo/2 ; 酸/suān/3
 t: 我/ŋɔi33/0 ; 對腳/ui33 giak33/1 ; 好/hɔu55/2 ; 痠/ɬɔn33/3?
 n: Tired muscles are 痠 "sour". Google's 痛 means pain, which sounds like an injury.
 nt: Leg or foot is 腳 giak33. 痠 is my guess from 甜酸 "sweet and sour".
@@ -217,7 +217,7 @@ nt: Leg or foot is 腳 giak33. 痠 is my guess from 甜酸 "sweet and sour".
 @ Running & Biking | I need to drink some water.
 g: I / need to / drink / some / water
 y: 我/ngo5/0 ; 要/jiu3/1 ; 飲/jam2/2 ; 啲/di1/3 ; 水/seoi2/4
-m: 我/wǒ/0 ; 得/děi/1 ; 喝/hē/2 ; 点/diǎn/3 ; 水/shuǐ/4
+m: 我/wǒ/0 ; 要/yào/1 ; 喝/hē/2 ; 点/diǎn/3 ; 水/shuǐ/4
 t: 我/ŋɔi33/0 ; 使/sɔi55/1 ; 飲/ŋim55/2 ; 尼/nai55/3 ; 水/sui55/4
 n: Google got this one right.
 nt: "Need to" is 使 sɔi55.
@@ -225,15 +225,15 @@ nt: "Need to" is 使 sɔi55.
 @ Running & Biking | Do you want to go biking?
 g: You / want? / go / ride bikes
 y: 你/nei5/0 ; 想唔想/soeng2 m4 soeng2/1 ; 去/heoi3/2 ; 踩單車/caai2 daan1 ce1/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 想/xiǎng/1 ; 去/qù/2 ; 骑自行车/qí zì xíng chē/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 想不想/xiǎng bu xiǎng/1 ; 去/qù/2 ; 骑单车/qí dān chē/3
 t: 你/ni33/0 ; 想唔想/ɬiaŋ55 m22 ɬiaŋ55/1 ; 去/hui33/2 ; 踩單車/tsai55 an33 tsia335/3 ; 啊/a33/-
-n: Cantonese "steps on" a bike (踩單車); Mandarin "rides" one (骑自行车).
+n: Cantonese "steps on" a bike (踩單車); Mandarin "rides" one (骑单车). Both call it a "single vehicle", 單車.
 nt: 踩單車 tsai55 an33 tsia335 is in the dictionary.
 
 @ Running & Biking | I ride my bike to work.
 g: I / ride (my) bike / to work
 y: 我/ngo5/0 ; 踩單車/caai2 daan1 ce1/1 ; 返工/faan1 gung1/2
-m: 我/wǒ/0 ; 骑自行车/qí zì xíng chē/1 ; 上班/shàng bān/2
+m: 我/wǒ/0 ; 骑单车/qí dān chē/1 ; 上班/shàng bān/2
 t: 我/ŋɔi33/0 ; 踩單車/tsai55 an33 tsia335/1 ; 返工/fan33 gəŋ33/2
 n: Two verbs in a row: "ride-bike go-to-work".
 nt: 返工 fan33 gəŋ33 is in the dictionary.
@@ -241,7 +241,7 @@ nt: 返工 fan33 gəŋ33 is in the dictionary.
 @ Running & Biking | Wear your helmet.
 g: Wear / your / helmet
 y: 戴/daai3/0 ; 好/hou2/- ; 個頭盔/go3 tau4 kwai1/1,2
-m: 戴上/dài shàng/0 ; 你的/nǐ de/1 ; 头盔/tóu kuī/2
+m: 戴/dài/0 ; 好/hǎo/- ; 头盔/tóu kuī/1,2
 t: 戴/ai33/0? ; 個頭盔/gɔi33 həu22 kui33/1,2?
 n: 戴好 "wear properly", like 扣好 for a seatbelt.
 nt: Helmet isn't in the dictionary.
@@ -249,7 +249,7 @@ nt: Helmet isn't in the dictionary.
 @ Running & Biking | My bike has a flat tire.
 g: My / bike / (has) / a flat tire
 y: 我/ngo5/0 ; 架單車/gaa3 daan1 ce1/1 ; 爆咗呔/baau3 zo2 taai1/3
-m: 我的/wǒ de/0 ; 自行车/zì xíng chē/1 ; 爆胎了/bào tāi le/3
+m: 我的/wǒ de/0 ; 单车/dān chē/1 ; 爆胎了/bào tāi le/3
 t: 我/ŋɔi33/0 ; 架單車/ga33 an33 tsia335/1? ; 爆呔/bau33 tai55/3?
 n: 呔 taai1 is "tire", borrowed from English. 架 is the measure word for vehicles.
 nt: The dictionary has 呔 tai55 for tire; 爆 is my guess.
@@ -257,7 +257,7 @@ nt: The dictionary has 呔 tai55 for tire; 爆 is my guess.
 @ Running & Biking | Let's go for a walk.
 g: We / go for a walk / let's
 y: 我哋/ngo5 dei6/0 ; 去散步/heoi3 saan3 bou6/1 ; 啦/laa1/2
-m: 我们/wǒ men/0 ; 去散散步/qù sàn san bù/1 ; 吧/ba/2
+m: 我们/wǒ men/0 ; 去散步/qù sàn bù/1 ; 吧/ba/2
 t: 我/ŋɔi21/0 ; 去行下/hui33 haŋ22 ha21/1? ; 啦/la55/2
 n: Google got this one right. 行吓 haang4 haa5 "walk a bit" is also common.
 nt: Built from 行 haŋ22 "walk" and 下 ha21.
@@ -265,7 +265,7 @@ nt: Built from 行 haŋ22 "walk" and 下 ha21.
 @ Running & Biking | Let's go hiking this weekend.
 g: This weekend / go hiking / let's
 y: 今個週末/gam1 go3 zau1 mut6/0 ; 去行山/heoi3 haang4 saan1/1 ; 啦/laa1/2
-m: 这个周末/zhè ge zhōu mò/0 ; 去徒步/qù tú bù/1 ; 吧/ba/2
+m: 这个周末/zhè ge zhōu mò/0 ; 去爬山/qù pá shān/1 ; 吧/ba/2
 t: 今個週末/gim33 gɔi33 dziu33 mut32/0? ; 去行山/hui33 haŋ22 san33/1? ; 啦/la55/2
 n: 行山 "walk the mountain" is hiking in Hong Kong.
 nt: Careful: the dictionary lists 行山 haŋ22 san33 as visiting ancestors' graves, so ask her family.
@@ -281,7 +281,7 @@ nt: Built from 郵 and 輪 lun225 "wheel, ship".
 @ Travel | Have you ever been on a cruise?
 g: You / have you ever? / taken / a cruise
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 坐過/co5 gwo3/2 ; 郵輪/jau4 leon4/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 坐过/zuò guo/2 ; 游轮/yóu lún/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 坐过/zuò guo/2 ; 游轮/yóu lún/3
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 坐過/tɔ33 gɔ33/2? ; 郵輪/yiu22 lun225/3? ; 啊/a33/-
 n: 有冇…過 is "have you ever".
 nt: 坐船 tɔ33 sɔn22 "take a boat" is in the dictionary.
@@ -321,7 +321,7 @@ nt: Sunset is 落日頭 lɔk32 ŋit33 həu21, "the sun goes down".
 @ Travel | Where are you going on vacation?
 g: You / go / where / on vacation
 y: 你/nei5/0 ; 去/heoi3/1 ; 邊度/bin1 dou6/2 ; 旅行/leoi5 hang4/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 打算/dǎ suàn/- ; 去哪儿/qù nǎr/1,2 ; 度假/dù jià/3
+m: 你/nǐ/0 ; 去/qù/1 ; 哪儿/nǎr/2 ; 旅行/lǚ xíng/3
 t: 你/ni33/0 ; 去/hui33/1 ; 哪/nai215/2 ; 旅行/lui21 haŋ22/3 ; 啊/a33/-
 n: Everyday Cantonese says 去旅行 "go traveling" for a vacation.
 nt: 旅行 lui21 haŋ22 comes from 旅行社 "travel agency".
@@ -337,7 +337,7 @@ nt: Hong Kong is 香港 hiaŋ33 kɔŋ55.
 @ Travel | Have you been to China?
 g: You / have you ever? / been to / China
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 去過/heoi3 gwo3/2 ; 中國/zung1 gwok3/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 去过/qù guo/2 ; 中国/zhōng guó/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 去过/qù guo/2 ; 中国/zhōng guó/3
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 去過/hui33 gɔ33/2? ; 唐山/hɔŋ22 san33/3 ; 啊/a33/-
 n: Older overseas Chinese often say 唐山 tong4 saan1 for the homeland.
 nt: The dictionary gives both 中國 dzəŋ33 gɔk55 and 唐山 hɔŋ22 san33.
@@ -345,7 +345,7 @@ nt: The dictionary gives both 中國 dzəŋ33 gɔk55 and 唐山 hɔŋ22 san33.
 @ Travel | I want to visit Taishan someday.
 g: I / someday / want to / go to / Taishan
 y: 我/ngo5/0 ; 第日/dai6 jat6/1 ; 想/soeng2/2 ; 去/heoi3/3 ; 台山/toi4 saan1/4
-m: 我/wǒ/0 ; 希望/xī wàng/2 ; 有一天/yǒu yì tiān/1 ; 能去/néng qù/3 ; 台山/tái shān/4
+m: 我/wǒ/0 ; 以后/yǐ hòu/1 ; 想/xiǎng/2 ; 去/qù/3 ; 台山/tái shān/4
 t: 我/ŋɔi33/0 ; 第日/ai32 ŋit33/1 ; 想/ɬiaŋ55/2 ; 去/hui33/3 ; 台山/hɔi22 san33/4
 n: 第日 "another day" is someday. This one will win you points.
 nt: Taishan is 台山 hɔi22 san33.
@@ -353,7 +353,7 @@ nt: Taishan is 台山 hɔi22 san33.
 @ Travel | How long is the flight?
 g: Flying / takes / how long
 y: 搭飛機/daap3 fei1 gei1/0 ; 要/jiu3/1 ; 幾耐/gei2 noi6/2 ; 呀/aa3/-
-m: 飞行时间/fēi xíng shí jiān/0 ; 有/yǒu/1 ; 多长/duō cháng/2
+m: 坐飞机/zuò fēi jī/0 ; 要/yào/1 ; 多久/duō jiǔ/2
 t: 搭飛機/ap33 fi33 gi33/0 ; 使/sɔi55/1 ; 幾久/gi55 giu55/2 ; 啊/a33/-
 n: 搭飛機 "take a plane" stands for the flight.
 nt: Flying is 搭飛機 ap33 fi33 gi33.
@@ -361,7 +361,7 @@ nt: Flying is 搭飛機 ap33 fi33 gi33.
 @ Travel | I need to pack my suitcase.
 g: I / need to / pack / luggage
 y: 我/ngo5/0 ; 要/jiu3/1 ; 執/zap1/2 ; 行李/hang4 lei5/3
-m: 我/wǒ/0 ; 得/děi/1 ; 收拾/shōu shi/2 ; 行李箱/xíng li xiāng/3
+m: 我/wǒ/0 ; 要/yào/1 ; 收拾/shōu shi/2 ; 行李/xíng li/3
 t: 我/ŋɔi33/0 ; 使/sɔi55/1 ; 執行李/dzap55 haŋ22 li55/2,3
 n: 執 zap1 "pick up, tidy" is the packing verb.
 nt: 執行李 dzap55 haŋ22 li55 is in the dictionary.
@@ -369,7 +369,7 @@ nt: 執行李 dzap55 haŋ22 li55 is in the dictionary.
 @ Travel | Did you bring your passport?
 g: You / brought / passport / yet?
 y: 你/nei5/0 ; 帶咗/daai3 zo2/1 ; 護照/wu6 ziu3/2 ; 未呀/mei6 aa3/3
-m: 你/nǐ/0 ; 带/dài/1 ; 护照/hù zhào/2 ; 了吗/le ma/3
+m: 你/nǐ/0 ; 带了/dài le/1 ; 护照/hù zhào/2 ; 没有/méi yǒu/3
 t: 你/ni33/0 ; 帶/ai33/1 ; 護照/vu32 dziau33/2? ; 唔曾/miaŋ21/3 ; 啊/a33/-
 n: Google got this one right.
 nt: Passport isn't in the dictionary.

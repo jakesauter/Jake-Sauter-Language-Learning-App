@@ -3,7 +3,7 @@ g: Good morning
 y: 早晨/zou2 san4/0
 m: 早上好/zǎo shang hǎo/0
 t: 早晨/dɔu55 sin22/0
-n: Cantonese greets with 早晨 "early morning" on its own. Mandarin adds 好 "good".
+n: Cantonese greets with 早晨 "early morning" on its own. Mandarin adds 好 hǎo "good": 早上好.
 nt: Same word as Cantonese, said dɔu55 sin22.
 
 @ Greetings | Good night, sleep well.
@@ -33,7 +33,7 @@ nt: 該排 kɔi21 pai225 means lately and 幾何 gi55 hɔu215 means how.
 @ Greetings | How is your health?
 g: Your / health / (is it) good?
 y: 你/nei5/0 ; 身體/san1 tai2/1 ; 好唔好/hou2 m4 hou2/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 身体/shēn tǐ/1 ; 还好吗/hái hǎo ma/2
+m: 你/nǐ/0 ; 身体/shēn tǐ/1 ; 好不好/hǎo bu hǎo/2
 t: 你/ni33/0 ; 身體/sin33 hai55/1 ; 好唔好/hɔu55 m22 hɔu55/2 ; 啊/a33/-
 n: Ask about 身體 "body", not "health". Google's 你嘅健康點呀 is too literal. A kind question for older relatives.
 nt: 身體健康 sin33 hai55 gein32 hɔŋ33 "good health!" is a nice wish for elders.
@@ -57,7 +57,7 @@ nt: 屋企 ək55 ki55 is home. Many Taishanese speakers just say 企 ki55.
 @ Visiting | Your home is beautiful.
 g: Your / home / (is) really / beautiful
 y: 你/nei5/0 ; 屋企/uk1 kei2/1 ; 好/hou2/2 ; 靚/leng3/3
-m: 你/nǐ/0 ; 家/jiā/1 ; 真/zhēn/2 ; 漂亮/piào liang/3
+m: 你/nǐ/0 ; 家/jiā/1 ; 好/hǎo/2 ; 漂亮/piào liang/3
 t: 你/ni33/0 ; 屋企/ək55 ki55/1 ; 好/hɔu55/2 ; 靚/liaŋ33/3?
 n: No word for "of" is needed: 你屋企 is "your home". 靚 leng3 is the everyday word for good-looking.
 nt: 靚 shows up in the dictionary inside 靚仔 and 靚女, so check it on its own.
@@ -81,7 +81,7 @@ nt: 新年 is ɬin33 nein225, with the hissy ɬ.
 @ Visiting | I miss you all.
 g: I / (very) much / miss / you all
 y: 我/ngo5/0 ; 好/hou2/1 ; 掛住/gwaa3 zyu6/2 ; 你哋/nei5 dei6/3
-m: 我/wǒ/0 ; 很/hěn/1 ; 想念/xiǎng niàn/2 ; 大家/dà jiā/3
+m: 我/wǒ/0 ; 好/hǎo/1 ; 想/xiǎng/2 ; 你们/nǐ men/3
 t: 我/ŋɔi33/0 ; 好/hɔu55/1 ; 念/niam32/2 ; 偌/niak21/3
 n: 掛住 is "keep hanging (on my mind)".
 nt: "Miss" is 念 niam32, and 偌 niak21 is plural you.
@@ -97,7 +97,7 @@ nt: The dictionary lists 多謝 specifically for thanking someone for a gift.
 @ Visiting | Sorry, I'm late.
 g: Sorry / I / (am) late / (it happened)
 y: 對唔住/deoi3 m4 zyu6/0 ; 我/ngo5/1 ; 遲到/ci4 dou3/2 ; 喇/laa3/3
-m: 抱歉/bào qiàn/0 ; 我/wǒ/1 ; 迟到/chí dào/2 ; 了/le/3
+m: 对不起/duì bu qǐ/0 ; 我/wǒ/1 ; 迟到/chí dào/2 ; 了/le/3
 t: 對唔住/ui33 m22 dzi32/0 ; 我/ŋɔi33/1 ; 遲到/tsi22 ɔu33/2 ; 啦/la55/3?
 n: 喇 laa3 and 了 le at the end mark something that has already happened.
 nt: 對唔住 is ui33 m22 dzi32, with no d sound at the start.
@@ -113,15 +113,15 @@ nt: This whole sentence is in the dictionary, with 估 gu55 where Cantonese says
 @ Getting to know you | How old is he?
 g: He / how many / years old
 y: 佢/keoi5/0 ; 幾/gei2/1 ; 歲/seoi3/2 ; 呀/aa3/-
-m: 他/tā/0 ; 多大/duō dà/1,2 ; 了/le/-
+m: 他/tā/0 ; 几/jǐ/1 ; 岁/suì/2 ; 了/le/-
 t: 佢/kui33/0 ; 幾歲/gi55 ɬui335/1,2 ; 啊/a33/-
-n: 幾歲 "how many years" suits a child. For an elder, ask 幾大年紀 gei2 daai6 nin4 gei2 to be polite.
+n: 幾歲 "how many years" suits a child, in Mandarin too (几岁). For an elder, ask 幾大年紀 gei2 daai6 nin4 gei2 (Mandarin 多大年纪) to be polite.
 nt: 佢 is kui33 for he or she.
 
 @ Meals | Are you hungry?
 g: You / hungry?
 y: 你/nei5/0 ; 肚唔肚餓/tou5 m4 tou5 ngo6/1 ; 呀/aa3/-
-m: 你/nǐ/0 ; 饿了/è le/1 ; 吗/ma/1
+m: 你/nǐ/0 ; 饿不饿/è bu è/1
 t: 你/ni33/0 ; 肚唔肚飢/u55 m22 u55 gi33/1? ; 啊/a33/-
 n: The yes/no question splits 肚餓 "belly hungry" into 肚唔肚餓.
 nt: Taishanese says 肚飢 u55 gi33 for hungry, where Cantonese says 肚餓. The question form is my guess.
@@ -137,7 +137,7 @@ nt: "Eat" is 吃 hiak33, closer to Mandarin than to Cantonese 食.
 @ Meals | Do you like spicy food?
 g: You / like? / eat / spicy (food)
 y: 你/nei5/0 ; 鍾唔鍾意/zung1 m4 zung1 ji3/1 ; 食/sik6/2 ; 辣/laat6/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 喜欢/xǐ huan/1 ; 吃/chī/2 ; 辣/là/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 喜不喜欢/xǐ bu xǐ huan/1 ; 吃/chī/2 ; 辣/là/3
 t: 你/ni33/0 ; 鍾唔鍾意/dzəŋ33 m22 dzəŋ33 yi33/1 ; 吃/hiak33/2 ; 辣/lat32/3 ; 啊/a33/-
 n: 鍾意 zung1 ji3 means like. The yes/no form repeats its first syllable: 鍾唔鍾意.
 nt: 鍾意 is dzəŋ33 yi33.
@@ -153,7 +153,7 @@ nt: Built from 唔, 吃 hiak33 and 得 ak33, so check the phrasing.
 @ Meals | Can I have some more rice?
 g: Can I? / add / a bit more / rice
 y: 我/ngo5/0 ; 可唔可以/ho2 m4 ho2 ji5/0 ; 添/tim1/1 ; 多啲/do1 di1/2 ; 飯/faan6/3
-m: 我/wǒ/0 ; 能/néng/0 ; 再/zài/1 ; 来点/lái diǎn/2 ; 米饭/mǐ fàn/3 ; 吗/ma/0
+m: 我/wǒ/0 ; 可不可以/kě bu kě yǐ/0 ; 再/zài/2 ; 添/tiān/1 ; 点/diǎn/2 ; 饭/fàn/3
 t: 我/ŋɔi33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 添/hiam33/1 ; 多尼/ɔ33 nai55/2 ; 飯/fan32/3
 n: 添 tim1 is the word for topping up rice or tea.
 nt: 多尼 ɔ33 nai55 means "a bit more".
@@ -161,7 +161,7 @@ nt: 多尼 ɔ33 nai55 means "a bit more".
 @ Meals | Let me wash the dishes.
 g: Let / me / wash / the dishes
 y: 等/dang2/0 ; 我/ngo5/1 ; 洗/sai2/2 ; 碗/wun2/3 ; 啦/laa1/-
-m: 让/ràng/0 ; 我/wǒ/1 ; 来/lái/- ; 洗/xǐ/2 ; 碗/wǎn/3 ; 吧/ba/-
+m: 让/ràng/0 ; 我/wǒ/1 ; 洗/xǐ/2 ; 碗/wǎn/3 ; 吧/ba/-
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 洗/ɬai55/2 ; 盤碗/pɔn22 vɔn55/3 ; 啦/la55/-
 n: Offering this after a family meal is always appreciated.
 nt: Dishes are 盤碗 pɔn22 vɔn55, "plates and bowls".
@@ -169,7 +169,7 @@ nt: Dishes are 盤碗 pɔn22 vɔn55, "plates and bowls".
 @ Meals | Who cooked this?
 g: This / is / who / cooked / (it)
 y: 呢個/ni1 go3/0 ; 係/hai6/1 ; 邊個/bin1 go3/2 ; 煮/zyu2/3 ; 嘅/ge3/4
-m: 这/zhè/0 ; 是/shì/1 ; 谁/shéi/2 ; 做/zuò/3 ; 的/de/4
+m: 这个/zhè ge/0 ; 是/shì/1 ; 谁/shéi/2 ; 煮/zhǔ/3 ; 的/de/4
 t: 該個/kɔi21 gɔi33/0 ; 係/hai32/1 ; 谁/sui55/2 ; 煮/dzi55/3 ; 個/gɔi33/4?
 n: Ask this right before complimenting the cook.
 nt: "Who" is 谁 sui55, close to Mandarin shéi.
@@ -177,7 +177,7 @@ nt: "Who" is 谁 sui55, close to Mandarin shéi.
 @ Meals | This soup is very good.
 g: This / soup / (is) very / good to drink
 y: 呢個/ni1 go3/0 ; 湯/tong1/1 ; 好/hou2/2 ; 好飲/hou2 jam2/3
-m: 这/zhè/0 ; 汤/tāng/1 ; 很/hěn/2 ; 好喝/hǎo hē/3
+m: 这个/zhè ge/0 ; 汤/tāng/1 ; 好/hǎo/2 ; 好喝/hǎo hē/3
 t: 該個/kɔi21 gɔi33/0 ; 湯/hɔŋ33/1 ; 好/hɔu55/2 ; 好飲/hɔu55 ŋim55/3
 n: Soup is drunk, not eaten: 好飲 is "good to drink". Cantonese families take their soup seriously.
 nt: 湯水 hɔŋ33 sui55 is the general word for soups.
@@ -185,7 +185,7 @@ nt: 湯水 hɔŋ33 sui55 is the general word for soups.
 @ Meals | Can you teach me how to make this?
 g: You / can? / teach / me / how / make / this
 y: 你/nei5/0 ; 可唔可以/ho2 m4 ho2 ji5/1 ; 教/gaau3/2 ; 我/ngo5/3 ; 點/dim2/4 ; 整/zing2/5 ; 呢個/ni1 go3/6
-m: 你/nǐ/0 ; 能/néng/1 ; 教/jiāo/2 ; 我/wǒ/3 ; 怎么/zěn me/4 ; 做/zuò/5 ; 这个/zhè ge/6 ; 吗/ma/1
+m: 你/nǐ/0 ; 可不可以/kě bu kě yǐ/1 ; 教/jiāo/2 ; 我/wǒ/3 ; 怎么/zěn me/4 ; 做/zuò/5 ; 这个/zhè ge/6
 t: 你/ni33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/1 ; 教/gɔu33/2 ; 我/ŋɔi33/3 ; 幾何/gi55 hɔu215/4 ; 整/dzein55/5 ; 該個/kɔi21 gɔi33/6
 n: 整 zing2 is the everyday "make" for food and for fixing things.
 nt: "How" is 幾何 again, the same word as in "How have you been?".
@@ -193,7 +193,7 @@ nt: "How" is 幾何 again, the same word as in "How have you been?".
 @ Meals | Let's go out for dim sum.
 g: We / go out / (to drink tea) dim sum / let's
 y: 我哋/ngo5 dei6/0 ; 出去/ceot1 heoi3/1 ; 飲茶/jam2 caa4/2 ; 啦/laa1/3
-m: 我们/wǒ men/0 ; 去/qù/1 ; 吃/chī/2 ; 点心/diǎn xin/2 ; 吧/ba/3
+m: 我们/wǒ men/0 ; 出去/chū qù/1 ; 吃点心/chī diǎn xīn/2 ; 吧/ba/3
 t: 我/ŋɔi21/0 ; 出去/tsut55 hui33/1 ; 飲茶/ŋim55 tsa22/2 ; 啦/la55/3
 n: Going for dim sum is 飲茶 "drink tea". Google's 食點心 is understood, but 飲茶 is what people say.
 nt: "We" is 我 said with a low falling tone, ŋɔi21.
@@ -201,7 +201,7 @@ nt: "We" is 我 said with a low falling tone, ŋɔi21.
 @ Meals | I'll pay the bill.
 g: Let / me / pay the bill
 y: 等/dang2/0 ; 我/ngo5/1 ; 埋單/maai4 daan1/2 ; 啦/laa1/-
-m: 我/wǒ/1 ; 来/lái/0 ; 买单/mǎi dān/2
+m: 让/ràng/0 ; 我/wǒ/1 ; 买单/mǎi dān/2 ; 吧/ba/-
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 結數/gɛt33 su33/2 ; 啦/la55/-
 n: Expect a polite fight over the bill. Offering is the point, even if an elder wins.
 nt: Taishanese settles the bill with 結數 gɛt33 su33.
@@ -209,7 +209,7 @@ nt: Taishanese settles the bill with 結數 gɛt33 su33.
 @ Road Trip | What time do we leave tomorrow?
 g: We / tomorrow / what time / leave
 y: 我哋/ngo5 dei6/0 ; 聽日/ting1 jat6/1 ; 幾點/gei2 dim2/2 ; 走/zau2/3 ; 呀/aa3/-
-m: 我们/wǒ men/0 ; 明天/míng tiān/1 ; 几点/jǐ diǎn/2 ; 出发/chū fā/3
+m: 我们/wǒ men/0 ; 明天/míng tiān/1 ; 几点/jǐ diǎn/2 ; 走/zǒu/3
 t: 我/ŋɔi21/0 ; 天早/hein32 dɔu55/1 ; 幾點表/ŋi55 iam55 biau335/2 ; 走/dəu55/3 ; 啊/a33/-
 n: Time words go before the verb: "we tomorrow what-time leave".
 nt: 表 biau335 is the Taishanese "o'clock".
@@ -217,7 +217,7 @@ nt: 表 biau335 is the Taishanese "o'clock".
 @ Road Trip | Do you have everything?
 g: Your / things / all there yet?
 y: 你/nei5/0 ; 啲嘢/di1 je5/1 ; 齊未呀/cai4 mei6 aa3/2
-m: 东西/dōng xi/1 ; 都/dōu/2 ; 带齐了吗/dài qí le ma/2
+m: 你的/nǐ de/0 ; 东西/dōng xi/1 ; 齐了没有/qí le méi yǒu/2
 t: 你/ni33/0 ; 尼嘢/nai55 yia33/1 ; 齊/tai22/2 ; 唔曾/miaŋ21/2? ; 啊/a33/-
 n: 齊 means complete. Google's 你有冇所有嘢 is a word-for-word guess nobody says.
 nt: Built from 齊 tai22 and the "yet?" word 唔曾 miaŋ21, so check it.
@@ -241,7 +241,7 @@ nt: Built from 安全 ɔn33 tun22 and 帶 ai33.
 @ Road Trip | Is it far from here?
 g: From / here / far?
 y: 離/lei4/0 ; 呢度/ni1 dou6/1 ; 遠唔遠/jyun5 m4 jyun5/2 ; 呀/aa3/-
-m: 离/lí/0 ; 这儿/zhèr/1 ; 远/yuǎn/2 ; 吗/ma/2
+m: 离/lí/0 ; 这儿/zhèr/1 ; 远不远/yuǎn bu yuǎn/2
 t: 離/li22/0 ; 該埞/kɔi21 tiaŋ215/1 ; 遠唔遠/yɔn55 m22 yɔn55/2 ; 啊/a33/-
 n: Mandarin 这儿 is said as one syllable, zhèr.
 nt: "Here" is 該埞 kɔi21 tiaŋ215.
@@ -249,9 +249,9 @@ nt: "Here" is 該埞 kɔi21 tiaŋ215.
 @ Road Trip | We're almost there.
 g: We / almost / arrive / (already)
 y: 我哋/ngo5 dei6/0 ; 差唔多/caa1 m4 do1/1 ; 到/dou3/2 ; 喇/laa3/3
-m: 快/kuài/1 ; 到/dào/2 ; 了/le/3
+m: 我们/wǒ men/0 ; 差不多/chà bu duō/1 ; 到/dào/2 ; 了/le/3
 t: 我/ŋɔi21/0 ; 差唔多/tsaŋ33 m22 ɔ335/1 ; 到/au33/2 ; 啦/la55/3
-n: Mandarin wraps the verb: 快…了 means "about to".
+n: 差唔多 "differ-not-much" means "almost". Mandarin uses the same word, 差不多.
 nt: 差唔多 tsaŋ33 m22 ɔ335 means "about, nearly".
 
 @ Road Trip | Turn left here.
@@ -265,7 +265,7 @@ nt: 左 on its own is my guess from 左手 dɔ55 siu55, "left hand".
 @ Road Trip | Where should we park?
 g: We / should / park / where
 y: 我哋/ngo5 dei6/0 ; 應該/jing1 goi1/1 ; 泊/paak3/2 ; 喺邊/hai2 bin1/3 ; 呀/aa3/-
-m: 我们/wǒ men/0 ; 把车/bǎ chē/2 ; 停/tíng/2 ; 哪儿/nǎr/3
+m: 我们/wǒ men/0 ; 应该/yīng gāi/1 ; 停/tíng/2 ; 在哪儿/zài nǎr/3
 t: 我/ŋɔi21/0 ; 泊車/pak33 tsia33/2 ; 哪/nai215/3 ; 啊/a33/-
 n: Cantonese 泊 paak3 comes from the English word "park".
 nt: "Where" is 哪 nai215.
@@ -313,15 +313,15 @@ nt: Umbrella is 遮 dzia335.
 @ Weather | Are you cold?
 g: You / cold?
 y: 你/nei5/0 ; 凍唔凍/dung3 m4 dung3/1 ; 呀/aa3/-
-m: 你/nǐ/0 ; 冷/lěng/1 ; 吗/ma/1
+m: 你/nǐ/0 ; 冷不冷/lěng bu lěng/1
 t: 你/ni33/0 ; 冷唔冷/laŋ33 m22 laŋ33/1? ; 啊/a33/-
-n: Cantonese uses 凍 for feeling cold too. Mandarin uses 冷.
+n: Cantonese uses 凍 for feeling cold too. Mandarin uses 冷 lěng.
 nt: The dictionary gives 冷 laŋ33 for cold weather; using it for a person is my guess.
 
 @ Weather | Turn on the air conditioning.
 g: Turn on / the air conditioning / (please)
 y: 開/hoi1/0 ; 冷氣/laang5 hei3/1 ; 啦/laa1/2
-m: 把/bǎ/- ; 空调/kōng tiáo/1 ; 打开/dǎ kāi/0 ; 吧/ba/2
+m: 开/kāi/0 ; 空调/kōng tiáo/1 ; 吧/ba/2
 t: 開/hɔi33/0 ; 冷氣/laŋ21 hi33/1 ; 啦/la55/2
 n: Cantonese 冷氣 is "cold air"; Mandarin 空调 is "air adjust".
 nt: 冷氣 is laŋ21 hi33.
@@ -329,7 +329,7 @@ nt: 冷氣 is laŋ21 hi33.
 @ Work | How was your day?
 g: You / today / how (was it)
 y: 你/nei5/0 ; 今日/gam1 jat6/1 ; 點呀/dim2 aa3/2
-m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 过得/guò de/2 ; 怎么样/zěn me yàng/2
+m: 你/nǐ/0 ; 今天/jīn tiān/1 ; 怎么样/zěn me yàng/2
 t: 你/ni33/0 ; 今日/gim33 ŋit21/1 ; 幾何/gi55 hɔu215/2 ; 啊/a33/-
 n: Cantonese keeps it short: "you today how?"
 nt: Same 幾何 for "how".
@@ -345,7 +345,7 @@ nt: 收工 is siu33 gəŋ33.
 @ Work | Do you work tomorrow?
 g: You / tomorrow / need to? / go to work
 y: 你/nei5/0 ; 聽日/ting1 jat6/1 ; 使唔使/sai2 m4 sai2/2 ; 返工/faan1 gung1/3 ; 呀/aa3/-
-m: 你/nǐ/0 ; 明天/míng tiān/1 ; 要/yào/2 ; 上班/shàng bān/3 ; 吗/ma/2
+m: 你/nǐ/0 ; 明天/míng tiān/1 ; 要不要/yào bu yào/2 ; 上班/shàng bān/3
 t: 你/ni33/0 ; 天早/hein32 dɔu55/1 ; 使唔使/sɔi55 m22 sɔi55/2 ; 做工/du33 gəŋ33/3 ; 啊/a33/-
 n: 返工 "return to work" is the everyday Cantonese for going to work.
 nt: Taishanese uses 做工 du33 gəŋ33 for working.
@@ -353,7 +353,7 @@ nt: Taishanese uses 做工 du33 gəŋ33 for working.
 @ Work | I'm on vacation this week.
 g: I / this week / (am on) vacation
 y: 我/ngo5/0 ; 今個禮拜/gam1 go3 lai5 baai3/1 ; 放假/fong3 gaa3/2
-m: 我/wǒ/0 ; 这周/zhè zhōu/1 ; 在/zài/- ; 休假/xiū jià/2
+m: 我/wǒ/0 ; 这个礼拜/zhè ge lǐ bài/1 ; 放假/fàng jià/2
 t: 我/ŋɔi33/0 ; 今個禮拜/gim33 gɔi33 lai21 bai33/1? ; 放假/fɔŋ33 ga55/2
 n: Spoken Cantonese says 禮拜 lai5 baai3 for week. 星期 is fine too.
 nt: Built from 今 and 個禮拜, which the dictionary has in "last week" and "next week".
@@ -361,7 +361,7 @@ nt: Built from 今 and 個禮拜, which the dictionary has in "last week" and "n
 @ Work | My work is very busy.
 g: My / work / (is) very / busy
 y: 我/ngo5/0 ; 份工/fan6 gung1/1 ; 好/hou2/2 ; 忙/mong4/3
-m: 我/wǒ/0 ; 工作/gōng zuò/1 ; 很/hěn/2 ; 忙/máng/3
+m: 我/wǒ/0 ; 工作/gōng zuò/1 ; 好/hǎo/2 ; 忙/máng/3
 t: 我/ŋɔi33/0 ; 做工/du33 gəŋ33/1 ; 好/hɔu55/2 ; 忙/mɔŋ22/3
 n: 我份工 "my job" uses the measure word 份 in place of 嘅 "of".
 nt: Same 做工 for work.
@@ -385,7 +385,7 @@ nt: 搽 tsa22 is in the dictionary. 防曬 is built from 防 fɔŋ22 and 曬.
 @ Swimming | Can you swim?
 g: You / know how to? / swim
 y: 你/nei5/0 ; 識唔識/sik1 m4 sik1/1 ; 游水/jau4 seoi2/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 会/huì/1 ; 游泳/yóu yǒng/2 ; 吗/ma/1
+m: 你/nǐ/0 ; 会不会/huì bu huì/1 ; 游泳/yóu yǒng/2
 t: 你/ni33/0 ; 曉唔曉/hiau55 m22 hiau55/1 ; 游水/yiu22 sui55/2 ; 啊/a33/-
 n: Use 識 "know how" for skills. 可以 means "may".
 nt: Taishanese says 曉 hiau55 for "know how to".
@@ -393,7 +393,7 @@ nt: Taishanese says 曉 hiau55 for "know how to".
 @ Swimming | The water is warm.
 g: The / water / (is) very / warm
 y: 啲/di1/0 ; 水/seoi2/1 ; 好/hou2/2 ; 暖/nyun5/3
-m: 水/shuǐ/1 ; 很/hěn/2 ; 暖和/nuǎn huo/3
+m: 水/shuǐ/1 ; 好/hǎo/2 ; 暖/nuǎn/3
 t: 尼/nai55/0 ; 水/sui55/1 ; 好/hɔu55/2 ; 暖/nɔn33/3
 n: The mirror of "Is the water cold?".
 nt: 暖 is nɔn33.
@@ -401,7 +401,7 @@ nt: 暖 is nɔn33.
 @ Helping Out | I'll watch the kids.
 g: Let / me / watch / the kids
 y: 等/dang2/0 ; 我/ngo5/1 ; 睇住/tai2 zyu6/2 ; 啲細路/di1 sai3 lou6/3 ; 啦/laa1/-
-m: 我/wǒ/1 ; 来/lái/0 ; 照看/zhào kàn/2 ; 孩子们/hái zi men/3
+m: 让/ràng/0 ; 我/wǒ/1 ; 看着/kān zhe/2 ; 孩子/hái zi/3 ; 吧/ba/-
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 睇/hai55/2 ; 尼細佬哥/nai55 ɬai33 lau55 gɔ55/3 ; 啦/la55/-
 n: 睇住 is "keep watching". 細路 sai3 lou6 is the everyday word for kids.
 nt: Kids are 細佬哥 ɬai33 lau55 gɔ55.
@@ -409,7 +409,7 @@ nt: Kids are 細佬哥 ɬai33 lau55 gɔ55.
 @ Helping Out | Can I help you cook?
 g: Can I? / help / you / cook
 y: 我/ngo5/0 ; 可唔可以/ho2 m4 ho2 ji5/0 ; 幫/bong1/1 ; 你/nei5/2 ; 煮飯/zyu2 faan6/3
-m: 我/wǒ/0 ; 可以/kě yǐ/0 ; 帮/bāng/1 ; 你/nǐ/2 ; 做饭/zuò fàn/3 ; 吗/ma/0
+m: 我/wǒ/0 ; 可不可以/kě bu kě yǐ/0 ; 帮/bāng/1 ; 你/nǐ/2 ; 煮饭/zhǔ fàn/3
 t: 我/ŋɔi33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 幫/bɔŋ33/1 ; 你/ni33/2 ; 煮飯/dzi55 fan32/3
 n: 煮飯 "cook rice" means cooking a meal in general.
 nt: 煮飯 is dzi55 fan32.
@@ -417,7 +417,7 @@ nt: 煮飯 is dzi55 fan32.
 @ Helping Out | Do you want me to carry that?
 g: Need? / me / to carry / for you
 y: 使唔使/sai2 m4 sai2/0 ; 我/ngo5/1 ; 幫你/bong1 nei5/3 ; 拎/ling1/2 ; 呀/aa3/-
-m: 要/yào/0 ; 我/wǒ/1 ; 帮你/bāng nǐ/3 ; 拿/ná/2 ; 那个/nà ge/- ; 吗/ma/0
+m: 要不要/yào bu yào/0 ; 我/wǒ/1 ; 帮你/bāng nǐ/3 ; 拿/ná/2
 t: 使唔使/sɔi55 m22 sɔi55/0 ; 我/ŋɔi33/1 ; 幫你/bɔŋ33 ni33/3 ; 拎/nein55/2 ; 啊/a33/-
 n: "Need-not-need me help-you carry?" is more natural than Google's 你想唔想我拎住嗰個.
 nt: The same 拎 nein55 as in "Let me carry that for you".
@@ -425,7 +425,7 @@ nt: The same 拎 nein55 as in "Let me carry that for you".
 @ Helping Out | Let me get it for you.
 g: Let / me / get / (it) / for you
 y: 等/dang2/0 ; 我/ngo5/1 ; 攞/lo2/2 ; 畀你/bei2 nei5/4
-m: 我/wǒ/1 ; 帮你/bāng nǐ/4 ; 拿/ná/2 ; 吧/ba/0
+m: 让/ràng/0 ; 我/wǒ/1 ; 拿/ná/2 ; 给你/gěi nǐ/4
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 攞/lɔ55/2? ; 畀你/i55 ni33/4
 n: 攞畀你 is "get, give to you". Google got this one right.
 nt: 畀 "give" is just i55.
@@ -441,7 +441,7 @@ nt: The same 歇下 hɛt33 ha21 "take a break" as on the road trip.
 @ Helping Out | Do you need a ride?
 g: Need? / me / drive / you
 y: 使唔使/sai2 m4 sai2/0 ; 我/ngo5/1 ; 車/ce1/2 ; 你/nei5/3 ; 呀/aa3/-
-m: 需要/xū yào/0 ; 我/wǒ/1 ; 载/zài/2 ; 你/nǐ/3 ; 一程/yì chéng/- ; 吗/ma/0
+m: 要不要/yào bu yào/0 ; 我/wǒ/1 ; 载/zài/2 ; 你/nǐ/3
 t: 使唔使/sɔi55 m22 sɔi55/0 ; 我/ŋɔi33/1 ; 車/tsia33/2 ; 你/ni33/3 ; 啊/a33/-
 n: 車 used as a verb means "drive someone". Google's 搭車 means riding a bus.
 nt: The dictionary lists 車 tsia33 as "to give someone a ride".
@@ -449,7 +449,7 @@ nt: The dictionary lists 車 tsia33 as "to give someone a ride".
 @ Helping Out | Call me if you need anything.
 g: (If you) have / anything / needed / then / call / me
 y: 有/jau5/0 ; 咩/me1/1 ; 需要/seoi1 jiu3/2 ; 就/zau6/3 ; 打畀/daa2 bei2/4 ; 我/ngo5/5
-m: 有事/yǒu shì/0,1 ; 随时/suí shí/- ; 给我/gěi wǒ/5 ; 打电话/dǎ diàn huà/4
+m: 有/yǒu/0 ; 什么/shén me/1 ; 需要/xū yào/2 ; 就/jiù/3 ; 打给/dǎ gěi/4 ; 我/wǒ/5
 t: 有/yiu33/0 ; 乜嘢/mɔt55 yia33/1 ; 需要/ɬui33 yiau33/2 ; 就/diu32/3 ; 打電話畀/a55 ein32 va325 i55/4 ; 我/ŋɔi33/5
 n: Cantonese 打畀我 "hit to me" means call me.
 nt: Phone call is 打電話 a55 ein32 va325.
@@ -465,7 +465,7 @@ nt: 明 is mein22.
 @ Learning | Please speak more slowly.
 g: Please / speak / slower / (a bit)
 y: 唔該/m4 goi1/0 ; 講/gong2/1 ; 慢/maan6/2 ; 啲/di1/3
-m: 请/qǐng/0 ; 说/shuō/1 ; 慢/màn/2 ; 一点/yì diǎn/3
+m: 请/qǐng/0 ; 讲/jiǎng/1 ; 慢/màn/2 ; 一点/yì diǎn/3
 t: 唔該/m22 gɔi33/0 ; 講/gɔŋ55/1 ; 慢/man32/2 ; 尼/nai55/3
 n: 啲 after an adjective means "a bit more": 慢啲 is "a bit slower".
 nt: 尼 nai55 does the same job as Cantonese 啲.
@@ -473,7 +473,7 @@ nt: 尼 nai55 does the same job as Cantonese 啲.
 @ Learning | How do you say this in Cantonese?
 g: This (sentence) / (in) Cantonese / how / say
 y: 呢句/ni1 geoi3/0 ; 廣東話/gwong2 dung1 waa2/1 ; 點/dim2/2 ; 講/gong2/3
-m: 这个/zhè ge/0 ; 用/yòng/- ; 粤语/yuè yǔ/1 ; 怎么/zěn me/2 ; 说/shuō/3
+m: 这句/zhè jù/0 ; 广东话/guǎng dōng huà/1 ; 怎么/zěn me/2 ; 讲/jiǎng/3
 t: 該句/kɔi21 gui215/0? ; 廣州話/gɔŋ55 dziu33 va325/1 ; 幾何/gi55 hɔu215/2 ; 講/gɔŋ55/3
 n: Swap 廣東話 for 台山話 toi4 saan1 waa2 to ask about Taishanese.
 nt: Taishanese speakers often call Cantonese 廣州話, "Guangzhou speech". 幾何講 is in the dictionary for "how do you say".

@@ -241,8 +241,8 @@
     "sure": true
    },
    {
-    "hz": "想",
-    "rom": "xiǎng",
+    "hz": "想不想",
+    "rom": "xiǎng bu xiǎng",
     "refs": [
      1
     ],
@@ -261,14 +261,6 @@
     "rom": "dōng xi",
     "refs": [
      2
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     3
     ],
     "sure": true
    }
@@ -629,16 +621,16 @@
     "sure": true
    },
    {
-    "hz": "吃饭",
-    "rom": "chī fàn",
+    "hz": "吃饭了",
+    "rom": "chī fàn le",
     "refs": [
      1
     ],
     "sure": true
    },
    {
-    "hz": "了吗",
-    "rom": "le ma",
+    "hz": "没有",
+    "rom": "méi yǒu",
     "refs": [
      2
     ],
@@ -1125,8 +1117,8 @@
     "sure": true
    },
    {
-    "hz": "等一下",
-    "rom": "děng yí xià",
+    "hz": "晚点",
+    "rom": "wǎn diǎn",
     "refs": [
      3
     ],
@@ -1678,8 +1670,8 @@
     "sure": true
    },
    {
-    "hz": "想",
-    "rom": "xiǎng",
+    "hz": "想不想",
+    "rom": "xiǎng bu xiǎng",
     "refs": [
      1
     ],
@@ -1690,14 +1682,6 @@
     "rom": "chū qù",
     "refs": [
      2
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     3
     ],
     "sure": true
    }
@@ -2777,18 +2761,10 @@
     "sure": true
    },
    {
-    "hz": "睡得好",
-    "rom": "shuì de hǎo",
+    "hz": "睡得好不好",
+    "rom": "shuì de hǎo bu hǎo",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -3309,8 +3285,8 @@
     "sure": true
    },
    {
-    "hz": "做饭",
-    "rom": "zuò fàn",
+    "hz": "煮饭",
+    "rom": "zhǔ fàn",
     "refs": [
      2
     ],
@@ -3467,26 +3443,18 @@
     "sure": true
    },
    {
-    "hz": "会",
-    "rom": "huì",
+    "hz": "会不会",
+    "rom": "huì bu huì",
     "refs": [
      1
     ],
     "sure": true
    },
    {
-    "hz": "做饭",
-    "rom": "zuò fàn",
+    "hz": "煮饭",
+    "rom": "zhǔ fàn",
     "refs": [
      2
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     3
     ],
     "sure": true
    }
@@ -3651,7 +3619,7 @@
    },
    {
     "hz": "不",
-    "rom": "bù",
+    "rom": "bú",
     "refs": [
      1
     ],
@@ -3666,8 +3634,8 @@
     "sure": true
    },
    {
-    "hz": "做饭",
-    "rom": "zuò fàn",
+    "hz": "煮饭",
+    "rom": "zhǔ fàn",
     "refs": [
      3
     ],
@@ -3853,8 +3821,8 @@
     "sure": true
    },
    {
-    "hz": "做",
-    "rom": "zuò",
+    "hz": "煮",
+    "rom": "zhǔ",
     "refs": [
      1
     ],
@@ -4072,8 +4040,8 @@
     "sure": true
    },
    {
-    "hz": "做",
-    "rom": "zuò",
+    "hz": "煮",
+    "rom": "zhǔ",
     "refs": [
      1
     ],
@@ -4269,8 +4237,8 @@
     "sure": true
    },
    {
-    "hz": "做饭",
-    "rom": "zuò fàn",
+    "hz": "煮饭",
+    "rom": "zhǔ fàn",
     "refs": [
      1
     ],
@@ -4594,18 +4562,10 @@
     "sure": true
    },
    {
-    "hz": "喜欢",
-    "rom": "xǐ huan",
+    "hz": "喜不喜欢",
+    "rom": "xǐ bu xǐ huan",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     3
     ],
     "sure": true
    }
@@ -4959,8 +4919,8 @@
     "sure": true
    },
    {
-    "hz": "非常",
-    "rom": "fēi cháng",
+    "hz": "真的好",
+    "rom": "zhēn de hǎo",
     "refs": [
      3
     ],
@@ -5165,8 +5125,8 @@
     "sure": true
    },
    {
-    "hz": "帮助",
-    "rom": "bāng zhù",
+    "hz": "帮忙",
+    "rom": "bāng máng",
     "refs": [
      2
     ],
@@ -5324,26 +5284,18 @@
     "sure": true
    },
    {
-    "hz": "需要",
-    "rom": "xū yào",
+    "hz": "需不需要",
+    "rom": "xū bu xū yào",
     "refs": [
      1
     ],
     "sure": true
    },
    {
-    "hz": "帮助",
-    "rom": "bāng zhù",
+    "hz": "帮忙",
+    "rom": "bāng máng",
     "refs": [
      2
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     3
     ],
     "sure": true
    }
@@ -5961,18 +5913,10 @@
     "sure": true
    },
    {
-    "hz": "知道",
-    "rom": "zhī dao",
+    "hz": "知不知道",
+    "rom": "zhī bu zhī dào",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -6203,18 +6147,10 @@
     "sure": true
    },
    {
-    "hz": "明白",
-    "rom": "míng bai",
+    "hz": "明不明白",
+    "rom": "míng bu míng bai",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -6859,18 +6795,10 @@
     "sure": true
    },
    {
-    "hz": "记得",
-    "rom": "jì de",
+    "hz": "记不记得",
+    "rom": "jì bu jì de",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -7008,8 +6936,8 @@
     "sure": true
    },
    {
-    "hz": "很",
-    "rom": "hěn",
+    "hz": "好",
+    "rom": "hǎo",
     "refs": [
      1
     ],
@@ -7165,18 +7093,10 @@
     "sure": true
    },
    {
-    "hz": "忙",
-    "rom": "máng",
+    "hz": "忙不忙",
+    "rom": "máng bu máng",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -7495,8 +7415,8 @@
     "sure": true
    },
    {
-    "hz": "很",
-    "rom": "hěn",
+    "hz": "好",
+    "rom": "hǎo",
     "refs": [
      1
     ],
@@ -7652,18 +7572,10 @@
     "sure": true
    },
    {
-    "hz": "累",
-    "rom": "lèi",
+    "hz": "累不累",
+    "rom": "lèi bu lèi",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -8083,18 +7995,10 @@
   ],
   "cmn": [
    {
-    "hz": "好",
-    "rom": "hǎo",
+    "hz": "好不好",
+    "rom": "hǎo bu hǎo",
     "refs": [
      1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "吗",
-    "rom": "ma",
-    "refs": [
-     2
     ],
     "sure": true
    }
@@ -8483,8 +8387,8 @@
     "sure": true
    },
    {
-    "hz": "了吗",
-    "rom": "le ma",
+    "hz": "了没有",
+    "rom": "le méi yǒu",
     "refs": [
      2
     ],
@@ -8759,16 +8663,8 @@
     "sure": true
    },
    {
-    "hz": "要",
-    "rom": "yào",
-    "refs": [
-     1
-    ],
-    "sure": true
-   },
-   {
-    "hz": "来",
-    "rom": "lái",
+    "hz": "来了",
+    "rom": "lái le",
     "refs": [
      1
     ],
@@ -10277,8 +10173,8 @@
   ],
   "cmn": [
    {
-    "hz": "为什么不呢",
-    "rom": "wèi shén me bù ne",
+    "hz": "为什么不行",
+    "rom": "wèi shén me bù xíng",
     "refs": [
      0,
      1
@@ -10425,8 +10321,8 @@
   ],
   "cmn": [
    {
-    "hz": "几个人",
-    "rom": "jǐ ge rén",
+    "hz": "有多少人",
+    "rom": "yǒu duō shao rén",
     "refs": [
      0,
      1

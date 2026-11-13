@@ -1,7 +1,7 @@
 @ Meals | Dinner is ready!
 g: (We) can eat / dinner / (now)
 y: 食得/sik6 dak1/0 ; 飯/faan6/1 ; 喇/laa3/2
-m: 晚饭/wǎn fàn/1 ; 做好/zuò hǎo/0 ; 了/le/2
+m: 可以吃/kě yǐ chī/0 ; 饭/fàn/1 ; 了/le/2
 t: 吃得/hiak33 ak33/0? ; 飯/fan32/1 ; 啦/la55/2
 n: 食得飯喇 "can eat rice now" is the classic call to the table. Google's 晚餐準備好喇 sounds stiff.
 nt: Built from 吃 hiak33 and 得 ak33.
@@ -9,7 +9,7 @@ nt: Built from 吃 hiak33 and 得 ak33.
 @ Meals | Come eat!
 g: Come / eat / (friendly push)
 y: 嚟/lai4/0 ; 食飯/sik6 faan6/1 ; 啦/laa1/2
-m: 快/kuài/- ; 来/lái/0 ; 吃饭/chī fàn/1
+m: 来/lái/0 ; 吃饭/chī fàn/1 ; 啦/la/2
 t: 來/lɔi22/0 ; 吃飯/hiak33 fan32/1 ; 啦/la55/2
 n: 嚟 lai4 is the spoken Cantonese "come"; written Chinese uses 來.
 nt: "Come" is 來 lɔi22.
@@ -33,7 +33,7 @@ nt: The dictionary also has 箸 dzi32 for chopsticks.
 @ Meals | Pass me a bowl, please.
 g: Please / pass / a / bowl / to me
 y: 唔該/m4 goi1/0 ; 遞/dai6/1 ; 個/go3/2 ; 碗/wun2/3 ; 畀我/bei2 ngo5/4
-m: 请/qǐng/0 ; 递给我/dì gěi wǒ/1,4 ; 一个/yí ge/2 ; 碗/wǎn/3
+m: 请/qǐng/0 ; 递/dì/1 ; 个/ge/2 ; 碗/wǎn/3 ; 给我/gěi wǒ/4
 t: 唔該/m22 gɔi33/0 ; 遞/ai32/1 ; 個/gɔi33/2 ; 碗/vɔn55/3 ; 畀我/i55 ŋɔi33/4
 n: Same pattern as "Please pass me the soy sauce".
 nt: Bowl is 碗 vɔn55.
@@ -41,7 +41,7 @@ nt: Bowl is 碗 vɔn55.
 @ Meals | Eat more vegetables.
 g: Eat / more / vegetables
 y: 食/sik6/0 ; 多啲/do1 di1/1 ; 菜/coi3/2
-m: 多/duō/1 ; 吃/chī/0 ; 点/diǎn/1 ; 蔬菜/shū cài/2
+m: 多/duō/1 ; 吃/chī/0 ; 点/diǎn/1 ; 菜/cài/2
 t: 吃/hiak33/0 ; 多尼/ɔ33 nai55/1 ; 菜/tɔi33/2
 n: Cantonese puts "more" after the verb (食多啲); Mandarin puts it before (多吃). You'll hear this from every aunty.
 nt: Vegetables are 菜 tɔi33.
@@ -49,15 +49,15 @@ nt: Vegetables are 菜 tɔi33.
 @ Meals | Try some of this.
 g: Try / a bit / this
 y: 試/si3/0 ; 吓/haa5/1 ; 呢個/ni1 go3/2
-m: 尝尝/cháng chang/0,1 ; 这个/zhè ge/2
+m: 试/shì/0 ; 一下/yí xià/1 ; 这个/zhè ge/2
 t: 試/si33/0 ; 下/ha21/1 ; 該個/kɔi21 gɔi33/2
-n: A verb plus 吓 means "do it a little": 試吓 is "have a try". Mandarin doubles the verb instead.
+n: A verb plus 吓 means "do it a little": 試吓 is "have a try". Mandarin adds 一下 the same way: 试一下.
 nt: The same 下 ha21 as in 歇下 "take a break".
 
 @ Meals | Is there any more soup?
 g: Still / is there? / soup
 y: 仲/zung6/0 ; 有冇/jau5 mou5/1 ; 湯/tong1/2 ; 呀/aa3/-
-m: 还/hái/0 ; 有/yǒu/1 ; 汤/tāng/2 ; 吗/ma/1
+m: 还/hái/0 ; 有没有/yǒu méi yǒu/1 ; 汤/tāng/2
 t: 還/van21/0 ; 有冇/yiu33 mɔu55/1 ; 湯/hɔŋ33/2 ; 啊/a33/-
 n: Asking for more soup is a compliment in itself.
 nt: 還 van21 means still.
@@ -65,15 +65,15 @@ nt: 還 van21 means still.
 @ Meals | I'm still hungry.
 g: I / still / hungry
 y: 我/ngo5/0 ; 仲/zung6/1 ; 肚餓/tou5 ngo6/2
-m: 我/wǒ/0 ; 还/hái/1 ; 没吃饱/méi chī bǎo/2
+m: 我/wǒ/0 ; 还/hái/1 ; 饿/è/2
 t: 我/ŋɔi33/0 ; 還/van21/1 ; 肚飢/u55 gi33/2
-n: Mandarin says "still not full" (还没吃饱) rather than "still hungry".
+n: Cantonese says 肚餓 "belly hungry"; Mandarin just says 饿 è.
 nt: Hungry is 肚飢 u55 gi33.
 
 @ Meals | I've had enough, thank you.
 g: I / (have had) enough / thank you
 y: 我/ngo5/0 ; 夠/gau3/1 ; 喇/laa3/- ; 多謝/do1 ze6/2
-m: 我/wǒ/0 ; 吃饱了/chī bǎo le/1 ; 谢谢/xiè xie/2
+m: 我/wǒ/0 ; 够/gòu/1 ; 了/le/- ; 谢谢/xiè xie/2
 t: 我/ŋɔi33/0 ; 夠/gəu33/1? ; 啦/la55/- ; 多謝/ɔ33 dia32/2
 n: 夠喇 "that's enough" works for food and drinks. Expect to be offered more anyway.
 nt: The dictionary gives 夠 gəu33 the meaning "tired", so check how her family says "enough".
@@ -89,7 +89,7 @@ nt: Salty is 鹹 ham22.
 @ Meals | It's a little bland.
 g: (It's) a little / bland
 y: 有啲/jau5 di1/0 ; 淡/taam5/1
-m: 味道/wèi dào/- ; 有点/yǒu diǎn/0 ; 淡/dàn/1
+m: 有点/yǒu diǎn/0 ; 淡/dàn/1
 t: 有尼/yiu33 nai55/0? ; 淡/ham33/1
 n: Google's 平淡 means dull or uneventful. For food, 淡 taam5 alone is the word.
 nt: Bland food is 淡 ham33, or 淡口 ham33 həu55.
@@ -97,7 +97,7 @@ nt: Bland food is 淡 ham33, or 淡口 ham33 həu55.
 @ Meals | This is so fresh.
 g: This / (is) so / fresh
 y: 呢個/ni1 go3/0 ; 好/hou2/1 ; 新鮮/san1 sin1/2
-m: 这个/zhè ge/0 ; 真/zhēn/1 ; 新鲜/xīn xiān/2
+m: 这个/zhè ge/0 ; 好/hǎo/1 ; 新鲜/xīn xiān/2
 t: 該個/kɔi21 gɔi33/0 ; 好/hɔu55/1 ; 生鮮/saŋ33 ɬein33/2
 n: Freshness is the highest praise for fish and vegetables in Cantonese cooking.
 nt: Fresh is 生鮮 saŋ33 ɬein33, "raw-fresh".
@@ -105,7 +105,7 @@ nt: Fresh is 生鮮 saŋ33 ɬein33, "raw-fresh".
 @ Meals | Is this spicy?
 g: This / spicy?
 y: 呢個/ni1 go3/0 ; 辣唔辣/laat6 m4 laat6/1 ; 呀/aa3/-
-m: 这个/zhè ge/0 ; 辣/là/1 ; 吗/ma/1
+m: 这个/zhè ge/0 ; 辣不辣/là bu là/1
 t: 該個/kɔi21 gɔi33/0 ; 辣唔辣/lat32 m22 lat32/1 ; 啊/a33/-
 n: Google's 係咪辣 works too. 辣唔辣 is the plainest way to ask.
 nt: Spicy is 辣 lat32.
@@ -121,7 +121,7 @@ nt: Dishes are 餸 ɬəŋ21.
 @ Meals | I've never tried this before.
 g: I / never / tried (before) / this
 y: 我/ngo5/0 ; 未/mei6/1 ; 試過/si3 gwo3/2 ; 呢個/ni1 go3/3
-m: 我/wǒ/0 ; 以前/yǐ qián/- ; 从没/cóng méi/1 ; 吃过/chī guo/2 ; 这个/zhè ge/3
+m: 我/wǒ/0 ; 没/méi/1 ; 试过/shì guo/2 ; 这个/zhè ge/3
 t: 我/ŋɔi33/0 ; 唔曾/miaŋ21/1 ; 試過/si33 gɔ33/2? ; 該個/kɔi21 gɔi33/3
 n: 過 after a verb means "have ever done it". A great line before trying something new.
 nt: 唔曾 miaŋ21 means "not yet, never".
@@ -129,7 +129,7 @@ nt: 唔曾 miaŋ21 means "not yet, never".
 @ Meals | I love your cooking.
 g: Your / cooking / (is) so / delicious
 y: 你/nei5/0 ; 煮嘢/zyu2 je5/1 ; 好/hou2/2 ; 好食/hou2 sik6/3
-m: 你/nǐ/0 ; 做的菜/zuò de cài/1 ; 真/zhēn/2 ; 好吃/hǎo chī/3
+m: 你/nǐ/0 ; 煮的菜/zhǔ de cài/1 ; 好/hǎo/2 ; 好吃/hǎo chī/3
 t: 你/ni33/0 ; 煮嘢/dzi55 yia33/1? ; 好/hɔu55/2 ; 好吃/hɔu55 hiak33/3
 n: Praise the food, not your feelings: "you cook really tasty" is how this is said.
 nt: Built from 煮 dzi55 and 嘢 yia33.
@@ -137,7 +137,7 @@ nt: Built from 煮 dzi55 and 嘢 yia33.
 @ Meals | Who wants the last piece?
 g: Who / wants / the last / piece
 y: 邊個/bin1 go3/0 ; 要/jiu3/1 ; 最後/zeoi3 hau6/2 ; 一舊/jat1 gau6/3 ; 呀/aa3/-
-m: 谁/shéi/0 ; 想吃/xiǎng chī/1 ; 最后/zuì hòu/2 ; 一块/yí kuài/3
+m: 谁/shéi/0 ; 要/yào/1 ; 最后/zuì hòu/2 ; 一块/yí kuài/3
 t: 谁/sui55/0 ; 要/yiau33/1? ; 最尾/du33 mi55/2 ; 一舊/yit55 gəu32/3?
 n: 舊 gau6 is the Cantonese measure word for a lump or piece. Nobody wants to look greedy taking it.
 nt: "Last" is 最尾 du33 mi55.
@@ -169,7 +169,7 @@ nt: To-go food is 外賣 ŋɔi32 mai32. 喊 ham33 is the dictionary's word for "
 @ Meals | What do you want for dinner?
 g: You / dinner / want to eat / what
 y: 你/nei5/0 ; 晚飯/maan5 faan6/1 ; 想食/soeng2 sik6/2 ; 咩/me1/3 ; 呀/aa3/-
-m: 晚饭/wǎn fàn/1 ; 想吃/xiǎng chī/2 ; 什么/shén me/3
+m: 你/nǐ/0 ; 晚饭/wǎn fàn/1 ; 想吃/xiǎng chī/2 ; 什么/shén me/3
 t: 你/ni33/0 ; 夜/yia215/1 ; 想吃/ɬiaŋ55 hiak33/2 ; 乜嘢/mɔt55 yia33/3 ; 啊/a33/-
 n: The meal goes before the verb: "you dinner want-eat what?".
 nt: Supper is simply 夜 yia215 in the dictionary.
@@ -185,7 +185,7 @@ nt: 今晚 is built from 今 gim33 and 晚 man21.
 @ Meals | I'll make breakfast.
 g: Let / me / make / breakfast
 y: 等/dang2/0 ; 我/ngo5/1 ; 整/zing2/2 ; 早餐/zou2 caan1/3 ; 啦/laa1/-
-m: 我/wǒ/1 ; 来/lái/0 ; 做/zuò/2 ; 早餐/zǎo cān/3
+m: 让/ràng/0 ; 我/wǒ/1 ; 做/zuò/2 ; 早餐/zǎo cān/3 ; 吧/ba/-
 t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 整/dzein55/2 ; 早餐/dɔu55 tan335/3 ; 啦/la55/-
 n: 等我 "let me" sounds like an offer; Google's 我會 is a plain statement.
 nt: Breakfast is 早餐 dɔu55 tan335.
@@ -193,7 +193,7 @@ nt: Breakfast is 早餐 dɔu55 tan335.
 @ Meals | Do you want some coffee?
 g: You / want? / drink / coffee
 y: 你/nei5/0 ; 想唔想/soeng2 m4 soeng2/1 ; 飲/jam2/2 ; 咖啡/gaa3 fe1/3 ; 呀/aa3/-
-m: 想/xiǎng/1 ; 喝/hē/2 ; 咖啡/kā fēi/3 ; 吗/ma/1
+m: 你/nǐ/0 ; 想不想/xiǎng bu xiǎng/1 ; 喝/hē/2 ; 咖啡/kā fēi/3
 t: 你/ni33/0 ; 想唔想/ɬiaŋ55 m22 ɬiaŋ55/1 ; 飲/ŋim55/2 ; 咖啡/ga33 fia55/3 ; 啊/a33/-
 n: Google got this one right.
 nt: Coffee is 咖啡 ga33 fia55.
@@ -203,13 +203,13 @@ g: I / go / make / tea
 y: 我/ngo5/0 ; 去/heoi3/1 ; 沖/cung1/2 ; 啲茶/di1 caa4/3
 m: 我/wǒ/0 ; 去/qù/1 ; 泡/pào/2 ; 点茶/diǎn chá/3
 t: 我/ŋɔi33/0 ; 去/hui33/1 ; 沖/tsəŋ33/2 ; 茶/tsa22/3
-n: Tea is "rinsed" in Cantonese (沖茶) and "soaked" in Mandarin (泡茶).
+n: Tea is "rinsed" in Cantonese (沖茶 cung1 caa4) and "soaked" in Mandarin (泡茶 pào chá).
 nt: 沖茶 tsəŋ33 tsa22 is in the dictionary.
 
 @ Meals | Do you want hot or cold water?
 g: You / want / hot water / or / cold water
 y: 你/nei5/0 ; 要/jiu3/1 ; 熱水/jit6 seoi2/2 ; 定/ding6/3 ; 凍水/dung3 seoi2/4 ; 呀/aa3/-
-m: 要/yào/1 ; 喝/hē/- ; 热水/rè shuǐ/2 ; 还是/hái shi/3 ; 冷水/lěng shuǐ/4
+m: 你/nǐ/0 ; 要/yào/1 ; 热水/rè shuǐ/2 ; 还是/hái shi/3 ; 冷水/lěng shuǐ/4
 t: 你/ni33/0 ; 要/yiau33/1? ; 熱水/ŋɛt32 sui55/2 ; 定/ein32/3? ; 凍水/əŋ33 sui55/4
 n: 定 ding6 "or" is only used in questions. Many families drink warm water with meals.
 nt: 凍 əŋ33 is used for cold things.
@@ -225,7 +225,7 @@ nt: 飲勝 ŋim55 sein33 is in the dictionary.
 @ Meals | Let's go grocery shopping.
 g: We / go / buy groceries / let's
 y: 我哋/ngo5 dei6/0 ; 去/heoi3/1 ; 買餸/maai5 sung3/2 ; 啦/laa1/3
-m: 去/qù/1 ; 买点菜/mǎi diǎn cài/2 ; 吧/ba/3
+m: 我们/wǒ men/0 ; 去/qù/1 ; 买菜/mǎi cài/2 ; 吧/ba/3
 t: 我/ŋɔi21/0 ; 去/hui33/1 ; 買菜/mai33 tɔi33/2 ; 啦/la55/3
 n: 買餸 "buy dishes" is shopping for meals. Google's 雜貨店 is a word for store signs.
 nt: Food shopping is 買菜 mai33 tɔi33.
@@ -233,7 +233,7 @@ nt: Food shopping is 買菜 mai33 tɔi33.
 @ Meals | We're out of rice.
 g: (We're) out of / rice
 y: 冇/mou5/0 ; 米/mai5/1 ; 喇/laa3/-
-m: 米/mǐ/1 ; 吃完了/chī wán le/0
+m: 没/méi/0 ; 米/mǐ/1 ; 了/le/-
 t: 冇/mɔu33/0 ; 米/mai55/1 ; 啦/la55/-
 n: Raw rice is 米 and cooked rice is 飯. Google's 冇飯 means no cooked rice left.
 nt: Raw rice is 米 mai55.
@@ -241,7 +241,7 @@ nt: Raw rice is 米 mai55.
 @ Family | How is everyone doing?
 g: Everyone / how (are you)
 y: 大家/daai6 gaa1/0 ; 點呀/dim2 aa3/1
-m: 大家/dà jiā/0 ; 最近/zuì jìn/- ; 怎么样/zěn me yàng/1
+m: 大家/dà jiā/0 ; 怎么样/zěn me yàng/1
 t: 仲家/jəŋ32 ga215/0 ; 幾何/gi55 hɔu215/1 ; 啊/a33/-
 n: A warm opener when you walk in.
 nt: "Everyone" is 仲家 jəŋ32 ga215.
@@ -249,7 +249,7 @@ nt: "Everyone" is 仲家 jəŋ32 ga215.
 @ Family | How is your mom?
 g: Your / mom / how (is she)
 y: 你/nei5/0 ; 媽媽/maa4 maa1/1 ; 點呀/dim2 aa3/2
-m: 你/nǐ/0 ; 妈妈/mā ma/1 ; 好吗/hǎo ma/2
+m: 你/nǐ/0 ; 妈妈/mā ma/1 ; 怎么样/zěn me yàng/2
 t: 你/ni33/0 ; 媽/ma55/1 ; 幾何/gi55 hɔu215/2 ; 啊/a33/-
 n: 阿媽 aa3 maa1 is also common, as Google used.
 nt: Mother is 媽 ma55.
@@ -257,7 +257,7 @@ nt: Mother is 媽 ma55.
 @ Family | Say hi to your parents for me.
 g: For me / say hi to / your / parents
 y: 幫我/bong1 ngo5/0 ; 問候/man6 hau6/1 ; 你/nei5/2 ; 爸爸媽媽/baa4 baa1 maa4 maa1/3
-m: 代我/dài wǒ/0 ; 向/xiàng/- ; 你/nǐ/2 ; 父母/fù mǔ/3 ; 问好/wèn hǎo/1
+m: 帮我/bāng wǒ/0 ; 问候/wèn hòu/1 ; 你/nǐ/2 ; 爸爸妈妈/bà ba mā ma/3
 t: 幫我/bɔŋ33 ŋɔi33/0 ; 問候/mun32 həu32/1 ; 你/ni33/2 ; 父母/fu32 mu21/3
 n: Google's 打招呼 means waving hello in person. 問候 "send regards" fits here.
 nt: Parents are 父母 fu32 mu21.
@@ -265,7 +265,7 @@ nt: Parents are 父母 fu32 mu21.
 @ Family | When is your birthday?
 g: You / when / (have your) birthday
 y: 你/nei5/0 ; 幾時/gei2 si4/1 ; 生日/saang1 jat6/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 生日/shēng rì/2 ; 是/shì/- ; 什么时候/shén me shí hou/1
+m: 你/nǐ/0 ; 什么时候/shén me shí hou/1 ; 生日/shēng rì/2
 t: 你/ni33/0 ; 幾時/gi55 si215/1 ; 生日/saŋ33 ŋit32/2 ; 啊/a33/-
 n: Cantonese uses 生日 almost like a verb: "you when birthday?".
 nt: "When" is 幾時 gi55 si215.
@@ -281,7 +281,7 @@ nt: Children are 仔女 dɔi55 nui55.
 @ Family | Your kids are so cute.
 g: Your / kids / (are) so / cute
 y: 你/nei5/0 ; 啲仔女/di1 zai2 neoi2/1 ; 好/hou2/2 ; 得意/dak1 ji3/3
-m: 你的/nǐ de/0 ; 孩子们/hái zi men/1 ; 真/zhēn/2 ; 可爱/kě ài/3
+m: 你的/nǐ de/0 ; 孩子/hái zi/1 ; 好/hǎo/2 ; 可爱/kě ài/3
 t: 你/ni33/0 ; 仔女/dɔi55 nui55/1 ; 好/hɔu55/2 ; 得意/ak55 yi33/3
 n: 得意 dak1 ji3 is "cute" in Cantonese, especially for kids. Google's 可愛 is fine too.
 nt: 得意 is in the dictionary for cute children.
@@ -289,7 +289,7 @@ nt: 得意 is in the dictionary for cute children.
 @ Family | They have grown so much.
 g: They / have grown / so much
 y: 佢哋/keoi5 dei6/0 ; 大咗/daai6 zo2/1 ; 好多/hou2 do1/2
-m: 他们/tā men/0 ; 长高了/zhǎng gāo le/1 ; 好多/hǎo duō/2
+m: 他们/tā men/0 ; 长大了/zhǎng dà le/1 ; 好多/hǎo duō/2
 t: 㑢/kiak21/0 ; 大/ai32/1 ; 好多/hɔu55 ɔ33/2?
 n: 大咗 is "got bigger". Google's 成長咗 sounds like a school report.
 nt: "They" is one word, 㑢 kiak21. 大 ai32 also means "to grow".
@@ -297,7 +297,7 @@ nt: "They" is one word, 㑢 kiak21. 大 ai32 also means "to grow".
 @ Family | Does your brother still live nearby?
 g: Your / brother / still / live / nearby
 y: 你/nei5/0 ; 哥哥/go4 go1/1 ; 仲/zung6/2 ; 住喺/zyu6 hai2/3 ; 附近/fu6 gan6/4 ; 呀/aa3/-
-m: 你/nǐ/0 ; 兄弟/xiōng di/1 ; 还/hái/2 ; 住在/zhù zài/3 ; 附近/fù jìn/4 ; 吗/ma/-
+m: 你/nǐ/0 ; 哥哥/gē ge/1 ; 还/hái/2 ; 住在/zhù zài/3 ; 附近/fù jìn/4 ; 吗/ma/-
 t: 你/ni33/0 ; 哥哥/gɔ33 gɔ55/1? ; 還/van21/2 ; 住/dzi32/3 ; 左近/dɔ55 gin325/4 ; 啊/a33/-
 n: There's no general word for brother in everyday speech: 哥哥 is older, 細佬 sai3 lou2 younger.
 nt: Nearby is 左近 dɔ55 gin325.
@@ -305,7 +305,7 @@ nt: Nearby is 左近 dɔ55 gin325.
 @ Family | Are you married?
 g: You / married / yet?
 y: 你/nei5/0 ; 結咗婚/git3 zo2 fan1/1 ; 未呀/mei6 aa3/2
-m: 你/nǐ/0 ; 结婚了/jié hūn le/1 ; 吗/ma/2
+m: 你/nǐ/0 ; 结婚了/jié hūn le/1 ; 没有/méi yǒu/2
 t: 你/ni33/0 ; 結婚/gɛt55 fun33/1 ; 唔曾/miaŋ21/2 ; 啊/a33/-
 n: It's asked as "married yet?" with 未, which is why relatives ask it so easily.
 nt: The same "yet?" word as "Have you eaten yet?".
@@ -313,7 +313,7 @@ nt: The same "yet?" word as "Have you eaten yet?".
 @ Family | How did you two meet?
 g: You two / how / met
 y: 你哋兩個/nei5 dei6 loeng5 go3/0 ; 點/dim2/1 ; 識/sik1/2 ; 㗎/gaa3/-
-m: 你们俩/nǐ men liǎ/0 ; 是/shì/- ; 怎么/zěn me/1 ; 认识的/rèn shi de/2
+m: 你们两个/nǐ men liǎng ge/0 ; 怎么/zěn me/1 ; 认识的/rèn shi de/2
 t: 偌兩個/niak21 liaŋ55 gɔi33/0? ; 幾何/gi55 hɔu215/1 ; 識/sɛt55/2 ; 個/gɔi33/-
 n: 識 sik1 "know someone" covers meeting. Be ready to answer this one yourself.
 nt: Built from 偌 niak21 and 兩個.
@@ -353,7 +353,7 @@ nt: Live is 住 dzi32.
 @ Family | Do you have any brothers or sisters?
 g: You / have? / brothers or sisters
 y: 你/nei5/0 ; 有冇/jau5 mou5/1 ; 兄弟姊妹/hing1 dai6 zi2 mui6/2 ; 呀/aa3/-
-m: 你/nǐ/0 ; 有/yǒu/1 ; 兄弟姐妹/xiōng dì jiě mèi/2 ; 吗/ma/1
+m: 你/nǐ/0 ; 有没有/yǒu méi yǒu/1 ; 兄弟姐妹/xiōng dì jiě mèi/2
 t: 你/ni33/0 ; 有冇/yiu33 mɔu55/1 ; 兄弟姊妹/hein33 ai32 di55 mɔi21/2? ; 啊/a33/-
 n: 兄弟姊妹 covers all siblings at once.
 nt: Built from 兄弟 hein33 ai32 and 姊妹.
@@ -363,7 +363,7 @@ g: Your / family / has / how many / people
 y: 你/nei5/0 ; 屋企/uk1 kei2/1 ; 有/jau5/2 ; 幾多個/gei2 do1 go3/3 ; 人/jan4/4 ; 呀/aa3/-
 m: 你/nǐ/0 ; 家里/jiā li/1 ; 有/yǒu/2 ; 几口/jǐ kǒu/3 ; 人/rén/4
 t: 你/ni33/0 ; 屋企/ək55 ki55/1 ; 有/yiu33/2 ; 幾多個/gi55 ɔ335 gɔi33/3? ; 人/ŋin22/4 ; 啊/a33/-
-n: Mandarin counts family members by 口 "mouths".
+n: Mandarin counts family members by 口 kǒu "mouths".
 nt: "How many" is 幾多 gi55 ɔ335.
 
 @ School | What grade are you in?
@@ -377,7 +377,7 @@ nt: School year is 年班 nein22 ban335.
 @ School | How was school today?
 g: Today / (at) school / how (was it)
 y: 今日/gam1 jat6/0 ; 返學/faan1 hok6/1 ; 點呀/dim2 aa3/2
-m: 今天/jīn tiān/0 ; 在学校/zài xué xiào/1 ; 怎么样/zěn me yàng/2
+m: 今天/jīn tiān/0 ; 上学/shàng xué/1 ; 怎么样/zěn me yàng/2
 t: 今日/gim33 ŋit21/0 ; 返學/fan33 hɔk32/1? ; 幾何/gi55 hɔu215/2 ; 啊/a33/-
 n: 返學 "return to school" is going to school, like 返工 for work.
 nt: Built from 返 fan33, as in 返工 fan33 gəŋ33, and 學 hɔk32.
