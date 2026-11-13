@@ -8467,6 +8467,10 @@
   const openedSharedPhrase = openSharedPhrase();
   if (!openedSharedPhrase) firstRun();  // someone opening a shared phrase sees it first; setup can wait
   window.addEventListener("hashchange", openSharedPhrase);
+
+  // Keep a copy for use without signal (sw.js). Only the published site has the files for it.
+  if ("serviceWorker" in navigator && document.querySelector('link[rel="manifest"]') && (location.protocol === "https:" || location.hostname === "localhost"))
+    navigator.serviceWorker.register("sw.js").catch(() => {});
   const setupLink = el("button", "link", esc(tr("su_again")));
   setupLink.type = "button";
   setupLink.addEventListener("click", () => firstRun(true));
