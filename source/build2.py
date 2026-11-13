@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 
 from phrases import PHRASES
 from tsn import TSN
@@ -125,6 +126,15 @@ for f in sorted(glob.glob("me/*.txt")):
             cur[ME_FULL[line[:2]]] = {"t": t.strip(), "r": r.strip()}
 if miss: print("me: unmatched", len(miss), miss[:3])
 print("me coverage:", {k: sum(1 for p in data if p.get(k)) for k in ["pt", "fa", "fa_w", "apc", "arz", "ar", "he", "tr"]})
+
+# Google Translate's version of each sentence (gathered daily by google_ref.py), shown "for comparison".
+# Older Cantonese/Mandarin lines from the google*.txt files are kept where they exist.
+google_ref = json.load(open("google_ref.json", encoding = "utf-8")) if os.path.exists("google_ref.json") else {}
+for p in data:
+    for lang, by_en in google_ref.items():
+        if p["en"] in by_en and not p.get("g_" + lang):
+            p["g_" + lang] = by_en[p["en"]]
+print("google lines:", {lang: sum(1 for p in data if p.get("g_" + lang)) for lang in google_ref})
 
 from romanize import annotate, sentence_rom
 

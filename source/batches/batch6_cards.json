@@ -8803,9 +8803,16 @@
   ],
   "es": [
    {
-    "hz": "Vengo",
+    "hz": "Ya",
+    "rom": "",
+    "refs": [],
+    "sure": true
+   },
+   {
+    "hz": "voy",
     "rom": "",
     "refs": [
+     0,
      1
     ],
     "sure": true
@@ -8813,17 +8820,10 @@
   ],
   "fr": [
    {
-    "hz": "Je",
+    "hz": "J'arrive",
     "rom": "",
     "refs": [
-     0
-    ],
-    "sure": true
-   },
-   {
-    "hz": "viens",
-    "rom": "",
-    "refs": [
+     0,
      1
     ],
     "sure": true

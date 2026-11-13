@@ -3522,6 +3522,11 @@
       g.appendChild(el("span", "label", tr("google_cmp")));
       if (p.g_yue) g.appendChild(el("div", "", `<span>${NAMES.yue}</span><span class="g hz-yue">${esc(p.g_yue)}</span>${p.g_yue_rom ? `<span class="nr">${romInline("yue", p.g_yue_rom)}</span>` : ""}`));
       if (p.g_cmn) g.appendChild(el("div", "", `<span>${NAMES.cmn}</span><span class="g hz-cmn">${esc(p.g_cmn)}</span>${p.g_cmn_rom ? `<span class="nr">${romInline("cmn", p.g_cmn_rom)}</span>` : ""}`));
+      // The other languages: Google's line for each one shown under Display (Arabic is Google's standard Arabic).
+      for (const [lang, lane, name] of [["es", "es", "es"], ["fr", "fr", "fr"], ["de", "de", "de"], ["pt", "pt", "pt"], ["tr", "tr", "tr"], ["he", "he", "he"], ["fa", "fa", "fa_w"], ["ar", "apc", "ar"]]) {
+        const text = p["g_" + lang];
+        if (text && shown(lane)) g.appendChild(el("div", "", `<span>${NAMES[name]}</span><span class="g"${RTL.has(lang) ? ' dir="rtl"' : ""}>${esc(text)}</span>`));
+      }
       box.appendChild(g);
     }
     }
