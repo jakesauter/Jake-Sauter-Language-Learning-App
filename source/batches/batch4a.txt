@@ -250,9 +250,9 @@ nt: "This one" is 該個 kɔi21 gɔi33.
 g: Can I? / swipe / card
 y: 可唔可以/ho2 m4 ho2 ji5/0 ; 碌/luk1/1 ; 卡/kaat1/2 ; 呀/aa3/-
 m: 可不可以/kě bu kě yǐ/0 ; 刷/shuā/1 ; 卡/kǎ/2
-t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 碌/lək55/1? ; 卡/kat55/2? ; 啊/a33/-
+t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 碌/lək55/1? ; 卡/ka55/2? ; 啊/a33/-
 n: 碌卡 "roll the card" is paying by card in Hong Kong Cantonese.
-nt: Not in the dictionary; readings are my guesses.
+nt: 卡 ka55 "card" is in Stephen Li's dictionary; 碌 "swipe" is a guess.
 
 @ Shopping | Do you need a bag?
 g: Need? / a bag

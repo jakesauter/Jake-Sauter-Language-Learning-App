@@ -354,12 +354,12 @@ nt: Anytime is 隨時 tui22 si225.
 g: I / love / you all
 y: 我/ngo5/0 ; 好錫/hou2 sek3/1 ; 你哋/nei5 dei6/2
 m: 我/wǒ/0 ; 爱/ài/1 ; 你们/nǐ men/2
-t: 我/ŋɔi33/0 ; 錫/ɬɛk33/1? ; 你/ni21/2?
+t: 我/ŋɔi33/0 ; 錫/ɬɛk33/1? ; 偌/niak21/2?
 s: Los/2 ; quiero/0,1 ; mucho/1
 f: Je/0 ; vous/2 ; aime/1
 d: Ich/0 ; hab/- ; euch/2 ; lieb/1
 n: 我愛你哋 is correct but very direct for many Cantonese families. 好錫你哋 "dote on you all" sounds warmer and more natural.
-nt: Plural "you" may be ni21. Check it with family.
+nt: Plural "you" is 偌 niak21 in Stephen Li's dictionary, like 㑢 kiak21 "they". Check it with family.
 
 @ Goodbyes | See you this weekend!
 g: This weekend / see (you)

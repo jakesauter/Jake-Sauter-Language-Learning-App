@@ -298,7 +298,7 @@ nt: Seasick is 暈船 vun22 sɔn22 or 暈浪 vun22 lɔŋ32.
 g: The / ship / (is) very / big
 y: 架/gaa3/0 ; 船/syun4/1 ; 好/hou2/2 ; 大/daai6/3
 m: 这艘/zhè sōu/0 ; 船/chuán/1 ; 好/hǎo/2 ; 大/dà/3
-t: 架/ga33/0? ; 船/sɔn22/1 ; 好/hɔu55/2 ; 大/ai32/3
+t: 架/ga21/0? ; 船/sɔn22/1 ; 好/hɔu55/2 ; 大/ai32/3
 n: Google got this one right. Ships take the measure word 架 or 隻.
 nt: Ship is 船 sɔn22.
 

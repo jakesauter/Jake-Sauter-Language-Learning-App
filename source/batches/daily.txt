@@ -13,18 +13,18 @@ nt: In 台山話 hɔi22 san33 va325, the t of 台 becomes h. That's a Taishanese
 g: So that / I / can / with / all of you / chat
 y: 等/dang2/0 ; 我/ngo5/1 ; 可以/ho2 ji5/2 ; 同/tung4/3 ; 你哋/nei5 dei6/4 ; 傾偈/king1 gai2/5
 m: 这样/zhè yàng/0 ; 我/wǒ/1 ; 就能/jiù néng/2 ; 跟/gēn/3 ; 你们/nǐ men/4 ; 聊天/liáo tiān/5
-t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 可以/hɔ55 yi21/2 ; 同/həŋ22/3 ; 你/ni21/4? ; 傾偈/kein33 gai325/5
+t: 等/aŋ55/0 ; 我/ŋɔi33/1 ; 可以/hɔ55 yi21/2 ; 同/həŋ22/3 ; 偌/niak21/4? ; 傾偈/kein33 gai325/5
 s: Para que/0 ; pueda/1,2 ; platicar/5 ; con/3 ; todos ustedes/4
 f: Comme ça/0 ; je/1 ; peux/2 ; parler/5 ; avec/3 ; vous tous/4
 d: Damit/0 ; ich/1 ; mit/3 ; euch allen/4 ; reden/5 ; kann/2
 n: 傾偈 king1 gai2 means "to chat", the word for relaxed family talk.
-nt: Taishanese makes "you" plural by changing the tone: ni33 is "you", ni21 is "you all". Check it with family.
+nt: Taishanese pronouns turn plural by a change of sound: 我 ŋɔi33 "I" becomes ŋɔi21 "we", and "you all" is 偌 niak21 in Stephen Li's dictionary, like 㑢 kiak21 "they". Check it with family.
 
 @ Start Here | If I say something wrong, please tell me.
 g: If / I / say (it) / wrong / please / tell / me
 y: 如果/jyu4 gwo2/0 ; 我/ngo5/1 ; 講錯/gong2 co3/2,3 ; 唔該/m4 goi1/4 ; 話/waa6/5 ; 我知/ngo5 zi1/6
 m: 如果/rú guǒ/0 ; 我/wǒ/1 ; 说错了/shuō cuò le/2,3 ; 请/qǐng/4 ; 告诉/gào su/5 ; 我/wǒ/6
-t: 如果/yi22 gɔ55/0? ; 我/ŋɔi33/1 ; 講錯/gɔŋ55 tɔ33/2,3 ; 唔該/m22 gɔi33/4 ; 話/va325/5 ; 我知/ŋɔi33 di33/6?
+t: 如果/ŋui22 gɔ55/0? ; 我/ŋɔi33/1 ; 講錯/gɔŋ55 tɔ33/2,3 ; 唔該/m22 gɔi33/4 ; 話/va325/5 ; 我知/ŋɔi33 di33/6?
 s: Si/0 ; digo/1,2 ; algo mal/3 ; por favor/4 ; díganme/5,6
 f: Si/0 ; je/1 ; dis/2 ; une bêtise/3 ; dites-le-moi/5,6 ; s'il vous plaît/4
 d: Wenn/0 ; ich/1 ; etwas/- ; Falsches/3 ; sage/2 ; sagt/5 ; es mir/6 ; bitte/4

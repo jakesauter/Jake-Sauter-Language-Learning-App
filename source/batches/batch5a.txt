@@ -343,7 +343,7 @@ nt: 太 may be hai33 with Taishanese t→h. Check it.
 g: Before sleeping / remember to / lock / the door
 y: 瞓覺前/fan3 gaau3 cin4/0 ; 記得/gei3 dak1/1 ; 鎖/so2/2 ; 門/mun4/3
 m: 睡前/shuì qián/0 ; 记得/jì de/1 ; 锁/suǒ/2 ; 门/mén/3
-t: 瞓覺前/fun33 gɔu33 tein22/0? ; 記得/gi33 ak55/1? ; 鎖/ɬɔ55/2 ; 門/mɔn22/3
+t: 瞓覺前/fun33 gɔu33 tein22/0? ; 記得/gi33 ak33/1? ; 鎖/ɬɔ55/2 ; 門/mɔn22/3
 s: Cierra/2 ; la puerta/3 ; antes de dormir/0
 f: Ferme/2 ; la porte/3 ; avant de te coucher/0
 d: Schließ/2 ; die Tür/3 ; ab/2 ; bevor du ins Bett gehst/0

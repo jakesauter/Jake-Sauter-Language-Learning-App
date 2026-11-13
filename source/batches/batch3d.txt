@@ -26,9 +26,9 @@ nt: Tomorrow is 天早 hein32 dɔu55.
 g: Next time / see (you)
 y: 下次/haa6 ci3/0 ; 見/gin3/1
 m: 下次/xià cì/0 ; 见/jiàn/1
-t: 下次/ha32 tu33/0? ; 見/gein33/1
+t: 下次/ha32 ɬu33/0? ; 見/gein33/1
 n: Google got this one right.
-nt: 下次 is my guess, from 下個禮拜 ha32 gɔi33 "next week".
+nt: 下次 ha32 ɬu33 is in Stephen Li's dictionary.
 
 @ Goodbyes | Have a safe trip.
 g: (Have a) smooth journey
@@ -170,9 +170,9 @@ nt: 擺 bai55 is "arrange, set out".
 g: Sit / next to / me
 y: 坐/co5/0 ; 我隔籬/ngo5 gaak3 lei4/1,2 ; 啦/laa1/-
 m: 坐/zuò/0 ; 我/wǒ/2 ; 旁边/páng biān/1
-t: 坐/tɔ33/0 ; 我/ŋɔi33/2 ; 隔籬/gak33 li22/1? ; 啦/la55/-
+t: 坐/tɔ33/0 ; 我/ŋɔi33/2 ; 隔籬/gak33 li21/1? ; 啦/la55/-
 n: 隔籬 gaak3 lei4 "next door" means next to.
-nt: 隔籬 is my guess at the reading.
+nt: 隔籬 gak33 li21 is in Stephen Li's dictionary.
 
 @ Meals | Is this seat taken?
 g: This / seat / (has) / someone?
