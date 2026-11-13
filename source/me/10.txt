@@ -1,0 +1,378 @@
+= 450 Teach me some Taishanese.
+pt: Me/1 ; ensina/0 ; um pouco de/2 ; taishanês/3
+fa: یه کم{ye kam}/2 ; تایشانی{tāyshāni}/3 ; یادم بده{yādam bede}/0,1
+fw: کمی تایشانی به من یاد بده. || kami tāyshāni be man yād bede.
+la: علمني{ʿallimni}/0,1 ; شوية{shwayye}/2 ; تايشاني{tayshāni}/3
+eg: علمني شوية تايشاني. || ʿallimni shwayyit tayshāni.
+ms: علمني بعض التايشانية. || ʿallimnī baʿḍa at-tayshāniyya.
+he: תלמד{telamed}/0 ; אותי{oti}/1 ; קצת{ktsat}/2 ; טאישנית{taishanit}/3
+tr: Bana/1 ; biraz/2 ; Taishanca/3 ; öğret/0
+= 451 Did I say that right?
+pt: Eu/0 ; falei/1 ; certo/2
+fa: درست{dorost}/2 ; گفتم{goftam}/0,1
+fw: آیا درست گفتم؟ || āyā dorost goftam?
+la: قلتها{ʾiltha}/0,1 ; صح{ṣaḥḥ}/2
+eg: قلتها صح؟ || ʾultaha ṣaḥḥ?
+ms: هل قلتُ ذلك بشكل صحيح؟ || hal qultu dhālika bi-shaklin ṣaḥīḥ?
+he: אמרתי{amarti}/0,1 ; את זה נכון{et ze nakhon}/2
+tr: Doğru/2 ; söyledim mi/0,1
+= 452 Happy Lunar New Year!
+pt: Feliz/0 ; Ano Novo Lunar/1
+fa: سال نو قمری{sāl-e no-ye qamari}/1 ; مبارک{mobārak}/0
+fw: سال نوی قمری مبارک! || sāl-e no-ye qamari mobārak!
+la: كل عام وإنتو بخير{kill ʿām w-intu b-khēr}/0 ; بالسنة القمرية{bis-sane il-qamariyye}/1
+eg: كل سنة وإنتم طيبين بمناسبة السنة القمرية الجديدة! || kull sana w-intum ṭayyibīn bi-munasbit is-sana il-ʾamariyya il-gidīda!
+ms: سنة قمرية جديدة سعيدة! || sanatun qamariyyatun jadīdatun saʿīda!
+he: שנה סינית{shana sinit}/1 ; טובה{tova}/0
+tr: Ay Yeni Yılınız/1 ; kutlu olsun/0
+= 453 Merry Christmas!
+pt: Feliz/1 ; Natal/0
+fa: کریسمس{kerismas}/0 ; مبارک{mobārak}/1
+fw: کریسمس مبارک! || kerismas mobārak!
+la: عيد ميلاد{ʿīd mīlād}/0 ; مجيد{majīd}/1
+eg: عيد ميلاد مجيد! || ʿīd milād magīd!
+ms: عيد ميلاد مجيد! || ʿīdu mīlādin majīd!
+he: חג מולד{khag molad}/0 ; שמח{sameakh}/1
+tr: Mutlu/1 ; Noeller/0
+= 454 What are we doing for the holidays?
+pt: O que/3 ; a gente/1 ; vai fazer/2 ; nas festas/0
+fa: برای تعطیلات{barāye ta'tilāt}/0 ; چی کار{chi kār}/3 ; کنیم{konim}/1,2
+fw: برای تعطیلات چه کار کنیم؟ || barāye ta'tilāt che kār konim?
+la: شو{shu}/3 ; رح نعمل{raḥ naʿmel}/1,2 ; بالعطلة{bil-ʿuṭle}/0
+eg: هنعمل إيه في الأجازة؟ || haniʿmil ēh fil-agāza?
+ms: ماذا سنفعل في العطلة؟ || mādhā sanafʿalu fī al-ʿuṭla?
+he: מה{ma}/3 ; אנחנו{anakhnu}/1 ; עושים{osim}/2 ; בחגים{ba-khagim}/0
+tr: Tatilde/0 ; ne/3 ; yapıyoruz/1,2
+= 455 Let's celebrate!
+pt: Vamos/0,3 ; comemorar/1
+fa: بیاین{biyāyn}/3 ; جشن بگیریم{jashn begirim}/0,1
+fw: بیایید جشن بگیریم! || biyāyid jashn begirim!
+la: يلا{yalla}/3 ; نحتفل{niḥtifel}/0,1
+eg: يلا نحتفل! || yalla niḥtifil!
+ms: لنحتفل! || li-naḥtafil!
+he: בואו{bo'u}/3 ; נחגוג{nakhgog}/0,1
+tr: Hadi/3 ; kutlayalım/0,1
+= 456 I'm so excited!
+pt: Estou/0 ; tão/1 ; animado/2
+fa: من{man}/0 ; خیلی{kheyli}/1 ; هیجان‌زده‌م{hayajān-zade-am}/2
+fw: من خیلی هیجان‌زده‌ام! || man kheyli hayajān-zade-am!
+la: أنا{ana}/0 ; كتير{ktīr}/1 ; متحمس{mitḥammis}/2
+eg: أنا متحمس أوي! || ana mitḥammis awi!
+ms: أنا متحمس جدًا! || anā mutaḥammisun jiddan!
+he: אני{ani}/0 ; כל כך{kol kakh}/1 ; מתרגש{mitragesh}/2
+tr: Çok/1 ; heyecanlıyım/0,2
+= 457 I'm a little nervous.
+pt: Estou/0 ; um pouco/1 ; nervoso/2
+fa: من{man}/0 ; یه کم{ye kam}/1 ; استرس دارم{esteres dāram}/2
+fw: من کمی مضطربم. || man kami moztarebam.
+la: أنا{ana}/0 ; شوي{shway}/1 ; متوتر{mitwattir}/2
+eg: أنا متوتر شوية. || ana mitwattar shwayya.
+ms: أنا متوتر قليلًا. || anā mutawattirun qalīlan.
+he: אני{ani}/0 ; קצת{ktsat}/1 ; לחוץ{lakhuts}/2
+tr: Biraz/1 ; gerginim/0,2
+= 458 I'm bored.
+pt: Estou/0 ; muito/1 ; entediado/2
+fa: حوصله‌م{hosele-m}/0 ; سر رفته{sar rafte}/1,2
+fw: حوصله‌ام سر رفته است. || hosele-am sar rafte ast.
+la: أنا{ana}/0 ; كتير{ktīr}/1 ; زهقان{zahʾān}/2
+eg: أنا زهقان أوي. || ana zahʾān awi.
+ms: أنا أشعر بالملل. || anā ashʿuru bil-malal.
+he: משעמם{meshaamem}/1,2 ; לי{li}/0
+tr: Çok/1 ; sıkıldım/0,2
+= 459 I'm really sorry.
+pt: Sinto/0,2 ; muito/1
+fa: واقعاً{vāqe'an}/1 ; متأسفم{mote'assefam}/0,2
+fw: واقعاً متأسفم. || vāqe'an mote'assefam.
+la: أنا{ana}/0 ; كتير{ktīr}/1 ; آسف{āsif}/2
+eg: أنا آسف جدًا. || ana āsif giddan.
+ms: أنا آسف حقًا. || anā āsifun ḥaqqan.
+he: אני{ani}/0 ; ממש{mamash}/1 ; מצטער{mitsta'er}/2
+tr: Gerçekten/1 ; özür dilerim/0,2
+= 460 I'm so proud of you.
+pt: Tenho/0 ; tanto/2 ; orgulho/3 ; de você/1
+fa: من{man}/0 ; خیلی{kheyli}/2 ; بهت{behet}/1 ; افتخار می‌کنم{eftekhār mikonam}/3
+fw: من خیلی به تو افتخار می‌کنم. || man kheyli be to eftekhār mikonam.
+la: أنا{ana}/0 ; كتير{ktīr}/2 ; فخور{fakhūr}/3 ; فيك{fīk}/1
+eg: أنا فخور بيك أوي. || ana fakhūr bīk awi.
+ms: أنا فخور بك جدًا. || anā fakhūrun bika jiddan.
+he: אני{ani}/0 ; כל כך{kol kakh}/2 ; גאה{ge'e}/3 ; בך{bekha}/1
+tr: Seninle/1 ; çok/2 ; gurur duyuyorum/0,3
+= 461 Don't be sad.
+pt: Não/0 ; fica triste/1
+fa: ناراحت{nārāhat}/1 ; نباش{nabāsh}/0
+fw: ناراحت نباش. || nārāhat nabāsh.
+la: لا{lā}/0 ; تزعل{tizʿal}/1
+eg: متزعلش. || matizʿalsh.
+ms: لا تحزن. || lā taḥzan.
+he: אל{al}/0 ; תהיה עצוב{tihye atsuv}/1
+tr: Üzülme/0,1
+= 462 Don't be angry.
+pt: Não/0 ; fica bravo/1
+fa: عصبانی{asabāni}/1 ; نشو{nasho}/0
+fw: عصبانی نشو. || asabāni nasho.
+la: لا{lā}/0 ; تعصب{tʿaṣṣib}/1
+eg: متتعصبش. || matitʿaṣṣabsh.
+ms: لا تغضب. || lā taghḍab.
+he: אל{al}/0 ; תכעס{tikh'as}/1
+tr: Kızma/0,1
+= 463 Calm down.
+pt: Calma/0
+fa: آروم باش{ārum bāsh}/0
+fw: آرام باش. || ārām bāsh.
+la: روق{rawwiʾ}/0 ; شوي{shway}/1
+eg: اهدى شوية. || ihda shwayya.
+ms: اهدأ. || ihdaʾ.
+he: תירגע{teraga}/0
+tr: Sakin ol/0
+= 464 It's okay, don't cry.
+pt: Está tudo bem/0 ; não/1 ; chora/2
+fa: چیزی نیست{chizi nist}/0 ; گریه{gerye}/2 ; نکن{nakon}/1
+fw: چیزی نیست، گریه نکن. || chizi nist, gerye nakon.
+la: ولا يهمك{wala yhimmak}/0 ; لا{lā}/1 ; تبكي{tibki}/2
+eg: خلاص، متعيطش. || khalāṣ, matʿayyaṭsh.
+ms: لا بأس، لا تبكِ. || lā baʾs, lā tabki.
+he: זה בסדר{ze beseder}/0 ; אל{al}/1 ; תבכה{tivke}/2
+tr: Tamam/0 ; ağlama/1,2
+= 465 I'm sleepy.
+pt: Estou com/0 ; muito/1 ; sono/2
+fa: من{man}/0 ; خیلی{kheyli}/1 ; خوابم میاد{khābam miyād}/2
+fw: خیلی خوابم می‌آید. || kheyli khābam mi-āyad.
+la: أنا{ana}/0 ; كتير{ktīr}/1 ; نعسان{naʿsān}/2
+eg: أنا نعسان أوي. || ana naʿsān awi.
+ms: أنا نعسان. || anā naʿsān.
+he: אני{ani}/0 ; ממש{mamash}/1 ; עייף{ayef}/2
+tr: Çok/1 ; uykum var/0,2
+= 466 That's amazing, I'm so happy for you!
+pt: Que incrível/0 ; estou/1 ; tão/3 ; feliz/4 ; por você/2
+fa: عالیه{āliye}/0 ; خیلی{kheyli}/3 ; برات{barāt}/2 ; خوشحالم{khoshhālam}/1,4
+fw: عالی است، خیلی برایت خوشحالم! || āli ast, kheyli barāyat khoshhālam!
+la: شي بيجنن{shi bijannin}/0 ; أنا{ana}/1 ; كتير{ktīr}/3 ; مبسوط{mabsūṭ}/4 ; إلك{ilak}/2
+eg: ده رائع، أنا فرحان لك أوي! || da rāʾiʿ, ana farḥān-lak awi!
+ms: هذا رائع، أنا سعيد جدًا من أجلك! || hādhā rāʾiʿ, anā saʿīdun jiddan min ajlik!
+he: מדהים{madhim}/0 ; אני{ani}/1 ; כל כך{kol kakh}/3 ; שמח{sameakh}/4 ; בשבילך{bishvilkha}/2
+tr: Harika/0 ; senin adına/2 ; çok/3 ; sevindim/1,4
+= 467 You're always so busy.
+pt: Você/0 ; está sempre/1 ; tão/2 ; ocupado/3
+fa: تو{to}/0 ; همیشه{hamishe}/1 ; خیلی{kheyli}/2 ; سرت شلوغه{saret sholughe}/3
+fw: تو همیشه خیلی سرت شلوغ است. || to hamishe kheyli sarat sholugh ast.
+la: إنت{inta}/0 ; دايمًا{dāyman}/1 ; كتير{ktīr}/2 ; مشغول{mashghūl}/3
+eg: إنت دايمًا مشغول أوي. || inta dayman mashghūl awi.
+ms: أنت مشغول دائمًا. || anta mashghūlun dāʾiman.
+he: אתה{ata}/0 ; תמיד{tamid}/1 ; כל כך{kol kakh}/2 ; עסוק{asuk}/3
+tr: Sen/0 ; hep/1 ; çok/2 ; meşgulsün/3
+= 468 Take a break, you work too hard.
+pt: Descansa/0 ; um pouco/1 ; você/2 ; trabalha/4 ; demais/3
+fa: یه کم{ye kam}/1 ; استراحت کن{esterāhat kon}/0 ; تو{to}/2 ; زیادی{ziyādi}/3 ; کار می‌کنی{kār mikoni}/4
+fw: کمی استراحت کن، تو بیش از حد کار می‌کنی. || kami esterāhat kon, to bish az hadd kār mikoni.
+la: ارتاح{irtāḥ}/0 ; شوي{shway}/1 ; إنت{inta}/2 ; كتير{ktīr}/3 ; عم تشتغل{ʿam tishtighil}/4
+eg: ارتاح شوية، إنت بتشتغل زيادة عن اللزوم. || irtāḥ shwayya, inta btishtaghal ziyāda ʿan il-lizūm.
+ms: خذ استراحة، أنت تعمل بجد أكثر من اللازم. || khudh istirāḥa, anta taʿmalu bi-jiddin akthara mina al-lāzim.
+he: תנוח{tanuakh}/0 ; קצת{ktsat}/1 ; אתה{ata}/2 ; עובד{oved}/4 ; קשה מדי{kashe miday}/3
+tr: Biraz/1 ; dinlen/0 ; sen/2 ; çok/3 ; çalışıyorsun/4
+= 469 I'm proud of you.
+pt: Tenho/0 ; orgulho/2,3 ; de você/1
+fa: من{man}/0 ; بهت{behet}/1 ; افتخار می‌کنم{eftekhār mikonam}/2,3
+fw: من به تو افتخار می‌کنم. || man be to eftekhār mikonam.
+la: أنا{ana}/0 ; فخور{fakhūr}/2,3 ; فيك{fīk}/1
+eg: أنا فخور بيك. || ana fakhūr bīk.
+ms: أنا فخور بك. || anā fakhūrun bik.
+he: אני{ani}/0 ; גאה{ge'e}/2,3 ; בך{bekha}/1
+tr: Seninle/1 ; gurur duyuyorum/0,2,3
+= 470 Don't piss me off.
+pt: Não/0 ; me/2 ; irrita/1
+fa: منو{man-o}/2 ; عصبانی{asabāni}/1 ; نکن{nakon}/0
+fw: مرا عصبانی نکن. || marā asabāni nakon.
+la: لا{lā}/0 ; تعصبني{tʿaṣṣibni}/1,2
+eg: متعصبنيش. || matʿaṣṣabnīsh.
+ms: لا تُغضبني. || lā tughḍibnī.
+he: אל{al}/0 ; תעצבן{te'atsben}/1 ; אותי{oti}/2
+tr: Beni/2 ; sinirlendirme/0,1
+= 471 I'm just kidding!
+pt: Tô/0 ; só/2 ; brincando/1
+fa: فقط{faqat}/2 ; شوخی کردم{shukhi kardam}/0,1
+fw: فقط شوخی کردم! || faqat shukhi kardam!
+la: عم إمزح{ʿam imzaḥ}/0,1 ; بس{bass}/2
+eg: أنا بهزر بس! || ana bahazzar bass!
+ms: أنا أمزح فقط! || anā amzaḥu faqaṭ!
+he: אני{ani}/0 ; סתם{stam}/2 ; צוחק{tsokhek}/1
+tr: Sadece/2 ; şaka yapıyorum/0,1
+= 472 Are you kidding me?
+pt: Tá de brincadeira comigo/0
+fa: داری شوخی می‌کنی{dāri shukhi mikoni}/0 ; جدی{jeddi}/1
+fw: شوخی می‌کنی؟ || shukhi mikoni?
+la: عم تمزح معي{ʿam timzaḥ maʿi}/0 ; جد{jadd}/1
+eg: إنت بتهزر؟ || inta bithazzar?
+ms: هل تمزح معي؟ || hal tamzaḥu maʿī?
+he: אתה צוחק עליי{ata tsokhek alay}/0 ; ברצינות{bi-retsinut}/1
+tr: Dalga mı geçiyorsun/0 ; ciddi misin/1
+= 473 Very funny.
+pt: Muito/0 ; engraçado/1
+fa: خیلی{kheyli}/0 ; بامزه{bāmaze}/1 ; بود{bud}/-
+fw: خیلی بامزه بود. || kheyli bāmaze bud.
+la: كتير{ktīr}/0 ; مهضوم{mahḍūm}/1
+eg: ظريف أوي. || ẓarīf awi.
+ms: مضحك جدًا. || muḍḥikun jiddan.
+he: מאוד{me'od}/0 ; מצחיק{matskhik}/1
+tr: Çok/0 ; komik/1
+= 474 You're so annoying.
+pt: Você/0 ; é tão/1 ; chato/2
+fa: تو{to}/0 ; خیلی{kheyli}/1 ; رو مخی{ru mokhi}/2
+fw: تو خیلی آزاردهنده‌ای. || to kheyli āzār-dahande-i.
+la: إنت{inta}/0 ; كتير{ktīr}/1 ; غليظ{ghalīẓ}/2
+eg: إنت رخم أوي. || inta rikhim awi.
+ms: أنت مزعج جدًا. || anta muzʿijun jiddan.
+he: אתה{ata}/0 ; כל כך{kol kakh}/1 ; מעצבן{me'atsben}/2
+tr: Çok/1 ; sinir bozucusun/0,2
+= 475 Whatever you say.
+pt: Se/2 ; você/0 ; diz/1 ; então tá/3,4
+fa: هر چی{har chi}/2 ; تو{to}/0 ; بگی{begi}/1
+fw: هر چه تو بگویی. || har che to beguyi.
+la: اللي{illi}/2 ; بتقوله{bitʾūlo}/0,1 ; ماشي{māshi}/3,4
+eg: اللي تقوله. || illi tʾūlu.
+ms: كما تقول. || kamā taqūl.
+he: איך{eykh}/2 ; שאתה{she-ata}/0 ; אומר{omer}/1
+tr: Sen/0 ; nasıl/2 ; diyorsan/1 ; öyle olsun/3,4
+= 476 Don't be silly.
+pt: Deixa de/0 ; bobagem/1
+fa: مسخره‌بازی{maskhare-bāzi}/1 ; درنیار{darnayār}/0
+fw: مسخره‌بازی درنیاور. || maskhare-bāzi darnayāvar.
+la: لا{lā}/0 ; تكون سخيف{tkūn sakhīf}/1 ; يا رجال{ya rjjāl}/2
+eg: متبقاش عبيط. || matibʾāsh ʿabīṭ.
+ms: لا تكن سخيفًا. || lā takun sakhīfan.
+he: אל{al}/0 ; תהיה טיפש{tihye tipesh}/1 ; נו{nu}/2
+tr: Saçmalama/0,1
+= 477 You're full of it.
+pt: Você/0 ; só fala besteira/1
+fa: تو{to}/0 ; خالی می‌بندی{khāli mibandi}/1
+fw: تو فقط لاف می‌زنی. || to faqat lāf mizani.
+la: إنت{inta}/0 ; بتفشر{bitfashshir}/1
+eg: إنت بتفشر. || inta bitfashar.
+ms: أنت تبالغ كثيرًا. || anta tubālighu kathīran.
+he: אתה{ata}/0 ; מדבר שטויות{medaber shtuyot}/1
+tr: Atıyorsun/0,1
+= 478 Who ate my food?!
+pt: Quem/0 ; comeu/1 ; a minha/2 ; comida/3
+fa: کی{ki}/0 ; غذای من{qazā-ye man}/2,3 ; رو{ro}/- ; خورد{khord}/1
+fw: چه کسی غذای من را خورد؟! || che kasi qazā-ye man rā khord?!
+la: مين{mīn}/0 ; أكل{akal}/1 ; أكلي{akli}/2,3
+eg: مين اللي كل أكلي؟! || mīn illi kal akli?!
+ms: من أكل طعامي؟! || man akala ṭaʿāmī?!
+he: מי{mi}/0 ; אכל{akhal}/1 ; את האוכל שלי{et ha-okhel sheli}/2,3
+tr: Yemeğimi/2,3 ; kim/0 ; yedi/1
+= 479 You wish!
+pt: Vai sonhando/0,1
+fa: خوابشو ببینی{khābesh-o bebini}/0,1
+fw: آرزو بر جوانان عیب نیست! || ārezu bar javānān eyb nist!
+la: بتحلم{btiḥlam}/0,1
+eg: في المشمش! || fil-mishmish!
+ms: في أحلامك! || fī aḥlāmik!
+he: בחלומות שלך{ba-khalomot shelkha}/0,1
+tr: Rüyanda görürsün/0,1
+= 480 I'm the favorite, right?
+pt: Eu/0 ; sou/1 ; o preferido/2,3 ; né/4
+fa: من{man}/0 ; عزیز دردونه‌م{aziz dordune-am}/1,2,3 ; دیگه، نه{dige, na}/4
+fw: من محبوب‌ترینم، درست است؟ || man mahbub-tarinam, dorost ast?
+la: أنا{ana}/0 ; المفضل{il-mufaḍḍal}/1,2,3 ; صح{ṣaḥḥ}/4
+eg: أنا المفضل، صح؟ || ana il-mufaḍḍal, ṣaḥḥ?
+ms: أنا المفضَّل، أليس كذلك؟ || anā al-mufaḍḍal, alaysa kadhālik?
+he: אני{ani}/0 ; האהוב ביותר{ha-ahuv beyoter}/1,2,3 ; נכון{nakhon}/4
+tr: En sevilen/2,3 ; benim/0,1 ; değil mi/4
+= 481 Stop showing off.
+pt: Para de/0 ; se exibir/1
+fa: اینقدر{inqadr}/- ; پز{poz}/1 ; نده{nade}/0
+fw: این‌قدر خودنمایی نکن. || in-qadr khodnamāyi nakon.
+la: بلا{balā}/0 ; فشخرة{fashkhara}/1
+eg: بطل منظرة. || baṭṭal manẓara.
+ms: توقف عن التباهي. || tawaqqaf ʿan at-tabāhī.
+he: די{dai}/0 ; להשוויץ{lehashvits}/1
+tr: Hava atmayı/1 ; bırak/0
+= 482 Text me when you get home.
+pt: Me/2 ; manda mensagem/1 ; quando chegar em casa/0
+fa: رسیدی خونه{residi khune}/0 ; بهم{behem}/2 ; پیام بده{payām bede}/1
+fw: وقتی به خانه رسیدی، به من پیام بده. || vaqti be khāne residi, be man payām bede.
+la: لما توصل عالبيت{lamma tūṣal ʿal-bēt}/0 ; بعتلي{baʿtilli}/1,2 ; مسج{masij}/1
+eg: لما توصل البيت ابعتلي رسالة. || lamma tiwṣal il-bēt ibʿatli risāla.
+ms: أرسل لي رسالة عندما تصل إلى البيت. || arsil lī risālatan ʿindamā taṣilu ilā al-bayt.
+he: תשלח{tishlakh}/1 ; לי{li}/2 ; הודעה{hodaa}/1 ; כשתגיע הביתה{kshe-tagia ha-bayta}/0
+tr: Eve varınca/0 ; bana/2 ; mesaj at/1
+= 483 I'll call you later.
+pt: Eu/0 ; te/3 ; ligo/2 ; mais tarde/1
+fa: بعداً{ba'dan}/1 ; بهت{behet}/3 ; زنگ می‌زنم{zang mizanam}/0,2
+fw: بعداً به تو زنگ می‌زنم. || ba'dan be to zang mizanam.
+la: بدقلك{bdiʾʾillak}/0,2,3 ; بعدين{baʿdēn}/1
+eg: هكلمك بعدين. || hakallimak baʿdēn.
+ms: سأتصل بك لاحقًا. || saʾattaṣilu bika lāḥiqan.
+he: אני{ani}/0 ; אתקשר{etkasher}/2 ; אליך{elekha}/3 ; אחר כך{akhar kakh}/1
+tr: Seni/3 ; sonra/1 ; ararım/0,2
+= 484 See you tomorrow.
+pt: Até/1 ; amanhã/0
+fa: فردا{fardā}/0 ; می‌بینمت{mibinamet}/1
+fw: فردا می‌بینمت. || fardā mibinamat.
+la: منشوفك{minshūfak}/1 ; بكرا{bukra}/0
+eg: أشوفك بكرة. || ashūfak bukra.
+ms: أراك غدًا. || arāka ghadan.
+he: נתראה{nitra'e}/1 ; מחר{makhar}/0
+tr: Yarın/0 ; görüşürüz/1
+= 485 See you next time.
+pt: Até/1 ; a próxima/0
+fa: دفعه‌ی بعد{daf'e-ye ba'd}/0 ; می‌بینمت{mibinamet}/1
+fw: دفعه‌ی بعد می‌بینمت. || daf'e-ye ba'd mibinamat.
+la: منشوفك{minshūfak}/1 ; المرة الجاي{il-marra ij-jāye}/0
+eg: أشوفك المرة الجاية. || ashūfak il-marra il-gayya.
+ms: أراك في المرة القادمة. || arāka fī al-marra al-qādima.
+he: נתראה{nitra'e}/1 ; בפעם הבאה{ba-pa'am ha-ba'a}/0
+tr: Bir dahaki sefere/0 ; görüşürüz/1
+= 486 Have a safe trip.
+pt: Boa viagem/0
+fa: سفر بخیر{safar bekheyr}/0
+fw: سفر به خیر. || safar be kheyr.
+la: توصل بالسلامة{tūṣal bis-salāme}/0
+eg: توصل بالسلامة. || tiwṣal bis-salāma.
+ms: رحلة آمنة. || riḥla āmina.
+he: נסיעה טובה{nesia tova}/0
+tr: İyi yolculuklar/0
+= 487 We'll miss you.
+pt: Vamos/0,1 ; sentir muita saudade/2,3 ; de você/4
+fa: دلمون{delemun}/0 ; برات{barāt}/4 ; خیلی{kheyli}/2 ; تنگ می‌شه{tang mishe}/1,3
+fw: دلمان برایت خیلی تنگ خواهد شد. || delemān barāyat kheyli tang khāhad shod.
+la: رح{raḥ}/1 ; نشتقلك{nishtāʾlak}/0,3,4 ; كتير{ktīr}/2
+eg: هتوحشنا أوي. || hatewḥashna awi.
+ms: سنشتاق إليك كثيرًا. || sanashtāqu ilayka kathīran.
+he: אנחנו{anakhnu}/0 ; נתגעגע{nitga'agea}/1,3 ; אליך{elekha}/4 ; מאוד{me'od}/2
+tr: Seni/4 ; çok/2 ; özleyeceğiz/0,1,3
+= 488 Come visit us again.
+pt: Volte/0,1 ; para nos/3 ; visitar/2
+fa: دوباره{dobāre}/0 ; بیا{biyā}/1 ; پیشمون{pishemun}/2,3
+fw: دوباره به دیدن ما بیا. || dobāre be didan-e mā biyā.
+la: إرجع{irjaʿ}/0 ; تعا{taʿa}/1 ; زورنا{zūrna}/2,3
+eg: تعالى زورنا تاني. || taʿāla zūrna tāni.
+ms: تعال لزيارتنا مرة أخرى. || taʿāla li-ziyāratinā marratan ukhrā.
+he: תבוא{tavo}/1 ; לבקר{levaker}/2 ; אותנו{otanu}/3 ; שוב{shuv}/0
+tr: Yine/0 ; bizi/3 ; ziyarete/2 ; gel/1
+= 489 Call me anytime.
+pt: Me/2 ; liga/1 ; quando quiser/0
+fa: هر وقت خواستی{har vaqt khāsti}/0 ; بهم{behem}/2 ; زنگ بزن{zang bezan}/1
+fw: هر وقت خواستی به من زنگ بزن. || har vaqt khāsti be man zang bezan.
+la: دقلي{diʾʾilli}/1,2 ; بأي وقت{b-ayy waʾt}/0
+eg: كلمني في أي وقت. || kallimni fi ayy waʾt.
+ms: اتصل بي في أي وقت. || ittaṣil bī fī ayyi waqt.
+he: תתקשר{titkasher}/1 ; אליי{elay}/2 ; מתי שתרצה{matay she-tirtse}/0
+tr: Beni/2 ; istediğin zaman/0 ; ara/1
+= 490 I love you guys.
+pt: Amo/0,1 ; vocês/2
+fa: دوستتون{dustetun}/2 ; دارم{dāram}/0,1
+fw: دوستتان دارم. || dustetān dāram.
+la: بحبكن{bḥibbkon}/0,1,2
+eg: بحبكم. || baḥibbukum.
+ms: أحبكم. || uḥibbukum.
+he: אני{ani}/0 ; אוהב{ohev}/1 ; אתכם{etkhem}/2
+tr: Sizi/2 ; seviyorum/0,1
+= 491 See you this weekend!
+pt: Até/1 ; o fim de semana/0
+fa: آخر هفته{ākhar-e hafte}/0 ; می‌بینمت{mibinamet}/1
+fw: آخر هفته می‌بینمت! || ākhar-e hafte mibinamat!
+la: منشوفك{minshūfak}/1 ; آخر هالجمعة{ākher hal-jemʿa}/0
+eg: أشوفك آخر الأسبوع! || ashūfak ākhir il-usbūʿ!
+ms: أراك في عطلة نهاية هذا الأسبوع! || arāka fī ʿuṭlat nihāyat hādhā al-usbūʿ!
+he: נתראה{nitra'e}/1 ; בסוף השבוע{be-sof ha-shavua}/0
+tr: Hafta sonu/0 ; görüşürüz/1

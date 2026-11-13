@@ -1,0 +1,405 @@
+= 360 Do you like your teacher?
+pt: Você/0 ; gosta do/1 ; seu/2 ; professor/3
+fa: معلمتو{moallemet-o}/2,3 ; دوست داری{dust dāri}/0,1
+fw: معلمت را دوست داری؟ || moallemat rā dust dāri?
+la: بتحب{bitḥibb}/0,1 ; أستاذك{ʾistāzak}/2,3
+eg: بتحب المدرس بتاعك؟ || bitḥibb il-mudarris bitāʿak?
+ms: هل تحب معلمك؟ || hal tuḥibbu muʿallimaka?
+he: אתה אוהב{ata ohev}/0,1 ; את המורה שלך{et ha-more shelkha}/2,3
+tr: Öğretmenini/2,3 ; seviyor musun/0,1
+= 361 When does school start?
+pt: Quando/0 ; começam as aulas/1
+fa: مدرسه{madrese}/1 ; کی{key}/0 ; شروع می‌شه{shoru' mishe}/1
+fw: مدرسه کی شروع می‌شود؟ || madrese key shoru' mishavad?
+la: إيمتى{ēmta}/0 ; بتبلش{btballesh}/1 ; المدرسة{il-madrase}/1
+eg: المدرسة بتبدأ إمتى؟ || il-madrasa btibdaʾ imta?
+ms: متى تبدأ المدرسة؟ || matā tabdaʾu al-madrasa?
+he: מתי{matay}/0 ; מתחילים הלימודים{matkhilim ha-limudim}/1
+tr: Okul/1 ; ne zaman/0 ; başlıyor/1
+= 362 I studied computer science in college.
+pt: Eu/0 ; estudei/2 ; ciência da computação/3 ; na faculdade/1
+fa: من{man}/0 ; تو دانشگاه{tu dāneshgāh}/1 ; کامپیوتر{kāmpyuter}/3 ; خوندم{khundam}/2
+fw: من در دانشگاه رشته‌ی کامپیوتر خواندم. || man dar dāneshgāh reshte-ye kāmpyuter khāndam.
+la: أنا{ana}/0 ; درست{darast}/2 ; علوم الكمبيوتر{ʿulūm il-kombyūtar}/3 ; بالجامعة{bil-jāmʿa}/1
+eg: أنا درست علوم الكمبيوتر في الجامعة. || ana darast ʿulūm il-kombyūtar fil-gamʿa.
+ms: درستُ علوم الحاسوب في الجامعة. || darastu ʿulūm al-ḥāsūb fī al-jāmiʿa.
+he: למדתי{lamadeti}/0,2 ; מדעי המחשב{mada'ey ha-makhshev}/3 ; באוניברסיטה{ba-universita}/1
+tr: Üniversitede/1 ; bilgisayar bilimleri/3 ; okudum/0,2
+= 363 Did you go to university?
+pt: Você/0 ; fez/1,2 ; faculdade/3
+fa: تو{to}/0 ; دانشگاه{dāneshgāh}/3 ; رفتی{rafti}/1,2
+fw: آیا به دانشگاه رفته‌ای؟ || āyā be dāneshgāh rafte-i?
+la: إنت{inta}/0 ; درست{darast}/1,2 ; بالجامعة{bil-jāmʿa}/3
+eg: إنت دخلت الجامعة؟ || inta dakhalt il-gamʿa?
+ms: هل درستَ في الجامعة؟ || hal darasta fī al-jāmiʿa?
+he: למדת{lamadeta}/0,1,2 ; באוניברסיטה{ba-universita}/3
+tr: Üniversiteye/3 ; gittin mi/0,1,2
+= 364 What do you do for fun?
+pt: O que/3 ; você/0 ; costuma/1 ; fazer pra se divertir/2
+fa: معمولاً{ma'mulan}/1 ; برای تفریح{barāye tafrih}/2 ; چی کار می‌کنی{chi kār mikoni}/0,3
+fw: برای تفریح معمولاً چه کار می‌کنی؟ || barāye tafrih ma'mulan che kār mikoni?
+la: شو{shu}/3 ; بتعمل{btaʿmel}/0,2 ; عادةً{ʿādatan}/1 ; للتسلاية{lal-tisleye}/2
+eg: بتعمل إيه عادةً للتسلية؟ || bitiʿmil ēh ʿādatan lit-tasliya?
+ms: ماذا تفعل عادةً للتسلية؟ || mādhā tafʿalu ʿādatan li-t-tasliya?
+he: מה{ma}/3 ; אתה עושה{ata ose}/0,2 ; בדרך כלל{be-derekh klal}/1 ; בשביל הכיף{bishvil ha-kef}/2
+tr: Genelde/1 ; eğlenmek için/2 ; ne yaparsın/0,3
+= 365 What are your hobbies?
+pt: Quais/2 ; são/1 ; os seus/0 ; hobbies/3
+fa: سرگرمی‌هات{sargarmi-hāt}/0,3 ; چیه{chiye}/1,2
+fw: سرگرمی‌های تو چیست؟ || sargarmi-hā-ye to chist?
+la: شو{shu}/2 ; هواياتك{hiwāyātak}/0,1,3
+eg: إيه هواياتك؟ || ēh hiwayātak?
+ms: ما هي هواياتك؟ || mā hiya hiwāyātuka?
+he: מה{ma}/2 ; התחביבים שלך{ha-takhbivim shelkha}/0,1,3
+tr: Hobilerin/0,1,3 ; neler/2
+= 366 I like to cook.
+pt: Eu/0 ; gosto de/1 ; cozinhar/2
+fa: من{man}/0 ; آشپزی{āshpazi}/2 ; دوست دارم{dust dāram}/1
+fw: من آشپزی را دوست دارم. || man āshpazi rā dust dāram.
+la: أنا{ana}/0 ; بحب{bḥibb}/1 ; الطبخ{iṭ-ṭabkh}/2
+eg: أنا بحب الطبخ. || ana baḥibb iṭ-ṭabkh.
+ms: أحب الطبخ. || uḥibbu aṭ-ṭabkh.
+he: אני{ani}/0 ; אוהב{ohev}/1 ; לבשל{levashel}/2
+tr: Yemek yapmayı/2 ; severim/0,1
+= 367 I like to read.
+pt: Eu/0 ; gosto de/1 ; ler/2
+fa: من{man}/0 ; کتاب خوندن{ketāb khundan}/2 ; رو{ro}/- ; دوست دارم{dust dāram}/1
+fw: من مطالعه را دوست دارم. || man motāle'e rā dust dāram.
+la: أنا{ana}/0 ; بحب{bḥibb}/1 ; القراية{il-ʾrāye}/2
+eg: أنا بحب القراية. || ana baḥibb il-ʾirāya.
+ms: أحب القراءة. || uḥibbu al-qirāʾa.
+he: אני{ani}/0 ; אוהב{ohev}/1 ; לקרוא{likro}/2
+tr: Okumayı/2 ; severim/0,1
+= 368 Do you like to watch movies?
+pt: Você/0 ; gosta de/1 ; assistir filmes/2
+fa: فیلم دیدن{film didan}/2 ; رو{ro}/- ; دوست داری{dust dāri}/0,1
+fw: آیا دیدن فیلم را دوست داری؟ || āyā didan-e film rā dust dāri?
+la: بتحب{bitḥibb}/0,1 ; تحضر أفلام{tiḥḍar aflām}/2
+eg: بتحب تتفرج على أفلام؟ || bitḥibb titfarrag ʿala aflām?
+ms: هل تحب مشاهدة الأفلام؟ || hal tuḥibbu mushāhadat al-aflām?
+he: אתה אוהב{ata ohev}/0,1 ; לראות סרטים{lirot sratim}/2
+tr: Film izlemeyi/2 ; sever misin/0,1
+= 369 Have you seen this show?
+pt: Você/0 ; já/4 ; viu/1 ; essa/2 ; série/3
+fa: تا حالا{tā hālā}/4 ; این{in}/2 ; سریالو{seryāl-o}/3 ; دیدی{didi}/0,1
+fw: آیا این سریال را دیده‌ای؟ || āyā in seryāl rā dide-i?
+la: شفت{shift}/0,1 ; هالمسلسل{hal-musalsal}/2,3
+eg: شفت المسلسل ده؟ || shuft il-musalsal da?
+ms: هل شاهدتَ هذا المسلسل؟ || hal shāhadta hādhā al-musalsal?
+he: ראית{raita}/0,1 ; כבר{kvar}/4 ; את הסדרה הזאת{et ha-sidra ha-zot}/2,3
+tr: Bu/2 ; diziyi/3 ; izledin mi/0,1,4
+= 370 Let's play cards.
+pt: Vamos/0,2 ; jogar cartas/1
+fa: بیاین{biyāyn}/2 ; ورق بازی کنیم{varaq bāzi konim}/0,1
+fw: بیایید ورق بازی کنیم. || biyāyid varaq bāzi konim.
+la: يلا{yalla}/2 ; نلعب{nilʿab}/0,1 ; شدة{shadde}/1
+eg: يلا نلعب كوتشينة. || yalla nilʿab kotshīna.
+ms: لنلعب الورق. || li-nalʿab al-waraq.
+he: בואו{bo'u}/2 ; נשחק{nesakhek}/0,1 ; קלפים{klafim}/1
+tr: Hadi/2 ; kâğıt oynayalım/0,1
+= 371 Do you want to play a game?
+pt: Você/0 ; quer/1 ; jogar/2 ; um jogo/3
+fa: می‌خوای{mikhāy}/0,1 ; یه بازی{ye bāzi}/3 ; کنیم{konim}/2
+fw: می‌خواهی یک بازی کنیم؟ || mikhāhi yek bāzi konim?
+la: بدك{baddak}/0,1 ; نلعب{nilʿab}/2 ; شي لعبة{shi liʿbe}/3
+eg: عايز نلعب لعبة؟ || ʿāyiz nilʿab liʿba?
+ms: هل تريد أن نلعب لعبة؟ || hal turīdu an nalʿaba luʿba?
+he: אתה רוצה{ata rotse}/0,1 ; לשחק{lesakhek}/2 ; משחק{miskhak}/3
+tr: Bir oyun/3 ; oynamak/2 ; ister misin/0,1
+= 372 I'm not very good at this.
+pt: Eu/0 ; não sou muito/1 ; bom/2 ; nisso/3
+fa: من{man}/0 ; تو این کار{tu in kār}/3 ; خیلی خوب نیستم{kheyli khub nistam}/1,2
+fw: من در این کار خیلی خوب نیستم. || man dar in kār kheyli khub nistam.
+la: أنا{ana}/0 ; مش كتير{mish ktīr}/1 ; منيح{mnīḥ}/2 ; بهالشي{b-hash-shi}/3
+eg: أنا مش شاطر أوي في ده. || ana mish shāṭir awi fi da.
+ms: لستُ ماهرًا جدًا في هذا. || lastu māhiran jiddan fī hādhā.
+he: אני{ani}/0 ; לא כל כך{lo kol kakh}/1 ; טוב{tov}/2 ; בזה{ba-ze}/3
+tr: Bunda/3 ; pek/1 ; iyi değilim/0,1,2
+= 373 You're really good at that.
+pt: Você/0 ; é muito/1 ; bom nisso/2
+fa: تو{to}/0 ; واقعاً{vāqe'an}/1 ; واردی{vāredi}/2
+fw: تو واقعاً در این کار مهارت داری. || to vāqe'an dar in kār mahārat dāri.
+la: إنت{inta}/0 ; كتير{ktīr}/1 ; شاطر فيها{shāṭer fīha}/2
+eg: إنت شاطر أوي في ده. || inta shāṭir awi fi da.
+ms: أنت ماهر حقًا في ذلك. || anta māhirun ḥaqqan fī dhālik.
+he: אתה{ata}/0 ; ממש{mamash}/1 ; טוב בזה{tov ba-ze}/2
+tr: Bunda/- ; gerçekten/1 ; çok iyisin/0,2
+= 374 Do you play any sports?
+pt: Você/0 ; pratica/1,2 ; algum esporte/3
+fa: ورزش{varzesh}/3 ; می‌کنی{mikoni}/0,1,2
+fw: آیا ورزش می‌کنی؟ || āyā varzesh mikoni?
+la: بتلعب{btilʿab}/0,1,2 ; شي رياضة{shi riyāḍa}/3
+eg: بتلعب أي رياضة؟ || bitilʿab ayy riyāḍa?
+ms: هل تمارس أي رياضة؟ || hal tumārisu ayya riyāḍa?
+he: אתה עושה{ata ose}/0,1,2 ; ספורט{sport}/3
+tr: Spor/3 ; yapıyor musun/0,1,2
+= 375 Do you want to go swimming?
+pt: Você/0 ; quer/1 ; ir/2 ; nadar/3
+fa: می‌خوای{mikhāy}/0,1 ; بریم{berim}/2 ; شنا{shenā}/3
+fw: می‌خواهی برویم شنا؟ || mikhāhi beravim shenā?
+la: بدك{baddak}/0,1 ; نروح{nrūḥ}/2 ; نسبح{nisbaḥ}/3
+eg: عايز نروح نعوم؟ || ʿāyiz nirūḥ niʿūm?
+ms: هل تريد أن تذهب للسباحة؟ || hal turīdu an tadhhaba li-s-sibāḥa?
+he: אתה רוצה{ata rotse}/0,1 ; ללכת{lalekhet}/2 ; לשחות{liskhot}/3
+tr: Yüzmeye/3 ; gitmek/2 ; ister misin/0,1
+= 376 Is the water cold?
+pt: A/1 ; água/2 ; está/0 ; fria/3
+fa: آب{āb}/1,2 ; سرده{sarde}/0,3
+fw: آیا آب سرد است؟ || āyā āb sard ast?
+la: المي{il-mayy}/1,2 ; باردة{bārde}/0,3
+eg: المية ساقعة؟ || il-mayya sāʾʿa?
+ms: هل الماء بارد؟ || hal al-māʾu bārid?
+he: המים{ha-mayim}/1,2 ; קרים{karim}/0,3
+tr: Su/1,2 ; soğuk mu/0,3
+= 377 I forgot to bring my swimsuit.
+pt: Eu/0 ; esqueci/1 ; de trazer/2 ; minha roupa de banho/3
+fa: یادم رفت{yādam raft}/0,1 ; مایومو{māyo-m-o}/3 ; بیارم{biyāram}/2
+fw: فراموش کردم مایویم را بیاورم. || farāmush kardam māyo-yam rā biyāvaram.
+la: نسيت{nsīt}/0,1 ; جيب{jīb}/2 ; المايوه تبعي{il-māyō tabaʿi}/3
+eg: نسيت أجيب المايوه بتاعي. || nisīt agīb il-mayōh bitāʿi.
+ms: نسيتُ أن أحضر ملابس السباحة. || nasītu an uḥḍira malābis as-sibāḥa.
+he: שכחתי{shakhakhti}/0,1 ; להביא{lehavi}/2 ; את בגד הים{et beged ha-yam}/3
+tr: Mayomu/3 ; getirmeyi/2 ; unuttum/0,1
+= 378 Be careful, the water is deep.
+pt: Cuidado/0 ; a água/1 ; é muito/2 ; funda/3
+fa: مواظب باش{movāzeb bāsh}/0 ; آب{āb}/1 ; خیلی{kheyli}/2 ; عمیقه{amiqe}/3
+fw: مراقب باش، آب عمیق است. || morāqeb bāsh, āb amiq ast.
+la: انتبه{intebeh}/0 ; المي{il-mayy}/1 ; كتير{ktīr}/2 ; غميقة{ghamīʾa}/3
+eg: خلي بالك، المية غويطة. || khalli bālak, il-mayya ghawīṭa.
+ms: انتبه، الماء عميق. || intabih, al-māʾu ʿamīq.
+he: תיזהר{tizaher}/0 ; המים{ha-mayim}/1 ; עמוקים{amukim}/2,3
+tr: Dikkat et/0 ; su/1 ; çok/2 ; derin/3
+= 379 Let's go to the beach.
+pt: Vamos/0,1,3 ; à praia/2
+fa: بیاین{biyāyn}/3 ; بریم{berim}/0,1 ; ساحل{sāhel}/2
+fw: بیایید به ساحل برویم. || biyāyid be sāhel beravim.
+la: يلا{yalla}/3 ; نروح{nrūḥ}/0,1 ; عالبحر{ʿal-baḥr}/2
+eg: يلا نروح البحر. || yalla nirūḥ il-baḥr.
+ms: لنذهب إلى الشاطئ. || li-nadhhab ilā ash-shāṭiʾ.
+he: בואו{bo'u}/3 ; נלך{nelekh}/0,1 ; לים{la-yam}/2
+tr: Hadi/3 ; plaja/2 ; gidelim/0,1
+= 380 Put on sunscreen.
+pt: Passe/0 ; protetor solar/1
+fa: کرم ضد آفتاب{kerem-e zedd-e āftāb}/1 ; بزن{bezan}/0
+fw: کرم ضد آفتاب بزن. || kerem-e zedd-e āftāb bezan.
+la: حط{ḥuṭṭ}/0 ; كريم شمس{krīm shams}/1
+eg: حط كريم الشمس. || ḥuṭṭ krīm ish-shams.
+ms: ضع واقي الشمس. || ḍaʿ wāqī ash-shams.
+he: תמרח{timrakh}/0 ; קרם הגנה{krem hagana}/1
+tr: Güneş kremi/1 ; sür/0
+= 381 Can you swim?
+pt: Você/0 ; sabe/1 ; nadar/2
+fa: شنا{shenā}/2 ; بلدی{baladi}/0,1
+fw: آیا شنا بلدی؟ || āyā shenā baladi?
+la: بتعرف{btaʿrif}/0,1 ; تسبح{tisbaḥ}/2
+eg: بتعرف تعوم؟ || bitiʿraf tiʿūm?
+ms: هل تجيد السباحة؟ || hal tujīdu as-sibāḥa?
+he: אתה יודע{ata yode'a}/0,1 ; לשחות{liskhot}/2
+tr: Yüzme/2 ; biliyor musun/0,1
+= 382 The water is warm.
+pt: A/0 ; água/1 ; está bem/2 ; quentinha/3
+fa: آب{āb}/0,1 ; خیلی{kheyli}/2 ; گرمه{garme}/3
+fw: آب گرم است. || āb garm ast.
+la: المي{il-mayy}/0,1 ; كتير{ktīr}/2 ; دافية{dāfye}/3
+eg: المية دافية. || il-mayya dafya.
+ms: الماء دافئ. || al-māʾu dāfiʾ.
+he: המים{ha-mayim}/0,1 ; ממש{mamash}/2 ; חמימים{khamimim}/3
+tr: Su/0,1 ; çok/2 ; ılık/3
+= 383 I like to swim.
+pt: Eu/0 ; gosto de/1 ; nadar/2
+fa: من{man}/0 ; شنا{shenā}/2 ; رو{ro}/- ; دوست دارم{dust dāram}/1
+fw: من شنا را دوست دارم. || man shenā rā dust dāram.
+la: أنا{ana}/0 ; بحب{bḥibb}/1 ; السباحة{is-sbāḥa}/2
+eg: أنا بحب العوم. || ana baḥibb il-ʿōm.
+ms: أحب السباحة. || uḥibbu as-sibāḥa.
+he: אני{ani}/0 ; אוהב{ohev}/1 ; לשחות{liskhot}/2
+tr: Yüzmeyi/2 ; severim/0,1
+= 384 I swim every morning.
+pt: Eu/0 ; nado/2 ; todas as manhãs/1
+fa: من{man}/0 ; هر روز صبح{har ruz sobh}/1 ; شنا می‌کنم{shenā mikonam}/2
+fw: من هر روز صبح شنا می‌کنم. || man har ruz sobh shenā mikonam.
+la: أنا{ana}/0 ; بسبح{bisbaḥ}/2 ; كل يوم الصبح{kill yōm iṣ-ṣubḥ}/1
+eg: أنا بعوم كل يوم الصبح. || ana baʿūm kull yōm iṣ-ṣubḥ.
+ms: أسبح كل صباح. || asbaḥu kulla ṣabāḥ.
+he: אני{ani}/0 ; שוחה{sokhe}/2 ; כל בוקר{kol boker}/1
+tr: Her sabah/1 ; yüzerim/0,2
+= 385 The pool is too crowded.
+pt: A/0 ; piscina/1 ; está cheia/3 ; demais/2
+fa: استخر{estakhr}/0,1 ; خیلی{kheyli}/2 ; شلوغه{sholughe}/3
+fw: استخر خیلی شلوغ است. || estakhr kheyli sholugh ast.
+la: المسبح{il-masbaḥ}/0,1 ; كتير{ktīr}/2 ; عجقة{ʿajʾa}/3
+eg: حمام السباحة زحمة أوي. || ḥammām is-sibāḥa zaḥma awi.
+ms: المسبح مزدحم جدًا. || al-masbaḥu muzdaḥimun jiddan.
+he: הבריכה{ha-brekha}/0,1 ; עמוסה מדי{amusa miday}/2,3
+tr: Havuz/0,1 ; çok/2 ; kalabalık/3
+= 386 Let's go for a swim.
+pt: Vamos/0,1,3 ; nadar/2
+fa: بیاین{biyāyn}/3 ; بریم{berim}/0,1 ; شنا{shenā}/2
+fw: بیایید برویم شنا. || biyāyid beravim shenā.
+la: يلا{yalla}/3 ; نروح{nrūḥ}/0,1 ; نسبح{nisbaḥ}/2
+eg: يلا نروح نعوم. || yalla nirūḥ niʿūm.
+ms: لنذهب للسباحة. || li-nadhhab li-s-sibāḥa.
+he: בואו{bo'u}/3 ; נלך{nelekh}/0,1 ; לשחות{liskhot}/2
+tr: Hadi/3 ; yüzmeye/2 ; gidelim/0,1
+= 387 I go running every day.
+pt: Eu/0 ; corro/2 ; todo dia/1
+fa: من{man}/0 ; هر روز{har ruz}/1 ; می‌رم دویدن{miram davidan}/2
+fw: من هر روز می‌دوم. || man har ruz midavam.
+la: أنا{ana}/0 ; بركض{birkoḍ}/2 ; كل يوم{kill yōm}/1
+eg: أنا بجري كل يوم. || ana bagri kull yōm.
+ms: أركض كل يوم. || arkuḍu kulla yawm.
+he: אני{ani}/0 ; רץ{rats}/2 ; כל יום{kol yom}/1
+tr: Her gün/1 ; koşarım/0,2
+= 388 Let's go for a run.
+pt: Vamos/0,2 ; correr/1
+fa: بیاین{biyāyn}/2 ; بریم بدویم{berim bedavim}/0,1
+fw: بیایید برویم بدویم. || biyāyid beravim bedavim.
+la: يلا{yalla}/2 ; نركض{nirkoḍ}/0,1
+eg: يلا نجري. || yalla nigri.
+ms: لنذهب للركض. || li-nadhhab li-r-rakḍ.
+he: בואו{bo'u}/2 ; נצא לריצה{netse le-ritsa}/0,1
+tr: Hadi/2 ; koşuya çıkalım/0,1
+= 389 How far did you run?
+pt: Quanto/2 ; você/0 ; correu/1
+fa: چقدر{cheqadr}/2 ; دویدی{davidi}/0,1
+fw: چه مسافتی دویدی؟ || che masāfati davidi?
+la: قديش{ʾaddēsh}/2 ; ركضت{rakaḍt}/0,1
+eg: جريت قد إيه؟ || garēt ʾadd ēh?
+ms: كم المسافة التي ركضتها؟ || kam al-masāfa allatī rakaḍtahā?
+he: כמה{kama}/2 ; רצת{ratsta}/0,1
+tr: Ne kadar/2 ; koştun/0,1
+= 390 I'm training for a marathon.
+pt: Estou/0 ; treinando para/1 ; uma maratona/2
+fa: من{man}/0 ; برای ماراتن{barāye mārāton}/2 ; تمرین می‌کنم{tamrin mikonam}/1
+fw: من برای ماراتن تمرین می‌کنم. || man barāye mārāton tamrin mikonam.
+la: أنا{ana}/0 ; عم إتمرن{ʿam itmarran}/1 ; لماراثون{la-marathōn}/2
+eg: أنا بتمرن عشان ماراثون. || ana batmarran ʿashān marathōn.
+ms: أتدرب من أجل ماراثون. || atadarrabu min ajli marāthūn.
+he: אני{ani}/0 ; מתאמן{mitamen}/1 ; למרתון{le-maraton}/2
+tr: Maraton için/2 ; antrenman yapıyorum/0,1
+= 391 My legs are sore.
+pt: Minhas/0 ; pernas/1 ; estão muito/2 ; doloridas/3
+fa: پاهام{pā-hām}/0,1 ; خیلی{kheyli}/2 ; درد می‌کنه{dard mikone}/3
+fw: پاهایم درد می‌کند. || pā-hāyam dard mikonad.
+la: إجريي{ijrayyi}/0,1 ; كتير{ktīr}/2 ; عم يوجعوني{ʿam yūjʿūni}/3
+eg: رجليا بتوجعني أوي. || riglayya bitwagaʿni awi.
+ms: ساقاي تؤلمانني. || sāqāya tuʾlimānnī.
+he: הרגליים שלי{ha-raglayim sheli}/0,1 ; ממש{mamash}/2 ; כואבות{koavot}/3
+tr: Bacaklarım/0,1 ; çok/2 ; ağrıyor/3
+= 392 I need to drink some water.
+pt: Eu/0 ; preciso/1 ; beber/2 ; um pouco de/3 ; água/4
+fa: من{man}/0 ; باید{bāyad}/1 ; یه کم{ye kam}/3 ; آب{āb}/4 ; بخورم{bekhoram}/2
+fw: باید کمی آب بنوشم. || bāyad kami āb benusham.
+la: لازم{lāzim}/0,1 ; إشرب{ishrab}/2 ; شوية{shwayye}/3 ; مي{mayy}/4
+eg: محتاج أشرب شوية مية. || miḥtāg ashrab shwayyit mayya.
+ms: أحتاج إلى شرب بعض الماء. || aḥtāju ilā shurbi baʿḍi al-māʾ.
+he: אני{ani}/0 ; צריך{tsarikh}/1 ; לשתות{lishtot}/2 ; קצת{ktsat}/3 ; מים{mayim}/4
+tr: Biraz/3 ; su/4 ; içmem/2 ; lazım/0,1
+= 393 Do you want to go biking?
+pt: Você/0 ; quer/1 ; ir/2 ; andar de bicicleta/3
+fa: می‌خوای{mikhāy}/0,1 ; بریم{berim}/2 ; دوچرخه‌سواری{docharkhe-savāri}/3
+fw: می‌خواهی برویم دوچرخه‌سواری؟ || mikhāhi beravim docharkhe-savāri?
+la: بدك{baddak}/0,1 ; نروح{nrūḥ}/2 ; نركب بسكليت{nirkab biskilēt}/3
+eg: عايز نروح نركب عجل؟ || ʿāyiz nirūḥ nirkab ʿagal?
+ms: هل تريد أن نركب الدراجات؟ || hal turīdu an narkaba ad-darrājāt?
+he: אתה רוצה{ata rotse}/0,1 ; לצאת{latset}/2 ; לרכוב על אופניים{lirkov al ofanayim}/3
+tr: Bisiklete binmeye/3 ; gitmek/2 ; ister misin/0,1
+= 394 I ride my bike to work.
+pt: Eu/0 ; vou de bicicleta/1 ; para o trabalho/2
+fa: من{man}/0 ; با دوچرخه{bā docharkhe}/1 ; می‌رم سر کار{miram sar-e kār}/2
+fw: من با دوچرخه به محل کار می‌روم. || man bā docharkhe be mahall-e kār miravam.
+la: أنا{ana}/0 ; بروح عالشغل{brūḥ ʿash-shughl}/2 ; عالبسكليت{ʿal-biskilēt}/1
+eg: أنا بروح الشغل بالعجلة. || ana barūḥ ish-shughl bil-ʿagala.
+ms: أذهب إلى العمل بالدراجة. || adhhabu ilā al-ʿamal bi-d-darrāja.
+he: אני{ani}/0 ; רוכב על האופניים{rokhev al ha-ofanayim}/1 ; לעבודה{la-avoda}/2
+tr: İşe/2 ; bisikletle/1 ; gidiyorum/0
+= 395 Wear your helmet.
+pt: Use/0 ; o seu/1 ; capacete/2
+fa: کلاه ایمنیتو{kolāh imani-t-o}/1,2 ; بذار{bezār}/0
+fw: کلاه ایمنی‌ات را بگذار. || kolāh imani-at rā begozār.
+la: إلبس{ilbas}/0 ; الخوذة تبعك{il-khūza tabaʿak}/1,2
+eg: البس الخوذة بتاعتك. || ilbis il-khōza bitaʿtak.
+ms: ارتدِ خوذتك. || irtadi khūdhataka.
+he: תשים{tasim}/0 ; את הקסדה שלך{et ha-kasda shelkha}/1,2
+tr: Kaskını/1,2 ; tak/0
+= 396 My bike has a flat tire.
+pt: O pneu da/3 ; minha/0 ; bicicleta/1 ; furou/2,3
+fa: لاستیک{lāstik}/3 ; دوچرخه‌م{docharkha-m}/0,1 ; پنچر شده{panchar shode}/2,3
+fw: لاستیک دوچرخه‌ام پنچر شده است. || lāstik-e docharkhe-am panchar shode ast.
+la: البسكليت تبعي{il-biskilēt tabaʿi}/0,1 ; فيها{fīha}/2 ; دولاب منفس{dūlāb mnaffas}/3
+eg: كاوتش العجلة بتاعتي نايم. || kawitsh il-ʿagala bitaʿti nāyim.
+ms: إطار دراجتي مثقوب. || iṭāru darrājatī mathqūb.
+he: יש{yesh}/2 ; פנצ'ר{pancher}/3 ; באופניים שלי{ba-ofanayim sheli}/0,1
+tr: Bisikletimin/0,1 ; lastiği/3 ; patladı/2,3
+= 397 Let's go for a walk.
+pt: Vamos/0,2 ; dar uma volta/1
+fa: بیاین{biyāyn}/2 ; بریم قدم بزنیم{berim qadam bezanim}/0,1
+fw: بیایید برویم قدم بزنیم. || biyāyid beravim qadam bezanim.
+la: يلا{yalla}/2 ; نتمشى{nitmashsha}/0,1
+eg: يلا نتمشى. || yalla nitmashsha.
+ms: لنتمشَّ قليلًا. || li-natamashsha qalīlan.
+he: בואו{bo'u}/2 ; נצא לטיול{netse le-tiyul}/0,1
+tr: Hadi/2 ; yürüyüşe çıkalım/0,1
+= 398 Let's go hiking this weekend.
+pt: Vamos/2 ; fazer trilha/1 ; neste fim de semana/0
+fa: بیاین{biyāyn}/2 ; این آخر هفته{in ākhar-e hafte}/0 ; بریم کوه{berim kuh}/1
+fw: بیایید این آخر هفته به کوه‌پیمایی برویم. || biyāyid in ākhar-e hafte be kuh-peymāyi beravim.
+la: يلا{yalla}/2 ; نطلع مشوار عالجبل{niṭlaʿ mishwār ʿal-jabal}/1 ; آخر هالجمعة{ākher hal-jemʿa}/0
+eg: يلا نطلع رحلة مشي آخر الأسبوع ده. || yalla niṭlaʿ riḥlit mashy ākhir il-usbūʿ da.
+ms: لنذهب في نزهة سيرًا على الأقدام في عطلة نهاية هذا الأسبوع. || li-nadhhab fī nuzha sayran ʿalā al-aqdām fī ʿuṭlat nihāyat hādhā al-usbūʿ.
+he: בואו{bo'u}/2 ; נצא לטיול{netse le-tiyul}/1 ; בסוף השבוע הזה{be-sof ha-shavua ha-ze}/0
+tr: Bu hafta sonu/0 ; doğa yürüyüşüne gidelim/1,2
+= 399 How much is this?
+pt: Quanto custa/1 ; isso/0
+fa: این{in}/0 ; چنده{chande}/1
+fw: قیمت این چقدر است؟ || qeymat-e in cheqadr ast?
+la: قديش{ʾaddēsh}/1 ; هاد{hād}/0
+eg: ده بكام؟ || da bi-kām?
+ms: كم سعر هذا؟ || kam siʿru hādhā?
+he: כמה{kama}/1 ; זה עולה{ze ole}/0,1
+tr: Bu/0 ; ne kadar/1
+= 400 That's too expensive.
+pt: É caro/1 ; demais/0
+fa: خیلی{kheyli}/0 ; گرونه{gerune}/1
+fw: خیلی گران است. || kheyli gerān ast.
+la: كتير{ktīr}/0 ; غالي{ghāli}/1
+eg: ده غالي أوي. || da ghāli awi.
+ms: هذا غالٍ جدًا. || hādhā ghālin jiddan.
+he: זה{ze}/- ; יקר מדי{yakar miday}/0,1
+tr: Çok/0 ; pahalı/1
+= 401 It's on sale.
+pt: Está em promoção/0
+fa: حراجه{harāje}/0
+fw: این کالا حراج است. || in kālā harāj ast.
+la: عليه تنزيلات{ʿalē tanzīlāt}/0
+eg: عليه خصم. || ʿalē khaṣm.
+ms: إنه معروض بتخفيض. || innahu maʿrūḍun bi-takhfīḍ.
+he: זה במבצע{ze be-mivtsa}/0
+tr: İndirimde/0
+= 402 Where did you buy that?
+pt: Onde/1 ; você/0 ; comprou isso/2
+fa: اینو{ino}/- ; از کجا{az kojā}/1 ; خریدی{kharidi}/0,2
+fw: این را از کجا خریدی؟ || in rā az kojā kharidi?
+la: من وين{min wēn}/1 ; اشتريتها{shtarētha}/0,2
+eg: اشتريت ده منين؟ || ishtarēt da minēn?
+ms: من أين اشتريتَ هذا؟ || min ayna ishtarayta hādhā?
+he: איפה{eyfo}/1 ; קנית את זה{kanita et ze}/0,2
+tr: Bunu/- ; nereden/1 ; aldın/0,2
+= 403 Let's go to the mall.
+pt: Vamos/0,1,3 ; ao shopping/2
+fa: بیاین{biyāyn}/3 ; بریم{berim}/0,1 ; پاساژ{pāsāzh}/2
+fw: بیایید به مرکز خرید برویم. || biyāyid be markaz-e kharid beravim.
+la: يلا{yalla}/3 ; نروح{nrūḥ}/0,1 ; عالمول{ʿal-mōl}/2
+eg: يلا نروح المول. || yalla nirūḥ il-mōl.
+ms: لنذهب إلى المركز التجاري. || li-nadhhab ilā al-markaz at-tijārī.
+he: בואו{bo'u}/3 ; נלך{nelekh}/0,1 ; לקניון{la-kanyon}/2
+tr: Hadi/3 ; AVM'ye/2 ; gidelim/0,1
+= 404 I need to buy a gift.
+pt: Eu/0 ; preciso/1 ; comprar/2 ; um presente/3
+fa: من{man}/0 ; باید{bāyad}/1 ; یه کادو{ye kādo}/3 ; بخرم{bekharam}/2
+fw: باید یک هدیه بخرم. || bāyad yek hediye bekharam.
+la: لازم{lāzim}/0,1 ; إشتري{ishtri}/2 ; هدية{hdiyye}/3
+eg: محتاج أشتري هدية. || miḥtāg ashtiri hidiyya.
+ms: أحتاج إلى شراء هدية. || aḥtāju ilā shirāʾi hadiyya.
+he: אני{ani}/0 ; צריך{tsarikh}/1 ; לקנות{liknot}/2 ; מתנה{matana}/3
+tr: Bir hediye/3 ; almam/2 ; lazım/0,1

@@ -1,0 +1,405 @@
+= 405 Do you have this in a bigger size?
+pt: Tem/0 ; um tamanho maior/1 ; desse/2
+fa: از این{az in}/2 ; سایز بزرگ‌تر{sāyz-e bozorg-tar}/1 ; دارید{dārid}/0
+fw: آیا از این سایز بزرگ‌تری دارید؟ || āyā az in sāyz-e bozorg-tari dārid?
+la: في{fī}/0 ; نمرة أكبر{nimra akbar}/1 ; من هاد{min hād}/2
+eg: فيه مقاس أكبر من ده؟ || fī maʾās akbar min da?
+ms: هل يوجد مقاس أكبر من هذا؟ || hal yūjadu maqāsun akbaru min hādhā?
+he: יש{yesh}/0 ; את זה{et ze}/2 ; במידה יותר גדולה{be-mida yoter gdola}/1
+tr: Bunun/2 ; daha büyük bedeni/1 ; var mı/0
+= 406 Can I try it on?
+pt: Posso/0 ; experimentar/1
+fa: می‌تونم{mitunam}/0 ; پرو کنم{porov konam}/1
+fw: می‌توانم آن را پرو کنم؟ || mitavānam ān rā porov konam?
+la: فيني{fīni}/0 ; جربه{jarrbo}/1
+eg: ممكن أقيسه؟ || mumkin aʾīsu?
+ms: هل يمكنني تجربته؟ || hal yumkinunī tajribatuhu?
+he: אפשר{efshar}/0 ; למדוד{limdod}/1
+tr: Deneyebilir miyim/0,1
+= 407 It doesn't fit.
+pt: Não/0 ; serve/1
+fa: اندازه‌م{andāze-m}/1 ; نیست{nist}/0
+fw: اندازه‌ام نیست. || andāze-am nist.
+la: مش{mish}/0 ; على قياسي{ʿala ʾyāsi}/1
+eg: مش مقاسي. || mish maʾāsi.
+ms: المقاس لا يناسبني. || al-maqāsu lā yunāsibunī.
+he: זה לא{ze lo}/0 ; מתאים{mat'im}/1
+tr: Bana/- ; olmuyor/0,1
+= 408 I'll take this one.
+pt: Vou levar/0,1 ; este/2
+fa: من{man}/0 ; اینو{ino}/2 ; برمی‌دارم{bar-midāram}/1
+fw: این یکی را برمی‌دارم. || in yeki rā bar-midāram.
+la: باخد{bākhod}/0,1 ; هاد{hād}/2
+eg: هاخد ده. || hākhud da.
+ms: سآخذ هذا. || saʾākhudhu hādhā.
+he: אני{ani}/0 ; אקח{ekakh}/1 ; את זה{et ze}/2
+tr: Bunu/2 ; alıyorum/0,1
+= 409 Can I pay by card?
+pt: Posso/0 ; pagar/1 ; no cartão/2
+fa: می‌تونم{mitunam}/0 ; با کارت{bā kārt}/2 ; حساب کنم{hesāb konam}/1
+fw: می‌توانم با کارت پرداخت کنم؟ || mitavānam bā kārt pardākht konam?
+la: فيني{fīni}/0 ; إدفع{idfaʿ}/1 ; بالكرت{bil-kart}/2
+eg: ممكن أدفع بالكارت؟ || mumkin adfaʿ bil-kart?
+ms: هل يمكنني الدفع بالبطاقة؟ || hal yumkinunī ad-dafʿ bil-biṭāqa?
+he: אפשר{efshar}/0 ; לשלם{leshalem}/1 ; באשראי{be-ashrai}/2
+tr: Kartla/2 ; ödeyebilir miyim/0,1
+= 410 Do you need a bag?
+pt: Precisa de/0 ; sacola/1
+fa: کیسه{kise}/1 ; می‌خواید{mikhāyd}/0
+fw: کیسه لازم دارید؟ || kise lāzem dārid?
+la: بدك{baddak}/0 ; كيس{kīs}/1
+eg: محتاج كيس؟ || miḥtāg kīs?
+ms: هل تحتاج إلى كيس؟ || hal taḥtāju ilā kīs?
+he: צריך{tsarikh}/0 ; שקית{sakit}/1
+tr: Poşet/1 ; ister misiniz/0
+= 411 Keep the change.
+pt: Pode ficar com/0 ; o troco/1
+fa: بقیه‌ش{baqiya-sh}/1 ; مال خودتون{māl-e khodetun}/0
+fw: بقیه‌ی پول مال خودتان. || baqiye-ye pul māl-e khodetān.
+la: خلي{khalli}/0 ; الباقي{il-bāʾi}/1 ; معك{maʿak}/0
+eg: خلي الباقي. || khalli il-bāʾi.
+ms: احتفظ بالباقي. || iḥtafiẓ bil-bāqī.
+he: תשאיר{tashʾir}/0 ; את העודף{et ha-odef}/1
+tr: Üstü/1 ; kalsın/0
+= 412 Let's go to the market.
+pt: Vamos/0,1,3 ; à feira/2
+fa: بیاین{biyāyn}/3 ; بریم{berim}/0,1 ; بازار{bāzār}/2
+fw: بیایید به بازار برویم. || biyāyid be bāzār beravim.
+la: يلا{yalla}/3 ; نروح{nrūḥ}/0,1 ; عالسوق{ʿas-sūʾ}/2
+eg: يلا نروح السوق. || yalla nirūḥ is-sūʾ.
+ms: لنذهب إلى السوق. || li-nadhhab ilā as-sūq.
+he: בואו{bo'u}/3 ; נלך{nelekh}/0,1 ; לשוק{la-shuk}/2
+tr: Hadi/3 ; pazara/2 ; gidelim/0,1
+= 413 These vegetables look fresh.
+pt: Esses/0 ; legumes/1 ; parecem/2 ; bem frescos/3
+fa: این{in}/0 ; سبزیا{sabziyā}/1 ; خیلی تازه{kheyli tāze}/3 ; به نظر میان{be nazar miyān}/2
+fw: این سبزیجات تازه به نظر می‌رسند. || in sabzijāt tāze be nazar miresand.
+la: هالخضرة{hal-khuḍra}/0,1 ; مبينة{mbayyne}/2 ; كتير طازة{ktīr ṭāza}/3
+eg: الخضار ده شكله طازة أوي. || il-khuḍār da shaklu ṭāza awi.
+ms: تبدو هذه الخضروات طازجة. || tabdū hādhihi al-khuḍrawāt ṭāzija.
+he: הירקות האלה{ha-yerakot ha-ele}/0,1 ; נראים{nirim}/2 ; ממש טריים{mamash triyim}/3
+tr: Bu/0 ; sebzeler/1 ; çok taze/3 ; görünüyor/2
+= 414 How much for a pound?
+pt: Quanto é/1 ; a libra/0
+fa: پوندی{pondi}/0 ; چنده{chande}/1
+fw: هر پوند چند است؟ || har pond chand ast?
+la: قديش{ʾaddēsh}/1 ; الرطل{ir-raṭl}/0
+eg: الرطل بكام؟ || ir-raṭl bi-kām?
+ms: كم سعر الرطل؟ || kam siʿru ar-raṭl?
+he: כמה{kama}/1 ; לליברה{le-libra}/0
+tr: Libresi/0 ; ne kadar/1
+= 415 Can you give me a discount?
+pt: Pode/0 ; me dar um desconto/1,2
+fa: می‌شه{mishe}/0 ; یه کم{ye kam}/2 ; تخفیف بدید{takhfif bedid}/1
+fw: می‌شود کمی تخفیف بدهید؟ || mishavad kami takhfif bedahid?
+la: فيك{fīk}/0 ; تنزلّي{tnazzelli}/1 ; شوي{shway}/2
+eg: ممكن تعملّي خصم؟ || mumkin tiʿmilli khaṣm?
+ms: هل يمكنك أن تعطيني خصمًا؟ || hal yumkinuka an tuʿṭiyanī khaṣman?
+he: אפשר{efshar}/0 ; הנחה{hanakha}/1 ; קטנה{ktana}/2
+tr: Biraz/2 ; indirim/1 ; yapabilir misiniz/0
+= 416 I'm just looking.
+pt: Só/1 ; estou olhando/0,2
+fa: فقط{faqat}/1 ; دارم نگاه می‌کنم{dāram negāh mikonam}/0,2
+fw: فقط دارم نگاه می‌کنم. || faqat dāram negāh mikonam.
+la: عم إتفرج{ʿam itfarraj}/0,2 ; بس{bass}/1
+eg: أنا بتفرج بس. || ana batfarrag bass.
+ms: أنا أتفرج فقط. || anā atafarraju faqaṭ.
+he: אני{ani}/0 ; רק{rak}/1 ; מסתכל{mistakel}/2
+tr: Sadece/1 ; bakıyorum/0,2
+= 417 Do you have a dog?
+pt: Você/0 ; tem/1 ; um/2 ; cachorro/3
+fa: سگ{sag}/2,3 ; داری{dāri}/0,1
+fw: آیا سگ داری؟ || āyā sag dāri?
+la: عندك{ʿindak}/0,1 ; كلب{kalb}/2,3
+eg: عندك كلب؟ || ʿandak kalb?
+ms: هل لديك كلب؟ || hal ladayka kalb?
+he: יש לך{yesh lekha}/0,1 ; כלב{kelev}/2,3
+tr: Köpeğin/2,3 ; var mı/0,1
+= 418 What's your dog's name?
+pt: Como/3 ; se chama/2 ; o seu/0 ; cachorro/1
+fa: اسم{esm-e}/2 ; سگت{sag-et}/0,1 ; چیه{chiye}/3
+fw: اسم سگت چیست؟ || esm-e sag-at chist?
+la: شو{shu}/3 ; اسم{ism}/2 ; كلبك{kalbak}/0,1
+eg: كلبك اسمه إيه؟ || kalbak ismu ēh?
+ms: ما اسم كلبك؟ || mā ismu kalbik?
+he: איך{eykh}/3 ; קוראים{korim}/2 ; לכלב שלך{la-kelev shelkha}/0,1
+tr: Köpeğinin/0,1 ; adı/2 ; ne/3
+= 419 Can I pet your cat?
+pt: Posso/0 ; fazer carinho/1 ; no seu/2 ; gato/3
+fa: می‌تونم{mitunam}/0 ; گربه‌تو{gorbe-t-o}/2,3 ; ناز کنم{nāz konam}/1
+fw: می‌توانم گربه‌ات را نوازش کنم؟ || mitavānam gorbe-at rā navāzesh konam?
+la: فيني{fīni}/0 ; ملّس{mallis}/1 ; عالبسة تبعك{ʿal-bisse tabaʿak}/2,3
+eg: ممكن أدلع القطة بتاعتك؟ || mumkin adalliʿ il-ʾoṭṭa bitaʿtak?
+ms: هل يمكنني أن ألمس قطتك؟ || hal yumkinunī an almisa qiṭṭataka?
+he: אפשר{efshar}/0 ; ללטף{lelatef}/1 ; את החתול שלך{et ha-khatul shelkha}/2,3
+tr: Kedini/2,3 ; sevebilir miyim/0,1
+= 420 Take care of yourself.
+pt: Se cuida/0,1
+fa: مواظب{movāzeb-e}/0 ; خودت باش{khodet bāsh}/1
+fw: مراقب خودت باش. || morāqeb-e khodat bāsh.
+la: دير بالك{dīr bālak}/0 ; على حالك{ʿala ḥālak}/1
+eg: خلي بالك من نفسك. || khalli bālak min nafsak.
+ms: اعتنِ بنفسك. || iʿtani bi-nafsik.
+he: תשמור{tishmor}/0 ; על עצמך{al atsmekha}/1
+tr: Kendine/1 ; iyi bak/0
+= 421 Get well soon.
+pt: Melhore/1 ; logo/0
+fa: زود{zud}/0 ; خوب شی{khub shi}/1
+fw: امیدوارم زود خوب شوی. || omidvāram zud khub shavi.
+la: إن شاء الله{inshalla}/- ; تطيب{tṭīb}/1 ; قريب{ʾarīb}/0
+eg: ألف سلامة، تقوم بالسلامة. || alf salāma, tiʾūm bis-salāma.
+ms: أتمنى لك الشفاء العاجل. || atamannā laka ash-shifāʾ al-ʿājil.
+he: תבריא{tavri}/1 ; מהר{maher}/0
+tr: Çabuk/0 ; iyileş/1
+= 422 Are you feeling better?
+pt: Você/0 ; já/2 ; está melhor/1
+fa: حالت{hālet}/0 ; بهتر شد{behtar shod}/1,2
+fw: حالت بهتر شده است؟ || hālat behtar shode ast?
+la: صرت{ṣirt}/0,2 ; أحسن{aḥsan}/1
+eg: بقيت أحسن؟ || biʾīt aḥsan?
+ms: هل تشعر بتحسن؟ || hal tashʿuru bi-taḥassun?
+he: אתה מרגיש{ata margish}/0 ; יותר טוב{yoter tov}/1 ; כבר{kvar}/2
+tr: Artık/2 ; daha iyi/1 ; misin/0
+= 423 I have a headache.
+pt: Estou com/0 ; dor de cabeça/1
+fa: سرم{saram}/0 ; درد می‌کنه{dard mikone}/1
+fw: سرم درد می‌کند. || saram dard mikonad.
+la: راسي{rāsi}/0 ; عم يوجعني{ʿam yūjaʿni}/1
+eg: عندي صداع. || ʿandi ṣudāʿ.
+ms: عندي صداع. || ʿindī ṣudāʿ.
+he: כואב לי{koev li}/0,1 ; הראש{ha-rosh}/1
+tr: Başım/0 ; ağrıyor/1
+= 424 I have a cold.
+pt: Estou/0 ; resfriado/1
+fa: من{man}/0 ; سرما خوردم{sarmā khordam}/1
+fw: سرما خورده‌ام. || sarmā khorde-am.
+la: أنا{ana}/0 ; مرشّح{mrashshaḥ}/1
+eg: أنا واخد برد. || ana wākhid bard.
+ms: أنا مصاب بالزكام. || anā muṣābun bi-z-zukām.
+he: אני{ani}/0 ; מצונן{metsunan}/1
+tr: Üşüttüm/0,1
+= 425 Do you need to see a doctor?
+pt: Você/0 ; precisa/1 ; ir ao médico/2
+fa: لازمه{lāzeme}/1 ; بری دکتر{beri doktor}/0,2
+fw: آیا لازم است به دکتر بروی؟ || āyā lāzem ast be doktor beravi?
+la: لازم{lāzim}/1 ; تروح{trūḥ}/0 ; عالحكيم{ʿal-ḥakīm}/2
+eg: محتاج تروح للدكتور؟ || miḥtāg tirūḥ lid-doktōr?
+ms: هل تحتاج إلى زيارة الطبيب؟ || hal taḥtāju ilā ziyārat aṭ-ṭabīb?
+he: אתה צריך{ata tsarikh}/0,1 ; ללכת לרופא{lalekhet la-rofe}/2
+tr: Doktora/2 ; gitmen/0 ; gerekiyor mu/1
+= 426 Be careful driving.
+pt: Dirija/1 ; com cuidado/0
+fa: با احتیاط{bā ehtiyāt}/0 ; رانندگی کن{rānandegi kon}/1
+fw: با احتیاط رانندگی کن. || bā ehtiyāt rānandegi kon.
+la: سوق{sūʾ}/1 ; على مهلك{ʿala mahlak}/0
+eg: سوق بالراحة. || sūʾ bir-rāḥa.
+ms: قُد بحذر. || qud bi-ḥadhar.
+he: תיסע{tisa}/1 ; בזהירות{bi-zehirut}/0
+tr: Dikkatli/0 ; sür/1
+= 427 How was the doctor's appointment?
+pt: Como foi/2 ; a consulta/0 ; no médico/1
+fa: دکتر{doktor}/1 ; رفتنت{raftanet}/0 ; چطور بود{chetor bud}/2
+fw: وقت دکترت چطور بود؟ || vaqt-e doktor-at chetor bud?
+la: كيف كان{kīf kān}/2 ; موعد{mawʿid}/0 ; الحكيم{il-ḥakīm}/1
+eg: الكشف عند الدكتور كان عامل إيه؟ || il-kashf ʿand id-doktōr kān ʿāmil ēh?
+ms: كيف كان موعدك مع الطبيب؟ || kayfa kāna mawʿiduka maʿa aṭ-ṭabīb?
+he: איך היה{eykh haya}/2 ; התור{ha-tor}/0 ; אצל הרופא{etsel ha-rofe}/1
+tr: Doktor/1 ; randevun/0 ; nasıl geçti/2
+= 428 Do you need anything?
+pt: Você/0 ; precisa de/1 ; alguma coisa/2
+fa: چیزی{chizi}/2 ; لازم داری{lāzem dāri}/0,1
+fw: آیا چیزی لازم داری؟ || āyā chizi lāzem dāri?
+la: بدك{baddak}/0,1 ; شي{shi}/2
+eg: محتاج حاجة؟ || miḥtāg ḥāga?
+ms: هل تحتاج إلى شيء؟ || hal taḥtāju ilā shayʾ?
+he: אתה צריך{ata tsarikh}/0,1 ; משהו{mashehu}/2
+tr: Bir şeye/2 ; ihtiyacın var mı/0,1,3
+= 429 Is there anything I can help with?
+pt: Tem/0 ; alguma coisa/1 ; que/2 ; eu/3 ; possa ajudar/4
+fa: کاری{kāri}/1 ; هست{hast}/0 ; که{ke}/2 ; من{man}/3 ; کمک کنم{komak konam}/4
+fw: کاری هست که من بتوانم کمک کنم؟ || kāri hast ke man betavānam komak konam?
+la: في{fī}/0 ; شي{shi}/1 ; فيني{fīni}/3 ; ساعد فيه{sāʿid fī}/2,4
+eg: فيه حاجة أقدر أساعد فيها؟ || fī ḥāga aʾdar asāʿid fīha?
+ms: هل هناك أي شيء يمكنني المساعدة فيه؟ || hal hunāka ayyu shayʾin yumkinunī al-musāʿada fīh?
+he: יש{yesh}/0 ; משהו{mashehu}/1 ; ש{she}/2 ; אני{ani}/3 ; יכול לעזור בו{yakhol laazor bo}/4
+tr: Yardım edebileceğim/2,3,4 ; bir şey/1 ; var mı/0
+= 430 Would you like some water?
+pt: Você/0 ; quer/1 ; beber/2 ; um pouco de/3 ; água/4
+fa: یه کم{ye kam}/3 ; آب{āb}/4 ; می‌خوری{mikhori}/0,1,2
+fw: کمی آب میل داری؟ || kami āb meyl dāri?
+la: بدك{baddak}/0,1 ; تشرب{tishrab}/2 ; شوية{shwayye}/3 ; مي{mayy}/4
+eg: تحب تشرب شوية مية؟ || tiḥibb tishrab shwayyit mayya?
+ms: هل تريد بعض الماء؟ || hal turīdu baʿḍa al-māʾ?
+he: אתה רוצה{ata rotse}/0,1 ; לשתות{lishtot}/2 ; קצת{ktsat}/3 ; מים{mayim}/4
+tr: Biraz/3 ; su/4 ; içmek/2 ; ister misin/0,1
+= 431 Let me carry that for you.
+pt: Deixa/0 ; que eu/1 ; carrego isso/2 ; pra você/3
+fa: بذار{bezār}/0 ; من{man}/1 ; برات{barāt}/3 ; بیارمش{biyāram-esh}/2
+fw: بگذار من آن را برایت بیاورم. || begozār man ān rā barāyat biyāvaram.
+la: خليني{khallīni}/0,1 ; شيلها{shīlha}/2 ; عنك{ʿannak}/3
+eg: سيبني أشيلها عنك. || sībni ashīlha ʿannak.
+ms: دعني أحمل ذلك عنك. || daʿnī aḥmilu dhālika ʿanka.
+he: תן{ten}/0 ; לי{li}/1 ; לסחוב את זה{liskhov et ze}/2 ; בשבילך{bishvilkha}/3
+tr: Bırak/0 ; ben/1 ; senin için/3 ; taşıyayım/2
+= 432 Thank you all for having me.
+pt: Obrigado/0 ; a todos/1 ; por me/3 ; receberem/2
+fa: از همه‌تون{az hamatun}/1 ; ممنونم{mamnunam}/0 ; که منو{ke man-o}/3 ; دعوت کردید{da'vat kardid}/2
+fw: از همه‌ی شما برای پذیرایی از من سپاسگزارم. || az hame-ye shomā barāye pazirāyi az man sepāsgozāram.
+la: شكرًا{shukran}/0 ; إلكن كلكن{ilkon kellkon}/1 ; عالاستضافة{ʿal-istiḍāfe}/2,3
+eg: متشكر ليكم كلكم إنكم استضفتوني. || mutashakkir līkum kullukum innukum istaḍaftūni.
+ms: شكرًا لكم جميعًا على استضافتي. || shukran lakum jamīʿan ʿalā istiḍāfatī.
+he: תודה{toda}/0 ; לכולכם{le-khulkhem}/1 ; שאירחתם{she-erakhtem}/2 ; אותי{oti}/3
+tr: Beni/3 ; ağırladığınız için/2 ; hepinize/1 ; teşekkürler/0
+= 433 I'll watch the kids.
+pt: Deixa que/0 ; eu/1 ; cuido/2 ; das crianças/3
+fa: بذار{bezār}/0 ; من{man}/1 ; مواظب بچه‌ها{movāzeb-e bachche-hā}/3 ; باشم{bāsham}/2
+fw: من مراقب بچه‌ها خواهم بود. || man morāqeb-e bachche-hā khāham bud.
+la: خليني{khallīni}/0,1 ; إنتبه{intibih}/2 ; عالولاد{ʿal-wlād}/3
+eg: أنا هاخد بالي من العيال. || ana hākhud bāli min il-ʿiyāl.
+ms: سأعتني بالأطفال. || saʾaʿtanī bil-aṭfāl.
+he: אני{ani}/1 ; אשגיח{ashgiakh}/0,2 ; על הילדים{al ha-yeladim}/3
+tr: Çocuklara/3 ; ben/1 ; bakarım/0,2
+= 434 Can I help you cook?
+pt: Posso/0 ; te/2 ; ajudar/1 ; a cozinhar/3
+fa: می‌تونم{mitunam}/0 ; تو آشپزی{tu āshpazi}/3 ; کمکت کنم{komak-et konam}/1,2
+fw: می‌توانم در آشپزی کمکت کنم؟ || mitavānam dar āshpazi komakat konam?
+la: فيني{fīni}/0 ; ساعدك{sāʿdak}/1,2 ; بالطبخ{biṭ-ṭabkh}/3
+eg: ممكن أساعدك في الطبخ؟ || mumkin asāʿdak fiṭ-ṭabkh?
+ms: هل يمكنني مساعدتك في الطبخ؟ || hal yumkinunī musāʿadatuka fī aṭ-ṭabkh?
+he: אפשר{efshar}/0 ; לעזור{laazor}/1 ; לך{lekha}/2 ; לבשל{levashel}/3
+tr: Yemek yapmana/3 ; yardım/1 ; edebilir miyim/0,2
+= 435 Do you want me to carry that?
+pt: Quer que/0 ; eu/1 ; carregue isso/2 ; pra você/3
+fa: می‌خوای{mikhāy}/0 ; من{man}/1 ; برات{barāt}/3 ; بیارمش{biyāram-esh}/2
+fw: می‌خواهی من آن را برایت بیاورم؟ || mikhāhi man ān rā barāyat biyāvaram?
+la: بدك{baddak}/0 ; شيلها{shīlha}/1,2 ; عنك{ʿannak}/3
+eg: عايزني أشيلها عنك؟ || ʿayizni ashīlha ʿannak?
+ms: هل تريدني أن أحمل ذلك عنك؟ || hal turīdunī an aḥmila dhālika ʿanka?
+he: אתה רוצה{ata rotse}/0 ; שאני{she-ani}/1 ; אסחב את זה{eskhav et ze}/2 ; בשבילך{bishvilkha}/3
+tr: Senin için/3 ; taşımamı/1,2 ; ister misin/0
+= 436 Let me get it for you.
+pt: Deixa/0 ; que eu/1 ; pego/2 ; isso/3 ; pra você/4
+fa: بذار{bezār}/0 ; من{man}/1 ; برات{barāt}/4 ; بیارمش{biyāram-esh}/2,3
+fw: بگذار من برایت بیاورمش. || begozār man barāyat biyāvaram-ash.
+la: خليني{khallīni}/0,1 ; جبلك ياه{jiblak yāh}/2,3,4
+eg: سيبني أجيبهولك. || sībni agibhūlak.
+ms: دعني أحضره لك. || daʿnī uḥḍiruhu lak.
+he: תן{ten}/0 ; לי{li}/1 ; להביא{lehavi}/2 ; את זה{et ze}/3 ; בשבילך{bishvilkha}/4
+tr: Dur/0 ; ben/1 ; senin için/4 ; getireyim/2,3
+= 437 Sit down and rest.
+pt: Senta/0 ; e descansa/1 ; um pouco/2
+fa: بشین{beshin}/0 ; یه کم{ye kam}/2 ; استراحت کن{esterāhat kon}/1
+fw: بنشین و کمی استراحت کن. || beneshin va kami esterāhat kon.
+la: قعود{ʾʿūd}/0 ; ارتاح{irtāḥ}/1 ; شوي{shway}/2
+eg: اقعد ارتاح شوية. || uʾʿud irtāḥ shwayya.
+ms: اجلس واسترح قليلًا. || ijlis wa-starīḥ qalīlan.
+he: שב{shev}/0 ; תנוח{tanuakh}/1 ; קצת{ktsat}/2
+tr: Otur/0 ; biraz/2 ; dinlen/1
+= 438 Do you need a ride?
+pt: Quer/0 ; que eu/1 ; te/3 ; leve/2
+fa: می‌خوای{mikhāy}/0 ; من{man}/1 ; برسونمت{beresunam-et}/2,3
+fw: می‌خواهی تو را برسانم؟ || mikhāhi to rā beresānam?
+la: بدك{baddak}/0 ; وصلك{waṣṣlak}/1,2,3
+eg: عايزني أوصلك؟ || ʿayizni awaṣṣalak?
+ms: هل تحتاج إلى توصيلة؟ || hal taḥtāju ilā tawṣīla?
+he: צריך{tsarikh}/0 ; שאקפיץ{she-akpits}/1,2 ; אותך{otkha}/3
+tr: Seni/3 ; bırakayım mı/0,1,2
+= 439 Call me if you need anything.
+pt: Se/0 ; precisar de/2 ; alguma coisa/1 ; me/5 ; liga/3,4
+fa: اگه{age}/0 ; چیزی{chizi}/1 ; لازم داشتی{lāzem dāshti}/2 ; بهم{behem}/5 ; زنگ بزن{zang bezan}/3,4
+fw: اگر چیزی لازم داشتی، به من زنگ بزن. || agar chizi lāzem dāshti, be man zang bezan.
+la: إذا{iza}/0 ; بدك{baddak}/2 ; شي{shi}/1 ; دقلي{diʾʾilli}/3,4,5
+eg: لو احتجت أي حاجة كلمني. || law iḥtagt ayy ḥāga kallimni.
+ms: اتصل بي إذا احتجت إلى أي شيء. || ittaṣil bī idhā iḥtajta ilā ayyi shayʾ.
+he: אם{im}/0 ; אתה צריך{ata tsarikh}/2 ; משהו{mashehu}/1 ; תתקשר{titkasher}/3,4 ; אליי{elay}/5
+tr: Bir şeye/1 ; ihtiyacın olursa/0,2 ; beni/5 ; ara/3,4
+= 440 I don't understand.
+pt: Eu/0 ; não/1 ; entendo/2
+fa: من{man}/0 ; نمی‌فهمم{nemifahmam}/1,2
+fw: نمی‌فهمم. || nemifahmam.
+la: أنا{ana}/0 ; مش{mish}/1 ; فاهم{fāhim}/2
+eg: أنا مش فاهم. || ana mish fāhim.
+ms: لا أفهم. || lā afham.
+he: אני{ani}/0 ; לא{lo}/1 ; מבין{mevin}/2
+tr: Anlamıyorum/0,1,2
+= 441 Please speak more slowly.
+pt: Por favor/0 ; fale/1 ; mais devagar/2,3
+fa: لطفاً{lotfan}/0 ; یه کم{ye kam}/3 ; آروم‌تر{ārum-tar}/2 ; حرف بزنید{harf bezanid}/1
+fw: لطفاً آهسته‌تر صحبت کنید. || lotfan āheste-tar sohbat konid.
+la: إذا بتريد{iza btrīd}/0 ; احكي{iḥki}/1 ; على مهلك{ʿala mahlak}/2 ; شوي{shway}/3
+eg: لو سمحت اتكلم بالراحة شوية. || law samaḥt itkallim bir-rāḥa shwayya.
+ms: من فضلك تكلم ببطء أكثر. || min faḍlik takallam bi-buṭʾin akthar.
+he: בבקשה{bevakasha}/0 ; תדבר{tedaber}/1 ; יותר לאט{yoter le'at}/2,3
+tr: Lütfen/0 ; biraz/3 ; daha yavaş/2 ; konuşun/1
+= 442 How do you say this in Cantonese?
+pt: Como/2 ; se diz/3 ; isso/0 ; em cantonês/1
+fa: اینو{ino}/0 ; به کانتونی{be kāntoni}/1 ; چی می‌گن{chi migan}/2,3
+fw: این را به کانتونی چه می‌گویند؟ || in rā be kāntoni che miguyand?
+la: كيف{kīf}/2 ; منقول{minʾūl}/3 ; هاد{hād}/0 ; بالكانتوني{bil-kantōni}/1
+eg: إزاي أقول ده بالكانتوني؟ || izzāy aʾūl da bil-kantōni?
+ms: كيف تقول هذا بالكانتونية؟ || kayfa taqūlu hādhā bil-kantōniyya?
+he: איך{eykh}/2 ; אומרים{omrim}/3 ; את זה{et ze}/0 ; בקנטונזית{be-kantonezit}/1
+tr: Bunu/0 ; Kantonca/1 ; nasıl/2 ; söylersin/3
+= 443 What did you say?
+pt: O que/2 ; você/0 ; disse/1
+fa: چی{chi}/2 ; گفتی{gofti}/0,1
+fw: چه گفتی؟ || che gofti?
+la: شو{shu}/2 ; قلت{ʾilt}/0,1
+eg: إنت قلت إيه؟ || inta ʾult ēh?
+ms: ماذا قلت؟ || mādhā qult?
+he: מה{ma}/2 ; אמרת{amarta}/0,1
+tr: Ne/2 ; dedin/0,1
+= 444 Can you say that again?
+pt: Pode/0 ; repetir/1,2 ; mais uma vez/3
+fa: می‌شه{mishe}/0 ; یه بار دیگه{ye bār-e dige}/2,3 ; بگی{begi}/1
+fw: می‌شود یک بار دیگر بگویی؟ || mishavad yek bār-e digar beguyi?
+la: فيك{fīk}/0 ; تعيدها{tʿīdha}/1,2 ; كمان مرة{kamān marra}/3
+eg: ممكن تقولها تاني؟ || mumkin tiʾulha tāni?
+ms: هل يمكنك أن تكرر ذلك؟ || hal yumkinuka an tukarrira dhālik?
+he: אתה יכול{ata yakhol}/0 ; להגיד{lehagid}/1 ; את זה שוב{et ze shuv}/2,3
+tr: Bir daha/2,3 ; söyler misin/0,1
+= 445 What does this mean?
+pt: O que/2 ; isso/0 ; quer dizer/1,3
+fa: این{in}/0 ; یعنی{ya'ni}/1,3 ; چی{chi}/2
+fw: این یعنی چه؟ || in ya'ni che?
+la: شو{shu}/2 ; يعني{yaʿni}/1,3 ; هاد{hād}/0
+eg: يعني إيه ده؟ || yaʿni ēh da?
+ms: ماذا يعني هذا؟ || mādhā yaʿnī hādhā?
+he: מה{ma}/2 ; זה{ze}/0 ; אומר{omer}/1,3
+tr: Bu/0 ; ne/2 ; demek/1,3
+= 446 How do you write this?
+pt: Como/1 ; se escreve/2 ; isso/0
+fa: اینو{ino}/0 ; چطوری{chetori}/1 ; می‌نویسن{minevisan}/2
+fw: این را چطور می‌نویسند؟ || in rā chetor minevisand?
+la: كيف{kīf}/1 ; منكتب{minktob}/2 ; هاد{hād}/0
+eg: ده بيتكتب إزاي؟ || da byitkitib izzāy?
+ms: كيف يُكتب هذا؟ || kayfa yuktabu hādhā?
+he: איך{eykh}/1 ; כותבים{kotvim}/2 ; את זה{et ze}/0
+tr: Bu/0 ; nasıl/1 ; yazılır/2
+= 447 Your Cantonese is very good.
+pt: O seu/0 ; cantonês/1 ; é muito/2 ; bom/3
+fa: کانتونی‌ت{kāntoni-t}/0,1 ; خیلی{kheyli}/2 ; خوبه{khube}/3
+fw: کانتونی تو خیلی خوب است. || kāntoni-ye to kheyli khub ast.
+la: الكانتوني تبعك{il-kantōni tabaʿak}/0,1 ; كتير{ktīr}/2 ; منيح{mnīḥ}/3
+eg: الكانتوني بتاعك كويس أوي. || il-kantōni bitāʿak kwayyis awi.
+ms: لغتك الكانتونية جيدة جدًا. || lughatuka al-kantōniyya jayyida jiddan.
+he: הקנטונזית שלך{ha-kantonezit shelkha}/0,1 ; ממש{mamash}/2 ; טובה{tova}/3
+tr: Kantoncan/0,1 ; çok/2 ; iyi/3
+= 448 I'm learning Cantonese.
+pt: Estou/0 ; aprendendo/1 ; cantonês/2
+fa: من{man}/0 ; دارم{dāram}/- ; کانتونی{kāntoni}/2 ; یاد می‌گیرم{yād migiram}/1
+fw: من دارم کانتونی یاد می‌گیرم. || man dāram kāntoni yād migiram.
+la: أنا{ana}/0 ; عم إتعلم{ʿam itʿallam}/1 ; كانتوني{kantōni}/2
+eg: أنا بتعلم كانتوني. || ana batʿallim kantōni.
+ms: أنا أتعلم الكانتونية. || anā ataʿallamu al-kantōniyya.
+he: אני{ani}/0 ; לומד{lomed}/1 ; קנטונזית{kantonezit}/2
+tr: Kantonca/2 ; öğreniyorum/0,1
+= 449 I'm still learning.
+pt: Ainda/1 ; estou aprendendo/0,2
+fa: من{man}/0 ; هنوز{hanuz}/1 ; دارم یاد می‌گیرم{dāram yād migiram}/2
+fw: من هنوز در حال یادگیری‌ام. || man hanuz dar hāl-e yādgiri-am.
+la: أنا{ana}/0 ; لسا{lissa}/1 ; عم إتعلم{ʿam itʿallam}/2
+eg: أنا لسه بتعلم. || ana lissa batʿallim.
+ms: ما زلتُ أتعلم. || mā ziltu ataʿallam.
+he: אני{ani}/0 ; עדיין{adayin}/1 ; לומד{lomed}/2
+tr: Hâlâ/1 ; öğreniyorum/0,2

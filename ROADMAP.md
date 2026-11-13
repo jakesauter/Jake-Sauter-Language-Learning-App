@@ -6,9 +6,9 @@ Taishanese, Cantonese, Mandarin and English: deepen the sentences, fix Taishanes
 ## Added languages (switched off by default; turn on with the chips at the top)
 Portuguese (Brazil), Persian (spoken Tehrani + written), Arabic (Levantine word by word; Egyptian and MSA as full sentences), Hebrew, Turkish.
 
-- Done: sentences 0–359 of 492 (`source/me/00–07.txt`).
-- To do: sentences 360–491 (hobbies, swimming, running, shopping, pets, health, helping out, learning, holidays, feelings, jokes, goodbyes).
+- Done: all 492 sentences (`source/me/00–10.txt`; 360–491 added 2026-11-13).
 - All machine-drafted by Claude. Check with native speakers or paste Google Translate batches to compare.
+- Before building, `cd source && python3 me/check_me.py ../index.html` checks every block: sentence numbers and English, all eight lines present, refs inside the English chunks, transliterations on fa/la/he tokens.
 
 ## Format (one block per sentence, keyed by index)
     = 360 Do you like your teacher?
