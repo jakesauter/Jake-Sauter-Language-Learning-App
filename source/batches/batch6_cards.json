@@ -263,6 +263,14 @@
      2
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -1684,6 +1692,14 @@
      2
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -2071,6 +2087,14 @@
     "rom": "chū qù",
     "refs": [
      1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
     ],
     "sure": true
    }
@@ -2767,6 +2791,14 @@
      1
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -3455,6 +3487,14 @@
     "rom": "zhǔ fàn",
     "refs": [
      2
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
     ],
     "sure": true
    }
@@ -4568,6 +4608,14 @@
      1
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -5298,6 +5346,14 @@
      2
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     3
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -5919,6 +5975,14 @@
      1
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -6151,6 +6215,14 @@
     "rom": "míng bu míng bai",
     "refs": [
      1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
     ],
     "sure": true
    }
@@ -6801,6 +6873,14 @@
      1
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -7097,6 +7177,14 @@
     "rom": "máng bu máng",
     "refs": [
      1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
     ],
     "sure": true
    }
@@ -7578,6 +7666,14 @@
      1
     ],
     "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
+    ],
+    "sure": true
    }
   ],
   "tsn": [
@@ -7999,6 +8095,14 @@
     "rom": "hǎo bu hǎo",
     "refs": [
      1
+    ],
+    "sure": true
+   },
+   {
+    "hz": "啊",
+    "rom": "a",
+    "refs": [
+     2
     ],
     "sure": true
    }

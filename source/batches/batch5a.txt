@@ -23,7 +23,7 @@ nt: Breakfast is 早餐 dɔu55 tan335.
 @ Around the House | I'll make the coffee.
 g: I / make / coffee / (then)
 y: 我/ngo5/0 ; 去/heoi3/- ; 沖/cung1/1 ; 咖啡/gaa3 fe1/2 ; 啦/laa1/3
-m: 我/wǒ/0 ; 去/qù/- ; 冲/chōng/1 ; 咖啡/kā fēi/2
+m: 我/wǒ/0 ; 去/qù/- ; 冲/chōng/1 ; 咖啡/kā fēi/2 ; 吧/ba/3
 t: 我/ŋɔi33/0 ; 去/hui33/- ; 沖/tsəŋ33/1? ; 咖啡/ga33 fia55/2 ; 啦/la55/3
 s: Yo/0 ; hago/1 ; el café/2
 f: Je/0 ; fais/1 ; le café/2

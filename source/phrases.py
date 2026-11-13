@@ -5,7 +5,7 @@ PHRASES = [
         en = "How much longer until we get there?",
         gloss = ["How long", "still / more", "until", "arrive", "(question tone)"],
         yue = [("仲有", "zung6 jau5", [1]), ("幾耐", "gei2 noi6", [0]), ("先", "sin1", [2]), ("到", "dou3", [3]), ("呀", "aa3", [4])],
-        cmn = [("还有", "hái yǒu", [1]), ("多久", "duō jiǔ", [0]), ("才", "cái", [2]), ("到", "dào", [3])],
+        cmn = [("还有", "hái yǒu", [1]), ("多久", "duō jiǔ", [0]), ("才", "cái", [2]), ("到", "dào", [3]), ("啊", "a", [4])],
         tip = "All three put \"still\" before \"how long\", then a word for \"only then\": 先 sin1 in Cantonese, 才 cái in Mandarin. 呀 aa3 softens the question.",
     ),
 
@@ -32,7 +32,7 @@ PHRASES = [
         en = "Do you need to use the bathroom?",
         gloss = ["You", "need to?", "go to", "the bathroom", "(question tone)"],
         yue = [("你", "nei5", [0]), ("使唔使", "sai2 m4 sai2", [1]), ("去", "heoi3", [2]), ("洗手間", "sai2 sau2 gaan1", [3]), ("呀", "aa3", [4])],
-        cmn = [("你", "nǐ", [0]), ("要不要", "yào bu yào", [1]), ("去", "qù", [2]), ("洗手间", "xǐ shǒu jiān", [3])],
+        cmn = [("你", "nǐ", [0]), ("要不要", "yào bu yào", [1]), ("去", "qù", [2]), ("洗手间", "xǐ shǒu jiān", [3]), ("啊", "a", [4])],
         tip = "洗手間 is literally \"wash-hand room\", the polite word in both languages.",
     ),
 
@@ -104,7 +104,7 @@ PHRASES = [
         en = "Is it going to rain tomorrow?",
         gloss = ["Will it?", "rain", "tomorrow", "(question tone)"],
         yue = [("聽日", "ting1 jat6", [2]), ("會唔會", "wui5 m4 wui5", [0]), ("落雨", "lok6 jyu5", [1]), ("呀", "aa3", [3])],
-        cmn = [("明天", "míng tiān", [2]), ("会不会", "huì bu huì", [0]), ("下雨", "xià yǔ", [1])],
+        cmn = [("明天", "míng tiān", [2]), ("会不会", "huì bu huì", [0]), ("下雨", "xià yǔ", [1]), ("啊", "a", [3])],
         tip = "Rain \"falls\" in Cantonese (落 lok6) but \"comes down\" in Mandarin (下 xià). Tomorrow differs too: 聽日 vs 明天.",
     ),
 
@@ -140,7 +140,7 @@ PHRASES = [
         en = "How's work been lately?",
         gloss = ["How's", "work", "lately", "(question tone)"],
         yue = [("最近", "zeoi3 gan6", [2]), ("做嘢", "zou6 je5", [1]), ("點呀", "dim2 aa3", [0, 3])],
-        cmn = [("最近", "zuì jìn", [2]), ("工作", "gōng zuò", [1]), ("怎么样", "zěn me yàng", [0])],
+        cmn = [("最近", "zuì jìn", [2]), ("工作", "gōng zuò", [1]), ("怎么样", "zěn me yàng", [0]), ("啊", "a", [3])],
         tip = "做嘢 zou6 je5 is literally \"do stuff\", the everyday Cantonese verb for working.",
     ),
 
