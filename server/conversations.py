@@ -127,6 +127,23 @@ def append_line(person, conversation_id, line):
     _write_details(folder, conversation)
 
 
+def study_translations(person, conversation_id):
+    """Cached translations of a conversation's English lines into study languages: {language: {text: translation}}."""
+    try:
+        with open(os.path.join(conversation_folder(person, conversation_id), "study.json"), encoding="utf-8") as file:
+            return json.load(file)
+    except (OSError, ValueError):
+        return {}
+
+
+def save_study_translations(person, conversation_id, cache):
+    folder = conversation_folder(person, conversation_id)
+    temporary_path = os.path.join(folder, "study.json.tmp")
+    with open(temporary_path, "w", encoding="utf-8") as file:
+        json.dump(cache, file, ensure_ascii=False)
+    os.replace(temporary_path, os.path.join(folder, "study.json"))
+
+
 def recording_path(person, conversation_id):
     folder = os.path.join(conversation_folder(person, conversation_id), "recordings")
     os.makedirs(folder, exist_ok=True)

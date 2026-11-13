@@ -73,8 +73,9 @@ def find_speech(audio, ending_silence=SILENCE_THAT_ENDS_UTTERANCE):
 
 class LiveSession:
     def __init__(self, websocket, candidate_languages, target_language="en", engine_names=None, keep_recording=True,
-                 data_folder=None, person=None, conversation_id=None):
+                 data_folder=None, person=None, conversation_id=None, study_language=""):
         self.websocket = websocket
+        self.study_language = study_language  # lines already in the target language are also shown in this one
         self.person = person
         self.conversation_id = conversation_id
         self.candidate_languages = list(candidate_languages) or [""]
@@ -240,6 +241,8 @@ class LiveSession:
             if said:
                 line["text"] = said
                 line["spans"] = [{"text": said}]
+        elif self.study_language and self.study_language != language:
+            line["study"], line["study_language"] = await self.study(line_id, segment["text"])
         self.finished_lines.append(line)
         for fingerprint in result.get("window_fingerprints", []):
             self.window_owners.append(line_id)
@@ -253,7 +256,7 @@ class LiveSession:
             self.lines_since_gist = 0
             asyncio.create_task(self.send_gist())
         if self.conversation_id:
-            saved_line = {key: line[key] for key in ("text", "en", "clarity", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end") if key in line}
+            saved_line = {key: line[key] for key in ("text", "en", "clarity", "language", "could_be", "speaker", "spans", "hyps", "agree", "start", "end", "study", "study_language") if key in line and line[key] != ""}
             saved_line["at"] = self.started_at + line["start"]
             await asyncio.get_running_loop().run_in_executor(
                 None, conversations.append_line, self.person, self.conversation_id, saved_line)
@@ -271,6 +274,17 @@ class LiveSession:
         await self.send({"type": "translation", "id": line_id, "done": True, "text": result["english"], "said": said,
                          "clarity": result["clarity"], "unclear": result["unclear"], "ms": round((time.time() - started_at) * 1000)})
         return said, result["english"], result["clarity"]
+
+    async def study(self, line_id, text):
+        """Say an English line in the language being learned (Cantonese for Taishanese learners)."""
+        try:
+            result = await translation.to_study_language(text, self.study_language)
+        except Exception as error:
+            print("study translation failed:", error)
+            await self.send({"type": "study", "id": line_id, "text": "", "language": ""})
+            return "", ""
+        await self.send({"type": "study", "id": line_id, "text": result["text"], "language": result["language"]})
+        return result["text"], result["language"]
 
     def _cluster_lines(self):
         owners = self.window_owners[-MOST_WINDOWS_FOR_RECLUSTERING:]

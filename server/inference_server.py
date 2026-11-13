@@ -334,6 +334,38 @@ async def get_conversation(request: Request, conversation_id: str):
             "digest_lines": digest.digested_lines(person, conversation_id)}
 
 
+class StudyRequest(BaseModel):
+    language: str
+    texts: list[str]
+
+
+study_lock = asyncio.Lock()
+
+
+@app.post("/conversations/{conversation_id}/study")
+async def study_conversation(request: Request, conversation_id: str, body: StudyRequest):
+    """English lines of a saved conversation in the language being learned; cached so each is translated once."""
+    person = conversations.person_from(request.headers)
+    if not conversations.exists(person, conversation_id):
+        return JSONResponse({"error": "conversation not found"}, 404)
+    if not LANGUAGE_CODE.fullmatch(body.language):
+        return JSONResponse({"error": "bad language"}, 400)
+    written = "yue" if body.language == "tsn" else body.language
+    texts = [text[:500] for text in dict.fromkeys(body.texts) if text and text.strip()][:60]
+    async with study_lock:
+        cache = conversations.study_translations(person, conversation_id)
+        known = cache.setdefault(written, {})
+        for text in texts:
+            if text not in known:
+                try:
+                    known[text] = (await translation.to_study_language(text, written))["text"]
+                except Exception as error:
+                    print("study translation failed:", error)
+                    break
+        conversations.save_study_translations(person, conversation_id, cache)
+    return {"language": written, "translations": {text: known[text] for text in texts if text in known}}
+
+
 @app.post("/conversations/{conversation_id}/title")
 async def rename_conversation(request: Request, conversation_id: str, body: ConversationTitle):
     person = conversations.person_from(request.headers)
@@ -384,6 +416,11 @@ async def live(websocket: WebSocket):
     candidate_languages = list(dict.fromkeys(code for code in requested_languages.split(",") if code))[:6] or [""]
     language = candidate_languages[0]
     target_language = websocket.query_params.get("target", "en")
+    # the language being learned: English lines are also shown in it
+    study_language = websocket.query_params.get("study", "") or next(
+        (code for code in candidate_languages if code in ("tsn", "yue", "zh")), "")
+    if study_language and not LANGUAGE_CODE.fullmatch(study_language):
+        study_language = ""
     if not all(LANGUAGE_CODE.fullmatch(code) for code in candidate_languages) or not LANGUAGE_CODE.fullmatch(target_language):
         await websocket.close(code=1008)
         return
@@ -402,7 +439,7 @@ async def live(websocket: WebSocket):
             conversation_id = conversations.create(person, "", candidate_languages)["id"]
         session = live_session.LiveSession(websocket, candidate_languages, target_language, engine_names,
                                            websocket.query_params.get("save", "1") == "1", DATA_FOLDER,
-                                           person, conversation_id)
+                                           person, conversation_id, study_language)
         utterance_worker = asyncio.create_task(session.process_closed_utterances())
         await websocket.send_json({
             "type": "ready", "lang": language, "languages": candidate_languages, "target": target_language,

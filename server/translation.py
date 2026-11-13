@@ -270,6 +270,34 @@ CJK_CHARACTER = re.compile(r"[㐀-鿿]")
 CLEAR_ENOUGH = 3  # clarity 1-5; below this the line is shown as "(unclear)"; exactly 3 is shown as rough
 
 
+async def to_study_language(text, study_language):
+    """An English line in the language being learned, so the transcript teaches in both directions.
+    No model writes Taishanese, so Taishanese learners get Cantonese, its closest written form."""
+    import speech_engines  # same script as the transcripts (traditional characters for Cantonese)
+    written = "yue" if normalise_code(study_language) == "tsn" else normalise_code(study_language)
+    provider = choose_provider("en", written)
+    if provider == "google":
+        result = await translate_with_google(text, "en", written)
+    elif is_translation_model(provider):
+        result = await translate_with_translation_model(text, "en", written, provider)
+    else:
+        result = (await translate_text(text, "en", written, provider))["text"]
+    text = speech_engines.to_common_script(result.strip(), written)
+    return {"text": spoken_cantonese_pronouns(text) if written == "yue" else text, "language": written}
+
+
+# The small translator sometimes writes Mandarin pronouns inside Cantonese. Spoken Cantonese uses 佢 for he/she/it
+# and 哋 for plurals. Only for translations, never for what people actually said; 其他 ("other") is left alone.
+MANDARIN_PRONOUNS_IN_CANTONESE = [(re.compile(r"[他她它][們们]"), "佢哋"), (re.compile(r"我[們们]"), "我哋"),
+                                  (re.compile(r"你[們们]"), "你哋"), (re.compile(r"(?<!其)[他她它]"), "佢")]
+
+
+def spoken_cantonese_pronouns(text):
+    for pattern, spoken in MANDARIN_PRONOUNS_IN_CANTONESE:
+        text = pattern.sub(spoken, text)
+    return text
+
+
 def mostly_latin(text):
     """A "Chinese" line that is mostly English words was really English (mixed pieces get mislabeled)."""
     letters = [character for character in text if character.isalpha()]

@@ -678,6 +678,11 @@
   .convo-body { min-width: 0; display: grid; gap: 4px; }
   .convo-said { margin: 0; font-size: 1.25em; letter-spacing: .03em; }
   .convo-en { margin: 0; opacity: .85; }
+  /* English lines, said in the language being learned */
+  .convo-study { display: grid; gap: 2px; padding-left: 10px; border-left: 2px solid color-mix(in srgb, currentColor 25%, transparent); }
+  .convo-study:empty { display: none; }
+  .convo-study-text { margin: 0; font-size: 1.15em; letter-spacing: .03em; }
+  .convo-study-text.pending { opacity: .45; }
   .convo-unsure { margin: 0; font-size: var(--t-xs); opacity: .6; }
   .convo-en[data-trust="rough"] { opacity: .65; font-style: italic; }
   .convo-en[data-trust="unclear"] { opacity: .5; font-style: italic; }
@@ -835,6 +840,7 @@
   dialog.practice.rec .convo-line { gap: 6px; }
   dialog.practice.rec .convo-said { font-size: calc(0.92rem * var(--convo-text-scale, 1)); letter-spacing: 0.01em; line-height: 1.35; }
   dialog.practice.rec .convo-en { font-size: calc(0.82rem * var(--convo-text-scale, 1)); line-height: 1.3; }
+  dialog.practice.rec .convo-study-text { font-size: calc(0.92rem * var(--convo-text-scale, 1)); letter-spacing: 0.01em; line-height: 1.35; }
   dialog.practice.rec .convo-time { font-size: 0.65rem; padding: 1px 6px; }
   dialog.practice.rec .convo-language { font-size: 0.62rem; padding: 0 6px; margin-right: 6px; }
   dialog.practice.rec .convo-partial { font-size: calc(0.9rem * var(--convo-text-scale, 1)); }
@@ -6812,6 +6818,7 @@
       const shown_lines = showing_digest ? digested : (conversation.lines || []);
       shown_lines.forEach((line, index) => append_conversation_line(reader, { ...line, language: app_language_code(line.language), could_be: (line.could_be || []).map(app_language_code) }, "saved:" + index));
       if (!shown_lines.length) log.appendChild(el("p", "pr-hint", esc(tr("r_convo_empty"))));
+      fill_study_translations(conversation_id, shown_lines, log);
     }
 
     /* which languages a conversation may contain */
@@ -6976,7 +6983,7 @@
           live.conversation_id = created.id || "";
         } catch (error) {}
       }
-      const query = new URLSearchParams({ languages: languages.join(","), target: "en", ticket, device: device_id(), conversation: live.conversation_id || "" });
+      const query = new URLSearchParams({ languages: languages.join(","), target: "en", study: server_language_code(live.lang) || "", ticket, device: device_id(), conversation: live.conversation_id || "" });
       const socket = new WebSocket(homeUrl().replace(/^http/, "ws") + "/live?" + query);
       socket.binaryType = "arraybuffer";
       home.socket = socket;
@@ -7065,6 +7072,14 @@
         // Auto-suggest once the line's translation is in, so suggestions see what it meant.
         const every = live_tuning().auto_suggest_every;
         if (message.done && every && home.lines_since_suggestion >= every && !home.suggesting) fetch_suggestions(home);
+      } else if (message.type === "study") {
+        const line_key = home.session_offset + ":" + message.id;
+        const line = home.lines_by_id.get(line_key);
+        if (!line) return;
+        line.study = message.text || "";
+        line.study_language = message.language || "";
+        show_study(document, line_key, line);
+        follow_latest(home);
       } else if (message.type === "error" && /another live session/.test(message.error || "")) {
         set_home_status(home, "failed", tr("r_home_busy_live"));
       }
@@ -7243,6 +7258,47 @@
       return `<span class="convo-speaker" style="--speaker-hue:${(speaker * 137) % 360}">${esc(tr("r_speaker", { n: speaker }))}</span>`;
     }
 
+    // English lines are also shown in the language being learned (Cantonese for Taishanese learners), with the
+    // word strip, so the transcript teaches in both directions.
+    function study_html(line) {
+      if (line.language !== "en") return "";
+      const expected = line.study || !(live && live.lang === "en");
+      return `<div class="convo-study">${line.study ? study_inner_html(line.study, line.study_language) : expected ? `<p class="convo-study-text pending">…</p>` : ""}</div>`;
+    }
+
+    function study_inner_html(text, server_code) {
+      const language = app_language_code(server_code || "yue");
+      const tag = language === "cmn" ? "zh-Hans" : isZh(text) ? "zh-Hant" : language;
+      return `<p class="convo-study-text" lang="${tag}"><span class="convo-language">${esc(langName(language))}</span>${esc(text)}</p>${isZh(text) ? compact_word_strip(text, language) : ""}`;
+    }
+
+    function show_study(root, line_key, line) {
+      const box = root.querySelector(`[data-line="${CSS.escape(line_key)}"] .convo-study`);
+      if (box) box.innerHTML = line.study ? study_inner_html(line.study, line.study_language) : "";
+    }
+
+    // Saved conversations from before this feature: ask the home computer for the missing translations (cached there).
+    async function fill_study_translations(conversation_id, lines, log) {
+      const waiting = lines.map((line, index) => ({ line, key: "saved:" + index }))
+        .filter(item => item.line.language === "en" && !item.line.study && item.line.text);
+      const study = server_language_code(store.get("polygrok-rec-lang") || "yue") || "yue";
+      for (let start = 0; start < waiting.length; start += 40) {
+        const batch = waiting.slice(start, start + 40);
+        let result = null;
+        try {
+          result = await (await home_request("/conversations/" + encodeURIComponent(conversation_id) + "/study", {
+            method: "POST", body: JSON.stringify({ language: study, texts: batch.map(item => item.line.text) }) })).json();
+        } catch (error) {}
+        if (!log.isConnected) return;
+        batch.forEach(item => {
+          item.line.study = (result && result.translations && result.translations[item.line.text]) || "";
+          item.line.study_language = (result && result.language) || study;
+          show_study(log, item.key, item.line);
+        });
+        if (!result || result.error) return;
+      }
+    }
+
     function append_conversation_line(home, line, line_key) {
       const log = $("rec-convo");
       if (!log) return;
@@ -7251,6 +7307,7 @@
         <div class="convo-body">
           <p class="convo-said" lang="${line.language === "en" ? "en" : "zh-Hant"}">${line.speaker ? speaker_chip_html(line.speaker) : ""}<span class="convo-language">${esc(language_badge(line))}</span>${esc(line.text)}</p>
           ${isZh(line.text) ? compact_word_strip(line.text, line.language || (live ? live.lang : "yue")) : ""}
+          ${study_html(line)}
           ${line.language === "en" ? "" : `<p class="convo-en" data-trust="${trust_level(line)}">${esc(english_with_trust(line) || "…")}</p>`}
           ${line.language !== "en" && line.agree != null && line.agree < 0.75 ? `<p class="convo-unsure">${esc(tr("r_unsure"))}</p>` : ""}
         </div>`);
