@@ -172,6 +172,13 @@ for line in open("tsn_word_fill.txt", encoding = "utf-8"):
 # The word list goes after the app's script, as data the app reads when first needed (see lex_data in page.html).
 words_json = json.dumps(lex, ensure_ascii = False, separators = (",", ":")).replace("</", "<\\/")
 page = page.rstrip("\n") + '\n<script type="application/json" id="polylang-words">' + words_json + '</script>\n'
+# One meaning per character, for the "Where the words come from" panel (also covers phrases made up on the fly from the word list).
+from etym import build_table
+chars = build_table("../dl/cc-cedict/cedict_1_0_ts_utf-8_mdbg.txt", json.dumps(data, ensure_ascii = False) + words_json)
+chars_json = json.dumps(chars, ensure_ascii = False, separators = (",", ":")).replace("</", "<\\/")
+app_at = page.index("\n<script>\n")                 # before the app's main script, so a card opened from a link has it
+page = page[:app_at] + '\n<script type="application/json" id="polylang-chars">' + chars_json + '</script>' + page[app_at:]
+
 
 
 open(sys.argv[1], "w", encoding = "utf-8").write(page)

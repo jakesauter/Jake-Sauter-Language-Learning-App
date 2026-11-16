@@ -19,3 +19,47 @@ f: Hibou/0,1,2
 d: Eule/0,1,2
 n: 貓頭鷹 is literally a "cat-headed eagle": an owl's face looks like a cat's. Mandarin uses the same three words.
 nt: Not in Stephen Li's dictionary, so the reading is a guess (頭 həu22 is confirmed; 貓 and 鷹 are not). Check with family.
+
+@ Word Fun | A stir (a sound or movement)
+g: move / still
+y: 動/dung6/0 ; 靜/zing6/1
+m: 动/dòng/0 ; 静/jing/1
+t: 動/əŋ32/0 ; 靜/dein32/1
+s: Ruido/0,1
+f: Bruit/0,1
+d: Geräusch/0,1
+n: Opposites make a new word: 動 "move" + 靜 "still" = 動靜, "any sign of activity", as in 有冇動靜? "Anything happening?" In Mandarin the second syllable goes toneless: dòngjing.
+nt: 動 əŋ32 (from 運動 vun32 əŋ32) and 靜 dein32 are both in Stephen Li's dictionary. Not confirmed as one word in Taishanese, so check with family.
+
+@ Word Fun | Thing, stuff
+g: east / west
+y: 東/dung1/0 ; 西/sai1/1
+m: 东/dōng/0 ; 西/xi/1
+t: 東/əŋ33/0 ; 西/ɬai33/1
+s: Cosa/0,1
+f: Truc/0,1
+d: Ding/0,1
+n: 東 "east" + 西 "west" = 東西, "a thing". A popular story: old Chang'an had an East Market and a West Market, so "buying east-west" meant going shopping. In everyday Cantonese the word for "thing" is 嘢 je5, and 東西 sounds bookish.
+nt: Stephen Li's dictionary: 東 əŋ33, 西 ɬai33. Everyday Taishanese says 嘢 yia33 for "thing".
+
+@ Word Fun | Business, trade
+g: buy / sell
+y: 買/maai5/0 ; 賣/maai6/1
+m: 买/mǎi/0 ; 卖/mai/1
+t: 買/mai33/0 ; 賣/mai32/1
+s: Negocio/0,1
+f: Commerce/0,1
+d: Handel/0,1
+n: 買 "buy" + 賣 "sell" = 買賣, "business". 買 and 賣 differ only by tone, in every language here: Mandarin mǎi / mài, Cantonese maai5 / maai6. 賣 is 買 with 出 "out" on top: buying is taking in, selling is sending out.
+nt: Stephen Li's dictionary: 買 mai33, 賣 mai32. Same tone split as Cantonese.
+
+@ Word Fun | Brothers
+g: younger brother / older brother
+y: 兄/hing1/1 ; 弟/dai6/0
+m: 弟/dì/0 ; 兄/xiong/1
+t: 兄/hein33/1 ; 弟/ai32/0
+s: Hermanos/0,1
+f: Frères/0,1
+d: Brüder/0,1
+n: 弟 "younger brother" + 兄 "older brother" = 弟兄, "brothers", also "brothers in arms". Mandarin also says 兄弟 xiōngdì, older first. Cantonese only says 兄弟 hing1 dai6.
+nt: Stephen Li's dictionary: 兄弟 hein33 ai32 "brothers". 弟 alone is hai21, but it changes to ai32 in 兄弟.
