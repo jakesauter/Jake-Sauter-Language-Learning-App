@@ -1,0 +1,21 @@
+@ Word Fun | Forget it.
+g: Forget it
+y: 算啦/syun3 laa1/0
+m: 算了/suàn le/0
+t: 罷就/ba32 dziau32/0
+s: Olvídalo/0
+f: Laisse tomber/0
+d: Vergiss es/0
+n: 算 means "count": 算了 is "count it as done", so let it go. Cantonese says 算啦 syun3 laa1 (or 罷就 baa6 zau6).
+nt: Stephen Li's dictionary: 罷就 ba32 dziau32 "drop it, let it go". Avoid the look-alike with 𠹌, it's vulgar.
+
+@ Word Fun | Owl
+g: cat / head / eagle
+y: 貓/maau1/0 ; 頭/tau4/1 ; 鷹/jing1/2
+m: 猫/māo/0 ; 头/tóu/1 ; 鹰/yīng/2
+t: 貓/miau33/0? ; 頭/həu22/1 ; 鷹/yein33/2?
+s: Búho/0,1,2
+f: Hibou/0,1,2
+d: Eule/0,1,2
+n: 貓頭鷹 is literally a "cat-headed eagle": an owl's face looks like a cat's. Mandarin uses the same three words.
+nt: Not in Stephen Li's dictionary, so the reading is a guess (頭 həu22 is confirmed; 貓 and 鷹 are not). Check with family.
