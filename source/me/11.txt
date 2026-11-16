@@ -1,0 +1,54 @@
+= 492 Forget it.
+pt: Esquece/0
+fa: ولش کن{velesh kon}/0
+fw: رهایش کن. || rahāyash kon.
+la: انسى{insa}/0
+eg: انسى. || insa.
+ms: انسَ الأمر. || insa al-amr.
+he: עזוב{azov}/0
+tr: Boş ver/0
+= 493 Owl
+pt: Coruja/0,1,2
+fa: جغد{joghd}/0,1,2
+fw: جغد || joghd
+la: بومة{būme}/0,1,2
+eg: بومة || būma
+ms: بومة || būma
+he: ינשוף{yanshuf}/0,1,2
+tr: Baykuş/0,1,2
+= 494 A stir (a sound or movement)
+pt: Movimento/0,1
+fa: سروصدا{sar-o-sedā}/0,1
+fw: جنب‌وجوش || jonb-o-jush
+la: حركة{ḥarake}/0,1
+eg: حركة || ḥaraka
+ms: حركة || ḥaraka
+he: תנועה{tnu'a}/0,1
+tr: Hareket/0,1
+= 495 Thing, stuff
+pt: Coisa/0,1
+fa: چیز{chiz}/0,1
+fw: چیز || chiz
+la: غرض{gharaḍ}/0,1
+eg: حاجة || ḥāga
+ms: شيء || shayʾ
+he: דבר{davar}/0,1
+tr: Şey/0,1
+= 496 Business, trade
+pt: Negócio/0,1
+fa: خرید و فروش{kharid-o-forush}/0,1
+fw: داد و ستد || dād-o-setad
+la: بيع وشرا{bēʿ w-shira}/0,1
+eg: بيع وشرا || bēʿ w-shira
+ms: تجارة || tijāra
+he: מסחר{miskhar}/0,1
+tr: Alışveriş/0,1
+= 497 Brothers
+pt: Irmãos/0,1
+fa: برادرها{barādar-hā}/0,1
+fw: برادران || barādarān
+la: إخوة{ikhwe}/0,1
+eg: إخوات || ikhwāt
+ms: إخوة || ikhwa
+he: אחים{akhim}/0,1
+tr: Kardeşler/0,1
