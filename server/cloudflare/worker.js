@@ -85,6 +85,9 @@ export default {
 
     const url = new URL(request.url);
     if (request.method === "GET" && url.pathname === "/health") return reply(200, { ok: true }, h);
+    // Flood guard: 60 requests a minute per visitor (a scripted flood would otherwise use up the daily Google quota).
+    if (env.PER_IP && !(await env.PER_IP.limit({ key: request.headers.get("CF-Connecting-IP") || "?" })).success)
+      return reply(429, { error: "Too many requests. Please wait a minute." }, h);
     if (request.method === "GET" && url.pathname === "/tatoeba") return tatoeba(url, h, ctx);
     if (request.method !== "POST" || url.pathname !== "/translate") return reply(404, { error: "Not found" }, h);
     if (!env.GOOGLE_KEY) return reply(500, { error: "The server has no Google key yet." }, h);
