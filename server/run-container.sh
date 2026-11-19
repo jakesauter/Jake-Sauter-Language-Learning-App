@@ -9,8 +9,8 @@ set -euo pipefail
 cd "$(dirname "$0")"
 google_key_file=/home/coderx/.config/polylang/google_translate_key
 mounts=(
-    --bind /home/coderx/models:/models:ro
-    --bind /home/coderx/.cache/huggingface:/hf:ro
+    --bind /mnt/storage/models:/models:ro
+    --bind /mnt/storage/hf-cache:/hf:ro
     --bind /mnt/storage/polylang-data:/data
     --bind /mnt/storage/polylang-site:/site:ro
 )
