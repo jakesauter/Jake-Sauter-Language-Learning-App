@@ -1,0 +1,423 @@
+= 498 Pea shoots
+pt: Brotos de ervilha/0,1
+fa: جوانه نخود فرنگی{javāne-ye nokhod-farangi}/0,1
+fw: جوانه نخود فرنگی || javāne-ye nokhod-farangi
+la: براعم البازيلا{barā'em el-bazilla}/0,1
+eg: براعم البسلة || barā'em el-bisilla
+ms: براعم البازلاء || barā'im al-bāzillā'
+he: נבטי אפונה{nivtei afuna}/0,1
+tr: Bezelye filizi/0,1
+= 499 Big bun (dai bao)
+pt: Pão recheado grande/0,1
+fa: نان بخارپز بزرگ{nān-e bokhār-paz-e bozorg}/0,1
+fw: نان بخارپز بزرگ || nān-e bokhār-paz-e bozorg
+la: كعكة محشية كبيرة{ka'ke maḥshiyye kbīre}/0,1
+eg: عيش محشي كبير || 'eesh maḥshi kibīr
+ms: كعكة محشوة كبيرة || ka'ka maḥshuwwa kabīra
+he: לחמניה ממולאת גדולה{lachmaniya memula'at gdola}/0,1
+tr: Büyük dolgulu çörek/0,1
+= 500 White rice
+pt: Arroz branco/0,1
+fa: برنج سفید{berenj-e sefid}/0,1
+fw: برنج سفید || berenj-e sefid
+la: رز أبيض{rezz abyaḍ}/0,1
+eg: رز أبيض || rozz abyaḍ
+ms: أرز أبيض || aruzz abyaḍ
+he: אורז לבן{orez lavan}/0,1
+tr: Beyaz pilav/0,1
+= 501 Chicken
+pt: Frango/0
+fa: مرغ{morgh}/0
+fw: مرغ || morgh
+la: جاج{jāj}/0
+eg: فراخ || firākh
+ms: دجاج || dajāj
+he: עוף{of}/0
+tr: Tavuk/0
+= 502 Steak
+pt: Bife/0,1
+fa: استیک{esteyk}/0,1
+fw: استیک || esteyk
+la: ستيك{steak}/0,1
+eg: ستيك || steak
+ms: شريحة لحم || sharīḥat laḥm
+he: סטייק{steyk}/0,1
+tr: Biftek/0,1
+= 503 Lobster
+pt: Lagosta/0,1
+fa: خرچنگ دریایی{kharchang-e daryāyi}/0,1
+fw: خرچنگ دریایی || kharchang-e daryāyi
+la: كركند{karkand}/0,1
+eg: استاكوزا || istakōza
+ms: كركند || karkand
+he: לובסטר{lobster}/0,1
+tr: Istakoz/0,1
+= 504 Fish
+pt: Peixe/0
+fa: ماهی{māhi}/0
+fw: ماهی || māhi
+la: سمك{samak}/0
+eg: سمك || samak
+ms: سمك || samak
+he: דג{dag}/0
+tr: Balık/0
+= 505 Shrimp
+pt: Camarão/0
+fa: میگو{meygu}/0
+fw: میگو || meygu
+la: قريدس{'rēdis}/0
+eg: جمبري || gambari
+ms: روبيان || rubyān
+he: שרימפס{shrimps}/0
+tr: Karides/0
+= 506 Crab
+pt: Caranguejo/0
+fa: خرچنگ{kharchang}/0
+fw: خرچنگ || kharchang
+la: سلطعون{sala'ṭūn}/0
+eg: كابوريا || kabūrya
+ms: سلطعون || salṭa'ūn
+he: סרטן{sartan}/0
+tr: Yengeç/0
+= 507 Pork
+pt: Carne de porco/0,1
+fa: گوشت خوک{gusht-e khuk}/0,1
+fw: گوشت خوک || gusht-e khuk
+la: لحم خنزير{laḥm khanzīr}/0,1
+eg: لحم خنزير || laḥm khanzīr
+ms: لحم الخنزير || laḥm al-khinzīr
+he: בשר חזיר{besar chazir}/0,1
+tr: Domuz eti/0,1
+= 508 Beef
+pt: Carne bovina/0,1
+fa: گوشت گاو{gusht-e gāv}/0,1
+fw: گوشت گاو || gusht-e gāv
+la: لحم بقر{laḥm ba'ar}/0,1
+eg: لحمة بقري || laḥma ba'ari
+ms: لحم البقر || laḥm al-baqar
+he: בשר בקר{besar bakar}/0,1
+tr: Sığır eti/0,1
+= 509 Lamb
+pt: Carne de cordeiro/0,1
+fa: گوشت بره{gusht-e barre}/0,1
+fw: گوشت بره || gusht-e barre
+la: لحم غنم{laḥm ghanam}/0,1
+eg: لحم ضاني || laḥm ḍāni
+ms: لحم الضأن || laḥm aḍ-ḍa'n
+he: בשר כבש{besar keves}/0,1
+tr: Kuzu eti/0,1
+= 510 Duck
+pt: Pato/0
+fa: اردک{ordak}/0
+fw: اردک || ordak
+la: بطة{baṭṭa}/0
+eg: بط || baṭṭ
+ms: بط || baṭṭ
+he: ברווז{barvaz}/0
+tr: Ördek/0
+= 511 Egg
+pt: Ovo/0,1
+fa: تخم‌مرغ{tokhm-e morgh}/0,1
+fw: تخم‌مرغ || tokhm-e morgh
+la: بيضة{bēḍa}/0,1
+eg: بيضة || bēḍa
+ms: بيضة || bayḍa
+he: ביצה{beytsa}/0,1
+tr: Yumurta/0,1
+= 512 Tofu
+pt: Tofu/0,1
+fa: توفو{tofu}/0,1
+fw: توفو || tofu
+la: توفو{tofu}/0,1
+eg: توفو || tofu
+ms: توفو || tofu
+he: טופו{tofu}/0,1
+tr: Tofu/0,1
+= 513 Bok choy
+pt: Acelga chinesa/0,1
+fa: کلم چینی{kalam-e chini}/0,1
+fw: کلم چینی || kalam-e chini
+la: ملفوف صيني{malfūf ṣīni}/0,1
+eg: كرنب صيني || kurumb ṣīni
+ms: ملفوف صيني || malfūf ṣīnī
+he: בוק צ'וי{bok choy}/0,1
+tr: Çin lahanası/0,1
+= 514 Choy sum
+pt: Choy sum/0,1
+fa: چوی سام{choy sām}/0,1
+fw: چوی سام || choy sām
+la: تشوي سم{choy sum}/0,1
+eg: تشوي سم || choy sum
+ms: تشوي سم || choy sum
+he: צ'וי סאם{choy sam}/0,1
+tr: Choy sum/0,1
+= 515 Chinese broccoli
+pt: Brócolis chinês/0,1
+fa: کلم بروکلی چینی{kalam brokoli-ye chini}/0,1
+fw: کلم بروکلی چینی || kalam brokoli-ye chini
+la: بروكلي صيني{brokoli ṣīni}/0,1
+eg: بروكلي صيني || brokoli ṣīni
+ms: بروكلي صيني || brūkūlī ṣīnī
+he: ברוקולי סיני{brokoli sini}/0,1
+tr: Çin brokolisi/0,1
+= 516 Bean sprouts
+pt: Broto de feijão/0,1
+fa: جوانه ماش{javāne-ye māsh}/0,1
+fw: جوانه ماش || javāne-ye māsh
+la: براعم الصويا{barā'em eṣ-ṣoya}/0,1
+eg: براعم فول الصويا || barā'im fūl eṣ-ṣoya
+ms: براعم الفاصولياء || barā'im al-fāṣūliyā'
+he: נבטים{nevatim}/0,1
+tr: Fasulye filizi/0,1
+= 517 Rice porridge (congee)
+pt: Mingau de arroz/0
+fa: شله برنج{sholle-ye berenj}/0
+fw: شله برنج || sholle-ye berenj
+la: عصيدة رز{'aṣīde rezz}/0
+eg: شوربة رز || shorbet rozz
+ms: عصيدة الأرز || 'aṣīdat al-aruzz
+he: דייסת אורז{daysat orez}/0
+tr: Pirinç lapası/0
+= 518 Soup
+pt: Sopa/0
+fa: سوپ{sup}/0
+fw: سوپ || sup
+la: شوربة{shōrbe}/0
+eg: شوربة || shorba
+ms: حساء || ḥasā'
+he: מרק{marak}/0
+tr: Çorba/0
+= 519 Dumplings
+pt: Guioza/0
+fa: دامپلینگ{dāmpling}/0
+fw: دامپلینگ || dāmpling
+la: فطائر محشية{faṭāyer maḥshiyye}/0
+eg: دامبلنج || dumpling
+ms: فطائر صينية محشوة || faṭā'ir ṣīniyya maḥshuwwa
+he: כיסונים{kisonim}/0
+tr: Mantı/0
+= 520 Wonton noodles
+pt: Macarrão com wonton/0,1
+fa: نودل با وونتون{nudel bā wonton}/0,1
+fw: نودل با وونتون || nudel bā wonton
+la: نودلز مع ونتون{nudelz ma' wonton}/0,1
+eg: نودلز بالونتون || nudelz bel-wonton
+ms: معكرونة بالونتون || ma'karūna bil-wonton
+he: אטריות וונטון{itriyot wonton}/0,1
+tr: Wonton erişte/0,1
+= 521 Barbecued pork (char siu)
+pt: Porco assado char siu/0,1
+fa: گوشت خوک کبابی{gusht-e khuk-e kabābi}/0,1
+fw: گوشت خوک کبابی || gusht-e khuk-e kabābi
+la: لحم خنزير مشوي{laḥm khanzīr mashwi}/0,1
+eg: لحم خنزير مشوي || laḥm khanzīr mashwi
+ms: لحم خنزير مشوي || laḥm khinzīr mashwī
+he: חזיר צלוי צ'אר סיו{chazir tsaluy char siu}/0,1
+tr: Char siu (kızarmış domuz)/0,1
+= 522 Roast pork (crispy skin)
+pt: Porco assado crocante/0,1
+fa: گوشت خوک سرخ‌شده ترد{gusht-e khuk-e sorkh-shode-ye tord}/0,1
+fw: گوشت خوک سرخ‌شده ترد || gusht-e khuk-e sorkh-shode-ye tord
+la: لحم خنزير مقرمش{laḥm khanzīr m'armesh}/0,1
+eg: لحم خنزير مقرمش || laḥm khanzīr me'armesh
+ms: لحم خنزير مقرمش || laḥm khinzīr muqarmash
+he: חזיר צלוי פריך{chazir tsaluy parich}/0,1
+tr: Çıtır domuz kızartması/0,1
+= 523 Shrimp dumplings (har gow)
+pt: Har gow (pastel de camarão)/0,1
+fa: دامپلینگ میگو{dāmpling-e meygu}/0,1
+fw: دامپلینگ میگو || dāmpling-e meygu
+la: فطيرة قريدس{faṭīret 'rēdis}/0,1
+eg: دامبلنج جمبري || dumpling gambari
+ms: فطيرة روبيان || faṭīrat rubyān
+he: כיסוני שרימפס{kisoney shrimps}/0,1
+tr: Karidesli mantı/0,1
+= 524 Siu mai
+pt: Siu mai/0,1
+fa: شائو مای{shāo māy}/0,1
+fw: شائو مای || shāo māy
+la: شوماي{shūmay}/0,1
+eg: شوماي || shūmay
+ms: شوماي || shūmāy
+he: שומאי{shumay}/0,1
+tr: Siu mai/0,1
+= 525 Rice noodle rolls (cheung fun)
+pt: Rolinhos de massa de arroz/0,1
+fa: رول نودل برنج{rol-e nudel-e berenj}/0,1
+fw: رول نودل برنج || rol-e nudel-e berenj
+la: لفائف نودلز الرز{lafāyef nudelz er-rezz}/0,1
+eg: رولات نودلز رز || rolāt nudelz rozz
+ms: لفائف معكرونة الأرز || lafā'if ma'karūnat al-aruzz
+he: גלילי אטריות אורז{glilei itriyot orez}/0,1
+tr: Pirinç eriştesi rulosu/0,1
+= 526 Rice noodles (mai fun)
+pt: Macarrão de arroz/0,1
+fa: نودل برنج{nudel-e berenj}/0,1
+fw: نودل برنج || nudel-e berenj
+la: شعيرية رز{sh'ayriyye rezz}/0,1
+eg: شعرية رز || sha'reyya rozz
+ms: شعيرية الأرز || sha'īriyyat al-aruzz
+he: אטריות אורז{itriyot orez}/0,1
+tr: Pirinç eriştesi/0,1
+= 527 Fried rice
+pt: Arroz frito/0,1
+fa: برنج سرخ‌شده{berenj-e sorkh-shode}/0,1
+fw: برنج سرخ‌شده || berenj-e sorkh-shode
+la: رز مقلي{rezz ma'li}/0,1
+eg: رز مقلي || rozz ma'li
+ms: أرز مقلي || aruzz maqlī
+he: אורז מטוגן{orez metugan}/0,1
+tr: Kızarmış pilav/0,1
+= 528 Chow mein
+pt: Chow mein (macarrão frito)/0,1
+fa: نودل سرخ‌شده{nudel-e sorkh-shode}/0,1
+fw: نودل سرخ‌شده || nudel-e sorkh-shode
+la: نودلز مقلية{nudelz ma'liyye}/0,1
+eg: نودلز مقلية || nudelz ma'leyya
+ms: معكرونة مقلية || ma'karūna maqliyya
+he: אטריות מוקפצות{itriyot mukpatsot}/0,1
+tr: Kızarmış erişte/0,1
+= 529 Chicken wings
+pt: Asinhas de frango/0,1
+fa: بال مرغ{bāl-e morgh}/0,1
+fw: بال مرغ || bāl-e morgh
+la: جوانح دجاج{jawāneḥ djāj}/0,1
+eg: أجنحة فراخ || agneḥet firākh
+ms: أجنحة الدجاج || ajniḥat ad-dajāj
+he: כנפי עוף{kanfei of}/0,1
+tr: Tavuk kanadı/0,1
+= 530 Egg tart
+pt: Pastel de nata/0,1
+fa: تارت تخم‌مرغ{tārt-e tokhm-e morgh}/0,1
+fw: تارت تخم‌مرغ || tārt-e tokhm-e morgh
+la: تارت بيض{tart bēḍ}/0,1
+eg: تارت بيض || tart bēḍ
+ms: فطيرة البيض || faṭīrat al-bayḍ
+he: טארט ביצים{tart beytsim}/0,1
+tr: Yumurtalı tart/0,1
+= 531 Bread
+pt: Pão/0,1
+fa: نان{nān}/0,1
+fw: نان || nān
+la: خبز{khebez}/0,1
+eg: عيش || 'eesh
+ms: خبز || khubz
+he: לחם{lechem}/0,1
+tr: Ekmek/0,1
+= 532 Milk
+pt: Leite/0,1
+fa: شیر{shir}/0,1
+fw: شیر || shir
+la: حليب{ḥalīb}/0,1
+eg: لبن || laban
+ms: حليب || ḥalīb
+he: חלב{chalav}/0,1
+tr: Süt/0,1
+= 533 Tea
+pt: Chá/0
+fa: چای{chāy}/0
+fw: چای || chāy
+la: شاي{shāy}/0
+eg: شاي || shāy
+ms: شاي || shāy
+he: תה{te}/0
+tr: Çay/0
+= 534 Orange
+pt: Laranja/0
+fa: پرتقال{porteghāl}/0
+fw: پرتقال || porteghāl
+la: بردقان{burd'ān}/0
+eg: برتقان || burtu'ān
+ms: برتقال || burtuqāl
+he: תפוז{tapuz}/0
+tr: Portakal/0
+= 535 Apple
+pt: Maçã/0
+fa: سیب{sib}/0
+fw: سیب || sib
+la: تفاحة{teffāḥa}/0
+eg: تفاحة || toffāḥa
+ms: تفاحة || tuffāḥa
+he: תפוח{tapuach}/0
+tr: Elma/0
+= 536 Banana
+pt: Banana/0
+fa: موز{moz}/0
+fw: موز || moz
+la: موزة{mōze}/0
+eg: موزة || mōza
+ms: موزة || mawza
+he: בננה{banana}/0
+tr: Muz/0
+= 537 Watermelon
+pt: Melancia/0,1
+fa: هندوانه{hendevāne}/0,1
+fw: هندوانه || hendevāne
+la: بطيخ{baṭṭīkh}/0,1
+eg: بطيخ || baṭṭīkh
+ms: بطيخ || baṭṭīkh
+he: אבטיח{avatiach}/0,1
+tr: Karpuz/0,1
+= 538 Sweet potato
+pt: Batata-doce/0,1
+fa: سیب‌زمینی شیرین{sib-zamini-ye shirin}/0,1
+fw: سیب‌زمینی شیرین || sib-zamini-ye shirin
+la: بطاطا حلوة{baṭāṭa ḥelwe}/0,1
+eg: بطاطا || baṭāṭa
+ms: بطاطا حلوة || baṭāṭā ḥulwa
+he: בטטה{batata}/0,1
+tr: Tatlı patates/0,1
+= 539 Potato
+pt: Batata/0,1
+fa: سیب‌زمینی{sib-zamini}/0,1
+fw: سیب‌زمینی || sib-zamini
+la: بطاطا{baṭāṭa}/0,1
+eg: بطاطس || baṭāṭis
+ms: بطاطس || baṭāṭis
+he: תפוח אדמה{tapuach adama}/0,1
+tr: Patates/0,1
+= 540 Corn
+pt: Milho/0,1
+fa: ذرت{zorrat}/0,1
+fw: ذرت || zorrat
+la: درة{dra}/0,1
+eg: درة || dora
+ms: ذرة || dhura
+he: תירס{tiras}/0,1
+tr: Mısır/0,1
+= 541 Soy sauce
+pt: Molho de soja/0,1
+fa: سس سویا{sos-e soyā}/0,1
+fw: سس سویا || sos-e soyā
+la: صلصة الصويا{ṣalṣet eṣ-ṣoya}/0,1
+eg: صوص صويا || ṣōṣ ṣoya
+ms: صلصة الصويا || ṣalṣat aṣ-ṣūyā
+he: רוטב סויה{rotev soya}/0,1
+tr: Soya sosu/0,1
+= 542 Ginger
+pt: Gengibre/0
+fa: زنجبیل{zanjabil}/0
+fw: زنجبیل || zanjabil
+la: زنجبيل{zanjabīl}/0
+eg: جنزبيل || ganzabīl
+ms: زنجبيل || zanjabīl
+he: ג'ינג'ר{jinjer}/0
+tr: Zencefil/0
+= 543 Green onion
+pt: Cebolinha/0
+fa: پیازچه{piyāzche}/0
+fw: پیازچه || piyāzche
+la: بصل أخضر{baṣal akhḍar}/0
+eg: بصل أخضر || baṣal akhḍar
+ms: بصل أخضر || baṣal akhḍar
+he: בצל ירוק{batsal yarok}/0
+tr: Taze soğan/0
+= 544 Garlic
+pt: Alho/0,1
+fa: سیر{sir}/0,1
+fw: سیر || sir
+la: توم{tūm}/0,1
+eg: توم || tōm
+ms: ثوم || thūm
+he: שום{shum}/0,1
+tr: Sarımsak/0,1

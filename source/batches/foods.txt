@@ -1,0 +1,516 @@
+@ Food Words | Pea shoots
+g: bean / sprout
+y: 豆/dau6/0 ; 苗/miu4/1
+m: 豆/dòu/0 ; 苗/miáo/1
+t: 豆/əu32/0 ; 苗/miau22/1?
+s: Brotes de guisante/0,1
+f: Pousses de pois/0,1
+d: Erbsensprossen/0,1
+n: 豆苗 dau6 miu4, "bean sprouts" in the sense of young shoots, are the tender pea-vine tips stir-fried with garlic.
+nt: 豆 əu32 is in Stephen Li's dictionary (the d drops, as in 豆腐 əu32 fu32). 苗 isn't, so miau22 is a guess. Check with family.
+
+@ Food Words | Big bun (dai bao)
+g: big / bun
+y: 大/daai6/0 ; 包/baau1/1
+m: 大/dà/0 ; 包/bāo/1
+t: 大/ai32/0 ; 包/bɔu335/1?
+s: Bollo grande relleno/0,1
+f: Grosse brioche farcie/0,1
+d: Großes gefülltes Brötchen/0,1
+n: 大包 daai6 baau1 is the big steamed bun stuffed with chicken, pork, egg and mushroom, a dim sum classic.
+nt: 大 ai32 (the d drops) and 包 bɔu335 "bun" are both in Stephen Li's dictionary; the pair together isn't.
+
+@ Food Words | White rice
+g: white / rice
+y: 白/baak6/0 ; 飯/faan6/1
+m: 白/bái/0 ; 饭/fàn/1
+t: 白/bak32/0 ; 飯/fan32/1?
+s: Arroz blanco/0,1
+f: Riz blanc/0,1
+d: Weißer Reis/0,1
+n: 白飯 baak6 faan6 is plain steamed rice. At home people mostly just say 飯.
+nt: 白 bak32 and 飯 fan32 are in Stephen Li's dictionary. The k of bak is barely released, which is why it can sound like "bhat fan".
+
+@ Food Words | Chicken
+g: chicken
+y: 雞/gai1/0
+m: 鸡/jī/0
+t: 雞/gai33/0
+s: Pollo/0
+f: Poulet/0
+d: Hähnchen/0
+n: 雞 gai1 is both the bird and the meat. White-cut chicken 白切雞 is the family-dinner favorite.
+nt: 雞 gai33 is in Stephen Li's dictionary.
+
+@ Food Words | Steak
+g: cow / cutlet
+y: 牛/ngau4/0 ; 扒/paa2/1
+m: 牛/niú/0 ; 排/pái/1
+t: 牛/ŋəu22/0 ; 扒/pa215/1
+s: Bistec/0,1
+f: Steak/0,1
+d: Steak/0,1
+n: 扒 paa2 is Hong Kong style for a "cutlet" off the grill. Mandarin says 牛排 niú pái instead.
+nt: 牛扒 ŋəu22 pa215 is in Stephen Li's dictionary.
+
+@ Food Words | Lobster
+g: dragon / shrimp
+y: 龍/lung4/0 ; 蝦/haa1/1
+m: 龙/lóng/0 ; 虾/xiā/1
+t: 龍/ləŋ22/0 ; 蝦/ha215/1?
+s: Langosta/0,1
+f: Homard/0,1
+d: Hummer/0,1
+n: A lobster is a "dragon shrimp". Ginger-and-scallion lobster is the banquet dish.
+nt: 龍 ləŋ22 and 蝦 ha215 are in Stephen Li's dictionary; the word 龍蝦 itself isn't.
+
+@ Food Words | Fish
+g: fish
+y: 魚/jyu2/0
+m: 鱼/yú/0
+t: 魚/ŋui215/0
+s: Pescado/0
+f: Poisson/0
+d: Fisch/0
+n: As food, 魚 often takes a rising tone, jyu2. A steamed whole fish means "plenty every year".
+nt: 魚 ŋui215 is in Stephen Li's dictionary.
+
+@ Food Words | Shrimp
+g: shrimp
+y: 蝦/haa1/0
+m: 虾/xiā/0
+t: 蝦/ha215/0
+s: Camarón/0
+f: Crevette/0
+d: Garnele/0
+n: 蝦 haa1 covers shrimp and prawns. Careful: 蝦人 haa1 jan4 means "to bully people".
+nt: 蝦 ha215 is in Stephen Li's dictionary; ha33 is the verb "to bully".
+
+@ Food Words | Crab
+g: crab
+y: 蟹/haai5/0
+m: 蟹/xiè/0
+t: 蟹/hai55/0
+s: Cangrejo/0
+f: Crabe/0
+d: Krabbe/0
+n: Mandarin usually says 螃蟹 páng xiè; 蟹 alone is understood and matches Cantonese.
+nt: 蟹 hai55 is in Stephen Li's dictionary.
+
+@ Food Words | Pork
+g: pig / meat
+y: 豬/zyu1/0 ; 肉/juk6/1
+m: 猪/zhū/0 ; 肉/ròu/1
+t: 豬/dzi33/0 ; 肉/ŋək32/1
+s: Cerdo/0,1
+f: Porc/0,1
+d: Schweinefleisch/0,1
+n: Meat words are animal + 肉 juk6 "meat": 豬肉, 牛肉, 羊肉.
+nt: 豬肉 dzi33 ŋək32 is in Stephen Li's dictionary.
+
+@ Food Words | Beef
+g: cow / meat
+y: 牛/ngau4/0 ; 肉/juk6/1
+m: 牛/niú/0 ; 肉/ròu/1
+t: 牛/ŋəu22/0 ; 肉/ŋək32/1
+s: Carne de res/0,1
+f: Bœuf/0,1
+d: Rindfleisch/0,1
+n: 牛肉 ngau4 juk6. Beef chow fun 乾炒牛河 is the dish to order.
+nt: 牛肉 ŋəu22 ŋək32 is in Stephen Li's dictionary.
+
+@ Food Words | Lamb
+g: sheep / meat
+y: 羊/joeng4/0 ; 肉/juk6/1
+m: 羊/yáng/0 ; 肉/ròu/1
+t: 羊/yiaŋ22/0 ; 肉/ŋək32/1?
+s: Cordero/0,1
+f: Agneau/0,1
+d: Lammfleisch/0,1
+n: 羊 joeng4 covers sheep and goats; 羊肉 is lamb or mutton.
+nt: 羊 yiaŋ22 and 肉 ŋək32 are in Stephen Li's dictionary; the pair isn't.
+
+@ Food Words | Duck
+g: duck
+y: 鴨/aap3/0
+m: 鸭/yā/0
+t: 鴨/ap335/0
+s: Pato/0
+f: Canard/0
+d: Ente/0
+n: Roast duck 燒鴨 siu1 aap3 hangs next to the char siu in every BBQ shop window.
+nt: 鴨 ap335 is in Stephen Li's dictionary.
+
+@ Food Words | Egg
+g: chicken / egg
+y: 雞/gai1/0 ; 蛋/daan2/1
+m: 鸡/jī/0 ; 蛋/dàn/1
+t: 雞/gai33/0 ; 蛋/an325/1
+s: Huevo/0,1
+f: Œuf/0,1
+d: Ei/0,1
+n: An egg is a "chicken egg". 蛋 often takes the rising tone daan2 in this word.
+nt: 雞蛋 gai33 an325 is in Stephen Li's dictionary. Again the d of 蛋 drops.
+
+@ Food Words | Tofu
+g: bean / curd
+y: 豆/dau6/0 ; 腐/fu6/1
+m: 豆/dòu/0 ; 腐/fu/1
+t: 豆/əu32/0 ; 腐/fu32/1
+s: Tofu/0,1
+f: Tofu/0,1
+d: Tofu/0,1
+n: 豆腐 dau6 fu6. Silky sweet tofu dessert is 豆腐花.
+nt: 豆腐 əu32 fu32 is in Stephen Li's dictionary.
+
+@ Food Words | Bok choy
+g: white / vegetable
+y: 白/baak6/0 ; 菜/coi3/1
+m: 白/bái/0 ; 菜/cài/1
+t: 白/bak32/0 ; 菜/tɔi33/1
+s: Bok choy/0,1
+f: Pak-choï/0,1
+d: Pak Choi/0,1
+n: The English name "bok choy" comes straight from Cantonese 白菜 baak6 coi3, "white vegetable".
+nt: 白菜 bak32 tɔi33 is in Stephen Li's dictionary. Cantonese c becomes t: coi3 → tɔi33.
+
+@ Food Words | Choy sum
+g: vegetable / heart
+y: 菜/coi3/0 ; 心/sam1/1
+m: 菜/cài/0 ; 心/xīn/1
+t: 菜/tɔi33/0 ; 心/ɬim21/1
+s: Choy sum/0,1
+f: Choy sum/0,1
+d: Choy Sum/0,1
+n: 菜心 coi3 sam1, "vegetable heart", is the flowering green blanched with oyster sauce.
+nt: 菜心 tɔi33 ɬim21 is in Stephen Li's dictionary.
+
+@ Food Words | Chinese broccoli
+g: mustard / orchid
+y: 芥/gaai3/0 ; 蘭/laan2/1
+m: 芥/jiè/0 ; 兰/lán/1
+t: 芥/gai33/0 ; 蘭/lan225/1
+s: Brócoli chino/0,1
+f: Brocoli chinois/0,1
+d: Chinesischer Brokkoli/0,1
+n: 芥蘭 gaai3 laan2 (gai lan) with oyster sauce is the dim sum vegetable.
+nt: 芥蘭 gai33 lan225 is in Stephen Li's dictionary.
+
+@ Food Words | Bean sprouts
+g: sprout / vegetable
+y: 芽/ngaa4/0 ; 菜/coi3/1
+m: 豆芽/dòu yá/0,1
+t: 芽/ŋa22/0 ; 菜/tɔi33/1
+s: Germinados de soya/0,1
+f: Germes de soja/0,1
+d: Sojasprossen/0,1
+n: Cantonese says 芽菜 ngaa4 coi3; Mandarin says 豆芽 dòu yá "bean sprouts".
+nt: 芽菜 ŋa22 tɔi33 is in Stephen Li's dictionary.
+
+@ Food Words | Rice porridge (congee)
+g: congee
+y: 粥/zuk1/0
+m: 粥/zhōu/0
+t: 粥/tsək55/0
+s: Congee (arroz caldoso)/0
+f: Congee (bouillie de riz)/0
+d: Reisbrei/0
+n: 粥 zuk1 is breakfast, sick-day food and late-night snack. 白粥 is plain congee.
+nt: 粥 tsək55 is in Stephen Li's dictionary.
+
+@ Food Words | Soup
+g: soup
+y: 湯/tong1/0
+m: 汤/tāng/0
+t: 湯水/hɔŋ33 sui55/0
+s: Sopa/0
+f: Soupe/0
+d: Suppe/0
+n: Slow-boiled soup 老火湯 is how Cantonese mothers show love.
+nt: Stephen Li's dictionary has 湯水 hɔŋ33 sui55, "soup and broth"; 湯 is hɔŋ33 in 雲吞湯 vun22 hun33 hɔŋ33.
+
+@ Food Words | Dumplings
+g: dumplings
+y: 餃子/gaau2 zi2/0
+m: 饺子/jiǎo zi/0
+t: 餃子/gɔu55 du55/0
+s: Dumplings (empanadillas)/0
+f: Raviolis chinois/0
+d: Teigtaschen/0
+n: 餃子 are the northern-style boiled dumplings. Cantonese dim sum has its own: 蝦餃 and 燒賣.
+nt: 餃子 gɔu55 du55 is in Stephen Li's dictionary.
+
+@ Food Words | Wonton noodles
+g: wonton / noodles
+y: 雲吞/wan4 tan1/0 ; 麵/min6/1
+m: 云吞/yún tūn/0 ; 面/miàn/1
+t: 雲吞/vun22 hun33/0 ; 麵/mein32/1
+s: Sopa de fideos con wontons/0,1
+f: Nouilles aux wontons/0,1
+d: Wan-Tan-Nudeln/0,1
+n: 雲吞 wan4 tan1, "swallowing clouds", is where the English word wonton comes from. Mandarin elsewhere says 馄饨.
+nt: 雲吞麵 vun22 hun33 mein32 is in Stephen Li's dictionary.
+
+@ Food Words | Barbecued pork (char siu)
+g: fork / roast
+y: 叉/caa1/0 ; 燒/siu1/1
+m: 叉/chā/0 ; 烧/shāo/1
+t: 叉/tsa33/0 ; 燒/siau335/1
+s: Cerdo asado char siu/0,1
+f: Porc laqué (char siu)/0,1
+d: Gegrilltes Schweinefleisch (Char Siu)/0,1
+n: 叉燒 caa1 siu1 is "fork-roasted": the pork was skewered and roasted over fire.
+nt: 叉燒 tsa33 siau335 is in Stephen Li's dictionary.
+
+@ Food Words | Roast pork (crispy skin)
+g: roast / meat
+y: 燒/siu1/0 ; 肉/juk6/1
+m: 烧/shāo/0 ; 肉/ròu/1
+t: 燒/siau33/0 ; 肉/ŋək32/1?
+s: Cerdo asado crujiente/0,1
+f: Porc rôti croustillant/0,1
+d: Krosser Schweinebraten/0,1
+n: 燒肉 siu1 juk6 is the crackling-skin pork belly. A whole roast pig is brought to weddings and offerings.
+nt: 燒 siau33 and 肉 ŋək32 are in Stephen Li's dictionary; the pair isn't.
+
+@ Food Words | Shrimp dumplings (har gow)
+g: shrimp / dumpling
+y: 蝦/haa1/0 ; 餃/gaau2/1
+m: 虾/xiā/0 ; 饺/jiǎo/1
+t: 蝦/ha215/0 ; 餃/gɔu55/1?
+s: Har gow (empanadillas de camarón)/0,1
+f: Har gow (raviolis aux crevettes)/0,1
+d: Har Gow (Garnelen-Teigtaschen)/0,1
+n: 蝦餃 haa1 gaau2 (har gow): a dim sum kitchen is judged by its har gow wrapper.
+nt: 蝦 ha215 and 餃 gɔu55 (from 餃子) are in Stephen Li's dictionary; 蝦餃 isn't.
+
+@ Food Words | Siu mai
+g: cook / sell
+y: 燒/siu1/0 ; 賣/maai2/1
+m: 烧/shāo/0 ; 卖/mài/1
+t: 燒/siau33/0 ; 賣/mai325/1
+s: Siu mai/0,1
+f: Siu mai/0,1
+d: Siu Mai/0,1
+n: 燒賣 siu1 maai2, the open-top pork and shrimp dumpling. Usually ordered with har gow.
+nt: 燒賣 siau33 mai325 is in Stephen Li's dictionary.
+
+@ Food Words | Rice noodle rolls (cheung fun)
+g: intestine / noodle
+y: 腸/coeng2/0 ; 粉/fan2/1
+m: 肠/cháng/0 ; 粉/fěn/1
+t: 腸/tsiaŋ225/0 ; 粉/fun55/1?
+s: Rollos de fideo de arroz/0,1
+f: Rouleaux de nouilles de riz/0,1
+d: Reisnudelrollen/0,1
+n: 腸粉 coeng2 fan2 are named for their shape, like a sausage (腸). Shrimp, beef or char siu inside, sweet soy sauce on top.
+nt: 腸 tsiaŋ225 (as in 臘腸) and 粉 fun55 are in Stephen Li's dictionary; 腸粉 isn't.
+
+@ Food Words | Rice noodles (mai fun)
+g: rice / noodle
+y: 米/mai5/0 ; 粉/fan2/1
+m: 米/mǐ/0 ; 粉/fěn/1
+t: 米/mai55/0 ; 粉/fun55/1
+s: Fideos de arroz/0,1
+f: Vermicelles de riz/0,1
+d: Reisnudeln/0,1
+n: 米粉 mai5 fan2 are the thin rice vermicelli, as in Singapore noodles 星洲炒米.
+nt: 米粉 mai55 fun55 is in Stephen Li's dictionary.
+
+@ Food Words | Fried rice
+g: stir-fried / rice
+y: 炒/caau2/0 ; 飯/faan6/1
+m: 炒/chǎo/0 ; 饭/fàn/1
+t: 炒/tsɔu55/0 ; 飯/fan32/1
+s: Arroz frito/0,1
+f: Riz frit/0,1
+d: Gebratener Reis/0,1
+n: Yeung Chow fried rice 揚州炒飯 is the restaurant standard.
+nt: 炒飯 tsɔu55 fan32 is in Stephen Li's dictionary.
+
+@ Food Words | Chow mein
+g: stir-fried / noodles
+y: 炒/caau2/0 ; 麵/min6/1
+m: 炒/chǎo/0 ; 面/miàn/1
+t: 炒/tsɔu55/0 ; 麵/mein32/1
+s: Chow mein (fideos fritos)/0,1
+f: Chow mein (nouilles sautées)/0,1
+d: Chow Mein (gebratene Nudeln)/0,1
+n: "Chow mein" came to America from Taishanese-speaking cooks: tsɔu55 mein32 is very close to the English.
+nt: 炒麵 tsɔu55 mein32 is in Stephen Li's dictionary.
+
+@ Food Words | Chicken wings
+g: chicken / wing
+y: 雞/gai1/0 ; 翼/jik6/1
+m: 鸡/jī/0 ; 翅/chì/1
+t: 雞/gai33/0 ; 翼/yɛt21/1
+s: Alitas de pollo/0,1
+f: Ailes de poulet/0,1
+d: Hähnchenflügel/0,1
+n: Cantonese wings are 翼 jik6; Mandarin says 翅 chì.
+nt: 雞翼 gai33 yɛt21 is in Stephen Li's dictionary.
+
+@ Food Words | Egg tart
+g: egg / tart
+y: 蛋/daan6/0 ; 撻/taat1/1
+m: 蛋/dàn/0 ; 挞/tà/1
+t: 蛋/an32/0 ; 撻/tat55/1
+s: Tarta de huevo/0,1
+f: Tartelette aux œufs/0,1
+d: Eiertörtchen/0,1
+n: 撻 taat1 is just the English word "tart" borrowed into Cantonese.
+nt: 蛋撻 an32 tat55 is in Stephen Li's dictionary.
+
+@ Food Words | Bread
+g: flour / bun
+y: 麵/min6/0 ; 包/baau1/1
+m: 面/miàn/0 ; 包/bāo/1
+t: 麵/mein32/0 ; 包/bɔu33/1
+s: Pan/0,1
+f: Pain/0,1
+d: Brot/0,1
+n: Bread is a "flour bun". A pineapple bun 菠蘿包 has no pineapple, just a crackly top.
+nt: 麵包 mein32 bɔu33 is in Stephen Li's dictionary.
+
+@ Food Words | Milk
+g: cow / milk
+y: 牛/ngau4/0 ; 奶/naai5/1
+m: 牛/niú/0 ; 奶/nǎi/1
+t: 牛/ŋəu22/0 ; 奶/nai21/1
+s: Leche/0,1
+f: Lait/0,1
+d: Milch/0,1
+n: Hong Kong milk tea 奶茶 naai5 caa4 is strong tea with evaporated milk.
+nt: 牛奶 ŋəu22 nai21 is in Stephen Li's dictionary.
+
+@ Food Words | Tea
+g: tea
+y: 茶/caa4/0
+m: 茶/chá/0
+t: 茶/tsa22/0
+s: Té/0
+f: Thé/0
+d: Tee/0
+n: 飲茶 jam2 caa4, "drink tea", means going for dim sum.
+nt: 茶 tsa22 is in Stephen Li's dictionary, and 飲茶 is ŋim55 tsa22.
+
+@ Food Words | Orange
+g: orange
+y: 橙/caang2/0
+m: 橙/chéng/0
+t: 橙/tsaŋ225/0
+s: Naranja/0
+f: Orange/0
+d: Orange/0
+n: Oranges and tangerines are New Year gifts: 橙 and 柑 sound lucky.
+nt: 橙 tsaŋ225 is in Stephen Li's dictionary.
+
+@ Food Words | Apple
+g: apple
+y: 蘋果/ping4 gwo2/0
+m: 苹果/píng guǒ/0
+t: 蘋果/pein22 gɔ55/0
+s: Manzana/0
+f: Pomme/0
+d: Apfel/0
+n: 蘋 ping4 sounds like 平安 "safe and well", so apples are a get-well gift.
+nt: 蘋果 pein22 gɔ55 is in Stephen Li's dictionary.
+
+@ Food Words | Banana
+g: banana
+y: 香蕉/hoeng1 ziu1/0
+m: 香蕉/xiāng jiāo/0
+t: 香蕉/hiaŋ33 diau21/0
+s: Plátano/0
+f: Banane/0
+d: Banane/0
+n: 香蕉 hoeng1 ziu1, "fragrant plantain".
+nt: 香蕉 hiaŋ33 diau21 is in Stephen Li's dictionary. It's also a mild slur ("yellow outside, white inside"), so mind the context.
+
+@ Food Words | Watermelon
+g: west / melon
+y: 西/sai1/0 ; 瓜/gwaa1/1
+m: 西/xī/0 ; 瓜/guā/1
+t: 西/ɬai33/0 ; 瓜/ga33/1
+s: Sandía/0,1
+f: Pastèque/0,1
+d: Wassermelone/0,1
+n: A "western melon": it came to China along the Silk Road from the west.
+nt: 西瓜 ɬai33 ga33 is in Stephen Li's dictionary.
+
+@ Food Words | Sweet potato
+g: foreign / tuber
+y: 番/faan1/0 ; 薯/syu2/1
+m: 番/fān/0 ; 薯/shǔ/1
+t: 番/fan33/0 ; 薯/si225/1
+s: Camote/0,1
+f: Patate douce/0,1
+d: Süßkartoffel/0,1
+n: 番 faan1 marks things that came from abroad. Mandarin speakers also say 红薯 hóng shǔ.
+nt: 番薯 fan33 si225 is in Stephen Li's dictionary.
+
+@ Food Words | Potato
+g: tuber / little
+y: 薯/syu4/0 ; 仔/zai2/1
+m: 土豆/tǔ dòu/0,1
+t: 薯/si22/0 ; 仔/dɔi55/1
+s: Papa/0,1
+f: Pomme de terre/0,1
+d: Kartoffel/0,1
+n: Cantonese 薯仔 syu4 zai2 is a "little tuber". Mandarin says 土豆 tǔ dòu.
+nt: 薯仔 si22 dɔi55 is in Stephen Li's dictionary.
+
+@ Food Words | Corn
+g: millet / rice
+y: 粟/suk1/0 ; 米/mai5/1
+m: 玉米/yù mǐ/0,1
+t: 粟/ɬək55/0 ; 米/mai55/1
+s: Maíz/0,1
+f: Maïs/0,1
+d: Mais/0,1
+n: Cantonese 粟米 suk1 mai5; Mandarin 玉米 yù mǐ. Corn soup 粟米羹 is a restaurant starter.
+nt: 粟米 ɬək55 mai55 is in Stephen Li's dictionary.
+
+@ Food Words | Soy sauce
+g: fermented bean / oil
+y: 豉/si6/0 ; 油/jau4/1
+m: 酱油/jiàng yóu/0,1
+t: 豉/si32/0 ; 油/yiu22/1
+s: Salsa de soya/0,1
+f: Sauce soja/0,1
+d: Sojasoße/0,1
+n: Cantonese 豉油 si6 jau4; Mandarin 酱油 jiàng yóu.
+nt: 豉油 si32 yiu22 is in Stephen Li's dictionary.
+
+@ Food Words | Ginger
+g: ginger
+y: 薑/goeng1/0
+m: 姜/jiāng/0
+t: 薑/giaŋ335/0
+s: Jengibre/0
+f: Gingembre/0
+d: Ingwer/0
+n: Ginger and scallion 薑葱 goeng1 cung1 go with steamed fish, crab and lobster.
+nt: 薑 giaŋ335 is in Stephen Li's dictionary.
+
+@ Food Words | Green onion
+g: green onion
+y: 葱/cung1/0
+m: 葱/cōng/0
+t: 葱/təŋ215/0
+s: Cebollín/0
+f: Ciboule/0
+d: Frühlingszwiebel/0
+n: 葱 cung1 is scallion. Scallion pancakes are 葱油餅.
+nt: 葱 təŋ215 is in Stephen Li's dictionary. Cantonese c becomes t again.
+
+@ Food Words | Garlic
+g: garlic / clove
+y: 蒜/syun3/0 ; 頭/tau4/1
+m: 大蒜/dà suàn/0,1
+t: 蒜子/ɬɔn21 du55/0,1
+s: Ajo/0,1
+f: Ail/0,1
+d: Knoblauch/0,1
+n: Cantonese says 蒜頭 syun3 tau4, "garlic head". Pea shoots and greens are stir-fried with it.
+nt: Taishanese says 蒜子 ɬɔn21 du55 instead, in Stephen Li's dictionary.

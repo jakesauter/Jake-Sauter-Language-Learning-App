@@ -83,7 +83,9 @@ for part in "ab":
         e["g_yue"], e["g_cmn"] = gy5[e["en"]], gc5[e["en"]]
         data.append(e)
 
-order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun"]
+data += parse("batches/foods.txt")   # "Food Words" sorts last, so the numbers in me/*.txt stay put
+
+order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:
