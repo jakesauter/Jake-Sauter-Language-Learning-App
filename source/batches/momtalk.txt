@@ -52,3 +52,58 @@ f: Arrête de rabâcher !/0,1,2,3
 d: Hör auf zu nörgeln!/0,1,2,3
 n: 咪 mai5 is the casual "don't": 咪咁囉嗦啦, "don't nag so much". The villain line: say it to a Cantonese mom at your own risk.
 nt: Put together from 唔好 mɔu55 and 唠唣 lɔu22 dɔu32(5) (both in Stephen Li's dictionary); the sentence itself isn't. Check with family.
+
+@ Mom Talk | I tell you, but you don't listen
+g: say / (done) / you / still / not / listen
+y: 講/gong2/0 ; 咗/zo2/1 ; 你/nei5/2 ; 又/jau6/3 ; 唔/m4/4 ; 聽/teng1/5
+m: 讲/jiǎng/0 ; 了/le/1 ; 你/nǐ/2 ; 又/yòu/3 ; 不/bù/4 ; 听/tīng/5
+t: 讲/gɔŋ55/0 ; 你/ni33/2 ; 又/yiu32/3 ; 唔/m22/4 ; 听/hiaŋ33/5
+s: Te lo digo y no escuchas/0,1,2,3,4,5
+f: Je te le dis, et tu n'écoutes pas/0,1,2,3,4,5
+d: Ich sag's dir, und du hörst nicht zu/0,1,2,3,4,5
+n: The start of a famous parent rant (it went viral as "Cantonese trap music"). Each line takes the last word of the one before: 講 say → 聽 listen → 明 understand → 做 do → 錯 wrong → 認 admit. 咗 zo2 marks something done; 又 jau6 here is "and yet".
+nt: Each word is in Stephen Li's dictionary (讲 gɔŋ55, 你 ni33, 又 yiu32, 唔 m22, 听 hiaŋ33 as in 听讲); the sentence is put together here, without a Taishanese 咗. Check with family.
+
+@ Mom Talk | You listen, but you don't understand
+g: listen / (done) / you / still / not / understand
+y: 聽/teng1/0 ; 咗/zo2/1 ; 你/nei5/2 ; 又/jau6/3 ; 唔/m4/4 ; 明/ming4/5
+m: 听/tīng/0 ; 了/le/1 ; 你/nǐ/2 ; 又/yòu/3 ; 不/bù/4 ; 明白/míngbai/5
+t: 听/hiaŋ33/0 ; 你/ni33/2 ; 又/yiu32/3 ; 唔/m22/4 ; 明/mein22/5
+s: Escuchas y no entiendes/0,1,2,3,4,5
+f: Tu écoutes, et tu ne comprends pas/0,1,2,3,4,5
+d: Du hörst zu und verstehst es nicht/0,1,2,3,4,5
+n: Line 2 of the rant. 明 ming4 alone means "understand" in Cantonese (Mandarin needs 明白 míngbai).
+nt: 明 mein22 "to understand" is in Stephen Li's dictionary; the sentence is put together here. Check with family.
+
+@ Mom Talk | You understand, but you don't do it
+g: understand / (done) / you / still / not / do
+y: 明/ming4/0 ; 咗/zo2/1 ; 你/nei5/2 ; 又/jau6/3 ; 唔/m4/4 ; 做/zou6/5
+m: 明白/míngbai/0 ; 了/le/1 ; 你/nǐ/2 ; 又/yòu/3 ; 不/bù/4 ; 做/zuò/5
+t: 明/mein22/0 ; 你/ni33/2 ; 又/yiu32/3 ; 唔/m22/4 ; 做/du33/5
+s: Entiendes y no lo haces/0,1,2,3,4,5
+f: Tu comprends, et tu ne le fais pas/0,1,2,3,4,5
+d: Du verstehst es und machst es nicht/0,1,2,3,4,5
+n: Line 3 of the rant.
+nt: 做 du33 is in Stephen Li's dictionary (the z becomes d in Taishanese); the sentence is put together here. Check with family.
+
+@ Mom Talk | You do it, but you do it wrong
+g: do / but / do wrong
+y: 做/zou6/0 ; 又/jau6/1 ; 做錯/zou6 co3/2
+m: 做/zuò/0 ; 又/yòu/1 ; 做错/zuò cuò/2
+t: 做/du33/0 ; 又/yiu32/1 ; 做错/du33 tɔ33/2
+s: Lo haces, pero lo haces mal/0,1,2
+f: Tu le fais, mais tu le fais mal/0,1,2
+d: Du machst es, aber du machst es falsch/0,1,2
+n: Line 4 of the rant. 做錯 zou6 co3 is "do wrong, make a mistake".
+nt: 做错 du33 tɔ33 "to make a mistake" is in Stephen Li's dictionary.
+
+@ Mom Talk | It's wrong, and you won't admit it
+g: wrong / (done) / you / then / not / admit
+y: 錯/co3/0 ; 咗/zo2/1 ; 你/nei5/2 ; 就/zau6/3 ; 唔/m4/4 ; 認/jing6/5
+m: 错/cuò/0 ; 了/le/1 ; 你/nǐ/2 ; 就/jiù/3 ; 不/bú/4 ; 认/rèn/5
+t: 错/tɔ33/0 ; 你/ni33/2 ; 就/dziau32/3 ; 唔/m22/4 ; 认/ŋin32/5
+s: Te equivocas y no lo admites/0,1,2,3,4,5
+f: Tu te trompes, et tu ne l'admets pas/0,1,2,3,4,5
+d: Es ist falsch, und du gibst es nicht zu/0,1,2,3,4,5
+n: The last line of the rant. 認 jing6 is "admit": 認錯 jing6 co3 is "admit you're wrong".
+nt: 错 tɔ33, 认 ŋin32 "to admit" and 认错 ŋin32 tɔ33 are in Stephen Li's dictionary; the sentence is put together here. Check with family.

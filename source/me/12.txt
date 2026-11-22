@@ -466,3 +466,48 @@ eg: كفاية زنّ! || kifāya zann!
 ms: كفى إلحاحًا! || kafā ilḥāḥan!
 he: די לנדנד!{dai lenadned!}/0,1,2,3
 tr: Dırdır etmeyi bırak!/0,1,2,3
+= 550 I tell you, but you don't listen
+pt: Eu te falo e você não escuta/0,1,2,3,4,5
+fa: بهت می‌گم، گوش نمی‌دی{behet migam, gush nemidi}/0,1,2,3,4,5
+fw: بهت می‌گم، گوش نمی‌دی || behet migam, gush nemidi
+la: بحكيلك وما بتسمع{baḥkīlak w ma btisma'}/0,1,2,3,4,5
+eg: بقولك ومبتسمعش || ba'ūlak w mabtisma'sh
+ms: أقول لك ولا تسمع || aqūlu laka wa lā tasma'
+he: אני אומר לך ואתה לא מקשיב{ani omer lecha ve'ata lo makshiv}/0,1,2,3,4,5
+tr: Söylüyorum, dinlemiyorsun/0,1,2,3,4,5
+= 551 You listen, but you don't understand
+pt: Você escuta e não entende/0,1,2,3,4,5
+fa: گوش می‌دی، ولی نمی‌فهمی{gush midi, vali nemifahmi}/0,1,2,3,4,5
+fw: گوش می‌دی، ولی نمی‌فهمی || gush midi, vali nemifahmi
+la: بتسمع وما بتفهم{btisma' w ma btifham}/0,1,2,3,4,5
+eg: بتسمع ومبتفهمش || btisma' w mabtifhamsh
+ms: تسمع ولا تفهم || tasma'u wa lā tafham
+he: אתה מקשיב ולא מבין{ata makshiv ve'lo mevin}/0,1,2,3,4,5
+tr: Dinliyorsun, anlamıyorsun/0,1,2,3,4,5
+= 552 You understand, but you don't do it
+pt: Você entende e não faz/0,1,2,3,4,5
+fa: می‌فهمی، ولی انجامش نمی‌دی{mifahmi, vali anjāmesh nemidi}/0,1,2,3,4,5
+fw: می‌فهمی، ولی انجامش نمی‌دی || mifahmi, vali anjāmesh nemidi
+la: بتفهم وما بتعمل{btifham w ma bta'mel}/0,1,2,3,4,5
+eg: بتفهم ومبتعملش || btifham w mabti'milsh
+ms: تفهم ولا تفعل || tafhamu wa lā taf'al
+he: אתה מבין ולא עושה{ata mevin ve'lo ose}/0,1,2,3,4,5
+tr: Anlıyorsun, yapmıyorsun/0,1,2,3,4,5
+= 553 You do it, but you do it wrong
+pt: Você faz, mas faz errado/0,1,2
+fa: انجامش می‌دی، ولی اشتباه{anjāmesh midi, vali eshtebāh}/0,1,2
+fw: انجامش می‌دی، ولی اشتباه || anjāmesh midi, vali eshtebāh
+la: بتعمل بس غلط{bta'mel bass ghalat}/0,1,2
+eg: بتعمل بس غلط || bti'mil bass ghalaṭ
+ms: تفعل لكن خطأً || taf'alu lākin khaṭa'an
+he: אתה עושה, אבל לא נכון{ata ose, aval lo nachon}/0,1,2
+tr: Yapıyorsun ama yanlış yapıyorsun/0,1,2
+= 554 It's wrong, and you won't admit it
+pt: Está errado, e você não admite/0,1,2,3,4,5
+fa: اشتباهه، ولی قبول نمی‌کنی{eshtebāhe, vali qabul nemikoni}/0,1,2,3,4,5
+fw: اشتباهه، ولی قبول نمی‌کنی || eshtebāhe, vali qabul nemikoni
+la: غلطت وما بتعترف{ghlett w ma bti'teref}/0,1,2,3,4,5
+eg: غلطت ومبتعترفش || ghlett w mabti'tirifsh
+ms: أخطأت ولا تعترف || akhṭa'ta wa lā ta'tarif
+he: טעית ואתה לא מודה{ta'ita ve'ata lo mode}/0,1,2,3,4,5
+tr: Yanlış, ama kabul etmiyorsun/0,1,2,3,4,5
