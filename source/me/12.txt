@@ -421,3 +421,48 @@ eg: توم || tōm
 ms: ثوم || thūm
 he: שום{shum}/0,1
 tr: Sarımsak/0,1
+= 545 Nagging, going on and on
+pt: Chato, que não para de repetir/0
+fa: غرغرو{ghor-ghoru}/0
+fw: غرغرو || ghor-ghoru
+la: نقّ{na''}/0
+eg: زنّ || zann
+ms: إلحاح || ilḥāḥ
+he: נודניק{nudnik}/0
+tr: Dırdırcı/0
+= 546 Nag, nag, nag (on and on)
+pt: Reclamar sem parar/0
+fa: یک‌ریز غر زدن{yek-riz ghor zadan}/0
+fw: یک‌ریز غر زدن || yek-riz ghor zadan
+la: نقّ ونقّ{na'' w na''}/0
+eg: زنّ على الودان || zann 'ala l-widān
+ms: إلحاح متواصل || ilḥāḥ mutawāṣil
+he: לנדנד בלי הפסקה{lenadned bli hafsaka}/0
+tr: Durmadan dırdır etmek/0
+= 547 Grumbling back (yi yi o o)
+pt: Resmungar/0
+fa: زیر لب غر زدن{zir-e lab ghor zadan}/0
+fw: زیر لب غر زدن || zir-e lab ghor zadan
+la: تذمّر{tzammor}/0
+eg: برطمة || barṭama
+ms: تذمّر || tadhammur
+he: לרטון{lirton}/0
+tr: Söylenmek/0
+= 548 Stop whining!
+pt: Para de resmungar!/0,1,2
+fa: غر نزن!{ghor nazan!}/0,1,2
+fw: غر نزن! || ghor nazan!
+la: بلا نقّ!{bala na''!}/0,1,2
+eg: بطّل زنّ! || baṭṭal zann!
+ms: كفّ عن التذمّر! || kuff 'an at-tadhammur!
+he: די לרטון!{dai lirton!}/0,1,2
+tr: Söylenmeyi bırak!/0,1,2
+= 549 Stop nagging!
+pt: Para de encher!/0,1,2,3
+fa: این‌قدر غر نزن!{in-qadr ghor nazan!}/0,1,2,3
+fw: این‌قدر غر نزن! || in-qadr ghor nazan!
+la: خلص نقّ!{khalas na''!}/0,1,2,3
+eg: كفاية زنّ! || kifāya zann!
+ms: كفى إلحاحًا! || kafā ilḥāḥan!
+he: די לנדנד!{dai lenadned!}/0,1,2,3
+tr: Dırdır etmeyi bırak!/0,1,2,3

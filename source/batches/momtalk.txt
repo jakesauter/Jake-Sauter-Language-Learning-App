@@ -1,0 +1,54 @@
+@ Mom Talk | Nagging, going on and on
+g: nag
+y: 囉嗦/lo1 so1/0
+m: 啰嗦/luō suo/0
+t: 唠唣/lɔu22 dɔu325/0
+s: Pesado, que no para de repetir/0
+f: Rabâcheur/0
+d: Nervig, immer dasselbe/0
+n: 囉嗦 lo1 so1 is long-winded or naggy: 你好囉嗦 nei5 hou2 lo1 so1, "you nag so much". Mandarin says the same word, 啰嗦 luō suo.
+nt: Stephen Li's dictionary: 唠唣 lɔu22 dɔu32(5) "chattering, annoying"; 唣 dɔu32 alone is "to nag, to pester".
+
+@ Mom Talk | Nag, nag, nag (on and on)
+g: nag on and on
+y: 囉囉嗦嗦/lo1 lo1 so1 so1/0
+m: 啰啰嗦嗦/luō luo suō suo/0
+t: 唠唠唣唣/lɔu22 lɔu22 dɔu32 dɔu32/0?
+s: Dale que dale/0
+f: Rabâcher sans arrêt/0
+d: Ständig herumnörgeln/0
+n: Doubling a word makes it go on and on: 囉囉嗦嗦 is nagging that never stops, one of every Cantonese mother's favorite words. Mandarin doubles it the same way.
+nt: Made by doubling 唠唣 from Stephen Li's dictionary; the doubled form isn't in it. Check with family.
+
+@ Mom Talk | Grumbling back (yi yi o o)
+g: grumble grumble
+y: 咦咦哦哦/ji1 ji1 o1 o1/0
+m: 嘟嘟囔囔/dū du nāng nang/0
+t: 发牢骚/fat33 lɔu22 ɬɔu33/0
+s: Refunfuñar/0
+f: Ronchonner/0
+d: Herummaulen/0
+n: 咦咦哦哦 ji1 ji1 o1 o1 is the sound of a kid grumbling instead of doing what they're told (also written 依依哦哦). Mandarin has its own sound word for it, 嘟嘟囔囔 dū du nāng nang.
+nt: The sound word isn't in Stephen Li's dictionary. 发牢骚 fat33 lɔu22 ɬɔu33 "to whine, to grumble" is, so it's used here. Check with family how they say it.
+
+@ Mom Talk | Stop whining!
+g: don't / grumble / (softener)
+y: 唔好/m4 hou2/0 ; 咦咦哦哦/ji1 ji1 o1 o1/1 ; 啦/laa1/2
+m: 别/bié/0 ; 嘟嘟囔囔/dū du nāng nang/1 ; 了/le/2
+t: 唔好/mɔu55/0 ; 发牢骚/fat33 lɔu22 ɬɔu33/1?
+s: ¡Deja de refunfuñar!/0,1,2
+f: Arrête de ronchonner !/0,1,2
+d: Hör auf zu maulen!/0,1,2
+n: 唔好 m4 hou2 "don't" + the grumbling sound + 啦 laa1 to soften it. What the villain hears right after doing the dishes slowly.
+nt: 唔好 squeezes to mɔu55 in Taishanese (as in 唔好郁 mɔu55 ŋək33 "don't move", Stephen Li's dictionary). The whole sentence is put together here, not looked up.
+
+@ Mom Talk | Stop nagging!
+g: don't / so / nag / (softener)
+y: 咪/mai5/0 ; 咁/gam3/1 ; 囉嗦/lo1 so1/2 ; 啦/laa1/3
+m: 别/bié/0 ; 这么/zhème/1 ; 啰嗦/luō suo/2 ; 了/le/3
+t: 唔好/mɔu55/0 ; 唠唣/lɔu22 dɔu325/2?
+s: ¡No seas tan pesado!/0,1,2,3
+f: Arrête de rabâcher !/0,1,2,3
+d: Hör auf zu nörgeln!/0,1,2,3
+n: 咪 mai5 is the casual "don't": 咪咁囉嗦啦, "don't nag so much". The villain line: say it to a Cantonese mom at your own risk.
+nt: Put together from 唔好 mɔu55 and 唠唣 lɔu22 dɔu32(5) (both in Stephen Li's dictionary); the sentence itself isn't. Check with family.

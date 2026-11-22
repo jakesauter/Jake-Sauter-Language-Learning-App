@@ -84,8 +84,9 @@ for part in "ab":
         data.append(e)
 
 data += parse("batches/foods.txt")   # "Food Words" sorts last, so the numbers in me/*.txt stay put
+data += parse("batches/momtalk.txt")   # "Mom Talk" after it, for the same reason
 
-order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words"]
+order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:
