@@ -1,0 +1,120 @@
+@ Colors | Red
+g: red / color
+y: 紅/hung4/0 ; 色/sik1/1
+m: 红/hóng/0 ; 色/sè/1
+t: 红/həŋ22/0? ; 色/sɛt55/1
+s: Rojo/0,1
+f: Rouge/0,1
+d: Rot/0,1
+n: 色 sik1 means color: Cantonese adds it after the color word, just like Mandarin 色 sè.
+nt: Put together from Stephen Li's dictionary: 红 həŋ22 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Orange
+g: orange / color
+y: 橙/caang2/0 ; 色/sik1/1
+m: 橙/chéng/0 ; 色/sè/1
+t: 橙/tsaŋ225/0? ; 色/sɛt55/1
+s: Naranja/0,1
+f: Orange/0,1
+d: Orange/0,1
+n: 橙 caang2 is the orange fruit, so orange is literally “orange color”.
+nt: Put together from Stephen Li's dictionary: 橙 tsaŋ225 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Yellow
+g: yellow / color
+y: 黃/wong4/0 ; 色/sik1/1
+m: 黄/huáng/0 ; 色/sè/1
+t: 黄/vɔŋ22/0? ; 色/sɛt55/1
+s: Amarillo/0,1
+f: Jaune/0,1
+d: Gelb/0,1
+n: Not in the video, added so the set is complete. 黃 wong4 is also the surname Wong.
+nt: Put together from Stephen Li's dictionary: 黄 vɔŋ22 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Green
+g: green / color
+y: 綠/luk6/0 ; 色/sik1/1
+m: 绿/lǜ/0 ; 色/sè/1
+t: 绿/lək32/0? ; 色/sɛt55/1
+s: Verde/0,1
+f: Vert/0,1
+d: Grün/0,1
+n: 綠 luk6 is the same character as Mandarin 绿 lǜ.
+nt: Put together from Stephen Li's dictionary: 绿 lək32 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Blue
+g: blue / color
+y: 藍/laam4/0 ; 色/sik1/1
+m: 蓝/lán/0 ; 色/sè/1
+t: 蓝/lam22/0? ; 色/sɛt55/1
+s: Azul/0,1
+f: Bleu/0,1
+d: Blau/0,1
+n: 藍 laam4 is blue; light blue is 淺藍色 cin2 laam4 sik1.
+nt: Put together from Stephen Li's dictionary: 蓝 lam22 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Purple
+g: purple / color
+y: 紫/zi2/0 ; 色/sik1/1
+m: 紫/zǐ/0 ; 色/sè/1
+t: 紫/du55/0 ; 色/sɛt55/1
+s: Morado/0,1
+f: Violet/0,1
+d: Lila/0,1
+n: 紫 zi2 is purple. In Taishanese the z becomes d: du55.
+nt: Stephen Li's dictionary lists 紫色 du55 sɛt55.
+
+@ Colors | Pink
+g: powder red / color
+y: 粉紅/fan2 hung4/0 ; 色/sik1/1
+m: 粉红/fěn hóng/0 ; 色/sè/1
+t: 粉红/fun55 həŋ225/0? ; 色/sɛt55/1
+s: Rosa/0,1
+f: Rose/0,1
+d: Rosa/0,1
+n: 粉紅 fan2 hung4 is “powder red”: pink, in both Cantonese and Mandarin.
+nt: Put together from Stephen Li's dictionary: 粉红 fun55 həŋ225 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Brown
+g: coffee / color
+y: 啡/fe1/0 ; 色/sik1/1
+m: 咖啡/kāfēi/0 ; 色/sè/1
+t: 啡/fia55/0 ; 色/sɛt55/1
+s: Marrón/0,1
+f: Marron/0,1
+d: Braun/0,1
+n: Brown is “coffee color”: Cantonese shortens 咖啡 gaa3 fe1 to 啡 fe1; Mandarin says the whole word, 咖啡色 kāfēisè.
+nt: Stephen Li's dictionary lists 啡色 fia55 sɛt55.
+
+@ Colors | Black
+g: black / color
+y: 黑/haak1/0 ; 色/sik1/1
+m: 黑/hēi/0 ; 色/sè/1
+t: 黑/hak55/0? ; 色/sɛt55/1
+s: Negro/0,1
+f: Noir/0,1
+d: Schwarz/0,1
+n: 黑 haak1 is black (also “dark”).
+nt: Put together from Stephen Li's dictionary: 黑 hak55 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | White
+g: white / color
+y: 白/baak6/0 ; 色/sik1/1
+m: 白/bái/0 ; 色/sè/1
+t: 白/bak32/0? ; 色/sɛt55/1
+s: Blanco/0,1
+f: Blanc/0,1
+d: Weiß/0,1
+n: Not in the video, added so the set is complete. 白 baak6, as in 白飯 baak6 faan6 (white rice).
+nt: Put together from Stephen Li's dictionary: 白 bak32 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.
+
+@ Colors | Grey
+g: ash / color
+y: 灰/fui1/0 ; 色/sik1/1
+m: 灰/huī/0 ; 色/sè/1
+t: 灰/fɔi33/0? ; 色/sɛt55/1
+s: Gris/0,1
+f: Gris/0,1
+d: Grau/0,1
+n: 灰 fui1 is ash, so grey is “ash color”.
+nt: Put together from Stephen Li's dictionary: 灰 fɔi33 and 色 sɛt55 “color”; the pair itself isn't listed. Check with family.

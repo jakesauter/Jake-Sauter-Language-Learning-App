@@ -538,3 +538,102 @@ eg: ماشي، ينفع || māshi, yenfa'
 ms: حسنًا، ممكن || ḥasanan, mumkin
 he: בסדר, אפשר{beseder, efshar}/0
 tr: Tamam, olur/0
+= 558 Red
+pt: Vermelho/0,1
+fa: قرمز{ghermez}/0,1
+fw: قرمز || ghermez
+la: أحمر{aḥmar}/0,1
+eg: أحمر || aḥmar
+ms: أحمر || aḥmar
+he: אדום{adom}/0,1
+tr: Kırmızı/0,1
+= 559 Orange
+pt: Laranja/0,1
+fa: نارنجی{nārenji}/0,1
+fw: نارنجی || nārenji
+la: برتقالي{burd'āni}/0,1
+eg: برتقاني || burtu'āni
+ms: برتقالي || burtuqālī
+he: כתום{katom}/0,1
+tr: Turuncu/0,1
+= 560 Yellow
+pt: Amarelo/0,1
+fa: زرد{zard}/0,1
+fw: زرد || zard
+la: أصفر{aṣfar}/0,1
+eg: أصفر || aṣfar
+ms: أصفر || aṣfar
+he: צהוב{tsahov}/0,1
+tr: Sarı/0,1
+= 561 Green
+pt: Verde/0,1
+fa: سبز{sabz}/0,1
+fw: سبز || sabz
+la: أخضر{akhḍar}/0,1
+eg: أخضر || akhḍar
+ms: أخضر || akhḍar
+he: ירוק{yarok}/0,1
+tr: Yeşil/0,1
+= 562 Blue
+pt: Azul/0,1
+fa: آبی{ābi}/0,1
+fw: آبی || ābi
+la: أزرق{azra'}/0,1
+eg: أزرق || azra'
+ms: أزرق || azraq
+he: כחול{kachol}/0,1
+tr: Mavi/0,1
+= 563 Purple
+pt: Roxo/0,1
+fa: بنفش{banafsh}/0,1
+fw: بنفش || banafsh
+la: بنفسجي{banafsaji}/0,1
+eg: بنفسجي || banafsigi
+ms: أرجواني || urjuwānī
+he: סגול{sagol}/0,1
+tr: Mor/0,1
+= 564 Pink
+pt: Rosa/0,1
+fa: صورتی{surati}/0,1
+fw: صورتی || surati
+la: زهري{zahri}/0,1
+eg: بمبي || bambi
+ms: وردي || wardī
+he: ורוד{varod}/0,1
+tr: Pembe/0,1
+= 565 Brown
+pt: Marrom/0,1
+fa: قهوه‌ای{ghahve'i}/0,1
+fw: قهوه‌ای || ghahve'i
+la: بني{bunni}/0,1
+eg: بني || bunni
+ms: بني || bunnī
+he: חום{chum}/0,1
+tr: Kahverengi/0,1
+= 566 Black
+pt: Preto/0,1
+fa: سیاه{siyāh}/0,1
+fw: سیاه || siyāh
+la: أسود{aswad}/0,1
+eg: إسود || iswid
+ms: أسود || aswad
+he: שחור{shachor}/0,1
+tr: Siyah/0,1
+= 567 White
+pt: Branco/0,1
+fa: سفید{sefid}/0,1
+fw: سفید || sefid
+la: أبيض{abyaḍ}/0,1
+eg: أبيض || abyaḍ
+ms: أبيض || abyaḍ
+he: לבן{lavan}/0,1
+tr: Beyaz/0,1
+= 568 Grey
+pt: Cinza/0,1
+fa: خاکستری{khākestari}/0,1
+fw: خاکستری || khākestari
+la: رمادي{rmādi}/0,1
+eg: رمادي || ramādi
+ms: رمادي || ramādī
+he: אפור{afor}/0,1
+tr: Gri/0,1
