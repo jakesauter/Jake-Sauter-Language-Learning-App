@@ -511,3 +511,30 @@ eg: غلطت ومبتعترفش || ghlett w mabti'tirifsh
 ms: أخطأت ولا تعترف || akhṭa'ta wa lā ta'tarif
 he: טעית ואתה לא מודה{ta'ita ve'ata lo mode}/0,1,2,3,4,5
 tr: Yanlış, ama kabul etmiyorsun/0,1,2,3,4,5
+= 555 One bowl of congee, please
+pt: Uma tigela de congee, por favor/0,1,2,3,4
+fa: یک کاسه فرنی برنج، لطفاً{yek kāse ferni-ye berenj, lotfan}/0,1,2,3,4
+fw: یه کاسه فرنی برنج، لطفاً || ye kāse ferni-ye berenj, lotfan
+la: زبدية شوربة رز، لو سمحت{zebdiyye shorbet rezz, law samaḥt}/0,1,2,3,4
+eg: طبق شوربة رز، لو سمحت || ṭaba' shurbet rozz, law samaḥt
+ms: وعاء من عصيدة الأرز، من فضلك || wi'ā' min 'aṣīdat al-aruzz, min faḍlik
+he: קערה של דייסת אורז, בבקשה{ke'ara shel daysat orez, bevakasha}/0,1,2,3,4
+tr: Bir kase pirinç lapası, lütfen/0,1,2,3,4
+= 556 What?
+pt: O quê?/0
+fa: چی؟{chi?}/0
+fw: چی؟ || chi?
+la: شو؟{shu?}/0
+eg: إيه؟ || ēh?
+ms: ماذا؟ || mādhā?
+he: מה?{ma?}/0
+tr: Ne?/0
+= 557 OK, sure (can do)
+pt: Tá bom, pode ser/0
+fa: باشه، می‌شه{bāshe, mishe}/0
+fw: باشه، می‌شه || bāshe, mishe
+la: ماشي، بصير{māshi, bṣīr}/0
+eg: ماشي، ينفع || māshi, yenfa'
+ms: حسنًا، ممكن || ḥasanan, mumkin
+he: בסדר, אפשר{beseder, efshar}/0
+tr: Tamam, olur/0

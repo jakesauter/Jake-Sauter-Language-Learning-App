@@ -1,0 +1,32 @@
+@ Eating Out | One bowl of congee, please
+g: one / bowl / congee / (softener) / please
+y: 一/jat1/0 ; 碗/wun2/1 ; 粥/zuk1/2 ; 啊/aa3/3 ; 唔該/m4 goi1/4
+m: 一/yì/0 ; 碗/wǎn/1 ; 粥/zhōu/2 ; 啊/a/3 ; 麻烦你/máfan nǐ/4
+t: 一/yit55/0 ; 碗/vɔn55/1 ; 粥/tsək55/2 ; 啊/a33/3 ; 唔该/m22 gɔi33/4
+s: Un tazón de congee, por favor/0,1,2,3,4
+f: Un bol de congee, s'il vous plaît/0,1,2,3,4
+d: Eine Schüssel Congee, bitte/0,1,2,3,4
+n: Say the food, not just the bowl: in a viral video a Cantonese speaker orders in Mandarin with only 一碗啊 "one bowl!", and the cook answers 什麼? "what?". 唔該 m4 goi1 is the "please / thanks" for service; 多謝 is for gifts. In Mandarin, 麻烦你 máfan nǐ plays the same role.
+nt: Every word is in Stephen Li's dictionary (一 yit55, 碗 vɔn55, 粥 tsək55, 唔该 m22 gɔi33); the sentence is put together here.
+
+@ Eating Out | What?
+g: what
+y: 乜嘢/mat1 je5/0 ; 呀/aa3/-
+m: 什么/shénme/0 ; 啊/a/-
+t: 乜/mɔt55/0 ; 啊/a33/-
+s: ¿Qué?/0
+f: Quoi ?/0
+d: Was?/0
+n: Cantonese 乜嘢 mat1 je5 (often just 乜 mat1) is Mandarin 什么 shénme, the cook's reply in the video. 咩 me1 is the short, casual Cantonese "what?".
+nt: Stephen Li's dictionary: 乜 mɔt55 "what", as in 搞乜鬼 gɔu55 mɔt55 gi55 "what are you up to".
+
+@ Eating Out | OK, sure (can do)
+g: can
+y: 可以/ho2 ji5/0
+m: 可以/kěyǐ/0
+t: 可以/hɔ55 yi21/0
+s: Vale, sí se puede/0
+f: D'accord, pas de souci/0
+d: Okay, geht klar/0
+n: 可以 is "can, OK" in all three, the same characters. Cantonese also says 得 dak1 "OK, will do" when agreeing to something.
+nt: Stephen Li's dictionary: 可以 hɔ55 yi21 "can, may; acceptable".

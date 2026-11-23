@@ -43,7 +43,7 @@
     "Visiting": "door", "Meals": "bowl", "Small Talk": "bubbles", "Plans": "calendar", "Around the House": "house", "Cooking Together": "pot",
     "Family Events": "gift", "Road Trip": "car", "Travel": "plane", "Weather": "weather", "Work": "case", "School": "book", "Hobbies": "star",
     "Swimming": "waves", "Running & Biking": "bike", "Shopping": "bag", "Pets": "paw", "Health": "health", "Helping Out": "hands", "Learning": "bulb",
-    "Holidays": "sparkle", "Feelings": "heart", "Joking Around": "laugh", "Goodbyes": "wave", "Word Fun": "sparkle", "Food Words": "bowl", "Mom Talk": "bubbles",
+    "Holidays": "sparkle", "Feelings": "heart", "Joking Around": "laugh", "Goodbyes": "wave", "Word Fun": "sparkle", "Food Words": "bowl", "Mom Talk": "bubbles", "Eating Out": "pot",
   };
 
   function icon(name, cls = "ico") {
