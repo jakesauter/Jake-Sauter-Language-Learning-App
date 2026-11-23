@@ -1,4 +1,4 @@
-= 498 Pea shoots
+= 502 Pea shoots
 pt: Brotos de ervilha/0,1
 fa: جوانه نخود فرنگی{javāne-ye nokhod-farangi}/0,1
 fw: جوانه نخود فرنگی || javāne-ye nokhod-farangi
@@ -7,7 +7,7 @@ eg: براعم البسلة || barā'em el-bisilla
 ms: براعم البازلاء || barā'im al-bāzillā'
 he: נבטי אפונה{nivtei afuna}/0,1
 tr: Bezelye filizi/0,1
-= 499 Big bun (dai bao)
+= 503 Big bun (dai bao)
 pt: Pão recheado grande/0,1
 fa: نان بخارپز بزرگ{nān-e bokhār-paz-e bozorg}/0,1
 fw: نان بخارپز بزرگ || nān-e bokhār-paz-e bozorg
@@ -16,7 +16,7 @@ eg: عيش محشي كبير || 'eesh maḥshi kibīr
 ms: كعكة محشوة كبيرة || ka'ka maḥshuwwa kabīra
 he: לחמניה ממולאת גדולה{lachmaniya memula'at gdola}/0,1
 tr: Büyük dolgulu çörek/0,1
-= 500 White rice
+= 504 White rice
 pt: Arroz branco/0,1
 fa: برنج سفید{berenj-e sefid}/0,1
 fw: برنج سفید || berenj-e sefid
@@ -25,7 +25,7 @@ eg: رز أبيض || rozz abyaḍ
 ms: أرز أبيض || aruzz abyaḍ
 he: אורז לבן{orez lavan}/0,1
 tr: Beyaz pilav/0,1
-= 501 Chicken
+= 505 Chicken
 pt: Frango/0
 fa: مرغ{morgh}/0
 fw: مرغ || morgh
@@ -34,7 +34,7 @@ eg: فراخ || firākh
 ms: دجاج || dajāj
 he: עוף{of}/0
 tr: Tavuk/0
-= 502 Steak
+= 506 Steak
 pt: Bife/0,1
 fa: استیک{esteyk}/0,1
 fw: استیک || esteyk
@@ -43,7 +43,7 @@ eg: ستيك || steak
 ms: شريحة لحم || sharīḥat laḥm
 he: סטייק{steyk}/0,1
 tr: Biftek/0,1
-= 503 Lobster
+= 507 Lobster
 pt: Lagosta/0,1
 fa: خرچنگ دریایی{kharchang-e daryāyi}/0,1
 fw: خرچنگ دریایی || kharchang-e daryāyi
@@ -52,7 +52,7 @@ eg: استاكوزا || istakōza
 ms: كركند || karkand
 he: לובסטר{lobster}/0,1
 tr: Istakoz/0,1
-= 504 Fish
+= 508 Fish
 pt: Peixe/0
 fa: ماهی{māhi}/0
 fw: ماهی || māhi
@@ -61,7 +61,7 @@ eg: سمك || samak
 ms: سمك || samak
 he: דג{dag}/0
 tr: Balık/0
-= 505 Shrimp
+= 509 Shrimp
 pt: Camarão/0
 fa: میگو{meygu}/0
 fw: میگو || meygu
@@ -70,7 +70,7 @@ eg: جمبري || gambari
 ms: روبيان || rubyān
 he: שרימפס{shrimps}/0
 tr: Karides/0
-= 506 Crab
+= 510 Crab
 pt: Caranguejo/0
 fa: خرچنگ{kharchang}/0
 fw: خرچنگ || kharchang
@@ -79,7 +79,7 @@ eg: كابوريا || kabūrya
 ms: سلطعون || salṭa'ūn
 he: סרטן{sartan}/0
 tr: Yengeç/0
-= 507 Pork
+= 511 Pork
 pt: Carne de porco/0,1
 fa: گوشت خوک{gusht-e khuk}/0,1
 fw: گوشت خوک || gusht-e khuk
@@ -88,7 +88,7 @@ eg: لحم خنزير || laḥm khanzīr
 ms: لحم الخنزير || laḥm al-khinzīr
 he: בשר חזיר{besar chazir}/0,1
 tr: Domuz eti/0,1
-= 508 Beef
+= 512 Beef
 pt: Carne bovina/0,1
 fa: گوشت گاو{gusht-e gāv}/0,1
 fw: گوشت گاو || gusht-e gāv
@@ -97,7 +97,7 @@ eg: لحمة بقري || laḥma ba'ari
 ms: لحم البقر || laḥm al-baqar
 he: בשר בקר{besar bakar}/0,1
 tr: Sığır eti/0,1
-= 509 Lamb
+= 513 Lamb
 pt: Carne de cordeiro/0,1
 fa: گوشت بره{gusht-e barre}/0,1
 fw: گوشت بره || gusht-e barre
@@ -106,7 +106,7 @@ eg: لحم ضاني || laḥm ḍāni
 ms: لحم الضأن || laḥm aḍ-ḍa'n
 he: בשר כבש{besar keves}/0,1
 tr: Kuzu eti/0,1
-= 510 Duck
+= 514 Duck
 pt: Pato/0
 fa: اردک{ordak}/0
 fw: اردک || ordak
@@ -115,7 +115,7 @@ eg: بط || baṭṭ
 ms: بط || baṭṭ
 he: ברווז{barvaz}/0
 tr: Ördek/0
-= 511 Egg
+= 515 Egg
 pt: Ovo/0,1
 fa: تخم‌مرغ{tokhm-e morgh}/0,1
 fw: تخم‌مرغ || tokhm-e morgh
@@ -124,7 +124,7 @@ eg: بيضة || bēḍa
 ms: بيضة || bayḍa
 he: ביצה{beytsa}/0,1
 tr: Yumurta/0,1
-= 512 Tofu
+= 516 Tofu
 pt: Tofu/0,1
 fa: توفو{tofu}/0,1
 fw: توفو || tofu
@@ -133,7 +133,7 @@ eg: توفو || tofu
 ms: توفو || tofu
 he: טופו{tofu}/0,1
 tr: Tofu/0,1
-= 513 Bok choy
+= 517 Bok choy
 pt: Acelga chinesa/0,1
 fa: کلم چینی{kalam-e chini}/0,1
 fw: کلم چینی || kalam-e chini
@@ -142,7 +142,7 @@ eg: كرنب صيني || kurumb ṣīni
 ms: ملفوف صيني || malfūf ṣīnī
 he: בוק צ'וי{bok choy}/0,1
 tr: Çin lahanası/0,1
-= 514 Choy sum
+= 518 Choy sum
 pt: Choy sum/0,1
 fa: چوی سام{choy sām}/0,1
 fw: چوی سام || choy sām
@@ -151,7 +151,7 @@ eg: تشوي سم || choy sum
 ms: تشوي سم || choy sum
 he: צ'וי סאם{choy sam}/0,1
 tr: Choy sum/0,1
-= 515 Chinese broccoli
+= 519 Chinese broccoli
 pt: Brócolis chinês/0,1
 fa: کلم بروکلی چینی{kalam brokoli-ye chini}/0,1
 fw: کلم بروکلی چینی || kalam brokoli-ye chini
@@ -160,7 +160,7 @@ eg: بروكلي صيني || brokoli ṣīni
 ms: بروكلي صيني || brūkūlī ṣīnī
 he: ברוקולי סיני{brokoli sini}/0,1
 tr: Çin brokolisi/0,1
-= 516 Bean sprouts
+= 520 Bean sprouts
 pt: Broto de feijão/0,1
 fa: جوانه ماش{javāne-ye māsh}/0,1
 fw: جوانه ماش || javāne-ye māsh
@@ -169,7 +169,7 @@ eg: براعم فول الصويا || barā'im fūl eṣ-ṣoya
 ms: براعم الفاصولياء || barā'im al-fāṣūliyā'
 he: נבטים{nevatim}/0,1
 tr: Fasulye filizi/0,1
-= 517 Rice porridge (congee)
+= 521 Rice porridge (congee)
 pt: Mingau de arroz/0
 fa: شله برنج{sholle-ye berenj}/0
 fw: شله برنج || sholle-ye berenj
@@ -178,7 +178,7 @@ eg: شوربة رز || shorbet rozz
 ms: عصيدة الأرز || 'aṣīdat al-aruzz
 he: דייסת אורז{daysat orez}/0
 tr: Pirinç lapası/0
-= 518 Soup
+= 522 Soup
 pt: Sopa/0
 fa: سوپ{sup}/0
 fw: سوپ || sup
@@ -187,7 +187,7 @@ eg: شوربة || shorba
 ms: حساء || ḥasā'
 he: מרק{marak}/0
 tr: Çorba/0
-= 519 Dumplings
+= 523 Dumplings
 pt: Guioza/0
 fa: دامپلینگ{dāmpling}/0
 fw: دامپلینگ || dāmpling
@@ -196,7 +196,7 @@ eg: دامبلنج || dumpling
 ms: فطائر صينية محشوة || faṭā'ir ṣīniyya maḥshuwwa
 he: כיסונים{kisonim}/0
 tr: Mantı/0
-= 520 Wonton noodles
+= 524 Wonton noodles
 pt: Macarrão com wonton/0,1
 fa: نودل با وونتون{nudel bā wonton}/0,1
 fw: نودل با وونتون || nudel bā wonton
@@ -205,7 +205,7 @@ eg: نودلز بالونتون || nudelz bel-wonton
 ms: معكرونة بالونتون || ma'karūna bil-wonton
 he: אטריות וונטון{itriyot wonton}/0,1
 tr: Wonton erişte/0,1
-= 521 Barbecued pork (char siu)
+= 525 Barbecued pork (char siu)
 pt: Porco assado char siu/0,1
 fa: گوشت خوک کبابی{gusht-e khuk-e kabābi}/0,1
 fw: گوشت خوک کبابی || gusht-e khuk-e kabābi
@@ -214,7 +214,7 @@ eg: لحم خنزير مشوي || laḥm khanzīr mashwi
 ms: لحم خنزير مشوي || laḥm khinzīr mashwī
 he: חזיר צלוי צ'אר סיו{chazir tsaluy char siu}/0,1
 tr: Char siu (kızarmış domuz)/0,1
-= 522 Roast pork (crispy skin)
+= 526 Roast pork (crispy skin)
 pt: Porco assado crocante/0,1
 fa: گوشت خوک سرخ‌شده ترد{gusht-e khuk-e sorkh-shode-ye tord}/0,1
 fw: گوشت خوک سرخ‌شده ترد || gusht-e khuk-e sorkh-shode-ye tord
@@ -223,7 +223,7 @@ eg: لحم خنزير مقرمش || laḥm khanzīr me'armesh
 ms: لحم خنزير مقرمش || laḥm khinzīr muqarmash
 he: חזיר צלוי פריך{chazir tsaluy parich}/0,1
 tr: Çıtır domuz kızartması/0,1
-= 523 Shrimp dumplings (har gow)
+= 527 Shrimp dumplings (har gow)
 pt: Har gow (pastel de camarão)/0,1
 fa: دامپلینگ میگو{dāmpling-e meygu}/0,1
 fw: دامپلینگ میگو || dāmpling-e meygu
@@ -232,7 +232,7 @@ eg: دامبلنج جمبري || dumpling gambari
 ms: فطيرة روبيان || faṭīrat rubyān
 he: כיסוני שרימפס{kisoney shrimps}/0,1
 tr: Karidesli mantı/0,1
-= 524 Siu mai
+= 528 Siu mai
 pt: Siu mai/0,1
 fa: شائو مای{shāo māy}/0,1
 fw: شائو مای || shāo māy
@@ -241,7 +241,7 @@ eg: شوماي || shūmay
 ms: شوماي || shūmāy
 he: שומאי{shumay}/0,1
 tr: Siu mai/0,1
-= 525 Rice noodle rolls (cheung fun)
+= 529 Rice noodle rolls (cheung fun)
 pt: Rolinhos de massa de arroz/0,1
 fa: رول نودل برنج{rol-e nudel-e berenj}/0,1
 fw: رول نودل برنج || rol-e nudel-e berenj
@@ -250,7 +250,7 @@ eg: رولات نودلز رز || rolāt nudelz rozz
 ms: لفائف معكرونة الأرز || lafā'if ma'karūnat al-aruzz
 he: גלילי אטריות אורז{glilei itriyot orez}/0,1
 tr: Pirinç eriştesi rulosu/0,1
-= 526 Rice noodles (mai fun)
+= 530 Rice noodles (mai fun)
 pt: Macarrão de arroz/0,1
 fa: نودل برنج{nudel-e berenj}/0,1
 fw: نودل برنج || nudel-e berenj
@@ -259,7 +259,7 @@ eg: شعرية رز || sha'reyya rozz
 ms: شعيرية الأرز || sha'īriyyat al-aruzz
 he: אטריות אורז{itriyot orez}/0,1
 tr: Pirinç eriştesi/0,1
-= 527 Fried rice
+= 531 Fried rice
 pt: Arroz frito/0,1
 fa: برنج سرخ‌شده{berenj-e sorkh-shode}/0,1
 fw: برنج سرخ‌شده || berenj-e sorkh-shode
@@ -268,7 +268,7 @@ eg: رز مقلي || rozz ma'li
 ms: أرز مقلي || aruzz maqlī
 he: אורז מטוגן{orez metugan}/0,1
 tr: Kızarmış pilav/0,1
-= 528 Chow mein
+= 532 Chow mein
 pt: Chow mein (macarrão frito)/0,1
 fa: نودل سرخ‌شده{nudel-e sorkh-shode}/0,1
 fw: نودل سرخ‌شده || nudel-e sorkh-shode
@@ -277,7 +277,7 @@ eg: نودلز مقلية || nudelz ma'leyya
 ms: معكرونة مقلية || ma'karūna maqliyya
 he: אטריות מוקפצות{itriyot mukpatsot}/0,1
 tr: Kızarmış erişte/0,1
-= 529 Chicken wings
+= 533 Chicken wings
 pt: Asinhas de frango/0,1
 fa: بال مرغ{bāl-e morgh}/0,1
 fw: بال مرغ || bāl-e morgh
@@ -286,7 +286,7 @@ eg: أجنحة فراخ || agneḥet firākh
 ms: أجنحة الدجاج || ajniḥat ad-dajāj
 he: כנפי עוף{kanfei of}/0,1
 tr: Tavuk kanadı/0,1
-= 530 Egg tart
+= 534 Egg tart
 pt: Pastel de nata/0,1
 fa: تارت تخم‌مرغ{tārt-e tokhm-e morgh}/0,1
 fw: تارت تخم‌مرغ || tārt-e tokhm-e morgh
@@ -295,7 +295,7 @@ eg: تارت بيض || tart bēḍ
 ms: فطيرة البيض || faṭīrat al-bayḍ
 he: טארט ביצים{tart beytsim}/0,1
 tr: Yumurtalı tart/0,1
-= 531 Bread
+= 535 Bread
 pt: Pão/0,1
 fa: نان{nān}/0,1
 fw: نان || nān
@@ -304,7 +304,7 @@ eg: عيش || 'eesh
 ms: خبز || khubz
 he: לחם{lechem}/0,1
 tr: Ekmek/0,1
-= 532 Milk
+= 536 Milk
 pt: Leite/0,1
 fa: شیر{shir}/0,1
 fw: شیر || shir
@@ -313,7 +313,7 @@ eg: لبن || laban
 ms: حليب || ḥalīb
 he: חלב{chalav}/0,1
 tr: Süt/0,1
-= 533 Tea
+= 537 Tea
 pt: Chá/0
 fa: چای{chāy}/0
 fw: چای || chāy
@@ -322,7 +322,7 @@ eg: شاي || shāy
 ms: شاي || shāy
 he: תה{te}/0
 tr: Çay/0
-= 534 Orange
+= 538 Orange
 pt: Laranja/0
 fa: پرتقال{porteghāl}/0
 fw: پرتقال || porteghāl
@@ -331,7 +331,7 @@ eg: برتقان || burtu'ān
 ms: برتقال || burtuqāl
 he: תפוז{tapuz}/0
 tr: Portakal/0
-= 535 Apple
+= 539 Apple
 pt: Maçã/0
 fa: سیب{sib}/0
 fw: سیب || sib
@@ -340,7 +340,7 @@ eg: تفاحة || toffāḥa
 ms: تفاحة || tuffāḥa
 he: תפוח{tapuach}/0
 tr: Elma/0
-= 536 Banana
+= 540 Banana
 pt: Banana/0
 fa: موز{moz}/0
 fw: موز || moz
@@ -349,7 +349,7 @@ eg: موزة || mōza
 ms: موزة || mawza
 he: בננה{banana}/0
 tr: Muz/0
-= 537 Watermelon
+= 541 Watermelon
 pt: Melancia/0,1
 fa: هندوانه{hendevāne}/0,1
 fw: هندوانه || hendevāne
@@ -358,7 +358,7 @@ eg: بطيخ || baṭṭīkh
 ms: بطيخ || baṭṭīkh
 he: אבטיח{avatiach}/0,1
 tr: Karpuz/0,1
-= 538 Sweet potato
+= 542 Sweet potato
 pt: Batata-doce/0,1
 fa: سیب‌زمینی شیرین{sib-zamini-ye shirin}/0,1
 fw: سیب‌زمینی شیرین || sib-zamini-ye shirin
@@ -367,7 +367,7 @@ eg: بطاطا || baṭāṭa
 ms: بطاطا حلوة || baṭāṭā ḥulwa
 he: בטטה{batata}/0,1
 tr: Tatlı patates/0,1
-= 539 Potato
+= 543 Potato
 pt: Batata/0,1
 fa: سیب‌زمینی{sib-zamini}/0,1
 fw: سیب‌زمینی || sib-zamini
@@ -376,7 +376,7 @@ eg: بطاطس || baṭāṭis
 ms: بطاطس || baṭāṭis
 he: תפוח אדמה{tapuach adama}/0,1
 tr: Patates/0,1
-= 540 Corn
+= 544 Corn
 pt: Milho/0,1
 fa: ذرت{zorrat}/0,1
 fw: ذرت || zorrat
@@ -385,7 +385,7 @@ eg: درة || dora
 ms: ذرة || dhura
 he: תירס{tiras}/0,1
 tr: Mısır/0,1
-= 541 Soy sauce
+= 545 Soy sauce
 pt: Molho de soja/0,1
 fa: سس سویا{sos-e soyā}/0,1
 fw: سس سویا || sos-e soyā
@@ -394,7 +394,7 @@ eg: صوص صويا || ṣōṣ ṣoya
 ms: صلصة الصويا || ṣalṣat aṣ-ṣūyā
 he: רוטב סויה{rotev soya}/0,1
 tr: Soya sosu/0,1
-= 542 Ginger
+= 546 Ginger
 pt: Gengibre/0
 fa: زنجبیل{zanjabil}/0
 fw: زنجبیل || zanjabil
@@ -403,7 +403,7 @@ eg: جنزبيل || ganzabīl
 ms: زنجبيل || zanjabīl
 he: ג'ינג'ר{jinjer}/0
 tr: Zencefil/0
-= 543 Green onion
+= 547 Green onion
 pt: Cebolinha/0
 fa: پیازچه{piyāzche}/0
 fw: پیازچه || piyāzche
@@ -412,7 +412,7 @@ eg: بصل أخضر || baṣal akhḍar
 ms: بصل أخضر || baṣal akhḍar
 he: בצל ירוק{batsal yarok}/0
 tr: Taze soğan/0
-= 544 Garlic
+= 548 Garlic
 pt: Alho/0,1
 fa: سیر{sir}/0,1
 fw: سیر || sir
@@ -421,7 +421,7 @@ eg: توم || tōm
 ms: ثوم || thūm
 he: שום{shum}/0,1
 tr: Sarımsak/0,1
-= 545 Nagging, going on and on
+= 549 Nagging, going on and on
 pt: Chato, que não para de repetir/0
 fa: غرغرو{ghor-ghoru}/0
 fw: غرغرو || ghor-ghoru
@@ -430,7 +430,7 @@ eg: زنّ || zann
 ms: إلحاح || ilḥāḥ
 he: נודניק{nudnik}/0
 tr: Dırdırcı/0
-= 546 Nag, nag, nag (on and on)
+= 550 Nag, nag, nag (on and on)
 pt: Reclamar sem parar/0
 fa: یک‌ریز غر زدن{yek-riz ghor zadan}/0
 fw: یک‌ریز غر زدن || yek-riz ghor zadan
@@ -439,7 +439,7 @@ eg: زنّ على الودان || zann 'ala l-widān
 ms: إلحاح متواصل || ilḥāḥ mutawāṣil
 he: לנדנד בלי הפסקה{lenadned bli hafsaka}/0
 tr: Durmadan dırdır etmek/0
-= 547 Grumbling back (yi yi o o)
+= 551 Grumbling back (yi yi o o)
 pt: Resmungar/0
 fa: زیر لب غر زدن{zir-e lab ghor zadan}/0
 fw: زیر لب غر زدن || zir-e lab ghor zadan
@@ -448,7 +448,7 @@ eg: برطمة || barṭama
 ms: تذمّر || tadhammur
 he: לרטון{lirton}/0
 tr: Söylenmek/0
-= 548 Stop whining!
+= 552 Stop whining!
 pt: Para de resmungar!/0,1,2
 fa: غر نزن!{ghor nazan!}/0,1,2
 fw: غر نزن! || ghor nazan!
@@ -457,7 +457,7 @@ eg: بطّل زنّ! || baṭṭal zann!
 ms: كفّ عن التذمّر! || kuff 'an at-tadhammur!
 he: די לרטון!{dai lirton!}/0,1,2
 tr: Söylenmeyi bırak!/0,1,2
-= 549 Stop nagging!
+= 553 Stop nagging!
 pt: Para de encher!/0,1,2,3
 fa: این‌قدر غر نزن!{in-qadr ghor nazan!}/0,1,2,3
 fw: این‌قدر غر نزن! || in-qadr ghor nazan!
@@ -466,7 +466,7 @@ eg: كفاية زنّ! || kifāya zann!
 ms: كفى إلحاحًا! || kafā ilḥāḥan!
 he: די לנדנד!{dai lenadned!}/0,1,2,3
 tr: Dırdır etmeyi bırak!/0,1,2,3
-= 550 I tell you, but you don't listen
+= 554 I tell you, but you don't listen
 pt: Eu te falo e você não escuta/0,1,2,3,4,5
 fa: بهت می‌گم، گوش نمی‌دی{behet migam, gush nemidi}/0,1,2,3,4,5
 fw: بهت می‌گم، گوش نمی‌دی || behet migam, gush nemidi
@@ -475,7 +475,7 @@ eg: بقولك ومبتسمعش || ba'ūlak w mabtisma'sh
 ms: أقول لك ولا تسمع || aqūlu laka wa lā tasma'
 he: אני אומר לך ואתה לא מקשיב{ani omer lecha ve'ata lo makshiv}/0,1,2,3,4,5
 tr: Söylüyorum, dinlemiyorsun/0,1,2,3,4,5
-= 551 You listen, but you don't understand
+= 555 You listen, but you don't understand
 pt: Você escuta e não entende/0,1,2,3,4,5
 fa: گوش می‌دی، ولی نمی‌فهمی{gush midi, vali nemifahmi}/0,1,2,3,4,5
 fw: گوش می‌دی، ولی نمی‌فهمی || gush midi, vali nemifahmi
@@ -484,7 +484,7 @@ eg: بتسمع ومبتفهمش || btisma' w mabtifhamsh
 ms: تسمع ولا تفهم || tasma'u wa lā tafham
 he: אתה מקשיב ולא מבין{ata makshiv ve'lo mevin}/0,1,2,3,4,5
 tr: Dinliyorsun, anlamıyorsun/0,1,2,3,4,5
-= 552 You understand, but you don't do it
+= 556 You understand, but you don't do it
 pt: Você entende e não faz/0,1,2,3,4,5
 fa: می‌فهمی، ولی انجامش نمی‌دی{mifahmi, vali anjāmesh nemidi}/0,1,2,3,4,5
 fw: می‌فهمی، ولی انجامش نمی‌دی || mifahmi, vali anjāmesh nemidi
@@ -493,7 +493,7 @@ eg: بتفهم ومبتعملش || btifham w mabti'milsh
 ms: تفهم ولا تفعل || tafhamu wa lā taf'al
 he: אתה מבין ולא עושה{ata mevin ve'lo ose}/0,1,2,3,4,5
 tr: Anlıyorsun, yapmıyorsun/0,1,2,3,4,5
-= 553 You do it, but you do it wrong
+= 557 You do it, but you do it wrong
 pt: Você faz, mas faz errado/0,1,2
 fa: انجامش می‌دی، ولی اشتباه{anjāmesh midi, vali eshtebāh}/0,1,2
 fw: انجامش می‌دی، ولی اشتباه || anjāmesh midi, vali eshtebāh
@@ -502,7 +502,7 @@ eg: بتعمل بس غلط || bti'mil bass ghalaṭ
 ms: تفعل لكن خطأً || taf'alu lākin khaṭa'an
 he: אתה עושה, אבל לא נכון{ata ose, aval lo nachon}/0,1,2
 tr: Yapıyorsun ama yanlış yapıyorsun/0,1,2
-= 554 It's wrong, and you won't admit it
+= 558 It's wrong, and you won't admit it
 pt: Está errado, e você não admite/0,1,2,3,4,5
 fa: اشتباهه، ولی قبول نمی‌کنی{eshtebāhe, vali qabul nemikoni}/0,1,2,3,4,5
 fw: اشتباهه، ولی قبول نمی‌کنی || eshtebāhe, vali qabul nemikoni
@@ -511,7 +511,7 @@ eg: غلطت ومبتعترفش || ghlett w mabti'tirifsh
 ms: أخطأت ولا تعترف || akhṭa'ta wa lā ta'tarif
 he: טעית ואתה לא מודה{ta'ita ve'ata lo mode}/0,1,2,3,4,5
 tr: Yanlış, ama kabul etmiyorsun/0,1,2,3,4,5
-= 555 One bowl of congee, please
+= 559 One bowl of congee, please
 pt: Uma tigela de congee, por favor/0,1,2,3,4
 fa: یک کاسه فرنی برنج، لطفاً{yek kāse ferni-ye berenj, lotfan}/0,1,2,3,4
 fw: یه کاسه فرنی برنج، لطفاً || ye kāse ferni-ye berenj, lotfan
@@ -520,7 +520,7 @@ eg: طبق شوربة رز، لو سمحت || ṭaba' shurbet rozz, law samaḥt
 ms: وعاء من عصيدة الأرز، من فضلك || wi'ā' min 'aṣīdat al-aruzz, min faḍlik
 he: קערה של דייסת אורז, בבקשה{ke'ara shel daysat orez, bevakasha}/0,1,2,3,4
 tr: Bir kase pirinç lapası, lütfen/0,1,2,3,4
-= 556 What?
+= 560 What?
 pt: O quê?/0
 fa: چی؟{chi?}/0
 fw: چی؟ || chi?
@@ -529,7 +529,7 @@ eg: إيه؟ || ēh?
 ms: ماذا؟ || mādhā?
 he: מה?{ma?}/0
 tr: Ne?/0
-= 557 OK, sure (can do)
+= 561 OK, sure (can do)
 pt: Tá bom, pode ser/0
 fa: باشه، می‌شه{bāshe, mishe}/0
 fw: باشه، می‌شه || bāshe, mishe
@@ -538,7 +538,7 @@ eg: ماشي، ينفع || māshi, yenfa'
 ms: حسنًا، ممكن || ḥasanan, mumkin
 he: בסדר, אפשר{beseder, efshar}/0
 tr: Tamam, olur/0
-= 558 Red
+= 562 Red
 pt: Vermelho/0,1
 fa: قرمز{ghermez}/0,1
 fw: قرمز || ghermez
@@ -547,7 +547,7 @@ eg: أحمر || aḥmar
 ms: أحمر || aḥmar
 he: אדום{adom}/0,1
 tr: Kırmızı/0,1
-= 559 Orange
+= 563 Orange
 pt: Laranja/0,1
 fa: نارنجی{nārenji}/0,1
 fw: نارنجی || nārenji
@@ -556,7 +556,7 @@ eg: برتقاني || burtu'āni
 ms: برتقالي || burtuqālī
 he: כתום{katom}/0,1
 tr: Turuncu/0,1
-= 560 Yellow
+= 564 Yellow
 pt: Amarelo/0,1
 fa: زرد{zard}/0,1
 fw: زرد || zard
@@ -565,7 +565,7 @@ eg: أصفر || aṣfar
 ms: أصفر || aṣfar
 he: צהוב{tsahov}/0,1
 tr: Sarı/0,1
-= 561 Green
+= 565 Green
 pt: Verde/0,1
 fa: سبز{sabz}/0,1
 fw: سبز || sabz
@@ -574,7 +574,7 @@ eg: أخضر || akhḍar
 ms: أخضر || akhḍar
 he: ירוק{yarok}/0,1
 tr: Yeşil/0,1
-= 562 Blue
+= 566 Blue
 pt: Azul/0,1
 fa: آبی{ābi}/0,1
 fw: آبی || ābi
@@ -583,7 +583,7 @@ eg: أزرق || azra'
 ms: أزرق || azraq
 he: כחול{kachol}/0,1
 tr: Mavi/0,1
-= 563 Purple
+= 567 Purple
 pt: Roxo/0,1
 fa: بنفش{banafsh}/0,1
 fw: بنفش || banafsh
@@ -592,7 +592,7 @@ eg: بنفسجي || banafsigi
 ms: أرجواني || urjuwānī
 he: סגול{sagol}/0,1
 tr: Mor/0,1
-= 564 Pink
+= 568 Pink
 pt: Rosa/0,1
 fa: صورتی{surati}/0,1
 fw: صورتی || surati
@@ -601,7 +601,7 @@ eg: بمبي || bambi
 ms: وردي || wardī
 he: ורוד{varod}/0,1
 tr: Pembe/0,1
-= 565 Brown
+= 569 Brown
 pt: Marrom/0,1
 fa: قهوه‌ای{ghahve'i}/0,1
 fw: قهوه‌ای || ghahve'i
@@ -610,7 +610,7 @@ eg: بني || bunni
 ms: بني || bunnī
 he: חום{chum}/0,1
 tr: Kahverengi/0,1
-= 566 Black
+= 570 Black
 pt: Preto/0,1
 fa: سیاه{siyāh}/0,1
 fw: سیاه || siyāh
@@ -619,7 +619,7 @@ eg: إسود || iswid
 ms: أسود || aswad
 he: שחור{shachor}/0,1
 tr: Siyah/0,1
-= 567 White
+= 571 White
 pt: Branco/0,1
 fa: سفید{sefid}/0,1
 fw: سفید || sefid
@@ -628,7 +628,7 @@ eg: أبيض || abyaḍ
 ms: أبيض || abyaḍ
 he: לבן{lavan}/0,1
 tr: Beyaz/0,1
-= 568 Grey
+= 572 Grey
 pt: Cinza/0,1
 fa: خاکستری{khākestari}/0,1
 fw: خاکستری || khākestari

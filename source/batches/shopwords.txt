@@ -1,0 +1,43 @@
+@ Shopping | Buy
+g: buy
+y: 買/maai5/0
+m: 买/mǎi/0
+t: 买/mai33/0
+s: Comprar/0
+f: Acheter/0
+d: Kaufen/0
+n: 買 maai5 (buy) and 賣 maai6 (sell) differ only by tone, so listen closely. Mandarin is the same: 买 mǎi, 卖 mài.
+nt: From Stephen Li's dictionary: 买 mai33 “to buy”.
+
+@ Shopping | Sell
+g: sell
+y: 賣/maai6/0
+m: 卖/mài/0
+t: 卖/mai32/0
+s: Vender/0
+f: Vendre/0
+d: Verkaufen/0
+n: Memory trick: in simplified writing 卖 (sell) is 买 (buy) with 十 (ten) on top: the seller is the one who walks away with more money. In traditional writing it's 士 on top of 買.
+nt: From Stephen Li's dictionary: 卖 mai32 “to sell”. Buy is mai33: only the tone changes, just like in Cantonese.
+
+@ Shopping | This one
+g: this / one
+y: 呢/ni1/0 ; 個/go3/1
+m: 这/zhè/0 ; 个/ge/1
+t: 该/kɔi21/0 ; 个/gɔi33/1
+s: Este/0,1
+f: Celui-ci/0,1
+d: Dieses hier/0,1
+n: 個 go3 is the everyday measure word: point at something and say 呢個 to mean “this one”.
+nt: From Stephen Li's dictionary: 该个 kɔi21 gɔi33 “this (one)”.
+
+@ Shopping | That one
+g: that / one
+y: 嗰/go2/0 ; 個/go3/1
+m: 那/nà/0 ; 个/ge/1
+t: 咛/nein21/0 ; 个/gɔi33/1
+s: Ese/0,1
+f: Celui-là/0,1
+d: Das da/0,1
+n: Cantonese 嗰個 go2 go3 is “that one”. With 呢個 (this one) you can shop just by pointing.
+nt: From Stephen Li's dictionary: 咛个 nein21 gɔi33 “that (one)”; for “that other one” it lists 𠴛个 kəŋ21 gɔi33.

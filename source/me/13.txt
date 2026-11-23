@@ -1,0 +1,36 @@
+= 417 Buy
+pt: Comprar/0
+fa: خریدن{kharidan}/0
+fw: خریدن || kharidan
+la: اشترى{ishtara}/0
+eg: اشترى || ishtara
+ms: اشترى || ishtarā
+he: לקנות{liknot}/0
+tr: Satın almak/0
+= 418 Sell
+pt: Vender/0
+fa: فروختن{forukhtan}/0
+fw: فروختن || forukhtan
+la: باع{bā'}/0
+eg: باع || bā'
+ms: باع || bā'a
+he: למכור{limkor}/0
+tr: Satmak/0
+= 419 This one
+pt: Este aqui/0,1
+fa: این یکی{in yeki}/0,1
+fw: این یکی || in yeki
+la: هاد{hād}/0,1
+eg: ده || da
+ms: هذا || hādhā
+he: הזה{haze}/0,1
+tr: Bu/0,1
+= 420 That one
+pt: Aquele/0,1
+fa: آن یکی{ān yeki}/0,1
+fw: اون یکی || un yeki
+la: هداك{hadāk}/0,1
+eg: ده اللي هناك || da elli henāk
+ms: ذلك || dhālika
+he: ההוא{hahu}/0,1
+tr: Şu/0,1
