@@ -92,9 +92,10 @@ data += parse("batches/herbshop.txt")   # "Herbal Shop" conversation, last topic
 data += parse("batches/wetmarket.txt")   # "Wet Market" conversation (from a Hong Kong street video)
 data += parse("batches/sayingyes.txt")   # "Saying Yes" (verb + 了 instead of 是的, from a Mandarin teacher's reel)
 data += parse("batches/charpictures.txt")   # "Character Pictures" (口 吃 品 / 日 旦 明 / 目 手 看, from a Mandarin teacher's reel)
-data += parse("batches/marketrun.txt")   # "Market Run" (Tai Po Market: butcher + fruit stall, from a learner's reel), last topic
+data += parse("batches/marketrun.txt")   # "Market Run" (Tai Po Market: butcher + fruit stall, from a learner's reel)
+data += parse("batches/yuenlong.txt")   # "Day in Yuen Long" (word-by-word vlog reel), last topic
 
-order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop", "Wet Market", "Saying Yes", "Character Pictures", "Market Run"]
+order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop", "Wet Market", "Saying Yes", "Character Pictures", "Market Run", "Day in Yuen Long"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:

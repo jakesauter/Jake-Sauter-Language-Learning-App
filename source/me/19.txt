@@ -1,0 +1,117 @@
+= 645 Let's go to Yuen Long to eat.
+pt: Vamos comer em Yuen Long./0,1,2
+fa: بریم یوئن لانگ غذا بخوریم.{berim yuen lāng ghazā bokhorim.}/0,1,2
+fw: بریم یوئن لانگ غذا بخوریم. || berim yuen lāng ghazā bokhorim.
+la: يلّا نروح ناكل بيوين لونغ.{yalla nrūḥ nākol b-yuen long.}/0,1,2
+eg: يلّا نروح ناكل في يوين لونج. || yalla nrūḥ nākol fi yuen long.
+ms: لنذهب لنأكل في يوين لونغ. || li-nadhhab li-na'kul fī yuen long.
+he: בואו ניסע לאכול ביואן לונג.{bo'u nisa le'echol be-yuen long.}/0,1,2
+tr: Hadi Yuen Long'a yemeğe gidelim./0,1,2
+= 646 Chicken wing tips
+pt: Pontas de asa de frango/0
+fa: نوک بال مرغ{nok-e bāl-e morgh}/0
+fw: نوک بال مرغ || nok-e bāl-e morgh
+la: أطراف جوانح دجاج{aṭrāf jwāneḥ djēj}/0
+eg: أطراف أجنحة فراخ || aṭrāf agneḥet frākh
+ms: أطراف أجنحة الدجاج || aṭrāf ajniḥat ad-dajāj
+he: קצות כנפיים של עוף{ktzot kanfayim shel of}/0
+tr: Tavuk kanadı uçları/0
+= 647 Finished eating
+pt: Terminei de comer/0
+fa: غذام تموم شد{ghazām tamum shod}/0
+fw: غذام تموم شد || ghazām tamum shod
+la: خلّصت أكل{khallaṣt akl}/0
+eg: خلّصت أكل || khallaṣt akl
+ms: انتهيت من الأكل || intahaytu min al-akl
+he: סיימתי לאכול{siyamti le'echol}/0
+tr: Yemeği bitirdim/0
+= 648 Sweet potato
+pt: Batata-doce/0
+fa: سیب‌زمینی شیرین{sibzamini-ye shirin}/0
+fw: سیب‌زمینی شیرین || sibzamini-ye shirin
+la: بطاطا حلوة{baṭāṭa ḥelwe}/0
+eg: بطاطا || baṭāṭa
+ms: بطاطا حلوة || baṭāṭā ḥulwa
+he: בטטה{batata}/0
+tr: Tatlı patates/0
+= 649 Cat
+pt: Gato/0
+fa: گربه{gorbe}/0
+fw: گربه || gorbe
+la: بسّة{bisse}/0
+eg: قطّة || 'oṭṭa
+ms: قطّة || qiṭṭa
+he: חתול{chatul}/0
+tr: Kedi/0
+= 650 Camera
+pt: Câmera/0
+fa: دوربین{durbin}/0
+fw: دوربین || durbin
+la: كاميرا{kamēra}/0
+eg: كاميرا || kamēra
+ms: كاميرا || kāmīrā
+he: מצלמה{matzlema}/0
+tr: Kamera/0
+= 651 Bus
+pt: Ônibus/0
+fa: اتوبوس{otobus}/0
+fw: اتوبوس || otobus
+la: باص{bāṣ}/0
+eg: أتوبيس || otobīs
+ms: حافلة || ḥāfila
+he: אוטובוס{otobus}/0
+tr: Otobüs/0
+= 652 Bubble tea
+pt: Bubble tea/0
+fa: بابل تی{bābel ti}/0
+fw: بابل تی || bābel ti
+la: بابل تي{bubble tea}/0
+eg: بابل تي || bubble tea
+ms: شاي الفقاعات || shāy al-faqqā'āt
+he: באבל טי{babel ti}/0
+tr: Bubble tea/0
+= 653 Capsule toy
+pt: Brinquedo de cápsula/0
+fa: اسباب‌بازی کپسولی{asbāb-bāzi-ye kapsuli}/0
+fw: اسباب‌بازی کپسولی || asbāb-bāzi-ye kapsuli
+la: لعبة كبسولة{le'bet kapsūle}/0
+eg: لعبة كبسولة || le'bet kabsūla
+ms: لعبة الكبسولة || lu'bat al-kabsūla
+he: צעצוע בקפסולה{tza'atzu'a be-kapsula}/0
+tr: Kapsül oyuncak/0
+= 654 Sichuan fish with pickled greens
+pt: Peixe com verduras em conserva/0
+fa: ماهی با سبزی ترشی{māhi bā sabzi torshi}/0
+fw: ماهی با سبزی ترشی || māhi bā sabzi torshi
+la: سمك مع خضرا مخللة{samak ma' khuḍra mkhallale}/0
+eg: سمك بالخضار المخلل || samak bil-khuḍār el-mekhallel
+ms: سمك بالخضار المخللة || samak bil-khuḍār al-mukhallala
+he: דג עם ירקות כבושים{dag im yerakot kvushim}/0
+tr: Turşulu sebzeli balık/0
+= 655 Pay the bill
+pt: Pagar a conta/0
+fa: حساب کردن{hesāb kardan}/0
+fw: حساب کردن || hesāb kardan
+la: دفع الحساب{dafʿ el-ḥsāb}/0
+eg: ندفع الحساب || nedfa' el-ḥesāb
+ms: دفع الحساب || daf' al-ḥisāb
+he: לשלם את החשבון{leshalem et hacheshbon}/0
+tr: Hesabı ödemek/0
+= 656 So full!
+pt: Estou tão cheia!/0,1
+fa: چقدر سیر شدم!{cheqadr sir shodam!}/0,1
+fw: چقدر سیر شدم! || cheqadr sir shodam!
+la: شبعت كتير!{shbe't ktīr!}/0,1
+eg: شبعت أوي! || shbe't awi!
+ms: شبعت كثيراً! || shabi'tu kathīran!
+he: אני כל כך שבעה!{ani kol kach sve'a!}/0,1
+tr: Çok doydum!/0,1
+= 657 Go home
+pt: Voltar para casa/0
+fa: برگشتن خونه{bargashtan khune}/0
+fw: برگشتن خونه || bargashtan khune
+la: نرجع عالبيت{nerja' 'al-bēt}/0
+eg: نروّح || nrawwaḥ
+ms: العودة إلى البيت || al-'awda ilā al-bayt
+he: ללכת הביתה{lalechet habayta}/0
+tr: Eve dönmek/0

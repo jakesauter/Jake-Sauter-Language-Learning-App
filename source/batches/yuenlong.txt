@@ -1,0 +1,142 @@
+@ Day in Yuen Long | Let's go to Yuen Long to eat.
+g: go / Yuen Long / eat something
+y: 去/heoi3/0 ; 元朗/jyun4 long5/1 ; 食嘢/sik6 je5/2
+m: 去/qù/0 ; 元朗/yuán lǎng/1 ; 吃东西/chī dōng xi/2
+t: 去/hui33/0 ; 元朗/ŋun22 lɔŋ33/1? ; 吃嘢/hiak33 yia33/2
+s: Vamos a comer a Yuen Long./0,1,2
+f: On va manger à Yuen Long./0,1,2
+d: Wir fahren nach Yuen Long zum Essen./0,1,2
+n: From a "one day vlog in HK" reel, captioned word by word. 食嘢 sik6 je5 "eat stuff" is the everyday "eat" when you don't name the food. Yuen Long is a town in the New Territories famous for snacks.
+nt: 吃 hiak33 and 嘢 yia33 are in Stephen Li's dictionary; 元朗 is put together here.
+
+@ Day in Yuen Long | Chicken wing tips
+g: chicken wing tips
+y: 雞翼尖/gai1 jik6 zim1/0
+m: 鸡翅尖/jī chì jiān/0
+t: 鸡翼尖/gai33 yɛt21 diam33/0?
+s: Puntas de ala de pollo/0
+f: Bouts d'ailes de poulet/0
+d: Hähnchenflügelspitzen/0
+n: A Hong Kong street snack, braised and eaten off skewers. Cantonese says 雞翼 "chicken wing" where Mandarin says 鸡翅.
+nt: 鸡翼 gai33 yɛt21 and 尖 diam33 are in Stephen Li's dictionary; together is a guess.
+
+@ Day in Yuen Long | Finished eating
+g: finished eating
+y: 食完/sik6 jyun4/0
+m: 吃完了/chī wán le/0
+t: 吃完/hiak33 yɔn22/0
+s: Terminé de comer/0
+f: Fini de manger/0
+d: Fertig gegessen/0
+n: 完 after a verb means "finished": 做完 done doing, 睇完 done watching.
+nt: 吃 hiak33 is in Stephen Li's dictionary; 完 yɔn22 as in other cards.
+
+@ Day in Yuen Long | Sweet potato
+g: sweet potato
+y: 番薯/faan1 syu4/0
+m: 红薯/hóng shǔ/0
+t: 番薯/fan33 si225/0
+s: Batata/0
+f: Patate douce/0
+d: Süßkartoffel/0
+n: 番 means "foreign": it came to China from abroad. Roasted or fried sweet potato is a common street snack.
+nt: 番薯 fan33 si225 is in Stephen Li's dictionary.
+
+@ Day in Yuen Long | Cat
+g: cat
+y: 貓/maau1/0
+m: 猫/māo/0
+t: 猫/miu55/0
+s: Gato/0
+f: Chat/0
+d: Katze/0
+n: Hong Kong's shop cats (舖頭貓) are famous.
+nt: 猫 miu55 is in Stephen Li's dictionary.
+
+@ Day in Yuen Long | Camera
+g: camera
+y: 相機/soeng2 gei1/0
+m: 相机/xiàng jī/0
+t: 相机/ɬiaŋ33 gi33/0?
+s: Cámara/0
+f: Appareil photo/0
+d: Kamera/0
+n: 相 "photo" + 機 "machine". Taking a photo is 影相 jing2 soeng2.
+nt: Not in Stephen Li's dictionary; the reading is a guess. Check with family.
+
+@ Day in Yuen Long | Bus
+g: bus
+y: 巴士/baa1 si2/0
+m: 公交车/gōng jiāo chē/0
+t: 巴士/ba55 si215/0
+s: Autobús/0
+f: Bus/0
+d: Bus/0
+n: 巴士 is a sound loan from English "bus". Mainland Mandarin says 公交车; Taiwan says 公车.
+nt: 巴士 ba55 si215 is in Stephen Li's dictionary.
+
+@ Day in Yuen Long | Bubble tea
+g: bubble tea
+y: 珍珠奶茶/zan1 zyu1 naai5 caa4/0
+m: 珍珠奶茶/zhēn zhū nǎi chá/0
+t: 珍珠奶茶/dzin33 dzi33 nai33 tsa22/0?
+s: Té de burbujas/0
+f: Thé aux perles/0
+d: Bubble Tea/0
+n: "Pearl milk tea": 珍珠 pearls (the tapioca balls) + 奶茶 milk tea.
+nt: 茶 tsa22 is in other cards; the rest is a guess. Check with family.
+
+@ Day in Yuen Long | Capsule toy
+g: capsule toy
+y: 扭蛋/nau2 daan2/0
+m: 扭蛋/niǔ dàn/0
+t: 扭蛋/nau55 an225/0?
+s: Juguete de cápsula/0
+f: Jouet en capsule/0
+d: Kapselspielzeug/0
+n: "Twist egg": you twist the knob and a toy comes out in a plastic egg (gachapon in Japanese).
+nt: Not in Stephen Li's dictionary; the reading is a guess.
+
+@ Day in Yuen Long | Sichuan fish with pickled greens
+g: pickled-greens fish
+y: 酸菜魚/syun1 coi3 jyu2/0
+m: 酸菜鱼/suān cài yú/0
+t: 酸菜鱼/ɬɔn33 tɔi33 ŋui215/0?
+s: Pescado con verduras encurtidas/0
+f: Poisson aux légumes marinés/0
+d: Fisch mit eingelegtem Senfkohl/0
+n: 酸 sour + 菜 greens + 魚 fish: a spicy-sour Sichuan dish that's very popular in Hong Kong now. Note 魚 changes to jyu2 at the end of a dish name.
+nt: 菜 tɔi33 and 鱼 ŋui215 are in Stephen Li's dictionary; 酸 is a guess.
+
+@ Day in Yuen Long | Pay the bill
+g: pay the bill
+y: 埋單/maai4 daan1/0
+m: 买单/mǎi dān/0
+t: 找数/dzau55 su33/0
+s: Pagar la cuenta/0
+f: Payer l'addition/0
+d: Bezahlen/0
+n: Say 唔該埋單 to ask for the bill. Mandarin 买单 comes from this Cantonese word (see "Saying Yes").
+nt: 找数 dzau55 su33 is in Stephen Li's dictionary.
+
+@ Day in Yuen Long | So full!
+g: so / full
+y: 好/hou2/0 ; 飽/baau2/1
+m: 好/hǎo/0 ; 饱/bǎo/1
+t: 好/hɔu55/0 ; 饱/bɔu55/1
+s: ¡Estoy llena!/0,1
+f: Je suis pleine !/0,1
+d: Ich bin so satt!/0,1
+n: 好飽 "so full". 食飽未呀？ "have you eaten your fill?" is another friendly greeting.
+nt: 饱 bɔu55 is in Stephen Li's dictionary.
+
+@ Day in Yuen Long | Go home
+g: go home
+y: 返屋企/faan1 uk1 kei2/0
+m: 回家/huí jiā/0
+t: 旅归/lui21 gi33/0
+s: Volver a casa/0
+f: Rentrer à la maison/0
+d: Nach Hause gehen/0
+n: 返 "return" + 屋企 "home". Taishanese has its own word, 旅归.
+nt: 旅归 lui21 gi33 "to go home" is in Stephen Li's dictionary.
