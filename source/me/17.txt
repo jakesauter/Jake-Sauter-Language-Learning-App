@@ -1,0 +1,90 @@
+= 616 Mouth
+pt: Boca/0
+fa: دهان{dahān}/0
+fw: دهن || dahan
+la: تمّ{temm}/0
+eg: بُق || bo'
+ms: فم || fam
+he: פה{pe}/0
+tr: Ağız/0
+= 617 To eat
+pt: Comer/0
+fa: خوردن{khordan}/0
+fw: خوردن || khordan
+la: إكل{ikol}/0
+eg: ياكل || yākol
+ms: أكل || akl
+he: לאכול{le'echol}/0
+tr: Yemek/0
+= 618 To taste
+pt: Provar/0
+fa: چشیدن{cheshidan}/0
+fw: مزه کردن || maze kardan
+la: دوق{dū'}/0
+eg: يدوق || yedū'
+ms: تذوّق || tadhawwuq
+he: לטעום{lit'om}/0
+tr: Tatmak/0
+= 619 He has good character.
+pt: Ele tem bom caráter./0,1,2
+fa: آدم خوبیه.{ādam-e khubiye.}/0,1,2
+fw: آدم خوبیه. || ādam-e khubiye.
+la: هوّي آدمي كتير.{huwwe ādami ktīr.}/0,1,2
+eg: هو ابن حلال. || huwwa ibn ḥalāl.
+ms: إنّه ذو أخلاق حسنة. || innahu dhū akhlāqin ḥasana.
+he: יש לו אופי טוב.{yesh lo ofi tov.}/0,1,2
+tr: Çok iyi bir insan./0,1,2
+= 620 The sun
+pt: O sol/0
+fa: خورشید{khorshid}/0
+fw: آفتاب || āftāb
+la: الشمس{esh-shams}/0
+eg: الشمس || esh-shams
+ms: الشمس || ash-shams
+he: השמש{hashemesh}/0
+tr: Güneş/0
+= 621 New Year's Day
+pt: Dia de Ano-Novo/0
+fa: روز اول سال نو میلادی{ruz-e avval-e sāl-e no-ye milādi}/0
+fw: اول ژانویه || avval-e zhānviye
+la: راس السنة{rās es-sene}/0
+eg: راس السنة || rās es-sana
+ms: رأس السنة الميلادية || ra's as-sana al-mīlādiyya
+he: אחד בינואר{echad be-yanu'ar}/0
+tr: Yılbaşı/0
+= 622 Tomorrow
+pt: Amanhã/0
+fa: فردا{fardā}/0
+fw: فردا || fardā
+la: بكرا{bukra}/0
+eg: بكرة || bokra
+ms: غداً || ghadan
+he: מחר{machar}/0
+tr: Yarın/0
+= 623 Eye
+pt: Olho/0
+fa: چشم{cheshm}/0
+fw: چشم || cheshm
+la: عين{'ayn}/0
+eg: عين || 'ēn
+ms: عين || 'ayn
+he: עין{ayin}/0
+tr: Göz/0
+= 624 Hand
+pt: Mão/0
+fa: دست{dast}/0
+fw: دست || dast
+la: إيد{īd}/0
+eg: إيد || īd
+ms: يد || yad
+he: יד{yad}/0
+tr: El/0
+= 625 To look
+pt: Olhar/0
+fa: نگاه کردن{negāh kardan}/0
+fw: نگاه کردن || negāh kardan
+la: يطلّع{yṭalle'}/0
+eg: يبص || yeboṣṣ
+ms: نظر || naẓar
+he: להסתכל{lehistakel}/0
+tr: Bakmak/0

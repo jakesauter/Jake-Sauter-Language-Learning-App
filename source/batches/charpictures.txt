@@ -1,0 +1,109 @@
+@ Character Pictures | Mouth
+g: mouth
+y: 口/hau2/0
+m: 口/kǒu/0
+t: 口/həu55/0
+s: Boca/0
+f: Bouche/0
+d: Mund/0
+n: From a Mandarin teacher's reel on how characters are built. 口 is a picture of an open mouth. Many characters with 口 in them have to do with the mouth. In everyday speech the mouth is 嘴 (Mandarin zuǐ, Cantonese 嘴 zeoi2).
+nt: 口 həu55 "mouth" is in Stephen Li's dictionary.
+
+@ Character Pictures | To eat
+g: eat
+y: 食/sik6/0
+m: 吃/chī/0
+t: 吃/hiak33/0
+s: Comer/0
+f: Manger/0
+d: Essen/0
+n: One mouth: 吃 has 口 on the left. Mandarin says 吃 chī; Cantonese says 食 sik6, the older word; Taishanese says 吃 hiak33.
+nt: 吃 hiak33 is in Stephen Li's dictionary.
+
+@ Character Pictures | To taste
+g: taste
+y: 品/ban2/0
+m: 品/pǐn/0
+t: 品/ben55/0?
+s: Probar/0
+f: Goûter/0
+d: Kosten/0
+n: Three mouths: 品. Picture a chef asking many people to taste the food. 品 means "to taste and judge", as in 品茶 "to savor tea".
+nt: 品 is not in Stephen Li's dictionary; ben55 is a guess from the Cantonese. Check with family.
+
+@ Character Pictures | He has good character.
+g: he / character / very good
+y: 佢/keoi5/0 ; 人品/jan4 ban2/1 ; 好好/hou2 hou2/2
+m: 他/tā/0 ; 人品/rén pǐn/1 ; 很好/hěn hǎo/2
+t: 佢/kui33/0 ; 人品/ŋin22 ben55/1? ; 好好/hɔu55 hɔu55/2
+s: Es buena persona./0,1,2
+f: Il a bon caractère./0,1,2
+d: Er hat einen guten Charakter./0,1,2
+n: 品 judges food; 人品 "person-taste" judges a person: their character. 他人品很好 is high praise.
+nt: 佢 kui33 and 好 hɔu55 are in Stephen Li's dictionary; 人品 is put together here.
+
+@ Character Pictures | The sun
+g: the sun
+y: 太陽/taai3 joeng4/0
+m: 太阳/tài yáng/0
+t: 日头/ŋit33 həu21/0
+s: El sol/0
+f: Le soleil/0
+d: Die Sonne/0
+n: 日 rì is a drawing of the sun (first drawn as a circle with a dot). Alone it also means "day".
+nt: 日头 ŋit33 həu21 "the sun" is in Stephen Li's dictionary.
+
+@ Character Pictures | New Year's Day
+g: New Year's Day
+y: 元旦/jyun4 daan3/0
+m: 元旦/yuán dàn/0
+t: 元旦/ŋun22 an33/0
+s: Año Nuevo/0
+f: Le jour de l'An/0
+d: Neujahr/0
+n: 旦 dàn is 日 with a line under it: the sun rising over the horizon, so "dawn". 元旦 (January 1st) is "the first dawn".
+nt: 元旦 ŋun22 an33 is in Stephen Li's dictionary.
+
+@ Character Pictures | Tomorrow
+g: tomorrow
+y: 聽日/ting1 jat6/0
+m: 明天/míng tiān/0
+t: 天早/hein32 dɔu55/0
+s: Mañana/0
+f: Demain/0
+d: Morgen/0
+n: 明 is sun 日 + moon 月: "bright". Once the sun rises again it's 明天 "tomorrow" in Mandarin. Cantonese says 聽日 and Taishanese 天早 instead.
+nt: 天早 hein32 dɔu55 "tomorrow" is in Stephen Li's dictionary.
+
+@ Character Pictures | Eye
+g: eye
+y: 眼/ngaan5/0
+m: 眼睛/yǎn jing/0
+t: 眼/ŋan55/0
+s: Ojo/0
+f: Œil/0
+d: Auge/0
+n: 目 mù is an eye turned on its side; the two lines inside are the pupil. 目 shows up in written words, but people say 眼睛 (Mandarin) or 眼 (Cantonese, Taishanese).
+nt: 眼 ŋan55 is in Stephen Li's dictionary.
+
+@ Character Pictures | Hand
+g: hand
+y: 手/sau2/0
+m: 手/shǒu/0
+t: 手/siu55/0
+s: Mano/0
+f: Main/0
+d: Hand/0
+n: 手 is a hand with its fingers. Squashed on top of another part, it is written 龵, as in 看.
+nt: 手 siu55 is in Stephen Li's dictionary.
+
+@ Character Pictures | To look
+g: look
+y: 睇/tai2/0
+m: 看/kàn/0
+t: 睇/hai55/0
+s: Mirar/0
+f: Regarder/0
+d: Schauen/0
+n: 看 is a hand 手 held over an eye 目, shading your eyes to look far. Mandarin says 看; Cantonese and Taishanese say 睇.
+nt: 睇 hai55 is in Stephen Li's dictionary.
