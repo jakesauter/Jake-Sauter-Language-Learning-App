@@ -127,6 +127,14 @@ def append_line(person, conversation_id, line):
     _write_details(folder, conversation)
 
 
+def set_source(person, conversation_id, source):
+    """Where a conversation came from when it wasn't recorded live, e.g. {"kind": "video", "link": ...}."""
+    folder = conversation_folder(person, conversation_id)
+    conversation = details(person, conversation_id)
+    conversation["source"] = source
+    _write_details(folder, conversation)
+
+
 def study_translations(person, conversation_id):
     """Cached translations of a conversation's English lines into study languages: {language: {text: translation}}."""
     try:

@@ -6,6 +6,7 @@ handles origins, CORS, rate limits and size caps; this server still validates it
     GET  /health
     POST /transcribe   multipart: file, language, lang, translate (1/0), engines
     POST /translate    JSON {text, source, target}
+    POST /video        JSON {link, language}: YouTube/Instagram link -> saved conversation (GET /video/{job_id})
     WS   /live         ?lang=yue&target=en, then binary 16 kHz mono Int16 PCM, text {"type":"stop"}
 """
 
@@ -30,6 +31,7 @@ import ensemble
 import live_session
 import speech_engines
 import translation
+import video_import
 
 DATA_FOLDER = os.environ.get("POLYLANG_DATA", "/data")
 SITE_FOLDER = os.environ.get("POLYLANG_SITE", "/site")
@@ -332,6 +334,26 @@ async def get_conversation(request: Request, conversation_id: str):
         return JSONResponse({"error": "conversation not found"}, 404)
     return {**conversations.details(person, conversation_id), "lines": conversations.lines(person, conversation_id),
             "digest_lines": digest.digested_lines(person, conversation_id)}
+
+
+class VideoRequest(BaseModel):
+    link: str = Field(min_length=10, max_length=500)
+    language: str = Field(default="yue", pattern=r"^[a-z]{2,3}$")
+
+
+@app.post("/video")
+async def import_video(request: Request, body: VideoRequest):
+    """Start turning a YouTube or Instagram link into a conversation; poll GET /video/{job_id}."""
+    try:
+        return video_import.start(conversations.person_from(request.headers), body.link, body.language)
+    except ValueError as error:
+        return JSONResponse({"error": str(error)}, 400)
+
+
+@app.get("/video/{job_id}")
+async def video_progress(request: Request, job_id: str):
+    job = video_import.job_for(conversations.person_from(request.headers), job_id)
+    return job if job else JSONResponse({"error": "not found"}, 404)
 
 
 class StudyRequest(BaseModel):

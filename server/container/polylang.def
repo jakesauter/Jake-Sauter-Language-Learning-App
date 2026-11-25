@@ -17,8 +17,10 @@ From: container/base.sif
     speech_engines.py /app/speech_engines.py
     translation.py /app/translation.py
     router.json /app/router.json
+    video_import.py /app/video_import.py
 
 %post
+    /opt/venv/bin/pip install --no-cache-dir yt-dlp==2026.10.26
     chmod -R a+rX /app
 
 %environment
