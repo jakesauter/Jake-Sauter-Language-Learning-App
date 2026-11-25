@@ -1,0 +1,171 @@
+= 626 So much seafood!
+pt: Quanto fruto do mar!/0,1
+fa: چقدر غذای دریایی!{cheqadr ghazā-ye daryāyi!}/0,1
+fw: چقدر غذای دریایی! || cheqadr ghazā-ye daryāyi!
+la: شو في أكل بحري!{shu fī akl baḥri!}/0,1
+eg: كل ده سمك! || koll da samak!
+ms: ما أكثر المأكولات البحرية! || mā akthara al-ma'kūlāt al-baḥriyya!
+he: כמה פירות ים!{kama perot yam!}/0,1
+tr: Ne çok deniz ürünü!/0,1
+= 627 Hello, uncle, I want to buy some beef to stir-fry.
+pt: Olá, tio, quero comprar carne de vaca para refogar./0,1,2,3,4,5,6,7
+fa: سلام آقا، گوشت گاو برای سرخ کردن می‌خوام.{salām āqā, gusht-e gāv barāye sorkh kardan mikhām.}/0,1,2,3,4,5,6,7
+fw: سلام آقا، گوشت گاو برای سرخ کردن می‌خوام. || salām āqā, gusht-e gāv barāye sorkh kardan mikhām.
+la: مرحبا عمّو، بدّي لحمة بقر للقلي.{marḥaba 'ammo, baddi laḥmet ba'ar lal-'ali.}/0,1,2,3,4,5,6,7
+eg: أهلاً يا عمّ، عايز لحمة بقري للتشويح. || ahlan ya 'amm, 'āyez laḥma ba'ari lit-tashwīḥ.
+ms: مرحباً يا عمّ، أريد لحم بقر للقلي. || marḥaban yā 'amm, urīdu laḥma baqarin lil-qalī.
+he: שלום, דוד, אני רוצה בשר בקר להקפצה.{shalom, dod, ani rotze basar bakar le-hakpatza.}/0,1,2,3,4,5,6,7
+tr: Merhaba amca, sote için biraz dana eti istiyorum./0,1,2,3,4,5,6,7
+= 628 How much do you want?
+pt: Quanto você quer?/0
+fa: چقدر می‌خواید؟{cheqadr mikhāid?}/0
+fw: چقدر می‌خواید؟ || cheqadr mikhāid?
+la: قدّيش بدّك؟{addēsh baddak?}/0
+eg: عايز قدّ إيه؟ || 'āyez add ēh?
+ms: كم تريد؟ || kam turīd?
+he: כמה אתה רוצה?{kama ata rotze?}/0
+tr: Ne kadar istersiniz?/0
+= 629 Five hundred grams.
+pt: Quinhentos gramas./0,1
+fa: پونصد گرم.{punsad geram.}/0,1
+fw: پونصد گرم. || punsad geram.
+la: خمسمية غرام.{khamsmiyye grām.}/0,1
+eg: نص كيلو. || noṣṣ kīlo.
+ms: خمسمئة غرام. || khamsumi'at ghrām.
+he: חצי קילו.{chatzi kilo.}/0,1
+tr: Beş yüz gram./0,1
+= 630 Do you want it fatty?
+pt: Quer com gordura?/0,1,2
+fa: چرب‌تر می‌خواید؟{charbtar mikhāid?}/0,1,2
+fw: چرب‌تر می‌خواید؟ || charbtar mikhāid?
+la: بدّك ياها مع دهن؟{baddak yāha ma' dehn?}/0,1,2
+eg: عايزها بالدهن؟ || 'ayezha bid-dihn?
+ms: هل تريده بالدهن؟ || hal turīduhu bid-dihn?
+he: אתה רוצה עם שומן?{ata rotze im shuman?}/0,1,2
+tr: Yağlı mı olsun?/0,1,2
+= 631 This one, this one.
+pt: Este, este./0,1
+fa: این، این.{in, in.}/0,1
+fw: این، این. || in, in.
+la: هيدا، هيدا.{hayda, hayda.}/0,1
+eg: ده، ده. || da, da.
+ms: هذا، هذا. || hādhā, hādhā.
+he: את זה, את זה.{et ze, et ze.}/0,1
+tr: Bu, bu./0,1
+= 632 Thank you, thank you!
+pt: Obrigada, obrigada!/0
+fa: مرسی، مرسی!{mersi, mersi!}/0
+fw: مرسی، مرسی! || mersi, mersi!
+la: ميرسي، ميرسي!{merci, merci!}/0
+eg: شكراً، شكراً! || shukran, shukran!
+ms: شكراً، شكراً! || shukran, shukran!
+he: תודה, תודה!{toda, toda!}/0
+tr: Teşekkürler, teşekkürler!/0
+= 633 I bought some beef.
+pt: Comprei carne de vaca./0,1,2
+fa: گوشت گاو خریدم.{gusht-e gāv kharidam.}/0,1,2
+fw: گوشت گاو خریدم. || gusht-e gāv kharidam.
+la: اشتريت لحمة بقر.{shtarēt laḥmet ba'ar.}/0,1,2
+eg: اشتريت لحمة. || ishtarēt laḥma.
+ms: اشتريت لحم بقر. || ishtaraytu laḥma baqar.
+he: קניתי בשר בקר.{kaniti basar bakar.}/0,1,2
+tr: Dana eti aldım./0,1,2
+= 634 This cost sixty dollars.
+pt: Isto custou sessenta dólares./0,1,2
+fa: این شصت دلار شد.{in shast dolār shod.}/0,1,2
+fw: این شصت دلار شد. || in shast dolār shod.
+la: هيدا كلّف ستّين دولار.{hayda kallaf sittīn dolār.}/0,1,2
+eg: ده بستين دولار. || da bi-sittīn dolār.
+ms: هذا كلّف ستين دولاراً. || hādhā kallafa sittīna dūlāran.
+he: זה עלה שישים דולר.{ze ala shishim dolar.}/0,1,2
+tr: Bu altmış dolar tuttu./0,1,2
+= 635 I'm going to buy some vegetables.
+pt: Vou comprar verduras./0,1,2
+fa: می‌رم سبزی بخرم.{miram sabzi bekharam.}/0,1,2
+fw: می‌رم سبزی بخرم. || miram sabzi bekharam.
+la: رايحة إشتري خضرا.{rāyḥa ishtiri khuḍra.}/0,1,2
+eg: رايحة أشتري خضار. || rayḥa ashtiri khuḍār.
+ms: سأذهب لأشتري خضاراً. || sa-adhhabu li-ashtariya khuḍāran.
+he: אני הולכת לקנות ירקות.{ani holechet liknot yerakot.}/0,1,2
+tr: Sebze almaya gidiyorum./0,1,2
+= 636 One watermelon.
+pt: Uma melancia./0,1
+fa: یه هندونه.{ye hendune.}/0,1
+fw: یه هندونه. || ye hendune.
+la: بطّيخة وحدة.{baṭṭīkha waḥde.}/0,1
+eg: بطيخة واحدة. || baṭṭīkha waḥda.
+ms: بطيخة واحدة. || baṭṭīkha wāḥida.
+he: אבטיח אחד.{avati'ach echad.}/0,1
+tr: Bir karpuz./0,1
+= 637 Fifty-eight.
+pt: Cinquenta e oito./0
+fa: پنجاه و هشت.{panjāh o hasht.}/0
+fw: پنجاه و هشت. || panjāh o hasht.
+la: تمانة وخمسين.{tmēne w khamsīn.}/0
+eg: تمانية وخمسين. || tamanya w khamsīn.
+ms: ثمانية وخمسون. || thamāniya wa-khamsūn.
+he: חמישים ושמונה.{chamishim u-shmone.}/0
+tr: Elli sekiz./0
+= 638 Can I pay with Octopus?
+pt: Posso pagar com Octopus?/0,1
+fa: می‌تونم با کارت اختاپوس حساب کنم؟{mitunam bā kārt-e okhtāpus hesāb konam?}/0,1
+fw: می‌تونم با کارت اختاپوس حساب کنم؟ || mitunam bā kārt-e okhtāpus hesāb konam?
+la: فيني إدفع بالأوكتوبوس؟{fīni idfa' bil-octopus?}/0,1
+eg: ينفع أدفع بالأوكتوبوس؟ || yenfa' adfa' bil-octopus?
+ms: هل يمكنني الدفع ببطاقة أوكتوبوس؟ || hal yumkinunī ad-daf' bi-biṭāqat octopus?
+he: אפשר לשלם באוקטופוס?{efshar leshalem be-oktopus?}/0,1
+tr: Octopus ile ödeyebilir miyim?/0,1
+= 639 Yes, you can.
+pt: Pode, sim./0
+fa: آره، می‌شه.{āre, mishe.}/0
+fw: آره، می‌شه. || āre, mishe.
+la: إيه، فيكي.{ē, fīki.}/0
+eg: أيوه، ينفع. || aywa, yenfa'.
+ms: نعم، يمكنك. || na'am, yumkinuki.
+he: כן, אפשר.{ken, efshar.}/0
+tr: Evet, olur./0
+= 640 I'll bag it for you.
+pt: Eu coloco na sacola para você./0,1,2
+fa: برات می‌ذارمش تو کیسه.{barāt mizāramesh tu kise.}/0,1,2
+fw: برات می‌ذارمش تو کیسه. || barāt mizāramesh tu kise.
+la: بحطّلك ياها بكيس.{baḥuṭṭellik yāha b-kīs.}/0,1,2
+eg: هحطّهولك في كيس. || haḥoṭṭehūlik fi kīs.
+ms: سأضعه لكِ في كيس. || sa-aḍa'uhu laki fī kīs.
+he: אני אשים לך בשקית.{ani asim lach be-sakit.}/0,1,2
+tr: Size poşetleyeyim./0,1,2
+= 641 Ah, how much is it?
+pt: Ah, quanto custa?/0
+fa: آه، چنده؟{āh, chande?}/0
+fw: آه، چنده؟ || āh, chande?
+la: آه، قدّيش؟{āh, addēsh?}/0
+eg: آه، بكام؟ || āh, bikām?
+ms: آه، كم السعر؟ || āh, kam as-si'r?
+he: אה, כמה זה?{ah, kama ze?}/0
+tr: Ah, ne kadar?/0
+= 642 Ten dollars.
+pt: Dez dólares./0,1
+fa: ده دلار.{dah dolār.}/0,1
+fw: ده دلار. || dah dolār.
+la: عشرة دولار.{'ashra dolār.}/0,1
+eg: عشرة دولار. || 'ashara dolār.
+ms: عشرة دولارات. || 'asharat dūlārāt.
+he: עשרה דולר.{asara dolar.}/0,1
+tr: On dolar./0,1
+= 643 I bought so much stuff.
+pt: Comprei um monte de coisas./0,1,2,3
+fa: کلی چیز خریدم.{kolli chiz kharidam.}/0,1,2,3
+fw: کلی چیز خریدم. || kolli chiz kharidam.
+la: اشتريت كتير غراض.{shtarēt ktīr ghrāḍ.}/0,1,2,3
+eg: اشتريت حاجات كتير. || ishtarēt ḥagāt ktīr.
+ms: اشتريت أشياء كثيرة. || ishtaraytu ashyā'a kathīra.
+he: קניתי המון דברים.{kaniti hamon dvarim.}/0,1,2,3
+tr: Bir sürü şey aldım./0,1,2,3
+= 644 It's so heavy!
+pt: Está tão pesado!/0,1
+fa: چقدر سنگینه!{cheqadr sangine!}/0,1
+fw: چقدر سنگینه! || cheqadr sangine!
+la: كتير تقيل!{ktīr t'īl!}/0,1
+eg: تقيل أوي! || t'īl awi!
+ms: إنه ثقيل جداً! || innahu thaqīlun jiddan!
+he: זה כל כך כבד!{ze kol kach kaved!}/0,1
+tr: Çok ağır!/0,1

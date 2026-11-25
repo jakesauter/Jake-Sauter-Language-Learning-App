@@ -1,0 +1,208 @@
+@ Market Run | So much seafood!
+g: so much / seafood
+y: 咁多/gam3 do1/0 ; 海鮮/hoi2 sin1/1 ; 呀/aa3/-
+m: 好多/hǎo duō/0 ; 海鲜/hǎi xiān/1 ; 啊/a/-
+t: 该多/kɔi21 ɔ335/0 ; 海鲜/hɔi55 ɬein33/1? ; 啊/a33/-
+s: ¡Cuánto marisco!/0,1
+f: Que de fruits de mer !/0,1
+d: So viele Meeresfrüchte!/0,1
+n: From a learner's "day 1 of speaking Cantonese" video at Tai Po Market, Hong Kong. 咁多 gam3 do1 "so much" + 呀 for surprise.
+nt: 该多 kɔi21 ɔ335 "so much" is in Stephen Li's dictionary; 海鲜 is a guess from the Cantonese.
+
+@ Market Run | Hello, uncle, I want to buy some beef to stir-fry.
+g: uncle / hello / I / want / buy / beef / to / stir-fry
+y: 阿叔/aa3 suk1/0 ; 你好/nei5 hou2/1 ; 我/ngo5/2 ; 想/soeng2/3 ; 買/maai5/4 ; 牛肉/ngau4 juk6/5 ; 嚟/lai4/6 ; 炒/caau2/7
+m: 叔叔/shū shu/0 ; 你好/nǐ hǎo/1 ; 我/wǒ/2 ; 想/xiǎng/3 ; 买/mǎi/4 ; 牛肉/niú ròu/5 ; 来/lái/6 ; 炒/chǎo/7
+t: 阿叔/a33 sək55/0? ; 你好/ni33 hɔu55/1 ; 我/ŋɔi33/2 ; 想/ɬiaŋ55/3? ; 买/mai33/4 ; 牛肉/ŋəu22 ŋək32/5 ; 来/lɔi22/6 ; 炒/tsɔu55/7
+s: Hola, señor, quiero comprar carne de res para saltear./0,1,2,3,4,5,6,7
+f: Bonjour monsieur, je voudrais du bœuf à faire sauter./0,1,2,3,4,5,6,7
+d: Hallo, ich hätte gern Rindfleisch zum Anbraten./0,1,2,3,4,5,6,7
+n: At the butcher. Any older man is 阿叔 "uncle" (older woman: 阿姨 aa3 ji1). 嚟炒 "to stir-fry" tells him how to cut it.
+nt: 叔 sək55, 牛肉 ŋəu22 ŋək32, 买 mai33 and 炒 tsɔu55 are in Stephen Li's dictionary; 阿叔 and 想 are put together here.
+
+@ Market Run | How much do you want?
+g: how much
+y: 要/jiu3/- ; 幾多/gei2 do1/0
+m: 要/yào/- ; 多少/duō shao/0
+t: 几多/gi55 ɔ335/0
+s: ¿Cuánto quiere?/0
+f: Combien vous en voulez ?/0
+d: Wie viel möchten Sie?/0
+n: The butcher just says 幾多？ "how much?", meaning what weight.
+nt: 几多 gi55 ɔ335 is in Stephen Li's dictionary.
+
+@ Market Run | Five hundred grams.
+g: five hundred / grams
+y: 五百/ng5 baak3/0 ; 克/hak1/1
+m: 五百/wǔ bǎi/0 ; 克/kè/1
+t: 五百/m55 bak33/0 ; 克/hak55/1
+s: Quinientos gramos./0,1
+f: Cinq cents grammes./0,1
+d: Fünfhundert Gramm./0,1
+n: In the video she says it and the uncle hears 二百 "two hundred". Hong Kong markets also sell by the 斤 gan1 (about 600 g) and 兩 loeng2 (about 38 g).
+nt: 五 m55, 百 bak33 and 克 hak55 are in Stephen Li's dictionary.
+
+@ Market Run | Do you want it fatty?
+g: you / want / fatty
+y: 你/nei5/0 ; 想要/soeng2 jiu3/1 ; 肥/fei4/2 ; 啲/di1/- ; 呀/aa3/-
+m: 你/nǐ/0 ; 想要/xiǎng yào/1 ; 肥/féi/2 ; 一点/yì diǎn/- ; 吗/ma/-
+t: 你/ni33/0 ; 想爱/ɬiaŋ55 ɔi33/1? ; 肥/fi22/2 ; 啊/a33/-
+s: ¿La quiere con grasa?/0,1,2
+f: Vous la voulez grasse ?/0,1,2
+d: Möchten Sie es fetter?/0,1,2
+n: The question she didn't understand (her captions show 你想肥呀). Butchers often ask 肥定瘦？ fei4 ding6 sau3 "fatty or lean?". For stir-fry most people say 瘦啲 sau3 di1 "leaner".
+nt: 肥 fi22 "fatty (meat)" and 瘦 səu33 "lean" are in Stephen Li's dictionary; 想爱 is a guess.
+
+@ Market Run | This one, this one.
+g: this one / this one
+y: 呢個/ni1 go3/0 ; 呢個/ni1 go3/1
+m: 这个/zhè ge/0 ; 这个/zhè ge/1
+t: 该个/kɔi21 gɔi33/0 ; 该个/kɔi21 gɔi33/1
+s: Este, este./0,1
+f: Celui-ci, celui-ci./0,1
+d: Das hier, das hier./0,1
+n: When you don't know the word, point and say 呢個.
+nt: 该个 kɔi21 gɔi33 "this one" is in Stephen Li's dictionary.
+
+@ Market Run | Thank you, thank you!
+g: thank you
+y: 唔該晒/m4 goi1 saai3/0
+m: 谢谢/xiè xie/0 ; 谢谢/xiè xie/-
+t: 唔该/m22 gɔi33/0
+s: ¡Gracias, gracias!/0
+f: Merci, merci !/0
+d: Danke, danke!/0
+n: 唔該 is the thanks for a service (someone cut your meat, bagged your fruit); 晒 makes it "thanks so much". 多謝 is for gifts.
+nt: 唔该 m22 gɔi33 is in Stephen Li's dictionary.
+
+@ Market Run | I bought some beef.
+g: I / bought / beef
+y: 我/ngo5/0 ; 買咗/maai5 zo2/1 ; 牛肉/ngau4 juk6/2
+m: 我/wǒ/0 ; 买了/mǎi le/1 ; 牛肉/niú ròu/2
+t: 我/ŋɔi33/0 ; 买了/mai33 liau55/1? ; 牛肉/ŋəu22 ŋək32/2
+s: Compré carne de res./0,1,2
+f: J'ai acheté du bœuf./0,1,2
+d: Ich habe Rindfleisch gekauft./0,1,2
+n: 買咗 "bought": 咗 zo2 marks a finished action.
+nt: 买 mai33 and 牛肉 are in Stephen Li's dictionary; 了 for "done" is a guess.
+
+@ Market Run | This cost sixty dollars.
+g: this / sixty / dollars
+y: 呢個/ni1 go3/0 ; 六十/luk6 sap6/1 ; 蚊/man1/2
+m: 这个/zhè ge/0 ; 六十/liù shí/1 ; 块/kuài/2
+t: 该个/kɔi21 gɔi33/0 ; 六十/lək32 sip32/1 ; 文/mun55/2
+s: Esto costó sesenta dólares./0,1,2
+f: Ça m'a coûté soixante dollars./0,1,2
+d: Das hat sechzig Dollar gekostet./0,1,2
+n: 蚊 man1 is everyday "dollars" (written 元 on signs). Mandarin says 块 kuài.
+nt: 六 lək32 and 十 sip32 are in Stephen Li's dictionary; 文 mun55 "dollars" as in the Wet Market cards.
+
+@ Market Run | I'm going to buy some vegetables.
+g: I / go / buy vegetables
+y: 我/ngo5/0 ; 去/heoi3/1 ; 買菜/maai5 coi3/2
+m: 我/wǒ/0 ; 去/qù/1 ; 买菜/mǎi cài/2
+t: 我/ŋɔi33/0 ; 去/hui33/1? ; 买菜/mai33 tɔi33/2
+s: Voy a comprar verduras./0,1,2
+f: Je vais acheter des légumes./0,1,2
+d: Ich gehe Gemüse kaufen./0,1,2
+n: 買菜 "buy vegetables" also means grocery shopping in general.
+nt: 买菜 mai33 tɔi33 "shopping for food" is in Stephen Li's dictionary; check 去 with family.
+
+@ Market Run | One watermelon.
+g: one / watermelon
+y: 一個/jat1 go3/0 ; 西瓜/sai1 gwaa1/1
+m: 一个/yí ge/0 ; 西瓜/xī guā/1
+t: 一个/yit55 gɔi33/0? ; 西瓜/ɬai33 ga33/1
+s: Una sandía./0,1
+f: Une pastèque./0,1
+d: Eine Wassermelone./0,1
+n: 個 go3 is the all-purpose counting word.
+nt: 西瓜 ɬai33 ga33 and 个 gɔi33 are in Stephen Li's dictionary; 一 yit55 is a guess.
+
+@ Market Run | Fifty-eight.
+g: fifty-eight
+y: 五十八/ng5 sap6 baat3/0
+m: 五十八/wǔ shí bā/0
+t: 五十八/m55 sip32 bat33/0
+s: Cincuenta y ocho./0
+f: Cinquante-huit./0
+d: Achtundfünfzig./0
+n: Prices are often said as just the number; 蚊 "dollars" is understood.
+nt: 五 m55, 十 sip32 and 八 bat33 are in Stephen Li's dictionary.
+
+@ Market Run | Can I pay with Octopus?
+g: Octopus card / can or not
+y: 八達通/baat3 daat6 tung1/0 ; 可唔可以/ho2 m4 ho2 ji5/1 ; 呀/aa3/-
+m: 八达通/bā dá tōng/0 ; 可不可以/kě bu kě yǐ/1 ; 啊/a/-
+t: 八达通/bat33 at32 həŋ33/0? ; 可唔可以/hɔ55 m22 hɔ55 yi21/1? ; 啊/a33/-
+s: ¿Puedo pagar con Octopus?/0,1
+f: Je peux payer avec Octopus ?/0,1
+d: Kann ich mit Octopus zahlen?/0,1
+n: 八達通 is Hong Kong's Octopus card. A wet market is one of the few places it isn't a sure thing, so asking is smart.
+nt: 可以 hɔ55 yi21 is in Stephen Li's dictionary; 八达通 as in the Wet Market cards.
+
+@ Market Run | Yes, you can.
+g: can
+y: 可以/ho2 ji5/0
+m: 可以/kě yǐ/0
+t: 可以/hɔ55 yi21/0
+s: Sí, se puede./0
+f: Oui, c'est possible./0
+d: Ja, geht./0
+n: Answer by repeating the verb, 可以 "can", just like 吃了 in "Saying Yes".
+nt: 可以 hɔ55 yi21 is in Stephen Li's dictionary.
+
+@ Market Run | I'll bag it for you.
+g: I / for you / bag it
+y: 我/ngo5/0 ; 幫你/bong1 nei5/1 ; 裝/zong1/2
+m: 我/wǒ/0 ; 帮你/bāng nǐ/1 ; 装/zhuāng/2
+t: 我/ŋɔi33/0 ; 帮你/bɔŋ33 ni33/1 ; 装/dzɔŋ33/2
+s: Te lo pongo en una bolsa./0,1,2
+f: Je vous le mets dans un sac./0,1,2
+d: Ich pack's Ihnen ein./0,1,2
+n: 裝 zong1 "put into (a bag)".
+nt: 帮 bɔŋ33 and 装 dzɔŋ33 are in Stephen Li's dictionary.
+
+@ Market Run | Ah, how much is it?
+g: how much money
+y: 呀/aa3/- ; 幾多錢/gei2 do1 cin2/0
+m: 啊/a/- ; 多少钱/duō shao qián/0
+t: 啊/a33/- ; 几多钱/gi55 ɔ33 tein225/0
+s: Ah, ¿cuánto es?/0
+f: Ah, c'est combien ?/0
+d: Ah, was kostet das?/0
+n: 幾多錢 "how much money": the question you'll use most at a market.
+nt: 几多钱 gi55 ɔ33 tein225 as in the Wet Market cards.
+
+@ Market Run | Ten dollars.
+g: ten / dollars
+y: 十/sap6/0 ; 蚊/man1/1
+m: 十/shí/0 ; 块/kuài/1
+t: 十/sip32/0 ; 文/mun55/1
+s: Diez dólares./0,1
+f: Dix dollars./0,1
+d: Zehn Dollar./0,1
+n: 十蚊 sap6 man1.
+nt: 十 sip32 is in Stephen Li's dictionary.
+
+@ Market Run | I bought so much stuff.
+g: I / bought / so much / stuff
+y: 我/ngo5/0 ; 買咗/maai5 zo2/1 ; 好多/hou2 do1/2 ; 嘢/je5/3
+m: 我/wǒ/0 ; 买了/mǎi le/1 ; 好多/hǎo duō/2 ; 东西/dōng xi/3
+t: 我/ŋɔi33/0 ; 买了/mai33 liau55/1? ; 好多/hɔu55 ɔ335/2 ; 嘢/yia33/3
+s: Compré un montón de cosas./0,1,2,3
+f: J'ai acheté plein de trucs./0,1,2,3
+d: Ich hab so viel gekauft./0,1,2,3
+n: 嘢 je5 "stuff, things" is one of the most useful Cantonese words.
+nt: 好多 hɔu55 ɔ335 and 嘢 yia33 are in Stephen Li's dictionary.
+
+@ Market Run | It's so heavy!
+g: so / heavy
+y: 好/hou2/0 ; 重/cung5/1 ; 呀/aa3/-
+m: 好/hǎo/0 ; 重/zhòng/1 ; 啊/a/-
+t: 好/hɔu55/0 ; 重/tsəŋ33/1 ; 啊/a33/-
+s: ¡Pesa mucho!/0,1
+f: C'est trop lourd !/0,1
+d: Ist das schwer!/0,1
+n: 好 before an adjective means "so, very".
+nt: 好 hɔu55 "very" and 重 tsəŋ33 "heavy" are in Stephen Li's dictionary.
