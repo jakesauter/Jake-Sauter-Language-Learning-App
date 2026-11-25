@@ -1,0 +1,63 @@
+= 609 Have you eaten yet?
+pt: Você já comeu?/0,1,2,3
+fa: غذا خوردی؟{ghazā khordi?}/0,1,2,3
+fw: غذا خوردی؟ || ghazā khordi?
+la: أكلت؟{akalt?}/0,1,2,3
+eg: كلت؟ || kalt?
+ms: هل أكلت؟ || hal akalta?
+he: אכלת כבר?{achalta kvar?}/0,1,2,3
+tr: Yemek yedin mi?/0,1,2,3
+= 610 I've eaten!
+pt: Já comi!/0
+fa: خوردم!{khordam!}/0
+fw: خوردم! || khordam!
+la: أكلت!{akalt!}/0
+eg: كلت! || kalt!
+ms: أكلتُ! || akaltu!
+he: אכלתי!{achalti!}/0
+tr: Yedim!/0
+= 611 Are you home yet?
+pt: Já chegou em casa?/0,1,2
+fa: رسیدی خونه؟{residi khune?}/0,1,2
+fw: رسیدی خونه؟ || residi khune?
+la: وصلت عالبيت؟{wṣelt 'al-bēt?}/0,1,2
+eg: وصلت البيت؟ || weṣelt el-bēt?
+ms: هل وصلت إلى البيت؟ || hal waṣalta ilā al-bayt?
+he: הגעת הביתה?{higata habayta?}/0,1,2
+tr: Eve vardın mı?/0,1,2
+= 612 I'm home!
+pt: Cheguei!/0
+fa: رسیدم!{residam!}/0
+fw: رسیدم! || residam!
+la: وصلت!{wṣelt!}/0
+eg: وصلت! || weṣelt!
+ms: وصلتُ! || waṣaltu!
+he: הגעתי!{higati!}/0
+tr: Vardım!/0
+= 613 Have you paid the bill?
+pt: Já pagou a conta?/0,1,2
+fa: حساب کردی؟{hesāb kardi?}/0,1,2
+fw: حساب کردی؟ || hesāb kardi?
+la: دفعت الحساب؟{dafa't el-ḥsāb?}/0,1,2
+eg: دفعت الحساب؟ || dafa't el-ḥesāb?
+ms: هل دفعت الحساب؟ || hal dafa'ta al-ḥisāb?
+he: שילמת את החשבון?{shilamta et hacheshbon?}/0,1,2
+tr: Hesabı ödedin mi?/0,1,2
+= 614 I've paid!
+pt: Já paguei!/0
+fa: حساب کردم!{hesāb kardam!}/0
+fw: حساب کردم! || hesāb kardam!
+la: دفعت!{dafa't!}/0
+eg: دفعت! || dafa't!
+ms: دفعتُ! || dafa'tu!
+he: שילמתי!{shilamti!}/0
+tr: Ödedim!/0
+= 615 Got it?
+pt: Entendeu?/0,1
+fa: فهمیدی؟{fahmidi?}/0,1
+fw: فهمیدی؟ || fahmidi?
+la: فهمت؟{fhemt?}/0,1
+eg: فهمت؟ || fehemt?
+ms: هل فهمت؟ || hal fahimta?
+he: הבנת?{hevanta?}/0,1
+tr: Anladın mı?/0,1

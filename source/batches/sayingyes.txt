@@ -1,0 +1,76 @@
+@ Saying Yes | Have you eaten yet?
+g: you / eaten / a meal / yet?
+y: 你/nei5/0 ; 食咗/sik6 zo2/1 ; 飯/faan6/2 ; 未呀/mei6 aa3/3
+m: 吃/chī/1 ; 饭/fàn/2 ; 了吗/le ma/3
+t: 你/ni33/0 ; 吃/hiak33/1 ; 饭/fan32/2 ; 唔曾/miaŋ21/3 ; 啊/a33/-
+s: ¿Ya comiste?/0,1,2,3
+f: Tu as déjà mangé ?/0,1,2,3
+d: Hast du schon gegessen?/0,1,2,3
+n: From a Mandarin teacher's video: "yes" is not 是的 for these questions. When the question is verb + 了吗 ("have you … yet?"), you answer by repeating the verb + 了. Cantonese does the same with 咗 zo2: 食咗飯未呀？ → 食咗！
+nt: 吃 hiak33, 饭 fan32 and 唔曾 miaŋ21 "yet?" are in Stephen Li's dictionary, as in other cards.
+
+@ Saying Yes | I've eaten!
+g: eaten
+y: 食咗/sik6 zo2/0 ; 喇/laa3/-
+m: 吃了/chī le/0
+t: 吃了/hiak33 liau55/0?
+s: ¡Ya comí!/0
+f: J'ai mangé !/0
+d: Hab schon gegessen!/0
+n: The answer: just the verb + 了 (le). In the video he says it twice, 吃了！吃了！, which sounds natural and friendly. Saying 是的 "yes" here sounds like a textbook.
+nt: 了 liau55 "done" is in Stephen Li's dictionary; whether Taishanese says 吃了 here is a guess. Check with family.
+
+@ Saying Yes | Are you home yet?
+g: reached / home / yet?
+y: 返到/faan1 dou3/0 ; 屋企/uk1 kei2/1 ; 未呀/mei6 aa3/2
+m: 到/dào/0 ; 家/jiā/1 ; 了吗/le ma/2
+t: 到/au33/0 ; 屋企/ək55 ki55/1 ; 唔曾/miaŋ21/2 ; 啊/a33/-
+s: ¿Ya llegaste a casa?/0,1,2
+f: Tu es rentré ?/0,1,2
+d: Bist du schon zu Hause?/0,1,2
+n: The classic phone call question. Same pattern: verb (到 "arrive") + 了吗.
+nt: 到 au33 "reach a place" and 屋企 ək55 ki55 "home" are in Stephen Li's dictionary.
+
+@ Saying Yes | I'm home!
+g: arrived
+y: 到咗/dou3 zo2/0 ; 喇/laa3/-
+m: 到了/dào le/0
+t: 到了/au33 liau55/0?
+s: ¡Ya llegué!/0
+f: Je suis rentré !/0
+d: Bin da!/0
+n: Answer with the verb again: 到了！ "arrived!", not 是的.
+nt: 到了 is put together here from dictionary words; check with family.
+
+@ Saying Yes | Have you paid the bill?
+g: settled / the bill / yet?
+y: 埋咗/maai4 zo2/0 ; 單/daan1/1 ; 未呀/mei6 aa3/2
+m: 买/mǎi/0 ; 单/dān/1 ; 了吗/le ma/2
+t: 找数/dzau55 su33/0 ; 唔曾/miaŋ21/2 ; 啊/a33/-
+s: ¿Ya pagaste la cuenta?/0,1,2
+f: Tu as payé l'addition ?/0,1,2
+d: Hast du schon bezahlt?/0,1,2
+n: 买单 mǎi dān (Mandarin) comes from Cantonese 埋單 maai4 daan1, "close the bill". Both mean paying at a restaurant.
+nt: 找数 dzau55 su33 "settle the bill (at a restaurant)" is in Stephen Li's dictionary.
+
+@ Saying Yes | I've paid!
+g: paid
+y: 埋咗/maai4 zo2/0 ; 喇/laa3/-
+m: 买了/mǎi le/0
+t: 找了/dzau55 liau55/0?
+s: ¡Ya pagué!/0
+f: J'ai payé !/0
+d: Hab schon bezahlt!/0
+n: Short answer: 买了！ Just the verb (买 from 买单) + 了.
+nt: 找了 is put together here; check with family.
+
+@ Saying Yes | Got it?
+g: understand / or not?
+y: 明/ming4/0 ; 唔明/m4 ming4/1 ; 呀/aa3/-
+m: 明/míng/0 ; 不明白/bu míng bai/1
+t: 明白/mein22 bak32/0 ; 唔明白/m22 mein22 bak32/1? ; 啊/a33/-
+s: ¿Entendido?/0,1
+f: Compris ?/0,1
+d: Verstanden?/0,1
+n: The rule in one line: answer "have you … yet?" with verb + 了 (Cantonese 咗), not 是的. "Understand or not?" is how teachers check.
+nt: 明白 mein22 bak32 is in Stephen Li's dictionary; the "or not" form is put together here.
