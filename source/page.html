@@ -300,6 +300,7 @@
   .group-title h3 { margin: 0; font-size: var(--t-lg); line-height: 1.2; }
   .group-title .n { color: var(--muted); font-size: var(--t-sm); font-weight: 400; margin-left: var(--s-2); font-variant-numeric: tabular-nums; }
   .group-title .link { font-weight: 400; color: var(--muted); }
+  .topic-video { color: inherit; display: inline-flex; align-items: center; gap: var(--s-1); margin: 0 0 var(--s-2); min-height: 44px; font-size: var(--t-sm); }
 
   .toc { padding-block: var(--s-5) var(--s-2); scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 88px); }
   .toc h2 { margin: 0 0 var(--s-2); font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
@@ -1593,6 +1594,14 @@
     tones: "M3 6h4M3 12l4-4M3 17l4 1M10 7c2 0 2 9 4 9s2-6 4-6 2 3 3 3",
   };
 
+  // Topics made from a video: link back to it so you can study along with the clip.
+  const TOPIC_VIDEO = {
+    "Wet Market": "https://www.instagram.com/reel/Dc_bYNUSoAG/",
+    "Saying Yes": "https://www.instagram.com/reel/DgJanoUhnU4/",
+    "Character Pictures": "https://www.instagram.com/reel/DfPvrxNzSXO/",
+    "Market Run": "https://www.instagram.com/reel/Det8l6OCm0t/",
+    "Day in Yuen Long": "https://www.instagram.com/reel/DeKN_Q4uGQE/",
+  };
   const CAT_ICON = {
     "Start Here": "flag", "Talking About the Day": "chat", "Quick Patterns": "bolt", "Greetings": "smile", "Getting to know you": "pair", "Family": "family",
     "Visiting": "door", "Meals": "bowl", "Small Talk": "bubbles", "Plans": "calendar", "Around the House": "house", "Cooking Together": "pot",
@@ -3823,6 +3832,11 @@
       up.addEventListener("click", () => { topic = ""; if (filter) { $("q").value = ""; filter = ""; clearResult(); } renderList(); renderChips(); window.scrollTo({ top: 0 }); });
       head.appendChild(up);
       main.appendChild(head);
+      if (TOPIC_VIDEO[c]) {
+        const watch = el("a", "link topic-video", `${icon("video")}<span>${esc(tr("r_video_watch"))}</span>`);
+        Object.assign(watch, { href: TOPIC_VIDEO[c], target: "_blank", rel: "noopener noreferrer" });
+        main.appendChild(watch);
+      }
       const ul = el("ul", "list");
       group.forEach(p => ul.appendChild(rowItem(p)));
       main.appendChild(ul);
