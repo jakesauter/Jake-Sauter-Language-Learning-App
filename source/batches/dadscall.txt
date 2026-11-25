@@ -1,0 +1,76 @@
+@ Taking Dad's Call | Mommy, your husband is calling!
+g: Mommy / your husband / is calling
+y: 媽咪/maa1 mi4/0 ; 你老公/nei5 lou5 gung1/1 ; 打電話嚟/daa2 din6 waa2 lai4/2 ; 啊/aa3/-
+m: 妈妈/mā ma/0 ; 你老公/nǐ lǎo gōng/1 ; 打电话来了/dǎ diàn huà lái le/2
+t: 媽/ma55/0 ; 你老公/ni33 lɔu55 gəŋ21/1 ; 打電話來/a55 ein32 va325 lɔi22/2 ; 啊/a33/-
+s: Mami, ¡te llama tu marido!/0,1,2
+f: Maman, ton mari t'appelle !/0,1,2
+d: Mama, dein Mann ruft an!/0,1,2
+n: From a cartoon reel: the kid hands Mom the phone. 老公 lou5 gung1 means "husband" (老婆 lou5 po4 is "wife"). 打電話嚟 = "phone here" (嚟 = come).
+nt: 老公 lɔu55 gəŋ21, 打電話 a55 ein32 va325 and 返來 fan33 lɔi22 are in Stephen Li's dictionary.
+
+@ Taking Dad's Call | I'm busy right now, answer it for me.
+g: I / right now / am busy / you / for me / answer it
+y: 我/ngo5/0 ; 而家/ji4 gaa1/1 ; 忙緊/mong4 gan2/2 ; 啊/aa3/- ; 你/nei5/3 ; 幫我/bong1 ngo5/4 ; 接咗佢/zip3 zo2 keoi5/5 ; 啦/laa1/-
+m: 我/wǒ/0 ; 现在/xiàn zài/1 ; 在忙/zài máng/2 ; 你/nǐ/3 ; 帮我/bāng wǒ/4 ; 接一下/jiē yí xià/5 ; 吧/ba/-
+t: 我/ŋɔi33/0 ; 該時/kɔi21 si215/1 ; 忙/mɔŋ22/2 ; 啊/a33/- ; 你/ni33/3 ; 幫我/bɔŋ33 ŋɔi33/4 ; 接佢/diap33 kui33/5? ; 啦/la55/-
+s: Ahora estoy ocupada, contesta tú por mí./0,1,2,3,4,5
+f: Je suis occupée, là, réponds pour moi./0,1,2,3,4,5
+d: Ich hab gerade zu tun, geh du für mich ran./0,1,2,3,4,5
+n: 忙緊 mong4 gan2 "busy right now": 緊 gan2 after a verb means "in the middle of". 接 zip3 is "pick up (a call)"; 接咗佢 "pick it up".
+nt: 該時 kɔi21 si215 "now", 忙 mɔŋ22, 幫 bɔŋ33 and 接 diap33 are in Stephen Li's dictionary; 接佢 for "answer it" is put together here.
+
+@ Taking Dad's Call | What should I say?
+g: I / should / how / say
+y: 我/ngo5/0 ; 應該/jing1 goi1/1 ; 點/dim2/2 ; 講/gong2/3 ; 啊/aa3/-
+m: 我/wǒ/0 ; 应该/yīng gāi/1 ; 怎么/zěn me/2 ; 说/shuō/3 ; 啊/a/-
+t: 我/ŋɔi33/0 ; 應該/yein33 gɔi335/1 ; 幾何/gi55 hɔu215/2 ; 講/gɔŋ55/3 ; 啊/a33/-
+s: ¿Qué le digo?/0,1,2,3
+f: Je dis quoi ?/0,1,2,3
+d: Was soll ich sagen?/0,1,2,3
+n: 點講 dim2 gong2 "how to say": Cantonese asks "how say?" where English asks "what say?".
+nt: 應該 yein33 gɔi335 and 幾何講 "how should I put it" (gi55 hɔu215 gɔŋ55) are in Stephen Li's dictionary.
+
+@ Taking Dad's Call | Just say it the way I always do.
+g: I / usually / say it how / you / just / say it that way / and that's it
+y: 我/ngo5/0 ; 平時/ping4 si4/1 ; 點講/dim2 gong2/2 ; 你/nei5/3 ; 就/zau6/4 ; 點講/dim2 gong2/5 ; 咪得/mai6 dak1/6 ; 啦/laa1/-
+m: 我/wǒ/0 ; 平时/píng shí/1 ; 怎么说/zěn me shuō/2 ; 你/nǐ/3 ; 就/jiù/4 ; 怎么说/zěn me shuō/5 ; 不就行了/bú jiù xíng le/6
+t: 我/ŋɔi33/0 ; 平時/pein22 si22/1? ; 點講/iam55 gɔŋ55/2 ; 你/ni33/3 ; 就/diu32/4 ; 點講/iam55 gɔŋ55/5 ; 咪得/mai32 ak55/6? ; 啦/la55/-
+s: Dilo como lo digo yo siempre, y ya está./0,1,2,3,4,5,6
+f: Dis-le comme je le dis d'habitude, c'est tout./0,1,2,3,4,5,6
+d: Sag's einfach so, wie ich es immer sage./0,1,2,3,4,5,6
+n: The pattern 我點講你就點講 "however I say it, you say it" repeats the question word: 你話點就點 works the same way. 咪得囉/咪得啦 "and that's that".
+nt: 點 iam55, 講 gɔŋ55, 就 diu32 and 咪 mai32 are in Stephen Li's dictionary; 平時 and 得 here are guesses. Check with family.
+
+@ Taking Dad's Call | Where on earth have you been?!
+g: (dead and) gone / off / where?
+y: 死咗/sei2 zo2/0 ; 去/heoi3/1 ; 邊/bin1/2 ; 啊/aa3/-
+m: 死到/sǐ dào/0 ; 哪儿/nǎr/2 ; 去了/qù le/1
+t: 死/ɬi55/0? ; 去/hui33/1 ; 乃/nai215/2 ; 啊/a33/-
+s: ¿Dónde te has metido?!/0,1,2
+f: T'es passé où ?!/0,1,2
+d: Wo steckst du denn?!/0,1,2
+n: The joke of the reel: Mom says "say it the way I do", so the kid scolds Dad like Mom does. 死咗去邊 is literally "died off to where?", an everyday scolding (not a swear) for someone who's late.
+nt: 死 ɬi55, 去 hui33 and 乃 nai215 "where" are in Stephen Li's dictionary; whether Taishanese scolds with 死去乃 is a guess.
+
+@ Taking Dad's Call | What time is it now?!
+g: now / what time
+y: 而家/ji4 gaa1/0 ; 幾點鐘/gei2 dim2 zung1/1 ; 啊/aa3/-
+m: 现在/xiàn zài/0 ; 几点了/jǐ diǎn le/1
+t: 該時/kɔi21 si215/0 ; 幾點表/ŋi55 iam55 biau335/1 ; 啊/a33/-
+s: ¿¡Sabes qué hora es!?/0,1
+f: Il est quelle heure, là ?!/0,1
+d: Weißt du, wie spät es ist?!/0,1
+n: 幾點鐘 gei2 dim2 zung1 "what o'clock". Taishanese says 幾點表, with 表 "clock" instead of 鐘.
+nt: 幾點表 ŋi55 iam55 biau335 and 該時 kɔi21 si215 are in Stephen Li's dictionary.
+
+@ Taking Dad's Call | Get back here right now!
+g: still not / right away / come back
+y: 仲唔/zung6 m4/0 ; 即刻/zik1 hak1/1 ; 返嚟/faan1 lai4/2
+m: 还不/hái bù/0 ; 马上/mǎ shàng/1 ; 回来/huí lái/2
+t: 還唔/van21 m22/0? ; 即刻/dɛt55 hak55/1 ; 返來/fan33 lɔi22/2
+s: ¡Vuelve ahora mismo!/0,1,2
+f: Rentre tout de suite !/0,1,2
+d: Komm sofort nach Hause!/0,1,2
+n: 仲唔即刻返嚟 is literally "still not coming back right away?!", a classic Cantonese way to give an order as an angry question.
+nt: 即刻 dɛt55 hak55 and 返來 fan33 lɔi22 are in Stephen Li's dictionary; 還 van21 "still" too, but 還唔 as a scolding is a guess.

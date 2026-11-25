@@ -1,0 +1,63 @@
+= 658 Mommy, your husband is calling!
+pt: Mamãe, seu marido está ligando!/0,1,2
+fa: مامان، شوهرت زنگ زده!{māmān, shoharet zang zade!}/0,1,2
+fw: مامان، شوهرت زنگ زده! || māmān, shoharet zang zade!
+la: ماما، جوزك عم يتصل!{māmā, jōzik 'am yitteṣel!}/0,1,2
+eg: ماما، جوزك بيتصل! || māmā, gōzek biyetteṣel!
+ms: ماما، زوجك يتصل! || māmā, zawjuki yattaṣil!
+he: אמא, בעלך מתקשר!{ima, ba'alech mitkasher!}/0,1,2
+tr: Anne, kocan arıyor!/0,1,2
+= 659 I'm busy right now, answer it for me.
+pt: Estou ocupada agora, atende para mim./0,1,2,3,4,5
+fa: الان سرم شلوغه، تو جواب بده.{alān saram sholughe, to javāb bede.}/0,1,2,3,4,5
+fw: الان سرم شلوغه، تو جواب بده. || alān saram sholughe, to javāb bede.
+la: أنا مشغولة هلق، رد عني.{ana mashghūle halla', rodd 'anni.}/0,1,2,3,4,5
+eg: أنا مشغولة دلوقتي، رد إنت بدالي. || ana mashghūla dilwa'ti, rodd inta badāli.
+ms: أنا مشغولة الآن، أجب عني. || anā mashghūla al-ān, ajib 'annī.
+he: אני עסוקה עכשיו, תענה במקומי.{ani asuka achshav, ta'ane bimkomi.}/0,1,2,3,4,5
+tr: Şu an meşgulüm, benim yerime sen aç./0,1,2,3,4,5
+= 660 What should I say?
+pt: O que eu digo?/0,1,2,3
+fa: چی بگم؟{chi begam?}/0,1,2,3
+fw: چی بگم؟ || chi begam?
+la: شو بقول؟{shu b'ūl?}/0,1,2,3
+eg: أقول إيه؟ || a'ūl ēh?
+ms: ماذا يجب أن أقول؟ || mādhā yajib an aqūl?
+he: מה להגיד?{ma lehagid?}/0,1,2,3
+tr: Ne diyeyim?/0,1,2,3
+= 661 Just say it the way I always do.
+pt: Fala do jeito que eu sempre falo, pronto./0,1,2,3,4,5,6
+fa: همون‌جوری که من همیشه می‌گم بگو دیگه.{hamun-juri ke man hamishe migam begu dige.}/0,1,2,3,4,5,6
+fw: همون‌جوری که من همیشه می‌گم بگو دیگه. || hamun-juri ke man hamishe migam begu dige.
+la: قول متل ما بقول دايماً وخلص.{'ūl metel mā b'ūl dāyman w-khalaṣ.}/0,1,2,3,4,5,6
+eg: قول زي ما بقول على طول وخلاص. || 'ūl zayy ma ba'ūl 'ala ṭūl w-khalāṣ.
+ms: قل كما أقول عادةً، وهذا كل شيء. || qul kamā aqūlu 'ādatan, wa-hādhā kull shay'.
+he: תגיד כמו שאני תמיד אומרת וזהו.{tagid kmo she'ani tamid omeret vezehu.}/0,1,2,3,4,5,6
+tr: Ben normalde nasıl diyorsam öyle de, o kadar./0,1,2,3,4,5,6
+= 662 Where on earth have you been?!
+pt: Onde você se meteu?!/0,1,2
+fa: کجا موندی؟!{kojā mundi?!}/0,1,2
+fw: کجا موندی؟! || kojā mundi?!
+la: وينك إنت؟!{wēnak inta?!}/0,1,2
+eg: إنت فين؟! || inta fēn?!
+ms: أين أنت؟! || ayna anta?!
+he: איפה אתה?!{eifo ata?!}/0,1,2
+tr: Neredesin sen?!/0,1,2
+= 663 What time is it now?!
+pt: Você sabe que horas são?!/0,1
+fa: الان ساعت چنده؟!{alān sā'at chande?!}/0,1
+fw: الان ساعت چنده؟! || alān sā'at chande?!
+la: قديش الساعة هلق؟!{addēsh es-sā'a halla'?!}/0,1
+eg: الساعة كام دلوقتي؟! || es-sā'a kām dilwa'ti?!
+ms: كم الساعة الآن؟! || kam as-sā'a al-ān?!
+he: מה השעה עכשיו?!{ma hasha'a achshav?!}/0,1
+tr: Saat kaç oldu?!/0,1
+= 664 Get back here right now!
+pt: Volta pra casa agora mesmo!/0,1,2
+fa: همین الان برگرد!{hamin alān bargard!}/0,1,2
+fw: همین الان برگرد! || hamin alān bargard!
+la: إرجع هلق!{erja' halla'!}/0,1,2
+eg: ارجع حالاً! || irga' ḥālan!
+ms: ارجع فوراً! || irji' fawran!
+he: תחזור מיד!{tachzor miyad!}/0,1,2
+tr: Hemen eve dön!/0,1,2
