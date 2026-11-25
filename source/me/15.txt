@@ -1,0 +1,225 @@
+= 584 Handsome!
+pt: Ô, bonitão!/0
+fa: خوش‌تیپ!{khosh-tip!}/0
+fw: خوش‌تیپ! || khosh-tip!
+la: يا حلو!{ya ḥelo!}/0
+eg: يا حلو! || ya ḥelw!
+ms: يا وسيم! || yā wasīm!
+he: היי, חתיך!{hey, chatich!}/0
+tr: Yakışıklı!/0
+= 585 Just tell me what you want to eat.
+pt: É só me dizer o que você quer comer./0,1,2,3,4,5,6,7
+fa: بگو چی می‌خوای بخوری.{begu chi mikhāy bokhori.}/0,1,2,3,4,5,6,7
+fw: بگو چی می‌خوای بخوری. || begu chi mikhāy bokhori.
+la: قلّي شو بدّك تاكل.{'ølli shu baddak tēkol.}/0,1,2,3,4,5,6,7
+eg: قولّي عايز تاكل إيه. || 'olli 'āyez tākol eh.
+ms: قل لي ماذا تريد أن تأكل. || qul lī mādhā turīdu an ta'kul.
+he: תגיד לי מה אתה רוצה לאכול.{tagid li ma ata rotze le'echol.}/0,1,2,3,4,5,6,7
+tr: Ne yemek istediğini söyle yeter./0,1,2,3,4,5,6,7
+= 586 I'm just taking a look.
+pt: Só estou dando uma olhada./0,1
+fa: فقط دارم نگاه می‌کنم.{faqat dāram negāh mikonam.}/0,1
+fw: فقط دارم نگاه می‌کنم. || faqat dāram negāh mikonam.
+la: عم إتفرّج بس.{'am itfarraj bass.}/0,1
+eg: أنا بتفرّج بس. || ana batfarrag bass.
+ms: أنا أتفرّج فقط. || anā atafarraju faqaṭ.
+he: אני רק מסתכל.{ani rak mistakel.}/0,1
+tr: Sadece bakıyorum./0,1
+= 587 How much for the spinach?
+pt: Quanto custa o espinafre?/0,1
+fa: اسفناج چنده؟{esfenāj chande?}/0,1
+fw: اسفناج چنده؟ || esfenāj chande?
+la: قدّيش السبانخ؟{addēsh es-sbēnekh?}/0,1
+eg: السبانخ بكام؟ || es-sabānekh bekām?
+ms: بكم السبانخ؟ || bikam as-sabānikh?
+he: כמה עולה התרד?{kama ole ha-tered?}/0,1
+tr: Ispanak ne kadar?/0,1
+= 588 Baby spinach is twenty dollars.
+pt: O espinafre baby é vinte dólares./0,1,2,3
+fa: اسفناج نورسته بیست دلاره.{esfenāj-e nowraste bist dolāre.}/0,1,2,3
+fw: اسفناج نورسته بیست دلاره. || esfenāj-e nowraste bist dolāre.
+la: السبانخ الصغيرة بعشرين دولار.{es-sbēnekh eṣ-ṣghīre b'ishrīn dolār.}/0,1,2,3
+eg: السبانخ الصغيّرة بعشرين دولار. || es-sabānekh eṣ-ṣoghayyara be'eshrīn dolār.
+ms: السبانخ الصغيرة بعشرين دولاراً. || as-sabānikh aṣ-ṣaghīra bi-'ishrīna dūlāran.
+he: תרד בייבי עשרים דולר.{tered beibi esrim dolar.}/0,1,2,3
+tr: Taze ıspanak yirmi dolar./0,1,2,3
+= 589 I only have an Octopus card.
+pt: Eu só tenho o cartão Octopus./0,1,2,3
+fa: من فقط کارت اختاپوس دارم.{man faqat kārt-e okhtāpus dāram.}/0,1,2,3
+fw: من فقط کارت اختاپوس دارم. || man faqat kārt-e okhtāpus dāram.
+la: ما معي غير كرت الأوكتوبس.{ma ma'i ghēr kart el-octopus.}/0,1,2,3
+eg: معايا كارت أوكتوبس بس. || ma'āya kart octopus bass.
+ms: ليس معي إلا بطاقة أوكتوبس. || laysa ma'ī illā biṭāqat octopus.
+he: יש לי רק כרטיס אוקטופוס.{yesh li rak kartis octopus.}/0,1,2,3
+tr: Bende sadece Octopus kartı var./0,1,2,3
+= 590 Pay me next time you pass by.
+pt: Me paga da próxima vez que passar por aqui./0,1,2,3,4
+fa: دفعهٔ بعد که از اینجا رد شدی بهم بده.{daf'e-ye ba'd ke az injā rad shodi behem bede.}/0,1,2,3,4
+fw: دفعهٔ بعد که از اینجا رد شدی بهم بده. || daf'e-ye ba'd ke az injā rad shodi behem bede.
+la: بتدفعلي المرّة الجايي بس تمرق.{btedfa'li el-marra ej-jēye bass temro'.}/0,1,2,3,4
+eg: ادفعلي المرّة الجاية لما تعدّي. || edfa'li el-marra eg-gayya lamma te'addi.
+ms: ادفع لي في المرّة القادمة عندما تمرّ. || idfa' lī fī al-marra al-qādima 'indamā tamurr.
+he: תשלם לי בפעם הבאה שתעבור פה.{teshalem li ba-pa'am ha-ba'a she-ta'avor po.}/0,1,2,3,4
+tr: Bir dahaki geçişinde ödersin./0,1,2,3,4
+= 591 Huh? Next time?
+pt: Hein? Da próxima vez?/0,1,2
+fa: ها؟ دفعهٔ بعد؟{hā? daf'e-ye ba'd?}/0,1,2
+fw: ها؟ دفعهٔ بعد؟ || hā? daf'e-ye ba'd?
+la: شو؟ المرّة الجايي؟{shu? el-marra ej-jēye?}/0,1,2
+eg: إيه؟ المرّة الجاية؟ || eh? el-marra eg-gayya?
+ms: ماذا؟ في المرّة القادمة؟ || mādhā? fī al-marra al-qādima?
+he: מה? בפעם הבאה?{ma? ba-pa'am ha-ba'a?}/0,1,2
+tr: Ha? Bir dahaki sefere mi?/0,1,2
+= 592 I'll have a look around first.
+pt: Vou dar uma olhada por aí primeiro./0,1,2
+fa: اول یه دوری می‌زنم.{avval ye dowri mizanam.}/0,1,2
+fw: اول یه دوری می‌زنم. || avval ye dowri mizanam.
+la: خلّيني إتطلّع بالأوّل.{khallīni itṭalla' bel-awwal.}/0,1,2
+eg: هلفّ الأوّل وأشوف. || haleff el-awwel w ashūf.
+ms: سأتجوّل قليلاً أولاً. || sa-atajawwalu qalīlan awwalan.
+he: אני אסתובב קודם קצת.{ani estovev kodem ktzat.}/0,1,2
+tr: Önce bir etrafa bakayım./0,1,2
+= 593 Thanks a lot.
+pt: Muito obrigado./0
+fa: خیلی ممنون.{kheyli mamnun.}/0
+fw: خیلی ممنون. || kheyli mamnun.
+la: يسلمو كتير.{yeslamo ktīr.}/0
+eg: شكراً جزيلاً. || shokran gazīlan.
+ms: شكراً جزيلاً. || shukran jazīlan.
+he: תודה רבה.{toda raba.}/0
+tr: Çok teşekkürler./0
+= 594 Hey handsome, got cash now?
+pt: E aí, bonitão, já tem dinheiro?/0,1,2
+fa: خوش‌تیپ، حالا پول نقد داری؟{khosh-tip, hālā pul-e naqd dāri?}/0,1,2
+fw: خوش‌تیپ، حالا پول نقد داری؟ || khosh-tip, hālā pul-e naqd dāri?
+la: يا حلو، صار معك مصاري؟{ya ḥelo, ṣār ma'ak maṣāri?}/0,1,2
+eg: يا حلو، بقى معاك فلوس؟ || ya ḥelw, ba'a ma'āk fulūs?
+ms: يا وسيم، هل معك نقود الآن؟ || yā wasīm, hal ma'aka nuqūd al-ān?
+he: נו חתיך, יש לך מזומן עכשיו?{nu chatich, yesh lecha mezuman achshav?}/0,1,2
+tr: Yakışıklı, nakit var mı şimdi?/0,1,2
+= 595 I got cash from the ATM.
+pt: Saquei dinheiro no caixa eletrônico./0,1,2,3
+fa: از عابربانک پول گرفتم.{az ābérbānk pul gereftam.}/0,1,2,3
+fw: از عابربانک پول گرفتم. || az ābérbānk pul gereftam.
+la: سحبت مصاري من الصرّاف.{saḥabt maṣāri men eṣ-ṣarrāf.}/0,1,2,3
+eg: سحبت فلوس من الـATM. || saḥabt fulūs men el-ATM.
+ms: سحبت نقوداً من الصرّاف الآلي. || saḥabtu nuqūdan min aṣ-ṣarrāf al-ālī.
+he: הוצאתי כסף מהכספומט.{hotzeti kesef me-ha-kaspomat.}/0,1,2,3
+tr: Bankamatikten para çektim./0,1,2,3
+= 596 Is it baby spinach you want?
+pt: É espinafre baby que você quer?/0,1
+fa: اسفناج نورسته می‌خوای؟{esfenāj-e nowraste mikhāy?}/0,1
+fw: اسفناج نورسته می‌خوای؟ || esfenāj-e nowraste mikhāy?
+la: بدّك سبانخ صغيرة؟{baddak sbēnekh ṣghīre?}/0,1
+eg: عايز سبانخ صغيّرة؟ || 'āyez sabānekh ṣoghayyara?
+ms: هل تريد السبانخ الصغيرة؟ || hal turīdu as-sabānikh aṣ-ṣaghīra?
+he: אתה רוצה תרד בייבי?{ata rotze tered beibi?}/0,1
+tr: Taze ıspanak mı istiyorsun?/0,1
+= 597 Do you have tomatoes?
+pt: Tem tomate?/0,1
+fa: گوجه دارید؟{gowje dārid?}/0,1
+fw: گوجه دارید؟ || gowje dārid?
+la: عندك بندورة؟{'andak banadōra?}/0,1
+eg: عندك طماطم؟ || 'andak ṭamāṭem?
+ms: هل عندك طماطم؟ || hal 'indaka ṭamāṭim?
+he: יש לך עגבניות?{yesh lecha agvaniyot?}/0,1
+tr: Domates var mı?/0,1
+= 598 Tomatoes? I've got those too.
+pt: Tomate? Também tenho./0,1,2,3
+fa: گوجه؟ اونم دارم.{gowje? unam dāram.}/0,1,2,3
+fw: گوجه؟ اونم دارم. || gowje? unam dāram.
+la: بندورة؟ كمان عندي.{banadōra? kamēn 'andi.}/0,1,2,3
+eg: طماطم؟ عندي برضه. || ṭamāṭem? 'andi barḍo.
+ms: الطماطم؟ عندي أيضاً. || aṭ-ṭamāṭim? 'indī ayḍan.
+he: עגבניות? גם יש לי.{agvaniyot? gam yesh li.}/0,1,2,3
+tr: Domates mi? Ondan da var./0,1,2,3
+= 599 Do you know how to pick tomatoes?
+pt: Você sabe escolher tomate?/0,1,2,3
+fa: بلدی گوجه انتخاب کنی؟{baladi gowje entekhāb koni?}/0,1,2,3
+fw: بلدی گوجه انتخاب کنی؟ || baladi gowje entekhāb koni?
+la: بتعرف تنقّي بندورة؟{bta'ref tna''i banadōra?}/0,1,2,3
+eg: تعرف تنقّي طماطم؟ || te'raf tena''i ṭamāṭem?
+ms: هل تعرف كيف تختار الطماطم؟ || hal ta'rifu kayfa takhtāru aṭ-ṭamāṭim?
+he: אתה יודע לבחור עגבניות?{ata yode'a livchor agvaniyot?}/0,1,2,3
+tr: Domates seçmeyi biliyor musun?/0,1,2,3
+= 600 If you don't, I'll pick them for you.
+pt: Se não souber, eu escolho pra você./0,1,2,3,4,5
+fa: اگه بلد نیستی، من برات انتخاب می‌کنم.{age balad nisti, man barāt entekhāb mikonam.}/0,1,2,3,4,5
+fw: اگه بلد نیستی، من برات انتخاب می‌کنم. || age balad nisti, man barāt entekhāb mikonam.
+la: إذا ما بتعرف، أنا بنقّيلك.{iza ma bta'ref, ana bna''īlak.}/0,1,2,3,4,5
+eg: لو مش عارف، أنا أنقّيلك. || law mesh 'āref, ana ana''īlak.
+ms: إن كنت لا تعرف، سأختار لك. || in kunta lā ta'rif, sa-akhtāru lak.
+he: אם אתה לא יודע, אני אבחר לך.{im ata lo yode'a, ani evchar lecha.}/0,1,2,3,4,5
+tr: Bilmiyorsan ben senin için seçerim./0,1,2,3,4,5
+= 601 You asked me to pick, so they'll be good!
+pt: Se fui eu que escolhi, vão ser bons!/0,1,2,3,4,5
+fa: حالا که من انتخاب کردم، حتماً خوبن!{hālā ke man entekhāb kardam, hatman khuban!}/0,1,2,3,4,5
+fw: حالا که من انتخاب کردم، حتماً خوبن! || hālā ke man entekhāb kardam, hatman khuban!
+la: طالما أنا نقّيتن، أكيد طيبين!{ṭālama ana na''aytun, akīd ṭayybīn!}/0,1,2,3,4,5
+eg: طالما أنا اللي نقّيتها، أكيد حلوة! || ṭālama ana elli na''aytaha, akīd ḥelwa!
+ms: ما دمتُ أنا من اخترها، فهي جيّدة بالتأكيد! || mā dumtu anā man ikhtārahā, fa-hiya jayyida bit-ta'kīd!
+he: אם אני בחרתי, הן בטוח טובות!{im ani bacharti, hen batu'ach tovot!}/0,1,2,3,4,5
+tr: Ben seçtiysem kesin iyidir!/0,1,2,3,4,5
+= 602 Has this stall been here a long time?
+pt: Essa banca está aqui há muito tempo?/0,1,2
+fa: این غرفه خیلی وقته اینجاست؟{in ghorfe kheyli vaqte injāst?}/0,1,2
+fw: این غرفه خیلی وقته اینجاست؟ || in ghorfe kheyli vaqte injāst?
+la: هالبسطة إلها زمان هون؟{hal-basṭa ilha zamēn hōn?}/0,1,2
+eg: الفرشة دي بقالها كتير هنا؟ || el-farsha di be'ālha ktīr hena?
+ms: هل هذا الكشك هنا منذ زمن طويل؟ || hal hādhā al-kushk hunā mundhu zamanin ṭawīl?
+he: הדוכן הזה כבר הרבה זמן פה?{ha-duchan ha-ze kvar harbe zman po?}/0,1,2
+tr: Bu tezgâh uzun zamandır mı burada?/0,1,2
+= 603 Oh, decades!
+pt: Ah, há décadas!/0,1
+fa: اوه، چند دهه‌ست!{owh, chand dahe-st!}/0,1
+fw: اوه، چند دهه‌ست! || owh, chand dahe-st!
+la: أوف، صرلنا عشرات السنين!{ōf, ṣerlna 'asharāt es-snīn!}/0,1
+eg: ياه، بقالنا عشرات السنين! || yāh, be'ālna 'asharāt es-sinīn!
+ms: آه، منذ عقود! || āh, mundhu 'uqūd!
+he: אוי, עשרות שנים!{oy, asarot shanim!}/0,1
+tr: Ah, onlarca yıldır!/0,1
+= 604 Thirty dollars is fine.
+pt: Trinta dólares está bom./0,1,2
+fa: سی دلار بسه.{si dolār base.}/0,1,2
+fw: سی دلار بسه. || si dolār base.
+la: تلاتين دولار بيكفّي.{tlētīn dolār bikaffi.}/0,1,2
+eg: تلاتين دولار كفاية. || talatīn dolār kfāya.
+ms: ثلاثون دولاراً تكفي. || thalāthūna dūlāran takfī.
+he: שלושים דולר זה מספיק.{shloshim dolar ze maspik.}/0,1,2
+tr: Otuz dolar yeter./0,1,2
+= 605 Do you want some scallions?
+pt: Quer cebolinha?/0,1
+fa: پیازچه می‌خوای؟{piyāzche mikhāy?}/0,1
+fw: پیازچه می‌خوای؟ || piyāzche mikhāy?
+la: بدّك بصل أخضر؟{baddak baṣal akhḍar?}/0,1
+eg: عايز بصل أخضر؟ || 'āyez baṣal akhḍar?
+ms: هل تريد بصلاً أخضر؟ || hal turīdu baṣalan akhḍar?
+he: אתה רוצה בצל ירוק?{ata rotze batzal yarok?}/0,1
+tr: Yeşil soğan ister misin?/0,1
+= 606 Are the scallions free?
+pt: A cebolinha é de graça?/0,1,2
+fa: پیازچه مجانیه؟{piyāzche majjāniye?}/0,1,2
+fw: پیازچه مجانیه؟ || piyāzche majjāniye?
+la: البصل الأخضر ببلاش؟{el-baṣal el-akhḍar bi-balēsh?}/0,1,2
+eg: البصل الأخضر ببلاش؟ || el-baṣal el-akhḍar bebalāsh?
+ms: هل البصل الأخضر مجاني؟ || hal al-baṣal al-akhḍar majjānī?
+he: הבצל הירוק בחינם?{ha-batzal ha-yarok be-chinam?}/0,1,2
+tr: Yeşil soğan bedava mı?/0,1,2
+= 607 If you like it, come back for more!
+pt: Se gostar, volta pra comprar mais!/0,1,2,3,4,5
+fa: اگه خوشت اومد، باز بیا!{age khoshet umad, bāz biyā!}/0,1,2,3,4,5
+fw: اگه خوشت اومد، باز بیا! || age khoshet umad, bāz biyā!
+la: إذا عجبك، إرجع كمان!{iza 'ajabak, rjā' kamēn!}/0,1,2,3,4,5
+eg: لو عجبك، تعالى تاني! || law 'agabak, ta'āla tāni!
+ms: إن أعجبك، فعُد مرّة أخرى! || in a'jabaka, fa-'ud marratan ukhrā!
+he: אם תאהב, תחזור לעוד!{im te'ehav, tachzor le'od!}/0,1,2,3,4,5
+tr: Beğenirsen yine gel!/0,1,2,3,4,5
+= 608 Thank you, thank you!
+pt: Obrigado, obrigado!/0,1
+fa: مرسی، مرسی!{mersi, mersi!}/0,1
+fw: مرسی، مرسی! || mersi, mersi!
+la: شكراً، شكراً!{shukran, shukran!}/0,1
+eg: شكراً، شكراً! || shokran, shokran!
+ms: شكراً، شكراً لك! || shukran, shukran lak!
+he: תודה, תודה!{toda, toda!}/0,1
+tr: Teşekkürler, teşekkürler!/0,1

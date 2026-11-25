@@ -89,8 +89,9 @@ data += parse("batches/eatingout.txt")   # "Eating Out" last, same reason
 data += parse("batches/colors.txt")   # "Colors" after it, same reason
 data += parse("batches/shopwords.txt")   # more "Shopping" cards (buy/sell/this one/that one); later me/*.txt numbers moved up by 4
 data += parse("batches/herbshop.txt")   # "Herbal Shop" conversation, last topic so me/*.txt numbers stay put
+data += parse("batches/wetmarket.txt")   # "Wet Market" conversation (from a Hong Kong street video), last topic
 
-order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop"]
+order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop", "Wet Market"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:

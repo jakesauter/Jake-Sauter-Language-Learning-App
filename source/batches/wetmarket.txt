@@ -1,0 +1,274 @@
+@ Wet Market | Handsome!
+g: handsome young man
+y: 靚仔/leng3 zai2/0
+m: 帅哥/shuài gē/0
+t: 靓仔/liaŋ33 dɔi55/0
+s: ¡Guapo!/0
+f: Beau gosse !/0
+d: Hey, Hübscher!/0
+n: Hong Kong wet market, from a street video. Line 1 (seller, calling out). Stall keepers call any young man 靚仔 "handsome" and any young woman 靚女 leng3 neoi5. It just means "hey, you!"
+nt: 靓仔 liaŋ33 dɔi55 is in Stephen Li's dictionary.
+
+@ Wet Market | Just tell me what you want to eat.
+g: you / want / eat / what / you / tell / me / listen
+y: 你/nei5/0 ; 想/soeng2/1 ; 食/sik6/2 ; 咩/me1/3 ; 你/nei5/4 ; 講/gong2/5 ; 我/ngo5/6 ; 聽/teng1/7
+m: 你/nǐ/0 ; 想/xiǎng/1 ; 吃/chī/2 ; 什么/shén me/3 ; 你/nǐ/4 ; 说/shuō/5 ; 给/gěi/- ; 我/wǒ/6 ; 听/tīng/7
+t: 你/ni33/0 ; 想/ɬiaŋ55/1? ; 吃/hiak33/2 ; 乜/mɔt55/3 ; 你/ni33/4 ; 讲/gɔŋ55/5 ; 我/ŋɔi33/6 ; 听/hiaŋ33/7?
+s: Dime qué quieres comer./0,1,2,3,4,5,6,7
+f: Dis-moi ce que tu veux manger./0,1,2,3,4,5,6,7
+d: Sag mir einfach, was du essen willst./0,1,2,3,4,5,6,7
+n: Line 2 (seller). 你講我聽 "you say, I listen" is a friendly "just tell me".
+nt: 吃 hiak33, 乜 mɔt55 and 讲 gɔŋ55 are in Stephen Li's dictionary; check 想 "want" and 听 "listen" with family.
+
+@ Wet Market | I'm just taking a look.
+g: look a bit / first
+y: 望吓/mong6 haa5/0 ; 先/sin1/1
+m: 先/xiān/1 ; 看看/kàn kan/0
+t: 望下/mɔŋ32 ha32/0? ; 先/ɬein33/1
+s: Solo estoy mirando./0,1
+f: Je regarde seulement./0,1
+d: Ich schaue nur./0,1
+n: Line 3 (you). 望吓先 "look a bit first" is the polite way to say you're browsing. 先 at the end means "first, for now".
+nt: 望 mɔŋ32 "to look" and 先 ɬein33 are in Stephen Li's dictionary; 望下 is put together here.
+
+@ Wet Market | How much for the spinach?
+g: spinach / how much money
+y: 菠菜/bo1 coi3/0 ; 幾多錢/gei2 do1 cin2/1 ; 呀/aa3/-
+m: 菠菜/bō cài/0 ; 多少钱/duō shao qián/1
+t: 菠菜/bɔ33 tɔi33/0 ; 几多钱/gi55 ɔ33 tein225/1 ; 啊/a33/-
+s: ¿Cuánto cuestan las espinacas?/0,1
+f: Combien coûtent les épinards ?/0,1
+d: Was kostet der Spinat?/0,1
+n: Line 4 (you). Name the thing, then ask 幾多錢呀: "spinach, how much?"
+nt: 菠菜 bɔ33 tɔi33 and 几多 gi55 ɔ33 are in Stephen Li's dictionary.
+
+@ Wet Market | Baby spinach is twenty dollars.
+g: spinach / sprouts / twenty / dollars
+y: 菠菜/bo1 coi3/0 ; 苗/miu4/1 ; 廿/jaa6/2 ; 蚊/man1/3
+m: 菠菜/bō cài/0 ; 苗/miáo/1 ; 二十/èr shí/2 ; 块/kuài/3
+t: 菠菜/bɔ33 tɔi33/0 ; 苗/miau22/1? ; 廿/ŋip32/2 ; 文/mun55/3
+s: Las espinacas tiernas, veinte dólares./0,1,2,3
+f: Les jeunes pousses d'épinards, vingt dollars./0,1,2,3
+d: Babyspinat, zwanzig Dollar./0,1,2,3
+n: Line 5 (seller). 苗 miu4 "sprout" means the young, tender leaves. 廿 jaa6 is the spoken short form of 二十 "twenty". Hong Kong dollars: $20 is about US$2.50.
+nt: 菠菜, 廿 ŋip32 "twenty" and 文 mun55 "dollar" are in Stephen Li's dictionary; check 苗 with family.
+
+@ Wet Market | I only have an Octopus card.
+g: I / only / have / Octopus card
+y: 我/ngo5/0 ; 淨係/zing6 hai6/1 ; 得/dak1/2 ; 八達通/baat3 daat6 tung1/3 ; 咋/zaa3/-
+m: 我/wǒ/0 ; 只/zhǐ/1 ; 有/yǒu/2 ; 八达通/bā dá tōng/3
+t: 我/ŋɔi33/0 ; 净系/dein32 hai32/1 ; 得/ak335/2 ; 八达通/bat33 at32 həŋ33/3? ; 啊/a33/-
+s: Solo tengo la tarjeta Octopus./0,1,2,3
+f: Je n'ai que ma carte Octopus./0,1,2,3
+d: Ich habe nur meine Octopus-Karte./0,1,2,3
+n: Line 6 (you). 八達通 Octopus is Hong Kong's tap card for trains, buses and shops, but many wet-market stalls take cash only. 淨係…咋 is "only…, that's all".
+nt: 净系 dein32 hai32 "only" and 得 ak335 "only have" are in Stephen Li's dictionary; 八达通 is read character by character here. Check with family.
+
+@ Wet Market | Pay me next time you pass by.
+g: next time / pass by / then / give / me
+y: 下次/haa6 ci3/0 ; 經過/ging1 gwo3/1 ; 先/sin1/2 ; 畀/bei2/3 ; 我/ngo5/4
+m: 下次/xià cì/0 ; 经过/jīng guò/1 ; 再/zài/2 ; 给/gěi/3 ; 我/wǒ/4
+t: 下次/ha32 ɬu33/0 ; 经过/gein33 gɔ33/1 ; 先/ɬein33/2 ; 畀/i55/3 ; 我/ŋɔi33/4
+s: Me pagas la próxima vez que pases./0,1,2,3,4
+f: Tu me paieras la prochaine fois que tu passes./0,1,2,3,4
+d: Zahl einfach beim nächsten Mal, wenn du vorbeikommst./0,1,2,3,4
+n: Line 7 (seller). She lets him take the spinach and pay later! Short form: 下次畀啦 "pay next time". Here 先 means "only then".
+nt: Every word is in Stephen Li's dictionary (下次 ha32 ɬu33, 经过 gein33 gɔ33, 先 ɬein33, 畀 i55); the sentence is put together here.
+
+@ Wet Market | Huh? Next time?
+g: huh / next time / pay
+y: 吓/haa2/0 ; 下次/haa6 ci3/1 ; 畀/bei2/2
+m: 啊/á/0 ; 下次/xià cì/1 ; 给/gěi/2
+t: 吓/ha55/0? ; 下次/ha32 ɬu33/1 ; 畀/i55/2
+s: ¿Eh? ¿La próxima vez?/0,1,2
+f: Hein ? La prochaine fois ?/0,1,2
+d: Hä? Nächstes Mal?/0,1,2
+n: Line 8 (you, surprised). 吓 haa2 with a rising tone is "huh?"; 下 haa6 in 下次 is the low tone: same syllable, different tone.
+nt: 下次 and 畀 are in Stephen Li's dictionary; check 吓 "huh?" with family.
+
+@ Wet Market | I'll have a look around first.
+g: I / again / look a bit
+y: 我/ngo5/0 ; 再/zoi3/1 ; 睇吓/tai2 haa5/2 ; 啦/laa1/-
+m: 我/wǒ/0 ; 再/zài/1 ; 看看/kàn kan/2 ; 吧/ba/-
+t: 我/ŋɔi33/0 ; 再/dɔi33/1 ; 睇下/hai55 ha32/2?
+s: Primero voy a dar una vuelta./0,1,2
+f: Je vais d'abord faire un tour./0,1,2
+d: Ich schaue mich erst mal um./0,1,2
+n: Line 9 (you). A polite way to walk away. 睇 tai2 is everyday Cantonese for "look" (Mandarin 看).
+nt: 再 dɔi33 and 睇 hai55 are in Stephen Li's dictionary; 睇下 is put together here.
+
+@ Wet Market | Thanks a lot.
+g: thanks a lot
+y: 唔該晒/m4 goi1 saai3/0
+m: 谢谢/xiè xie/0
+t: 唔该/m22 gɔi33/0
+s: Muchas gracias./0
+f: Merci beaucoup./0
+d: Vielen Dank./0
+n: Line 10 (you). 晒 saai3 "all, completely" makes 唔該 warmer: "thanks so much". 唔該 is for a service or favor; 多謝 for a gift.
+nt: 唔该 m22 gɔi33 is in Stephen Li's dictionary.
+
+@ Wet Market | Hey handsome, got cash now?
+g: hey handsome / have / money
+y: 阿靚仔/aa3 leng3 zai2/0 ; 有/jau5/1 ; 錢/cin2/2 ; 喇/laa3/-
+m: 帅哥/shuài gē/0 ; 有/yǒu/1 ; 钱/qián/2 ; 了吗/le ma/-
+t: 靓仔/liaŋ33 dɔi55/0 ; 有/yiu33/1 ; 钱/tein225/2 ; 啊/a33/-
+s: Oye, guapo, ¿ya tienes efectivo?/0,1,2
+f: Alors beau gosse, t'as du liquide maintenant ?/0,1,2
+d: Na, Hübscher, hast du jetzt Bargeld?/0,1,2
+n: Line 11 (seller), after he comes back from the ATM. 喇 laa3 marks something new: "you have money now?"
+nt: 有钱 yiu33 tein225 is in Stephen Li's dictionary, but there it also means "rich", so tone of voice matters.
+
+@ Wet Market | I got cash from the ATM.
+g: I / press (withdraw) / (done) / money
+y: 我/ngo5/0 ; 撳/gam6/1 ; 咗/zo2/2 ; 錢/cin2/3 ; 啦/laa3/-
+m: 我/wǒ/0 ; 取/qǔ/1 ; 了/le/2 ; 钱/qián/3 ; 啦/la/-
+t: 我/ŋɔi33/0 ; 撳/nək33/1? ; 了/liau55/2? ; 钱/tein225/3
+s: Ya saqué dinero del cajero./0,1,2,3
+f: J'ai retiré de l'argent au distributeur./0,1,2,3
+d: Ich habe am Automaten Geld geholt./0,1,2,3
+n: Line 12 (you). 撳錢 gam6 cin2 "press money" is taking cash out of an ATM (you press the buttons). Mandarin says 取钱 qǔ qián.
+nt: Stephen Li's dictionary has a word nək33 "press down with the hand"; whether Taishanese uses it for the ATM, and 了 for "done", are guesses. Check with family.
+
+@ Wet Market | Is it baby spinach you want?
+g: is it / baby spinach
+y: 係咪/hai6 mai6/0 ; 菠菜苗/bo1 coi3 miu4/1 ; 呀/aa3/-
+m: 是不是/shì bu shì/0 ; 菠菜苗/bō cài miáo/1
+t: 係唔係/hai32 mai32/0 ; 菠菜苗/bɔ33 tɔi33 miau22/1? ; 啊/a33/-
+s: ¿Son espinacas tiernas lo que quieres?/0,1
+f: C'est des pousses d'épinards que tu veux ?/0,1
+d: Willst du Babyspinat?/0,1
+n: Line 13 (seller). 係咪 hai6 mai6 is 係唔係 "is it or not" squeezed into two syllables.
+nt: Stephen Li's dictionary has 係唔係 hai32 mai32 "is it true that…?", squeezed the same way; check 苗 with family.
+
+@ Wet Market | Do you have tomatoes?
+g: have or not / tomatoes
+y: 有冇/jau5 mou5/0 ; 番茄/faan1 ke2/1 ; 呀/aa3/-
+m: 有没有/yǒu méi yǒu/0 ; 番茄/fān qié/1
+t: 有冇/yiu33 mɔu55/0 ; 番茄/fan33 kia215/1 ; 啊/a33/-
+s: ¿Tiene tomates?/0,1
+f: Vous avez des tomates ?/0,1
+d: Haben Sie Tomaten?/0,1
+n: Line 14 (you). 番茄 "foreign eggplant". In northern China people say 西红柿 xī hóng shì "western red persimmon".
+nt: 番茄 fan33 kia21(5) and 有冇 are in Stephen Li's dictionary.
+
+@ Wet Market | Tomatoes? I've got those too.
+g: tomatoes / I / also / have
+y: 番茄/faan1 ke2/0 ; 我/ngo5/1 ; 都/dou1/2 ; 有/jau5/3
+m: 番茄/fān qié/0 ; 我/wǒ/1 ; 也/yě/2 ; 有/yǒu/3
+t: 番茄/fan33 kia215/0 ; 我/ŋɔi33/1 ; 都/du55/2 ; 有/yiu33/3
+s: ¿Tomates? También tengo./0,1,2,3
+f: Des tomates ? J'en ai aussi./0,1,2,3
+d: Tomaten? Hab ich auch./0,1,2,3
+n: Line 15 (seller). Topic first: "tomatoes, I have those too". 都 dou1 here means "also".
+nt: Every word is in Stephen Li's dictionary (番茄, 都 du55 "also", 有 yiu33).
+
+@ Wet Market | Do you know how to pick tomatoes?
+g: you / know how or not / pick / tomatoes
+y: 你/nei5/0 ; 識唔識/sik1 m4 sik1/1 ; 揀/gaan2/2 ; 番茄/faan1 ke2/3
+m: 你/nǐ/0 ; 会不会/huì bu huì/1 ; 挑/tiāo/2 ; 番茄/fān qié/3
+t: 你/ni33/0 ; 晓唔晓/hiau55 m22 hiau55/1? ; 拣/gan55/2 ; 番茄/fan33 kia215/3
+s: ¿Sabes escoger tomates?/0,1,2,3
+f: Tu sais choisir les tomates ?/0,1,2,3
+d: Weißt du, wie man Tomaten aussucht?/0,1,2,3
+n: Line 16 (seller). 識 sik1 is "know how to"; 揀 gaan2 is "pick, choose".
+nt: Taishanese says 晓 hiau55 for "know how to" (Stephen Li's dictionary: 晓, 唔晓 m22 hiau55, 拣 gan55); 晓唔晓 is put together here.
+
+@ Wet Market | If you don't, I'll pick them for you.
+g: you / don't know how / I / help / you / pick
+y: 你/nei5/0 ; 唔識/m4 sik1/1 ; 我/ngo5/2 ; 幫/bong1/3 ; 你/nei5/4 ; 揀/gaan2/5
+m: 你/nǐ/0 ; 不会/bú huì/1 ; 我/wǒ/2 ; 帮/bāng/3 ; 你/nǐ/4 ; 挑/tiāo/5
+t: 你/ni33/0 ; 唔晓/m22 hiau55/1 ; 我/ŋɔi33/2 ; 帮/bɔŋ33/3 ; 你/ni33/4 ; 拣/gan55/5
+s: Si no sabes, yo te los escojo./0,1,2,3,4,5
+f: Si tu ne sais pas, je te les choisis./0,1,2,3,4,5
+d: Wenn nicht, suche ich sie dir aus./0,1,2,3,4,5
+n: Line 17 (seller). 幫你 "help you" is how you offer to do something for someone.
+nt: Every word is in Stephen Li's dictionary (唔晓, 帮 bɔŋ33, 拣 gan55); the sentence is put together here.
+
+@ Wet Market | You asked me to pick, so they'll be good!
+g: you / ask / me / pick / then / nice
+y: 你/nei5/0 ; 叫得/giu3 dak1/1 ; 我/ngo5/2 ; 揀/gaan2/3 ; 就/zau6/4 ; 靚/leng3/5 ; 㗎/gaa3/-
+m: 你/nǐ/0 ; 叫/jiào/1 ; 我/wǒ/2 ; 挑/tiāo/3 ; 就/jiù/4 ; 好/hǎo/5 ; 的/de/-
+t: 你/ni33/0 ; 叫/giau33/1? ; 我/ŋɔi33/2 ; 拣/gan55/3 ; 就/diu32/4 ; 靓/liaŋ33/5 ; 啊/a33/-
+s: Si me pides que los escoja, ¡seguro que salen buenos!/0,1,2,3,4,5
+f: Si c'est moi qui choisis, elles seront forcément belles !/0,1,2,3,4,5
+d: Wenn ich sie aussuche, sind sie bestimmt gut!/0,1,2,3,4,5
+n: Line 18 (seller, proudly). 靚 leng3 "pretty" also means "good quality" for food: 靚番茄 "nice tomatoes".
+nt: 拣, 就 diu32 and 靓 liaŋ33 are in Stephen Li's dictionary; check 叫 "ask" with family.
+
+@ Wet Market | Has this stall been here a long time?
+g: here / opened / very long
+y: 呢度/ni1 dou6/0 ; 開咗/hoi1 zo2/1 ; 好耐/hou2 noi6/2 ; 㗎喇/gaa3 laa3/-
+m: 这里/zhè lǐ/0 ; 开了/kāi le/1 ; 很久/hěn jiǔ/2 ; 了吧/le ba/-
+t: 该/kɔi215/0 ; 开了/hɔi33 liau55/1? ; 好久/hɔu55 giu55/2? ; 啊/a33/-
+s: ¿Este puesto lleva mucho tiempo aquí?/0,1,2
+f: Ce stand est là depuis longtemps ?/0,1,2
+d: Gibt es diesen Stand schon lange?/0,1,2
+n: Line 19 (you). 開 hoi1 "open" also means "be in business": 開咗好耐 "has been open a long time". 耐 noi6 is Cantonese for "long (time)".
+nt: 该 kɔi215 "here", 开 hɔi33 and 久 giu55 "long (time)" are in Stephen Li's dictionary; the sentence is put together here. Check with family.
+
+@ Wet Market | Oh, decades!
+g: several tens / years
+y: 唏/hei3/- ; 幾十/gei2 sap6/0 ; 年/nin4/1 ; 囉/lo3/-
+m: 几十/jǐ shí/0 ; 年/nián/1 ; 了/le/-
+t: 几十/gi55 sip32/0 ; 年/nein22/1 ; 啊/a33/-
+s: ¡Uy, décadas!/0,1
+f: Oh, des dizaines d'années !/0,1
+d: Ach, seit Jahrzehnten!/0,1
+n: Line 20 (seller). 幾十年 "several tens of years" is how you say "decades". 囉 lo3 sounds like "of course!"
+nt: 几 gi55, 十 sip32 and 年 nein22 are in Stephen Li's dictionary.
+
+@ Wet Market | Thirty dollars is fine.
+g: thirty / dollars / OK
+y: 卅/saa1 aa6/0 ; 蚊/man1/1 ; 得/dak1/2 ; 喇/laa3/-
+m: 三十/sān shí/0 ; 块/kuài/1 ; 就行/jiù xíng/2 ; 了/le/-
+t: 卅/ɬap32/0 ; 文/mun55/1 ; 得/ak55/2? ; 啊/a33/-
+s: Con treinta dólares está bien./0,1,2
+f: Trente dollars, ça ira./0,1,2
+d: Dreißig Dollar reichen./0,1,2
+n: Line 21 (seller). 卅 saa1 aa6 is "thirty", squeezed from 三十, like 廿 for twenty. She rounds the total down for him.
+nt: 卅 ɬap32 "thirty" and 文 mun55 are in Stephen Li's dictionary; check 得 "OK" with family.
+
+@ Wet Market | Do you want some scallions?
+g: want or not / scallions
+y: 愛唔愛/oi3 m4 oi3/0 ; 蔥/cung1/1 ; 㗎/gaa3/-
+m: 要不要/yào bu yào/0 ; 葱/cōng/1
+t: 爱唔爱/ɔi33 m22 ɔi33/0? ; 葱/təŋ215/1 ; 啊/a33/-
+s: ¿Quieres cebollín?/0,1
+f: Tu veux des oignons verts ?/0,1
+d: Willst du Frühlingszwiebeln?/0,1
+n: Line 22 (seller). Here 愛 oi3 "love" means "want", an older, homey way to say 要. Stalls often throw in a few scallions for free.
+nt: 葱 təŋ215 "green onion" is in Stephen Li's dictionary; check 爱 "want" with family.
+
+@ Wet Market | Are the scallions free?
+g: scallions / is it / given free
+y: 蔥/cung1/0 ; 係咪/hai6 mai6/1 ; 送/sung3/2 ; 㗎/gaa3/-
+m: 葱/cōng/0 ; 是不是/shì bu shì/1 ; 送/sòng/2 ; 的/de/-
+t: 葱/təŋ215/0 ; 係唔係/hai32 mai32/1 ; 送/ɬəŋ33/2 ; 啊/a33/-
+s: ¿El cebollín es gratis?/0,1,2
+f: Les oignons verts sont offerts ?/0,1,2
+d: Sind die Frühlingszwiebeln gratis?/0,1,2
+n: Line 23 (you). 送 sung3 "give as a gift" means free with your purchase: 送蔥 "free scallions".
+nt: Every word is in Stephen Li's dictionary (葱, 係唔係 hai32 mai32, 送 ɬəŋ33).
+
+@ Wet Market | If you like it, come back for more!
+g: you / feel / tasty / then / again / come over
+y: 你/nei5/0 ; 覺得/gok3 dak1/1 ; 好食/hou2 sik6/2 ; 就/zau6/3 ; 再/zoi3/4 ; 過嚟/gwo3 lei4/5 ; 啦/laa1/-
+m: 你/nǐ/0 ; 觉得/jué de/1 ; 好吃/hǎo chī/2 ; 就/jiù/3 ; 再/zài/4 ; 过来/guò lái/5 ; 吧/ba/-
+t: 你/ni33/0 ; 觉得/gɔk33 ak55/1? ; 好吃/hɔu55 hiak33/2 ; 就/diu32/3 ; 再/dɔi33/4 ; 过来/gɔ33 lɔi22/5 ; 啊/a33/-
+s: Si te gusta, ¡vuelve por más!/0,1,2,3,4,5
+f: Si ça te plaît, reviens en prendre !/0,1,2,3,4,5
+d: Wenn's dir schmeckt, komm wieder!/0,1,2,3,4,5
+n: Line 24 (seller). 好食 "good to eat" is "tasty". 過嚟 gwo3 lei4 is "come over (here)".
+nt: 好吃 hɔu55 hiak33, 就, 再, 过 gɔ33 and 来 lɔi22 are in Stephen Li's dictionary; check 觉得 with family.
+
+@ Wet Market | Thank you, thank you!
+g: thank / you
+y: 多謝/do1 ze6/0 ; 你/nei5/1
+m: 谢谢/xiè xie/0 ; 你/nǐ/1
+t: 多谢/ɔ33 dia32/0 ; 你/ni33/1
+s: ¡Gracias, muchas gracias!/0,1
+f: Merci, merci beaucoup !/0,1
+d: Danke, vielen Dank!/0,1
+n: Line 25 (you). The scallions were a gift, so it's 多謝, not 唔該.
+nt: 多谢 ɔ33 dia32 is in Stephen Li's dictionary.
