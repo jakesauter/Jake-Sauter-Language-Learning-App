@@ -1,0 +1,120 @@
+@ Herbal Shop | Excuse me, can I ask you a question?
+g: excuse me / can? / ask / you / a / question
+y: 唔該/m4 goi1/0 ; 可唔可以/ho2 m4 ho2 ji5/1 ; 問/man6/2 ; 你/nei5/3 ; 一個/jat1 go3/4 ; 問題/man6 tai4/5 ; 呀/aa3/-
+m: 不好意思/bù hǎo yì si/0 ; 可不可以/kě bu kě yǐ/1 ; 问/wèn/2 ; 你/nǐ/3 ; 一个/yí ge/4 ; 问题/wèn tí/5
+t: 唔该/m22 gɔi33/0 ; 可唔可以/hɔ55 m22 hɔ55 yi21/1 ; 问/mun32/2 ; 你/ni33/3 ; 一个/yit55 gɔi33/4 ; 问题/mun32 hai22/5 ; 啊/a33/-
+s: Disculpe, ¿le puedo hacer una pregunta?/0,1,2,3,4,5
+f: Excusez-moi, je peux vous poser une question ?/0,1,2,3,4,5
+d: Entschuldigung, darf ich Sie etwas fragen?/0,1,2,3,4,5
+n: Herbal shop conversation, line 1 (you). 唔該 m4 goi1 opens a polite request, like "excuse me". 可唔可以 "can or can't" is how you ask "may I".
+nt: Every word is in Stephen Li's dictionary (唔该 m22 gɔi33, 可以 hɔ55 yi21, 问 mun32, 问题 mun32 hai22); the sentence is put together here.
+
+@ Herbal Shop | Do you sell American ginseng?
+g: have or not / American ginseng / sell
+y: 有冇/jau5 mou5/0 ; 花旗參/faa1 kei4 sam1/1 ; 賣/maai6/2 ; 呀/aa3/-
+m: 有没有/yǒu méi yǒu/0 ; 花旗参/huā qí shēn/1 ; 卖/mài/2
+t: 有冇/yiu33 mɔu55/0 ; 花旗参/fa33 ki22 tam33/1 ; 卖/mai32/2 ; 啊/a33/-
+s: ¿Venden ginseng americano?/0,1,2
+f: Vous vendez du ginseng américain ?/0,1,2
+d: Verkaufen Sie amerikanischen Ginseng?/0,1,2
+n: Line 2 (you). 花旗 "flowery flag" is the old Cantonese name for the United States (the Stars and Stripes), so 花旗參 is "American ginseng". In Mandarin it's more often 西洋参 xī yáng shēn.
+nt: Stephen Li's dictionary has 花旗参 fa33 ki22 tam33 (also heard as fa33 ki22 ɬim33), 有冇 yiu33 mɔu55 and 卖 mai32.
+
+@ Herbal Shop | Yes. Which kind do you want?
+g: have / you / want / which / kind
+y: 有/jau5/0 ; 你/nei5/1 ; 想要/soeng2 jiu3/2 ; 邊種/bin1 zung2/3,4 ; 呀/aa3/-
+m: 有/yǒu/0 ; 你/nǐ/1 ; 想要/xiǎng yào/2 ; 哪种/nǎ zhǒng/3,4
+t: 有/yiu33/0 ; 你/ni33/1 ; 想攞/ɬiaŋ55 hɔ55/2 ; 哪种/nai21 dzəŋ55/3,4? ; 啊/a33/-
+s: Sí. ¿Cuál quiere?/0,1,2,3,4
+f: Oui. Lequel voulez-vous ?/0,1,2,3,4
+d: Ja. Welchen möchten Sie?/0,1,2,3,4
+n: Line 3 (shopkeeper). Ginseng comes as whole roots, slices or powder, and by grade: bigger, older roots cost more.
+nt: 想攞 ɬiaŋ55 hɔ55 "to want" and 哪个 nai21 gɔi33 "which one" are in Stephen Li's dictionary; 哪种 "which kind" is put together here. Check with family.
+
+@ Herbal Shop | How much is this?
+g: this / how much (money)
+y: 呢個/ni1 go3/0 ; 幾多錢/gei2 do1 cin2/1 ; 呀/aa3/-
+m: 这个/zhè ge/0 ; 多少钱/duō shao qián/1
+t: 該個/kɔi21 gɔi33/0 ; 幾多錢/gi55 ɔ33 tein225/1 ; 啊/a33/-
+s: ¿Cuánto cuesta esto?/0,1
+f: Combien ça coûte ?/0,1
+d: Wie viel kostet das?/0,1
+n: Line 4 (you). Point at the jar and ask. 幾錢 gei2 cin2 is the short form.
+nt: 该个 kɔi21 gɔi33 "this one" and 几多 gi55 ɔ33 are in Stephen Li's dictionary.
+
+@ Herbal Shop | A hundred dollars a pound.
+g: one hundred / dollars / one / pound
+y: 一百/jat1 baak3/0 ; 蚊/man1/1 ; 一/jat1/2 ; 磅/bong6/3
+m: 一百/yì bǎi/0 ; 块/kuài/1 ; 一/yí/2 ; 磅/bàng/3
+t: 一百/yit55 bak33/0 ; 文/mun55/1 ; 一/yit55/2 ; 磅/bɔŋ32/3
+s: Cien dólares la libra./0,1,2,3
+f: Cent dollars la livre./0,1,2,3
+d: Hundert Dollar das Pfund./0,1,2,3
+n: Line 5 (shopkeeper). 蚊 man1 is the spoken word for "dollar" (written 元). In Chinatown shops ginseng is priced by the pound 磅 bong6; in China and Hong Kong by the 斤 gan1 (about 600 g) or the 兩 loeng2 (a tenth of that).
+nt: 一文 yit55 mun55 "a dollar", 百 bak33 and 磅 bɔŋ32 "pound" are in Stephen Li's dictionary.
+
+@ Herbal Shop | Do you have a cheaper one?
+g: have or not / cheap / a bit / (one)
+y: 有冇/jau5 mou5/0 ; 平/peng4/1 ; 啲/di1/2 ; 嘅/ge3/3 ; 呀/aa3/-
+m: 有没有/yǒu méi yǒu/0 ; 便宜/pián yi/1 ; 点/diǎn/2 ; 的/de/3
+t: 有冇/yiu33 mɔu55/0 ; 平/piaŋ22/1 ; 尼/nai55/2 ; 个/gɔi33/3 ; 啊/a33/-
+s: ¿Tiene uno más barato?/0,1,2,3
+f: Vous en avez un moins cher ?/0,1,2,3
+d: Haben Sie einen günstigeren?/0,1,2,3
+n: Line 6 (you). 平 peng4 is "cheap"; 平啲嘅 is "a cheaper one".
+nt: 平 piaŋ22 "cheap" and 尼 nai55 "a bit, some" are in Stephen Li's dictionary; the sentence is put together here.
+
+@ Herbal Shop | How do you take it?
+g: this / how / eat (take)
+y: 呢啲/ni1 di1/0 ; 點樣/dim2 joeng2/1 ; 食/sik6/2 ; 㗎/gaa3/-
+m: 这个/zhè ge/0 ; 怎么/zěn me/1 ; 吃/chī/2
+t: 该尼/kɔi21 nai55/0? ; 几何/gi55 hɔu215/1 ; 吃/hiak33/2 ; 啊/a33/-
+s: ¿Cómo se toma?/0,1,2
+f: Comment ça se prend ?/0,1,2
+d: Wie nimmt man das?/0,1,2
+n: Line 7 (you). Medicine is "eaten": 食藥 sik6 joek6 means "take medicine", even when you drink it.
+nt: 几何 gi55 hɔu215 "how" and 吃 hiak33 "eat" are in Stephen Li's dictionary, which also has 吃茶 hiak33 tsa22 "drink an herbal brew". Check 该尼 "these" with family.
+
+@ Herbal Shop | Slice it, boil it in water and drink it.
+g: slice / boil / water / drink
+y: 切片/cit3 pin2/0 ; 煲/bou1/1 ; 水/seoi2/2 ; 飲/jam2/3
+m: 切片/qiē piàn/0 ; 煮/zhǔ/1 ; 水/shuǐ/2 ; 喝/hē/3
+t: 切片/tɛt33 pein335/0 ; 煲/bɔu33/1 ; 水/sui55/2 ; 饮/ŋim55/3
+s: Córtelo en rodajas, hiérvalo en agua y tómeselo./0,1,2,3
+f: Coupez-le en tranches, faites-le bouillir dans l'eau et buvez-le./0,1,2,3
+d: In Scheiben schneiden, in Wasser kochen und trinken./0,1,2,3
+n: Line 8 (shopkeeper). 煲水 bou1 seoi2 is "boil water" (煲 is the pot you simmer soup in). Some people just hold a slice in the mouth: 含 ham4.
+nt: Every word is in Stephen Li's dictionary (切片 tɛt33 pein335, 煲 bɔu33, 水 sui55, 饮 ŋim55, and 含 həm22 "hold in the mouth").
+
+@ Herbal Shop | I'll take half a pound, please.
+g: I / want / half / pound / please
+y: 我/ngo5/0 ; 要/jiu3/1 ; 半磅/bun3 bong6/2,3 ; 唔該/m4 goi1/4
+m: 我/wǒ/0 ; 要/yào/1 ; 半磅/bàn bàng/2,3 ; 谢谢/xiè xie/4
+t: 我/ŋɔi33/0 ; 要/yiau33/1? ; 半磅/bɔn21 bɔŋ32/2,3 ; 唔该/m22 gɔi33/4
+s: Me llevo media libra, por favor./0,1,2,3,4
+f: Je vais prendre une demi-livre, s'il vous plaît./0,1,2,3,4
+d: Ich nehme ein halbes Pfund, bitte./0,1,2,3,4
+n: Line 9 (you). 唔該 at the end is "please" for a service; for a gift you say 多謝 do1 ze6.
+nt: 我 ŋɔi33, 一半 yit55 bɔn21 "half", 磅 bɔŋ32 and 唔该 m22 gɔi33 are in Stephen Li's dictionary; 要 yiau33 isn't. Check with family.
+
+@ Herbal Shop | Can you slice it for me?
+g: can? / help / me / slice
+y: 可唔可以/ho2 m4 ho2 ji5/0 ; 幫/bong1/1 ; 我/ngo5/2 ; 切片/cit3 pin2/3 ; 呀/aa3/-
+m: 可不可以/kě bu kě yǐ/0 ; 帮/bāng/1 ; 我/wǒ/2 ; 切片/qiē piàn/3
+t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 帮/bɔŋ33/1 ; 我/ŋɔi33/2 ; 切片/tɛt33 pein335/3 ; 啊/a33/-
+s: ¿Me lo puede cortar en rodajas?/0,1,2,3
+f: Vous pouvez me le couper en tranches ?/0,1,2,3
+d: Können Sie es mir in Scheiben schneiden?/0,1,2,3
+n: Line 10 (you). Many shops slice whole roots for free on their machine. 幫我 "help me" is how you ask someone to do something for you.
+nt: 帮 bɔŋ33 and 切片 tɛt33 pein335 are in Stephen Li's dictionary; the sentence is put together here.
+
+@ Herbal Shop | Do you take cards?
+g: accept or not / card
+y: 收唔收/sau1 m4 sau1/0 ; 卡/kaat1/1 ; 㗎/gaa3/-
+m: 可以/kě yǐ/0 ; 刷卡/shuā kǎ/1 ; 吗/ma/-
+t: 收唔收/siu33 m22 siu33/0? ; 卡/ka55/1 ; 啊/a33/-
+s: ¿Aceptan tarjeta?/0,1
+f: Vous prenez la carte ?/0,1
+d: Nehmen Sie Karte?/0,1
+n: Line 11 (you). Small herbal shops often prefer cash: the answer may be 淨係收現金 "cash only".
+nt: 收 siu33 "to receive" and 卡 ka55 "card" are in Stephen Li's dictionary, which also has 辘咭 lək33 ka(t)55 "pay by card". The sentence is put together here.

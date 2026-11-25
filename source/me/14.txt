@@ -1,0 +1,99 @@
+= 573 Excuse me, can I ask you a question?
+pt: Com licença, posso te fazer uma pergunta?/0,1,2,3,4,5
+fa: ببخشید، می‌تونم یه سؤال بپرسم؟{bebakhshid, mitunam ye so'āl beporsam?}/0,1,2,3,4,5
+fw: ببخشید، می‌تونم یه سؤال بپرسم؟ || bebakhshid, mitunam ye so'āl beporsam?
+la: عفواً، فيني إسألك سؤال؟{'afwan, fīni is'alak su'āl?}/0,1,2,3,4,5
+eg: لو سمحت، ممكن أسألك سؤال؟ || law samaḥt, momken as'alak so'āl?
+ms: عفواً، هل يمكنني أن أسألك سؤالاً؟ || 'afwan, hal yumkinunī an as'alaka su'ālan?
+he: סליחה, אפשר לשאול אותך שאלה?{slicha, efshar lish'ol otcha she'ela?}/0,1,2,3,4,5
+tr: Affedersiniz, bir soru sorabilir miyim?/0,1,2,3,4,5
+= 574 Do you sell American ginseng?
+pt: Vocês vendem ginseng americano?/0,1,2
+fa: جینسینگ آمریکایی دارید؟{jinsing-e āmrikāyi dārid?}/0,1,2
+fw: جینسینگ آمریکایی دارید؟ || jinsing-e āmrikāyi dārid?
+la: عندكن جينسنغ أميركي؟{'endkon jinseng amērki?}/0,1,2
+eg: عندكم جينسنج أمريكاني؟ || 'andokom ginseng amrikāni?
+ms: هل تبيعون الجينسنغ الأمريكي؟ || hal tabī'ūna al-jinsing al-amrīkī?
+he: אתם מוכרים ג'ינסנג אמריקאי?{atem mochrim jinseng amerika'i?}/0,1,2
+tr: Amerikan ginsengi satıyor musunuz?/0,1,2
+= 575 Yes. Which kind do you want?
+pt: Sim. Qual você quer?/0,1,2,3,4
+fa: بله. کدومش رو می‌خواید؟{bale. kodumesh ro mikhāid?}/0,1,2,3,4
+fw: بله. کدومش رو می‌خواید؟ || bale. kodumesh ro mikhāid?
+la: إيه. أيّا نوع بدّك؟{ē. ayya nō' baddak?}/0,1,2,3,4
+eg: أيوه. عايز أنهي نوع؟ || aywa. 'āyez anhi no'?
+ms: نعم. أيّ نوع تريد؟ || na'am. ayya naw'in turīd?
+he: כן. איזה סוג אתה רוצה?{ken. eize sug ata rotze?}/0,1,2,3,4
+tr: Evet. Hangisini istersiniz?/0,1,2,3,4
+= 576 How much is this?
+pt: Quanto custa isso?/0,1
+fa: این چنده؟{in chande?}/0,1
+fw: این چنده؟ || in chande?
+la: قدّيش هيدا؟{addēsh hayda?}/0,1
+eg: ده بكام؟ || da bekām?
+ms: كم سعر هذا؟ || kam si'ru hādhā?
+he: כמה זה עולה?{kama ze ole?}/0,1
+tr: Bu ne kadar?/0,1
+= 577 A hundred dollars a pound.
+pt: Cem dólares a libra./0,1,2,3
+fa: پوندی صد دلار.{pundi sad dolār.}/0,1,2,3
+fw: پوندی صد دلار. || pundi sad dolār.
+la: مية دولار الليبرة.{miyye dolār el-lībra.}/0,1,2,3
+eg: الرطل بمية دولار. || er-raṭl bemeet dolār.
+ms: مئة دولار للرطل. || mi'at dūlār lil-raṭl.
+he: מאה דולר לפאונד.{me'a dolar le-paund.}/0,1,2,3
+tr: Pound'u yüz dolar./0,1,2,3
+= 578 Do you have a cheaper one?
+pt: Tem um mais barato?/0,1,2,3
+fa: ارزون‌ترش رو دارید؟{arzuntarash ro dārid?}/0,1,2,3
+fw: ارزون‌ترش رو دارید؟ || arzuntarash ro dārid?
+la: في شي أرخص؟{fī shi arkhaṣ?}/0,1,2,3
+eg: فيه حاجة أرخص؟ || fīh ḥāga arkhaṣ?
+ms: هل عندك واحد أرخص؟ || hal 'indaka wāḥidun arkhaṣ?
+he: יש משהו יותר זול?{yesh mashehu yoter zol?}/0,1,2,3
+tr: Daha ucuzu var mı?/0,1,2,3
+= 579 How do you take it?
+pt: Como se toma?/0,1,2
+fa: اینو چطوری مصرف کنم؟{ino chetori masraf konam?}/0,1,2
+fw: اینو چطوری مصرف کنم؟ || ino chetori masraf konam?
+la: كيف بينآخد؟{kīf bin'ākhad?}/0,1,2
+eg: بيتاخد إزاي؟ || biyetākhed ezzāy?
+ms: كيف يؤخذ؟ || kayfa yu'khadh?
+he: איך לוקחים את זה?{eich lokchim et ze?}/0,1,2
+tr: Nasıl kullanılıyor?/0,1,2
+= 580 Slice it, boil it in water and drink it.
+pt: Corte em fatias, ferva na água e beba./0,1,2,3
+fa: برش بزنید، توی آب بجوشونید و بخورید.{borosh bezanid, tuye āb bejushunid o bokhorid.}/0,1,2,3
+fw: برش بزنید، توی آب بجوشونید و بخورید. || borosh bezanid, tuye āb bejushunid o bokhorid.
+la: قطّعو شرايح، غليه بالمي واشربو.{'aṭṭe'o shrāyeḥ, ghlī bel-mayy w ishrabo.}/0,1,2,3
+eg: قطّعه شرايح، اغليه في مية واشربه. || 'aṭṭa'o sharāyeḥ, eghlīh fi mayya w eshrabo.
+ms: قطّعه شرائح، واغلِه في الماء واشربه. || qaṭṭi'hu sharā'iḥ, wa-ghlihi fī al-mā' wa-shrabhu.
+he: חותכים לפרוסות, מרתיחים במים ושותים.{chotchim li-frusot, martichim ba-mayim ve-shotim.}/0,1,2,3
+tr: Dilimleyin, suda kaynatın ve için./0,1,2,3
+= 581 I'll take half a pound, please.
+pt: Vou levar meia libra, por favor./0,1,2,3,4
+fa: نیم پوند می‌خوام، لطفاً.{nim pund mikhām, lotfan.}/0,1,2,3,4
+fw: نیم پوند می‌خوام، لطفاً. || nim pund mikhām, lotfan.
+la: بدّي نص ليبرة، من فضلك.{baddi noṣṣ lībra, min faḍlak.}/0,1,2,3,4
+eg: عايز نص رطل، لو سمحت. || 'āyez noṣṣ raṭl, law samaḥt.
+ms: أريد نصف رطل، من فضلك. || urīdu niṣfa raṭl, min faḍlik.
+he: אני אקח חצי פאונד, בבקשה.{ani ekach chatzi paund, bevakasha.}/0,1,2,3,4
+tr: Yarım pound alayım, lütfen./0,1,2,3,4
+= 582 Can you slice it for me?
+pt: Pode cortar em fatias para mim?/0,1,2,3
+fa: می‌تونید برام برشش بزنید؟{mitunid barām boreshesh bezanid?}/0,1,2,3
+fw: می‌تونید برام برشش بزنید؟ || mitunid barām boreshesh bezanid?
+la: فيك تقطّعلي ياه شرايح؟{fīk t'aṭṭe'li yā shrāyeḥ?}/0,1,2,3
+eg: ممكن تقطّعهولي شرايح؟ || momken t'aṭṭa'holi sharāyeḥ?
+ms: هل يمكنك أن تقطّعه لي شرائح؟ || hal yumkinuka an tuqaṭṭi'ahu lī sharā'iḥ?
+he: אפשר לפרוס לי את זה?{efshar lifros li et ze?}/0,1,2,3
+tr: Benim için dilimleyebilir misiniz?/0,1,2,3
+= 583 Do you take cards?
+pt: Vocês aceitam cartão?/0,1
+fa: کارت قبول می‌کنید؟{kārt qabul mikonid?}/0,1
+fw: کارت قبول می‌کنید؟ || kārt qabul mikonid?
+la: بتقبلو كارت؟{bti'balu kart?}/0,1
+eg: بتاخدوا فيزا؟ || btākhdu vīza?
+ms: هل تقبلون البطاقات؟ || hal taqbalūna al-biṭāqāt?
+he: אתם מקבלים כרטיס אשראי?{atem mekablim kartis ashrai?}/0,1
+tr: Kart geçiyor mu?/0,1
