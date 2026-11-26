@@ -1,0 +1,63 @@
+= 665 Excuse me!
+pt: Com licença!/0
+fa: ببخشید!{bebakhshid!}/0
+fw: ببخشید! || bebakhshid!
+la: لو سمحت!{law samaḥt!}/0
+eg: لو سمحت! || law samaḥt!
+ms: لو سمحت! || law samaḥta!
+he: סליחה!{slicha!}/0
+tr: Pardon!/0
+= 666 Handsome, what would you like?
+pt: Bonitão, o que vai querer?/0,1,2
+fa: آقا خوشتیپه، چی میل دارین؟{āghā khoshtipe, chi meyl dārin?}/0,1,2
+fw: آقا خوشتیپه، چی میل دارین؟ || āghā khoshtipe, chi meyl dārin?
+la: يا حلو، شو بدك؟{yā ḥelu, shu baddak?}/0,1,2
+eg: يا جميل، تطلب إيه؟ || yā gamīl, tuṭlub ēh?
+ms: يا وسيم، ماذا تريد؟ || yā wasīm, mādhā turīd?
+he: חתיך, מה תרצה?{chatich, ma tirtse?}/0,1,2
+tr: Yakışıklı, ne alırsın?/0,1,2
+= 667 Do you have any sugar?
+pt: Tem açúcar?/0,1
+fa: شکر دارین؟{shekar dārin?}/0,1
+fw: شکر دارین؟ || shekar dārin?
+la: في سكر؟{fī sukkar?}/0,1
+eg: فيه سكر؟ || fīh sukkar?
+ms: هل عندكم سكر؟ || hal 'indakum sukkar?
+he: יש סוכר?{yesh sukar?}/0,1
+tr: Şeker var mı?/0,1
+= 668 Oh, soup!
+pt: Ah, sopa!/0,1
+fa: آهان، سوپ!{āhān, sup!}/0,1
+fw: آهان، سوپ! || āhān, sup!
+la: آه، شوربة!{āh, shōrba!}/0,1
+eg: آه، شوربة! || āh, shorba!
+ms: آه، حساء! || āh, ḥasā'!
+he: אה, מרק!{ah, marak!}/0,1
+tr: Ha, çorba!/0,1
+= 669 Borscht, Chinese soup or cream soup
+pt: Borsch, sopa chinesa ou creme/0,1,2
+fa: سوپ بُرش، سوپ چینی یا سوپ خامه{sup-e borsh, sup-e chini yā sup-e khāme}/0,1,2
+fw: سوپ بُرش، سوپ چینی یا سوپ خامه || sup-e borsh, sup-e chini yā sup-e khāme
+la: بورش، شوربة صينية أو شوربة كريمة{borsh, shōrba ṣīniyye aw shōrba krēma}/0,1,2
+eg: بورش، شوربة صيني أو شوربة كريمة || borsh, shorba ṣīni aw shorba krēma
+ms: بورش، حساء صيني أو حساء كريمي || borsh, ḥasā' ṣīnī aw ḥasā' krīmī
+he: בורשט, מרק סיני או מרק שמנת{borsht, marak sini o marak shamenet}/0,1,2
+tr: Pancar çorbası, Çin çorbası ya da kremalı çorba/0,1,2
+= 670 Sugar! Not soup!
+pt: Açúcar! Não sopa!/0,1,2
+fa: شکر! نه سوپ!{shekar! na sup!}/0,1,2
+fw: شکر! نه سوپ! || shekar! na sup!
+la: سكر! مش شوربة!{sukkar! mish shōrba!}/0,1,2
+eg: سكر! مش شوربة! || sukkar! mish shorba!
+ms: سكر! ليس حساء! || sukkar! laysa ḥasā'!
+he: סוכר! לא מרק!{sukar! lo marak!}/0,1,2
+tr: Şeker! Çorba değil!/0,1,2
+= 671 So, is there any sugar?
+pt: Então, tem açúcar?/0,1,2
+fa: خب، شکر دارین؟{khob, shekar dārin?}/0,1,2
+fw: خب، شکر دارین؟ || khob, shekar dārin?
+la: طيب، في سكر؟{ṭayyeb, fī sukkar?}/0,1,2
+eg: طيب، فيه سكر؟ || ṭayyeb, fīh sukkar?
+ms: إذن، هل يوجد سكر؟ || idhan, hal yūjad sukkar?
+he: אז יש סוכר?{az yesh sukar?}/0,1,2
+tr: Peki, şeker var mı?/0,1,2

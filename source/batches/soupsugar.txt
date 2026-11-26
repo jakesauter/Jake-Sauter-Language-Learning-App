@@ -1,0 +1,76 @@
+@ Soup or Sugar | Excuse me!
+g: excuse me
+y: 唔該/m4 goi1/0
+m: 不好意思/bù hǎo yì si/0
+t: 唔該/m22 gɔi33/0
+s: ¡Disculpe!/0
+f: Excusez-moi !/0
+d: Entschuldigung!/0
+n: From a reel about why Cantonese tones matter, set in a Hong Kong cha chaan teng (café). 唔該 m4 goi1 calls the waiter over, and also means "please" and "thanks (for the help)". The customer ends the reel with 唔該 again as "please".
+nt: 唔該 m22 gɔi33 is in Stephen Li's dictionary.
+
+@ Soup or Sugar | Handsome, what would you like?
+g: handsome / want / what
+y: 阿靚仔/aa3 leng3 zai2/0 ; 要/jiu3/1 ; 咩/me1/2 ; 啊/aa3/-
+m: 帅哥/shuài gē/0 ; 要/yào/1 ; 什么/shén me/2 ; 啊/a/-
+t: 阿靚仔/a33 liaŋ33 dɔi55/0 ; 要/yiau33/1 ; 乜嘢/mɔt55 yia33/2 ; 啊/a33/-
+s: Guapo, ¿qué vas a pedir?/0,1,2
+f: Beau gosse, qu'est-ce que je vous sers ?/0,1,2
+d: Na, Hübscher, was darf's sein?/0,1,2
+n: Waiters in Hong Kong often call young men 靚仔 leng3 zai2 "handsome" (and young women 靚女 leng3 neoi2). It's friendly, not flirting.
+nt: 靚仔 liaŋ33 dɔi55 and 乜 mɔt55 "what" are in Stephen Li's dictionary.
+
+@ Soup or Sugar | Do you have any sugar?
+g: have or not / sugar
+y: 有冇/jau5 mou5/0 ; 糖/tong4/1 ; 呀/aa3/-
+m: 有没有/yǒu méi yǒu/0 ; 糖/táng/1 ; 啊/a/-
+t: 有冇/yiu33 mɔu55/0 ; 糖/hɔŋ22/1 ; 啊/a33/-
+s: ¿Tiene azúcar?/0,1
+f: Vous avez du sucre ?/0,1
+d: Haben Sie Zucker?/0,1
+n: The whole joke: 糖 tong4 (low falling) is "sugar", 湯 tong1 (high) is "soup". In the reel he says it with tone 1 by mistake and gets offered soup. Mandarin has the same trap: 糖 táng vs 汤 tāng.
+nt: Taishanese has the same pair: 糖 hɔŋ22 "sugar" vs 湯 hɔŋ33 "soup" (both in Stephen Li's dictionary).
+
+@ Soup or Sugar | Oh, soup!
+g: oh / soup
+y: 哦/o2/0 ; 湯/tong1/1
+m: 哦/ó/0 ; 汤/tāng/1
+t: 哦/ɔ22/0? ; 湯/hɔŋ33/1
+s: ¡Ah, sopa!/0,1
+f: Ah, de la soupe !/0,1
+d: Ah, Suppe!/0,1
+n: 湯 tong1, high level tone. Compare 糖 tong4, low falling. Say them back to back with the video.
+nt: 湯 hɔŋ33 is in Stephen Li's dictionary (湯水 hɔŋ33 sui55 "soup").
+
+@ Soup or Sugar | Borscht, Chinese soup or cream soup
+g: borscht / Chinese soup / cream soup
+y: 紅湯/hung4 tong1/0 ; 中湯/zung1 tong1/1 ; 白湯/baak6 tong1/2
+m: 罗宋汤/luó sòng tāng/0 ; 中式汤/zhōng shì tāng/1 ; 奶油汤/nǎi yóu tāng/2
+t: 羅宋湯/lɔ22 ɬəŋ33 hɔŋ33/0 ; 中湯/dzəŋ33 hɔŋ33/1? ; 白湯/bak32 hɔŋ33/2?
+s: Borsch, sopa china o crema/0,1,2
+f: Bortsch, soupe chinoise ou velouté/0,1,2
+d: Borschtsch, chinesische Suppe oder Cremesuppe/0,1,2
+n: The three soups on a cha chaan teng set meal: 紅湯 "red soup" (Hong Kong borscht, 羅宋湯), 中湯 "Chinese soup" (the soup of the day) and 白湯 "white soup" (cream soup).
+nt: 羅宋湯 lɔ22 ɬəŋ33 hɔŋ33 "borscht" is in Stephen Li's dictionary; 中湯 and 白湯 are put together here.
+
+@ Soup or Sugar | Sugar! Not soup!
+g: sugar / not / soup
+y: 糖/tong4/0 ; 呀/aa3/- ; 唔係/m4 hai6/1 ; 湯/tong1/2
+m: 糖/táng/0 ; 啊/a/- ; 不是/bú shì/1 ; 汤/tāng/2
+t: 糖/hɔŋ22/0 ; 啊/a33/- ; 唔係/m22 hai32/1 ; 湯/hɔŋ33/2
+s: ¡Azúcar! ¡No sopa!/0,1,2
+f: Du sucre ! Pas de la soupe !/0,1,2
+d: Zucker! Nicht Suppe!/0,1,2
+n: Low falling tong4 for sugar, high tong1 for soup.
+nt: 糖 hɔŋ22, 唔 m22 and 係 hai32 are in Stephen Li's dictionary.
+
+@ Soup or Sugar | So, is there any sugar?
+g: so / have or not / sugar
+y: 咁/gam2/0 ; 有冇/jau5 mou5/1 ; 糖/tong4/2 ; 呀/aa3/-
+m: 那/nà/0 ; 有没有/yǒu méi yǒu/1 ; 糖/táng/2 ; 啊/a/-
+t: 該/kɔi21/0? ; 有冇/yiu33 mɔu55/1 ; 糖/hɔŋ22/2 ; 啊/a33/-
+s: Entonces, ¿hay azúcar?/0,1,2
+f: Alors, il y a du sucre ?/0,1,2
+d: Also, gibt es Zucker?/0,1,2
+n: 咁 gam2 at the start of a sentence means "so / then", picking up where things left off.
+nt: 該 kɔi21 is Stephen Li's word for 咁 "so, such"; using it as "so then…" is a guess.
