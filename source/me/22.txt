@@ -1,0 +1,63 @@
+= 672 Thanks (for the help)!
+pt: Obrigado!/0
+fa: مرسی!{mersi!}/0
+fw: مرسی! || mersi!
+la: يسلمو!{yislamu!}/0
+eg: متشكر! || metshakker!
+ms: شكراً! || shukran!
+he: תודה!{toda!}/0
+tr: Sağ ol!/0
+= 673 Thank you (for the gift)!
+pt: Muito obrigado!/0
+fa: خیلی ممنون!{kheyli mamnun!}/0
+fw: خیلی ممنون! || kheyli mamnun!
+la: شكراً كتير!{shukran ktīr!}/0
+eg: شكراً جزيلاً! || shukran gazīlan!
+ms: شكراً جزيلاً! || shukran jazīlan!
+he: תודה רבה!{toda raba!}/0
+tr: Çok teşekkürler!/0
+= 674 No problem.
+pt: Sem problema./0,1
+fa: مشکلی نیست.{moshkeli nist.}/0,1
+fw: مشکلی نیست. || moshkeli nist.
+la: ما في مشكلة.{mā fī mushkle.}/0,1
+eg: مفيش مشكلة. || mafīsh mushkila.
+ms: لا مشكلة. || lā mushkila.
+he: אין בעיה.{ein ba'aya.}/0,1
+tr: Sorun değil./0,1
+= 675 You're welcome.
+pt: De nada./0,1
+fa: خواهش می‌کنم.{khāhesh mikonam.}/0,1
+fw: خواهش می‌کنم. || khāhesh mikonam.
+la: عفواً.{'afwan.}/0,1
+eg: العفو. || el-'afw.
+ms: عفواً. || 'afwan.
+he: בבקשה.{bevakasha.}/0,1
+tr: Rica ederim./0,1
+= 676 No need!
+pt: Não precisa!/0
+fa: لازم نیست!{lāzem nist!}/0
+fw: لازم نیست! || lāzem nist!
+la: ما في داعي!{mā fī dā'i!}/0
+eg: مفيش داعي! || mafīsh dā'i!
+ms: لا داعي! || lā dā'ī!
+he: אין צורך!{ein tsorech!}/0
+tr: Gerek yok!/0
+= 677 Don't mention it, it's nothing.
+pt: Imagina, não foi nada./0
+fa: قابلی نداشت.{ghābeli nadāsht.}/0
+fw: قابلی نداشت. || ghābeli nadāsht.
+la: ولو، ما عملت شي.{walaw, mā 'emelt shi.}/0
+eg: ولا يهمك. || walā yhemmak.
+ms: لا شكر على واجب. || lā shukra 'alā wājib.
+he: אין על מה.{ein al ma.}/0
+tr: Lafı bile olmaz./0
+= 678 Oh, stop it! (between friends)
+pt: Para com isso!/0,1
+fa: این حرفا چیه!{in harfā chie!}/0,1
+fw: این حرفا چیه! || in harfā chie!
+la: شو هالحكي!{shu hal-ḥaki!}/0,1
+eg: إيه الكلام ده! || ēh el-kalām da!
+ms: ما هذا الكلام! || mā hādhā al-kalām!
+he: נו באמת, די!{nu be'emet, dai!}/0,1
+tr: Ne demek, aramızda!/0,1

@@ -1,0 +1,76 @@
+@ You're Welcome | Thanks (for the help)!
+g: thanks
+y: 唔該/m4 goi1/0
+m: 谢谢/xiè xie/0
+t: 唔該/m22 gɔi33/0
+s: ¡Gracias!/0
+f: Merci !/0
+d: Danke!/0
+n: From a reel on answering thanks. Cantonese has two "thank yous": 唔該 m4 goi1 for a service or favor (holding a door, passing the soy sauce), 多謝 do1 ze6 for a gift or a kindness. Mandarin uses 谢谢 for both.
+nt: 唔該 m22 gɔi33 "thank you for your help" is in Stephen Li's dictionary.
+
+@ You're Welcome | Thank you (for the gift)!
+g: thank you
+y: 多謝/do1 ze6/0
+m: 谢谢/xiè xie/0
+t: 多謝/ɔ33 dia32/0
+s: ¡Muchas gracias!/0
+f: Merci beaucoup !/0
+d: Vielen Dank!/0
+n: 多謝 do1 ze6 is for gifts, compliments and kindness. The four answers in this topic work for both 唔該 and 多謝.
+nt: 多謝 ɔ33 dia32 is in Stephen Li's dictionary, with the same gift/thanks meaning.
+
+@ You're Welcome | No problem.
+g: no / problem
+y: 冇/mou5/0 ; 問題/man6 tai4/1
+m: 没/méi/0 ; 问题/wèn tí/1
+t: 冇/mɔu33/0 ; 問題/mun32 hai22/1
+s: No hay problema./0,1
+f: Pas de problème./0,1
+d: Kein Problem./0,1
+n: The answer most learners use. Fine, but the video gives three more natural ones (next cards).
+nt: 問題 mun32 hai22 is in Stephen Li's dictionary.
+
+@ You're Welcome | You're welcome.
+g: no need / be polite
+y: 唔使/m4 sai2/0 ; 客氣/haak3 hei3/1
+m: 不用/bú yòng/0 ; 客气/kè qi/1
+t: 唔使/m22 sɔi55/0 ; 客氣/hak33 hi33/1
+s: De nada./0,1
+f: De rien./0,1
+d: Gern geschehen./0,1
+n: 唔使客氣 m4 sai2 haak3 hei3, literally "no need to be polite". Mandarin says the same thing: 不用客气.
+nt: 唔使客氣 m22 sɔi55 hak33 hi33 "You are welcome!" is in Stephen Li's dictionary.
+
+@ You're Welcome | No need!
+g: no need
+y: 唔使/m4 sai2/0
+m: 不用/bú yòng/0
+t: 唔使/m22 sɔi55/0
+s: ¡No hace falta!/0
+f: Pas besoin !/0
+d: Nicht nötig!/0
+n: The short form of 唔使客氣: "no need (to say that)". Casual and very common.
+nt: 唔使 m22 sɔi55 "need not" is in Stephen Li's dictionary.
+
+@ You're Welcome | Don't mention it, it's nothing.
+g: small thing
+y: 小事/siu2 si6/0 ; 啦/laa1/-
+m: 小事/xiǎo shì/0 ; 啦/la/-
+t: 小事/ɬiau55 ɬu32/0? ; 啦/la55/-
+s: No es nada./0
+f: C'est rien./0
+d: Keine Ursache./0
+n: 小事啦 siu2 si6 laa1, "it's a little thing". Same in Mandarin: 小事啦 / 小事一桩.
+nt: 小事 is put together here (小 ɬiau55, 事 ɬu32); check with family.
+
+@ You're Welcome | Oh, stop it! (between friends)
+g: say / these
+y: 講/gong2/0 ; 呢啲/ni1 di1/1
+m: 说/shuō/0 ; 这些/zhè xiē/1 ; 干嘛/gàn má/-
+t: 講/gɔŋ55/0 ; 該尼/kɔi21 nai55/1?
+s: ¡Anda ya, no digas eso!/0,1
+f: Arrête, entre nous !/0,1
+d: Ach, hör auf!/0,1
+n: Bonus for friends: 講呢啲 gong2 ni1 di1, "(why are you) saying these things?", meaning "we're friends, you don't need to thank me". Mandarin: 说这些干嘛.
+nt: 講 gɔŋ55 and 該尼 kɔi21 nai55 "these" are in Stephen Li's dictionary; whether Taishanese friends say it this way is a guess.
