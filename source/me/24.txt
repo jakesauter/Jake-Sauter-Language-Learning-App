@@ -1,0 +1,63 @@
+= 687 I need to poop so bad!
+pt: Preciso muito fazer cocô!/0,1,2
+fa: خیلی دستشویی دارم!{kheyli dastshuyi dāram!}/0,1,2
+fw: خیلی دستشویی دارم! || kheyli dastshuyi dāram!
+la: كتير بدي روح عالحمام!{ktīr baddi rūḥ 'al-ḥammām!}/0,1,2
+eg: عايز أدخل الحمام أوي! || 'āyez adkhol el-ḥammām awi!
+ms: أحتاج إلى الحمام بشدة! || aḥtāju ilā al-ḥammāmi bi-shidda!
+he: אני ממש צריך לשירותים!{ani mamash tsarich la-sherutim!}/0,1,2
+tr: Çok fena tuvaletim geldi!/0,1,2
+= 688 I need to pee.
+pt: Preciso fazer xixi./0,1
+fa: جیش دارم.{jish dāram.}/0,1
+fw: جیش دارم. || jish dāram.
+la: بدي فوت عالحمام.{baddi fūt 'al-ḥammām.}/0,1
+eg: عايز أعمل بيبي. || 'āyez a'mel pipi.
+ms: أحتاج إلى التبول. || aḥtāju ilā at-tabawwul.
+he: אני צריך פיפי.{ani tsarich pipi.}/0,1
+tr: Çişim geldi./0,1
+= 689 I'll go to the bathroom first.
+pt: Vou ao banheiro primeiro./0,1,2,3
+fa: اول می‌رم دستشویی.{avval miram dastshuyi.}/0,1,2,3
+fw: اول می‌رم دستشویی. || avval miram dastshuyi.
+la: رح روح عالحمام أول.{raḥ rūḥ 'al-ḥammām awwal.}/0,1,2,3
+eg: هروح الحمام الأول. || haruḥ el-ḥammām el-awwel.
+ms: سأذهب إلى الحمام أولاً. || sa-adhhabu ilā al-ḥammāmi awwalan.
+he: אני הולך קודם לשירותים.{ani holech kodem la-sherutim.}/0,1,2,3
+tr: Önce tuvalete gidiyorum./0,1,2,3
+= 690 Where's the bathroom?
+pt: Onde fica o banheiro?/0,1,2
+fa: دستشویی کجاست؟{dastshuyi kojāst?}/0,1,2
+fw: دستشویی کجاست؟ || dastshuyi kojāst?
+la: وين الحمام؟{wēn el-ḥammām?}/0,1,2
+eg: الحمام فين؟ || el-ḥammām fēn?
+ms: أين الحمام؟ || ayna al-ḥammām?
+he: איפה השירותים?{eifo ha-sherutim?}/0,1,2
+tr: Tuvalet nerede?/0,1,2
+= 691 Can I use your bathroom?
+pt: Posso usar o banheiro?/0,1,2,3
+fa: می‌تونم از دستشویی‌تون استفاده کنم؟{mitunam az dastshuyitun estefāde konam?}/0,1,2,3
+fw: می‌تونم از دستشویی‌تون استفاده کنم؟ || mitunam az dastshuyitun estefāde konam?
+la: فيني استعمل الحمام؟{fīni ista'mel el-ḥammām?}/0,1,2,3
+eg: ممكن أستخدم الحمام؟ || momken astakhdem el-ḥammām?
+ms: هل يمكنني استخدام الحمام؟ || hal yumkinunī istikhdāmu al-ḥammām?
+he: אפשר להשתמש בשירותים?{efshar lehishtamesh ba-sherutim?}/0,1,2,3
+tr: Tuvaletinizi kullanabilir miyim?/0,1,2,3
+= 692 There's no toilet paper!
+pt: Não tem papel higiênico!/0,1
+fa: دستمال توالت نیست!{dastmāl tuālet nist!}/0,1
+fw: دستمال توالت نیست! || dastmāl tuālet nist!
+la: ما في محارم بالحمام!{mā fī maḥārem bil-ḥammām!}/0,1
+eg: مفيش ورق تواليت! || mafīsh wara' tualett!
+ms: لا يوجد ورق حمام! || lā yūjadu waraqu ḥammām!
+he: אין נייר טואלט!{ein neyar to'alet!}/0,1
+tr: Tuvalet kâğıdı yok!/0,1
+= 693 Remember to wash your hands!
+pt: Lembre de lavar as mãos!/0,1
+fa: یادت نره دستاتو بشوری!{yādet nare dastāto beshuri!}/0,1
+fw: یادت نره دستاتو بشوری! || yādet nare dastāto beshuri!
+la: تذكر تغسل إيديك!{tzakkar tighsel īdēk!}/0,1
+eg: افتكر تغسل إيدك! || iftekir teghsel īdak!
+ms: تذكر أن تغسل يديك! || tadhakkar an taghsila yadayk!
+he: לא לשכוח לשטוף ידיים!{lo lishkoach lishtof yadayim!}/0,1
+tr: Ellerini yıkamayı unutma!/0,1

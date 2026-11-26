@@ -1,0 +1,76 @@
+@ Bathroom Break | I need to poop so bad!
+g: I / really / need to poop
+y: 我/ngo5/0 ; 好/hou2/1 ; 急屎/gap1 si2/2 ; 呀/aa3/-
+m: 我/wǒ/0 ; 好/hǎo/1 ; 想上大号/xiǎng shàng dà hào/2 ; 啊/a/-
+t: 我/ŋɔi33/0 ; 好/hɔu55/1 ; 緊屎/gin55 si55/2 ; 啊/a33/-
+s: ¡Tengo muchísimas ganas de hacer caca!/0,1,2
+f: J'ai trop envie de faire caca !/0,1,2
+d: Ich muss ganz dringend groß!/0,1,2
+n: From a reel: 急屎 gap1 si2 is literally "urgent poop". 急 gap1 "urgent" + 屎 si2 "poop". Everyday and a bit jokey, fine among family. Mandarin says 上大号 "go number two".
+nt: Stephen Li's dictionary has this exact word: Taishanese 緊屎 gin55 si55 (Cantonese 急屎), "nature calls".
+
+@ Bathroom Break | I need to pee.
+g: I / need to pee
+y: 我/ngo5/0 ; 急尿/gap1 niu6/1
+m: 我/wǒ/0 ; 想上小号/xiǎng shàng xiǎo hào/1
+t: 我/ŋɔi33/0 ; 緊尿/gin55 niau32/1
+s: Tengo ganas de hacer pis./0,1
+f: J'ai envie de faire pipi./0,1
+d: Ich muss mal klein./0,1
+n: Same pattern: 急 + 尿 niu6 "pee". 急尿 is "need to pee".
+nt: Taishanese 緊尿 gin55 niau32 is in Stephen Li's dictionary.
+
+@ Bathroom Break | I'll go to the bathroom first.
+g: I / go / bathroom / first
+y: 我/ngo5/0 ; 去/heoi3/1 ; 廁所/ci3 so2/2 ; 先/sin1/3
+m: 我/wǒ/0 ; 先/xiān/3 ; 去/qù/1 ; 厕所/cè suǒ/2
+t: 我/ŋɔi33/0 ; 去/hui33/1 ; 廁所/ɬu33 sɔ55/2 ; 先/ɬein33/3
+s: Primero voy al baño./0,1,2,3
+f: Je vais d'abord aux toilettes./0,1,2,3
+d: Ich geh erst mal aufs Klo./0,1,2,3
+n: From the reel. 先 sin1 "first" goes at the END in Cantonese; Mandarin puts 先 before the verb.
+nt: 廁所 ɬu33 sɔ55 "restroom" is in Stephen Li's dictionary.
+
+@ Bathroom Break | Where's the bathroom?
+g: bathroom / is at / where
+y: 廁所/ci3 so2/0 ; 喺/hai2/1 ; 邊度/bin1 dou6/2 ; 呀/aa3/-
+m: 厕所/cè suǒ/0 ; 在/zài/1 ; 哪里/nǎ lǐ/2 ; 啊/a/-
+t: 廁所/ɬu33 sɔ55/0 ; 到/ɔu33/1 ; 哪/nai215/2 ; 啊/a33/-
+s: ¿Dónde está el baño?/0,1,2
+f: Où sont les toilettes ?/0,1,2
+d: Wo ist die Toilette?/0,1,2
+n: 喺 hai2 "is at" + 邊度 bin1 dou6 "where". In malls and restaurants the sign says 洗手間 sai2 sau2 gaan1 "washroom", the politer word.
+nt: Taishanese uses 到 ɔu33 for "be at" (Cantonese 喺), per Stephen Li's dictionary, and 哪 nai215 for "where".
+
+@ Bathroom Break | Can I use your bathroom?
+g: can I / borrow / bathroom / use a bit
+y: 可唔可以/ho2 m4 ho2 ji5/0 ; 借/ze3/1 ; 個/go3/- ; 廁所/ci3 so2/2 ; 用吓/jung6 haa5/3
+m: 可不可以/kě bù kě yǐ/0 ; 借/jiè/1 ; 用一下/yòng yí xià/3 ; 厕所/cè suǒ/2
+t: 可唔可以/hɔ55 m22 hɔ55 yi21/0 ; 借/dia33/1 ; 個/gɔi33/- ; 廁所/ɬu33 sɔ55/2 ; 用下/yəŋ32 ha32/3?
+s: ¿Puedo usar el baño?/0,1,2,3
+f: Je peux utiliser les toilettes ?/0,1,2,3
+d: Darf ich mal die Toilette benutzen?/0,1,2,3
+n: Literally "can I borrow the bathroom to use a bit?" 借 ze3 "borrow" is how you ask at a friend's place or a shop.
+nt: 借 dia33 "borrow" is in Stephen Li's dictionary.
+
+@ Bathroom Break | There's no toilet paper!
+g: there's no / toilet paper
+y: 冇/mou5/0 ; 廁紙/ci3 zi2/1 ; 呀/aa3/-
+m: 没有/méi yǒu/0 ; 卫生纸/wèi shēng zhǐ/1 ; 啊/a/-
+t: 冇/mɔu33/0 ; 草紙/tɔu55 dzi55/1 ; 啊/a33/-
+s: ¡No hay papel higiénico!/0,1
+f: Il n'y a plus de papier toilette !/0,1
+d: Es gibt kein Klopapier!/0,1
+n: 冇 mou5 "there isn't" + 廁紙 ci3 zi2 "toilet paper".
+nt: Taishanese says 草紙 tɔu55 dzi55 "toilet paper" (Stephen Li's dictionary).
+
+@ Bathroom Break | Remember to wash your hands!
+g: remember / wash hands
+y: 記得/gei3 dak1/0 ; 洗手/sai2 sau2/1 ; 呀/aa3/-
+m: 记得/jì de/0 ; 洗手/xǐ shǒu/1 ; 啊/a/-
+t: 記得/gi33 ak33/0 ; 洗手/ɬai55 siu55/1 ; 啊/a33/-
+s: ¡Acuérdate de lavarte las manos!/0,1
+f: N'oublie pas de te laver les mains !/0,1
+d: Denk dran, Hände waschen!/0,1
+n: What every parent says. 洗手 sai2 sau2 "wash hands"; 洗手間 "washroom" is the same word + 間 "room".
+nt: 記得 gi33 ak33 and 洗手 ɬai55 siu55 are both in Stephen Li's dictionary.

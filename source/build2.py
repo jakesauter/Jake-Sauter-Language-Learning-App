@@ -97,9 +97,10 @@ data += parse("batches/yuenlong.txt")   # "Day in Yuen Long" (word-by-word vlog 
 data += parse("batches/dadscall.txt")   # "Taking Dad's Call" (cartoon reel)
 data += parse("batches/soupsugar.txt")   # "Soup or Sugar" (tones reel)
 data += parse("batches/welcome.txt")   # "You're Welcome" (answering thanks reel)
-data += parse("batches/tenses.txt")   # "Tense Formulas" (grammar reel), last topic
+data += parse("batches/tenses.txt")   # "Tense Formulas" (grammar reel)
+data += parse("batches/bathroom.txt")   # "Bathroom Break" (急屎 reel), last topic
 
-order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop", "Wet Market", "Saying Yes", "Character Pictures", "Market Run", "Day in Yuen Long", "Taking Dad's Call", "Soup or Sugar", "You're Welcome", "Tense Formulas"]
+order = ["Start Here", "Talking About the Day", "Quick Patterns", "Greetings", "Getting to know you", "Family", "Visiting", "Meals", "Small Talk", "Plans", "Around the House", "Cooking Together", "Family Events", "Road Trip", "Travel", "Weather", "Work", "School", "Hobbies", "Swimming", "Running & Biking", "Shopping", "Pets", "Health", "Helping Out", "Learning", "Holidays", "Feelings", "Joking Around", "Goodbyes", "Word Fun", "Food Words", "Mom Talk", "Eating Out", "Colors", "Herbal Shop", "Wet Market", "Saying Yes", "Character Pictures", "Market Run", "Day in Yuen Long", "Taking Dad's Call", "Soup or Sugar", "You're Welcome", "Tense Formulas", "Bathroom Break"]
 data.sort(key = lambda p: order.index(p["cat"]))
 
 for p in data:
