@@ -1,0 +1,72 @@
+= 679 I'm eating.
+pt: Estou comendo./0,1,2
+fa: دارم غذا می‌خورم.{dāram ghazā mikhoram.}/0,1,2
+fw: دارم غذا می‌خورم. || dāram ghazā mikhoram.
+la: عم آكل.{'am ākol.}/0,1,2
+eg: باكل. || bākol.
+ms: أنا آكل. || anā ākul.
+he: אני אוכל.{ani ochel.}/0,1,2
+tr: Yemek yiyorum./0,1,2
+= 680 He's running.
+pt: Ele está correndo./0,1,2
+fa: داره می‌دوه.{dāre mideve.}/0,1,2
+fw: داره می‌دوه. || dāre mideve.
+la: عم يركض.{'am yirkod.}/0,1,2
+eg: بيجري. || biyigri.
+ms: إنه يركض. || innahu yarkuḍ.
+he: הוא רץ.{hu rats.}/0,1,2
+tr: Koşuyor./0,1,2
+= 681 They're sleeping.
+pt: Eles estão dormindo./0,1,2
+fa: دارن می‌خوابن.{dāran mikhāban.}/0,1,2
+fw: دارن می‌خوابن. || dāran mikhāban.
+la: عم يناموا.{'am yanāmu.}/0,1,2
+eg: نايمين. || naymīn.
+ms: إنهم نائمون. || innahum nā'imūn.
+he: הם ישנים.{hem yeshenim.}/0,1,2
+tr: Uyuyorlar./0,1,2
+= 682 She did it.
+pt: Ela fez./0,1,2
+fa: اون انجامش داد.{un anjāmesh dād.}/0,1,2
+fw: اون انجامش داد. || un anjāmesh dād.
+la: هي عملتها.{hiyye 'emlita.}/0,1,2
+eg: هي عملتها. || hiyya 'amalit-ha.
+ms: هي فعلته. || hiya fa'alathu.
+he: היא עשתה את זה.{hi asta et ze.}/0,1,2
+tr: O yaptı./0,1,2
+= 683 I'm going to have lunch.
+pt: Vou almoçar./0,1,2,3
+fa: می‌خوام ناهار بخورم.{mikhām nāhār bokhoram.}/0,1,2,3
+fw: می‌خوام ناهار بخورم. || mikhām nāhār bokhoram.
+la: رح اتغدى.{raḥ itghadda.}/0,1,2,3
+eg: هتغدى. || hatghadda.
+ms: سأتناول الغداء. || sa-atanāwal al-ghadā'.
+he: אני הולך לאכול צהריים.{ani holech le'echol tsohorayim.}/0,1,2,3
+tr: Öğle yemeği yiyeceğim./0,1,2,3
+= 684 She's about to arrive.
+pt: Ela está quase chegando./0,1,2
+fa: الان می‌رسه.{alān mirese.}/0,1,2
+fw: الان می‌رسه. || alān mirese.
+la: هلق بتوصل.{halla' btowṣal.}/0,1,2
+eg: هي على وصول. || hiyya 'ala wuṣūl.
+ms: إنها على وشك الوصول. || innahā 'alā washk al-wuṣūl.
+he: היא תכף מגיעה.{hi tekef magi'a.}/0,1,2
+tr: Birazdan gelir./0,1,2
+= 685 I've had lunch.
+pt: Já almocei./0,1,2,3
+fa: ناهارمو خوردم.{nāhāramo khordam.}/0,1,2,3
+fw: ناهارمو خوردم. || nāhāramo khordam.
+la: تغديت.{tghaddēt.}/0,1,2,3
+eg: اتغديت. || itghaddēt.
+ms: تناولت الغداء. || tanāwaltu al-ghadā'.
+he: כבר אכלתי צהריים.{kvar achalti tsohorayim.}/0,1,2,3
+tr: Öğle yemeğimi yedim./0,1,2,3
+= 686 I've watched the movie.
+pt: Já assisti ao filme./0,1,2,3,4
+fa: فیلمو دیدم.{filmo didam.}/0,1,2,3,4
+fw: فیلمو دیدم. || filmo didam.
+la: شفت الفيلم.{shift el-film.}/0,1,2,3,4
+eg: شفت الفيلم. || shuft el-film.
+ms: شاهدت الفيلم. || shāhadtu al-film.
+he: ראיתי את הסרט.{ra'iti et haseret.}/0,1,2,3,4
+tr: Filmi izledim./0,1,2,3,4

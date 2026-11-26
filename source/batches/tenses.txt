@@ -1,0 +1,87 @@
+@ Tense Formulas | I'm eating.
+g: I / eat / -ing
+y: 我/ngo5/0 ; 食/sik6/1 ; 緊/gan2/2
+m: 我/wǒ/0 ; 在/zài/2 ; 吃/chī/1
+t: 我/ŋɔi33/0 ; 吃/hiak33/1 ; 緊/gin55/2?
+s: Estoy comiendo./0,1,2
+f: Je suis en train de manger./0,1,2
+d: Ich esse gerade./0,1,2
+n: From a reel on four Cantonese "tense formulas". Formula 1, the -ing form: verb + 緊 gan2. 食緊 "eating (right now)". Mandarin puts 在 before the verb instead: 我在吃.
+nt: 吃 hiak33 "eat" is in Stephen Li's dictionary. Other cards write Taishanese verb + 緊 (學緊, 睇緊), still unconfirmed.
+
+@ Tense Formulas | He's running.
+g: he / run / -ing
+y: 佢/keoi5/0 ; 跑/paau2/1 ; 緊/gan2/2
+m: 他/tā/0 ; 在/zài/2 ; 跑步/pǎo bù/1
+t: 佢/kui33/0 ; 走/dəu55/1 ; 緊/gin55/2?
+s: Está corriendo./0,1,2
+f: Il est en train de courir./0,1,2
+d: Er läuft gerade./0,1,2
+n: Same formula: 跑 paau2 + 緊. 佢 keoi5 is "he", "she" or "it": Cantonese doesn't mark gender in speech.
+nt: Stephen Li's dictionary gives 走 dəu55 for "run" (Cantonese 跑); 跑步 is pɔu55 bu325.
+
+@ Tense Formulas | They're sleeping.
+g: they / sleep / -ing
+y: 佢哋/keoi5 dei6/0 ; 瞓/fan3/1 ; 緊/gan2/2
+m: 他们/tā men/0 ; 在/zài/2 ; 睡觉/shuì jiào/1
+t: 㑢/kiak21/0 ; 瞓/fun33/1 ; 緊/gin55/2?
+s: Están durmiendo./0,1,2
+f: Ils sont en train de dormir./0,1,2
+d: Sie schlafen gerade./0,1,2
+n: 佢哋 keoi5 dei6 "they": 哋 dei6 makes pronouns plural (我哋 "we", 你哋 "you all").
+nt: Taishanese has its own word for "they": 㑢 kiak21. 瞓 fun33 "sleep" is in Stephen Li's dictionary.
+
+@ Tense Formulas | She did it.
+g: she / do / -ed
+y: 佢/keoi5/0 ; 做/zou6/1 ; 咗/zo2/2
+m: 她/tā/0 ; 做/zuò/1 ; 了/le/2
+t: 佢/kui33/0 ; 做/du33/1 ; 啊/a33/2
+s: Lo hizo./0,1,2
+f: Elle l'a fait./0,1,2
+d: Sie hat es gemacht./0,1,2
+n: Formula 2, the past: verb + 咗 zo2. 做咗 "did". Mandarin uses 了 le the same way.
+nt: Taishanese marks the past with 啊 a33/ə33 where Cantonese uses 咗: Stephen Li's dictionary has 你吃啊飯唔曾？ for 你食咗飯未？
+
+@ Tense Formulas | I'm going to have lunch.
+g: I / about to / eat / lunch
+y: 我/ngo5/0 ; 就嚟/zau6 lai4/1 ; 食/sik6/2 ; 晏/aan3/3
+m: 我/wǒ/0 ; 快要/kuài yào/1 ; 吃/chī/2 ; 午饭/wǔ fàn/3 ; 了/le/-
+t: 我/ŋɔi33/0 ; 就來/diu32 lɔi22/1 ; 吃/hiak33/2 ; 晏晝/an33 tsiu21/3
+s: Voy a almorzar./0,1,2,3
+f: Je vais déjeuner./0,1,2,3
+d: Ich gehe gleich zu Mittag essen./0,1,2,3
+n: Formula 3, the near future: 就嚟 zau6 lai4 + verb, "about to". 食晏 sik6 aan3 is everyday Hong Kong for "have lunch" (晏 = midday).
+nt: 就來 diu32 lɔi22 "to be about to" and 晏晝 an33 tsiu21 "lunch" are in Stephen Li's dictionary.
+
+@ Tense Formulas | She's about to arrive.
+g: she / about to / arrive
+y: 佢/keoi5/0 ; 就嚟/zau6 lai4/1 ; 到/dou3/2
+m: 她/tā/0 ; 快/kuài/1 ; 到了/dào le/2
+t: 佢/kui33/0 ; 就來/diu32 lɔi22/1 ; 到/au33/2
+s: Está a punto de llegar./0,1,2
+f: Elle va bientôt arriver./0,1,2
+d: Sie kommt gleich an./0,1,2
+n: Handy on the phone: 佢就嚟到 "she's almost here". Mandarin: 她快到了.
+nt: 就來 diu32 lɔi22 and 到 au33 "reach" are in Stephen Li's dictionary.
+
+@ Tense Formulas | I've had lunch.
+g: I / eat / finished / lunch
+y: 我/ngo5/0 ; 食/sik6/1 ; 完/jyun4/2 ; 晏/aan3/3
+m: 我/wǒ/0 ; 吃/chī/1 ; 完/wán/2 ; 午饭/wǔ fàn/3 ; 了/le/-
+t: 我/ŋɔi33/0 ; 吃/hiak33/1 ; 完/yɔn22/2 ; 晏晝/an33 tsiu21/3
+s: Ya almorcé./0,1,2,3
+f: J'ai fini de déjeuner./0,1,2,3
+d: Ich habe schon zu Mittag gegessen./0,1,2,3
+n: Formula 4, "have done": verb + 完 jyun4 ("finished"), or 完咗 jyun4 zo2. 食完晏 "done with lunch".
+nt: 完 yɔn22 is in Stephen Li's dictionary (完全 yɔn22 tun22); other cards use 做完 du33 yɔn22 and 吃完 hiak33 yɔn22.
+
+@ Tense Formulas | I've watched the movie.
+g: I / watch / finished / the / movie
+y: 我/ngo5/0 ; 睇/tai2/1 ; 完/jyun4/2 ; 套/tou3/3 ; 電影/din6 jing2/4
+m: 我/wǒ/0 ; 看/kàn/1 ; 完/wán/2 ; 那部/nà bù/3 ; 电影/diàn yǐng/4 ; 了/le/-
+t: 我/ŋɔi33/0 ; 睇/hai55/1 ; 完/yɔn22/2 ; 套/hau33/3? ; 映畫/yein55 va325/4
+s: Ya vi la película./0,1,2,3,4
+f: J'ai fini de regarder le film./0,1,2,3,4
+d: Ich habe den Film zu Ende geschaut./0,1,2,3,4
+n: 套 tou3 is the measure word for movies, and here it works like "the": 睇完套電影 "finished watching the movie".
+nt: 睇 hai55 and 映畫 yein55 va325 "movie" (older Taishanese word; 電影 ein32 yein55 also listed) are in Stephen Li's dictionary. 套 is a guess.
