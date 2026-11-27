@@ -1,0 +1,54 @@
+= 694 Seriously?!
+pt: Sério?!/0
+fa: جدی؟!{jeddi?!}/0
+fw: جدی؟! || jeddi?!
+la: عن جد؟!{'an jadd?!}/0
+eg: بجد؟! || bi-gad?!
+ms: حقاً؟! || ḥaqqan?!
+he: ברצינות?!{be-retsinut?!}/0
+tr: Ciddi misin?!/0
+= 695 Are you kidding me? That's so expensive!
+pt: Tá de brincadeira? Que caro!/0,1,2
+fa: شوخی می‌کنی؟ خیلی گرونه!{shukhi mikoni? kheyli gerune!}/0,1,2
+fw: شوخی می‌کنی؟ خیلی گرونه! || shukhi mikoni? kheyli gerune!
+la: عم تمزح؟ كتير غالي!{'am tmazeḥ? ktīr ghāli!}/0,1,2
+eg: إنت بتهزر؟ ده غالي أوي! || enta betehazzar? da ghāli awi!
+ms: هل تمزح؟ إنه غالٍ جداً! || hal tamzaḥ? innahu ghālin jiddan!
+he: אתה צוחק עליי? זה ממש יקר!{ata tsoḥek alay? ze mamash yakar!}/0,1,2
+tr: Şaka mı yapıyorsun? Çok pahalı!/0,1,2
+= 696 Really?
+pt: Sério?/0
+fa: واقعاً؟{vāghe'an?}/0
+fw: واقعاً؟ || vāghe'an?
+la: عن جد؟{'an jadd?}/0
+eg: بجد؟ || bi-gad?
+ms: حقاً؟ || ḥaqqan?
+he: באמת?{be-emet?}/0
+tr: Gerçekten mi?/0
+= 697 You must be joking!
+pt: Você tá brincando!/0,1,2
+fa: حتماً شوخی می‌کنی!{hatman shukhi mikoni!}/0,1,2
+fw: حتماً شوخی می‌کنی! || hatman shukhi mikoni!
+la: أكيد عم تمزح!{akīd 'am tmazeḥ!}/0,1,2
+eg: أكيد بتهزر! || akīd betehazzar!
+ms: لا بد أنك تمزح! || lā budda annaka tamzaḥ!
+he: אתה בטח צוחק!{ata betaḥ tsoḥek!}/0,1,2
+tr: Şaka yapıyorsun herhalde!/0,1,2
+= 698 That's ridiculous!
+pt: Que absurdo!/0,1
+fa: خیلی مسخره‌ست!{kheyli maskharast!}/0,1
+fw: خیلی مسخره‌ست! || kheyli maskharast!
+la: هيدا سخيف كتير!{hayda sakhīf ktīr!}/0,1
+eg: ده سخيف أوي! || da sakhīf awi!
+ms: هذا سخيف! || hādhā sakhīf!
+he: זה מגוחך!{ze meguḥaḥ!}/0,1
+tr: Bu çok saçma!/0,1
+= 699 You scared me to death!
+pt: Você me matou de susto!/0,1
+fa: زهره‌ترکم کردی!{zahre-tarakam kardi!}/0,1
+fw: زهره‌ترکم کردی! || zahre-tarakam kardi!
+la: موتتني من الخوف!{mawwattni men el-khōf!}/0,1
+eg: خضتني! || khaḍḍetni!
+ms: أفزعتني كثيراً! || afza'tanī kathīran!
+he: הבהלת אותי עד מוות!{hivhalta oti ad mavet!}/0,1
+tr: Ödümü kopardın!/0,1

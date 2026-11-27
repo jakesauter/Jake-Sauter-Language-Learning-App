@@ -1,0 +1,65 @@
+@ No Way! | Seriously?!
+g: (what a) mess-up
+y: 搞錯/gaau2 co3/0 ; 呀/aa3/-
+m: 搞什么/gǎo shén me/0 ; 啊/a/-
+t: 搞錯/gɔu55 tɔ33/0 ; 啊/a33/-
+s: ¿En serio?/0
+f: Sérieux ?/0
+d: Im Ernst?/0
+n: From a reel: the short form of 有冇搞錯呀 "are you kidding me?". Say it with a stretched 呀, wide eyes and an open hand: the gesture is half the meaning.
+nt: 搞錯 gɔu55 tɔ33 is the same word as in Stephen Li's 有冇搞錯 entry.
+
+@ No Way! | Are you kidding me? That's so expensive!
+g: are you kidding me / really / expensive
+y: 有冇搞錯/jau5 mou5 gaau2 co3/0 ; 呀/aa3/- ; 真係/zan1 hai6/1 ; 貴/gwai3/2
+m: 有没有搞错/yǒu méi yǒu gǎo cuò/0 ; 啊/a/- ; 真/zhēn/1 ; 贵/guì/2
+t: 有冇搞錯/yiu33 mɔu33 gɔu55 tɔ33/0 ; 啊/a33/- ; 真系/dzin33 hai32/1 ; 好價/hɔu55 ga33/2
+s: ¿Me estás tomando el pelo? ¡Qué caro!/0,1,2
+f: Tu rigoles ? C'est vraiment cher !/0,1,2
+d: Soll das ein Witz sein? Das ist echt teuer!/0,1,2
+n: The reel's phrase in real life: 有冇搞錯 is the classic reaction to a price tag. 貴 gwai3 "expensive".
+nt: Taishanese says 好價 hɔu55 ga33 "pricey" where Cantonese says 貴 (Stephen Li's dictionary).
+
+@ No Way! | Really?
+g: really?
+y: 真係/zan1 hai6/0 ; 㗎/gaa3/-
+m: 真的/zhēn de/0 ; 吗/ma/-
+t: 真系/dzin33 hai32/0 ; 啊/a33/-
+s: ¿De verdad?/0
+f: C'est vrai ?/0
+d: Wirklich?/0
+n: 真係 zan1 hai6 "really" + rising 㗎 gaa3 turns it into a surprised question.
+nt: 真系 dzin33 hai32 "really" is in Stephen Li's dictionary; the ending particle is a guess.
+
+@ No Way! | You must be joking!
+g: you / are joking / (I guess)
+y: 你/nei5/0 ; 講笑/gong2 siu3/1 ; 啩/gwaa3/2
+m: 你/nǐ/0 ; 开玩笑/kāi wán xiào/1 ; 吧/ba/2
+t: 你/ni33/0 ; 講笑/gɔŋ55 ɬiau335/1 ; 咕哇/gu55 va33/2
+s: ¡Estás de broma!/0,1,2
+f: Tu plaisantes !/0,1,2
+d: Du machst wohl Witze!/0,1,2
+n: 講笑 gong2 siu3 "tell jokes". 啩 gwaa3 means "I suppose", here "surely you're joking".
+nt: 講笑 gɔŋ55 ɬiau335 and the guessing particle 咕哇 gu55 va33 (Cantonese 啩) are both in Stephen Li's dictionary.
+
+@ No Way! | That's ridiculous!
+g: so / ridiculous
+y: 好/hou2/0 ; 離譜/lei4 pou2/1 ; 呀/aa3/-
+m: 太/tài/0 ; 离谱/lí pǔ/1 ; 了/le/-
+t: 好/hɔu55/0 ; 離譜/li22 pu55/1 ; 啊/a33/-
+s: ¡Qué ridículo!/0,1
+f: C'est n'importe quoi !/0,1
+d: Das ist ja lächerlich!/0,1
+n: 離譜 lei4 pou2 is literally "off the score sheet": way out of line.
+nt: 離譜 li22 pu55 "outrageous" is in Stephen Li's dictionary.
+
+@ No Way! | You scared me to death!
+g: scared to death / me
+y: 嚇死/haak3 sei2/0 ; 我/ngo5/1 ; 喇/laa3/-
+m: 吓死/xià sǐ/0 ; 我/wǒ/1 ; 了/le/-
+t: 吓死/hak33 ɬi55/0 ; 我/ŋɔi33/1 ; 啊/a33/-
+s: ¡Me has dado un susto de muerte!/0,1
+f: Tu m'as fait une peur bleue !/0,1
+d: Du hast mich zu Tode erschreckt!/0,1
+n: 嚇死 haak3 sei2 "scared to death". Said when someone sneaks up on you.
+nt: 吓死 hak33 ɬi55 "to be stunned" is in Stephen Li's dictionary.
