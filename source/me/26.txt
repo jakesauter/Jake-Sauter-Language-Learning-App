@@ -1,0 +1,45 @@
+= 700 Our lives are destined to be full of ups and downs.
+pt: Nossa vida está destinada a ter altos e baixos./0,1,2,3
+fa: سرنوشت ما پر از فراز و نشیب است.{sarnevesht-e mā por az farāz o nashib ast.}/0,1,2,3
+fw: زندگی‌مون پر از بالا و پایینه. || zendegimun por az bālā o pāyine.
+la: حياتنا مكتوب إلها طلعات ونزلات.{ḥayātna maktūb ilha ṭal'āt w nazlāt.}/0,1,2,3
+eg: حياتنا مكتوب عليها طلوع ونزول. || ḥayātna maktūb 'aleha ṭulū' w nuzūl.
+ms: كُتب على حياتنا أن تكون مليئة بالتقلبات. || kutiba 'alā ḥayātinā an takūna malī'atan bit-taqallubāt.
+he: נגזר עלינו שהחיים יהיו מלאי עליות ומורדות.{nigzar aleinu she-ha-ḥayim yihyu mle'ei aliyot u-moradot.}/0,1,2,3
+tr: Hayatımız iniş çıkışlarla dolu olmaya yazılmış./0,1,2,3
+= 701 We came crying; we must walk on smiling.
+pt: Chegamos chorando, temos que seguir sorrindo./0,1,2,3,4
+fa: گریه‌کنان آمدیم، باید خندان بگذریم.{gerye-konān āmadim, bāyad khandān bogzarim.}/0,1,2,3,4
+fw: گریه‌کنان اومدیم، باید خندون رد شیم. || gerye-konān umadim, bāyad khandun rad shim.
+la: إجينا عم نبكي، لازم نكمّل عم نضحك.{ijīna 'am nebki, lāzem nkammel 'am neḍḥak.}/0,1,2,3,4
+eg: جينا بنعيط، لازم نكمل واحنا بنضحك. || gīna bin'ayyaṭ, lāzem nkammel w-eḥna binḍḥak.
+ms: جئنا باكين، ويجب أن نمضي مبتسمين. || ji'nā bākīn, wa-yajibu an namḍiya mubtasimīn.
+he: באנו בבכי, צריך להמשיך בחיוך.{banu bi-vekhi, tsarich lehamshich be-ḥiyuch.}/0,1,2,3,4
+tr: Ağlayarak geldik, gülümseyerek yürümeliyiz./0,1,2,3,4
+= 702 Oh friends, let's always remember this together.
+pt: Amigos, vamos sempre lembrar disso juntos./0,1,2,3
+fa: دوستان، بیایید با هم همیشه این را به یاد داشته باشیم.{dustān, biyāyid bā ham hamishe in rā be yād dāshte bāshim.}/0,1,2,3
+fw: رفقا، بیاین با هم همیشه یادمون بمونه. || rofaghā, biyāyn bā ham hamishe yādemun bemune.
+la: يا أصحاب، خلّينا نتذكر هالشي سوا دايماً.{yā aṣḥāb, khallīna nitzakkar hal-shi sawa dāyman.}/0,1,2,3
+eg: يا صحابي، يلا نفتكر ده مع بعض على طول. || yā ṣḥābi, yalla neftekr da ma'a ba'ḍ 'ala ṭūl.
+ms: يا أصدقاء، لنتذكر هذا معاً دائماً. || yā aṣdiqā', li-natadhakkar hādhā ma'an dā'iman.
+he: חברים, בואו נזכור את זה תמיד ביחד.{ḥaverim, bo'u nizkor et ze tamid be-yaḥad.}/0,1,2,3
+tr: Dostlar, bunu hep birlikte hiç unutmayalım./0,1,2,3
+= 703 Our brotherhood will last a lifetime.
+pt: Nossa irmandade vai durar a vida toda./0,1,2,3
+fa: برادری ما یک عمر می‌ماند.{barādari-ye mā yek omr mimānad.}/0,1,2,3
+fw: رفاقتمون یه عمر می‌مونه. || refāghatemun ye omr mimune.
+la: أخوّتنا رح تضل العمر كلّه.{akhuwwetna raḥ tḍall el-'omr kellu.}/0,1,2,3
+eg: أخوّتنا هتفضل العمر كله. || akhuwwetna hatefḍal el-'omr kollo.
+ms: أخوّتنا ستدوم مدى الحياة. || ukhuwwatunā sa-tadūmu madā al-ḥayāh.
+he: האחווה שלנו תימשך כל החיים.{ha-aḥava shelanu timashech kol ha-ḥayim.}/0,1,2,3
+tr: Kardeşliğimiz bir ömür sürecek./0,1,2,3
+= 704 I love you.
+pt: Eu te amo./0,1,2
+fa: دوستت دارم.{dustat dāram.}/0,1,2
+fw: دوستت دارم. || dustet dāram.
+la: بحبك.{baḥebbak.}/0,1,2
+eg: بحبك. || baḥebbak.
+ms: أحبك. || uḥibbuk.
+he: אני אוהב אותך.{ani ohev otach.}/0,1,2
+tr: Seni seviyorum./0,1,2

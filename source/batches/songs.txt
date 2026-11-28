@@ -1,0 +1,54 @@
+@ Songs | Our lives are destined to be full of ups and downs.
+g: we / in this life / are destined / (to be) full of ups and downs
+y: 我哋/ngo5 dei6/0 ; 今生/gam1 sang1/1 ; 注定/zyu3 ding6/2 ; 係/hai6/- ; 滄桑/cong1 song1/3
+m: 我们/wǒ men/0 ; 今生/jīn shēng/1 ; 注定/zhù dìng/2 ; 是/shì/- ; 沧桑/cāng sāng/3
+t: 我/ŋɔi21/0 ; 今生/gim33 saŋ33/1 ; 注定/dzi33 ein32/2? ; 系/hai32/- ; 滄桑/tɔŋ33 sɔŋ33/3?
+s: Nuestra vida está destinada a tener altibajos./0,1,2,3
+f: Notre vie est faite de hauts et de bas./0,1,2,3
+d: Unser Leben ist voller Höhen und Tiefen./0,1,2,3
+n: Song: 今生缘 "Jin Sheng Yuan" (Chuan Zi), from a piano-cover reel. The Mandarin is the sung line. 滄桑 cong1 song1 is literally "blue sea and mulberry fields": the world changing over a lifetime.
+nt: 今 gim33, 生 saŋ33 and 定 ein32 are in Stephen Li's dictionary; 注 and 滄 are guesses.
+
+@ Songs | We came crying; we must walk on smiling.
+g: crying / (we) came / must / smiling / walk through (life)
+y: 喊住/haam3 zyu6/0 ; 嚟/lai4/1 ; 要/jiu3/2 ; 笑住/siu3 zyu6/3 ; 行過/haang4 gwo3/4 ; 呀/aa3/-
+m: 哭着/kū zhe/0 ; 来/lái/1 ; 要/yào/2 ; 笑着/xiào zhe/3 ; 走过/zǒu guò/4 ; 呀/ya/-
+t: 哭/hək33/0 ; 來/lɔi22/1 ; 要/yiau33/2 ; 笑/liau33/3 ; 行過/haŋ22 gɔ33/4? ; 啊/a33/-
+s: Llegamos llorando, hay que seguir sonriendo./0,1,2,3,4
+f: On arrive en pleurant, il faut avancer en souriant./0,1,2,3,4
+d: Weinend kamen wir, lächelnd gehen wir weiter./0,1,2,3,4
+n: The song's main line. Spoken Cantonese says 喊 haam3 for "cry" (哭 is the written word) and 行 haang4 for "walk".
+nt: Taishanese 哭 hək33 "cry" and 笑 liau33 "laugh" are in Stephen Li's dictionary.
+
+@ Songs | Oh friends, let's always remember this together.
+g: friends / let us / together / firmly remember
+y: 朋友/pang4 jau5/0 ; 呀/aa3/- ; 等我哋/dang2 ngo5 dei6/1 ; 一齊/jat1 cai4/2 ; 牢牢記住/lou4 lou4 gei3 zyu6/3
+m: 朋友/péng yǒu/0 ; 啊/a/- ; 让我们/ràng wǒ men/1 ; 一起/yì qǐ/2 ; 牢牢铭记/láo láo míng jì/3 ; 呀/ya/-
+t: 朋友/paŋ22 yiu21/0 ; 啊/a33/- ; 讓我/ŋiaŋ32 ŋɔi21/1 ; 一齊/yit55 tai22/2 ; 牢牢記住/lɔu22 lɔu22 gi33 dzi32/3?
+s: Amigos, recordémoslo siempre juntos./0,1,2,3
+f: Mes amis, gardons-le toujours en mémoire ensemble./0,1,2,3
+d: Freunde, lasst uns das gemeinsam nie vergessen./0,1,2,3
+n: 牢牢 lou4 lou4 "firmly". Cantonese says 等我哋 "let us"; the song's 铭记 "engrave in memory" is a written word.
+nt: 朋友, 一齊 and 讓 are in Stephen Li's dictionary; 記住 is a guess.
+
+@ Songs | Our brotherhood will last a lifetime.
+g: we / in this life / brotherly bond / (is) long
+y: 我哋/ngo5 dei6/0 ; 今生/gam1 sang1/1 ; 兄弟情/hing1 dai6 cing4/2 ; 長/coeng4/3
+m: 我们/wǒ men/0 ; 今生/jīn shēng/1 ; 兄弟情义/xiōng dì qíng yì/2 ; 长/cháng/3
+t: 我/ŋɔi21/0 ; 今生/gim33 saŋ33/1 ; 兄弟情/hein33 ai32 tein22/2 ; 長/tsiaŋ22/3
+s: Nuestra hermandad durará toda la vida./0,1,2,3
+f: Notre fraternité durera toute la vie./0,1,2,3
+d: Unsere Freundschaft hält ein Leben lang./0,1,2,3
+n: 兄弟 hing1 dai6 "brothers" also means close friends. 情义 "loyalty and affection".
+nt: 兄弟 hein33 ai32, 情 tein22 and 長 tsiaŋ22 are in Stephen Li's dictionary.
+
+@ Songs | I love you.
+g: I / love / you
+y: 我/ngo5/0 ; 愛/oi3/1 ; 你/nei5/2
+m: 我/wǒ/0 ; 爱/ài/1 ; 你/nǐ/2
+t: 我/ŋɔi33/0 ; 愛/ɔi33/1? ; 你/ni33/2
+s: Te quiero./0,1,2
+f: Je t'aime./0,1,2
+d: Ich liebe dich./0,1,2
+n: The reel ends with 我爱你 and a finger heart. Cantonese families say it less than English speakers do; showing it is more common.
+nt: The Taishanese 愛 reading is a guess.
